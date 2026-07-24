@@ -1186,6 +1186,9 @@ module Emfsvg
           d << format("%.4f,%.4f ", cal_x(center_x), cal_y(center_y))
           d << "Z "
           emit_path_element_closed(d)
+          # C's arc_draw PIE case updates cur_x/cur_y to center via point_draw.
+          @current_x = center_x
+          @current_y = center_y
         when :chord
           d << "Z "
           emit_path_element_closed(d)
@@ -1225,6 +1228,8 @@ module Emfsvg
 
       # Closes a path element using endFormDraw pattern:
       #   `<path d="..." [clipset] stroke fill [fallbacks] />\n`
+      # Note the literal ` />` (with leading space) — endFormDraw uses
+      # fprintf(" />\n") vs U_EMRPOLYGON_draw's fprintf("/>\n").
       def emit_path_element_closed(d_string)
         @builder.raw("<path ")
         @builder.raw(clip_path_attr_string)
@@ -1234,7 +1239,7 @@ module Emfsvg
         emit_stroke_draw
         emit_fill_draw
         emit_unfilled_unstroked
-        @builder.raw("/>")
+        @builder.raw(" />")
         @builder.newline
       end
 
