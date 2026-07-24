@@ -92,6 +92,13 @@
   <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4900 3200 L 4850 3213 L 4813 3250 Z " fill-rule="evenodd" />
   <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4800 3300 L 4813 3350 L 4850 3387 Z " fill-rule="evenodd" />
   <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4900 3400 L 4950 3387 L 4987 3350 Z " fill-rule="evenodd" />
+  <rect x="400" y="4200" width="200" height="200" fill="#FFFF00" />
+  <rect x="800" y="4600" width="200" height="200" fill="#000000" />
+  <rect x="400" y="4650" width="200" height="200" fill="#FFFF00" />
+  <rect x="800" y="5050" width="200" height="200" fill="#000000" />
+  <rect x="100" y="4200" width="100" height="200" fill="#FFFF00" />
+  <rect x="100" y="4650" width="0" height="200" fill="#FFFF00" />
+  <rect x="300" y="4850" width="0" height="200" fill="#0000FF" />
   <path stroke="#FF00FF" stroke-width="4" d="M 200 3700 L 400 3900 L 200 4100 " />
   <path stroke="#FF00FF" stroke-width="5" stroke-dasharray="4 2" d="M 300 3700 L 500 3900 L 300 4100 " />
   <path stroke="#FF00FF" stroke-width="6" stroke-dasharray="1 2" d="M 400 3700 L 600 3900 L 400 4100 " />
@@ -186,12 +193,51 @@
   <text x="7600" y="0" font-family="Courier New" font-size="12" fill="#000000">
     +MONO   0
   </text>
+  <image x="5400" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="5400" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="5400" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="5400" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="2900" y="5000" width="2000" height="2000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="5620" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAxElEQVR42h3QURHFIAwF0SuE+CBCIqT4KEIQ0vroE3LfQjvbrzMhVJb8a/Lb5VXyvORxy7XkfOT45PP+DmzABmzABmzABmzABqIX+B7YgR3YgR3Ygd3xdhAt4AKuAwtYwAKWk4K0m8AJnMB54AW8XPNyUpB2AziAAziAY8NxuygpSLsCFrCABaxiWgFrOSlIuwQmMIGZ7JUcmUxLYD4O0i6AAYzghsHywV7BkcG0AMYHIh4+/CfxC8TtxOJiJ3GcmKSN7D/D28I+PiWMRgAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="5620" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAxElEQVR42h3QURHFIAwF0SuE+CBCIqT4KEIQ0vroE3LfQjvbrzMhVJb8a/Lb5VXyvORxy7XkfOT45PP+DmzABmzABmzABmzABqIX+B7YgR3YgR3Ygd3xdhAt4AKuAwtYwAKWk4K0m8AJnMB54AW8XPNyUpB2AziAAziAY8NxuygpSLsCFrCABaxiWgFrOSlIuwQmMIGZ7JUcmUxLYD4O0i6AAYzghsHywV7BkcG0AMYHIh4+/CfxC8TtxOJiJ3GcmKSN7D/D28I+PiWMRgAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="5620" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAxElEQVR42h3QURHFIAwF0SuE+CBCIqT4KEIQ0vroE3LfQjvbrzMhVJb8a/Lb5VXyvORxy7XkfOT45PP+DmzABmzABmzABmzABqIX+B7YgR3YgR3Ygd3xdhAt4AKuAwtYwAKWk4K0m8AJnMB54AW8XPNyUpB2AziAAziAY8NxuygpSLsCFrCABaxiWgFrOSlIuwQmMIGZ7JUcmUxLYD4O0i6AAYzghsHywV7BkcG0AMYHIh4+/CfxC8TtxOJiJ3GcmKSN7D/D28I+PiWMRgAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="5620" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAxElEQVR42h3QURHFIAwF0SuE+CBCIqT4KEIQ0vroE3LfQjvbrzMhVJb8a/Lb5VXyvORxy7XkfOT45PP+DmzABmzABmzABmzABqIX+B7YgR3YgR3Ygd3xdhAt4AKuAwtYwAKWk4K0m8AJnMB54AW8XPNyUpB2AziAAziAY8NxuygpSLsCFrCABaxiWgFrOSlIuwQmMIGZ7JUcmUxLYD4O0i6AAYzghsHywV7BkcG0AMYHIh4+/CfxC8TtxOJiJ3GcmKSN7D/D28I+PiWMRgAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="6280" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARUlEQVR42mP4z8Dw/7EMw38YjcwG0TA2A7pCmCQyxlCILIHVRGRJdEUwzIDPFJwK8bmTAZvbsFmPoRCXqQzYggKvGwlhAI+XxzmEDFxXAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6280" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARUlEQVR42mP4z8Dw/7EMw38YjcwG0TA2A7pCmCQyxlCILIHVRGRJdEUwzIDPFJwK8bmTAZvbsFmPoRCXqQzYggKvGwlhAI+XxzmEDFxXAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6280" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARUlEQVR42mP4z8Dw/7EMw38YjcwG0TA2A7pCmCQyxlCILIHVRGRJdEUwzIDPFJwK8bmTAZvbsFmPoRCXqQzYggKvGwlhAI+XxzmEDFxXAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6280" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAARUlEQVR42mP4z8Dw/7EMw38YjcwG0TA2A7pCmCQyxlCILIHVRGRJdEUwzIDPFJwK8bmTAZvbsFmPoRCXqQzYggKvGwlhAI+XxzmEDFxXAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="7160" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR42mP4z8DwnxjMMKqQvgoBksPHOXvuG4oAAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="7160" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR42mP4z8DwnxjMMKqQvgoBksPHOXvuG4oAAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="7160" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR42mP4z8DwnxjMMKqQvgoBksPHOXvuG4oAAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="7160" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR42mP4z8DwnxjMMKqQvgoBksPHOXvuG4oAAAAASUVORK5CYII=" preserveAspectRatio="none" />
+  <image x="6500" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6500" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6500" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6500" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="7380" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="7380" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="7380" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="7380" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAALUlEQVR42h3KwQ0AMAzCQC/JkixJnT4uUiwABlG1EW8SGU4NvVBXZz+4KvfsAaHMHeN3Z0R4AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6720" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="6720" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="6720" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="6720" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="6940" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVR42mNYtWrVf2TMgCEABPgFAPSVK9XSgFjLAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6940" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVR42mNYtWrVf2TMgCEABPgFAPSVK9XSgFjLAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6940" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVR42mNYtWrVf2TMgCEABPgFAPSVK9XSgFjLAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="6940" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVR42mNYtWrVf2TMgCEABPgFAPSVK9XSgFjLAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="7600" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="7600" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="7600" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
+  <image x="7600" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
   <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
     STRETCHDIBITS
   </text>
+  <image x="5400" y="8000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAUElEQVQYlW2OwQ3AMAgDrxJjwP6DAXO0j1QJQfiFMGfzvBBKKG7DIAGgjIrfni4SQPwsrHJLmy4ZZdVsyKulhm/utBT6ytHbzv74uhDvXJV9Tw0bLHsWOIMAAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
   <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000">
     PNG
   </text>
+  <image x="5620" y="8000" width="200" height="200" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAAKAAoDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQYH/8QAFQEBAQAAAAAAAAAAAAAAAAAABQf/2gAMAwEAAhADEAAAAY4hpBODYRQ6qtZDP//EABwQAAEDBQAAAAAAAAAAAAAAAAMAAQUCBBITIf/aAAgBAQABBQKJvxaHnugJUsnX/8QAHxEAAgECBwAAAAAAAAAAAAAAAAECAwQFBhEVISIx/9oACAEDAQE/AczXm46xj6Twrs+CqNI//8QAHhEAAQQBBQAAAAAAAAAAAAAAAAECAyEFBhEUFmL/2gAIAQIBAT8BiwnNpEOleTT7UqhsbNko/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECMiIxkf/aAAgBAQAGPwJSk8ixZ9Ns/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAERIVHx/9oACAEBAAE/IUlKlLSBgrAu8f/aAAwDAQACAAMAAAAQ2Q//xAAaEQEBAAIDAAAAAAAAAAAAAAABABEhQcHw/9oACAEDAQE/ENyedyqPJmuVlKpf/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQAhMUGRwf/aAAgBAgEBPxCrfg0PMW1ciKuDRP/EABkQAQEBAAMAAAAAAAAAAAAAAAEAESExQf/aAAgBAQABPxAxsaVphAAoA9RBCDgBQ4Ki+6v/2Q==" preserveAspectRatio="none" />
   <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000">
     JPG
   </text>
@@ -618,135 +664,205 @@
     Rect (include)
   </text>
   <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="1900" width="200" height="400" />
+  <defs>
+    <clipPath id="clip-1">
+      <rect x="13250" y="1900" width="200" height="400" />
+    </clipPath>
+  </defs>
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rects (include,include)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="2400" width="200" height="400" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="2600" width="400" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" x="13250" y="2400" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" x="13250" y="2600" width="400" height="200" />
+  <defs>
+    <clipPath id="clip-2">
+      <rect x="13250" y="2400" width="200" height="-100" />
+    </clipPath>
+  </defs>
+  <defs>
+    <clipPath id="clip-3">
+      <rect x="13250" y="2600" width="200" height="-300" />
+    </clipPath>
+  </defs>
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (exclude)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="2900" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" x="13250" y="2900" width="200" height="400" />
+  <defs>
+    <clipPath id="clip-4">
+      <rect x="13250" y="2900" width="200" height="400" />
+    </clipPath>
+  </defs>
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rects (exclude,exclude)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="3400" width="200" height="400" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="3600" width="400" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" x="13250" y="3400" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" x="13250" y="3600" width="400" height="200" />
+  <defs>
+    <clipPath id="clip-5">
+      <rect x="13250" y="3400" width="200" height="400" />
+    </clipPath>
+  </defs>
+  <defs>
+    <clipPath id="clip-6">
+      <rect x="13250" y="3600" width="400" height="200" />
+    </clipPath>
+  </defs>
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (include) AND path
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="3900" width="200" height="400" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="13250" y="3900" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <defs>
+    <clipPath id="clip-7">
+      <rect x="13250" y="3900" width="200" height="-100" />
+    </clipPath>
+  </defs>
+  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (include) OR path
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="4400" width="200" height="400" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" x="13250" y="4400" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <defs>
+    <clipPath id="clip-8">
+      <rect x="13250" y="4400" width="200" height="-600" />
+    </clipPath>
+  </defs>
+  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (include) XOR path
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="4900" width="200" height="400" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" x="13250" y="4900" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <defs>
+    <clipPath id="clip-9">
+      <rect x="13250" y="4900" width="200" height="-1100" />
+    </clipPath>
+  </defs>
+  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (include) DIFF path
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="5400" width="200" height="400" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" x="13250" y="5400" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <defs>
+    <clipPath id="clip-10">
+      <rect x="13250" y="5400" width="200" height="-1600" />
+    </clipPath>
+  </defs>
+  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (include) COPY path
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="5900" width="200" height="400" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" x="13250" y="5900" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <defs>
+    <clipPath id="clip-11">
+      <rect x="13250" y="5900" width="200" height="-2100" />
+    </clipPath>
+  </defs>
+  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rect (include,offset)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="6400" width="200" height="400" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13350" y="6420" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" x="13250" y="6400" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" x="13350" y="6420" width="200" height="400" />
+  <defs>
+    <clipPath id="clip-12">
+      <rect x="13250" y="6400" width="200" height="-2600" />
+    </clipPath>
+  </defs>
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     Rects (include,include,offset)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="6900" width="200" height="400" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="7100" width="400" height="200" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13350" y="7120" width="200" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" x="13250" y="6900" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" x="13250" y="7100" width="400" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" x="13350" y="7120" width="200" height="200" />
+  <defs>
+    <clipPath id="clip-13">
+      <rect x="13250" y="6900" width="200" height="-3100" />
+    </clipPath>
+  </defs>
+  <defs>
+    <clipPath id="clip-14">
+      <rect x="13250" y="7100" width="200" height="-3300" />
+    </clipPath>
+  </defs>
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
+  <path fill="#3F7FFF" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
     TextAbove__StarTest2
   </text>

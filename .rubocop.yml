@@ -30,7 +30,7 @@ Metrics/ClassLength:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/AbcSize:
-  Max: 50
+  Max: 60
   Exclude:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
@@ -49,7 +49,7 @@ Lint/UselessConstantScoping:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/ParameterLists:
-  Max: 8
+  Max: 10
 
 Metrics/BlockLength:
   Exclude:

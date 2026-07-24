@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables = %w[emfsvg]
   spec.require_paths = %w[lib]
 
+  spec.add_dependency "base64"
   spec.add_dependency "emf", "~> 0.1"
   spec.add_dependency "rexml", "~> 3.3"
 end
