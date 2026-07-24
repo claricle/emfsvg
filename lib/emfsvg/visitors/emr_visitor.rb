@@ -1500,15 +1500,15 @@ module Emfsvg
         return if points.empty?
 
         if @in_path
-          # Inside BeginPath..EndPath: append `M X,Y L X,Y ... [Z]` directly
-          # to the open d-string (no element wrapping).
+          # Inside BeginPath..EndPath: append `M X,Y L X,Y ...` directly to
+          # the open d-string (no element wrapping, no Z — Z is added by
+          # CloseFigure or by the path closer at EndPath/FillPath/etc.).
           @builder.raw("M ")
           @builder.raw(point_str(points.first))
           points[1..].each do |p|
             @builder.raw("L ")
             @builder.raw(point_str(p))
           end
-          @builder.raw("Z ") if closed
           return
         end
 
@@ -1610,11 +1610,11 @@ module Emfsvg
           @builder.raw("fill=\"none\" ")
           @last_fill_set = true
         when Brush::HATCHED
-          @hatch_counter ||= 0
-          @hatch_counter += 1
-          id = "hatch-#{@hatch_counter}"
-          emit_hatch_pattern(id, brush.hatch, brush.color, @dc.bk_color, @dc.bk_mode)
-          @builder.raw("fill-rule=\"nonzero\" fill=\"url(##{id})\" ")
+          # libemf2svg treats BS_HATCHED the same as the default case: emit
+          # the brush color as a plain fill. (Hatch patterns are not
+          # rendered.)
+          @builder.raw(" ")
+          @builder.raw(fill_color_attr(brush))
           @last_fill_set = true
         else
           @builder.raw(" ")
