@@ -1,803 +1,803 @@
 <?xml version="1.0"  encoding="UTF-8" standalone="no"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="910.0000" height="646.0000">
   <g transform="translate(-3.0000, -42.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="655.1018711018711" x2="3121" y2="655.1018711018711" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="655.1018711018711" x2="347" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="617.014553014553" x2="3121" y2="617.014553014553" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="520" y1="655.1018711018711" x2="520" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="578.927234927235" x2="3121" y2="578.927234927235" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="693" y1="655.1018711018711" x2="693" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="540.8399168399168" x2="3121" y2="540.8399168399168" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="867" y1="655.1018711018711" x2="867" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="502.7525987525988" x2="3121" y2="502.7525987525988" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1040" y1="655.1018711018711" x2="1040" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="464.66528066528065" x2="3121" y2="464.66528066528065" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1214" y1="655.1018711018711" x2="1214" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="426.5779625779626" x2="3121" y2="426.5779625779626" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1387" y1="655.1018711018711" x2="1387" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="388.4906444906445" x2="3121" y2="388.4906444906445" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1560" y1="655.1018711018711" x2="1560" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="350.4033264033264" x2="3121" y2="350.4033264033264" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1734" y1="655.1018711018711" x2="1734" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="311.998613998614" x2="3121" y2="311.998613998614" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1907" y1="655.1018711018711" x2="1907" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="273.9112959112959" x2="3121" y2="273.9112959112959" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2080" y1="655.1018711018711" x2="2080" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="235.82397782397783" x2="3121" y2="235.82397782397783" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2254" y1="655.1018711018711" x2="2254" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="197.73665973665973" x2="3121" y2="197.73665973665973" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2427" y1="655.1018711018711" x2="2427" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="159.64934164934164" x2="3121" y2="159.64934164934164" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2601" y1="655.1018711018711" x2="2601" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="121.56202356202355" x2="3121" y2="121.56202356202355" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2774" y1="655.1018711018711" x2="2774" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="83.47470547470547" x2="3121" y2="83.47470547470547" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2947" y1="655.1018711018711" x2="2947" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="347" y1="45.387387387387385" x2="3121" y2="45.387387387387385" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3121" y1="655.1018711018711" x2="3121" y2="45.387387387387385" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="79.66597366597367" font-size="12" font-weight="400">
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="655.1019" x2="913.1435" y2="655.1019" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="655.1019" x2="32.6916" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="617.0146" x2="913.1435" y2="617.0146" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="87.6008" y1="655.1019" x2="87.6008" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="578.9272" x2="913.1435" y2="578.9272" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="142.5100" y1="655.1019" x2="142.5100" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="540.8399" x2="913.1435" y2="540.8399" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="197.7367" y1="655.1019" x2="197.7367" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="502.7526" x2="913.1435" y2="502.7526" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="252.6459" y1="655.1019" x2="252.6459" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="464.6653" x2="913.1435" y2="464.6653" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="307.8725" y1="655.1019" x2="307.8725" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="426.5780" x2="913.1435" y2="426.5780" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="362.7817" y1="655.1019" x2="362.7817" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="388.4906" x2="913.1435" y2="388.4906" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="417.6909" y1="655.1019" x2="417.6909" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="350.4033" x2="913.1435" y2="350.4033" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="472.9175" y1="655.1019" x2="472.9175" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="311.9986" x2="913.1435" y2="311.9986" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="527.8267" y1="655.1019" x2="527.8267" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="273.9113" x2="913.1435" y2="273.9113" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="582.7360" y1="655.1019" x2="582.7360" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="235.8240" x2="913.1435" y2="235.8240" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="637.9626" y1="655.1019" x2="637.9626" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="197.7367" x2="913.1435" y2="197.7367" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="692.8718" y1="655.1019" x2="692.8718" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="159.6493" x2="913.1435" y2="159.6493" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="748.0984" y1="655.1019" x2="748.0984" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="121.5620" x2="913.1435" y2="121.5620" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="803.0076" y1="655.1019" x2="803.0076" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="83.4747" x2="913.1435" y2="83.4747" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="857.9168" y1="655.1019" x2="857.9168" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="32.6916" y1="45.3874" x2="913.1435" y2="45.3874" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="913.1435" y1="655.1019" x2="913.1435" y2="45.3874" />
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="79.6660" font-size="12.0000" font-weight="400">
     <![CDATA[0]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="117.75329175329175" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="117.7533" font-size="12.0000" font-weight="400">
     <![CDATA[1]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="155.84060984060983" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="155.8406" font-size="12.0000" font-weight="400">
     <![CDATA[2]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="193.92792792792793" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="193.9279" font-size="12.0000" font-weight="400">
     <![CDATA[3]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="232.01524601524602" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="232.0152" font-size="12.0000" font-weight="400">
     <![CDATA[4]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="270.1025641025641" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="270.1026" font-size="12.0000" font-weight="400">
     <![CDATA[5]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="308.1898821898822" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="308.1899" font-size="12.0000" font-weight="400">
     <![CDATA[6]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="346.2772002772003" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="346.2772" font-size="12.0000" font-weight="400">
     <![CDATA[7]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="384.6819126819127" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="384.6819" font-size="12.0000" font-weight="400">
     <![CDATA[8]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="272" y="422.7692307692308" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8.8870" y="422.7692" font-size="12.0000" font-weight="400">
     <![CDATA[9]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="260" y="460.85654885654884" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="5.0783" y="460.8565" font-size="12.0000" font-weight="400">
     <![CDATA[A]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="260" y="498.94386694386696" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="5.0783" y="498.9439" font-size="12.0000" font-weight="400">
     <![CDATA[B]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="253" y="537.031185031185" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2.8565" y="537.0312" font-size="12.0000" font-weight="400">
     <![CDATA[C]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="253" y="575.1185031185031" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2.8565" y="575.1185" font-size="12.0000" font-weight="400">
     <![CDATA[D]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="260" y="613.2058212058212" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="5.0783" y="613.2058" font-size="12.0000" font-weight="400">
     <![CDATA[E]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="266" y="651.2931392931393" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6.9827" y="651.2931" font-size="12.0000" font-weight="400">
     <![CDATA[F]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="405" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="51.1005" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[0]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="579" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="106.3271" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[1]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="752" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="161.2363" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[2]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="926" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="216.4629" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[3]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1099" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="271.3721" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[4]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1272" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="326.2814" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[5]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1446" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="381.5080" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[6]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1619" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="436.4172" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[7]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1792" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="491.3264" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[8]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1966" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="546.5530" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[9]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2133" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="599.5579" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[A]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2306" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="654.4671" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[B]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2476" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="708.4241" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[C]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2649" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="763.3333" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[D]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2827" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="819.8295" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[E]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="3003" y="41.57865557865558" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="875.6909" y="41.5787" font-size="12.0000" font-weight="400">
     <![CDATA[F]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="722" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="151.7145" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[!]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="722" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="151.7145" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA["]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="724" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="152.3493" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[#]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="722" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="151.7145" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[$]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="716" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="149.8101" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[%]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="724" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="152.3493" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[&]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="719" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="150.7623" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[']]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="753" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="161.5537" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[(]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="741" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="157.7450" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[)]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="741" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="157.7450" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[*]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="730" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="154.2536" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[+]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="741" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="157.7450" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[,]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="741" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="157.7450" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[-]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="730" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="154.2536" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[.]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="741" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="157.7450" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[/]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="915" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="212.9716" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[0]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="904" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="209.4802" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[1]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="915" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="212.9716" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[2]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="915" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="212.9716" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[3]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="890" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="205.0367" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[4]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="893" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="205.9889" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[5]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="904" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="209.4802" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[6]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="904" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="209.4802" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[7]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="904" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="209.4802" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[8]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="890" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="205.0367" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[9]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="894" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="206.3063" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[:]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="894" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="206.3063" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[;]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="916" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="213.2890" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[<]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="916" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="213.2890" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[=]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="901" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="208.5281" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[>]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="901" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="208.5281" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[?]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1074" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="263.4373" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[@]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1074" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="263.4373" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[A]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1074" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="263.4373" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[B]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1074" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="263.4373" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[C]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1074" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="263.4373" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[D]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1074" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="263.4373" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[E]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1099" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="271.3721" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[F]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1099" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="271.3721" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[G]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1099" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="271.3721" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[H]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1099" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="271.3721" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[I]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1094" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="269.7852" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[J]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1094" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="269.7852" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[K]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1094" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="269.7852" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[L]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1094" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="269.7852" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[M]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1077" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="264.3895" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[N]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1091" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="268.8330" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[O]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1256" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="321.2030" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[P]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[Q]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[R]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[S]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[T]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[U]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[V]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[W]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1250" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="319.2987" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[X]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1239" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="315.8073" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[Y]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1253" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="320.2509" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[Z]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1258" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="321.8378" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[[]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1256" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="321.2030" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[\]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1273" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="326.5988" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[]]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1272" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="326.2814" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[^]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1277" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="327.8683" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[_]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1446" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="381.5080" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[`]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[a]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[b]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[c]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[d]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[e]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[f]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[g]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1418" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="372.6209" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[h]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[i]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[j]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[k]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[l]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[m]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[n]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1424" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="374.5253" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[o]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[p]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[q]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[r]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[s]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[t]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[u]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[v]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[w]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[x]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[y]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[z]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[{]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[|]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[}]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1597" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="429.4345" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[~]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1619" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="436.4172" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1768" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="483.7089" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[€]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1768" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="483.7089" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[?]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1779" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="487.2003" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[‚]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1779" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="487.2003" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[ƒ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1775" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="485.9307" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[„]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1784" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="488.7872" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[…]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1781" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="487.8351" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[†]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[‡]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[ˆ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[‰]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[Š]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[‹]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[Œ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[?]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[Ž]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1770" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="484.3437" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[?]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[?]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[‘]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[’]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1938" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="537.6660" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[“]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1938" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="537.6660" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[”]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1978" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="550.3617" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[•]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1974" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="549.0922" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[–]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1963" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="545.6008" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[—]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[˜]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[™]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[š]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[›]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[œ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[?]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1944" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="539.5703" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[ž]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="1978" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="550.3617" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[Ÿ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2147" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="604.0014" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[ ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2136" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="600.5100" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[¡]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[¢]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[£]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[¤]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[¥]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[¦]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[§]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[¨]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[©]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2117" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="594.4796" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[ª]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2150" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="604.9536" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[«]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2147" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="604.0014" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[¬]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2142" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="602.4144" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[­]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2126" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="597.3361" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[®]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2111" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="592.5752" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[¯]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2284" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="647.4844" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[°]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2284" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="647.4844" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[±]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2284" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="647.4844" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[²]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2284" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="647.4844" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[³]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2324" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="660.1802" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[´]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2323" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="659.8628" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[µ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2320" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="658.9106" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[¶]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2309" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="655.4193" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[·]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2298" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="651.9279" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[¸]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2298" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="651.9279" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[¹]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2310" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="655.7367" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[º]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2310" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="655.7367" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[»]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2290" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="649.3888" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[¼]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2290" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="649.3888" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[½]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2290" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="649.3888" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[¾]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2290" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="649.3888" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[¿]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[À]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[Á]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[Â]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[Ã]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[Ä]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[Å]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[Æ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[Ç]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[È]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[É]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[Ê]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[Ë]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[Ì]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[Í]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[Î]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2464" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="704.6154" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[Ï]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[Ð]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[Ñ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[Ò]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[Ó]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[Ô]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[Õ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[Ö]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[×]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[Ø]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[Ù]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[Ú]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[Û]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[Ü]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[Ý]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[Þ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2637" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="759.5246" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[ß]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[à]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[á]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[â]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[ã]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[ä]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[å]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[æ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[ç]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[è]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[é]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[ê]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[ë]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[ì]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[í]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[î]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2811" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="814.7512" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[ï]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="56.18738738738739" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="56.1874" font-size="12.0000" font-weight="400">
     <![CDATA[ð]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="94.27470547470547" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="94.2747" font-size="12.0000" font-weight="400">
     <![CDATA[ñ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="132.36202356202355" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="132.3620" font-size="12.0000" font-weight="400">
     <![CDATA[ò]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="170.44934164934165" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="170.4493" font-size="12.0000" font-weight="400">
     <![CDATA[ó]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="208.53665973665974" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="208.5367" font-size="12.0000" font-weight="400">
     <![CDATA[ô]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="246.62397782397784" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="246.6240" font-size="12.0000" font-weight="400">
     <![CDATA[õ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="284.7112959112959" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="284.7113" font-size="12.0000" font-weight="400">
     <![CDATA[ö]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="322.79861399861403" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="322.7986" font-size="12.0000" font-weight="400">
     <![CDATA[÷]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2993" y="361.2033264033264" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="872.5170" y="361.2033" font-size="12.0000" font-weight="400">
     <![CDATA[ø]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="2984" y="399.2906444906445" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="869.6604" y="399.2906" font-size="12.0000" font-weight="400">
     <![CDATA[ù]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="3006" y="437.3779625779626" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="876.6431" y="437.3780" font-size="12.0000" font-weight="400">
     <![CDATA[ú]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="3006" y="475.46528066528066" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="876.6431" y="475.4653" font-size="12.0000" font-weight="400">
     <![CDATA[û]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="3006" y="513.5525987525988" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="876.6431" y="513.5526" font-size="12.0000" font-weight="400">
     <![CDATA[ü]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="3006" y="551.6399168399167" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="876.6431" y="551.6399" font-size="12.0000" font-weight="400">
     <![CDATA[ý]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="3006" y="589.7272349272349" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="876.6431" y="589.7272" font-size="12.0000" font-weight="400">
     <![CDATA[þ]]>
   </text>
-  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="3006" y="627.814553014553" font-size="12" font-weight="400">
+  <text font-family="Wingdings 2" fill="#008000" text-anchor="start" style="white-space:pre;" x="876.6431" y="627.8146" font-size="12.0000" font-weight="400">
     <![CDATA[ÿ]]>
   </text>
   
