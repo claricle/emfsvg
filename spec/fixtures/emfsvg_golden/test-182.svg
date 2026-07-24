@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="9" viewBox="1 0 32 9" version="1.1">
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.0000" height="9.0000">
+  <g transform="translate(-1.0000, -0.0000)">
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#4D4D4D" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 25 41 L 25 105 L 164 105 L 164 41 L 25 41 Z " fill-rule="evenodd" />
+  <path fill="#4D4D4D" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 25 41.0 L 25 105.0 L 164 105.0 L 164 41.0 L 25 41.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   <defs>
@@ -11,16 +12,16 @@
   </defs>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#4D4D4D" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 134 114 L 134 31 L 126 31 L 126 114 Z " fill-rule="evenodd" />
+  <path fill="#4D4D4D" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 134 114.0 L 134 31.0 L 126 31.0 L 126 114.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <path fill="#4B4B4B" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7 1 L 7 8 L 8 8 L 8 1 L 7 1 Z " fill-rule="evenodd" />
-  <path fill="#484848" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 8 1 L 8 8 L 9 8 L 9 1 L 8 1 Z " fill-rule="evenodd" />
+  <path fill="#4B4B4B" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7 1.0 L 7 8.0 L 8 8.0 L 8 1.0 L 7 1.0 Z " fill-rule="evenodd" />
+  <path fill="#484848" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 8 1.0 L 8 8.0 L 9 8.0 L 9 1.0 L 8 1.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" x1="126" y1="114" x2="134" y2="37" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" fill="none" d="M 134 33 C 130 31 126 31 126 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" d="M 126 31 L 126 114 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" x1="126" y1="114.0" x2="134" y2="37.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" fill="none" d="M 134 33.0 C 130 31.0 126 31.0 126 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" d="M 126 31.0 L 126 114.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   <defs>
@@ -30,55 +31,55 @@
   </defs>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#4D4D4D" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 66 114 L 66 31 L 58 31 L 58 114 Z " fill-rule="evenodd" />
+  <path fill="#4D4D4D" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 66 114.0 L 66 31.0 L 58 31.0 L 58 114.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <path fill="#3D3D3D" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 3 1 L 3 8 L 4 8 L 4 1 L 3 1 Z " fill-rule="evenodd" />
-  <path fill="#3A3A3A" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 4 1 L 4 8 L 5 8 L 5 1 L 4 1 Z " fill-rule="evenodd" />
+  <path fill="#3D3D3D" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 3 1.0 L 3 8.0 L 4 8.0 L 4 1.0 L 3 1.0 Z " fill-rule="evenodd" />
+  <path fill="#3A3A3A" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 4 1.0 L 4 8.0 L 5 8.0 L 5 1.0 L 4 1.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="66" y1="114" x2="66" y2="31" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 58 37 L 58 108 " />
-  </g>
-  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  </g>
-  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#404040" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 66 31 L 66 114 L 126 114 L 126 31 L 66 31 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="66" y1="114.0" x2="66" y2="31.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 58 37.0 L 58 108.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#404040" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 66 114 L 126 114 L 126 31 L 66 31 L 66 114 Z " fill-rule="evenodd" />
+  <path fill="#404040" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 66 31.0 L 66 114.0 L 126 114.0 L 126 31.0 L 66 31.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="125" y1="94" x2="125" y2="52" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 125 50 C 124 49 123 49 123 49 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 123 49 L 69 49 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 68 49 C 67 50 67 52 67 52 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 67 52 L 67 94 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 69 97 L 123 97 " />
+  <path fill="#404040" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 66 114.0 L 126 114.0 L 126 31.0 L 66 31.0 L 66 114.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="125" y1="94" x2="125" y2="52" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 125 50 C 124 49 123 49 123 49 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 123 49 L 69 49 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 68 49 C 67 50 67 52 67 52 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 67 52 L 67 94 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 69 97 L 123 97 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="125" y1="94.0" x2="125" y2="52.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 125 50.0 C 124 49.0 123 49.0 123 49.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 123 49.0 L 69 49.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 68 49.0 C 67 50.0 67 52.0 67 52.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 67 52.0 L 67 94.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 69 97.0 L 123 97.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 96 56 C 86 56 79 63 79 73 C 79 83 86 90 96 90 C 106 90 114 83 114 73 C 114 63 106 56 96 56 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="125" y1="94.0" x2="125" y2="52.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 125 50.0 C 124 49.0 123 49.0 123 49.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 123 49.0 L 69 49.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 68 49.0 C 67 50.0 67 52.0 67 52.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 67 52.0 L 67 94.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" d="M 69 97.0 L 123 97.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 96 56 C 86 56 79 63 79 73 C 79 83 86 90 96 90 C 106 90 114 83 114 73 C 114 63 106 56 96 56 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 96 56.0 C 86 56.0 79 63.0 79 73.0 C 79 83.0 86 90.0 96 90.0 C 106 90.0 114 83.0 114 73.0 C 114 63.0 106 56.0 96 56.0 " />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" fill="none" d="M 96 56.0 C 86 56.0 79 63.0 79 73.0 C 79 83.0 86 90.0 96 90.0 C 106 90.0 114 83.0 114 73.0 C 114 63.0 106 56.0 96 56.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   <defs>
@@ -88,303 +89,304 @@
   </defs>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#E96330" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 108 85 L 108 61 L 85 61 L 85 85 Z " fill-rule="evenodd" />
+  <path fill="#E96330" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 108 85.0 L 108 61.0 L 85 61.0 L 85 85.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <path fill="#5D5D5D" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 5 3 L 5 6 L 6 6 L 6 3 L 5 3 Z " fill-rule="evenodd" />
-  <path fill="#4E4E4E" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 6 3 L 6 6 L 7 6 L 7 3 L 6 3 Z " fill-rule="evenodd" />
-  <path fill="#3E3E3E" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 7 3 L 7 6 L 8 6 L 8 3 L 7 3 Z " fill-rule="evenodd" />
+  <path fill="#5D5D5D" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 5 3.0 L 5 6.0 L 6 6.0 L 6 3.0 L 5 3.0 Z " fill-rule="evenodd" />
+  <path fill="#4E4E4E" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 6 3.0 L 6 6.0 L 7 6.0 L 7 3.0 L 6 3.0 Z " fill-rule="evenodd" />
+  <path fill="#3E3E3E" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 7 3.0 L 7 6.0 L 8 6.0 L 8 3.0 L 7 3.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 96 61 C 90 61 85 67 85 73 C 85 79 90 85 96 85 C 102 85 108 79 108 73 C 108 67 102 61 96 61 " />
-  </g>
-  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  </g>
-  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="44" y1="31" x2="44" y2="31" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 44 31 C 44 31 44 31 44 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 44 31 L 43 27 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="44" y1="31" x2="41" y2="27" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="41" y1="27" x2="40" y2="30" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 40 31 L 32 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 32 31 L 32 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 32 31 L 41 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 41 31 L 42 29 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 42 29 C 42 29 42 29 42 29 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 42 29 L 43 32 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 43 32 L 44 32 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 44 32 L 46 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 46 31 C 46 31 46 31 46 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 46 31 L 46 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 46 31 L 50 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 50 31 C 50 31 50 31 50 31 C 51 31 51 31 52 31 C 52 31 52 30 52 30 C 51 30 50 30 50 30 C 50 30 50 30 50 31 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 50 31 L 47 31 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="50" y1="31" x2="45" y2="30" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 45 30 C 45 30 45 30 45 30 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 45 30 L 44 31 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="48" y1="118" x2="48" y2="114" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 114 C 45 113 42 113 39 113 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 36 114 L 36 118 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 36 119 C 39 119 42 119 45 119 C 48 119 48 118 48 118 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="38" y1="118" x2="38" y2="115" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 40 115 C 44 115 46 115 46 115 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 47 115 L 47 118 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 47 118 C 45 119 42 119 40 119 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 47 115 C 45 115 42 115 40 115 C 38 115 38 114 38 114 C 40 113 42 113 45 113 C 47 114 47 114 47 114 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 96 61.0 C 90 61.0 85 67.0 85 73.0 C 85 79.0 90 85.0 96 85.0 C 102 85.0 108 79.0 108 73.0 C 108 67.0 102 61.0 96 61.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="68" x2="49" y2="51" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="51" x2="37" y2="50" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 51 L 35 68 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 35 69 C 36 70 37 70 37 70 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="37" y1="70" x2="47" y2="70" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 70 C 49 69 49 68 49 68 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="95" x2="49" y2="78" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 49 77 C 48 76 47 76 47 76 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="47" y1="76" x2="37" y2="76" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 78 L 35 95 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 37 96 L 47 96 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 96 C 49 95 49 95 49 95 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="44" y1="31.0" x2="44" y2="31.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 44 31.0 C 44 31.0 44 31.0 44 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 44 31.0 L 43 27.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="44" y1="31.0" x2="41" y2="27.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="41" y1="27.0" x2="40" y2="30.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 40 31.0 L 32 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 32 31.0 L 32 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 32 31.0 L 41 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 41 31.0 L 42 29.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 42 29.0 C 42 29.0 42 29.0 42 29.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 42 29.0 L 43 32.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 43 32.0 L 44 32.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 44 32.0 L 46 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 46 31.0 C 46 31.0 46 31.0 46 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 46 31.0 L 46 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 46 31.0 L 50 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 50 31.0 C 50 31.0 50 31.0 50 31.0 C 51 31.0 51 31.0 52 31.0 C 52 31.0 52 30.0 52 30.0 C 51 30.0 50 30.0 50 30.0 C 50 30.0 50 30.0 50 31.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 50 31.0 L 47 31.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="50" y1="31.0" x2="45" y2="30.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 45 30.0 C 45 30.0 45 30.0 45 30.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 45 30.0 L 44 31.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="48" y1="118.0" x2="48" y2="114.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 114.0 C 45 113.0 42 113.0 39 113.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 36 114.0 L 36 118.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 36 119.0 C 39 119.0 42 119.0 45 119.0 C 48 119.0 48 118.0 48 118.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="38" y1="118.0" x2="38" y2="115.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 40 115.0 C 44 115.0 46 115.0 46 115.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 47 115.0 L 47 118.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 47 118.0 C 45 119.0 42 119.0 40 119.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 47 115.0 C 45 115.0 42 115.0 40 115.0 C 38 115.0 38 114.0 38 114.0 C 40 113.0 42 113.0 45 113.0 C 47 114.0 47 114.0 47 114.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="68" x2="49" y2="51" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="51" x2="37" y2="50" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 51 L 35 68 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 35 69 C 36 70 37 70 37 70 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="37" y1="70" x2="47" y2="70" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 70 C 49 69 49 68 49 68 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="95" x2="49" y2="78" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 49 77 C 48 76 47 76 47 76 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="47" y1="76" x2="37" y2="76" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 78 L 35 95 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 37 96 L 47 96 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 96 C 49 95 49 95 49 95 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="68.0" x2="49" y2="51.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="51.0" x2="37" y2="50.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 51.0 L 35 68.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 35 69.0 C 36 70.0 37 70.0 37 70.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="37" y1="70.0" x2="47" y2="70.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 70.0 C 49 69.0 49 68.0 49 68.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="95.0" x2="49" y2="78.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 49 77.0 C 48 76.0 47 76.0 47 76.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="47" y1="76.0" x2="37" y2="76.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 78.0 L 35 95.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 37 96.0 L 47 96.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 96.0 C 49 95.0 49 95.0 49 95.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 68 L 48 51 L 37 51 L 37 68 L 48 68 Z " fill-rule="evenodd" />
-  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 95 L 48 77 L 37 77 L 37 95 L 48 95 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="68.0" x2="49" y2="51.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="51.0" x2="37" y2="50.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 51.0 L 35 68.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 35 69.0 C 36 70.0 37 70.0 37 70.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="37" y1="70.0" x2="47" y2="70.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 70.0 C 49 69.0 49 68.0 49 68.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="49" y1="95.0" x2="49" y2="78.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 49 77.0 C 48 76.0 47 76.0 47 76.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="47" y1="76.0" x2="37" y2="76.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 35 78.0 L 35 95.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 37 96.0 L 47 96.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 48 96.0 C 49 95.0 49 95.0 49 95.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 68 L 48 51 L 37 51 L 37 68 L 48 68 Z " fill-rule="evenodd" />
-  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 95 L 48 77 L 37 77 L 37 95 L 48 95 Z " fill-rule="evenodd" />
+  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 68.0 L 48 51.0 L 37 51.0 L 37 68.0 L 48 68.0 Z " fill-rule="evenodd" />
+  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 95.0 L 48 77.0 L 37 77.0 L 37 95.0 L 48 95.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="448" y1="25" x2="180" y2="25" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="180" y1="25" x2="152" y2="34" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 150 35 C 148 36 147 38 146 39 C 145 40 145 41 145 42 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="144" y1="44" x2="144" y2="101" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 144 103 C 145 105 146 106 146 108 C 147 109 148 110 150 110 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="152" y1="112" x2="176" y2="120" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 121 L 448 121 L 448 25 " />
+  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 68.0 L 48 51.0 L 37 51.0 L 37 68.0 L 48 68.0 Z " fill-rule="evenodd" />
+  <path fill="#666666" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 48 95.0 L 48 77.0 L 37 77.0 L 37 95.0 L 48 95.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="448" y1="25" x2="180" y2="25" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="180" y1="25" x2="152" y2="34" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 150 35 C 148 36 147 38 146 39 C 145 40 145 41 145 42 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="144" y1="44" x2="144" y2="101" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 144 103 C 145 105 146 106 146 108 C 147 109 148 110 150 110 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="152" y1="112" x2="176" y2="120" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 121 L 448 121 L 448 25 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="448" y1="25.0" x2="180" y2="25.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="180" y1="25.0" x2="152" y2="34.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 150 35.0 C 148 36.0 147 38.0 146 39.0 C 145 40.0 145 41.0 145 42.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="144" y1="44.0" x2="144" y2="101.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 144 103.0 C 145 105.0 146 106.0 146 108.0 C 147 109.0 148 110.0 150 110.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="152" y1="112.0" x2="176" y2="120.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 121.0 L 448 121.0 L 448 25.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 153 109 L 177 117 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 118 L 447 118 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 447 118 C 448 117 448 117 448 116 C 448 116 449 116 449 116 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 449 116 L 488 116 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 489 116 L 495 113 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 497 113 L 499 113 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111 L 501 35 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 501 34 C 500 33 499 33 499 33 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 33 L 497 33 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 495 33 L 489 30 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 488 30 L 449 30 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 448 30 C 448 30 448 29 448 29 C 447 28 447 28 447 28 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 447 28 L 180 28 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="447" y1="28" x2="153" y2="37" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 147 44 L 147 101 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="448" y1="25.0" x2="180" y2="25.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="180" y1="25.0" x2="152" y2="34.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 150 35.0 C 148 36.0 147 38.0 146 39.0 C 145 40.0 145 41.0 145 42.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="144" y1="44.0" x2="144" y2="101.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 144 103.0 C 145 105.0 146 106.0 146 108.0 C 147 109.0 148 110.0 150 110.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="152" y1="112.0" x2="176" y2="120.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 121.0 L 448 121.0 L 448 25.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 147 44 L 147 101 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 148 105 L 501 105 L 501 41 L 148 41 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 153 109.0 L 177 117.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 118.0 L 447 118.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 447 118.0 C 448 117.0 448 117.0 448 116.0 C 448 116.0 449 116.0 449 116.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 449 116.0 L 488 116.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 489 116.0 L 495 113.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 497 113.0 L 499 113.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111.0 L 501 35.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 501 34.0 C 500 33.0 499 33.0 499 33.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 33.0 L 497 33.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 495 33.0 L 489 30.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 488 30.0 L 449 30.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 448 30.0 C 448 30.0 448 29.0 448 29.0 C 447 28.0 447 28.0 447 28.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 447 28.0 L 180 28.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="447" y1="28.0" x2="153" y2="37.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 147 44.0 L 147 101.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111 L 501 35 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="501" y1="112" x2="499" y2="35" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 496 42 L 496 103 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 110 L 501 112 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 147 44.0 L 147 101.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 148 105.0 L 501 105.0 L 501 41.0 L 148 41.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111 L 501 35 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="501" y1="112" x2="499" y2="35" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 496 42 L 496 103 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 110 L 501 112 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111.0 L 501 35.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="501" y1="112.0" x2="499" y2="35.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 496 42.0 L 496 103.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 110.0 L 501 112.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 153 109 L 177 117 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 118 L 447 118 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 447 118 C 448 117 448 117 448 116 C 448 116 449 116 449 116 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 449 116 L 488 116 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 489 116 L 495 113 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 497 113 L 499 113 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111 L 501 35 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 501 34 C 500 33 499 33 499 33 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 33 L 497 33 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 495 33 L 489 30 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 488 30 L 449 30 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 448 30 C 448 30 448 29 448 29 C 447 28 447 28 447 28 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 447 28 L 180 28 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="447" y1="28" x2="153" y2="37" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 147 44 L 147 101 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111.0 L 501 35.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="501" y1="112.0" x2="499" y2="35.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 496 42.0 L 496 103.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 110.0 L 501 112.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 344 115 L 359 109 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 364 101 L 364 44 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 359 37 L 344 31 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="340" y1="115" x2="340" y2="115" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 153 109.0 L 177 117.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 180 118.0 L 447 118.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 447 118.0 C 448 117.0 448 117.0 448 116.0 C 448 116.0 449 116.0 449 116.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 449 116.0 L 488 116.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 489 116.0 L 495 113.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 497 113.0 L 499 113.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 501 111.0 L 501 35.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 501 34.0 C 500 33.0 499 33.0 499 33.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 499 33.0 L 497 33.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 495 33.0 L 489 30.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 488 30.0 L 449 30.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 448 30.0 C 448 30.0 448 29.0 448 29.0 C 447 28.0 447 28.0 447 28.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 447 28.0 L 180 28.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="447" y1="28.0" x2="153" y2="37.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 147 44.0 L 147 101.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 344 115 L 359 109 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 364 101 L 364 44 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 359 37 L 344 31 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="340" y1="115" x2="340" y2="115" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 344 115.0 L 359 109.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 364 101.0 L 364 44.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 359 37.0 L 344 31.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="340" y1="115.0" x2="340" y2="115.0" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="187" y1="115" x2="187" y2="30" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 183 31 L 169 37 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 164 44 L 164 101 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 169 109 L 183 115 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 344 115.0 L 359 109.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 364 101.0 L 364 44.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 359 37.0 L 344 31.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="340" y1="115.0" x2="340" y2="115.0" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="187" y1="115" x2="187" y2="30" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 183 31 L 169 37 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 164 44 L 164 101 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 169 109 L 183 115 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="187" y1="115.0" x2="187" y2="30.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 183 31.0 L 169 37.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 164 44.0 L 164 101.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 169 109.0 L 183 115.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#CDCDCD" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 187 30 L 187 115 L 340 115 L 340 30 L 187 30 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="187" y1="115.0" x2="187" y2="30.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 183 31.0 L 169 37.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 164 44.0 L 164 101.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 169 109.0 L 183 115.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#CDCDCD" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 187 115 L 340 115 L 340 30 L 187 30 L 187 115 Z " fill-rule="evenodd" />
+  <path fill="#CDCDCD" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 187 30.0 L 187 115.0 L 340 115.0 L 340 30.0 L 187 30.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="313" y1="98" x2="313" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 313 47 C 315 45 316 45 316 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 316 45 L 340 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 348 53 L 348 93 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 340 101 L 316 101 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="305" y1="98" x2="305" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 305 47 C 304 45 302 45 302 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 302 45 L 270 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 269 45 C 267 47 267 48 267 48 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 267 48 L 267 98 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 270 101 L 302 101 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="259" y1="98" x2="259" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 259 47 C 258 45 256 45 256 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 256 45 L 225 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 221 48 L 221 98 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 225 101 L 256 101 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="213" y1="98" x2="213" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 213 47 C 212 45 210 45 210 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 210 45 L 186 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 182 45 C 178 49 178 53 178 53 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 178 53 L 178 93 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 186 101 L 210 101 " />
+  <path fill="#CDCDCD" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 187 115.0 L 340 115.0 L 340 30.0 L 187 30.0 L 187 115.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="313" y1="98" x2="313" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 313 47 C 315 45 316 45 316 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 316 45 L 340 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 348 53 L 348 93 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 340 101 L 316 101 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="305" y1="98" x2="305" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 305 47 C 304 45 302 45 302 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 302 45 L 270 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 269 45 C 267 47 267 48 267 48 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 267 48 L 267 98 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 270 101 L 302 101 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="259" y1="98" x2="259" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 259 47 C 258 45 256 45 256 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 256 45 L 225 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 221 48 L 221 98 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 225 101 L 256 101 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="213" y1="98" x2="213" y2="48" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 213 47 C 212 45 210 45 210 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 210 45 L 186 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 182 45 C 178 49 178 53 178 53 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 178 53 L 178 93 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 186 101 L 210 101 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="313" y1="98.0" x2="313" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 313 47.0 C 315 45.0 316 45.0 316 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 316 45.0 L 340 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 348 53.0 L 348 93.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 340 101.0 L 316 101.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="305" y1="98.0" x2="305" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 305 47.0 C 304 45.0 302 45.0 302 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 302 45.0 L 270 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 269 45.0 C 267 47.0 267 48.0 267 48.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 267 48.0 L 267 98.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 270 101.0 L 302 101.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="259" y1="98.0" x2="259" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 259 47.0 C 258 45.0 256 45.0 256 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 256 45.0 L 225 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 221 48.0 L 221 98.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 225 101.0 L 256 101.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="213" y1="98.0" x2="213" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 213 47.0 C 212 45.0 210 45.0 210 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 210 45.0 L 186 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 182 45.0 C 178 49.0 178 53.0 178 53.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 178 53.0 L 178 93.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 186 101.0 L 210 101.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 73 L 399 89 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73" x2="409" y2="100" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 411 101 L 484 101 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 490 95 L 490 73 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="313" y1="98.0" x2="313" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 313 47.0 C 315 45.0 316 45.0 316 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 316 45.0 L 340 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 348 53.0 L 348 93.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 340 101.0 L 316 101.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="305" y1="98.0" x2="305" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 305 47.0 C 304 45.0 302 45.0 302 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 302 45.0 L 270 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 269 45.0 C 267 47.0 267 48.0 267 48.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 267 48.0 L 267 98.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 270 101.0 L 302 101.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="259" y1="98.0" x2="259" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 259 47.0 C 258 45.0 256 45.0 256 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 256 45.0 L 225 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 221 48.0 L 221 98.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 225 101.0 L 256 101.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="213" y1="98.0" x2="213" y2="48.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 213 47.0 C 212 45.0 210 45.0 210 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 210 45.0 L 186 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" fill="none" d="M 182 45.0 C 178 49.0 178 53.0 178 53.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 178 53.0 L 178 93.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 186 101.0 L 210 101.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 73 L 399 89 " />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73" x2="409" y2="100" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 411 101 L 484 101 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 490 95 L 490 73 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 73.0 L 399 89.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73.0" x2="409" y2="100.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 411 101.0 L 484 101.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 490 95.0 L 490 73.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73" x2="490" y2="51" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 484 45 L 405 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 51 L 399 73 L 490 73 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 73.0 L 399 89.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73.0" x2="409" y2="100.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 411 101.0 L 484 101.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 490 95.0 L 490 73.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73" x2="490" y2="51" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 484 45 L 405 45 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 51 L 399 73 L 490 73 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73.0" x2="490" y2="51.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 484 45.0 L 405 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 51.0 L 399 73.0 L 490 73.0 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Arial" fill="#333333" text-anchor="start" style="white-space:pre;" x="25" y="4" font-size="12" font-weight="400">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="490" y1="73.0" x2="490" y2="51.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 484 45.0 L 405 45.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" d="M 399 51.0 L 399 73.0 L 490 73.0 " />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  <text font-family="Arial" fill="#333333" text-anchor="start" style="white-space:pre;" x="25" y="4.0" font-size="12" font-weight="400">
     <![CDATA[SATA]]>
   </text>
+  </g>
   </g>
 </svg>

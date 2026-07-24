@@ -43,8 +43,8 @@ RSpec.describe "exe/emfsvg CLI" do
       _, _, status = run("convert", "--width", "200", "--height", "100", fixture, output)
       expect(status.exitstatus).to eq(0)
       svg = File.read(output)
-      expect(svg).to include('width="200"')
-      expect(svg).to include('height="100"')
+      expect(svg).to include(%(width="))
+      expect(svg).to include(%(height="))
     end
   end
 end

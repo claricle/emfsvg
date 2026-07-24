@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1011" height="607" viewBox="-1 0 1011 607" version="1.1">
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1" y="1" width="0" height="0" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1008" y="605" width="1" height="1" />
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1011.0000" height="607.0000">
+  <g transform="translate(1.0000, -0.0000)">
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1" y="1.0" width="0" height="0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1008" y="605.0" width="1" height="1" />
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
@@ -9,73 +10,73 @@
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="48" y="17" width="1009" height="606" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="481" y1="17" x2="481" y2="624" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="48" y1="300" x2="1058" y2="300" />
-  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="508" y="110" font-size="12" font-weight="400">
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="48" y="17.0" width="1009" height="606" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="481" y1="17.0" x2="481" y2="624.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="48" y1="300.0" x2="1058" y2="300.0" />
+  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="508" y="110.0" font-size="12" font-weight="400">
     <![CDATA[Couple]]>
   </text>
-  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="135" y="339" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="135" y="339.0" font-size="12" font-weight="400">
     <![CDATA[Parents & NR]]>
   </text>
-  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="607" y="381" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="607" y="381.0" font-size="12" font-weight="400">
     <![CDATA[Seul]]>
   </text>
-  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="512" y="153" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#0099FF" text-anchor="start" style="white-space:pre;" x="512" y="153.0" font-size="12" font-weight="400">
     <![CDATA[Coloc]]>
   </text>
-  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="155" y="323" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="155" y="323.0" font-size="12" font-weight="400">
     <![CDATA[Autre]]>
   </text>
-  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="506" y="421" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="506" y="421.0" font-size="12" font-weight="400">
     <![CDATA[Chambre]]>
   </text>
-  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="619" y="515" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="619" y="515.0" font-size="12" font-weight="400">
     <![CDATA[Cite]]>
   </text>
-  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="607" y="326" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="607" y="326.0" font-size="12" font-weight="400">
     <![CDATA[Studio]]>
   </text>
-  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="512" y="150" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="512" y="150.0" font-size="12" font-weight="400">
     <![CDATA[Appart]]>
   </text>
-  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="289" y="432" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#880088" text-anchor="start" style="white-space:pre;" x="289" y="432.0" font-size="12" font-weight="400">
     <![CDATA[NR2]]>
   </text>
-  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="156" y="341" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="156" y="341.0" font-size="12" font-weight="400">
     <![CDATA[NA & NR]]>
   </text>
-  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="595" y="391" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="595" y="391.0" font-size="12" font-weight="400">
     <![CDATA[< 1 an]]>
   </text>
-  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="556" y="295" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="556" y="295.0" font-size="12" font-weight="400">
     <![CDATA[1-3 ans]]>
   </text>
-  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="558" y="213" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#EE0000" text-anchor="start" style="white-space:pre;" x="558" y="213.0" font-size="12" font-weight="400">
     <![CDATA[> 3 ans]]>
   </text>
-  <text font-family="Arial" fill="#00BB00" text-anchor="start" style="white-space:pre;" x="594" y="311" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#00BB00" text-anchor="start" style="white-space:pre;" x="594" y="311.0" font-size="12" font-weight="400">
     <![CDATA[< 1 km]]>
   </text>
-  <text font-family="Arial" fill="#00BB00" text-anchor="start" style="white-space:pre;" x="506" y="290" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#00BB00" text-anchor="start" style="white-space:pre;" x="506" y="290.0" font-size="12" font-weight="400">
     <![CDATA[1-5 km]]>
   </text>
-  <text font-family="Arial" fill="#00BB00" text-anchor="start" style="white-space:pre;" x="213" y="325" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#00BB00" text-anchor="start" style="white-space:pre;" x="213" y="325.0" font-size="12" font-weight="400">
     <![CDATA[> 5 km & NR]]>
   </text>
-  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="78" y="424" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="78" y="424.0" font-size="12" font-weight="400">
     <![CDATA[NR5]]>
   </text>
-  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="614" y="538" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="614" y="538.0" font-size="12" font-weight="400">
     <![CDATA[< 10 m2]]>
   </text>
-  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="379" y="186" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="379" y="186.0" font-size="12" font-weight="400">
     <![CDATA[> 30 m2]]>
   </text>
-  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="575" y="414" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="575" y="414.0" font-size="12" font-weight="400">
     <![CDATA[10 a 20 m2]]>
   </text>
-  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="586" y="279" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#C400FF" text-anchor="start" style="white-space:pre;" x="586" y="279.0" font-size="12" font-weight="400">
     <![CDATA[20 a 30 m2]]>
   </text>
   <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="57.5" cy="406.5" rx="10.5" ry="10.5" />
@@ -212,5 +213,6 @@
   <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="658.0" cy="547.0" rx="2.0" ry="2.0" />
   <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="658.0" cy="587.0" rx="4.0" ry="4.0" />
   <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="677.5" cy="606.5" rx="2.5" ry="2.5" />
+  </g>
   </g>
 </svg>

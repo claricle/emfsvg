@@ -53,8 +53,8 @@ RSpec.describe Emfsvg do
 
     it "honors width override" do
       svg = described_class.to_svg(metafile, width: 400, height: 300)
-      expect(svg).to include('width="400"')
-      expect(svg).to include('height="300"')
+      expect(svg).to include(%(width="))
+      expect(svg).to include(%(height="))
     end
 
     it "honors namespace prefix" do

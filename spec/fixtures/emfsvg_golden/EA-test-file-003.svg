@@ -1,97 +1,98 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="293" height="417" viewBox="1 -407 293 417" version="1.1">
-  <!-- Wine/Sparx Y-repair: top=-407 bottom=10 -->
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-14" y1="-411.0" x2="-14" y2="-5.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-14" y1="-5.0" x2="279" y2="-5.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="279" y1="-5.0" x2="279" y2="-411.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="279" y1="-411.0" x2="-14" y2="-411.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M -14 -391.0 L 116 -391.0 L 129 -405.0 L 129 -411.0 L -14 -411.0 L -14 -391.0 Z " fill-rule="evenodd" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="-9" y="-397.2" font-size="12" font-weight="400">
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="294.0000" height="418.0000">
+  <g transform="translate(0.0000, 0.0000)">
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-14" y1="1.0" x2="-14" y2="407.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-14" y1="407.0" x2="279" y2="407.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="279" y1="407.0" x2="279" y2="1.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="279" y1="1.0" x2="-14" y2="1.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M -14 21.0 L 116 21.0 L 129 7.0 L 129 1.0 L -14 1.0 L -14 21.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="-9" y="14.8" font-size="12" font-weight="400">
     <![CDATA[class Fig: Context for LocationS]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="68" y="-325.0" width="186" height="51" />
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="201" y="-363.2" font-size="12" font-weight="400">
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="68" y="87.0" width="186" height="51" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="201" y="48.8" font-size="12" font-weight="400">
     <![CDATA[RegisterItem]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="139" y="-344.2" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="139" y="67.8" font-size="12" font-weight="400">
     <![CDATA[«interface»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="103" y="-331.2" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="103" y="80.8" font-size="12" font-weight="400">
     <![CDATA[ISO 19112 Edition 2::Location]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="68" y="-142.0" width="186" height="92" />
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="198" y="-221.2" font-size="12" font-weight="400">
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="68" y="270.0" width="186" height="92" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="198" y="190.8" font-size="12" font-weight="400">
     <![CDATA[ZonePrimitive]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="139" y="-202.2" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="139" y="209.8" font-size="12" font-weight="400">
     <![CDATA[«interface»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="142" y="-189.2" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="142" y="222.8" font-size="12" font-weight="400">
     <![CDATA[LocationS]]>
   </text>
-  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-182.0" x2="254" y2="-182.0" />
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="140" y="-167.2" font-size="12" font-weight="400">
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="230.0" x2="254" y2="230.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="140" y="244.8" font-size="12" font-weight="400">
     <![CDATA[constraints]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="73" y="-154.2" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="73" y="257.8" font-size="12" font-weight="400">
     <![CDATA[{self.dimension > 0}]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="160" y="-48.0" width="93" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="171" y="-59.0" width="16" height="16" />
-  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="194" y="-63.2" font-size="12" font-weight="400">
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="160" y="364.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="171" y="353.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="194" y="348.8" font-size="12" font-weight="400">
     <![CDATA[ISO 19170-1]]>
   </text>
-  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="205" y="-89.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="205" y="322.8" font-size="12" font-weight="400">
     <![CDATA[ ]]>
   </text>
-  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 20 -88.0 L 20 -48.0 L 160 -48.0 L 160 -76.0 L 148 -88.0 Z " fill-rule="evenodd" />
-  <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 148 -88.0 L 148 -76.0 L 160 -76.0 Z " fill-rule="evenodd" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-63.2" font-size="12" font-weight="400">
+  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 20 324.0 L 20 364.0 L 160 364.0 L 160 336.0 L 148 324.0 Z " fill-rule="evenodd" />
+  <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 148 324.0 L 148 336.0 L 160 336.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="348.8" font-size="12" font-weight="400">
     <![CDATA[KEY:]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="60" y="-48.0" width="99" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="71" y="-59.0" width="16" height="16" />
-  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="94" y="-63.2" font-size="12" font-weight="400">
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="60" y="364.0" width="99" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="71" y="353.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="94" y="348.8" font-size="12" font-weight="400">
     <![CDATA[19112 Ed 2]]>
   </text>
-  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="102" y="-89.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="102" y="322.8" font-size="12" font-weight="400">
     <![CDATA[ ]]>
   </text>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-351.0" x2="13" y2="-351.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="13" y1="-351.0" x2="13" y2="-275.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="13" y1="-275.0" x2="112" y2="-275.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="112" y1="-275.0" x2="112" y2="-325.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="112" y1="-325.0" x2="118" y2="-310.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="112" y1="-325.0" x2="106" y2="-310.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-351.0" x2="53" y2="-357.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-351.0" x2="53" y2="-345.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="161" y1="-236.0" x2="161" y2="-324.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 167 -308.0 L 155 -308.0 L 161 -324.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-185.0" x2="10" y2="-185.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="10" y1="-185.0" x2="10" y2="-107.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="10" y1="-107.0" x2="110" y2="-107.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="110" y1="-107.0" x2="110" y2="-142.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="110" y1="-142.0" x2="116" y2="-127.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="110" y1="-142.0" x2="104" y2="-127.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-185.0" x2="53" y2="-191.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="-185.0" x2="53" y2="-179.0" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="8" y="-357.2" font-size="12" font-weight="400">
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="61.0" x2="13" y2="61.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="13" y1="61.0" x2="13" y2="137.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="13" y1="137.0" x2="112" y2="137.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="112" y1="137.0" x2="112" y2="87.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="112" y1="87.0" x2="118" y2="102.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="112" y1="87.0" x2="106" y2="102.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="61.0" x2="53" y2="55.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="61.0" x2="53" y2="67.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="161" y1="176.0" x2="161" y2="88.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 167 104.0 L 155 104.0 L 161 88.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="227.0" x2="10" y2="227.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="10" y1="227.0" x2="10" y2="305.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="10" y1="305.0" x2="110" y2="305.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="110" y1="305.0" x2="110" y2="270.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="110" y1="270.0" x2="116" y2="285.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="110" y1="270.0" x2="104" y2="285.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="227.0" x2="53" y2="221.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="68" y1="227.0" x2="53" y2="233.0" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="8" y="54.8" font-size="12" font-weight="400">
     <![CDATA[+childOf 0..*]]>
   </text>
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="22" y="-278.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="22" y="133.8" font-size="12" font-weight="400">
     <![CDATA[LocationHierarchy]]>
   </text>
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="39" y="-311.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="39" y="100.8" font-size="12" font-weight="400">
     <![CDATA[+parentOf 0..*]]>
   </text>
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="10" y="-196.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="10" y="215.8" font-size="12" font-weight="400">
     <![CDATA[+childOf 0..*]]>
   </text>
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="18" y="-110.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="18" y="301.8" font-size="12" font-weight="400">
     <![CDATA[LocationHierarchy]]>
   </text>
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="41" y="-130.2" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="41" y="281.8" font-size="12" font-weight="400">
     <![CDATA[+parentOf 0..*]]>
   </text>
   
+  </g>
 </svg>
