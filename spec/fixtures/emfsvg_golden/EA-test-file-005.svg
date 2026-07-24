@@ -1,372 +1,372 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="583" height="897" viewBox="1 -887 583 897" version="1.1">
   <!-- Wine/Sparx Y-repair: top=-887 bottom=10 -->
-  <line stroke="#000000" stroke-width="0" x1="-18" y1="-891.0" x2="-18" y2="-5.0" />
-  <line stroke="#000000" stroke-width="0" x1="-18" y1="-5.0" x2="565" y2="-5.0" />
-  <line stroke="#000000" stroke-width="0" x1="565" y1="-5.0" x2="565" y2="-891.0" />
-  <line stroke="#000000" stroke-width="0" x1="565" y1="-891.0" x2="-18" y2="-891.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -18 -871.0 L 192 -871.0 L 205 -885.0 L 205 -891.0 L -18 -891.0 L -18 -871.0 Z " fill-rule="evenodd" />
-  <text x="-13" y="-876.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    class Fig: Context for Temporal RS using Identifiers
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-18" y1="-891.0" x2="-18" y2="-5.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-18" y1="-5.0" x2="565" y2="-5.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="565" y1="-5.0" x2="565" y2="-891.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="565" y1="-891.0" x2="-18" y2="-891.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M -18 -871.0 L 192 -871.0 L 205 -885.0 L 205 -891.0 L -18 -891.0 L -18 -871.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="-13" y="-877.2" font-size="12" font-weight="400">
+    <![CDATA[class Fig: Context for Temporal RS using Identifiers]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="194" y="-48.0" width="104" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="205" y="-59.0" width="16" height="16" />
-  <text x="228" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19111 Ed 3
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="194" y="-48.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="205" y="-59.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="228" y="-63.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19111 Ed 3]]>
   </text>
-  <text x="245" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-     
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="245" y="-89.2" font-size="12" font-weight="400">
+    <![CDATA[ ]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="445" y="-48.0" width="93" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="456" y="-59.0" width="16" height="16" />
-  <text x="479" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19170-1
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="445" y="-48.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="456" y="-59.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="479" y="-63.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19170-1]]>
   </text>
-  <text x="490" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-     
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="490" y="-89.2" font-size="12" font-weight="400">
+    <![CDATA[ ]]>
   </text>
-  <path fill="#FFFFFF" stroke="#EA8066" stroke-width="2" d="M 119 -857.0 L 119 -825.0 L 262 -825.0 L 262 -845.0 L 250 -857.0 Z " fill-rule="evenodd" />
-  <path fill="#DCDCDC" stroke="#EA8066" stroke-width="2" d="M 250 -857.0 L 250 -845.0 L 262 -845.0 Z " fill-rule="evenodd" />
-  <text x="124" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    cf. Fig. ISO 19112 Ed 2 Overview
+  <path fill="#FFFFFF" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 119 -857.0 L 119 -825.0 L 262 -825.0 L 262 -845.0 L 250 -857.0 Z " fill-rule="evenodd" />
+  <path fill="#DCDCDC" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 250 -857.0 L 250 -845.0 L 262 -845.0 Z " fill-rule="evenodd" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="124" y="-832.2" font-size="12" font-weight="400">
+    <![CDATA[cf. Fig. ISO 19112 Ed 2 Overview]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="6" y="-747.0" width="255" height="62" />
-  <text x="131" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    RSUsingZonalIdentifiersPrimitive
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="6" y="-747.0" width="255" height="62" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="131" y="-796.2" font-size="12" font-weight="400">
+    <![CDATA[RSUsingZonalIdentifiersPrimitive]]>
   </text>
-  <text x="111" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="111" y="-777.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="92" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19112 Edition 2::
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="92" y="-764.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19112 Edition 2::]]>
   </text>
-  <text x="29" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    SpatialReferenceSystemUsingGeographicIdentifiers
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="29" y="-751.2" font-size="12" font-weight="400">
+    <![CDATA[SpatialReferenceSystemUsingGeographicIdentifiers]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="6" y="-615.0" width="173" height="51" />
-  <text x="103" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ZoneClassPrimitive
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="6" y="-615.0" width="173" height="51" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="103" y="-653.2" font-size="12" font-weight="400">
+    <![CDATA[ZoneClassPrimitive]]>
   </text>
-  <text x="70" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="-634.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="24" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19112 Edition 2::LocationClass
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="24" y="-621.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19112 Edition 2::LocationClass]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="75" y="-405.0" width="186" height="126" />
-  <text x="226" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Location
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="75" y="-405.0" width="186" height="126" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="226" y="-518.2" font-size="12" font-weight="400">
+    <![CDATA[Location]]>
   </text>
-  <text x="205" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ZonePrimitive
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="205" y="-505.2" font-size="12" font-weight="400">
+    <![CDATA[ZonePrimitive]]>
   </text>
-  <text x="146" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="146" y="-486.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="115" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Spatial Location::LocationS
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="115" y="-473.2" font-size="12" font-weight="400">
+    <![CDATA[Spatial Location::LocationS]]>
   </text>
-  <line stroke="#000000" stroke-width="2" x1="75" y1="-466.0" x2="261" y2="-466.0" />
-  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="75" y1="-466.0" x2="261" y2="-466.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-451.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    coordinateTuple: DirectPosition [2..3]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="97" y="-451.2" font-size="12" font-weight="400">
+    <![CDATA[coordinateTuple: DirectPosition [2..3]]]>
   </text>
-  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-438.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /extent: EX_Extent
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="97" y="-438.2" font-size="12" font-weight="400">
+    <![CDATA[/extent: EX_Extent]]>
   </text>
-  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-425.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    identifier: GeographicIdentifier
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="97" y="-425.2" font-size="12" font-weight="400">
+    <![CDATA[identifier: GeographicIdentifier]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="285" y="-405.0" width="186" height="126" />
-  <text x="415" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ZonePrimitive
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="285" y="-405.0" width="186" height="126" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="415" y="-518.2" font-size="12" font-weight="400">
+    <![CDATA[ZonePrimitive]]>
   </text>
-  <text x="356" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="356" y="-499.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="365" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Period
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="365" y="-486.2" font-size="12" font-weight="400">
+    <![CDATA[Period]]>
   </text>
-  <line stroke="#000000" stroke-width="2" x1="285" y1="-479.0" x2="471" y2="-479.0" />
-  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="285" y1="-479.0" x2="471" y2="-479.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="290" y="-464.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /begin: DirectPosition
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="307" y="-464.2" font-size="12" font-weight="400">
+    <![CDATA[/begin: DirectPosition]]>
   </text>
-  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="290" y="-451.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    coordinateTuple: DirectPosition
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="307" y="-451.2" font-size="12" font-weight="400">
+    <![CDATA[coordinateTuple: DirectPosition]]>
   </text>
-  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="290" y="-438.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /end: DirectPosition
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="307" y="-438.2" font-size="12" font-weight="400">
+    <![CDATA[/end: DirectPosition]]>
   </text>
-  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="290" y="-425.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /extent: EX_TemporalExtent
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="307" y="-425.2" font-size="12" font-weight="400">
+    <![CDATA[/extent: EX_TemporalExtent]]>
   </text>
-  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="290" y="-412.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    identifier: PeriodIdentifier
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="307" y="-412.2" font-size="12" font-weight="400">
+    <![CDATA[identifier: PeriodIdentifier]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="66" y="-287.0" width="195" height="51" />
-  <text x="167" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ZonalIdentifierPrimitive
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="66" y="-287.0" width="195" height="51" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="167" y="-325.2" font-size="12" font-weight="400">
+    <![CDATA[ZonalIdentifierPrimitive]]>
   </text>
-  <text x="139" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «DataType»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="139" y="-306.2" font-size="12" font-weight="400">
+    <![CDATA[«DataType»]]>
   </text>
-  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19112 Edition 2::GeographicIdentifier
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-293.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19112 Edition 2::GeographicIdentifier]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="285" y="-287.0" width="186" height="51" />
-  <text x="377" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ZonalIdentifierPrimitive
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="285" y="-287.0" width="186" height="51" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="377" y="-325.2" font-size="12" font-weight="400">
+    <![CDATA[ZonalIdentifierPrimitive]]>
   </text>
-  <text x="354" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «DataType»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="354" y="-306.2" font-size="12" font-weight="400">
+    <![CDATA[«DataType»]]>
   </text>
-  <text x="347" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    PeriodIdentifier
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="347" y="-293.2" font-size="12" font-weight="400">
+    <![CDATA[PeriodIdentifier]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="361" y="-615.0" width="179" height="51" />
-  <text x="464" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ZoneClassPrimitive
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="361" y="-615.0" width="179" height="51" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="464" y="-653.2" font-size="12" font-weight="400">
+    <![CDATA[ZoneClassPrimitive]]>
   </text>
-  <text x="428" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="428" y="-634.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="428" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    PeriodClass
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="428" y="-621.2" font-size="12" font-weight="400">
+    <![CDATA[PeriodClass]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="171" y="-107.0" width="186" height="84" />
-  <text x="241" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «datatype»
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="171" y="-107.0" width="186" height="84" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="241" y="-175.2" font-size="12" font-weight="400">
+    <![CDATA[«datatype»]]>
   </text>
-  <text x="237" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    DirectPosition
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="237" y="-162.2" font-size="12" font-weight="400">
+    <![CDATA[DirectPosition]]>
   </text>
-  <line stroke="#0000CD" stroke-width="2" x1="171" y1="-155.0" x2="357" y2="-155.0" />
-  <text x="176" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <line stroke="#0000CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="171" y1="-155.0" x2="357" y2="-155.0" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="176" y="-140.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="193" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    coordinate: Real [1..*] {sequence}
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="193" y="-140.2" font-size="12" font-weight="400">
+    <![CDATA[coordinate: Real [1..*] {sequence}]]>
   </text>
-  <text x="176" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="176" y="-127.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="193" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /dimension: Integer
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="193" y="-127.2" font-size="12" font-weight="400">
+    <![CDATA[/dimension: Integer]]>
   </text>
-  <text x="176" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="193" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /rsid: RSID [1..*] {ordered}
-  </text>
-  <text x="206" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    (from Coordinate Data Types)
-  </text>
-  <path fill="#FFFFFF" stroke="#0000CD" stroke-width="2" d="M 20 -191.0 L 20 -137.0 L 120 -137.0 L 120 -179.0 L 108 -191.0 Z " fill-rule="evenodd" />
-  <path fill="#DCDCDC" stroke="#0000CD" stroke-width="2" d="M 108 -191.0 L 108 -179.0 L 120 -179.0 Z " fill-rule="evenodd" />
-  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19107 Ed 2
-  </text>
-  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    CoordinateDataType::
-  </text>
-  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    DirectPosition
-  </text>
-  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="144" y="-212.0" width="239" height="57" />
-  <text x="241" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
-  </text>
-  <text x="208" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Coordinates::CoordinateSet
-  </text>
-  <line stroke="#32CD32" stroke-width="2" x1="144" y1="-233.0" x2="383" y2="-233.0" />
-  <text x="149" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="166" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    coordinateTuple: DirectPosition [1..*] {ordered}
-  </text>
-  <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 20 -270.0 L 20 -227.0 L 110 -227.0 L 110 -258.0 L 98 -270.0 Z " fill-rule="evenodd" />
-  <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" d="M 98 -270.0 L 98 -258.0 L 110 -258.0 Z " fill-rule="evenodd" />
-  <text x="25" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    cf. ISO 19111 Ed 3
-  </text>
-  <text x="25" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    coordinateTuple
-  </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="285" y="-747.0" width="255" height="62" />
-  <text x="410" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    RSUsingZonalIdentifiersPrimitive
-  </text>
-  <text x="390" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
-  </text>
-  <text x="312" y="-877.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    TemporalReferenceSystemUsingPeriodIdentifiers
-  </text>
-  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 20 -88.0 L 20 -48.0 L 160 -48.0 L 160 -76.0 L 148 -88.0 Z " fill-rule="evenodd" />
-  <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 148 -88.0 L 148 -76.0 L 160 -76.0 Z " fill-rule="evenodd" />
-  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    KEY:
-  </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="328" y="-48.0" width="87" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" x="339" y="-59.0" width="16" height="16" />
-  <text x="362" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-    19112 Ed 2
-  </text>
-  <text x="370" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-     
-  </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="60" y="-48.0" width="104" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="71" y="-59.0" width="16" height="16" />
-  <text x="94" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19107 Ed 2
-  </text>
-  <text x="111" y="-877.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-     
-  </text>
-  <line stroke="#000000" stroke-width="1" x1="97" y1="-668.0" x2="96" y2="-746.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 101 -736.0 L 96 -746.0 L 91 -736.0 L 96 -726.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="96" y1="-726.0" x2="102" y2="-711.0" />
-  <line stroke="#000000" stroke-width="1" x1="96" y1="-726.0" x2="90" y2="-711.0" />
-  <line stroke="#000000" stroke-width="1" x1="97" y1="-668.0" x2="103" y2="-683.0" />
-  <line stroke="#000000" stroke-width="1" x1="97" y1="-668.0" x2="91" y2="-683.0" />
-  <line stroke="#000000" stroke-width="1" x1="17" y1="-615.0" x2="17" y2="-567.0" />
-  <line stroke="#000000" stroke-width="1" x1="17" y1="-567.0" x2="133" y2="-567.0" />
-  <line stroke="#000000" stroke-width="1" x1="133" y1="-567.0" x2="133" y2="-615.0" />
-  <line stroke="#000000" stroke-width="1" x1="133" y1="-615.0" x2="139" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="133" y1="-615.0" x2="127" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="17" y1="-615.0" x2="11" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="17" y1="-615.0" x2="23" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="75" y1="-445.0" x2="11" y2="-445.0" />
-  <line stroke="#000000" stroke-width="1" x1="11" y1="-445.0" x2="11" y2="-369.0" />
-  <line stroke="#000000" stroke-width="1" x1="11" y1="-369.0" x2="155" y2="-369.0" />
-  <line stroke="#000000" stroke-width="1" x1="155" y1="-369.0" x2="155" y2="-405.0" />
-  <line stroke="#000000" stroke-width="1" x1="155" y1="-405.0" x2="161" y2="-390.0" />
-  <line stroke="#000000" stroke-width="1" x1="155" y1="-405.0" x2="149" y2="-390.0" />
-  <line stroke="#000000" stroke-width="1" x1="75" y1="-445.0" x2="60" y2="-451.0" />
-  <line stroke="#000000" stroke-width="1" x1="75" y1="-445.0" x2="60" y2="-439.0" />
-  <line stroke="#000000" stroke-width="1" x1="149" y1="-533.0" x2="149" y2="-614.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 154 -604.0 L 149 -614.0 L 144 -604.0 L 149 -594.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="208" y1="-533.0" x2="209" y2="-746.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 214 -736.0 L 209 -746.0 L 204 -736.0 L 209 -726.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="395" y1="-533.0" x2="395" y2="-614.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 400 -604.0 L 395 -614.0 L 390 -604.0 L 395 -594.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="373" y1="-405.0" x2="373" y2="-368.0" />
-  <line stroke="#000000" stroke-width="1" x1="373" y1="-368.0" x2="534" y2="-368.0" />
-  <line stroke="#000000" stroke-width="1" x1="534" y1="-368.0" x2="534" y2="-443.0" />
-  <line stroke="#000000" stroke-width="1" x1="534" y1="-443.0" x2="472" y2="-443.0" />
-  <line stroke="#000000" stroke-width="1" x1="472" y1="-443.0" x2="487" y2="-449.0" />
-  <line stroke="#000000" stroke-width="1" x1="472" y1="-443.0" x2="487" y2="-437.0" />
-  <line stroke="#000000" stroke-width="1" x1="373" y1="-405.0" x2="367" y2="-390.0" />
-  <line stroke="#000000" stroke-width="1" x1="373" y1="-405.0" x2="379" y2="-390.0" />
-  <line stroke="#000000" stroke-width="1" x1="330" y1="-533.0" x2="329" y2="-746.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 334 -736.0 L 329 -746.0 L 324 -736.0 L 329 -726.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="428" y1="-615.0" x2="428" y2="-567.0" />
-  <line stroke="#000000" stroke-width="1" x1="428" y1="-567.0" x2="521" y2="-567.0" />
-  <line stroke="#000000" stroke-width="1" x1="521" y1="-567.0" x2="521" y2="-615.0" />
-  <line stroke="#000000" stroke-width="1" x1="521" y1="-615.0" x2="527" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="521" y1="-615.0" x2="515" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="428" y1="-615.0" x2="422" y2="-600.0" />
-  <line stroke="#000000" stroke-width="1" x1="428" y1="-615.0" x2="434" y2="-600.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="170" y1="-139.0" x2="167" y2="-139.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="163" y1="-140.0" x2="160" y2="-141.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="156" y1="-142.0" x2="153" y2="-143.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="149" y1="-144.0" x2="146" y2="-145.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="142" y1="-146.0" x2="139" y2="-147.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="135" y1="-148.0" x2="132" y2="-149.0" />
-  <line stroke="#0000CD" stroke-width="1" x1="128" y1="-150.0" x2="125" y2="-150.0" />
-  <line stroke="#32CD32" stroke-width="1" x1="143" y1="-223.0" x2="140" y2="-224.0" />
-  <line stroke="#32CD32" stroke-width="1" x1="136" y1="-226.0" x2="133" y2="-228.0" />
-  <line stroke="#32CD32" stroke-width="1" x1="129" y1="-230.0" x2="126" y2="-231.0" />
-  <line stroke="#32CD32" stroke-width="1" x1="122" y1="-233.0" x2="119" y2="-235.0" />
-  <line stroke="#32CD32" stroke-width="1" x1="115" y1="-237.0" x2="112" y2="-238.0" />
-  <text x="18" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +childOf 0..*
-  </text>
-  <text x="46" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    TypeHierarchy
-  </text>
-  <text x="62" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +parentOf 0..*
-  </text>
-  <text x="17" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +childOf 0..*
-  </text>
-  <text x="41" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    LocationHierarchy
-  </text>
-  <text x="86" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +parentOf 0..*
-  </text>
-  <text x="33" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +comprises
-  </text>
-  <text x="112" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1..*
-  </text>
-  <text x="111" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Comprises
-  </text>
-  <text x="14" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +incorporatedIn
-  </text>
-  <text x="109" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1..*
-  </text>
-  <text x="270" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +component
-  </text>
-  <text x="338" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1..*
-  </text>
-  <text x="338" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    {ordered}
-  </text>
-  <text x="341" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1
-  </text>
-  <text x="386" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +parentOf 0..*
-  </text>
-  <text x="422" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    PeriodHierarchy
-  </text>
-  <text x="474" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +childOf 0..*
-  </text>
-  <text x="438" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +parentOf 1
-  </text>
-  <text x="445" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    TypeHierarchy
-  </text>
-  <text x="472" y="-877.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +childOf 1
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="176" y="-114.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="193" y="-114.2" font-size="12" font-weight="400">
+    <![CDATA[/rsid: RSID [1..*] {ordered}]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="206" y="-91.2" font-size="12" font-weight="400">
+    <![CDATA[(from Coordinate Data Types)]]>
+  </text>
+  <path fill="#FFFFFF" stroke="#0000CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 20 -191.0 L 20 -137.0 L 120 -137.0 L 120 -179.0 L 108 -191.0 Z " fill-rule="evenodd" />
+  <path fill="#DCDCDC" stroke="#0000CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 108 -191.0 L 108 -179.0 L 120 -179.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-166.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19107 Ed 2]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-153.2" font-size="12" font-weight="400">
+    <![CDATA[CoordinateDataType::]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-140.2" font-size="12" font-weight="400">
+    <![CDATA[DirectPosition]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="144" y="-212.0" width="239" height="57" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="241" y="-253.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="208" y="-240.2" font-size="12" font-weight="400">
+    <![CDATA[Coordinates::CoordinateSet]]>
+  </text>
+  <line stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="144" y1="-233.0" x2="383" y2="-233.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="149" y="-218.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="166" y="-218.2" font-size="12" font-weight="400">
+    <![CDATA[coordinateTuple: DirectPosition [1..*] {ordered}]]>
+  </text>
+  <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 20 -270.0 L 20 -227.0 L 110 -227.0 L 110 -258.0 L 98 -270.0 Z " fill-rule="evenodd" />
+  <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 98 -270.0 L 98 -258.0 L 110 -258.0 Z " fill-rule="evenodd" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-245.2" font-size="12" font-weight="400">
+    <![CDATA[cf. ISO 19111 Ed 3]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-232.2" font-size="12" font-weight="400">
+    <![CDATA[coordinateTuple]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="285" y="-747.0" width="255" height="62" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="410" y="-796.2" font-size="12" font-weight="400">
+    <![CDATA[RSUsingZonalIdentifiersPrimitive]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="390" y="-777.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="312" y="-764.2" font-size="12" font-weight="400">
+    <![CDATA[TemporalReferenceSystemUsingPeriodIdentifiers]]>
+  </text>
+  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 20 -88.0 L 20 -48.0 L 160 -48.0 L 160 -76.0 L 148 -88.0 Z " fill-rule="evenodd" />
+  <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 148 -88.0 L 148 -76.0 L 160 -76.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-63.2" font-size="12" font-weight="400">
+    <![CDATA[KEY:]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="328" y="-48.0" width="87" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="339" y="-59.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="362" y="-63.2" font-size="12" font-weight="400">
+    <![CDATA[19112 Ed 2]]>
+  </text>
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="370" y="-89.2" font-size="12" font-weight="400">
+    <![CDATA[ ]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="60" y="-48.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="71" y="-59.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="94" y="-63.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19107 Ed 2]]>
+  </text>
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="111" y="-89.2" font-size="12" font-weight="400">
+    <![CDATA[ ]]>
+  </text>
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="97" y1="-668.0" x2="96" y2="-746.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 101 -736.0 L 96 -746.0 L 91 -736.0 L 96 -726.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="96" y1="-726.0" x2="102" y2="-711.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="96" y1="-726.0" x2="90" y2="-711.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="97" y1="-668.0" x2="103" y2="-683.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="97" y1="-668.0" x2="91" y2="-683.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="17" y1="-615.0" x2="17" y2="-567.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="17" y1="-567.0" x2="133" y2="-567.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="133" y1="-567.0" x2="133" y2="-615.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="133" y1="-615.0" x2="139" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="133" y1="-615.0" x2="127" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="17" y1="-615.0" x2="11" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="17" y1="-615.0" x2="23" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="75" y1="-445.0" x2="11" y2="-445.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="11" y1="-445.0" x2="11" y2="-369.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="11" y1="-369.0" x2="155" y2="-369.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="155" y1="-369.0" x2="155" y2="-405.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="155" y1="-405.0" x2="161" y2="-390.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="155" y1="-405.0" x2="149" y2="-390.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="75" y1="-445.0" x2="60" y2="-451.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="75" y1="-445.0" x2="60" y2="-439.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="149" y1="-533.0" x2="149" y2="-614.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 154 -604.0 L 149 -614.0 L 144 -604.0 L 149 -594.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="208" y1="-533.0" x2="209" y2="-746.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 214 -736.0 L 209 -746.0 L 204 -736.0 L 209 -726.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="395" y1="-533.0" x2="395" y2="-614.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 400 -604.0 L 395 -614.0 L 390 -604.0 L 395 -594.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="373" y1="-405.0" x2="373" y2="-368.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="373" y1="-368.0" x2="534" y2="-368.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="534" y1="-368.0" x2="534" y2="-443.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="534" y1="-443.0" x2="472" y2="-443.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="472" y1="-443.0" x2="487" y2="-449.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="472" y1="-443.0" x2="487" y2="-437.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="373" y1="-405.0" x2="367" y2="-390.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="373" y1="-405.0" x2="379" y2="-390.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="330" y1="-533.0" x2="329" y2="-746.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 334 -736.0 L 329 -746.0 L 324 -736.0 L 329 -726.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="428" y1="-615.0" x2="428" y2="-567.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="428" y1="-567.0" x2="521" y2="-567.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="521" y1="-567.0" x2="521" y2="-615.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="521" y1="-615.0" x2="527" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="521" y1="-615.0" x2="515" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="428" y1="-615.0" x2="422" y2="-600.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="428" y1="-615.0" x2="434" y2="-600.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="170" y1="-139.0" x2="167" y2="-139.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="163" y1="-140.0" x2="160" y2="-141.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="156" y1="-142.0" x2="153" y2="-143.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="149" y1="-144.0" x2="146" y2="-145.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="142" y1="-146.0" x2="139" y2="-147.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="135" y1="-148.0" x2="132" y2="-149.0" />
+  <line stroke="#0000CD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="128" y1="-150.0" x2="125" y2="-150.0" />
+  <line stroke="#32CD32" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="143" y1="-223.0" x2="140" y2="-224.0" />
+  <line stroke="#32CD32" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="136" y1="-226.0" x2="133" y2="-228.0" />
+  <line stroke="#32CD32" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="129" y1="-230.0" x2="126" y2="-231.0" />
+  <line stroke="#32CD32" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="122" y1="-233.0" x2="119" y2="-235.0" />
+  <line stroke="#32CD32" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="115" y1="-237.0" x2="112" y2="-238.0" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="18" y="-584.2" font-size="12" font-weight="400">
+    <![CDATA[+childOf 0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="46" y="-570.2" font-size="12" font-weight="400">
+    <![CDATA[TypeHierarchy]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="62" y="-600.2" font-size="12" font-weight="400">
+    <![CDATA[+parentOf 0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="17" y="-456.2" font-size="12" font-weight="400">
+    <![CDATA[+childOf 0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="41" y="-372.2" font-size="12" font-weight="400">
+    <![CDATA[LocationHierarchy]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="86" y="-393.2" font-size="12" font-weight="400">
+    <![CDATA[+parentOf 0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="33" y="-671.2" font-size="12" font-weight="400">
+    <![CDATA[+comprises]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="112" y="-670.2" font-size="12" font-weight="400">
+    <![CDATA[1..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="111" y="-706.2" font-size="12" font-weight="400">
+    <![CDATA[Comprises]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="14" y="-736.2" font-size="12" font-weight="400">
+    <![CDATA[+incorporatedIn]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="109" y="-735.2" font-size="12" font-weight="400">
+    <![CDATA[1..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="270" y="-539.2" font-size="12" font-weight="400">
+    <![CDATA[+component]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="338" y="-551.2" font-size="12" font-weight="400">
+    <![CDATA[1..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="338" y="-538.2" font-size="12" font-weight="400">
+    <![CDATA[{ordered}]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="341" y="-730.2" font-size="12" font-weight="400">
+    <![CDATA[1]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="386" y="-390.2" font-size="12" font-weight="400">
+    <![CDATA[+parentOf 0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="422" y="-371.2" font-size="12" font-weight="400">
+    <![CDATA[PeriodHierarchy]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="474" y="-456.2" font-size="12" font-weight="400">
+    <![CDATA[+childOf 0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="438" y="-600.2" font-size="12" font-weight="400">
+    <![CDATA[+parentOf 1]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="445" y="-570.2" font-size="12" font-weight="400">
+    <![CDATA[TypeHierarchy]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="472" y="-586.2" font-size="12" font-weight="400">
+    <![CDATA[+childOf 1]]>
   </text>
   
 </svg>

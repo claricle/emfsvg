@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="36" viewBox="1 1 54 36" version="1.1">
   <g transform="translate(0.000000 0.000000) scale(0.038251 0.037811) translate(0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="4" d="M 1429 970 L 1199 635 L 1235 582 L 1261 538 L 1279 485 L 1279 432 L 1279 388 L 1270 353 L 1252 309 L 1235 273 L 1173 212 L 1102 150 L 1005 106 L 900 62 L 785 44 L 661 35 L 529 44 L 415 62 L 309 106 L 220 150 L 141 212 L 79 273 L 62 309 L 44 353 L 35 388 L 35 432 L 35 467 L 44 511 L 62 547 L 79 582 L 141 652 L 220 714 L 309 758 L 415 793 L 529 820 L 661 829 L 767 820 L 873 802 L 970 776 L 1058 732 L 1429 970 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 617 432 L 362 247 L 353 203 L 335 185 L 326 176 L 317 185 L 309 203 L 309 220 L 317 238 L 291 238 L 282 238 L 265 256 L 265 273 L 291 282 L 335 282 L 591 467 L 617 432 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 670 432 L 917 247 L 935 203 L 944 185 L 952 176 L 961 185 L 979 203 L 979 220 L 970 238 L 988 238 L 1005 247 L 1023 264 L 1023 273 L 1014 282 L 988 282 L 944 282 L 697 467 L 670 432 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 617 458 L 362 644 L 353 688 L 335 714 L 326 714 L 317 705 L 309 688 L 309 670 L 317 652 L 291 652 L 282 652 L 265 635 L 265 626 L 265 617 L 291 608 L 335 608 L 591 423 L 617 458 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 670 458 L 917 644 L 935 688 L 944 705 L 952 714 L 961 705 L 979 688 L 979 670 L 970 652 L 988 652 L 1005 644 L 1023 626 L 1023 617 L 1014 608 L 988 608 L 944 608 L 697 423 L 670 458 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 644 696 L 732 696 L 750 696 L 758 688 L 758 644 L 750 555 L 758 538 L 776 511 L 829 458 L 855 423 L 882 388 L 900 353 L 908 309 L 891 264 L 882 229 L 855 194 L 820 159 L 776 132 L 714 115 L 644 106 L 573 115 L 512 132 L 467 159 L 432 194 L 406 229 L 388 256 L 379 309 L 388 353 L 406 388 L 432 423 L 459 450 L 512 511 L 529 538 L 538 555 L 529 644 L 520 670 L 529 679 L 538 696 L 556 696 L 644 696 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="none" d="M 529 326 L 529 370 L 520 388 L 503 388 L 485 388 L 476 370 L 459 353 L 459 326 L 459 300 L 476 282 L 485 273 L 503 264 L 520 273 L 529 282 L 529 326 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="none" d="M 750 326 L 750 370 L 758 388 L 776 388 L 794 388 L 811 370 L 820 353 L 820 326 L 820 309 L 811 282 L 794 273 L 776 264 L 758 273 L 750 282 L 750 326 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="none" d="M 679 450 L 670 414 L 661 406 L 653 414 L 644 441 L 644 476 L 653 511 L 670 511 L 679 450 Z " fill-rule="nonzero" />
-  <path fill="#FFFFFF" stroke="none" d="M 600 450 L 609 414 L 617 406 L 626 414 L 635 441 L 635 467 L 635 511 L 609 511 L 600 450 Z " fill-rule="nonzero" />
-  <path stroke="#FFFFFF" stroke-width="2" d="M 538 564 L 573 582 L 626 591 L 697 582 L 750 564 " />
-  <path stroke="#FFFFFF" stroke-width="2" d="M 538 626 L 573 635 L 626 644 L 670 635 L 750 626 " />
-  <path stroke="#FFFFFF" stroke-width="2" d="M 564 582 L 564 626 " />
-  <path stroke="#FFFFFF" stroke-width="2" d="M 600 582 L 600 644 " />
-  <path stroke="#FFFFFF" stroke-width="2" d="M 653 591 L 653 635 " />
-  <path stroke="#FFFFFF" stroke-width="2" d="M 706 582 L 706 626 " />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 1429 970 L 1199 635 L 1235 582 L 1261 538 L 1279 485 L 1279 432 L 1279 388 L 1270 353 L 1252 309 L 1235 273 L 1173 212 L 1102 150 L 1005 106 L 900 62 L 785 44 L 661 35 L 529 44 L 415 62 L 309 106 L 220 150 L 141 212 L 79 273 L 62 309 L 44 353 L 35 388 L 35 432 L 35 467 L 44 511 L 62 547 L 79 582 L 141 652 L 220 714 L 309 758 L 415 793 L 529 820 L 661 829 L 767 820 L 873 802 L 970 776 L 1058 732 L 1429 970 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 617 432 L 362 247 L 353 203 L 335 185 L 326 176 L 317 185 L 309 203 L 309 220 L 317 238 L 291 238 L 282 238 L 265 256 L 265 273 L 291 282 L 335 282 L 591 467 L 617 432 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 670 432 L 917 247 L 935 203 L 944 185 L 952 176 L 961 185 L 979 203 L 979 220 L 970 238 L 988 238 L 1005 247 L 1023 264 L 1023 273 L 1014 282 L 988 282 L 944 282 L 697 467 L 670 432 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 617 458 L 362 644 L 353 688 L 335 714 L 326 714 L 317 705 L 309 688 L 309 670 L 317 652 L 291 652 L 282 652 L 265 635 L 265 626 L 265 617 L 291 608 L 335 608 L 591 423 L 617 458 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 670 458 L 917 644 L 935 688 L 944 705 L 952 714 L 961 705 L 979 688 L 979 670 L 970 652 L 988 652 L 1005 644 L 1023 626 L 1023 617 L 1014 608 L 988 608 L 944 608 L 697 423 L 670 458 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 644 696 L 732 696 L 750 696 L 758 688 L 758 644 L 750 555 L 758 538 L 776 511 L 829 458 L 855 423 L 882 388 L 900 353 L 908 309 L 891 264 L 882 229 L 855 194 L 820 159 L 776 132 L 714 115 L 644 106 L 573 115 L 512 132 L 467 159 L 432 194 L 406 229 L 388 256 L 379 309 L 388 353 L 406 388 L 432 423 L 459 450 L 512 511 L 529 538 L 538 555 L 529 644 L 520 670 L 529 679 L 538 696 L 556 696 L 644 696 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke-width="1px" stroke="#FFFFFF" d="M 529 326 L 529 370 L 520 388 L 503 388 L 485 388 L 476 370 L 459 353 L 459 326 L 459 300 L 476 282 L 485 273 L 503 264 L 520 273 L 529 282 L 529 326 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke-width="1px" stroke="#FFFFFF" d="M 750 326 L 750 370 L 758 388 L 776 388 L 794 388 L 811 370 L 820 353 L 820 326 L 820 309 L 811 282 L 794 273 L 776 264 L 758 273 L 750 282 L 750 326 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke-width="1px" stroke="#FFFFFF" d="M 679 450 L 670 414 L 661 406 L 653 414 L 644 441 L 644 476 L 653 511 L 670 511 L 679 450 Z " fill-rule="nonzero" />
+  <path fill="#FFFFFF" stroke-width="1px" stroke="#FFFFFF" d="M 600 450 L 609 414 L 617 406 L 626 414 L 635 441 L 635 467 L 635 511 L 609 511 L 600 450 Z " fill-rule="nonzero" />
+  <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 538 564 L 573 582 L 626 591 L 697 582 L 750 564 " />
+  <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 538 626 L 573 635 L 626 644 L 670 635 L 750 626 " />
+  <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 564 582 L 564 626 " />
+  <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 600 582 L 600 644 " />
+  <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 653 591 L 653 635 " />
+  <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M 706 582 L 706 626 " />
   </g>
   
 </svg>

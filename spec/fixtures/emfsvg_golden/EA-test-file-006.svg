@@ -1,292 +1,292 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="589" height="689" viewBox="1 -679 589 689" version="1.1">
   <!-- Wine/Sparx Y-repair: top=-679 bottom=10 -->
-  <line stroke="#000000" stroke-width="0" x1="-4" y1="-685.0" x2="-4" y2="-7.0" />
-  <line stroke="#000000" stroke-width="0" x1="-4" y1="-7.0" x2="585" y2="-7.0" />
-  <line stroke="#000000" stroke-width="0" x1="585" y1="-7.0" x2="585" y2="-685.0" />
-  <line stroke="#000000" stroke-width="0" x1="585" y1="-685.0" x2="-4" y2="-685.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -4 -665.0 L 298 -665.0 L 311 -679.0 L 311 -685.0 L -4 -685.0 L -4 -665.0 Z " fill-rule="evenodd" />
-  <text x="1" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    class Fig: DGGS Core - Components of Core Quantization Functions module
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-4" y1="-685.0" x2="-4" y2="-7.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-4" y1="-7.0" x2="585" y2="-7.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="585" y1="-7.0" x2="585" y2="-685.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="585" y1="-685.0" x2="-4" y2="-685.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M -4 -665.0 L 298 -665.0 L 311 -679.0 L 311 -685.0 L -4 -685.0 L -4 -665.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="1" y="-671.2" font-size="12" font-weight="400">
+    <![CDATA[class Fig: DGGS Core - Components of Core Quantization Functions module]]>
   </text>
-  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 190 -91.0 L 190 -50.0 L 326 -50.0 L 326 -79.0 L 314 -91.0 Z " fill-rule="evenodd" />
-  <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 314 -91.0 L 314 -79.0 L 326 -79.0 Z " fill-rule="evenodd" />
-  <text x="195" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    KEY:
+  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 190 -91.0 L 190 -50.0 L 326 -50.0 L 326 -79.0 L 314 -91.0 Z " fill-rule="evenodd" />
+  <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 314 -91.0 L 314 -79.0 L 326 -79.0 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="195" y="-66.2" font-size="12" font-weight="400">
+    <![CDATA[KEY:]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="310" y="-50.0" width="93" height="58" rx="3.0" ry="3.0" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="321" y="-61.0" width="16" height="16" />
-  <text x="344" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-    ISO 19170-1
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="310" y="-50.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="321" y="-61.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="344" y="-65.2" font-size="12" font-weight="400">
+    <![CDATA[ISO 19170-1]]>
   </text>
-  <text x="355" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-     
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="355" y="-91.2" font-size="12" font-weight="400">
+    <![CDATA[ ]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="221" y="-50.0" width="85" height="56" rx="3.0" ry="3.0" />
-  <rect fill="#FFD700" stroke="#000000" stroke-width="1" x="231" y="-60.0" width="16" height="16" />
-  <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-    19156 Ed 1
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="221" y="-50.0" width="85" height="56" rx="3.0" ry="3.0" />
+  <rect fill="#FFD700" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="231" y="-60.0" width="16" height="16" />
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="253" y="-64.2" font-size="12" font-weight="400">
+    <![CDATA[19156 Ed 1]]>
   </text>
-  <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
-     
+  <text font-family="Carlito" fill="#003060" text-anchor="start" style="white-space:pre;" x="262" y="-89.2" font-size="12" font-weight="400">
+    <![CDATA[ ]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-473.0" width="222" height="61" />
-  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="179" y="-473.0" width="222" height="61" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="268" y="-518.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="242" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    DataAssignmentProcess
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="242" y="-505.2" font-size="12" font-weight="400">
+    <![CDATA[DataAssignmentProcess]]>
   </text>
-  <line stroke="#000000" stroke-width="2" x1="179" y1="-498.0" x2="401" y2="-498.0" />
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="179" y1="-498.0" x2="401" y2="-498.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="184" y="-483.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    cellContext: QuantizationContext
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="201" y="-483.2" font-size="12" font-weight="400">
+    <![CDATA[cellContext: QuantizationContext]]>
   </text>
-  <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="21" y="-473.0" width="133" height="61" />
-  <text x="61" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    observation::
+  <rect fill="#FEE350" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="21" y="-473.0" width="133" height="61" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="61" y="-515.2" font-size="12" font-weight="400">
+    <![CDATA[observation::]]>
   </text>
-  <text x="47" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ObservationContext
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="47" y="-502.2" font-size="12" font-weight="400">
+    <![CDATA[ObservationContext]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-575.0" width="222" height="75" />
-  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="179" y="-575.0" width="222" height="75" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="268" y="-634.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
   </text>
-  <text x="246" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    QuantizationFunctions
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="246" y="-621.2" font-size="12" font-weight="400">
+    <![CDATA[QuantizationFunctions]]>
   </text>
-  <line stroke="#000000" stroke-width="2" x1="179" y1="-614.0" x2="401" y2="-614.0" />
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="179" y1="-614.0" x2="401" y2="-614.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="184" y="-599.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    cellContext: Quantization [1..6]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="201" y="-599.2" font-size="12" font-weight="400">
+    <![CDATA[cellContext: Quantization [1..6]]]>
   </text>
-  <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="427" y="-473.0" width="133" height="61" />
-  <text x="463" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «FeatureType»
+  <rect fill="#FEE350" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="427" y="-473.0" width="133" height="61" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="463" y="-518.2" font-size="12" font-weight="400">
+    <![CDATA[«FeatureType»]]>
   </text>
-  <text x="441" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    observation::OM_Process
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="441" y="-505.2" font-size="12" font-weight="400">
+    <![CDATA[observation::OM_Process]]>
   </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="20" y="-218.0" width="100" height="119" />
-  <text x="49" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «CodeList»
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="20" y="-218.0" width="100" height="119" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="49" y="-321.2" font-size="12" font-weight="400">
+    <![CDATA[«CodeList»]]>
   </text>
-  <text x="45" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Quantization
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="45" y="-308.2" font-size="12" font-weight="400">
+    <![CDATA[Quantization]]>
   </text>
-  <line stroke="#000000" stroke-width="1" x1="20" y1="-301.0" x2="120" y2="-301.0" />
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="20" y1="-301.0" x2="120" y2="-301.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-286.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    asCoordinates
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-286.2" font-size="12" font-weight="400">
+    <![CDATA[asCoordinates]]>
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-273.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    asDataCells
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-273.2" font-size="12" font-weight="400">
+    <![CDATA[asDataCells]]>
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-260.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    asDataTiles
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-260.2" font-size="12" font-weight="400">
+    <![CDATA[asDataTiles]]>
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-247.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    asGraphicCells
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-247.2" font-size="12" font-weight="400">
+    <![CDATA[asGraphicCells]]>
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-234.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    asGraphicTiles
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-234.2" font-size="12" font-weight="400">
+    <![CDATA[asGraphicTiles]]>
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-221.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    asTags
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-221.2" font-size="12" font-weight="400">
+    <![CDATA[asTags]]>
   </text>
-  <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="222" y="-371.0" width="133" height="61" />
-  <text x="307" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    AnyFeature
-  </text>
-  <text x="258" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «FeatureType»
-  </text>
-  <text x="226" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    observation::OM_Observation
-  </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="20" y="-371.0" width="179" height="61" />
-  <text x="87" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
-  </text>
-  <text x="69" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    QuantizationContext
-  </text>
-  <line stroke="#000000" stroke-width="1" x1="20" y1="-396.0" x2="199" y2="-396.0" />
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    role: Quantization
-  </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="323" y="-99.0" width="237" height="84" />
-  <text x="419" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
-  </text>
-  <text x="349" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Core RS using Zonal Identifiers with Structured
-  </text>
-  <text x="411" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Geometry::Cell
-  </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="21" y="-99.0" width="237" height="84" />
-  <text x="117" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
-  </text>
-  <text x="76" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Zonal RS using Identifiers::Zone
-  </text>
-  <line stroke="#000000" stroke-width="1" x1="21" y1="-147.0" x2="258" y2="-147.0" />
-  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    /extent: EX_Extent
-  </text>
-  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    identifier: ZonalIdentifier
-  </text>
-  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    representativePosition: DirectPosition [1..4] {ordered}
-  </text>
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-235.0" width="222" height="84" />
-  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «interface»
-  </text>
-  <text x="254" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    DGG_Observation
-  </text>
-  <line stroke="#000000" stroke-width="2" x1="179" y1="-283.0" x2="401" y2="-283.0" />
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    field: OM_Observation [1..*]
-  </text>
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
-  </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    identifier: ZonalIdentifier [1..*]
-  </text>
-  <line stroke="#000000" stroke-width="1" x1="291" y1="-536.0" x2="291" y2="-574.0" />
-  <line stroke="#000000" stroke-width="1" x1="291" y1="-574.0" x2="297" y2="-559.0" />
-  <line stroke="#000000" stroke-width="1" x1="291" y1="-574.0" x2="285" y2="-559.0" />
-  <line stroke="#000000" stroke-width="1" x1="403" y1="-502.0" x2="427" y2="-502.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 411 -496.0 L 411 -508.0 L 427 -502.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="289" y1="-371.0" x2="289" y2="-321.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 284 -331.0 L 289 -321.0 L 294 -331.0 L 289 -341.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="289" y1="-371.0" x2="283" y2="-356.0" />
-  <line stroke="#000000" stroke-width="1" x1="289" y1="-371.0" x2="295" y2="-356.0" />
-  <line stroke="#000000" stroke-width="1" x1="356" y1="-400.0" x2="500" y2="-473.0" />
-  <line stroke="#000000" stroke-width="1" x1="500" y1="-473.0" x2="489" y2="-461.0" />
-  <line stroke="#000000" stroke-width="1" x1="500" y1="-473.0" x2="484" y2="-472.0" />
-  <line stroke="#000000" stroke-width="1" x1="111" y1="-433.0" x2="87" y2="-473.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 100 -462.0 L 90 -456.0 L 87 -473.0 Z " fill-rule="evenodd" />
-  <line stroke="#000000" stroke-width="1" x1="259" y1="-178.0" x2="266" y2="-178.0" />
-  <line stroke="#000000" stroke-width="1" x1="270" y1="-178.0" x2="277" y2="-178.0" />
-  <line stroke="#000000" stroke-width="1" x1="281" y1="-178.0" x2="288" y2="-178.0" />
-  <line stroke="#000000" stroke-width="1" x1="292" y1="-178.0" x2="299" y2="-178.0" />
-  <line stroke="#000000" stroke-width="1" x1="303" y1="-178.0" x2="310" y2="-178.0" />
-  <line stroke="#000000" stroke-width="1" x1="314" y1="-178.0" x2="321" y2="-178.0" />
-  <line stroke="#000000" stroke-width="1" x1="259" y1="-178.0" x2="274" y2="-183.0" />
-  <line stroke="#000000" stroke-width="1" x1="259" y1="-178.0" x2="274" y2="-173.0" />
-  <line stroke="#000000" stroke-width="1" x1="323" y1="-178.0" x2="308" y2="-183.0" />
-  <line stroke="#000000" stroke-width="1" x1="323" y1="-178.0" x2="308" y2="-173.0" />
-  <line stroke="#000000" stroke-width="1" x1="372" y1="-234.0" x2="379" y2="-229.0" />
-  <line stroke="#000000" stroke-width="1" x1="383" y1="-226.0" x2="390" y2="-221.0" />
-  <line stroke="#000000" stroke-width="1" x1="394" y1="-218.0" x2="401" y2="-213.0" />
-  <line stroke="#000000" stroke-width="1" x1="405" y1="-210.0" x2="412" y2="-205.0" />
-  <line stroke="#000000" stroke-width="1" x1="416" y1="-202.0" x2="423" y2="-197.0" />
-  <line stroke="#000000" stroke-width="1" x1="427" y1="-194.0" x2="434" y2="-189.0" />
-  <line stroke="#000000" stroke-width="1" x1="438" y1="-186.0" x2="440" y2="-184.0" />
-  <line stroke="#000000" stroke-width="1" x1="440" y1="-184.0" x2="431" y2="-197.0" />
-  <line stroke="#000000" stroke-width="1" x1="440" y1="-184.0" x2="425" y2="-189.0" />
-  <line stroke="#000000" stroke-width="1" x1="203" y1="-234.0" x2="196" y2="-229.0" />
-  <line stroke="#000000" stroke-width="1" x1="192" y1="-225.0" x2="185" y2="-220.0" />
-  <line stroke="#000000" stroke-width="1" x1="181" y1="-216.0" x2="174" y2="-211.0" />
-  <line stroke="#000000" stroke-width="1" x1="170" y1="-207.0" x2="163" y2="-202.0" />
-  <line stroke="#000000" stroke-width="1" x1="159" y1="-198.0" x2="152" y2="-193.0" />
-  <line stroke="#000000" stroke-width="1" x1="148" y1="-189.0" x2="142" y2="-184.0" />
-  <line stroke="#000000" stroke-width="1" x1="142" y1="-184.0" x2="157" y2="-190.0" />
-  <line stroke="#000000" stroke-width="1" x1="142" y1="-184.0" x2="150" y2="-197.0" />
-  <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +data
-  </text>
-  <text x="304" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    0..*
-  </text>
-  <text x="297" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1..*
-  </text>
-  <text x="379" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +generatedObservation
-  </text>
-  <text x="359" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    0..*
-  </text>
-  <text x="418" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    ProcessUsed
-  </text>
-  <text x="515" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +procedure
-  </text>
-  <text x="506" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1
-  </text>
-  <text x="442" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +sampling feature geometry
-  </text>
-  <text x="18" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +sampling feature identifier
-  </text>
-  <text x="206" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +identifier
-  </text>
-  <text x="294" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1..*
-  </text>
-  <text x="327" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +topology
-  </text>
-  <text x="315" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1
-  </text>
-  <text x="267" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Realisation
-  </text>
-  <text x="218" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +position
-  </text>
-  <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    1
+  <rect fill="#FEE350" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="222" y="-371.0" width="133" height="61" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="307" y="-419.2" font-size="12" font-weight="400">
+    <![CDATA[AnyFeature]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="258" y="-400.2" font-size="12" font-weight="400">
+    <![CDATA[«FeatureType»]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="226" y="-387.2" font-size="12" font-weight="400">
+    <![CDATA[observation::OM_Observation]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="20" y="-371.0" width="179" height="61" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="87" y="-416.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="69" y="-403.2" font-size="12" font-weight="400">
+    <![CDATA[QuantizationContext]]>
+  </text>
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="20" y1="-396.0" x2="199" y2="-396.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="25" y="-381.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="42" y="-381.2" font-size="12" font-weight="400">
+    <![CDATA[role: Quantization]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="323" y="-99.0" width="237" height="84" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="419" y="-167.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="349" y="-154.2" font-size="12" font-weight="400">
+    <![CDATA[Core RS using Zonal Identifiers with Structured]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="411" y="-141.2" font-size="12" font-weight="400">
+    <![CDATA[Geometry::Cell]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="21" y="-99.0" width="237" height="84" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="117" y="-167.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="76" y="-154.2" font-size="12" font-weight="400">
+    <![CDATA[Zonal RS using Identifiers::Zone]]>
+  </text>
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="21" y1="-147.0" x2="258" y2="-147.0" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="26" y="-132.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="43" y="-132.2" font-size="12" font-weight="400">
+    <![CDATA[/extent: EX_Extent]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="26" y="-119.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="43" y="-119.2" font-size="12" font-weight="400">
+    <![CDATA[identifier: ZonalIdentifier]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="26" y="-106.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="43" y="-106.2" font-size="12" font-weight="400">
+    <![CDATA[representativePosition: DirectPosition [1..4] {ordered}]]>
+  </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="179" y="-235.0" width="222" height="84" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="268" y="-303.2" font-size="12" font-weight="400">
+    <![CDATA[«interface»]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="254" y="-290.2" font-size="12" font-weight="400">
+    <![CDATA[DGG_Observation]]>
+  </text>
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="179" y1="-283.0" x2="401" y2="-283.0" />
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="184" y="-268.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="201" y="-268.2" font-size="12" font-weight="400">
+    <![CDATA[field: OM_Observation [1..*]]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="184" y="-255.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
+  </text>
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="201" y="-255.2" font-size="12" font-weight="400">
+    <![CDATA[identifier: ZonalIdentifier [1..*]]]>
+  </text>
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="291" y1="-536.0" x2="291" y2="-574.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="291" y1="-574.0" x2="297" y2="-559.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="291" y1="-574.0" x2="285" y2="-559.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="403" y1="-502.0" x2="427" y2="-502.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 411 -496.0 L 411 -508.0 L 427 -502.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="289" y1="-371.0" x2="289" y2="-321.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 284 -331.0 L 289 -321.0 L 294 -331.0 L 289 -341.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="289" y1="-371.0" x2="283" y2="-356.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="289" y1="-371.0" x2="295" y2="-356.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="356" y1="-400.0" x2="500" y2="-473.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="500" y1="-473.0" x2="489" y2="-461.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="500" y1="-473.0" x2="484" y2="-472.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="111" y1="-433.0" x2="87" y2="-473.0" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 100 -462.0 L 90 -456.0 L 87 -473.0 Z " fill-rule="evenodd" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="259" y1="-178.0" x2="266" y2="-178.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="270" y1="-178.0" x2="277" y2="-178.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="281" y1="-178.0" x2="288" y2="-178.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="292" y1="-178.0" x2="299" y2="-178.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="303" y1="-178.0" x2="310" y2="-178.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="314" y1="-178.0" x2="321" y2="-178.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="259" y1="-178.0" x2="274" y2="-183.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="259" y1="-178.0" x2="274" y2="-173.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="323" y1="-178.0" x2="308" y2="-183.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="323" y1="-178.0" x2="308" y2="-173.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="372" y1="-234.0" x2="379" y2="-229.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="383" y1="-226.0" x2="390" y2="-221.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="394" y1="-218.0" x2="401" y2="-213.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="405" y1="-210.0" x2="412" y2="-205.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="416" y1="-202.0" x2="423" y2="-197.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="427" y1="-194.0" x2="434" y2="-189.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="438" y1="-186.0" x2="440" y2="-184.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="440" y1="-184.0" x2="431" y2="-197.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="440" y1="-184.0" x2="425" y2="-189.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="203" y1="-234.0" x2="196" y2="-229.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="192" y1="-225.0" x2="185" y2="-220.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="181" y1="-216.0" x2="174" y2="-211.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="170" y1="-207.0" x2="163" y2="-202.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="159" y1="-198.0" x2="152" y2="-193.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="148" y1="-189.0" x2="142" y2="-184.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="142" y1="-184.0" x2="157" y2="-190.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="142" y1="-184.0" x2="150" y2="-197.0" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="253" y="-354.2" font-size="12" font-weight="400">
+    <![CDATA[+data]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="304" y="-354.2" font-size="12" font-weight="400">
+    <![CDATA[0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="297" y="-325.2" font-size="12" font-weight="400">
+    <![CDATA[1..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="379" y="-384.2" font-size="12" font-weight="400">
+    <![CDATA[+generatedObservation]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="359" y="-384.2" font-size="12" font-weight="400">
+    <![CDATA[0..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="418" y="-420.2" font-size="12" font-weight="400">
+    <![CDATA[ProcessUsed]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="515" y="-459.2" font-size="12" font-weight="400">
+    <![CDATA[+procedure]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="506" y="-457.2" font-size="12" font-weight="400">
+    <![CDATA[1]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="442" y="-190.2" font-size="12" font-weight="400">
+    <![CDATA[+sampling feature geometry]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="18" y="-192.2" font-size="12" font-weight="400">
+    <![CDATA[+sampling feature identifier]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="206" y="-221.2" font-size="12" font-weight="400">
+    <![CDATA[+identifier]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="294" y="-542.2" font-size="12" font-weight="400">
+    <![CDATA[1..*]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="327" y="-189.2" font-size="12" font-weight="400">
+    <![CDATA[+topology]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="315" y="-162.2" font-size="12" font-weight="400">
+    <![CDATA[1]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="267" y="-190.2" font-size="12" font-weight="400">
+    <![CDATA[Realisation]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="218" y="-188.2" font-size="12" font-weight="400">
+    <![CDATA[+position]]>
+  </text>
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="262" y="-162.2" font-size="12" font-weight="400">
+    <![CDATA[1]]>
   </text>
   
 </svg>

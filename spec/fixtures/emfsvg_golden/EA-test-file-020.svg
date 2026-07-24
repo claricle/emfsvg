@@ -1,1030 +1,1063 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="628" height="893" viewBox="13 13 628 893" version="1.1">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 240 240 L 240 14464 L 6304 14464 L 6304 240 L 240 240 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 240 14464 L 6304 14464 L 6304 240 L 240 240 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240 240 L 240 14464 L 6304 14464 L 6304 240 L 240 240 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240 14464 L 6304 14464 L 6304 240 L 240 240 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="217" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «FeatureType»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="217" y="-29.2" font-size="12" font-weight="400">
+    <![CDATA[«FeatureType»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="228" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Veglenke
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="228" y="-42.2" font-size="12" font-weight="400">
+    <![CDATA[Veglenke]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" d="M 240 832 L 6288 832 " />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240 832 L 6288 832 " />
   </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-64.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    veglenkeid: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-64.2" font-size="12" font-weight="400">
+    <![CDATA[veglenkeid: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-77.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    kjoreretning: Kjoreretning
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-77.2" font-size="12" font-weight="400">
+    <![CDATA[kjoreretning: Kjoreretning]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-90.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    feltoversikt: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-90.2" font-size="12" font-weight="400">
+    <![CDATA[feltoversikt: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Klassifisering»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="-107.2" font-size="12" font-weight="400">
+    <![CDATA[«Klassifisering»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-120.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    typeveg: TypeVeg
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-120.2" font-size="12" font-weight="400">
+    <![CDATA[typeveg: TypeVeg]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-133.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    funksjonellvegklasse: Vegklasse
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-133.2" font-size="12" font-weight="400">
+    <![CDATA[funksjonellvegklasse: Vegklasse]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-146.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    motorvegtype: Motorvegtype [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-146.2" font-size="12" font-weight="400">
+    <![CDATA[motorvegtype: Motorvegtype [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-159.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    klasselandbruksveg: Landbruksvegklasse [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-159.2" font-size="12" font-weight="400">
+    <![CDATA[klasselandbruksveg: Landbruksvegklasse [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-172.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    serviceveg: JaNei
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-172.2" font-size="12" font-weight="400">
+    <![CDATA[serviceveg: JaNei]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-185.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    beredskapsveg: JaNei
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-185.2" font-size="12" font-weight="400">
+    <![CDATA[beredskapsveg: JaNei]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Fartsgrense»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="-202.2" font-size="12" font-weight="400">
+    <![CDATA[«Fartsgrense»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-215.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrense: FartsgrenseVerdi [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-215.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrense: FartsgrenseVerdi [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-228.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel: FartsgrenseVerdi [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-228.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel: FartsgrenseVerdi [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-241.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel_type: TypeFartsgrenseVariabel [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-241.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel_type: TypeFartsgrenseVariabel [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-254.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel_ukedag: UkedagFartsgrenseVariabel [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-254.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel_ukedag: UkedagFartsgrenseVariabel [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-267.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel_datofra: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-267.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel_datofra: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-280.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel_datotil: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-280.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel_datotil: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-293.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel_klokkesletttil: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-293.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel_klokkesletttil: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-306.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fartsgrensevariabel_klokkeslettfra: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-306.2" font-size="12" font-weight="400">
+    <![CDATA[fartsgrensevariabel_klokkeslettfra: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Begrensninger»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="-323.2" font-size="12" font-weight="400">
+    <![CDATA[«Begrensninger»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-336.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    skiltahoyde: Real [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-336.2" font-size="12" font-weight="400">
+    <![CDATA[skiltahoyde: Real [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-349.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    trafikkreguleringer: TypeTrafikkregulering [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-349.2" font-size="12" font-weight="400">
+    <![CDATA[trafikkreguleringer: TypeTrafikkregulering [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-362.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    trafikkreguleringer_merknad: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-362.2" font-size="12" font-weight="400">
+    <![CDATA[trafikkreguleringer_merknad: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-375.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransporthverdagulordagperiode1frakl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-375.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode1frakl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-388.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransporthverdagulordagperiode1tilkl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-388.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode1tilkl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-401.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransporthverdagulordagperiode2frakl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-401.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode2frakl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-414.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransporthverdagulordagperiode2tilkl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-414.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode2tilkl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-427.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransportlordagperiode1frakl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-427.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransportlordagperiode1frakl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-440.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransportlordagperiode1tilkl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-440.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransportlordagperiode1tilkl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-453.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransportlordagperiode2frakl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-453.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransportlordagperiode2frakl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-466.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransportlordagperiode2tilkl: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-466.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransportlordagperiode2tilkl: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-479.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransportlordagfra: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-479.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransportlordagfra: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-492.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_kjoringtileiendommenetillatt: JaNei [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-492.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_kjoringtileiendommenetillatt: JaNei [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-505.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gagatereguleringer_varetransportlordagtil: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-505.2" font-size="12" font-weight="400">
+    <![CDATA[gagatereguleringer_varetransportlordagtil: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-518.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    bruksklasse_spesialtransport_bruksklassehelår: BruksklasseHelar [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-518.2" font-size="12" font-weight="400">
+    <![CDATA[bruksklasse_spesialtransport_bruksklassehelår: BruksklasseHelar [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-531.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    bruksklasse_spesialtransport_bruksklassevinter: BruksklasseVinter [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-531.2" font-size="12" font-weight="400">
+    <![CDATA[bruksklasse_spesialtransport_bruksklassevinter: BruksklasseVinter [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-544.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    bruksklasse_spesialtransport_maksvogntoglengde: MaksVogntoglengde [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-544.2" font-size="12" font-weight="400">
+    <![CDATA[bruksklasse_spesialtransport_maksvogntoglengde: MaksVogntoglengde [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-557.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    bruksklasse_spesialtransport_veggruppe: Veggruppe [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-557.2" font-size="12" font-weight="400">
+    <![CDATA[bruksklasse_spesialtransport_veggruppe: Veggruppe [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-570.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    bruksklasse_spesialtransport_merknad: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-570.2" font-size="12" font-weight="400">
+    <![CDATA[bruksklasse_spesialtransport_merknad: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Beredskap»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="-587.2" font-size="12" font-weight="400">
+    <![CDATA[«Beredskap»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-600.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    vinterstengt_fradato: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-600.2" font-size="12" font-weight="400">
+    <![CDATA[vinterstengt_fradato: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-613.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    vinterstengt_tildato: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-613.2" font-size="12" font-weight="400">
+    <![CDATA[vinterstengt_tildato: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-626.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    nattestengt_fradato: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-626.2" font-size="12" font-weight="400">
+    <![CDATA[nattestengt_fradato: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-639.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    nattestengt_tildato: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-639.2" font-size="12" font-weight="400">
+    <![CDATA[nattestengt_tildato: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Stedfesting»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="-656.2" font-size="12" font-weight="400">
+    <![CDATA[«Stedfesting»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-669.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    kommunenummer: Kommunenummer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-669.2" font-size="12" font-weight="400">
+    <![CDATA[kommunenummer: Kommunenummer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-682.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    adressekode: Integer [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-682.2" font-size="12" font-weight="400">
+    <![CDATA[adressekode: Integer [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-695.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    adressenavn: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-695.2" font-size="12" font-weight="400">
+    <![CDATA[adressenavn: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-708.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    vegsystemreferanse: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-708.2" font-size="12" font-weight="400">
+    <![CDATA[vegsystemreferanse: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-721.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    vegsystemreferanse_fra_meter: Integer [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-721.2" font-size="12" font-weight="400">
+    <![CDATA[vegsystemreferanse_fra_meter: Integer [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-734.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    vegsystemreferanse_til_meter: Integer [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-734.2" font-size="12" font-weight="400">
+    <![CDATA[vegsystemreferanse_til_meter: Integer [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-747.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    metrert_lengde: Real [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-747.2" font-size="12" font-weight="400">
+    <![CDATA[metrert_lengde: Real [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-760.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    geometrilengde: Real
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-760.2" font-size="12" font-weight="400">
+    <![CDATA[geometrilengde: Real]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-773.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    veglenkesekvensid: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-773.2" font-size="12" font-weight="400">
+    <![CDATA[veglenkesekvensid: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-786.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fra_posisjon: Real
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-786.2" font-size="12" font-weight="400">
+    <![CDATA[fra_posisjon: Real]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-799.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    til_posisjon: Real
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-799.2" font-size="12" font-weight="400">
+    <![CDATA[til_posisjon: Real]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-812.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    superstedfesting_veglenkesekvensid: Integer [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-812.2" font-size="12" font-weight="400">
+    <![CDATA[superstedfesting_veglenkesekvensid: Integer [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-825.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    superstedfesting_fra_posisjon: Real [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-825.2" font-size="12" font-weight="400">
+    <![CDATA[superstedfesting_fra_posisjon: Real [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-838.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    superstedfesting_til_posisjon: Real [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-838.2" font-size="12" font-weight="400">
+    <![CDATA[superstedfesting_til_posisjon: Real [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-851.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fra_node: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-851.2" font-size="12" font-weight="400">
+    <![CDATA[fra_node: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-864.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    til_node: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-864.2" font-size="12" font-weight="400">
+    <![CDATA[til_node: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-877.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    medium: Medium [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-877.2" font-size="12" font-weight="400">
+    <![CDATA[medium: Medium [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="-890.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    senterlinje: Kurve
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="-890.2" font-size="12" font-weight="400">
+    <![CDATA[senterlinje: Kurve]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7184 240 L 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184 240 L 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
   </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="532" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «CodeList»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="532" y="-29.2" font-size="12" font-weight="400">
+    <![CDATA[«CodeList»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="528" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Kjoreretning
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="528" y="-42.2" font-size="12" font-weight="400">
+    <![CDATA[Kjoreretning]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" d="M 7184 832 L 9152 832 " />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184 832 L 9152 832 " />
   </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="497" y="-64.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Med
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="514" y="-64.2" font-size="12" font-weight="400">
+    <![CDATA[Med]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="497" y="-77.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Mot
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="514" y="-77.2" font-size="12" font-weight="400">
+    <![CDATA[Mot]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="497" y="-90.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Begge
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="514" y="-90.2" font-size="12" font-weight="400">
+    <![CDATA[Begge]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 9808 L 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 9808 L 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
   </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="563" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «CodeList»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="563" y="-627.2" font-size="12" font-weight="400">
+    <![CDATA[«CodeList»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="547" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Kommunenummer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="547" y="-640.2" font-size="12" font-weight="400">
+    <![CDATA[Kommunenummer]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 3904 L 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 3904 L 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="554" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «FeatureType»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="554" y="-258.2" font-size="12" font-weight="400">
+    <![CDATA[«FeatureType»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="549" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Svingerestriksjon
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="549" y="-271.2" font-size="12" font-weight="400">
+    <![CDATA[Svingerestriksjon]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" d="M 7120 4496 L 10208 4496 " />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 4496 L 10208 4496 " />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-293.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    merknad: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-293.2" font-size="12" font-weight="400">
+    <![CDATA[merknad: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="500" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Stedfesting»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="500" y="-310.2" font-size="12" font-weight="400">
+    <![CDATA[«Stedfesting»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-323.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fra_veglenkeid: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-323.2" font-size="12" font-weight="400">
+    <![CDATA[fra_veglenkeid: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-336.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    til_veglenkeid: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-336.2" font-size="12" font-weight="400">
+    <![CDATA[til_veglenkeid: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-349.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fra_veglenkesekvensid: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-349.2" font-size="12" font-weight="400">
+    <![CDATA[fra_veglenkesekvensid: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-362.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    fra_posisjon: Real
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-362.2" font-size="12" font-weight="400">
+    <![CDATA[fra_posisjon: Real]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-375.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    til_veglenkesekvensid: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-375.2" font-size="12" font-weight="400">
+    <![CDATA[til_veglenkesekvensid: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-388.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    til_posisjon: Real
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-388.2" font-size="12" font-weight="400">
+    <![CDATA[til_posisjon: Real]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-401.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    posisjon: Punkt
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-401.2" font-size="12" font-weight="400">
+    <![CDATA[posisjon: Punkt]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7104 7056 L 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104 7056 L 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="554" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «FeatureType»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="554" y="-455.2" font-size="12" font-weight="400">
+    <![CDATA[«FeatureType»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="559" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Vegsperring
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="559" y="-468.2" font-size="12" font-weight="400">
+    <![CDATA[Vegsperring]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" d="M 7104 7648 L 10208 7648 " />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104 7648 L 10208 7648 " />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-490.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    type: TypeVegsperring
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-490.2" font-size="12" font-weight="400">
+    <![CDATA[type: TypeVegsperring]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-503.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    funksjon: FunksjonVegsperring [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-503.2" font-size="12" font-weight="400">
+    <![CDATA[funksjon: FunksjonVegsperring [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-516.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    gjeldertidsrom: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-516.2" font-size="12" font-weight="400">
+    <![CDATA[gjeldertidsrom: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-529.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    merknad: CharacterString [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-529.2" font-size="12" font-weight="400">
+    <![CDATA[merknad: CharacterString [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="499" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «Stedfesting»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="499" y="-546.2" font-size="12" font-weight="400">
+    <![CDATA[«Stedfesting»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-559.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    veglenkeid_1: Integer
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-559.2" font-size="12" font-weight="400">
+    <![CDATA[veglenkeid_1: Integer]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-572.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    veglenkeid_2: Integer [0..1]
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-572.2" font-size="12" font-weight="400">
+    <![CDATA[veglenkeid_2: Integer [0..1]]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="-585.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    posisjon: Punkt
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="-585.2" font-size="12" font-weight="400">
+    <![CDATA[posisjon: Punkt]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 11232 L 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 11232 L 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="563" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    «CodeList»
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="563" y="-716.2" font-size="12" font-weight="400">
+    <![CDATA[«CodeList»]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="568" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Medium
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="568" y="-729.2" font-size="12" font-weight="400">
+    <![CDATA[Medium]]>
   </text>
-  <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" d="M 7120 11824 L 10208 11824 " />
-  <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   </g>
+  <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 11824 L 10208 11824 " />
+  </g>
+  <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
+  </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-751.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Alltid i vann = V
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-751.2" font-size="12" font-weight="400">
+    <![CDATA[Alltid i vann = V]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-764.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    I bygning/bygningsmessig anlegg = B
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-764.2" font-size="12" font-weight="400">
+    <![CDATA[I bygning/bygningsmessig anlegg = B]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-777.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    I luft = L
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-777.2" font-size="12" font-weight="400">
+    <![CDATA[I luft = L]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-790.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    På isbre = I
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-790.2" font-size="12" font-weight="400">
+    <![CDATA[På isbre = I]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-803.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    På sjøbunnen = S
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-803.2" font-size="12" font-weight="400">
+    <![CDATA[På sjøbunnen = S]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-816.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    På terrenget/på bakkenivå = T
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-816.2" font-size="12" font-weight="400">
+    <![CDATA[På terrenget/på bakkenivå = T]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-829.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    På vannoverflaten = O
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-829.2" font-size="12" font-weight="400">
+    <![CDATA[På vannoverflaten = O]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-842.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Tidvis under vann = D
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-842.2" font-size="12" font-weight="400">
+    <![CDATA[Tidvis under vann = D]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-855.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Under isbre = J
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-855.2" font-size="12" font-weight="400">
+    <![CDATA[Under isbre = J]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-868.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Under sjøbunnen = W
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-868.2" font-size="12" font-weight="400">
+    <![CDATA[Under sjøbunnen = W]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-881.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Under terrenget = U
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-881.2" font-size="12" font-weight="400">
+    <![CDATA[Under terrenget = U]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    + 
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="-894.2" font-size="12" font-weight="400">
+    <![CDATA[+ ]]>
   </text>
   </g>
   <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
-  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Ukjent = X
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="-894.2" font-size="12" font-weight="400">
+    <![CDATA[Ukjent = X]]>
   </text>
+  </g>
   </g>
-  </g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g>
 </svg>

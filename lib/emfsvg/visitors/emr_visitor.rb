@@ -938,42 +938,53 @@ module Emfsvg
                              .encode("UTF-8", undef: :replace, replace: "?")
                end
 
-        # Position: use WmfRect16 origin (or current pen position).
-        x = wire.wmf_rect_left
-        y = maybe_flip_y(wire.wmf_rect_top)
+        # Position: use ptlReference (the text anchor point per MS-EMF 2.2.6).
+        x = wire.ptl_reference.x
+        y = wire.ptl_reference.y
 
-        # Text alignment from device context.
-        # Horizontal: TA_LEFT=0x00, TA_RIGHT=0x02, TA_CENTER=0x06
-        # Vertical: TA_TOP=0x00, TA_BOTTOM=0x08, TA_BASELINE=0x18
+        # Text alignment (matches libemf2svg text_style_draw).
         align = @dc.text_align
         anchor = case align & 0x06
                  when 0x02 then "end"
                  when 0x06 then "middle"
                  else "start"
                  end
-        baseline = case align & 0x18
-                   when 0x08 then "text-after-edge"
-                   when 0x18 then "alphabetic"
-                   else "text-before-edge"
-                   end
 
         font = @dc.font
+        font_height = font.height.abs
+
+        # Vertical offset: libemf2svg adds font_height * 0.9 for TA_TOP.
+        y_pos = if align.allbits?(0x18) || align.allbits?(0x08)
+                  maybe_flip_y(y)
+                else
+                  maybe_flip_y(y) + (font_height * 0.9)
+                end
+
         attrs = {
-          "x" => x, "y" => y,
           "font-family" => font.face_name,
-          "font-size" => font.height.abs,
           "fill" => @dc.text_color.to_hex,
           "text-anchor" => anchor,
-          "dominant-baseline" => baseline
+          "style" => "white-space:pre;",
+          "x" => x, "y" => y_pos,
+          "font-size" => font_height
         }
-        attrs["font-weight"] = "bold" if font.bold?
+
+        # Font rotation from escapement (tenths of a degree)
+        if font.escapement != 0
+          rotation = -font.escapement / 10
+          attrs["transform"] = format("rotate(%d, %d, %.4f) translate(0, %.4f)",
+                                      rotation, x, y_pos, font_height * 0.9)
+        end
+
+        attrs["font-weight"] = font.weight if font.weight != 0
         attrs["font-style"] = "italic" if font.italic
+
         decorations = []
         decorations << "underline" if font.underline
         decorations << "line-through" if font.strikeout
-        attrs["text-decoration"] = decorations.join(" ") unless decorations.empty?
+        attrs["text-decoration"] = decorations.join(",") unless decorations.empty?
 
-        @builder.tag("text", attrs) { @builder.text(text) }
+        @builder.tag("text", attrs) { @builder.raw("<![CDATA[#{text}]]>") }
       end
 
       def emit_arc(wire, mode:)
@@ -1166,19 +1177,51 @@ module Emfsvg
 
       def stroke_attrs
         pen = @dc.pen
-        return { "stroke" => "none" }.merge(clip_attrs) if pen.null?
+        style = pen.style
 
-        attrs = { "stroke" => pen.color.to_hex, "stroke-width" => pen.width }
-        case pen.style
-        when Pen::DASH
-          attrs["stroke-dasharray"] = "4 2"
-        when Pen::DOT
-          attrs["stroke-dasharray"] = "1 2"
-        when Pen::DASHDOT
-          attrs["stroke-dasharray"] = "4 2 1 2"
-        when Pen::DASHDOTDOT
-          attrs["stroke-dasharray"] = "4 2 1 2 1 2"
+        # NULL pen: libemf2svg falls back to 1px fill-color border
+        # (not stroke="none") unless fill is also null
+        if (style & 0xFF) == Pen::NULL
+          return { "stroke" => "none", "stroke-width" => "0.0" }.merge(clip_attrs) if @dc.brush.null?
+
+          return { "stroke-width" => "1px",
+                   "stroke" => @dc.brush.color.to_hex }.merge(clip_attrs)
+
         end
+
+        w = [pen.width, 1].max
+        attrs = { "stroke" => pen.color.to_hex, "stroke-width" => w }
+
+        # Line style (bits 0-7)
+        dash_len = w * 5
+        dot_len = w
+        case style & 0xFF
+        when Pen::DASH
+          attrs["stroke-dasharray"] = format("%.4f,%.4f", dash_len, dash_len)
+        when Pen::DOT
+          attrs["stroke-dasharray"] = format("%.4f,%.4f", dot_len, dot_len)
+        when Pen::DASHDOT
+          attrs["stroke-dasharray"] = format("%.4f,%.4f,%.4f,%.4f", dash_len, dash_len, dot_len, dash_len)
+        when Pen::DASHDOTDOT
+          attrs["stroke-dasharray"] = format("%.4f,%.4f,%.4f,%.4f,%.4f,%.4f", dash_len, dash_len, dot_len, dot_len, dot_len, dash_len)
+        end
+
+        # Line cap (bits 8-11)
+        case style & 0x0F00
+        when 0x0000 then attrs["stroke-linecap"] = "round" # PS_ENDCAP_ROUND default
+        when 0x0100 then attrs["stroke-linecap"] = "square"
+        when 0x0200 then attrs["stroke-linecap"] = "butt" # PS_ENDCAP_FLAT
+        end
+
+        # Line join (bits 12-15)
+        case style & 0xF000
+        when 0x0000 then attrs["stroke-linejoin"] = "round" # PS_JOIN_ROUND default
+        when 0x1000 then attrs["stroke-linejoin"] = "bevel"
+        when 0x2000
+          attrs["stroke-linejoin"] = "miter"
+          attrs["stroke-miterlimit"] = format("%.4f", @dc.miter_limit) if @dc.miter_limit
+        end
+
         attrs.merge(clip_attrs)
       end
 
@@ -1198,12 +1241,17 @@ module Emfsvg
       end
 
       def emit_transform_group(matrix)
+        # Close previous transform group before opening new one
+        # (matches libemf2svg's transform_draw which closes prior <g>)
+        if @open_groups.positive?
+          @builder.raw("</g>")
+          @open_groups -= 1
+        end
         attrs = {
-          "transform" => format("matrix(%f %f %f %f %f %f)",
+          "transform" => format("matrix(%.4f %.4f %.4f %.4f %.4f %.4f)",
                                 matrix.m11, matrix.m12,
                                 matrix.m21, matrix.m22,
-                                maybe_flip_y(matrix.dy) - matrix.dy + matrix.dy,
-                                matrix.dy)
+                                matrix.dx, matrix.dy)
         }
         @builder.tag("g", attrs)
         @open_groups += 1
