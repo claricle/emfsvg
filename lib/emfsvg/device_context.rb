@@ -21,7 +21,7 @@ module Emfsvg
       @icm_mode = 0
       @layout = 0
       @mapper_flags = 0
-      @arc_direction = 1 # AD_COUNTERCLOCKWISE
+      @arc_direction = 0 # default; set by SetArcDirection (1=CW, -1=CCW in C)
       @clip_region = nil
       @clip_id = nil
       @window_ext = [0, 0]

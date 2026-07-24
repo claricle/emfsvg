@@ -650,7 +650,11 @@ module Emfsvg
       end
 
       def visit_set_arc_direction(wire)
-        @dc.arc_direction = wire.arc_direction
+        # C maps: U_AD_CLOCKWISE (2) → arcdir=1, U_AD_COUNTERCLOCKWISE (1) → arcdir=-1
+        case wire.arc_direction
+        when 2 then @dc.arc_direction = 1   # AD_CLOCKWISE
+        when 1 then @dc.arc_direction = -1  # AD_COUNTERCLOCKWISE
+        end
       end
 
       def visit_realize_palette(_wire); end
@@ -700,8 +704,9 @@ module Emfsvg
         start_angle = wire.start_angle
         sweep_angle = wire.sweep_angle
 
-        # arcdir: 1 = AD_COUNTERCLOCKWISE (sweep=large=0), else 1/1.
-        arcdir = @dc.arc_direction || 1
+        # arcdir: 1 = CLOCKWISE (sweep=large=1), -1 = CCW (sweep=large=0).
+        # Default (0) is treated as not-positive, so sweep=large=0.
+        arcdir = @dc.arc_direction || 0
         sweep_flag = arcdir.positive? ? 1 : 0
         large_arc_flag = arcdir.positive? ? 1 : 0
 
@@ -717,7 +722,7 @@ module Emfsvg
         d << "M "
         d << format("%.4f,%.4f ", cal_x(sx_raw), cal_y(sy_raw))
         d << "A "
-        d << format("%.4f,%.4f ", scale_dim_x(r_raw), scale_dim_y(r_raw))
+        d << format("%.4f,%.4f ", cal_x(r_raw), cal_y(r_raw))
         d << "0 "
         d << "#{large_arc_flag} #{sweep_flag} "
         d << format("%.4f,%.4f ", cal_x(ex_raw), cal_y(ey_raw))
@@ -1144,43 +1149,93 @@ module Emfsvg
       end
 
       def emit_arc(wire, mode:)
-        l = cal_x(wire.rcl_box.left)
-        t = cal_y(wire.rcl_box.top)
-        r = cal_x(wire.rcl_box.right)
-        b = cal_y(wire.rcl_box.bottom)
-        cx = (l + r) / 2.0
-        cy = (t + b) / 2.0
-        rx = (r - l).abs / 2.0
-        ry = (b - t).abs / 2.0
-        return if rx <= 0 || ry <= 0
+        # Mirror libemf2svg's arc_draw. Uses int_el_rad to find the
+        # intersection of ptlStart/ptlEnd with the ellipse boundary.
+        # Path data: `M cur M startpoint A radii 0 large sweep endpoint [L center Z] [Z]`
+        # Closes via endPathDraw (arc) or endFormDraw (chord/pie).
+        rcl_left = wire.rcl_box.left
+        rcl_top = wire.rcl_box.top
+        rcl_right = wire.rcl_box.right
+        rcl_bottom = wire.rcl_box.bottom
+        radii_x = (rcl_right - rcl_left) / 2
+        radii_y = (rcl_bottom - rcl_top) / 2
+        return if radii_x.zero? || radii_y.zero?
 
-        ps_x = cal_x(wire.ptl_start.x)
-        ps_y = cal_y(wire.ptl_start.y)
-        pe_x = cal_x(wire.ptl_end.x)
-        pe_y = cal_y(wire.ptl_end.y)
-        start_ang = Math.atan2(ps_y - cy, ps_x - cx)
-        end_ang = Math.atan2(pe_y - cy, pe_x - cx)
-        ccw = (@dc.arc_direction || 1) == 2
-        sweep = ccw ? (start_ang - end_ang) : (end_ang - start_ang)
-        sweep += (2 * Math::PI) if sweep.negative?
-        sweep = (2 * Math::PI) - sweep if sweep > 2 * Math::PI
-        large = sweep > Math::PI ? 1 : 0
-        sweep_flag = ccw ? 0 : 1
-        sx = cx + (rx * Math.cos(start_ang))
-        sy = cy + (ry * Math.sin(start_ang))
-        ex = cx + (rx * Math.cos(end_ang))
-        ey = cy + (ry * Math.sin(end_ang))
+        start_pt = int_el_rad(wire.ptl_start, wire.rcl_box)
+        end_pt = int_el_rad(wire.ptl_end, wire.rcl_box)
 
-        d = "M #{fmt(sx)} #{fmt(sy)} "
-        d << format("A %.4f %.4f 0 %d %d %.4f %.4f", rx, ry, large, sweep_flag, ex, ey)
+        arcdir = @dc.arc_direction || 1
+        sweep_flag = arcdir.positive? ? 1 : 0
+        large_arc_flag = arcdir.positive? ? 1 : 0
+
+        d = +"M "
+        d << format("%.4f,%.4f ", cal_x(@current_x), cal_y(@current_y))
+        d << "M "
+        d << format("%.4f,%.4f ", cal_x(start_pt[0]), cal_y(start_pt[1]))
+        d << "A "
+        d << format("%.4f,%.4f ", cal_x(radii_x), cal_y(radii_y))
+        d << "0 "
+        d << "#{large_arc_flag} #{sweep_flag} "
+        d << format("%.4f,%.4f ", cal_x(end_pt[0]), cal_y(end_pt[1]))
+
         case mode
-        when :chord
-          d << " Z"
         when :pie
-          d << format(" L %f %f Z", cx, maybe_flip_y(cy))
+          center_x = (rcl_right + rcl_left) / 2
+          center_y = (rcl_bottom + rcl_top) / 2
+          d << "L "
+          d << format("%.4f,%.4f ", cal_x(center_x), cal_y(center_y))
+          d << "Z "
+          emit_path_element_closed(d)
+        when :chord
+          d << "Z "
+          emit_path_element_closed(d)
+        else
+          emit_path_element(d, closed: false, leading_fill_space: true)
         end
-        attrs = (mode == :arc ? stroke_attrs : fill_attrs.merge(stroke_attrs)).merge("d" => d)
-        @builder.tag("path", attrs, single: true)
+      end
+
+      # Compute the intersection of a point with the ellipse boundary
+      # (mirrors libemf2svg's int_el_rad). Returns [x, y].
+      def int_el_rad(pt, rect)
+        center_x = (rect.right + rect.left) / 2
+        center_y = (rect.bottom + rect.top) / 2
+        radii_x = (rect.right - rect.left) / 2
+        radii_y = (rect.bottom - rect.top) / 2
+        return [center_x, center_y] if radii_x.zero? || radii_y.zero?
+
+        pt_no_x = pt.x.to_f - center_x
+        pt_no_y = pt.y.to_f - center_y
+
+        if pt_no_x.zero?
+          return [center_x, (pt_no_y.negative? ? -1 : 1) * radii_y + center_y]
+        end
+        if pt_no_y.zero?
+          return [(pt_no_x.negative? ? -1 : 1) * radii_x + center_x, center_y]
+        end
+
+        slope = pt_no_y / pt_no_x
+        isect_x = (pt_no_x.negative? ? -1 : 1) *
+                  Math.sqrt(1 / ((1 / radii_x.to_f)**2 + (slope / radii_y.to_f)**2)) +
+                  center_x
+        isect_y = (pt_no_y.negative? ? -1 : 1) *
+                  Math.sqrt(1 / ((1 / (slope * radii_x.to_f))**2 + (1 / radii_y.to_f)**2)) +
+                  center_y
+        [isect_x, isect_y]
+      end
+
+      # Closes a path element using endFormDraw pattern:
+      #   `<path d="..." [clipset] stroke fill [fallbacks] />\n`
+      def emit_path_element_closed(d_string)
+        @builder.raw("<path ")
+        @builder.raw(clip_path_attr_string)
+        @builder.raw("d=\"")
+        @builder.raw(d_string)
+        @builder.raw("\" ")
+        emit_stroke_draw
+        emit_fill_draw
+        emit_unfilled_unstroked
+        @builder.raw("/>")
+        @builder.newline
       end
 
       def emit_poly_multi(counts, all_points, closed:, _point_size:)
