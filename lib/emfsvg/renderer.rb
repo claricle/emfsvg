@@ -132,15 +132,62 @@ module Emfsvg
     end
 
     def visit_records
+      records = @metafile.to_a
+      path_actions = build_path_action_map(records)
       visitor = Visitors::EmrVisitor.new(
         @builder, @dc, @object_table, @transform_stack,
         @metafile.header.bounds, @fix_broken_y, @options,
         scaling: @scaling, ref_x: @ref_x, ref_y: @ref_y,
-        px_per_mm: @px_per_mm
+        px_per_mm: @px_per_mm,
+        path_actions: path_actions
       )
-      @metafile.each { |record| record.accept(visitor) }
+      records.each_with_index do |record, idx|
+        visitor.current_record_idx = idx
+        record.accept(visitor)
+      end
       visitor.flush_open_groups
       @open_groups = visitor.open_group_count
+    end
+
+    # Pre-scan records to build a map of { begin_path_index => action }
+    # where action is :fill, :stroke, :stroke_fill, :end, or :abort.
+    # This mirrors libemf2svg's two-pass pathStack analysis.
+    def build_path_action_map(records)
+      map = {}
+      records.each_with_index do |r, i|
+        wire = r.wire
+        case wire.class.name.split("::").last
+        when "BeginPath"
+          # Find the next EndPath, FillPath, StrokePath, StrokeAndFillPath, or AbortPath
+          action = :end
+          ((i + 1)...records.size).each do |j|
+            name = records[j].wire.class.name.split("::").last
+            case name
+            when "EndPath"
+              # EndPath is followed by FillPath/StrokePath/StrokeAndFillPath in
+              # practice — keep scanning to find which.
+              next
+            when "FillPath"
+              action = :fill
+              break
+            when "StrokePath"
+              action = :stroke
+              break
+            when "StrokeAndFillPath"
+              action = :stroke_fill
+              break
+            when "AbortPath"
+              action = :abort
+              break
+            when "BeginPath"
+              # Nested path — unusual; treat as default
+              break
+            end
+          end
+          map[i] = action
+        end
+      end
+      map
     end
   end
 end

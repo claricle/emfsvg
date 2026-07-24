@@ -127,7 +127,8 @@ module Emfsvg
       }.freeze
 
       def initialize(builder, dc, object_table, transform_stack, bounds, fix_y, options,
-                     scaling: 1.0, ref_x: 0.0, ref_y: 0.0, px_per_mm: 1.0)
+                     scaling: 1.0, ref_x: 0.0, ref_y: 0.0, px_per_mm: 1.0,
+                     path_actions: {})
         @builder = builder
         @dc = dc
         @object_table = object_table
@@ -139,14 +140,18 @@ module Emfsvg
         @ref_x = ref_x
         @ref_y = ref_y
         @px_per_mm = px_per_mm
+        @path_actions = path_actions
         @current_x = 0
         @current_y = 0
         @path_d = nil
         @open_groups = 0
         @in_path = false
+        @current_record_idx = nil
       end
 
       attr_reader :current_x, :current_y, :open_groups
+
+      attr_accessor :current_record_idx
 
       def open_group_count
         @open_groups
@@ -205,7 +210,9 @@ module Emfsvg
       end
 
       def scale_dim_y(h)
-        h * sf_y.abs * @scaling
+        # libemf2svg's scaleY preserves sign (no .abs). Negative raw heights
+        # with negative sf_y produce positive output, matching C.
+        h * sf_y * @scaling
       end
 
       def fmt(n)
@@ -536,18 +543,60 @@ module Emfsvg
         @builder.raw(clip_path_attr_string)
         @builder.raw("d=\"")
         @in_path = true
+        # Look up the pre-scanned action for this BeginPath.
+        @pending_path_action = @path_actions[@current_record_idx] || :end
       end
 
       def visit_end_path(_wire)
-        # U_EMRENDPATH_draw emits closing quote, then optional stroke/fill
-        # based on which later record (FillPath/StrokePath/StrokeAndFillPath)
-        # was analysed to consume this path. Without the two-pass analysis we
-        # always emit both stroke_draw and fill_draw, then `fill="none" ` if
-        # not filled (NO leading space — different from endPathDraw).
         @in_path = false
+        finish_pending_path(@pending_path_action)
+      end
+
+      def visit_fill_path(_wire)
+        # FillPath after EndPath: in C this is a no-op (work done at EndPath).
+        # If we never saw EndPath (FillPath directly closes path), close now.
+        if @in_path
+          @in_path = false
+          finish_pending_path(:fill)
+        end
+      end
+
+      def visit_stroke_path(_wire)
+        return unless @in_path
+
+        @in_path = false
+        finish_pending_path(:stroke)
+      end
+
+      def visit_stroke_and_fill_path(_wire)
+        return unless @in_path
+
+        @in_path = false
+        finish_pending_path(:stroke_fill)
+      end
+
+      def visit_abort_path(_wire)
+        @in_path = false
+        @pending_path_action = :abort
+      end
+
+      # Emit the closing quote + stroke/fill attrs for a path opened by
+      # visit_begin_path. Mode is one of: :end, :fill, :stroke, :stroke_fill.
+      def finish_pending_path(mode)
+        # U_EMRENDPATH_draw emits `"` then checks fillOffset/strokeOffset:
+        #   if fillOffset: fill_draw
+        #   if strokeOffset: stroke_draw
+        #   if strokeFillOffset: fill_draw + stroke_draw
         @builder.raw("\" ")
-        emit_stroke_draw
-        emit_fill_draw
+        case mode
+        when :fill
+          emit_fill_draw
+        when :stroke
+          emit_stroke_draw
+        when :stroke_fill
+          emit_fill_draw
+          emit_stroke_draw
+        end
         @builder.raw("fill=\"none\" ") unless @last_fill_set
         @builder.raw("stroke=\"none\" ") unless @last_stroke_set
         @builder.rawln("/>")
@@ -555,34 +604,6 @@ module Emfsvg
 
       def visit_close_figure(_wire)
         @builder.raw("Z ") if @in_path
-      end
-
-      def visit_fill_path(_wire)
-        return unless @path_d && !@path_d.empty?
-
-        attrs = fill_attrs.merge("d" => @path_d, "fill-rule" => fill_rule_attr)
-        @builder.tag("path", attrs, single: true)
-        @path_d = nil
-      end
-
-      def visit_stroke_path(_wire)
-        return unless @path_d && !@path_d.empty?
-
-        attrs = stroke_attrs.merge("d" => @path_d)
-        @builder.tag("path", attrs, single: true)
-        @path_d = nil
-      end
-
-      def visit_stroke_and_fill_path(_wire)
-        return unless @path_d && !@path_d.empty?
-
-        attrs = fill_attrs.merge(stroke_attrs).merge("d" => @path_d, "fill-rule" => fill_rule_attr)
-        @builder.tag("path", attrs, single: true)
-        @path_d = nil
-      end
-
-      def visit_abort_path(_wire)
-        @path_d = nil
       end
 
       def visit_set_world_transform(wire)
@@ -822,7 +843,7 @@ module Emfsvg
           "x" => bounds.left, "y" => maybe_flip_y(bounds.top),
           "width" => bounds.right - bounds.left,
           "height" => bounds.bottom - bounds.top,
-          "fill" => color.to_hex
+          "fill" => rgb_hex(color)
         }.merge(clip_attrs)
         @builder.tag("rect", attrs, single: true)
       end
@@ -837,7 +858,7 @@ module Emfsvg
           "x" => bounds.left, "y" => maybe_flip_y(bounds.top),
           "width" => bounds.right - bounds.left,
           "height" => bounds.bottom - bounds.top,
-          "fill" => "none", "stroke" => color.to_hex, "stroke-width" => 1
+          "fill" => "none", "stroke" => rgb_hex(color), "stroke-width" => 1
         }.merge(clip_attrs)
         @builder.tag("rect", attrs, single: true)
       end
@@ -1155,7 +1176,7 @@ module Emfsvg
       # space from clipset_draw) before this method runs.
       def emit_text_style(font, font_height, x, y)
         @builder.raw("font-family=\"#{font.face_name}\" ") if font.face_name
-        @builder.raw("fill=\"#{@dc.text_color.to_hex}\" ")
+        @builder.raw("fill=\"#{rgb_hex(@dc.text_color)}\" ")
 
         orientation = sf_y > 0 ? -1 : 1
         if font.escapement != 0
@@ -1374,12 +1395,19 @@ module Emfsvg
         return unless result
 
         href = build_image_href(result)
-        attrs = {
-          "x" => x, "y" => maybe_flip_y(y),
-          "width" => width, "height" => height,
-          "xlink:href" => href, "preserveAspectRatio" => "none"
-        }
-        @builder.tag("image", attrs, single: true)
+        # Order matches libemf2svg: width height x y [clip] xlink:href
+        geom = format("width=\"%.4f\" height=\"%.4f\" x=\"%.4f\" y=\"%.4f\"",
+                      scale_dim_x(width), scale_dim_y(height),
+                      cal_x(x), cal_y(y))
+        @builder.raw("<image ")
+        @builder.raw(geom)
+        @builder.raw(" ")
+        @builder.raw(clip_path_attr_string)
+        @builder.raw("xlink:href=\"")
+        @builder.raw(href)
+        @builder.raw("\" ")
+        @builder.raw("/>")
+        @builder.newline
       end
 
       def emit_image_from_body(wire, x, y, width, height)
@@ -1496,6 +1524,11 @@ module Emfsvg
         format("%.4f,%.4f ", cal_x(p.x), cal_y(p.y))
       end
 
+      # libemf2svg prints colors as `#RRGGBB` always (drops alpha/reserved).
+      def rgb_hex(color)
+        format("#%02X%02X%02X", color.red, color.green, color.blue)
+      end
+
       # Mirror libemf2svg's clipset_draw: emits " clip-path=\"url(#clip-N)\" "
       # only if a clip is currently set. Note the leading and trailing space.
       def clip_path_attr_string
@@ -1539,7 +1572,7 @@ module Emfsvg
       end
 
       def fill_color_attr(brush)
-        "fill=\"#{brush.color.to_hex}\" "
+        "fill=\"#{rgb_hex(brush.color)}\" "
       end
 
       # Mirror libemf2svg's stroke_draw. Emits stroke attrs depending on pen
@@ -1552,7 +1585,7 @@ module Emfsvg
 
         if (style & 0xFF) == Pen::NULL
           if @dc.brush.style != Brush::NULL
-            @builder.raw("stroke-width=\"1px\" stroke=\"#{@dc.brush.color.to_hex}\" ")
+            @builder.raw("stroke-width=\"1px\" stroke=\"#{rgb_hex(@dc.brush.color)}\" ")
           else
             @builder.raw("stroke=\"none\" stroke-width=\"0.0\" ")
           end
@@ -1561,7 +1594,7 @@ module Emfsvg
         end
 
         # Color then width (C order: color_stroke then width_stroke)
-        @builder.raw("stroke=\"#{pen.color.to_hex}\" ")
+        @builder.raw("stroke=\"#{rgb_hex(pen.color)}\" ")
         emit_width_stroke(pen.width)
         @last_stroke_set = true
 
@@ -1634,13 +1667,13 @@ module Emfsvg
           return { "fill" => "url(##{id})" }.merge(clip_attrs)
         end
 
-        { "fill" => brush.color.to_hex }.merge(clip_attrs)
+        { "fill" => rgb_hex(brush.color) }.merge(clip_attrs)
       end
 
       def emit_hatch_pattern(id, hatch_style, fg_color, bk_color, bk_mode)
         lines = HATCH_PATTERNS[hatch_style] || HATCH_PATTERNS[0]
-        bk = bk_mode == 2 ? bk_color.to_hex : "none"
-        fg = fg_color.to_hex
+        bk = bk_mode == 2 ? rgb_hex(bk_color) : "none"
+        fg = rgb_hex(fg_color)
         @builder.tag("defs") do
           @builder.tag("pattern", { "id" => id, "width" => 8, "height" => 8,
                                     "patternUnits" => "userSpaceOnUse" }) do
@@ -1662,12 +1695,12 @@ module Emfsvg
           return { "stroke" => "none", "stroke-width" => "0.0" }.merge(clip_attrs) if @dc.brush.null?
 
           return { "stroke-width" => "1px",
-                   "stroke" => @dc.brush.color.to_hex }.merge(clip_attrs)
+                   "stroke" => rgb_hex(@dc.brush.color) }.merge(clip_attrs)
 
         end
 
         w = [pen.width, 1].max
-        attrs = { "stroke" => pen.color.to_hex, "stroke-width" => w }
+        attrs = { "stroke" => rgb_hex(pen.color), "stroke-width" => w }
 
         # Line style (bits 0-7)
         dash_len = w * 5
