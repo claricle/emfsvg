@@ -2,672 +2,672 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="628.0000" height="893.0000">
   <g transform="translate(-13.0000, -13.0000)">
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240 240.0 L 240 14464.0 L 6304 14464.0 L 6304 240.0 L 240 240.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240.0000 240.0000 L 240.0000 14464.0000 L 6304.0000 14464.0000 L 6304.0000 240.0000 L 240.0000 240.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240 14464.0 L 6304 14464.0 L 6304 240.0 L 240 240.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240.0000 14464.0000 L 6304.0000 14464.0000 L 6304.0000 240.0000 L 240.0000 240.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="217" y="31.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="174.0000" y="31.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«FeatureType»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="228" y="44.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="185.0000" y="44.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Veglenke]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240 832.0 L 6288 832.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 240.0000 832.0000 L 6288.0000 832.0000 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="66.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="66.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="66.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="66.8000" font-size="12.0000" font-weight="400">
     <![CDATA[veglenkeid: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="79.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="79.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="79.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="79.8000" font-size="12.0000" font-weight="400">
     <![CDATA[kjoreretning: Kjoreretning]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="92.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="92.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="92.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="92.8000" font-size="12.0000" font-weight="400">
     <![CDATA[feltoversikt: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="109.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="27.0000" y="109.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Klassifisering»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="122.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="122.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="122.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="122.8000" font-size="12.0000" font-weight="400">
     <![CDATA[typeveg: TypeVeg]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="135.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="135.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="135.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="135.8000" font-size="12.0000" font-weight="400">
     <![CDATA[funksjonellvegklasse: Vegklasse]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="148.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="148.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="148.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="148.8000" font-size="12.0000" font-weight="400">
     <![CDATA[motorvegtype: Motorvegtype [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="161.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="161.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="161.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="161.8000" font-size="12.0000" font-weight="400">
     <![CDATA[klasselandbruksveg: Landbruksvegklasse [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="174.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="174.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="174.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="174.8000" font-size="12.0000" font-weight="400">
     <![CDATA[serviceveg: JaNei]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="187.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="187.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="187.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="187.8000" font-size="12.0000" font-weight="400">
     <![CDATA[beredskapsveg: JaNei]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="204.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="27.0000" y="204.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Fartsgrense»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="217.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="217.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="217.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="217.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrense: FartsgrenseVerdi [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="230.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="230.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="230.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="230.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel: FartsgrenseVerdi [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="243.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="243.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="243.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="243.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel_type: TypeFartsgrenseVariabel [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="256.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="256.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="256.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="256.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel_ukedag: UkedagFartsgrenseVariabel [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="269.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="269.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="269.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="269.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel_datofra: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="282.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="282.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="282.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="282.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel_datotil: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="295.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="295.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="295.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="295.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel_klokkesletttil: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="308.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="308.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="308.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="308.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fartsgrensevariabel_klokkeslettfra: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="325.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="27.0000" y="325.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Begrensninger»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="338.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="338.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="338.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="338.8000" font-size="12.0000" font-weight="400">
     <![CDATA[skiltahoyde: Real [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="351.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="351.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="351.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="351.8000" font-size="12.0000" font-weight="400">
     <![CDATA[trafikkreguleringer: TypeTrafikkregulering [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="364.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="364.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="364.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="364.8000" font-size="12.0000" font-weight="400">
     <![CDATA[trafikkreguleringer_merknad: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="377.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="377.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="377.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="377.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode1frakl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="390.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="390.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="390.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="390.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode1tilkl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="403.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="403.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="403.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="403.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode2frakl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="416.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="416.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="416.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="416.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransporthverdagulordagperiode2tilkl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="429.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="429.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="429.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="429.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransportlordagperiode1frakl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="442.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="442.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="442.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="442.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransportlordagperiode1tilkl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="455.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="455.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="455.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="455.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransportlordagperiode2frakl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="468.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="468.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="468.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="468.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransportlordagperiode2tilkl: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="481.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="481.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="481.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="481.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransportlordagfra: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="494.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="494.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="494.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="494.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_kjoringtileiendommenetillatt: JaNei [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="507.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="507.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="507.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="507.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gagatereguleringer_varetransportlordagtil: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="520.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="520.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="520.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="520.8000" font-size="12.0000" font-weight="400">
     <![CDATA[bruksklasse_spesialtransport_bruksklassehelår: BruksklasseHelar [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="533.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="533.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="533.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="533.8000" font-size="12.0000" font-weight="400">
     <![CDATA[bruksklasse_spesialtransport_bruksklassevinter: BruksklasseVinter [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="546.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="546.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="546.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="546.8000" font-size="12.0000" font-weight="400">
     <![CDATA[bruksklasse_spesialtransport_maksvogntoglengde: MaksVogntoglengde [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="559.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="559.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="559.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="559.8000" font-size="12.0000" font-weight="400">
     <![CDATA[bruksklasse_spesialtransport_veggruppe: Veggruppe [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="572.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="572.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="572.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="572.8000" font-size="12.0000" font-weight="400">
     <![CDATA[bruksklasse_spesialtransport_merknad: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="589.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="27.0000" y="589.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Beredskap»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="602.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="602.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="602.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="602.8000" font-size="12.0000" font-weight="400">
     <![CDATA[vinterstengt_fradato: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="615.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="615.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="615.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="615.8000" font-size="12.0000" font-weight="400">
     <![CDATA[vinterstengt_tildato: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="628.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="628.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="628.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="628.8000" font-size="12.0000" font-weight="400">
     <![CDATA[nattestengt_fradato: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="641.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="641.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="641.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="641.8000" font-size="12.0000" font-weight="400">
     <![CDATA[nattestengt_tildato: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="70" y="658.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="27.0000" y="658.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Stedfesting»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="671.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="671.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="671.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="671.8000" font-size="12.0000" font-weight="400">
     <![CDATA[kommunenummer: Kommunenummer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="684.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="684.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="684.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="684.8000" font-size="12.0000" font-weight="400">
     <![CDATA[adressekode: Integer [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="697.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="697.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="697.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="697.8000" font-size="12.0000" font-weight="400">
     <![CDATA[adressenavn: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="710.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="710.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="710.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="710.8000" font-size="12.0000" font-weight="400">
     <![CDATA[vegsystemreferanse: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="723.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="723.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="723.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="723.8000" font-size="12.0000" font-weight="400">
     <![CDATA[vegsystemreferanse_fra_meter: Integer [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="736.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="736.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="736.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="736.8000" font-size="12.0000" font-weight="400">
     <![CDATA[vegsystemreferanse_til_meter: Integer [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="749.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="749.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="749.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="749.8000" font-size="12.0000" font-weight="400">
     <![CDATA[metrert_lengde: Real [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="762.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="762.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="762.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="762.8000" font-size="12.0000" font-weight="400">
     <![CDATA[geometrilengde: Real]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="775.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="775.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="775.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="775.8000" font-size="12.0000" font-weight="400">
     <![CDATA[veglenkesekvensid: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="788.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="788.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="788.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="788.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fra_posisjon: Real]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="801.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="801.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="801.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="801.8000" font-size="12.0000" font-weight="400">
     <![CDATA[til_posisjon: Real]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="814.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="814.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="814.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="814.8000" font-size="12.0000" font-weight="400">
     <![CDATA[superstedfesting_veglenkesekvensid: Integer [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="827.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="827.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="827.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="827.8000" font-size="12.0000" font-weight="400">
     <![CDATA[superstedfesting_fra_posisjon: Real [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="840.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="840.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="840.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="840.8000" font-size="12.0000" font-weight="400">
     <![CDATA[superstedfesting_til_posisjon: Real [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="853.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="853.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="853.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="853.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fra_node: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="866.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="866.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="866.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="866.8000" font-size="12.0000" font-weight="400">
     <![CDATA[til_node: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="879.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="879.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="879.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="879.8000" font-size="12.0000" font-weight="400">
     <![CDATA[medium: Medium [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="63" y="892.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="20.0000" y="892.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="80" y="892.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="37.0000" y="892.8000" font-size="12.0000" font-weight="400">
     <![CDATA[senterlinje: Kurve]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184 240.0 L 7184 1664.0 L 9168 1664.0 L 9168 240.0 L 7184 240.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184.0000 240.0000 L 7184.0000 1664.0000 L 9168.0000 1664.0000 L 9168.0000 240.0000 L 7184.0000 240.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184 1664.0 L 9168 1664.0 L 9168 240.0 L 7184 240.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184.0000 1664.0000 L 9168.0000 1664.0000 L 9168.0000 240.0000 L 7184.0000 240.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="532" y="31.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="489.0000" y="31.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«CodeList»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="528" y="44.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="485.0000" y="44.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Kjoreretning]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184 832.0 L 9152 832.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7184.0000 832.0000 L 9152.0000 832.0000 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="497" y="66.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="454.0000" y="66.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="514" y="66.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="471.0000" y="66.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Med]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="497" y="79.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="454.0000" y="79.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="514" y="79.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="471.0000" y="79.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Mot]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="497" y="92.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="454.0000" y="92.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="514" y="92.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="471.0000" y="92.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Begge]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 9808.0 L 7120 10736.0 L 10224 10736.0 L 10224 9808.0 L 7120 9808.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 9808.0000 L 7120.0000 10736.0000 L 10224.0000 10736.0000 L 10224.0000 9808.0000 L 7120.0000 9808.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 10736.0 L 10224 10736.0 L 10224 9808.0 L 7120 9808.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 10736.0000 L 10224.0000 10736.0000 L 10224.0000 9808.0000 L 7120.0000 9808.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="563" y="629.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="520.0000" y="629.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«CodeList»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="547" y="642.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="504.0000" y="642.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Kommunenummer]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 3904.0 L 7120 6768.0 L 10224 6768.0 L 10224 3904.0 L 7120 3904.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 3904.0000 L 7120.0000 6768.0000 L 10224.0000 6768.0000 L 10224.0000 3904.0000 L 7120.0000 3904.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 6768.0 L 10224 6768.0 L 10224 3904.0 L 7120 3904.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 6768.0000 L 10224.0000 6768.0000 L 10224.0000 3904.0000 L 7120.0000 3904.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="554" y="260.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="511.0000" y="260.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«FeatureType»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="549" y="273.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="506.0000" y="273.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Svingerestriksjon]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 4496.0 L 10208 4496.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 4496.0000 L 10208.0000 4496.0000 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="295.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="295.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="295.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="295.8000" font-size="12.0000" font-weight="400">
     <![CDATA[merknad: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="500" y="312.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="457.0000" y="312.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Stedfesting»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="325.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="325.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="325.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="325.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fra_veglenkeid: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="338.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="338.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="338.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="338.8000" font-size="12.0000" font-weight="400">
     <![CDATA[til_veglenkeid: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="351.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="351.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="351.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="351.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fra_veglenkesekvensid: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="364.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="364.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="364.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="364.8000" font-size="12.0000" font-weight="400">
     <![CDATA[fra_posisjon: Real]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="377.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="377.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="377.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="377.8000" font-size="12.0000" font-weight="400">
     <![CDATA[til_veglenkesekvensid: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="390.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="390.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="390.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="390.8000" font-size="12.0000" font-weight="400">
     <![CDATA[til_posisjon: Real]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="403.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="403.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="403.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="403.8000" font-size="12.0000" font-weight="400">
     <![CDATA[posisjon: Punkt]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104 7056.0 L 7104 9520.0 L 10224 9520.0 L 10224 7056.0 L 7104 7056.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104.0000 7056.0000 L 7104.0000 9520.0000 L 10224.0000 9520.0000 L 10224.0000 7056.0000 L 7104.0000 7056.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104 9520.0 L 10224 9520.0 L 10224 7056.0 L 7104 7056.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104.0000 9520.0000 L 10224.0000 9520.0000 L 10224.0000 7056.0000 L 7104.0000 7056.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="554" y="457.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="511.0000" y="457.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«FeatureType»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="559" y="470.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="516.0000" y="470.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Vegsperring]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104 7648.0 L 10208 7648.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7104.0000 7648.0000 L 10208.0000 7648.0000 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="492.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="492.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="492.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="492.8000" font-size="12.0000" font-weight="400">
     <![CDATA[type: TypeVegsperring]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="505.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="505.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="505.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="505.8000" font-size="12.0000" font-weight="400">
     <![CDATA[funksjon: FunksjonVegsperring [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="518.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="518.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="518.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="518.8000" font-size="12.0000" font-weight="400">
     <![CDATA[gjeldertidsrom: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="531.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="531.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="531.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="531.8000" font-size="12.0000" font-weight="400">
     <![CDATA[merknad: CharacterString [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="499" y="548.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="456.0000" y="548.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«Stedfesting»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="561.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="561.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="561.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="561.8000" font-size="12.0000" font-weight="400">
     <![CDATA[veglenkeid_1: Integer]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="574.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="574.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="574.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="574.8000" font-size="12.0000" font-weight="400">
     <![CDATA[veglenkeid_2: Integer [0..1]]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="492" y="587.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="449.0000" y="587.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="509" y="587.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="466.0000" y="587.8000" font-size="12.0000" font-weight="400">
     <![CDATA[posisjon: Punkt]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 11232.0 L 7120 14448.0 L 10224 14448.0 L 10224 11232.0 L 7120 11232.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 11232.0000 L 7120.0000 14448.0000 L 10224.0000 14448.0000 L 10224.0000 11232.0000 L 7120.0000 11232.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 14448.0 L 10224 14448.0 L 10224 11232.0 L 7120 11232.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 14448.0000 L 10224.0000 14448.0000 L 10224.0000 11232.0000 L 7120.0000 11232.0000 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="563" y="718.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="520.0000" y="718.8000" font-size="12.0000" font-weight="400">
     <![CDATA[«CodeList»]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="568" y="731.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="525.0000" y="731.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Medium]]>
   </text>
   </g>
   <g transform="matrix(0.0625 0.0000 0.0000 0.0625 0.0000 0.0000)">
-  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120 11824.0 L 10208 11824.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7120.0000 11824.0000 L 10208.0000 11824.0000 " />
   </g>
   <g transform="matrix(1.0000 0.0000 0.0000 1.0000 0.0000 0.0000)">
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="753.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="753.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="753.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="753.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Alltid i vann = V]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="766.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="766.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="766.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="766.8000" font-size="12.0000" font-weight="400">
     <![CDATA[I bygning/bygningsmessig anlegg = B]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="779.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="779.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="779.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="779.8000" font-size="12.0000" font-weight="400">
     <![CDATA[I luft = L]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="792.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="792.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="792.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="792.8000" font-size="12.0000" font-weight="400">
     <![CDATA[På isbre = I]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="805.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="805.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="805.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="805.8000" font-size="12.0000" font-weight="400">
     <![CDATA[På sjøbunnen = S]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="818.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="818.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="818.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="818.8000" font-size="12.0000" font-weight="400">
     <![CDATA[På terrenget/på bakkenivå = T]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="831.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="831.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="831.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="831.8000" font-size="12.0000" font-weight="400">
     <![CDATA[På vannoverflaten = O]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="844.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="844.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="844.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="844.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Tidvis under vann = D]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="857.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="857.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="857.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="857.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Under isbre = J]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="870.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="870.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="870.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="870.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Under sjøbunnen = W]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="883.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="883.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="883.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="883.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Under terrenget = U]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="493" y="896.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="450.0000" y="896.8000" font-size="12.0000" font-weight="400">
     <![CDATA[+ ]]>
   </text>
-  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="510" y="896.8" font-size="12" font-weight="400">
+  <text font-family="Calibri" fill="#000000" text-anchor="start" style="white-space:pre;" x="467.0000" y="896.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Ukjent = X]]>
   </text>
   </g>

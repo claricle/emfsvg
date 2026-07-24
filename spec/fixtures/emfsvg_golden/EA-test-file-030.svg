@@ -1,210 +1,210 @@
 <?xml version="1.0"  encoding="UTF-8" standalone="no"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="784.0000" height="580.0000">
   <g transform="translate(0.0000, 0.0000)">
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-1" y1="1.0" x2="-1" y2="569.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="-1" y1="569.0" x2="782" y2="569.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="782" y1="569.0" x2="782" y2="1.0" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="782" y1="1.0" x2="-1" y2="1.0" />
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M -1 21.0 L 186 21.0 L 199 7.0 L 199 1.0 L -1 1.0 L -1 21.0 Z " fill-rule="evenodd" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="4" y="14.8" font-size="12" font-weight="400">
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1.0000" y1="1.0000" x2="1.0000" y2="569.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1.0000" y1="569.0000" x2="784.0000" y2="569.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="784.0000" y1="569.0000" x2="784.0000" y2="1.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="784.0000" y1="1.0000" x2="1.0000" y2="1.0000" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1.0000 21.0000 L 188.0000 21.0000 L 201.0000 7.0000 L 201.0000 1.0000 L 1.0000 1.0000 L 1.0000 21.0000 Z " fill-rule="evenodd" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="6.0000" y="14.8000" font-size="12.0000" font-weight="400">
     <![CDATA[class Figure 12: Sampling Manifold examples]]>
   </text>
-  <rect fill="#BCBEC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="26" y="211.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="23" y="208.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="23" y="208.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="23" y="208.0" width="118" height="49" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="46" y="177.8" font-size="12" font-weight="400">
+  <rect fill="#BCBEC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="28.0000" y="211.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="25.0000" y="208.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="25.0000" y="208.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="25.0000" y="159.0000" width="118.0000" height="49.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="48.0000" y="177.8000" font-size="12.0000" font-weight="400">
     <![CDATA[SF_SamplingPoint]]>
   </text>
-  <rect fill="#C2C2C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="277" y="463.0" width="101" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="274" y="460.0" width="101" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="274" y="460.0" width="101" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="274" y="460.0" width="101" height="42" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="306" y="436.8" font-size="12" font-weight="400">
+  <rect fill="#C2C2C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="279.0000" y="463.0000" width="101.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="276.0000" y="460.0000" width="101.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="276.0000" y="460.0000" width="101.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="276.0000" y="418.0000" width="101.0000" height="42.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="308.0000" y="436.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Traverse]]>
   </text>
-  <rect fill="#BCBDC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="212" y="209.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="209" y="206.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="209" y="206.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="209" y="206.0" width="118" height="49" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="230" y="175.8" font-size="12" font-weight="400">
+  <rect fill="#BCBDC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="214.0000" y="209.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="211.0000" y="206.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="211.0000" y="206.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="211.0000" y="157.0000" width="118.0000" height="49.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="232.0000" y="175.8000" font-size="12.0000" font-weight="400">
     <![CDATA[SF_SamplingCurve]]>
   </text>
-  <rect fill="#BCBEC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="453" y="210.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="450" y="207.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="450" y="207.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="450" y="207.0" width="118" height="49" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="468" y="176.8" font-size="12" font-weight="400">
+  <rect fill="#BCBEC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="455.0000" y="210.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="452.0000" y="207.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="452.0000" y="207.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="452.0000" y="158.0000" width="118.0000" height="49.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="470.0000" y="176.8000" font-size="12.0000" font-weight="400">
     <![CDATA[SF_SamplingSurface]]>
   </text>
-  <rect fill="#C3C4C6" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="174" y="548.0" width="163" height="69" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="171" y="545.0" width="163" height="69" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="171" y="545.0" width="163" height="69" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="171" y="545.0" width="163" height="69" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="237" y="494.8" font-size="12" font-weight="400">
+  <rect fill="#C3C4C6" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="176.0000" y="548.0000" width="163.0000" height="-69.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="173.0000" y="545.0000" width="163.0000" height="-69.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="173.0000" y="545.0000" width="163.0000" height="-69.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="173.0000" y="476.0000" width="163.0000" height="69.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="239.0000" y="494.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Interval]]>
   </text>
-  <line stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="171" y1="502.0" x2="334" y2="502.0" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="231" y="516.8" font-size="12" font-weight="400">
+  <line stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="173.0000" y1="502.0000" x2="336.0000" y2="502.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="233.0000" y="516.8000" font-size="12.0000" font-weight="400">
     <![CDATA[constraints]]>
   </text>
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="176" y="529.8" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="178.0000" y="529.8000" font-size="12.0000" font-weight="400">
     <![CDATA[{type(shape)=GM_CurveSegment}]]>
   </text>
-  <rect fill="#BCBEC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="616" y="211.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="613" y="208.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="613" y="208.0" width="118" height="49" rx="2.5" ry="2.5" />
-  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="613" y="208.0" width="118" height="49" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="637" y="177.8" font-size="12" font-weight="400">
+  <rect fill="#BCBEC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="618.0000" y="211.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="615.0000" y="208.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="615.0000" y="208.0000" width="118.0000" height="-49.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#CCFFFF" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="615.0000" y="159.0000" width="118.0000" height="49.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="639.0000" y="177.8000" font-size="12.0000" font-weight="400">
     <![CDATA[SF_SamplingSolid]]>
   </text>
-  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="541" y="354.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="538" y="351.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="538" y="351.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="538" y="351.0" width="90" height="42" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="571" y="327.8" font-size="12" font-weight="400">
+  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="543.0000" y="354.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="540.0000" y="351.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="540.0000" y="351.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="540.0000" y="309.0000" width="90.0000" height="42.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="573.0000" y="327.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Swath]]>
   </text>
-  <rect fill="#C2C2C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="482" y="464.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="479" y="461.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="479" y="461.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="479" y="461.0" width="96" height="43" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="513" y="436.8" font-size="12" font-weight="400">
+  <rect fill="#C2C2C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="484.0000" y="464.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="481.0000" y="461.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="481.0000" y="461.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="481.0000" y="418.0000" width="96.0000" height="43.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="515.0000" y="436.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Section]]>
   </text>
-  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="644" y="354.0" width="97" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="641" y="351.0" width="97" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="641" y="351.0" width="97" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="641" y="351.0" width="97" height="42" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="669" y="327.8" font-size="12" font-weight="400">
+  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="646.0000" y="354.0000" width="97.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="643.0000" y="351.0000" width="97.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="643.0000" y="351.0000" width="97.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="643.0000" y="309.0000" width="97.0000" height="42.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="671.0000" y="327.8000" font-size="12.0000" font-weight="400">
     <![CDATA[LidarCloud]]>
   </text>
-  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="553" y="289.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="550" y="286.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="550" y="286.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="550" y="286.0" width="90" height="42" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="583" y="262.8" font-size="12" font-weight="400">
+  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="555.0000" y="289.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="552.0000" y="286.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="552.0000" y="286.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="552.0000" y="244.0000" width="90.0000" height="42.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="585.0000" y="262.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Scene]]>
   </text>
-  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="295" y="354.0" width="99" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="292" y="351.0" width="99" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="292" y="351.0" width="99" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="292" y="351.0" width="99" height="42" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="308" y="327.8" font-size="12" font-weight="400">
+  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="297.0000" y="354.0000" width="99.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="294.0000" y="351.0000" width="99.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="294.0000" y="351.0000" width="99.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="294.0000" y="309.0000" width="99.0000" height="42.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="310.0000" y="327.8000" font-size="12.0000" font-weight="400">
     <![CDATA[ObservationWell]]>
   </text>
-  <rect fill="#C2C2C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="156" y="463.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="153" y="460.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="153" y="460.0" width="90" height="42" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="153" y="460.0" width="90" height="42" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="180" y="436.8" font-size="12" font-weight="400">
+  <rect fill="#C2C2C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="158.0000" y="463.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="155.0000" y="460.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="155.0000" y="460.0000" width="90.0000" height="-42.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="155.0000" y="418.0000" width="90.0000" height="42.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="182.0000" y="436.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Flightline]]>
   </text>
-  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="31" y="290.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="28" y="287.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="28" y="287.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="28" y="287.0" width="96" height="43" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="62" y="262.8" font-size="12" font-weight="400">
+  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="33.0000" y="290.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="30.0000" y="287.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="30.0000" y="287.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="30.0000" y="244.0000" width="96.0000" height="43.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="64.0000" y="262.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Station]]>
   </text>
-  <rect fill="#BFBFC4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="139" y="332.0" width="120" height="85" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="136" y="329.0" width="120" height="85" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="136" y="329.0" width="120" height="85" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="136" y="329.0" width="120" height="85" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="175" y="262.8" font-size="12" font-weight="400">
+  <rect fill="#BFBFC4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="141.0000" y="332.0000" width="120.0000" height="-85.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="138.0000" y="329.0000" width="120.0000" height="-85.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="138.0000" y="329.0000" width="120.0000" height="-85.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="138.0000" y="244.0000" width="120.0000" height="85.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="177.0000" y="262.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Trajectory]]>
   </text>
-  <line stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="136" y1="270.0" x2="256" y2="270.0" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="175" y="284.8" font-size="12" font-weight="400">
+  <line stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="138.0000" y1="270.0000" x2="258.0000" y2="270.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="177.0000" y="284.8000" font-size="12.0000" font-weight="400">
     <![CDATA[constraints]]>
   </text>
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="141" y="297.8" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="143.0000" y="297.8000" font-size="12.0000" font-weight="400">
     <![CDATA[{parameterized by time}]]>
   </text>
-  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="120" y="407.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="117" y="404.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="117" y="404.0" width="96" height="43" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="117" y="404.0" width="96" height="43" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="143" y="379.8" font-size="12" font-weight="400">
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="122.0000" y="407.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="119.0000" y="404.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="119.0000" y="404.0000" width="96.0000" height="-43.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="119.0000" y="361.0000" width="96.0000" height="43.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="145.0000" y="379.8000" font-size="12.0000" font-weight="400">
     <![CDATA[ShipsTrack]]>
   </text>
-  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="286" y="408.0" width="99" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="283" y="405.0" width="99" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="283" y="405.0" width="99" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="283" y="405.0" width="99" height="44" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="320" y="379.8" font-size="12" font-weight="400">
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="288.0000" y="408.0000" width="99.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="285.0000" y="405.0000" width="99.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="285.0000" y="405.0000" width="99.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="285.0000" y="361.0000" width="99.0000" height="44.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="322.0000" y="379.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Profile]]>
   </text>
-  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="307" y="293.0" width="93" height="46" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="304" y="290.0" width="93" height="46" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="304" y="290.0" width="93" height="46" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="304" y="290.0" width="93" height="46" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="332" y="262.8" font-size="12" font-weight="400">
+  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="309.0000" y="293.0000" width="93.0000" height="-46.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="306.0000" y="290.0000" width="93.0000" height="-46.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="306.0000" y="290.0000" width="93.0000" height="-46.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="306.0000" y="244.0000" width="93.0000" height="46.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="334.0000" y="262.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Borehole]]>
   </text>
-  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="525" y="409.0" width="89" height="45" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="522" y="406.0" width="89" height="45" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="522" y="406.0" width="89" height="45" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="522" y="406.0" width="89" height="45" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="542" y="379.8" font-size="12" font-weight="400">
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="527.0000" y="409.0000" width="89.0000" height="-45.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="524.0000" y="406.0000" width="89.0000" height="-45.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="524.0000" y="406.0000" width="89.0000" height="-45.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="524.0000" y="361.0000" width="89.0000" height="45.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="544.0000" y="379.8000" font-size="12.0000" font-weight="400">
     <![CDATA[MapHorizon]]>
   </text>
-  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="410" y="408.0" width="98" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="407" y="405.0" width="98" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="407" y="405.0" width="98" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="407" y="405.0" width="98" height="44" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="435" y="379.8" font-size="12" font-weight="400">
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="412.0000" y="408.0000" width="98.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="409.0000" y="405.0000" width="98.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="409.0000" y="405.0000" width="98.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="409.0000" y="361.0000" width="98.0000" height="44.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="437.0000" y="379.8000" font-size="12.0000" font-weight="400">
     <![CDATA[MineLevel]]>
   </text>
-  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="662" y="291.0" width="98" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="659" y="288.0" width="98" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="659" y="288.0" width="98" height="44" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="659" y="288.0" width="98" height="44" />
-  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="698" y="262.8" font-size="12" font-weight="400">
+  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="664.0000" y="291.0000" width="98.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="661.0000" y="288.0000" width="98.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="661.0000" y="288.0000" width="98.0000" height="-44.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="661.0000" y="244.0000" width="98.0000" height="44.0000" />
+  <text font-family="Carlito" fill="#000000" text-anchor="start" style="white-space:pre;" x="700.0000" y="262.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Mine]]>
   </text>
-  <rect fill="#BFBFC4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="409" y="332.0" width="89" height="85" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="406" y="329.0" width="89" height="85" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="406" y="329.0" width="89" height="85" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="406" y="329.0" width="89" height="85" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="434" y="262.8" font-size="12" font-weight="400">
+  <rect fill="#BFBFC4" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="411.0000" y="332.0000" width="89.0000" height="-85.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="408.0000" y="329.0000" width="89.0000" height="-85.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="408.0000" y="329.0000" width="89.0000" height="-85.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="408.0000" y="244.0000" width="89.0000" height="85.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="436.0000" y="262.8000" font-size="12.0000" font-weight="400">
     <![CDATA[Quadrat]]>
   </text>
-  <line stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="406" y1="270.0" x2="495" y2="270.0" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="429" y="284.8" font-size="12" font-weight="400">
+  <line stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="408.0000" y1="270.0000" x2="497.0000" y2="270.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="431.0000" y="284.8000" font-size="12.0000" font-weight="400">
     <![CDATA[constraints]]>
   </text>
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="411" y="297.8" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="413.0000" y="297.8000" font-size="12.0000" font-weight="400">
     <![CDATA[{shape is square}]]>
   </text>
-  <rect fill="#BABBC1" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="314" y="85.0" width="143" height="46" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="311" y="82.0" width="143" height="46" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="311" y="82.0" width="143" height="46" rx="2.5" ry="2.5" />
-  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="311" y="82.0" width="143" height="46" />
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="369" y="48.8" font-size="12" font-weight="400">
+  <rect fill="#BABBC1" stroke="#969696" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="316.0000" y="85.0000" width="143.0000" height="-46.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="313.0000" y="82.0000" width="143.0000" height="-46.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="313.0000" y="82.0000" width="143.0000" height="-46.0000" rx="2.5000" ry="2.5000" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="313.0000" y="36.0000" width="143.0000" height="46.0000" />
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="371.0000" y="48.8000" font-size="12.0000" font-weight="400">
     <![CDATA[SF_SamplingFeature]]>
   </text>
-  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="327" y="67.8" font-size="12" font-weight="400">
+  <text font-family="Carlito" fill="#3C3C3C" text-anchor="start" style="white-space:pre;" x="329.0000" y="67.8000" font-size="12.0000" font-weight="400">
     <![CDATA[SF_SpatialSamplingFeature]]>
   </text>
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 566 223.0 L 554 223.0 L 560 207.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 389 98.0 L 377 98.0 L 383 82.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 200 345.0 L 188 345.0 L 195 329.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 246 345.0 L 234 345.0 L 240 329.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 655 224.0 L 643 224.0 L 649 208.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 679 224.0 L 667 224.0 L 673 208.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 534 223.0 L 522 223.0 L 528 207.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 508 223.0 L 496 223.0 L 502 207.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 60 224.0 L 48 224.0 L 54 208.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 521 223.0 L 509 223.0 L 515 207.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 550 223.0 L 538 223.0 L 544 207.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 245 222.0 L 233 222.0 L 239 206.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 292 222.0 L 280 222.0 L 286 206.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 324 222.0 L 312 222.0 L 318 206.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 269 222.0 L 257 222.0 L 263 206.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 304 222.0 L 292 222.0 L 298 206.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 282 222.0 L 270 222.0 L 276 206.0 Z " fill-rule="evenodd" />
-  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 489 223.0 L 477 223.0 L 483 207.0 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 568.0000 223.0000 L 556.0000 223.0000 L 562.0000 207.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 391.0000 98.0000 L 379.0000 98.0000 L 385.0000 82.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 202.0000 345.0000 L 190.0000 345.0000 L 197.0000 329.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 248.0000 345.0000 L 236.0000 345.0000 L 242.0000 329.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 657.0000 224.0000 L 645.0000 224.0000 L 651.0000 208.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 681.0000 224.0000 L 669.0000 224.0000 L 675.0000 208.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 536.0000 223.0000 L 524.0000 223.0000 L 530.0000 207.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 510.0000 223.0000 L 498.0000 223.0000 L 504.0000 207.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 62.0000 224.0000 L 50.0000 224.0000 L 56.0000 208.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 523.0000 223.0000 L 511.0000 223.0000 L 517.0000 207.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 552.0000 223.0000 L 540.0000 223.0000 L 546.0000 207.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 247.0000 222.0000 L 235.0000 222.0000 L 241.0000 206.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 294.0000 222.0000 L 282.0000 222.0000 L 288.0000 206.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 326.0000 222.0000 L 314.0000 222.0000 L 320.0000 206.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 271.0000 222.0000 L 259.0000 222.0000 L 265.0000 206.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 306.0000 222.0000 L 294.0000 222.0000 L 300.0000 206.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 284.0000 222.0000 L 272.0000 222.0000 L 278.0000 206.0000 Z " fill-rule="evenodd" />
+  <path fill="#F7DDB4" stroke="#696969" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 491.0000 223.0000 L 479.0000 223.0000 L 485.0000 207.0000 Z " fill-rule="evenodd" />
   
   </g>
 </svg>

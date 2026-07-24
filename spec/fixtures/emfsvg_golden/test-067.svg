@@ -6,13 +6,13 @@
       <rect x="0" y="7020" width="9374" height="-7037" />
     </clipPath>
   </defs>
-  <rect fill="#FFFBF0" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0.0" width="9360" height="-7020" />
+  <rect fill="#FFFBF0" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0.0000" y="0.0000" width="660.0000" height="413.0000" />
   <defs>
     <clipPath id="clip-2">
       <rect x="71" y="7020" width="9232" height="-7037" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="3439" y="21.002991452991452" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="242.4936" y="21.0030" font-size="12.0000" font-weight="400">
     <![CDATA[Dendrogramme de 8   Variables]]>
   </text>
   <defs>
@@ -20,7 +20,7 @@
       <rect x="71" y="6578" width="9232" height="-272" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4134" y="39.00555555555555" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="291.5000" y="39.0056" font-size="12.0000" font-weight="400">
     <![CDATA[Méth. de Ward]]>
   </text>
   <defs>
@@ -28,7 +28,7 @@
       <rect x="71" y="6578" width="9232" height="-578" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="3978" y="57.008119658119654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="280.5000" y="57.0081" font-size="12.0000" font-weight="400">
     <![CDATA[Dist. Euclidiennes]]>
   </text>
   <defs>
@@ -36,149 +36,149 @@
       <rect x="4297" y="6578" width="4879" height="-5762" />
     </clipPath>
   </defs>
-  <rect fill="#FFFFFF" clip-path="url(#clip-5)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="4297" y="68.00968660968661" width="4879" height="-5048" />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4905 363.99301994301993 L 4905 68.06851851851852 " />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 5513 363.99301994301993 L 5513 68.06851851851852 " />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 6121 363.99301994301993 L 6121 68.06851851851852 " />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 6729 363.99301994301993 L 6729 68.06851851851852 " />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 7337 363.99301994301993 L 7337 68.06851851851852 " />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 7945 363.99301994301993 L 7945 68.06851851851852 " />
-  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 8553 363.99301994301993 L 8553 68.06851851851852 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 133.78376068376068 L 4995 133.78376068376068 L 4995 100.89672364672364 L 4297 100.89672364672364 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 166.6707977207977 L 5159 166.6707977207977 L 5159 117.36965811965811 L 4995 117.36965811965811 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 199.55783475783474 L 5281 199.55783475783474 L 5281 142.0202279202279 L 5159 142.0202279202279 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 331.1059829059829 L 5289 331.1059829059829 L 5289 298.21894586894587 L 4297 298.21894586894587 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 265.33190883190883 L 5339 265.33190883190883 L 5339 232.44487179487177 L 4297 232.44487179487177 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 5289 314.69188034188033 L 6085 314.69188034188033 L 6085 248.91780626780624 L 5339 248.91780626780624 " />
-  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 6085 281.8048433048433 L 8780 281.8048433048433 L 8780 170.78903133903134 L 5281 170.78903133903134 " />
-  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 363.99301994301993 L 9161 363.99301994301993 " />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4297" y1="361.99273504273503" x2="4297" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4905" y1="361.99273504273503" x2="4905" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5513" y1="361.99273504273503" x2="5513" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6121" y1="361.99273504273503" x2="6121" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6729" y1="361.99273504273503" x2="6729" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7337" y1="361.99273504273503" x2="7337" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7945" y1="361.99273504273503" x2="7945" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8553" y1="361.99273504273503" x2="8553" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9161" y1="361.99273504273503" x2="9161" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4601" y1="362.9928774928775" x2="4601" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4905" y1="362.9928774928775" x2="4905" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5209" y1="362.9928774928775" x2="5209" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5513" y1="362.9928774928775" x2="5513" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5817" y1="362.9928774928775" x2="5817" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6121" y1="362.9928774928775" x2="6121" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6425" y1="362.9928774928775" x2="6425" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6729" y1="362.9928774928775" x2="6729" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7033" y1="362.9928774928775" x2="7033" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7337" y1="362.9928774928775" x2="7337" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7641" y1="362.9928774928775" x2="7641" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7945" y1="362.9928774928775" x2="7945" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8249" y1="362.9928774928775" x2="8249" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8553" y1="362.9928774928775" x2="8553" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8857" y1="362.9928774928775" x2="8857" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9161" y1="362.9928774928775" x2="9161" y2="363.99301994301993" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4248" y="380.85270655270654" font-size="12" font-weight="400">
+  <rect fill="#FFFFFF" clip-path="url(#clip-5)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="302.9936" y="68.0097" width="344.0321" height="296.9835" />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 345.8654 363.9930 L 345.8654 68.0685 " />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 388.7372 363.9930 L 388.7372 68.0685 " />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 431.6090 363.9930 L 431.6090 68.0685 " />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 474.4808 363.9930 L 474.4808 68.0685 " />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 517.3526 363.9930 L 517.3526 68.0685 " />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 560.2244 363.9930 L 560.2244 68.0685 " />
+  <path stroke="#D9D9D9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 603.0962 363.9930 L 603.0962 68.0685 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 133.7838 L 352.2115 133.7838 L 352.2115 100.8967 L 302.9936 100.8967 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 166.6708 L 363.7756 166.6708 L 363.7756 117.3697 L 352.2115 117.3697 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 199.5578 L 372.3782 199.5578 L 372.3782 142.0202 L 363.7756 142.0202 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 331.1060 L 372.9423 331.1060 L 372.9423 298.2189 L 302.9936 298.2189 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 265.3319 L 376.4679 265.3319 L 376.4679 232.4449 L 302.9936 232.4449 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 372.9423 314.6919 L 429.0705 314.6919 L 429.0705 248.9178 L 376.4679 248.9178 " />
+  <path stroke="#0000FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 429.0705 281.8048 L 619.1026 281.8048 L 619.1026 170.7890 L 372.3782 170.7890 " />
+  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 363.9930 L 645.9679 363.9930 " />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="302.9936" y1="361.9927" x2="302.9936" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="345.8654" y1="361.9927" x2="345.8654" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="388.7372" y1="361.9927" x2="388.7372" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="431.6090" y1="361.9927" x2="431.6090" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="474.4808" y1="361.9927" x2="474.4808" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="517.3526" y1="361.9927" x2="517.3526" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="560.2244" y1="361.9927" x2="560.2244" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="603.0962" y1="361.9927" x2="603.0962" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="645.9679" y1="361.9927" x2="645.9679" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="324.4295" y1="362.9929" x2="324.4295" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="345.8654" y1="362.9929" x2="345.8654" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="367.3013" y1="362.9929" x2="367.3013" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="388.7372" y1="362.9929" x2="388.7372" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="410.1731" y1="362.9929" x2="410.1731" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="431.6090" y1="362.9929" x2="431.6090" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="453.0449" y1="362.9929" x2="453.0449" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="474.4808" y1="362.9929" x2="474.4808" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="495.9167" y1="362.9929" x2="495.9167" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="517.3526" y1="362.9929" x2="517.3526" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="538.7885" y1="362.9929" x2="538.7885" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="560.2244" y1="362.9929" x2="560.2244" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="581.6603" y1="362.9929" x2="581.6603" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="603.0962" y1="362.9929" x2="603.0962" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="624.5321" y1="362.9929" x2="624.5321" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="645.9679" y1="362.9929" x2="645.9679" y2="363.9930" />
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="299.5385" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[0]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4856" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="342.4103" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[2]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="5464" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="385.2821" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[4]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6072" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="428.1538" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[6]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6680" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="471.0256" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[8]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="7238" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="510.3718" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[10]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="7846" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="553.2436" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[12]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="8454" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="596.1154" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[14]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="9062" y="380.85270655270654" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="638.9872" y="380.8527" font-size="12.0000" font-weight="400">
     <![CDATA[16]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6112" y="404.0575498575498" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="430.9744" y="404.0575" font-size="12.0000" font-weight="400">
     <![CDATA[Dist. Agrégation]]>
   </text>
-  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 68.06851851851852 L 9161 68.06851851851852 " />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4297" y1="70.06880341880341" x2="4297" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4905" y1="70.06880341880341" x2="4905" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5513" y1="70.06880341880341" x2="5513" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6121" y1="70.06880341880341" x2="6121" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6729" y1="70.06880341880341" x2="6729" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7337" y1="70.06880341880341" x2="7337" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7945" y1="70.06880341880341" x2="7945" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8553" y1="70.06880341880341" x2="8553" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9161" y1="70.06880341880341" x2="9161" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4601" y1="69.06866096866096" x2="4601" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4905" y1="69.06866096866096" x2="4905" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5209" y1="69.06866096866096" x2="5209" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5513" y1="69.06866096866096" x2="5513" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="5817" y1="69.06866096866096" x2="5817" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6121" y1="69.06866096866096" x2="6121" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6425" y1="69.06866096866096" x2="6425" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="6729" y1="69.06866096866096" x2="6729" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7033" y1="69.06866096866096" x2="7033" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7337" y1="69.06866096866096" x2="7337" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7641" y1="69.06866096866096" x2="7641" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="7945" y1="69.06866096866096" x2="7945" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8249" y1="69.06866096866096" x2="8249" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8553" y1="69.06866096866096" x2="8553" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="8857" y1="69.06866096866096" x2="8857" y2="68.06851851851852" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9161" y1="69.06866096866096" x2="9161" y2="68.06851851851852" />
-  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 4297 363.99301994301993 L 4297 68.00968660968661 " />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="363.99301994301993" x2="4297" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="331.1059829059829" x2="4297" y2="331.1059829059829" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="298.21894586894587" x2="4297" y2="298.21894586894587" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="265.33190883190883" x2="4297" y2="265.33190883190883" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="232.44487179487177" x2="4297" y2="232.44487179487177" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="199.55783475783474" x2="4297" y2="199.55783475783474" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="166.6707977207977" x2="4297" y2="166.6707977207977" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="133.78376068376068" x2="4297" y2="133.78376068376068" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="100.89672364672364" x2="4297" y2="100.89672364672364" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="4339" y1="68.00968660968661" x2="4297" y2="68.00968660968661" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="84" y="334.4343304843305" font-size="12" font-weight="400">
+  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 68.0685 L 645.9679 68.0685 " />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="302.9936" y1="70.0688" x2="302.9936" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="345.8654" y1="70.0688" x2="345.8654" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="388.7372" y1="70.0688" x2="388.7372" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="431.6090" y1="70.0688" x2="431.6090" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="474.4808" y1="70.0688" x2="474.4808" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="517.3526" y1="70.0688" x2="517.3526" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="560.2244" y1="70.0688" x2="560.2244" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="603.0962" y1="70.0688" x2="603.0962" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="645.9679" y1="70.0688" x2="645.9679" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="324.4295" y1="69.0687" x2="324.4295" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="345.8654" y1="69.0687" x2="345.8654" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="367.3013" y1="69.0687" x2="367.3013" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="388.7372" y1="69.0687" x2="388.7372" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="410.1731" y1="69.0687" x2="410.1731" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="431.6090" y1="69.0687" x2="431.6090" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="453.0449" y1="69.0687" x2="453.0449" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="474.4808" y1="69.0687" x2="474.4808" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="495.9167" y1="69.0687" x2="495.9167" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="517.3526" y1="69.0687" x2="517.3526" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="538.7885" y1="69.0687" x2="538.7885" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="560.2244" y1="69.0687" x2="560.2244" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="581.6603" y1="69.0687" x2="581.6603" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="603.0962" y1="69.0687" x2="603.0962" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="624.5321" y1="69.0687" x2="624.5321" y2="68.0685" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="645.9679" y1="69.0687" x2="645.9679" y2="68.0685" />
+  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 302.9936 363.9930 L 302.9936 68.0097 " />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="363.9930" x2="302.9936" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="331.1060" x2="302.9936" y2="331.1060" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="298.2189" x2="302.9936" y2="298.2189" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="265.3319" x2="302.9936" y2="265.3319" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="232.4449" x2="302.9936" y2="232.4449" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="199.5578" x2="302.9936" y2="199.5578" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="166.6708" x2="302.9936" y2="166.6708" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="133.7838" x2="302.9936" y2="133.7838" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="100.8967" x2="302.9936" y2="100.8967" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="305.9551" y1="68.0097" x2="302.9936" y2="68.0097" />
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="5.9231" y="334.4343" font-size="12.0000" font-weight="400">
     <![CDATA[Longueur moyenne   des chaînes (hors AIV/AIB) en C]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2864" y="301.54729344729344" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="201.9487" y="301.5473" font-size="12.0000" font-weight="400">
     <![CDATA[Taux d'omégas 3]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="1673" y="268.6602564102564" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="117.9679" y="268.6603" font-size="12.0000" font-weight="400">
     <![CDATA[Taux d'acides isovalériques total]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="467" y="235.77321937321938" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="32.9295" y="235.7732" font-size="12.0000" font-weight="400">
     <![CDATA[Taux d'acides gras à longues chaînes ramifiées]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2637" y="202.88618233618234" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="185.9423" y="202.8862" font-size="12.0000" font-weight="400">
     <![CDATA[Taux d'insaturations]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="524" y="169.9991452991453" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="36.9487" y="169.9991" font-size="12.0000" font-weight="400">
     <![CDATA[Taux d'acides gras à longues chaînes linéaires]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2041" y="137.11210826210825" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="143.9167" y="137.1121" font-size="12.0000" font-weight="400">
     <![CDATA[Taux d'acides isobutyriques]]>
   </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="3218" y="104.22507122507122" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="226.9103" y="104.2251" font-size="12.0000" font-weight="400">
     <![CDATA[Taux de TAG]]>
   </text>
-  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 9161 363.99301994301993 L 9161 68.00968660968661 " />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="363.99301994301993" x2="9161" y2="363.99301994301993" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="331.1059829059829" x2="9161" y2="331.1059829059829" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="298.21894586894587" x2="9161" y2="298.21894586894587" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="265.33190883190883" x2="9161" y2="265.33190883190883" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="232.44487179487177" x2="9161" y2="232.44487179487177" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="199.55783475783474" x2="9161" y2="199.55783475783474" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="166.6707977207977" x2="9161" y2="166.6707977207977" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="133.78376068376068" x2="9161" y2="133.78376068376068" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="100.89672364672364" x2="9161" y2="100.89672364672364" />
-  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="9118" y1="68.00968660968661" x2="9161" y2="68.00968660968661" />
+  <path stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" d="M 645.9679 363.9930 L 645.9679 68.0097 " />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="363.9930" x2="645.9679" y2="363.9930" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="331.1060" x2="645.9679" y2="331.1060" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="298.2189" x2="645.9679" y2="298.2189" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="265.3319" x2="645.9679" y2="265.3319" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="232.4449" x2="645.9679" y2="232.4449" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="199.5578" x2="645.9679" y2="199.5578" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="166.6708" x2="645.9679" y2="166.6708" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="133.7838" x2="645.9679" y2="133.7838" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="100.8967" x2="645.9679" y2="100.8967" />
+  <line stroke="#000000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="642.9359" y1="68.0097" x2="645.9679" y2="68.0097" />
   
   </g>
 </svg>

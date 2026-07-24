@@ -293,8 +293,8 @@ module Emfsvg
 
       def visit_line_to(wire)
         attrs = stroke_attrs.merge(
-          "x1" => @current_x, "y1" => maybe_flip_y(@current_y),
-          "x2" => wire.origin.x, "y2" => maybe_flip_y(wire.origin.y)
+          "x1" => fmt(cal_x(@current_x)), "y1" => fmt(cal_y(@current_y)),
+          "x2" => fmt(cal_x(wire.origin.x)), "y2" => fmt(cal_y(wire.origin.y))
         )
         @builder.tag("line", attrs, single: true)
         @current_x = wire.origin.x
@@ -302,44 +302,50 @@ module Emfsvg
       end
 
       def visit_rectangle(wire)
-        l = wire.rcl_box.left
-        t = wire.rcl_box.top
-        r = wire.rcl_box.right
-        b = wire.rcl_box.bottom
+        lt_x = cal_x(wire.rcl_box.left)
+        lt_y = cal_y(wire.rcl_box.top)
+        rb_x = cal_x(wire.rcl_box.right)
+        rb_y = cal_y(wire.rcl_box.bottom)
+        dim_x = rb_x - lt_x
+        dim_y = rb_y - lt_y
+        if @fix_y && dim_y.negative?
+          dim_y = -dim_y
+          lt_y -= dim_y
+        end
         attrs = fill_attrs.merge(stroke_attrs).merge(
-          "x" => l, "y" => maybe_flip_y(t),
-          "width" => r - l, "height" => b - t
+          "x" => fmt(lt_x), "y" => fmt(lt_y),
+          "width" => fmt(dim_x), "height" => fmt(dim_y)
         )
         @builder.tag("rect", attrs, single: true)
       end
 
       def visit_ellipse(wire)
-        l = wire.rcl_box.left
-        t = wire.rcl_box.top
-        r = wire.rcl_box.right
-        b = wire.rcl_box.bottom
-        cx = (l + r) / 2.0
-        cy = (t + b) / 2.0
-        rx = (r - l) / 2.0
-        ry = (b - t) / 2.0
+        lt_x = cal_x(wire.rcl_box.left)
+        lt_y = cal_y(wire.rcl_box.top)
+        rb_x = cal_x(wire.rcl_box.right)
+        rb_y = cal_y(wire.rcl_box.bottom)
+        cx = (lt_x + rb_x) / 2.0
+        cy = (lt_y + rb_y) / 2.0
+        rx = (rb_x - lt_x).abs / 2.0
+        ry = (rb_y - lt_y).abs / 2.0
         attrs = fill_attrs.merge(stroke_attrs).merge(
-          "cx" => cx, "cy" => maybe_flip_y(cy),
-          "rx" => rx, "ry" => ry
+          "cx" => fmt(cx), "cy" => fmt(cy),
+          "rx" => fmt(rx), "ry" => fmt(ry)
         )
         @builder.tag("ellipse", attrs, single: true)
       end
 
       def visit_round_rect(wire)
-        l = wire.rcl_box.left
-        t = wire.rcl_box.top
-        r = wire.rcl_box.right
-        b = wire.rcl_box.bottom
-        rx = wire.szl_corner.cx / 2.0
-        ry = wire.szl_corner.cy / 2.0
+        lt_x = cal_x(wire.rcl_box.left)
+        lt_y = cal_y(wire.rcl_box.top)
+        rb_x = cal_x(wire.rcl_box.right)
+        rb_y = cal_y(wire.rcl_box.bottom)
+        rx = (cal_x(wire.szl_corner.cx) - cal_x(0)).abs / 2.0
+        ry = (cal_y(wire.szl_corner.cy) - cal_y(0)).abs / 2.0
         attrs = fill_attrs.merge(stroke_attrs).merge(
-          "x" => l, "y" => maybe_flip_y(t),
-          "width" => r - l, "height" => b - t,
-          "rx" => rx, "ry" => ry
+          "x" => fmt(lt_x), "y" => fmt(lt_y),
+          "width" => fmt(rb_x - lt_x), "height" => fmt(rb_y - lt_y),
+          "rx" => fmt(rx), "ry" => fmt(ry)
         )
         @builder.tag("rect", attrs, single: true)
       end
@@ -379,19 +385,16 @@ module Emfsvg
 
       # TODO: bezier curve reconstruction
       def visit_poly_bezier(wire)
-        # PolyBezier: first point is start anchor; subsequent points in
-        # groups of 3 (control1, control2, end). Each group is one cubic
-        # Bezier segment.
         points = wire.aptl.to_a
         return if points.size < 4
 
-        d = "M #{points.first.x} #{maybe_flip_y(points.first.y)} "
+        d = "M #{fmt(cal_x(points.first.x))} #{fmt(cal_y(points.first.y))} "
         points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
           next if [ctrl1, ctrl2, endpt].any?(&:nil?)
 
-          d << "C #{ctrl1.x} #{maybe_flip_y(ctrl1.y)} "
-          d << "#{ctrl2.x} #{maybe_flip_y(ctrl2.y)} "
-          d << "#{endpt.x} #{maybe_flip_y(endpt.y)} "
+          d << "C #{fmt(cal_x(ctrl1.x))} #{fmt(cal_y(ctrl1.y))} "
+          d << "#{fmt(cal_x(ctrl2.x))} #{fmt(cal_y(ctrl2.y))} "
+          d << "#{fmt(cal_x(endpt.x))} #{fmt(cal_y(endpt.y))} "
         end
         attrs = stroke_attrs.merge("fill" => "none", "d" => d)
         @builder.tag("path", attrs, single: true)
@@ -403,13 +406,13 @@ module Emfsvg
         points = wire.apts.to_a
         return if points.size < 4
 
-        d = "M #{points.first.x} #{maybe_flip_y(points.first.y)} "
+        d = "M #{fmt(cal_x(points.first.x))} #{fmt(cal_y(points.first.y))} "
         points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
           next if [ctrl1, ctrl2, endpt].any?(&:nil?)
 
-          d << "C #{ctrl1.x} #{maybe_flip_y(ctrl1.y)} "
-          d << "#{ctrl2.x} #{maybe_flip_y(ctrl2.y)} "
-          d << "#{endpt.x} #{maybe_flip_y(endpt.y)} "
+          d << "C #{fmt(cal_x(ctrl1.x))} #{fmt(cal_y(ctrl1.y))} "
+          d << "#{fmt(cal_x(ctrl2.x))} #{fmt(cal_y(ctrl2.y))} "
+          d << "#{fmt(cal_x(endpt.x))} #{fmt(cal_y(endpt.y))} "
         end
         attrs = stroke_attrs.merge("fill" => "none", "d" => d)
         @builder.tag("path", attrs, single: true)
@@ -484,12 +487,10 @@ module Emfsvg
       def visit_comment(_wire); end
 
       def visit_set_pixel_v(wire)
-        # SetPixelV draws a single pixel of a given color at ptlPixel.
-        # SVG approximation: a 1x1 rect at the pixel position.
         color = Emf::Model::Geometry::Color.from_wire(wire.cr_color)
         attrs = {
-          "x" => wire.ptl_pixel.x, "y" => maybe_flip_y(wire.ptl_pixel.y),
-          "width" => 1, "height" => 1, "fill" => color.to_hex
+          "x" => fmt(cal_x(wire.ptl_pixel.x)), "y" => fmt(cal_y(wire.ptl_pixel.y)),
+          "width" => "1.0000", "height" => "1.0000", "fill" => color.to_hex
         }
         @builder.tag("rect", attrs, single: true)
       end
@@ -595,8 +596,8 @@ module Emfsvg
       def visit_angle_arc(wire)
         # AngleArc: arc on a circle of given radius around ptlCenter,
         # from start_angle to start_angle + sweep_angle (both in degrees).
-        cx = wire.ptl_center.x
-        cy = wire.ptl_center.y
+        cx = cal_x(wire.ptl_center.x)
+        cy = cal_y(wire.ptl_center.y)
         r = wire.n_radius
         start_rad = wire.start_angle * Math::PI / 180.0
         sweep_rad = wire.sweep_angle * Math::PI / 180.0
@@ -607,8 +608,8 @@ module Emfsvg
         ey = cy + (r * Math.sin(end_rad))
         large = wire.sweep_angle.abs > 180 ? 1 : 0
         sweep = wire.sweep_angle.negative? ? 0 : 1
-        d = format("M %f %f A %f %f 0 %d %d %f %f",
-                   sx, maybe_flip_y(sy), r, r, large, sweep, ex, maybe_flip_y(ey))
+        d = format("M %.4f %.4f A %.4f %.4f 0 %d %d %.4f %.4f",
+                   sx, sy, r, r, large, sweep, ex, ey)
         attrs = stroke_attrs.merge("fill" => "none", "d" => d)
         @builder.tag("path", attrs, single: true)
       end
@@ -937,9 +938,9 @@ module Emfsvg
                              .encode("UTF-8", undef: :replace, replace: "?")
                end
 
-        # Position: use ptlReference (the text anchor point per MS-EMF 2.2.6).
-        x = wire.ptl_reference.x
-        y = wire.ptl_reference.y
+        # Position: use ptlReference via point_cal pipeline.
+        x = cal_x(wire.ptl_reference.x)
+        y = cal_y(wire.ptl_reference.y)
 
         # Text alignment (matches libemf2svg text_style_draw).
         align = @dc.text_align
@@ -954,9 +955,9 @@ module Emfsvg
 
         # Vertical offset: libemf2svg adds font_height * 0.9 for TA_TOP.
         y_pos = if align.allbits?(0x18) || align.allbits?(0x08)
-                  maybe_flip_y(y)
+                  y
                 else
-                  maybe_flip_y(y) + (font_height * 0.9)
+                  y + (font_height * 0.9)
                 end
 
         attrs = {
@@ -964,14 +965,14 @@ module Emfsvg
           "fill" => @dc.text_color.to_hex,
           "text-anchor" => anchor,
           "style" => "white-space:pre;",
-          "x" => x, "y" => y_pos,
-          "font-size" => font_height
+          "x" => fmt(x), "y" => fmt(y_pos),
+          "font-size" => fmt(font_height)
         }
 
         # Font rotation from escapement (tenths of a degree)
         if font.escapement != 0
           rotation = -font.escapement / 10
-          attrs["transform"] = format("rotate(%d, %d, %.4f) translate(0, %.4f)",
+          attrs["transform"] = format("rotate(%d, %.4f, %.4f) translate(0, %.4f)",
                                       rotation, x, y_pos, font_height * 0.9)
         end
 
@@ -987,20 +988,23 @@ module Emfsvg
       end
 
       def emit_arc(wire, mode:)
-        l = wire.rcl_box.left
-        t = wire.rcl_box.top
-        r = wire.rcl_box.right
-        b = wire.rcl_box.bottom
+        l = cal_x(wire.rcl_box.left)
+        t = cal_y(wire.rcl_box.top)
+        r = cal_x(wire.rcl_box.right)
+        b = cal_y(wire.rcl_box.bottom)
         cx = (l + r) / 2.0
         cy = (t + b) / 2.0
-        rx = (r - l) / 2.0
-        ry = (b - t) / 2.0
+        rx = (r - l).abs / 2.0
+        ry = (b - t).abs / 2.0
         return if rx <= 0 || ry <= 0
 
-        # Start/end angles from rays through ptl_start/ptl_end
-        start_ang = Math.atan2(wire.ptl_start.y - cy, wire.ptl_start.x - cx)
-        end_ang = Math.atan2(wire.ptl_end.y - cy, wire.ptl_end.x - cx)
-        ccw = (@dc.arc_direction || 1) == 2 # AD_COUNTERCLOCKWISE=1, AD_CLOCKWISE=2
+        ps_x = cal_x(wire.ptl_start.x)
+        ps_y = cal_y(wire.ptl_start.y)
+        pe_x = cal_x(wire.ptl_end.x)
+        pe_y = cal_y(wire.ptl_end.y)
+        start_ang = Math.atan2(ps_y - cy, ps_x - cx)
+        end_ang = Math.atan2(pe_y - cy, pe_x - cx)
+        ccw = (@dc.arc_direction || 1) == 2
         sweep = ccw ? (start_ang - end_ang) : (end_ang - start_ang)
         sweep += (2 * Math::PI) if sweep.negative?
         sweep = (2 * Math::PI) - sweep if sweep > 2 * Math::PI
@@ -1011,8 +1015,8 @@ module Emfsvg
         ex = cx + (rx * Math.cos(end_ang))
         ey = cy + (ry * Math.sin(end_ang))
 
-        d = "M #{sx} #{maybe_flip_y(sy)} "
-        d << format("A %f %f 0 %d %d %f %f", rx, ry, large, sweep_flag, ex, maybe_flip_y(ey))
+        d = "M #{fmt(sx)} #{fmt(sy)} "
+        d << format("A %.4f %.4f 0 %d %d %.4f %.4f", rx, ry, large, sweep_flag, ex, ey)
         case mode
         when :chord
           d << " Z"
@@ -1053,15 +1057,15 @@ module Emfsvg
           i += 1
           case t & 0x07
           when pt_moveto
-            d << "M #{pt.x} #{maybe_flip_y(pt.y)} "
+            d << "M #{fmt(cal_x(pt.x))} #{fmt(cal_y(pt.y))} "
           when pt_lineto
-            d << "L #{pt.x} #{maybe_flip_y(pt.y)} "
+            d << "L #{fmt(cal_x(pt.x))} #{fmt(cal_y(pt.y))} "
           when pt_bezierto
             bezier_buf << pt
             if bezier_buf.size == 3
-              d << "C #{bezier_buf[0].x} #{maybe_flip_y(bezier_buf[0].y)} "
-              d << "#{bezier_buf[1].x} #{maybe_flip_y(bezier_buf[1].y)} "
-              d << "#{bezier_buf[2].x} #{maybe_flip_y(bezier_buf[2].y)} "
+              d << "C #{fmt(cal_x(bezier_buf[0].x))} #{fmt(cal_y(bezier_buf[0].y))} "
+              d << "#{fmt(cal_x(bezier_buf[1].x))} #{fmt(cal_y(bezier_buf[1].y))} "
+              d << "#{fmt(cal_x(bezier_buf[2].x))} #{fmt(cal_y(bezier_buf[2].y))} "
               bezier_buf.clear
             end
           end
@@ -1127,8 +1131,8 @@ module Emfsvg
         return if points.empty?
 
         d = +""
-        d << "M #{points.first.x} #{maybe_flip_y(points.first.y)} "
-        points[1..].each { |p| d << "L #{p.x} #{maybe_flip_y(p.y)} " }
+        d << "M #{fmt(cal_x(points.first.x))} #{fmt(cal_y(points.first.y))} "
+        points[1..].each { |p| d << "L #{fmt(cal_x(p.x))} #{fmt(cal_y(p.y))} " }
         d << "Z " if closed
         attrs = (closed ? fill_attrs.merge(stroke_attrs) : stroke_attrs).merge("d" => d)
         attrs["fill-rule"] = fill_rule_attr if closed

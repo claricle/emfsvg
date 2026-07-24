@@ -30,7 +30,9 @@ Metrics/ClassLength:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/AbcSize:
-  Max: 60
+  Max: 70
+  Exclude:
+    - "lib/emfsvg/renderer.rb"
   Exclude:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
@@ -49,7 +51,7 @@ Lint/UselessConstantScoping:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/ParameterLists:
-  Max: 10
+  Max: 11
 
 Metrics/BlockLength:
   Exclude:
@@ -86,6 +88,9 @@ Naming/MethodParameterName:
     - r
     - d
     - a
+    - w
+    - h
+    - n
 
 Lint/FloatComparison:
   Exclude:
@@ -100,3 +105,8 @@ Style/FormatStringToken:
 Lint/MissingSuper:
   Exclude:
     - "lib/emfsvg/**/*.rb"
+
+Lint/DuplicateBranch:
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+    - "lib/emfsvg/clip_region.rb"

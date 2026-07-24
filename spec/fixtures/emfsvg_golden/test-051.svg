@@ -6,37 +6,37 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" x1="144" y1="489.0" x2="473" y2="489.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" x1="144.0000" y1="489.0000" x2="473.0000" y2="489.0000" />
   <defs>
     <clipPath id="clip-2">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="144" y1="489.0" x2="144" y2="498.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-2)" x1="144.0000" y1="489.0000" x2="144.0000" y2="498.0000" />
   <defs>
     <clipPath id="clip-3">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="254" y1="489.0" x2="254" y2="498.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="254.0000" y1="489.0000" x2="254.0000" y2="498.0000" />
   <defs>
     <clipPath id="clip-4">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-4)" x1="364" y1="489.0" x2="364" y2="498.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-4)" x1="364.0000" y1="489.0000" x2="364.0000" y2="498.0000" />
   <defs>
     <clipPath id="clip-5">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="473" y1="489.0" x2="473" y2="498.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="473.0000" y1="489.0000" x2="473.0000" y2="498.0000" />
   <defs>
     <clipPath id="clip-6">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="144" y="524.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="144.0000" y="524.0000" font-size="12.0000" font-weight="400">
     <![CDATA[64]]>
   </text>
   <defs>
@@ -44,7 +44,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="254" y="524.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="254.0000" y="524.0000" font-size="12.0000" font-weight="400">
     <![CDATA[66]]>
   </text>
   <defs>
@@ -52,7 +52,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="364" y="524.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="364.0000" y="524.0000" font-size="12.0000" font-weight="400">
     <![CDATA[68]]>
   </text>
   <defs>
@@ -60,7 +60,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="473" y="524.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="473.0000" y="524.0000" font-size="12.0000" font-weight="400">
     <![CDATA[70]]>
   </text>
   <defs>
@@ -68,49 +68,49 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-10)" x1="78" y1="448.0" x2="78" y2="129.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-10)" x1="78.0000" y1="448.0000" x2="78.0000" y2="129.0000" />
   <defs>
     <clipPath id="clip-11">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="78" y1="448.0" x2="69" y2="448.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="78.0000" y1="448.0000" x2="69.0000" y2="448.0000" />
   <defs>
     <clipPath id="clip-12">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-12)" x1="78" y1="384.0" x2="69" y2="384.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-12)" x1="78.0000" y1="384.0000" x2="69.0000" y2="384.0000" />
   <defs>
     <clipPath id="clip-13">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-13)" x1="78" y1="320.0" x2="69" y2="320.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-13)" x1="78.0000" y1="320.0000" x2="69.0000" y2="320.0000" />
   <defs>
     <clipPath id="clip-14">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-14)" x1="78" y1="256.0" x2="69" y2="256.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-14)" x1="78.0000" y1="256.0000" x2="69.0000" y2="256.0000" />
   <defs>
     <clipPath id="clip-15">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-15)" x1="78" y1="192.0" x2="69" y2="192.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-15)" x1="78.0000" y1="192.0000" x2="69.0000" y2="192.0000" />
   <defs>
     <clipPath id="clip-16">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-16)" x1="78" y1="129.0" x2="69" y2="129.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-16)" x1="78.0000" y1="129.0000" x2="69.0000" y2="129.0000" />
   <defs>
     <clipPath id="clip-17">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56" y="448.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="448.0000" font-size="12.0000" font-weight="400">
     <![CDATA[1.06]]>
   </text>
   <defs>
@@ -118,7 +118,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56" y="384.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="384.0000" font-size="12.0000" font-weight="400">
     <![CDATA[1.08]]>
   </text>
   <defs>
@@ -126,7 +126,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56" y="320.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="320.0000" font-size="12.0000" font-weight="400">
     <![CDATA[1.10]]>
   </text>
   <defs>
@@ -134,7 +134,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56" y="256.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="256.0000" font-size="12.0000" font-weight="400">
     <![CDATA[1.12]]>
   </text>
   <defs>
@@ -142,7 +142,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56" y="192.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="192.0000" font-size="12.0000" font-weight="400">
     <![CDATA[1.14]]>
   </text>
   <defs>
@@ -150,7 +150,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56" y="129.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="129.0000" font-size="12.0000" font-weight="400">
     <![CDATA[1.16]]>
   </text>
   <defs>
@@ -158,16 +158,16 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="78" y1="489.0" x2="546" y2="489.0" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="546" y1="489.0" x2="546" y2="78.0" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="546" y1="78.0" x2="78" y2="78.0" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="78" y1="78.0" x2="78" y2="489.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="78.0000" y1="489.0000" x2="546.0000" y2="489.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="546.0000" y1="489.0000" x2="546.0000" y2="78.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="546.0000" y1="78.0000" x2="78.0000" y2="78.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="78.0000" y1="78.0000" x2="78.0000" y2="489.0000" />
   <defs>
     <clipPath id="clip-24">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="312" y="563.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="312.0000" y="563.0000" font-size="12.0000" font-weight="400">
     <![CDATA[Vitesse]]>
   </text>
   <defs>
@@ -175,7 +175,7 @@
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="18" y="283.0" font-size="12" font-weight="400">
+  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="18.0000" y="283.0000" font-size="12.0000" font-weight="400">
     <![CDATA[Indice]]>
   </text>
   <defs>
@@ -183,124 +183,124 @@
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-26)" x1="144" y1="489.0" x2="144" y2="78.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-26)" x1="144.0000" y1="489.0000" x2="144.0000" y2="78.0000" />
   <defs>
     <clipPath id="clip-27">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-27)" x1="254" y1="489.0" x2="254" y2="78.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-27)" x1="254.0000" y1="489.0000" x2="254.0000" y2="78.0000" />
   <defs>
     <clipPath id="clip-28">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-28)" x1="364" y1="489.0" x2="364" y2="78.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-28)" x1="364.0000" y1="489.0000" x2="364.0000" y2="78.0000" />
   <defs>
     <clipPath id="clip-29">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-29)" x1="473" y1="489.0" x2="473" y2="78.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-29)" x1="473.0000" y1="489.0000" x2="473.0000" y2="78.0000" />
   <defs>
     <clipPath id="clip-30">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-30)" x1="78" y1="448.0" x2="546" y2="448.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-30)" x1="78.0000" y1="448.0000" x2="546.0000" y2="448.0000" />
   <defs>
     <clipPath id="clip-31">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-31)" x1="78" y1="384.0" x2="546" y2="384.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-31)" x1="78.0000" y1="384.0000" x2="546.0000" y2="384.0000" />
   <defs>
     <clipPath id="clip-32">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-32)" x1="78" y1="320.0" x2="546" y2="320.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-32)" x1="78.0000" y1="320.0000" x2="546.0000" y2="320.0000" />
   <defs>
     <clipPath id="clip-33">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-33)" x1="78" y1="256.0" x2="546" y2="256.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-33)" x1="78.0000" y1="256.0000" x2="546.0000" y2="256.0000" />
   <defs>
     <clipPath id="clip-34">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-34)" x1="78" y1="192.0" x2="546" y2="192.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-34)" x1="78.0000" y1="192.0000" x2="546.0000" y2="192.0000" />
   <defs>
     <clipPath id="clip-35">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-35)" x1="78" y1="129.0" x2="546" y2="129.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-35)" x1="78.0000" y1="129.0000" x2="546.0000" y2="129.0000" />
   <defs>
     <clipPath id="clip-36">
       <rect x="0" y="0" width="587" height="587" />
     </clipPath>
   </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="78" y1="489.0" x2="546" y2="489.0" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="546" y1="489.0" x2="546" y2="78.0" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="546" y1="78.0" x2="78" y2="78.0" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="78" y1="78.0" x2="78" y2="489.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="78.0000" y1="489.0000" x2="546.0000" y2="489.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="546.0000" y1="489.0000" x2="546.0000" y2="78.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="546.0000" y1="78.0000" x2="78.0000" y2="78.0000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-36)" x1="78.0000" y1="78.0000" x2="78.0000" y2="489.0000" />
   <defs>
     <clipPath id="clip-37">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-37)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="174.0" cy="266.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-37)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="174.0000" cy="266.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-38">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-38)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="287.0" cy="224.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-38)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="287.0000" cy="224.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-39">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-39)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="529.0" cy="93.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-39)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="529.0000" cy="93.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-40">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-40)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="479.0" cy="192.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-40)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="479.0000" cy="192.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-41">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-41)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="478.0" cy="189.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-41)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="478.0000" cy="189.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-42">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-42)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="387.0" cy="228.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-42)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="387.0000" cy="228.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-43">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-43)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="288.0" cy="298.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-43)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="288.0000" cy="298.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-44">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-44)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="150.0" cy="410.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-44)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="150.0000" cy="410.0000" rx="3.0000" ry="3.0000" />
   <defs>
     <clipPath id="clip-45">
       <rect x="78" y="78" width="469" height="412" />
     </clipPath>
   </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-45)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="96.0" cy="473.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" clip-path="url(#clip-45)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="96.0000" cy="473.0000" rx="3.0000" ry="3.0000" />
   
   </g>
 </svg>
