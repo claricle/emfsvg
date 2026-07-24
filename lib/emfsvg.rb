@@ -16,6 +16,7 @@ module Emfsvg
   autoload :Compat, "emfsvg/compat"
   autoload :DibDecoder, "emfsvg/dib_decoder"
   autoload :PngEncoder, "emfsvg/png_encoder"
+  autoload :ClipRegion, "emfsvg/clip_region"
 
   class << self
     # Render an Emf::Model::Metafile to an SVG string.

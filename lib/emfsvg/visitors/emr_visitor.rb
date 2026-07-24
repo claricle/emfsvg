@@ -70,7 +70,7 @@ module Emfsvg
         Emf::Emr::Binary::Records::IntersectClipRect => :visit_intersect_clip_rect,
         Emf::Emr::Binary::Records::ExcludeClipRect => :visit_exclude_clip_rect,
         Emf::Emr::Binary::Records::SetBrushOrgEx => :visit_set_brush_org_ex,
-        Emf::Emr::Binary::Records::SetMetArgn => :visit_set_met_argn,
+        Emf::Emr::Binary::Records::SetMetArgn => :visit_set_metargn,
         Emf::Emr::Binary::Records::OffsetClipRgn => :visit_offset_clip_rgn,
         Emf::Emr::Binary::Records::SetIcmMode => :visit_set_icm_mode,
         Emf::Emr::Binary::Records::SetLayout => :visit_set_layout,
@@ -113,11 +113,13 @@ module Emfsvg
         Emf::Emr::Binary::Records::CreateMonoBrush => :visit_create_mono_brush,
         Emf::Emr::Binary::Records::CreateDibPatternBrushPt => :visit_create_dib_pattern_brush_pt,
         Emf::Emr::Binary::Records::ExtCreatePen => :visit_ext_create_pen,
-        Emf::Emr::Binary::Records::StretchDIBits => :stretch_d_i_bits,
-        Emf::Emr::Binary::Records::AlphaBlend => :alpha_blend,
-        Emf::Emr::Binary::Records::TransparentBlt => :transparent_blt,
-        Emf::Emr::Binary::Records::BitBlt => :bit_blt,
-        Emf::Emr::Binary::Records::StretchBlt => :stretch_blt,
+        Emf::Emr::Binary::Records::StretchDIBits => :visit_stretch_dibits,
+        Emf::Emr::Binary::Records::AlphaBlend => :visit_alpha_blend,
+        Emf::Emr::Binary::Records::TransparentBlt => :visit_transparent_blt,
+        Emf::Emr::Binary::Records::BitBlt => :visit_bit_blt,
+        Emf::Emr::Binary::Records::StretchBlt => :visit_stretch_blt,
+        Emf::Emr::Binary::Records::ExtSelectClipRgn => :visit_ext_select_clip_rgn,
+        Emf::Emr::Binary::Records::GradientFill => :visit_gradient_fill
       }.freeze
 
       attr_reader :current_x, :current_y
@@ -140,7 +142,7 @@ module Emfsvg
       def visit_emr_wire_record(adapter)
         wire = adapter.wire
         method_name = HANDLERS[wire.class]
-        if method_name && respond_to?(method_name)
+        if method_name
           send(method_name, wire)
         elsif @options.verbose
           warn "emfsvg: no handler for #{wire.class.name&.split('::')&.last}"
@@ -468,13 +470,18 @@ module Emfsvg
       end
 
       def visit_intersect_clip_rect(wire)
-        # IntersectClipRect restricts the clip region. SVG approximation:
-        # wrap subsequent primitives in a <clipPath>. For now, log only.
-        # Full clip handling requires maintaining the clip region across
-        # records, which is a TODO.
+        new_region = ClipRegion.new(bounds: Emf::Model::Geometry::Rect.from_wire(wire.rcl_clip))
+        @dc.clip_region = (@dc.clip_region || ClipRegion.new).combine(new_region, ClipRegion::RGN_AND)
+        emit_clip_def(@dc.clip_region)
       end
 
-      def visit_exclude_clip_rect(_wire); end
+      def visit_exclude_clip_rect(wire)
+        # ExcludeClipRect = subtract rclClip from current region.
+        # MVP: replace with the inverse bounding rect (lossy but safe).
+        new_region = ClipRegion.new(bounds: Emf::Model::Geometry::Rect.from_wire(wire.rcl_clip))
+        @dc.clip_region = (@dc.clip_region || ClipRegion.new).combine(new_region, ClipRegion::RGN_DIFF)
+        emit_clip_def(@dc.clip_region)
+      end
 
       # --- State-only handlers (no SVG output) ---
 
@@ -650,7 +657,95 @@ module Emfsvg
         )
       end
 
+      # --- Clip region handlers (TODO 06) ---
+
+      def visit_ext_select_clip_rgn(wire)
+        bounds = parse_rgn_data_bounds(wire.rgn_data.to_s)
+        new_region = bounds ? ClipRegion.new(bounds: bounds) : ClipRegion.new
+        mode = wire.dw_mode.zero? ? ClipRegion::RGN_COPY : wire.dw_mode
+        @dc.clip_region = (@dc.clip_region || ClipRegion.new).combine(new_region, mode)
+        emit_clip_def(@dc.clip_region)
+      end
+
+      def visit_select_clip_path(_wire)
+        return unless @path_d && !@path_d.empty?
+
+        @dc.clip_region = ClipRegion.new(path_d: @path_d.dup)
+        emit_clip_def(@dc.clip_region)
+      end
+
+      def visit_gradient_fill(wire)
+        body = wire.body.to_s
+        wire.ul_mode
+        n_ver = wire.n_ver
+        return if n_ver.nil? || n_ver.zero? || body.bytesize < n_ver * 16
+
+        # Parse Trivertex structs: x, y, red, green, blue, alpha (4+4+2+2+2+2 = 16)
+        vertices = (0...n_ver).map do |i|
+          off = i * 16
+          {
+            x: body.getbyte(off) | (body.getbyte(off + 1) << 8) | (body.getbyte(off + 2) << 16) | (body.getbyte(off + 3) << 24),
+            y: body.getbyte(off + 4) | (body.getbyte(off + 5) << 8) | (body.getbyte(off + 6) << 16) | (body.getbyte(off + 7) << 24),
+            red: body.getbyte(off + 8) | (body.getbyte(off + 9) << 8),
+            green: body.getbyte(off + 10) | (body.getbyte(off + 11) << 8),
+            blue: body.getbyte(off + 12) | (body.getbyte(off + 13) << 8),
+            alpha: body.getbyte(off + 14) | (body.getbyte(off + 15) << 8)
+          }
+        end
+        # For MVP we emit a single rect with an average colour per vertex pair.
+        # Full gradient rendering is a follow-up.
+        vertices.each_slice(2) do |v0, v1|
+          next unless v1
+
+          x0 = v0[:x]
+          y0 = v0[:y]
+          x1 = v1[:x]
+          y1 = v1[:y]
+          attrs = {
+            "x" => x0, "y" => maybe_flip_y(y0),
+            "width" => (x1 - x0).abs, "height" => (y1 - y0).abs,
+            "fill" => format("#%04X%04X%04X", v0[:red], v0[:green], v0[:blue])[0, 7]
+          }
+          @builder.tag("rect", attrs, single: true)
+        end
+      end
+
       private
+
+      def parse_rgn_data_bounds(rgn_data)
+        return nil if rgn_data.nil? || rgn_data.bytesize < 32
+
+        # RGNDATAHEADER.rclBounds is at offset 16 (after dwSize+iType+nCount+nRgnSize)
+        left = rgn_data.getbyte(16) | (rgn_data.getbyte(17) << 8) |
+               (rgn_data.getbyte(18) << 16) | (rgn_data.getbyte(19) << 24)
+        top = rgn_data.getbyte(20) | (rgn_data.getbyte(21) << 8) |
+              (rgn_data.getbyte(22) << 16) | (rgn_data.getbyte(23) << 24)
+        right = rgn_data.getbyte(24) | (rgn_data.getbyte(25) << 8) |
+                (rgn_data.getbyte(26) << 16) | (rgn_data.getbyte(27) << 24)
+        bottom = rgn_data.getbyte(28) | (rgn_data.getbyte(29) << 8) |
+                 (rgn_data.getbyte(30) << 16) | (rgn_data.getbyte(31) << 24)
+        Emf::Model::Geometry::Rect.new(left: left, top: top, right: right, bottom: bottom)
+      end
+
+      def emit_clip_def(region)
+        return if region.nil? || region.empty?
+
+        @clip_counter ||= 0
+        @clip_counter += 1
+        id = "clip-#{@clip_counter}"
+        @builder.tag("defs") do
+          @builder.tag("clipPath", { "id" => id }) do
+            region.to_svg_element(@builder)
+          end
+        end
+        @current_clip_id = id
+      end
+
+      def clip_attrs
+        return {} unless @current_clip_id
+
+        { "clip-path" => "url(##{@current_clip_id})" }
+      end
 
       # LOGFONT_PANOSE face name lives at offset 28 within LOGFONT (after
       # 5-byte fixed prefix and the 23-byte full PANOSE bits in the
@@ -764,7 +859,7 @@ module Emfsvg
         @builder.tag("path", attrs, single: true)
       end
 
-      def emit_poly_multi(counts, all_points, closed:, point_size:)
+      def emit_poly_multi(counts, all_points, closed:, _point_size:)
         return if counts.empty? || all_points.empty?
 
         # Walk sub-paths, slicing all_points by cumulative counts.
@@ -778,7 +873,7 @@ module Emfsvg
         end
       end
 
-      def emit_poly_draw(points, types, point_size:)
+      def emit_poly_draw(points, types, _point_size:)
         return if points.empty? || types.empty?
 
         pt_moveto = 1
@@ -855,12 +950,12 @@ module Emfsvg
       def build_image_href(result)
         case result.color_type
         when :jpeg
-          "data:image/jpeg;base64,#{Base64.strict_encode64(result.pixels)}"
+          "data:image/jpeg;base64,#{[result.pixels].pack('m0')}"
         when :png
-          "data:image/png;base64,#{Base64.strict_encode64(result.pixels)}"
+          "data:image/png;base64,#{[result.pixels].pack('m0')}"
         else
           png_bytes = PngEncoder.encode(result.width, result.height, result.pixels)
-          "data:image/png;base64,#{Base64.strict_encode64(png_bytes)}"
+          "data:image/png;base64,#{[png_bytes].pack('m0')}"
         end
       end
 
@@ -878,12 +973,13 @@ module Emfsvg
 
       def fill_attrs
         brush = @dc.brush
-        brush.null? ? { "fill" => "none" } : { "fill" => brush.color.to_hex }
+        base = brush.null? ? { "fill" => "none" } : { "fill" => brush.color.to_hex }
+        base.merge(clip_attrs)
       end
 
       def stroke_attrs
         pen = @dc.pen
-        return { "stroke" => "none" } if pen.null?
+        return { "stroke" => "none" }.merge(clip_attrs) if pen.null?
 
         attrs = { "stroke" => pen.color.to_hex, "stroke-width" => pen.width }
         case pen.style
@@ -896,7 +992,7 @@ module Emfsvg
         when Pen::DASHDOTDOT
           attrs["stroke-dasharray"] = "4 2 1 2 1 2"
         end
-        attrs
+        attrs.merge(clip_attrs)
       end
 
       def fill_rule_attr

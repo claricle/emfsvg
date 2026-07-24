@@ -5,6 +5,8 @@
   <g transform="matrix(0.062623 0.000000 0.000000 0.062798 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 72 72 L 72 3288 L 8072 3288 L 8072 72 L 72 72 Z " fill-rule="evenodd" />
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 0.000000 0.000000)">
+  <image x="91" y="20" width="248" height="144" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAACQCAYAAAAldqY8AAACW0lEQVR42u3cQYrDUAxEQd3/0jLef/DqC7eogbqAMq+dZJGqqgbWcgQQOCBwQOCAwAGBA9+Bv38OAp7gVxgY8BbdwIDADQwIHAMjcDAw0YE7LgamPcEdF6IacFgDg8/gGBgEjoFB4GBgpgJ3XAxMe4I7LsQ14LgGBp/BMTAIHAODwMHATHBcDEx7gjsuRDbguP7J8ATHwJAduH82A4MnuH82vOYC98+G11zgGBivucAxMAgcA8MpcMfFwPhVVceFrAYc1sDgMzgGBoFjYBA4GJipwB0XA+NXVR0X8hpwXAODz+AYGASOgUHgYGAEDgZG4GBgBA7eogP7A/fFB3iC++IDBO6LDxA4BgaBY2AQOAYGx4XVDTguLG7AMQ0MPoNjYBA4BgaBg4EROBgYgYOBETh4iw4IHBA4IHBA4IDAAYGDwAGBAwIHBA4IHBA4CBwQOJAYuJ/JAU/wawwMeItuYEDgBgYEjoEROBiY6MAdFwPTnuCOC3ENOK6BwWdwDAwCx8AgcDAwAgcDI3AwMAIHb9GBnYH7sgM8wX3ZAQL3ZQcIHAODwDEwCBwDwylwx8XAtCe440JUAw5rYPAZHAODwDEwCBwMzFTgjouB8auqjgt5DTiugcFncAwMAsfAIHAwMAIHAyNwMDACB2/RgZ2B+7IDPMF92QEC92UHCBwDg8AxMAgcA8MpcMfFwPhVVceFrAYc1sDgMzgGBoFjYBA4GJipwB0XA+NXVR0X8hpwXAODz+AYGASOgUHgYGA2Be5FxMB4gnsRMTAC9yKCwDEwOAIGRuBgYAQO/GdgHoFSqAjLZjcxAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
+  <image x="91" y="20" width="248" height="144" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAACQCAYAAAAldqY8AAADaUlEQVR42u3dwY6rOhAEUP//TyfKIksUIIC7y+dKb3XELMA1ZRqGN8YYr63/Pv84563dCeJcwDnnAs45F3DOuYBzzgWccy7gnAu4E8R5e//+E3DOewdYg3PeKaC/fq4tOuc3+p4APhhgAef8yQAf+RkCzvmEAJuic54xhBJwzgVYwDm3hRZwbooswALOTZG5gHNbYC7ghlDOj4A7QQLMBZzbQnMB17ACzAXcYyDOBdwWmHMBN4TiPCHgAsx544ALMOdNA+4emPPmAdfAnJcYImtgzoNnUBqc8+AZlAbnPHgGpcE5P3NskwLU4FyDBr+KrMG5AHtMpsG5F6E8B3cBuPWjwbkAOz8anJsicw3OTZG5Bhdg10fANbh7WK7BLUAB5hqcCzDX4FkB9QuQa3BTZM41+Kwpsv87JtfgEwPgHpbzxg0uwJwXbvA9W2AXgHP34Jzz8wXsOTjnaU+BNDjnvqqqwTlvXoAanPPg9a/BOQ9e/xqc+3v44ALT4NwHLTwH1+DcFliDO8FcAWhwF0CAuQbnttBcg/NTxwqwgFsAHgNxDa7BbYG5Bud+AXINLsCca3BbaM5XbXBTZM6bNrgpMueNG9wfE3Duq6qcc1N0zgXcFJnzzMe0Gpzz4FeRNTjnwe9RaHDOg9e/Buc8uMA0OOfB61eDc/fAHpNpcO5VZA1ugXLrR4O7AO5huQbnAsw1OHf9uAbnrp+AawBTZK7BLSANyjW4e1gLjGtwAeZcgwsw5xrcDoTz4K+qCjDnExvcZ5E5dw/OOXcPzjnX4Jwv8pjWV1U5X+dVZA3OeaUAH/kZ7sE5X/s9Cg3OefD61eBcgE3RnUBuC63BLTDuVWQN7gII8FNTZAHX4Nz1F3ANbgjl/GhwJ1iAuQZ3AWyhuQbXsM4/1+AeA3GuwW2BuYBrcDMErsF7N5gAcwFvHCAB5rxpg7sH5rx4g5sic67BOefuwTnnG/nT4JwHPwXS4Jzfsf6LvMmowTkPfhVZg3N+9RdpTNE59yKUBufc+tPgXICdHw3OF5wiC7gG5z5oIeAaXIAP/a2BAGtw7h6Wa3Du/HMNLsDOD9fg1QPqFyjX4KbInGtwU2Qu4Is1uAblAj58VZVzDS7AnGtwW2jOgxr8n88m3/0LwPGOX+j4ekMsxzve8Zcdb4vDeaq/AWRN+ZFkyIp3AAAAAElFTkSuQmCC" preserveAspectRatio="none" />
   <g transform="matrix(0.062623 0.000000 0.000000 0.062798 0.000000 0.000000)">
   <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1488 2600 L 1424 2600 L 1424 2584 L 1488 2584 L 1488 2600 Z " fill-rule="nonzero" />
   <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1488 2232 L 1424 2232 L 1424 2216 L 1488 2216 L 1488 2232 Z " fill-rule="nonzero" />
@@ -13,6 +15,11 @@
   <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1488 1160 L 1424 1160 L 1424 1144 L 1488 1144 L 1488 1160 Z " fill-rule="nonzero" />
   <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1488 808 L 1424 808 L 1424 792 L 1488 792 L 1488 808 Z " fill-rule="nonzero" />
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 0.000000 0.000000)">
+  <defs>
+    <clipPath id="clip-1">
+      <rect x="5" y="5" width="501" height="202" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 155.006714 155.006714)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 155.006714 155.006714)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 155.006714 155.006714)">
@@ -24,6 +31,11 @@
   <text x="231" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     0,0000
   </text>
+  <defs>
+    <clipPath id="clip-2">
+      <rect x="5" y="5" width="501" height="202" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 132.460999 132.460999)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 132.460999 132.460999)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 132.460999 132.460999)">
@@ -35,6 +47,11 @@
   <text x="227" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     20,0000
   </text>
+  <defs>
+    <clipPath id="clip-3">
+      <rect x="5" y="5" width="501" height="202" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 109.915207 109.915207)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 109.915207 109.915207)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 109.915207 109.915207)">
@@ -46,6 +63,11 @@
   <text x="227" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     40,0000
   </text>
+  <defs>
+    <clipPath id="clip-4">
+      <rect x="5" y="5" width="501" height="202" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 87.369514 87.369514)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 87.369514 87.369514)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 87.369514 87.369514)">
@@ -57,6 +79,11 @@
   <text x="227" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     60,0000
   </text>
+  <defs>
+    <clipPath id="clip-5">
+      <rect x="5" y="5" width="501" height="202" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 64.823807 64.823807)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 64.823807 64.823807)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 64.823807 64.823807)">
@@ -68,6 +95,11 @@
   <text x="227" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     80,0000
   </text>
+  <defs>
+    <clipPath id="clip-6">
+      <rect x="5" y="5" width="501" height="202" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 42.278114 42.278114)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 42.278114 42.278114)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 42.278114 42.278114)">
@@ -80,10 +112,15 @@
     100,0000
   </text>
   <g transform="matrix(0.062623 0.000000 0.000000 0.062798 42.278114 42.278114)">
-  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1496 2592 L 1496 2656 L 1480 2656 L 1480 2592 L 1496 2592 Z " fill-rule="nonzero" />
-  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 3144 2592 L 3144 2656 L 3128 2656 L 3128 2592 L 3144 2592 Z " fill-rule="nonzero" />
-  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 4808 2592 L 4808 2656 L 4792 2656 L 4792 2592 L 4808 2592 Z " fill-rule="nonzero" />
+  <path fill="#868686" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 1496 2592 L 1496 2656 L 1480 2656 L 1480 2592 L 1496 2592 Z " fill-rule="nonzero" />
+  <path fill="#868686" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 3144 2592 L 3144 2656 L 3128 2656 L 3128 2592 L 3144 2592 Z " fill-rule="nonzero" />
+  <path fill="#868686" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 4808 2592 L 4808 2656 L 4792 2656 L 4792 2592 L 4808 2592 Z " fill-rule="nonzero" />
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 42.278114 42.278114)">
+  <defs>
+    <clipPath id="clip-7">
+      <rect x="89" y="175" width="112" height="32" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
@@ -95,6 +132,11 @@
   <text x="2" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     EPU M'sila sang 
   </text>
+  <defs>
+    <clipPath id="clip-8">
+      <rect x="89" y="175" width="112" height="32" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
@@ -106,6 +148,11 @@
   <text x="93" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     -
   </text>
+  <defs>
+    <clipPath id="clip-9">
+      <rect x="191" y="175" width="116" height="32" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
@@ -118,8 +165,13 @@
     EPU M'sila sang +
   </text>
   <g transform="matrix(0.062623 0.000000 0.000000 0.062798 174.755890 174.755890)">
-  <path fill="#4F81BD" stroke="#000000" stroke-width="1" d="M 5896 1512 L 5896 1624 L 6008 1624 L 6008 1512 L 5896 1512 Z " fill-rule="evenodd" />
+  <path fill="#4F81BD" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 5896 1512 L 5896 1624 L 6008 1624 L 6008 1512 L 5896 1512 Z " fill-rule="evenodd" />
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 174.755890 174.755890)">
+  <defs>
+    <clipPath id="clip-10">
+      <rect x="364" y="90" width="142" height="117" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 90.879532 90.879532)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 90.879532 90.879532)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 90.879532 90.879532)">
@@ -131,6 +183,11 @@
   <text x="0" y="0" font-family="Times New Roman" font-size="12" fill="#00000002">
     Moyenne Nbr d'œufs 
   </text>
+  <defs>
+    <clipPath id="clip-11">
+      <rect x="364" y="90" width="142" height="117" />
+    </clipPath>
+  </defs>
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 105.950966 105.950966)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 105.950966 105.950966)">
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 105.950966 105.950966)">
@@ -143,10 +200,10 @@
     pondus
   </text>
   <g transform="matrix(0.062623 0.000000 0.000000 0.062798 105.950966 105.950966)">
-  <line stroke="#000000" stroke-width="1" x1="72" y1="80" x2="8080" y2="72" />
-  <line stroke="#000000" stroke-width="1" x1="8080" y1="72" x2="8088" y2="3296" />
-  <line stroke="#000000" stroke-width="1" x1="8088" y1="3296" x2="80" y2="3304" />
-  <path stroke="#000000" stroke-width="1" d="M 80 3288 L 8080 3288 L 8072 3296 L 8072 80 L 8080 88 L 80 88 L 88 80 " />
+  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="72" y1="80" x2="8080" y2="72" />
+  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="8080" y1="72" x2="8088" y2="3296" />
+  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="8088" y1="3296" x2="80" y2="3304" />
+  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" d="M 80 3288 L 8080 3288 L 8072 3296 L 8072 80 L 8080 88 L 80 88 L 88 80 " />
   <g transform="matrix(1.001965 0.000000 0.000000 1.004762 105.950966 105.950966)">
   </g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g>
 </svg>

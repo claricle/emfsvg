@@ -22,12 +22,13 @@ module Emfsvg
       @layout = 0
       @mapper_flags = 0
       @arc_direction = 1 # AD_COUNTERCLOCKWISE
+      @clip_region = nil
     end
 
     attr_accessor :pen, :brush, :font, :text_color, :bk_color, :bk_mode,
                   :poly_fill_mode, :map_mode, :text_align, :stretch_mode,
                   :miter_limit, :world_transform, :brush_origin, :icm_mode,
-                  :layout, :mapper_flags, :arc_direction
+                  :layout, :mapper_flags, :arc_direction, :clip_region
 
     def dup
       other = DeviceContext.allocate
@@ -48,6 +49,7 @@ module Emfsvg
       other.layout = layout
       other.mapper_flags = mapper_flags
       other.arc_direction = arc_direction
+      other.clip_region = clip_region
       other
     end
   end
