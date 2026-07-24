@@ -583,11 +583,17 @@ module Emfsvg
         # libemf2svg's U_EMRBEGINPATH_draw emits `<path d="` immediately and
         # sets inPath=true. Subsequent path-building records append to the
         # open d-string; they don't emit their own <path> wrapping.
+        # Guard against double-emission if BeginPath arrives while already
+        # in a path (would produce malformed `<path d="<path d="`).
+        if @in_path
+          @pending_path_action = @path_actions[@current_record_idx] || :end
+          return
+        end
+
         @builder.raw("<path ")
         @builder.raw(clip_path_attr_string)
         @builder.raw("d=\"")
         @in_path = true
-        # Look up the pre-scanned action for this BeginPath.
         @pending_path_action = @path_actions[@current_record_idx] || :end
       end
 
@@ -1389,6 +1395,13 @@ module Emfsvg
         end
         return if d.empty?
 
+        if @in_path
+          # Inside BeginPath..EndPath: append directly to open d-string.
+          # PolyPolygon doesn't add Z (caller does at EndPath/FillPath/etc).
+          @builder.raw(d)
+          return
+        end
+
         # PolyPolygon emits as a closed path (Z already in d-string, then
         # U_EMRPOLYPOLYGON_draw appends another Z and `"`).
         @builder.raw("<path ")
@@ -1849,6 +1862,10 @@ module Emfsvg
         # Mirror libemf2svg's transform_draw: close previous transform group
         # before opening new one, emit `<g transform="matrix(...)">\n`,
         # with eDx/eDy passed through scaleX/scaleY (sign-preserving).
+        # Skip emission while inside a BeginPath..EndPath block — transforms
+        # are deferred to BeginPath/EndPath in C's two-pass analysis.
+        return if @in_path
+
         if @open_groups.positive?
           @builder.rawln("</g>")
           @open_groups -= 1
