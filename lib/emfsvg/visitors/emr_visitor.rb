@@ -1125,10 +1125,43 @@ module Emfsvg
         @builder.tag("path", attrs, single: true)
       end
 
+      HATCH_PATTERNS = {
+        0 => [%w[M0,4 L8,4], []],                                    # HS_HORIZONTAL
+        1 => [%w[M4,0 L4,8], []],                                    # HS_VERTICAL
+        2 => [%w[M0,8 L8,0], []],                                    # HS_FDIAGONAL
+        3 => [%w[M0,0 L8,8], []],                                    # HS_BDIAGONAL
+        4 => [%w[M0,4 L8,4 M4,0 L4,8], []],                          # HS_CROSS
+        5 => [%w[M0,8 L8,0 M0,0 L8,8], []]                           # HS_DIAGCROSS
+      }.freeze
+
       def fill_attrs
         brush = @dc.brush
-        base = brush.null? ? { "fill" => "none" } : { "fill" => brush.color.to_hex }
-        base.merge(clip_attrs)
+        return { "fill" => "none" }.merge(clip_attrs) if brush.null?
+
+        if brush.style == 2 # BS_HATCHED
+          @hatch_counter ||= 0
+          @hatch_counter += 1
+          id = "hatch-#{@hatch_counter}"
+          emit_hatch_pattern(id, brush.hatch, brush.color, @dc.bk_color, @dc.bk_mode)
+          return { "fill" => "url(##{id})" }.merge(clip_attrs)
+        end
+
+        { "fill" => brush.color.to_hex }.merge(clip_attrs)
+      end
+
+      def emit_hatch_pattern(id, hatch_style, fg_color, bk_color, bk_mode)
+        lines = HATCH_PATTERNS[hatch_style] || HATCH_PATTERNS[0]
+        bk = bk_mode == 2 ? bk_color.to_hex : "none"
+        fg = fg_color.to_hex
+        @builder.tag("defs") do
+          @builder.tag("pattern", { "id" => id, "width" => 8, "height" => 8,
+                                    "patternUnits" => "userSpaceOnUse" }) do
+            @builder.tag("rect", { "width" => 8, "height" => 8, "fill" => bk }, single: true)
+            lines.each do |d|
+              @builder.tag("path", { "d" => d, "stroke" => fg, "stroke-width" => 1 }, single: true)
+            end
+          end
+        end
       end
 
       def stroke_attrs

@@ -511,18 +511,102 @@
   <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:330
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2000" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2330" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2660" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2990" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3320" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3650" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3980" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4310" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4640" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4970" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5300" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5630" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-1" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2000" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-2" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-2)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2330" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-3" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,8&quot;, &quot;L8,0&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-3)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2660" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-4" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,0&quot;, &quot;L8,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-4)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2990" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-5" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-5)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3320" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-6" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,8&quot;, &quot;L8,0&quot;, &quot;M0,0&quot;, &quot;L8,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-6)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3650" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-7" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-7)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3980" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-8" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-8)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4310" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-9" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-9)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4640" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-10" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-10)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4970" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-11" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-11)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5300" y="3500" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-12" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-12)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5630" y="3500" width="300" height="300" />
   <line stroke="#000000" stroke-width="2" x1="6300" y1="3600" x2="6300" y2="4100" />
   <line stroke="#000000" stroke-width="2" x1="6630" y1="3600" x2="6630" y2="4100" />
   <line stroke="#000000" stroke-width="2" x1="6960" y1="3600" x2="6960" y2="4100" />
@@ -535,18 +619,102 @@
   <line stroke="#000000" stroke-width="2" x1="9270" y1="3600" x2="9270" y2="4100" />
   <line stroke="#000000" stroke-width="2" x1="9600" y1="3600" x2="9600" y2="4100" />
   <line stroke="#000000" stroke-width="2" x1="9930" y1="3600" x2="9930" y2="4100" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2000" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2330" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2660" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2990" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="3320" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="3650" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="3980" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="4310" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="4640" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="4970" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="5300" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="5630" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-13" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-13)" stroke="#000000" stroke-width="2" x="2000" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-14" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-14)" stroke="#000000" stroke-width="2" x="2330" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-15" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,8&quot;, &quot;L8,0&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-15)" stroke="#000000" stroke-width="2" x="2660" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-16" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,0&quot;, &quot;L8,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-16)" stroke="#000000" stroke-width="2" x="2990" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-17" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-17)" stroke="#000000" stroke-width="2" x="3320" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-18" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,8&quot;, &quot;L8,0&quot;, &quot;M0,0&quot;, &quot;L8,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-18)" stroke="#000000" stroke-width="2" x="3650" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-19" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-19)" stroke="#000000" stroke-width="2" x="3980" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-20" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-20)" stroke="#000000" stroke-width="2" x="4310" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-21" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-21)" stroke="#000000" stroke-width="2" x="4640" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-22" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-22)" stroke="#000000" stroke-width="2" x="4970" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-23" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-23)" stroke="#000000" stroke-width="2" x="5300" y="3830" width="300" height="300" />
+  <defs>
+    <pattern id="hatch-24" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-24)" stroke="#000000" stroke-width="2" x="5630" y="3830" width="300" height="300" />
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2330" y="4160" width="30" height="30" />
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2660" y="4160" width="60" height="60" />
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2990" y="4160" width="90" height="90" />
@@ -593,35 +761,91 @@
   <line stroke="#000000" stroke-width="3" x1="10620" y1="4260" x2="10620" y2="4760" />
   <line stroke="#000000" stroke-width="3" x1="10950" y1="4150" x2="10950" y2="4870" />
   <line stroke="#000004" stroke-width="3" x1="10950" y1="4260" x2="10950" y2="4760" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5000" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-25" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#00FFFF" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-25)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5000" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:Q tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5400" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-26" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#00FFFF" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-26)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5400" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:Q tC:G 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5800" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-27" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#FF0000" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-27)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5800" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:R tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6200" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-28" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#FF0000" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-28)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6200" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:R tC:G 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6600" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-29" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-29)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6600" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:Q tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7000" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-30" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-30)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7000" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:Q tC:G 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7400" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-31" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-31)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7400" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:R tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7800" width="700" height="300" />
+  <defs>
+    <pattern id="hatch-32" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-32)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7800" width="700" height="300" />
   <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:R tC:G 
   </text>
@@ -656,14 +880,28 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" d="M 13547 1744 L 13441 1651 L 13333 1742 L 13389 1613 L 13269 1538 L 13410 1552 L 13443 1414 L 13474 1552 L 13615 1542 L 13493 1614 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-33" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-33)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" d="M 13547 1744 L 13441 1651 L 13333 1742 L 13389 1613 L 13269 1538 L 13410 1552 L 13443 1414 L 13474 1552 L 13615 1542 L 13493 1614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="1900" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-34" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-34)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="1900" width="200" height="400" />
   <defs>
     <clipPath id="clip-1">
       <rect x="13250" y="1900" width="200" height="400" />
@@ -672,15 +910,36 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-35" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-35)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rects (include,include)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2400" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2600" width="400" height="200" />
+  <defs>
+    <pattern id="hatch-36" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-36)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2400" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-37" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-37)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2600" width="400" height="200" />
   <defs>
     <clipPath id="clip-2">
       <rect x="13250" y="2400" width="200" height="-100" />
@@ -694,14 +953,28 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-38" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-38)" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (exclude)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2900" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-39" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-39)" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2900" width="200" height="400" />
   <defs>
     <clipPath id="clip-4">
       <rect x="13250" y="2900" width="200" height="400" />
@@ -710,15 +983,36 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-40" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-40)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rects (exclude,exclude)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3400" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3600" width="400" height="200" />
+  <defs>
+    <pattern id="hatch-41" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-41)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3400" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-42" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-42)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3600" width="400" height="200" />
   <defs>
     <clipPath id="clip-5">
       <rect x="13250" y="3400" width="200" height="400" />
@@ -732,105 +1026,266 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-43" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-43)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) AND path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3900" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-44" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-44)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3900" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-45" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-45)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-7">
       <rect x="13250" y="3900" width="200" height="-100" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-46" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-46)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-47" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-47)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) OR path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4400" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-48" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-48)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4400" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-49" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-49)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-8">
       <rect x="13250" y="4400" width="200" height="-600" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-50" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-50)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-51" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-51)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) XOR path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4900" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-52" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-52)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4900" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-53" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-53)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-9">
       <rect x="13250" y="4900" width="200" height="-1100" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-54" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-54)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-55" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-55)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) DIFF path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5400" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-56" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-56)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5400" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-57" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-57)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-10">
       <rect x="13250" y="5400" width="200" height="-1600" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-58" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-58)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-59" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-59)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) COPY path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5900" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-60" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-60)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5900" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-61" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-61)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-11">
       <rect x="13250" y="5900" width="200" height="-2100" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-62" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-62)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-63" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-63)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include,offset)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6400" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="6420" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-64" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-64)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6400" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-65" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-65)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="6420" width="200" height="400" />
   <defs>
     <clipPath id="clip-12">
       <rect x="13250" y="6400" width="200" height="-2600" />
@@ -839,16 +1294,44 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-66" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-66)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rects (include,include,offset)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6900" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="7100" width="400" height="200" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="7120" width="200" height="200" />
+  <defs>
+    <pattern id="hatch-67" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-67)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6900" width="200" height="400" />
+  <defs>
+    <pattern id="hatch-68" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-68)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="7100" width="400" height="200" />
+  <defs>
+    <pattern id="hatch-69" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch-69)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="7120" width="200" height="200" />
   <defs>
     <clipPath id="clip-13">
       <rect x="13250" y="6900" width="200" height="-3100" />
@@ -862,7 +1345,14 @@
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
+  <defs>
+    <pattern id="hatch-70" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" />
+      <path d="[&quot;M0,4&quot;, &quot;L8,4&quot;, &quot;M4,0&quot;, &quot;L4,8&quot;]" stroke="#3F7FFF" stroke-width="1" />
+      <path d="[]" stroke="#3F7FFF" stroke-width="1" />
+    </pattern>
+  </defs>
+  <path fill="url(#hatch-70)" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
   <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
