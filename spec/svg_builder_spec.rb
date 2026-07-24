@@ -3,20 +3,15 @@
 require "spec_helper"
 
 RSpec.describe Emfsvg::SvgBuilder do
-  it "emits an XML declaration" do
-    out = described_class.new.declaration.to_s
-    expect(out).to start_with(%(<?xml version="1.0"))
-  end
-
-  it "emits a single tag" do
+  it "appends a single tag with attributes and no leading space before />" do
     out = described_class.new.tag("rect", { "x" => 0, "y" => 0 }, single: true).to_s
-    expect(out).to include('<rect x="0" y="0" />')
+    expect(out).to include('<rect x="0" y="0"/>')
   end
 
-  it "emits a paired tag with content" do
+  it "appends a paired tag with content" do
     builder = described_class.new
     out = builder.tag("g") { builder.tag("rect", single: true) }.to_s
-    expect(out).to include("<g>\n  <rect />\n</g>\n")
+    expect(out).to include("<g><rect/></g>")
   end
 
   it "escapes XML special characters in attributes" do
@@ -29,9 +24,13 @@ RSpec.describe Emfsvg::SvgBuilder do
     expect(out).to include("a&lt;b&gt;c&amp;d")
   end
 
-  it "indents nested content" do
-    builder = described_class.new
-    out = builder.tag("a") { builder.tag("b") { builder.tag("c", single: true) } }.to_s
-    expect(out).to include("<a>\n  <b>\n    <c />\n  </b>\n</a>\n")
+  it "rawln appends with trailing newline" do
+    out = described_class.new.rawln("<g>").to_s
+    expect(out).to eq("<g>\n")
+  end
+
+  it "raw appends without trailing newline" do
+    out = described_class.new.raw("<g>").to_s
+    expect(out).to eq("<g>")
   end
 end

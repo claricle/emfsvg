@@ -1,314 +1,44 @@
 <?xml version="1.0"  encoding="UTF-8" standalone="no"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="545.0000" height="489.0000">
-  <g transform="translate(-3.0000, -76.0000)">
-  <defs>
-    <clipPath id="clip-1">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-1)" x1="117.0000" y1="337.0000" x2="291.0000" y2="337.0000" />
-  <defs>
-    <clipPath id="clip-2">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <defs>
-    <clipPath id="clip-3">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="93.0000" x2="204.0000" y2="97.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="101.0000" x2="204.0000" y2="105.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="109.0000" x2="204.0000" y2="113.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="117.0000" x2="204.0000" y2="121.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="125.0000" x2="204.0000" y2="129.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="133.0000" x2="204.0000" y2="137.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="141.0000" x2="204.0000" y2="145.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="149.0000" x2="204.0000" y2="153.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="157.0000" x2="204.0000" y2="161.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="165.0000" x2="204.0000" y2="169.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="173.0000" x2="204.0000" y2="177.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="181.0000" x2="204.0000" y2="185.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="189.0000" x2="204.0000" y2="193.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="197.0000" x2="204.0000" y2="201.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="205.0000" x2="204.0000" y2="209.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="213.0000" x2="204.0000" y2="217.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="221.0000" x2="204.0000" y2="225.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="229.0000" x2="204.0000" y2="233.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="237.0000" x2="204.0000" y2="241.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="245.0000" x2="204.0000" y2="249.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="253.0000" x2="204.0000" y2="257.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="261.0000" x2="204.0000" y2="265.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="269.0000" x2="204.0000" y2="273.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="204.0000" y1="277.0000" x2="204.0000" y2="279.0000" />
-  <defs>
-    <clipPath id="clip-4">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-4)" x1="161.0000" y1="464.0000" x2="247.0000" y2="464.0000" />
-  <defs>
-    <clipPath id="clip-5">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-5)" x1="161.0000" y1="93.0000" x2="247.0000" y2="93.0000" />
-  <defs>
-    <clipPath id="clip-6">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-6)" x1="117.0000" y1="464.0000" x2="291.0000" y2="464.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-6)" x1="291.0000" y1="464.0000" x2="291.0000" y2="279.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-6)" x1="291.0000" y1="279.0000" x2="117.0000" y2="279.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-6)" x1="117.0000" y1="279.0000" x2="117.0000" y2="464.0000" />
-  <defs>
-    <clipPath id="clip-7">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="334.0000" y1="366.0000" x2="507.0000" y2="366.0000" />
-  <defs>
-    <clipPath id="clip-8">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="473.0000" x2="421.0000" y2="469.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="465.0000" x2="421.0000" y2="461.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="457.0000" x2="421.0000" y2="453.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="449.0000" x2="421.0000" y2="445.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="441.0000" x2="421.0000" y2="437.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="433.0000" x2="421.0000" y2="429.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="425.0000" x2="421.0000" y2="421.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="417.0000" x2="421.0000" y2="413.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="409.0000" x2="421.0000" y2="405.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-8)" x1="421.0000" y1="401.0000" x2="421.0000" y2="397.0000" />
-  <defs>
-    <clipPath id="clip-9">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="152.0000" x2="421.0000" y2="156.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="160.0000" x2="421.0000" y2="164.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="168.0000" x2="421.0000" y2="172.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="176.0000" x2="421.0000" y2="180.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="184.0000" x2="421.0000" y2="188.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="192.0000" x2="421.0000" y2="196.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="200.0000" x2="421.0000" y2="204.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="208.0000" x2="421.0000" y2="212.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="216.0000" x2="421.0000" y2="220.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="224.0000" x2="421.0000" y2="228.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="232.0000" x2="421.0000" y2="236.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="240.0000" x2="421.0000" y2="244.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="248.0000" x2="421.0000" y2="252.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="256.0000" x2="421.0000" y2="260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="264.0000" x2="421.0000" y2="268.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="272.0000" x2="421.0000" y2="276.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="421.0000" y1="280.0000" x2="421.0000" y2="284.0000" />
-  <defs>
-    <clipPath id="clip-10">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-10)" x1="377.0000" y1="473.0000" x2="464.0000" y2="473.0000" />
-  <defs>
-    <clipPath id="clip-11">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="377.0000" y1="152.0000" x2="464.0000" y2="152.0000" />
-  <defs>
-    <clipPath id="clip-12">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-12)" x1="334.0000" y1="395.0000" x2="507.0000" y2="395.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-12)" x1="507.0000" y1="395.0000" x2="507.0000" y2="288.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-12)" x1="507.0000" y1="288.0000" x2="334.0000" y2="288.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-12)" x1="334.0000" y1="288.0000" x2="334.0000" y2="395.0000" />
-  <defs>
-    <clipPath id="clip-13">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-13)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-14">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-15">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-15)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-16">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-16)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-17">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-17)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-18">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-18)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-19">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-20">
-      <rect x="78" y="78" width="469" height="412" />
-    </clipPath>
-  </defs>
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-20)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" />
-  <defs>
-    <clipPath id="clip-21">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="204.0000" y1="489.0000" x2="421.0000" y2="489.0000" />
-  <defs>
-    <clipPath id="clip-22">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-22)" x1="204.0000" y1="489.0000" x2="204.0000" y2="498.0000" />
-  <defs>
-    <clipPath id="clip-23">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="421.0000" y1="489.0000" x2="421.0000" y2="498.0000" />
-  <defs>
-    <clipPath id="clip-24">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="204.0000" y="524.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <defs>
-    <clipPath id="clip-25">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="421.0000" y="524.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[2]]>
-  </text>
-  <defs>
-    <clipPath id="clip-26">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-26)" x1="78.0000" y1="483.0000" x2="78.0000" y2="93.0000" />
-  <defs>
-    <clipPath id="clip-27">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-27)" x1="78.0000" y1="483.0000" x2="69.0000" y2="483.0000" />
-  <defs>
-    <clipPath id="clip-28">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-28)" x1="78.0000" y1="386.0000" x2="69.0000" y2="386.0000" />
-  <defs>
-    <clipPath id="clip-29">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-29)" x1="78.0000" y1="288.0000" x2="69.0000" y2="288.0000" />
-  <defs>
-    <clipPath id="clip-30">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-30)" x1="78.0000" y1="191.0000" x2="69.0000" y2="191.0000" />
-  <defs>
-    <clipPath id="clip-31">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-31)" x1="78.0000" y1="93.0000" x2="69.0000" y2="93.0000" />
-  <defs>
-    <clipPath id="clip-32">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="483.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[40]]>
-  </text>
-  <defs>
-    <clipPath id="clip-33">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="386.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[50]]>
-  </text>
-  <defs>
-    <clipPath id="clip-34">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="288.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[60]]>
-  </text>
-  <defs>
-    <clipPath id="clip-35">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="191.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[70]]>
-  </text>
-  <defs>
-    <clipPath id="clip-36">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="56.0000" y="93.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[80]]>
-  </text>
-  <defs>
-    <clipPath id="clip-37">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="312.0000" y="563.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[Gender]]>
-  </text>
-  <defs>
-    <clipPath id="clip-38">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="middle" style="white-space:pre;" x="18.0000" y="283.0000" font-size="12.0000" font-weight="400">
-    <![CDATA[SomT]]>
-  </text>
-  <defs>
-    <clipPath id="clip-39">
-      <rect x="0" y="0" width="587" height="587" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-39)" x1="78.0000" y1="489.0000" x2="546.0000" y2="489.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-39)" x1="546.0000" y1="489.0000" x2="546.0000" y2="78.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-39)" x1="546.0000" y1="78.0000" x2="78.0000" y2="78.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-39)" x1="78.0000" y1="78.0000" x2="78.0000" y2="489.0000" />
-  
-  </g>
+<g transform="translate(-3.0000, -76.0000)">
+<path d="M 117.0000,337.0000 L 291.0000,337.0000 " stroke="#000000" stroke-width="3.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+<path d="" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="L 204.0000,97.0000 M 204.0000,101.0000 L 204.0000,105.0000 M 204.0000,109.0000 L 204.0000,113.0000 M 204.0000,117.0000 L 204.0000,121.0000 M 204.0000,125.0000 L 204.0000,129.0000 M 204.0000,133.0000 L 204.0000,137.0000 M 204.0000,141.0000 L 204.0000,145.0000 M 204.0000,149.0000 L 204.0000,153.0000 M 204.0000,157.0000 L 204.0000,161.0000 M 204.0000,165.0000 L 204.0000,169.0000 M 204.0000,173.0000 L 204.0000,177.0000 M 204.0000,181.0000 L 204.0000,185.0000 M 204.0000,189.0000 L 204.0000,193.0000 M 204.0000,197.0000 L 204.0000,201.0000 M 204.0000,205.0000 L 204.0000,209.0000 M 204.0000,213.0000 L 204.0000,217.0000 M 204.0000,221.0000 L 204.0000,225.0000 M 204.0000,229.0000 L 204.0000,233.0000 M 204.0000,237.0000 L 204.0000,241.0000 M 204.0000,245.0000 L 204.0000,249.0000 M 204.0000,253.0000 L 204.0000,257.0000 M 204.0000,261.0000 L 204.0000,265.0000 M 204.0000,269.0000 L 204.0000,273.0000 M 204.0000,277.0000 L 204.0000,279.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 161.0000,464.0000 L 247.0000,464.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 161.0000,93.0000 L 247.0000,93.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 117.0000,464.0000 L 291.0000,464.0000 L 291.0000,279.0000 L 117.0000,279.0000 L 117.0000,464.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 334.0000,366.0000 L 507.0000,366.0000 " stroke="#000000" stroke-width="3.0000"  stroke-linecap="butt"  stroke-linejoin="round" fill="none" />
+<path d="L 421.0000,469.0000 M 421.0000,465.0000 L 421.0000,461.0000 M 421.0000,457.0000 L 421.0000,453.0000 M 421.0000,449.0000 L 421.0000,445.0000 M 421.0000,441.0000 L 421.0000,437.0000 M 421.0000,433.0000 L 421.0000,429.0000 M 421.0000,425.0000 L 421.0000,421.0000 M 421.0000,417.0000 L 421.0000,413.0000 M 421.0000,409.0000 L 421.0000,405.0000 M 421.0000,401.0000 L 421.0000,397.0000 M 421.0000,395.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="L 421.0000,156.0000 M 421.0000,160.0000 L 421.0000,164.0000 M 421.0000,168.0000 L 421.0000,172.0000 M 421.0000,176.0000 L 421.0000,180.0000 M 421.0000,184.0000 L 421.0000,188.0000 M 421.0000,192.0000 L 421.0000,196.0000 M 421.0000,200.0000 L 421.0000,204.0000 M 421.0000,208.0000 L 421.0000,212.0000 M 421.0000,216.0000 L 421.0000,220.0000 M 421.0000,224.0000 L 421.0000,228.0000 M 421.0000,232.0000 L 421.0000,236.0000 M 421.0000,240.0000 L 421.0000,244.0000 M 421.0000,248.0000 L 421.0000,252.0000 M 421.0000,256.0000 L 421.0000,260.0000 M 421.0000,264.0000 L 421.0000,268.0000 M 421.0000,272.0000 L 421.0000,276.0000 M 421.0000,280.0000 L 421.0000,284.0000 M 421.0000,288.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 377.0000,473.0000 L 464.0000,473.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 377.0000,152.0000 L 464.0000,152.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<path d="M 334.0000,395.0000 L 507.0000,395.0000 L 507.0000,288.0000 L 334.0000,288.0000 L 334.0000,395.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />
+<ellipse cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="103.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="421.0000" cy="93.0000" rx="3.0000" ry="3.0000" fill="none" stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 204.0000,489.0000 L 421.0000,489.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 204.0000,489.0000 L 204.0000,498.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 421.0000,489.0000 L 421.0000,498.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="204.0000" y="524.0000" font-size="16.0000" ><![CDATA[1]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="421.0000" y="524.0000" font-size="16.0000" ><![CDATA[2]]></text>
+<path d="M 78.0000,483.0000 L 78.0000,93.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 78.0000,483.0000 L 69.0000,483.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 78.0000,386.0000 L 69.0000,386.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 78.0000,288.0000 L 69.0000,288.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 78.0000,191.0000 L 69.0000,191.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 78.0000,93.0000 L 69.0000,93.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<text font-family="Arial" fill="#000000" transform="rotate(-90, 56.0000, 497.4000) translate(0, 14.4000)" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="56.0000" y="483.0000" font-size="16.0000" ><![CDATA[40]]></text>
+<text font-family="Arial" fill="#000000" transform="rotate(-90, 56.0000, 400.4000) translate(0, 14.4000)" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="56.0000" y="386.0000" font-size="16.0000" ><![CDATA[50]]></text>
+<text font-family="Arial" fill="#000000" transform="rotate(-90, 56.0000, 302.4000) translate(0, 14.4000)" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="56.0000" y="288.0000" font-size="16.0000" ><![CDATA[60]]></text>
+<text font-family="Arial" fill="#000000" transform="rotate(-90, 56.0000, 205.4000) translate(0, 14.4000)" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="56.0000" y="191.0000" font-size="16.0000" ><![CDATA[70]]></text>
+<text font-family="Arial" fill="#000000" transform="rotate(-90, 56.0000, 107.4000) translate(0, 14.4000)" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="56.0000" y="93.0000" font-size="16.0000" ><![CDATA[80]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="312.0000" y="563.0000" font-size="16.0000" ><![CDATA[Gender]]></text>
+<text font-family="Arial" fill="#000000" transform="rotate(-90, 18.0000, 297.4000) translate(0, 14.4000)" style ="white-space:pre;" font-weight="400" text-anchor="middle" x="18.0000" y="283.0000" font-size="16.0000" ><![CDATA[SomT]]></text>
+<path d="M 78.0000,489.0000 L 546.0000,489.0000 L 546.0000,78.0000 L 78.0000,78.0000 L 78.0000,489.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+</g>
 </svg>

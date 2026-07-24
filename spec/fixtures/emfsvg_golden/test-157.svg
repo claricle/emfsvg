@@ -1,640 +1,297 @@
 <?xml version="1.0"  encoding="UTF-8" standalone="no"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10198.0000" height="13198.0000">
-  <g transform="translate(-0.0000, -0.0000)">
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0.0000" y="0.0000" width="10199.0000" height="13199.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="900.0000" y1="900.0000" x2="9300.0000" y2="900.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="9300.0000" y1="900.0000" x2="9300.0000" y2="1500.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="9300.0000" y1="1500.0000" x2="900.0000" y2="1500.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="900.0000" y1="1500.0000" x2="900.0000" y2="900.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="975.0000" y="947.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[WIND ROSE PLOT]]>
-  </text>
-  <defs>
-    <clipPath id="clip-1">
-      <rect x="975" y="900" width="8325" height="600" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="975.0000" y="1133.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[Station #14839 - MILWAUKEE/GENERAL MITCHELL FI, WI]]>
-  </text>
-  <defs>
-    <clipPath id="clip-2">
-      <rect x="1260" y="1740" width="7680" height="7680" />
-    </clipPath>
-  </defs>
-  <defs>
-    <clipPath id="clip-3">
-      <rect x="1260" y="1740" width="7680" height="7680" />
-    </clipPath>
-  </defs>
-  <rect fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1260.0000" y="1740.0000" width="7679.0000" height="7679.0000" />
-  <line stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="1260.0000" y1="1740.0000" x2="8940.0000" y2="9420.0000" />
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" cx="5100.0000" cy="5579.0400" rx="3839.0400" ry="3839.0400" />
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" cx="5100.0000" cy="5579.0400" rx="3071.0400" ry="3071.0400" />
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" cx="5100.0000" cy="5579.0400" rx="2303.0400" ry="2303.0400" />
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" cx="5100.0000" cy="5579.0400" rx="1535.0400" ry="1535.0400" />
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" cx="5100.0000" cy="5579.0400" rx="767.0400" ry="767.0400" />
-  <line stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="5100.0000" y1="9420.0000" x2="5100.0000" y2="1740.0000" />
-  <line stroke="#000080" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-3)" x1="1260.0000" y1="5580.0000" x2="8940.0000" y2="5580.0000" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5191.1348 4364.2136 A 1218.2400 1218.2400 0 1 1 5008.8652 4364.2136 L 5100.000000 7095.878400 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5926.4179 3941.4622 A 1834.0800 1834.0800 0 1 1 5672.9158 3836.4157 L 5099.520000 7095.417600 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5806.4796 5632.2425 A 708.4800 708.4800 0 1 1 5806.5201 5526.3779 L 5100.000000 7095.878400 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4072.6194 7614.4488 A 2280.0000 2280.0000 0 1 1 4387.5421 7744.8664 L 5100.000000 7095.878400 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2909.6711 7464.5940 A 2890.0800 2890.0800 0 1 1 3215.3854 7770.0434 L 5099.520000 7095.417600 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2868.6868 6313.6190 A 2349.1200 2349.1200 0 1 1 3003.2413 6638.2697 L 5100.000000 7095.878400 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3427.5177 5453.9400 A 1676.6400 1676.6400 0 1 1 3427.6090 5704.3983 L 5099.520000 7095.417600 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3804.8349 4925.8389 A 1450.5600 1450.5600 0 1 1 3721.9695 5126.0981 L 5100.000000 7095.878400 Z" />
-  <path fill="#00FFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4345.1428 4702.4689 A 1156.8000 1156.8000 0 1 1 4223.0400 4824.6347 L 5100.000000 7095.878400 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5189.9733 4369.9400 A 1212.0000 1212.0000 0 1 1 5009.3680 4369.9175 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5925.6348 3942.1422 A 1833.1200 1833.1200 0 1 1 5673.1497 3837.5034 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6106.2432 4712.8940 A 1327.6800 1327.6800 0 1 1 5966.1460 4572.7968 L 5100.000000 7095.878400 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5782.1166 5354.0819 A 718.5600 718.5600 0 1 1 5741.1197 5255.0198 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6040.9209 6053.8086 A 1054.5600 1054.5600 0 1 1 6101.0918 5908.6369 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6248.4492 6913.2904 A 1761.1200 1761.1200 0 1 1 6434.0932 6727.6718 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5540.2747 6916.7707 A 1408.3200 1408.3200 0 1 1 5734.3266 6836.4162 L 5100.000000 7095.878400 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4946.2056 7633.4887 A 2060.6400 2060.6400 0 1 1 5252.9109 7633.4830 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4075.0930 7610.6202 A 2275.6800 2275.6800 0 1 1 4387.9218 7740.1214 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2912.9482 7462.5146 A 2886.2400 2886.2400 0 1 1 3216.8098 7766.2034 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2871.5330 6313.0542 A 2346.2400 2346.2400 0 1 1 3005.3514 6636.0590 L 5100.000000 7095.878400 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3433.2650 5454.7879 A 1671.3600 1671.3600 0 1 1 3433.2719 5703.3852 L 5100.000000 7095.878400 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3808.1076 4927.5114 A 1446.2400 1446.2400 0 1 1 3725.7666 5126.4409 L 5099.520000 7095.417600 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4346.8515 4704.7982 A 1153.9200 1153.9200 0 1 1 4225.4524 4826.2466 L 5100.000000 7095.878400 Z" />
-  <path fill="#008000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4868.9908 4877.8745 A 738.2400 738.2400 0 1 1 4767.4826 4919.9266 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5185.9385 4422.5857 A 1159.2000 1159.2000 0 1 1 5013.6364 4422.5459 L 5099.520000 7095.417600 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5901.9268 3989.0205 A 1780.8000 1780.8000 0 1 1 5657.6438 3887.8032 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6102.4372 4715.8302 A 1322.8800 1322.8800 0 1 1 5963.5114 4576.8626 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5776.5828 5356.2497 A 712.3200 712.3200 0 1 1 5736.1508 5258.5529 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5805.5498 5631.3415 A 708.0000 708.0000 0 1 1 5805.5994 5526.4453 L 5099.520000 7095.417600 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6036.7376 6051.4439 A 1049.7600 1049.7600 0 1 1 6096.3273 5907.7578 L 5099.520000 7095.417600 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6234.8929 6897.0927 A 1740.0000 1740.0000 0 1 1 6417.3091 6714.7958 L 5099.520000 7095.417600 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5535.5517 6902.0219 A 1393.4400 1393.4400 0 1 1 5726.3875 6823.0327 L 5099.520000 7095.417600 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4948.6236 7613.4159 A 2040.0000 2040.0000 0 1 1 5250.4720 7613.4830 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4097.1315 7567.9758 A 2227.6800 2227.6800 0 1 1 4401.7757 7694.1476 L 5099.520000 7095.417600 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2981.7627 7404.7922 A 2796.4800 2796.4800 0 1 1 3274.3590 7697.3732 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2934.8382 6293.5148 A 2280.0000 2280.0000 0 1 1 3063.8066 6604.8647 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3469.5757 5458.4198 A 1634.8800 1634.8800 0 1 1 3469.5824 5699.7508 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3835.3448 4942.0917 A 1416.0000 1416.0000 0 1 1 3755.2835 5135.4259 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4353.4322 4713.0673 A 1143.3600 1143.3600 0 1 1 4233.9685 4832.5404 L 5100.000000 7095.878400 Z" />
-  <path fill="#0000FF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4871.9977 4888.8803 A 726.2400 726.2400 0 1 1 4772.9474 4929.8884 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5153.9407 4850.4741 A 730.5600 730.5600 0 1 1 5046.3706 4850.4511 L 5100.000000 7095.878400 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5587.4362 4610.2173 A 1084.3200 1084.3200 0 1 1 5439.9570 4549.0686 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5885.3004 4902.0928 A 1036.8000 1036.8000 0 1 1 5777.4422 4794.1666 L 5100.000000 7095.878400 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5688.9469 5384.2152 A 620.6400 620.6400 0 1 1 5654.0585 5299.8468 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5733.7768 5625.6160 A 636.0000 636.0000 0 1 1 5733.8319 5532.2523 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5859.6493 5961.6433 A 850.5600 850.5600 0 1 1 5907.4879 5846.2770 L 5100.000000 7095.878400 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5920.4622 6530.6128 A 1257.1200 1257.1200 0 1 1 6051.0333 6400.1275 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5464.4756 6682.9890 A 1162.5600 1162.5600 0 1 1 5622.3680 6617.6340 L 5100.000000 7095.878400 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4970.6536 7332.0712 A 1758.2400 1758.2400 0 1 1 5228.4510 7332.0664 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4332.0153 7104.7624 A 1708.3200 1708.3200 0 1 1 4563.6884 7200.6703 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3572.4867 6896.9808 A 2017.4400 2017.4400 0 1 1 3781.9722 7106.3466 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3483.0489 6113.0988 A 1702.5600 1702.5600 0 1 1 3578.8964 6344.3370 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3802.6945 5483.7558 A 1300.8000 1300.8000 0 1 1 3802.7202 5674.6739 L 5100.000000 7095.878400 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4123.1014 5087.8373 A 1093.4400 1093.4400 0 1 1 4061.7118 5236.1570 L 5100.000000 7095.878400 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4545.9316 4937.2428 A 847.2000 847.2000 0 1 1 4457.9005 5025.3220 L 5099.520000 7095.417600 Z" />
-  <path fill="#FF0000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4925.8046 5053.0899 A 553.4400 553.4400 0 1 1 4850.7036 5084.2057 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5123.5382 5252.5636 A 326.8800 326.8800 0 1 1 5075.5777 5252.5580 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5286.8192 5207.7067 A 415.6800 415.6800 0 1 1 5230.4745 5184.3677 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5366.7537 5348.8839 A 352.3200 352.3200 0 1 1 5330.2001 5312.3242 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5335.1813 5501.3540 A 247.6800 247.6800 0 1 1 5321.2813 5467.7746 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5371.9014 5598.6331 A 273.1200 273.1200 0 1 1 5371.9161 5558.6874 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5373.5687 5716.6739 A 306.2400 306.2400 0 1 1 5390.7173 5675.3020 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5395.2630 5921.2246 A 452.6400 452.6400 0 1 1 5442.0794 5874.4249 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5298.5935 6180.5793 A 634.0800 634.0800 0 1 1 5384.3362 6145.0732 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5033.3266 6487.6370 A 911.0400 911.0400 0 1 1 5166.4447 6487.6538 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4777.8356 6218.9443 A 716.6400 716.6400 0 1 1 4874.5815 6258.9831 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4527.5142 6072.8730 A 756.0000 756.0000 0 1 1 4605.6145 6150.9177 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4345.4302 5828.9574 A 794.8800 794.8800 0 1 1 4389.8829 5936.2066 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4419.2489 5529.3803 A 682.5600 682.5600 0 1 1 4419.2740 5629.0427 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4677.9268 5367.0485 A 472.3200 472.3200 0 1 1 4651.5375 5430.8254 L 5100.000000 7095.878400 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4857.5711 5298.5244 A 370.0800 370.0800 0 1 1 4819.3182 5336.8036 L 5099.520000 7095.417600 Z" />
-  <path fill="#FFFF00" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5017.9220 5331.1552 A 261.1200 261.1200 0 1 1 4982.6431 5345.7783 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5105.4548 5504.3589 A 74.8800 74.8800 0 1 1 5094.5292 5504.3601 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5133.1926 5512.9914 A 73.9200 73.9200 0 1 1 5123.2297 5508.8649 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5136.9439 5546.2527 A 49.4400 49.4400 0 1 1 5131.8426 5541.1493 L 5099.520000 7095.417600 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5151.9305 5561.2342 A 55.2000 55.2000 0 1 1 5148.8490 5553.7873 L 5099.520000 7095.417600 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5158.4032 5583.3228 A 58.5600 58.5600 0 1 1 5158.4055 5574.7888 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5147.1722 5602.7597 A 52.8000 52.8000 0 1 1 5150.1224 5595.6406 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5162.7437 5651.6983 A 96.0000 96.0000 0 1 1 5172.6550 5641.7875 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5146.7494 5720.3055 A 148.8000 148.8000 0 1 1 5166.8163 5711.9950 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5087.7463 5739.8910 A 161.7600 161.7600 0 1 1 5111.3255 5739.8886 L 5099.520000 7095.417600 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5039.2322 5699.9929 A 135.3600 135.3600 0 1 1 5057.4626 5707.5425 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4982.9355 5679.3007 A 154.0800 154.0800 0 1 1 4998.8565 5695.2112 L 5099.520000 7095.417600 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4978.7768 5618.5714 A 127.2000 127.2000 0 1 1 4985.8941 5635.7352 L 5099.520000 7095.417600 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4954.4664 5568.4282 A 145.9200 145.9200 0 1 1 4954.4712 5589.7173 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5023.6496 5540.6916 A 85.4400 85.4400 0 1 1 5018.8820 5552.2098 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5058.5770 5531.0960 A 63.3600 63.3600 0 1 1 5052.0434 5537.6317 L 5100.000000 7095.878400 Z" />
-  <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5083.9911 5531.6221 A 49.4400 49.4400 0 1 1 5077.3221 5534.3835 L 5099.520000 7095.417600 Z" />
-  <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="5100.0000" cy="5579.0400" rx="95.0400" ry="95.0400" />
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="5148.0000" y="1789.2000" font-size="12.0000" font-weight="400">
-    <![CDATA[NORTH]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="5148.0000" y="9219.6000" font-size="12.0000" font-weight="400">
-    <![CDATA[SOUTH]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1336.8000" y="5638.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[WEST]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="8412.0000" y="5638.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[EAST]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="5580.0000" y="5110.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[3%]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="6184.8000" y="4558.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[6%]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="6847.2000" y="4054.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[9%]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="7567.2000" y="3598.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[12%]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="8344.8000" y="3190.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[15%]]>
-  </text>
-  <defs>
-    <clipPath id="clip-4">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-4)" x1="9300.0000" y1="1740.0000" x2="9300.0000" y2="9420.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-4)" x1="900.0000" y1="9420.0000" x2="900.0000" y2="1740.0000" />
-  <defs>
-    <clipPath id="clip-5">
-      <rect x="900" y="9660" width="1200" height="2640" />
-    </clipPath>
-  </defs>
-  <defs>
-    <clipPath id="clip-6">
-      <rect x="900" y="9660" width="1200" height="2640" />
-    </clipPath>
-  </defs>
-  <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="900.0000" y="9660.0000" width="1199.0000" height="2639.0000" />
-  <line stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-6)" x1="900.0000" y1="9660.0000" x2="2100.0000" y2="12300.0000" />
-  <rect fill="#00FFFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1050.0000" y="10185.0000" width="298.9500" height="298.9500" />
-  <rect fill="#008000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1050.0000" y="10485.0000" width="298.9500" height="298.9500" />
-  <rect fill="#0000FF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1050.0000" y="10785.0000" width="298.9500" height="298.9500" />
-  <rect fill="#FF0000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1050.0000" y="11085.0000" width="298.9500" height="298.9500" />
-  <rect fill="#FFFF00" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1050.0000" y="11385.0000" width="298.9500" height="298.9500" />
-  <rect fill="#000000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="1050.0000" y="11685.0000" width="298.9500" height="298.9500" />
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1050.0000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[W]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1149.0000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[i]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1171.0500" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[n]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1227.0000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[d]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1282.9500" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1311.0000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[S]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1378.0500" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[p]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1434.0000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[e]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1489.9500" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[e]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1545.9000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[d]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1601.8500" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1629.9000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[(]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1662.9000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[m]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1746.9000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[/]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1774.9500" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[s]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1824.9000" y="9895.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[)]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1425.0000" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1453.0500" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[>]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1511.1000" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1539.1500" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1595.1000" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1651.0500" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1679.1000" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1735.0500" y="10270.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[6]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1425.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1453.0500" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[8]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1509.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1537.0500" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1593.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[9]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1648.9500" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1677.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[-]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1710.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1738.0500" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1794.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1849.9500" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1878.0000" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1933.9500" y="10570.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[6]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1425.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1453.0500" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[5]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1509.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1537.0500" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1593.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1648.9500" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1677.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[-]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1710.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1738.0500" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[8]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1794.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1822.0500" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1878.0000" y="10870.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[9]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1425.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1453.0500" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[3]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1509.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1537.0500" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[3]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1593.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1648.9500" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1677.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[-]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1710.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1738.0500" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[5]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1794.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1822.0500" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1878.0000" y="11170.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1425.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1453.0500" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1509.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1537.0500" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[8]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1593.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1648.9500" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1677.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[-]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1710.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1738.0500" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[3]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1794.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1822.0500" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[3]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1878.0000" y="11470.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1425.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1453.0500" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1509.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1537.0500" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[5]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1593.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1648.9500" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1677.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[-]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1710.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ ]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1738.0500" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1794.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[.]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1822.0500" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[8]]>
-  </text>
-  <text font-family="ARIAL" fill="#000000" text-anchor="start" style="white-space:pre;" x="1878.0000" y="11770.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[0]]>
-  </text>
-  <defs>
-    <clipPath id="clip-7">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="900.0000" y1="9660.0000" x2="2100.0000" y2="9660.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="2100.0000" y1="9660.0000" x2="2100.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="2100.0000" y1="12300.0000" x2="900.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="900.0000" y1="12300.0000" x2="900.0000" y2="9660.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="6180.0000" y1="9660.0000" x2="9300.0000" y2="9660.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="9300.0000" y1="9660.0000" x2="9300.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="9300.0000" y1="10260.0000" x2="6180.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-7)" x1="6180.0000" y1="10260.0000" x2="6180.0000" y2="9660.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6255.0000" y="9707.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[COMPANY NAME]]>
-  </text>
-  <defs>
-    <clipPath id="clip-8">
-      <rect x="6255" y="9660" width="3045" height="600" />
-    </clipPath>
-  </defs>
-  <defs>
-    <clipPath id="clip-9">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="2100.0000" y1="9660.0000" x2="4140.0000" y2="9660.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="4140.0000" y1="9660.0000" x2="4140.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="4140.0000" y1="10260.0000" x2="2100.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-9)" x1="2100.0000" y1="10260.0000" x2="2100.0000" y2="9660.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="9707.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[MODELER]]>
-  </text>
-  <defs>
-    <clipPath id="clip-10">
-      <rect x="2175" y="9660" width="1965" height="600" />
-    </clipPath>
-  </defs>
-  <defs>
-    <clipPath id="clip-11">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="4140.0000" y1="11460.0000" x2="6180.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="6180.0000" y1="11460.0000" x2="6180.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="6180.0000" y1="12300.0000" x2="4140.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="4140.0000" y1="12300.0000" x2="4140.0000" y2="11460.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="11507.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[PLOT YEAR-DATE-TIME]]>
-  </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="11650.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[1961 ]]>
-  </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="11803.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[Aug 1 - Aug 31]]>
-  </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="11956.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[Midnight  -  11 PM]]>
-  </text>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="4140.0000" y1="9660.0000" x2="6180.0000" y2="9660.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="6180.0000" y1="9660.0000" x2="6180.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="6180.0000" y1="10260.0000" x2="4140.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-11)" x1="4140.0000" y1="10260.0000" x2="4140.0000" y2="9660.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="9707.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[DATE]]>
-  </text>
-  <defs>
-    <clipPath id="clip-12">
-      <rect x="4215" y="9660" width="1965" height="600" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="9893.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[11/4/2002]]>
-  </text>
-  <defs>
-    <clipPath id="clip-13">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-13)" x1="2100.0000" y1="10260.0000" x2="4140.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-13)" x1="4140.0000" y1="10260.0000" x2="4140.0000" y2="10860.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-13)" x1="4140.0000" y1="10860.0000" x2="2100.0000" y2="10860.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-13)" x1="2100.0000" y1="10860.0000" x2="2100.0000" y2="10260.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="10307.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[DISPLAY]]>
-  </text>
-  <defs>
-    <clipPath id="clip-14">
-      <rect x="2175" y="10260" width="1965" height="600" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="10493.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[Wind Speed]]>
-  </text>
-  <defs>
-    <clipPath id="clip-15">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-15)" x1="4140.0000" y1="10260.0000" x2="6180.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-15)" x1="6180.0000" y1="10260.0000" x2="6180.0000" y2="10860.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-15)" x1="6180.0000" y1="10860.0000" x2="4140.0000" y2="10860.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-15)" x1="4140.0000" y1="10860.0000" x2="4140.0000" y2="10260.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="10307.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[UNIT]]>
-  </text>
-  <defs>
-    <clipPath id="clip-16">
-      <rect x="4215" y="10260" width="1965" height="600" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="10493.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[m/s]]>
-  </text>
-  <defs>
-    <clipPath id="clip-17">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-17)" x1="4140.0000" y1="10860.0000" x2="6180.0000" y2="10860.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-17)" x1="6180.0000" y1="10860.0000" x2="6180.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-17)" x1="6180.0000" y1="11460.0000" x2="4140.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-17)" x1="4140.0000" y1="11460.0000" x2="4140.0000" y2="10860.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="10907.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[CALM WINDS]]>
-  </text>
-  <defs>
-    <clipPath id="clip-18">
-      <rect x="4215" y="10860" width="1965" height="600" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="4215.0000" y="11093.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[3.73%]]>
-  </text>
-  <defs>
-    <clipPath id="clip-19">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-19)" x1="2100.0000" y1="10860.0000" x2="4140.0000" y2="10860.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-19)" x1="4140.0000" y1="10860.0000" x2="4140.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-19)" x1="4140.0000" y1="11460.0000" x2="2100.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-19)" x1="2100.0000" y1="11460.0000" x2="2100.0000" y2="10860.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="10907.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[AVG. WIND SPEED]]>
-  </text>
-  <defs>
-    <clipPath id="clip-20">
-      <rect x="2175" y="10860" width="1965" height="600" />
-    </clipPath>
-  </defs>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="11093.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[4.35 m/s]]>
-  </text>
-  <defs>
-    <clipPath id="clip-21">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="6180.0000" y1="10260.0000" x2="9300.0000" y2="10260.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="9300.0000" y1="10260.0000" x2="9300.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="9300.0000" y1="11460.0000" x2="6180.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="6180.0000" y1="11460.0000" x2="6180.0000" y2="10260.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6255.0000" y="10307.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[COMMENTS]]>
-  </text>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="6180.0000" y1="11460.0000" x2="9300.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="9300.0000" y1="11460.0000" x2="9300.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="9300.0000" y1="12300.0000" x2="6180.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-21)" x1="6180.0000" y1="12300.0000" x2="6180.0000" y2="11460.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="6255.0000" y="11507.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[PROJECT/PLOT NO.]]>
-  </text>
-  <defs>
-    <clipPath id="clip-22">
-      <rect x="6180" y="11460" width="3120" height="840" />
-    </clipPath>
-  </defs>
-  <defs>
-    <clipPath id="clip-23">
-      <rect x="0" y="0" width="10200" height="13200" />
-    </clipPath>
-  </defs>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="2100.0000" y1="11460.0000" x2="4140.0000" y2="11460.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="4140.0000" y1="11460.0000" x2="4140.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="4140.0000" y1="12300.0000" x2="2100.0000" y2="12300.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="2100.0000" y1="12300.0000" x2="2100.0000" y2="11460.0000" />
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="11507.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[ORIENTATION]]>
-  </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="11650.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[Direction]]>
-  </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="2175.0000" y="11803.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[(blowing from)]]>
-  </text>
-  <text font-family="Arial" fill="#000000" text-anchor="start" style="white-space:pre;" x="900.0000" y="12348.8000" font-size="12.0000" font-weight="400">
-    <![CDATA[WRPLOT View 3.5 by Lakes Environmental Software - www.lakes-environmental.com]]>
-  </text>
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="9300.0000" y1="1500.0000" x2="9300.0000" y2="1740.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="900.0000" y1="1740.0000" x2="900.0000" y2="1500.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="9300.0000" y1="9420.0000" x2="9300.0000" y2="9660.0000" />
-  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-23)" x1="900.0000" y1="9660.0000" x2="900.0000" y2="9420.0000" />
-  
-  </g>
+<g transform="translate(-0.0000, -0.0000)">
+<rect x="0.0000" y="0.0000" width="10199.0000" height="13199.0000"  fill="#FFFFFF" stroke-width="1px" stroke="#FFFFFF" />
+<path d="M 900.0000,900.0000 L 9300.0000,900.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,900.0000 L 9300.0000,1500.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,1500.0000 L 900.0000,1500.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 900.0000,1500.0000 L 900.0000,900.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="975.0000" y="1027.0000" font-size="100.0000" ><![CDATA[WIND ROSE PLOT]]></text>
+<defs><clipPath id="clip-16807"><path d="M 975.0000,900.0000 L 9300.0000,900.0000 L 9300.0000,1500.0000 L 975.0000,1500.0000 L 975.0000,900.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-16807)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="975.0000" y="1242.7000" font-size="133.0000" ><![CDATA[Station #14839 - MILWAUKEE/GENERAL MITCHELL FI, WI]]></text>
+<rect x="1260.0000" y="1740.0000" width="7679.0000" height="7679.0000"  fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 1260.0000,1740.0000 L 8940.0000,9420.0000 " stroke="#FFFFFF" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<ellipse cx="5100.0000" cy="5579.0400" rx="3839.0400" ry="3839.0400"  fill="#FFFFFF" stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="5100.0000" cy="5579.0400" rx="3071.0400" ry="3071.0400"  fill="#FFFFFF" stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="5100.0000" cy="5579.0400" rx="2303.0400" ry="2303.0400"  fill="#FFFFFF" stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="5100.0000" cy="5579.0400" rx="1535.0400" ry="1535.0400"  fill="#FFFFFF" stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<ellipse cx="5100.0000" cy="5579.0400" rx="767.0400" ry="767.0400"  fill="#FFFFFF" stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 5100.0000,9420.0000 L 5100.0000,1740.0000 " stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 1260.0000,5580.0000 L 8940.0000,5580.0000 " stroke="#000080" stroke-width="1px" stroke-dasharray="1.0000,1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 8940.0000,5580.0000 M 5191.1348,4364.2136 A 2478.2400,2958.2400 0 0 0 5008.8652,4364.2136 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5100.0000,5579.0400 M 5925.9958,3941.5492 A 3093.6000,3573.6000 0 0 0 5672.5600,3836.4819 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5099.0400,5578.0800 M 5806.4796,5632.2425 A 1968.4800,2448.4800 0 0 0 5806.5201,5526.3779 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5100.0000,5579.0400 M 4072.6194,7614.4488 A 3540.0000,4020.0000 0 0 0 4387.5421,7744.8664 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5100.0000,5579.0400 M 2909.8869,7464.1862 A 4149.6000,4629.6000 0 0 0 3215.6041,7769.5309 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5099.0400,5578.0800 M 2868.6868,6313.6190 A 3609.1200,4089.1200 0 0 0 3003.2413,6638.2697 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5100.0000,5579.0400 M 3427.5021,5453.6884 A 2936.1600,3416.1600 0 0 0 3427.6245,5704.1061 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5099.0400,5578.0800 M 3804.8349,4925.8389 A 2710.5600,3190.5600 0 0 0 3721.9695,5126.0981 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5100.0000,5579.0400 M 4345.1428,4702.4689 A 2416.8000,2896.8000 0 0 0 4223.0400,4824.6347 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#00FFFF"  />
+<path d="M 5100.0000,5579.0400 M 5189.6194,4369.9508 A 2471.5200,2951.5200 0 0 0 5009.0631,4369.9058 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 5925.2133,3942.2294 A 3092.6400,3572.6400 0 0 0 5672.7943,3837.5699 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 6106.2432,4712.8940 A 2587.6800,3067.6800 0 0 0 5966.1460,4572.7968 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5100.0000,5579.0400 M 5781.2160,5353.8595 A 1978.0800,2458.0800 0 0 0 5740.2654,5254.8636 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 6039.9861,6053.1642 A 2314.0800,2794.0800 0 0 0 6100.1296,5908.0864 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 6247.6737,6912.4315 A 3020.6400,3500.6400 0 0 0 6433.2344,6726.8962 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 5540.2747,6916.7707 A 2668.3200,3148.3200 0 0 0 5734.3266,6836.4162 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5100.0000,5579.0400 M 4946.0366,7632.5505 A 3320.1600,3800.1600 0 0 0 5252.6324,7632.5066 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 4075.1703,7609.8836 A 3535.2000,4015.2000 0 0 0 4387.9333,7739.2978 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 2913.1642,7462.1070 A 4145.7600,4625.7600 0 0 0 3217.0291,7765.6919 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 2871.5330,6313.0542 A 3606.2400,4086.2400 0 0 0 3005.3514,6636.0590 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5100.0000,5579.0400 M 3433.2650,5454.7879 A 2931.3600,3411.3600 0 0 0 3433.2719,5703.3852 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5100.0000,5579.0400 M 3808.0202,4927.3191 A 2705.7600,3185.7600 0 0 0 3725.7064,5126.2206 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5099.0400,5578.0800 M 4346.8515,4704.7982 A 2413.9200,2893.9200 0 0 0 4225.4524,4826.2466 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5100.0000,5579.0400 M 4868.9908,4877.8745 A 1998.2400,2478.2400 0 0 0 4767.4826,4919.9266 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#008000"  />
+<path d="M 5100.0000,5579.0400 M 5185.5779,4422.5960 A 2418.7200,2898.7200 0 0 0 5013.3257,4422.5346 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 5901.9268,3989.0205 A 3040.8000,3520.8000 0 0 0 5657.6438,3887.8032 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 6102.4372,4715.8302 A 2582.8800,3062.8800 0 0 0 5963.5114,4576.8626 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 5776.5828,5356.2497 A 1972.3200,2452.3200 0 0 0 5736.1508,5258.5529 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 5804.5851,5630.9072 A 1967.5200,2447.5200 0 0 0 5804.6476,5526.0953 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 6035.8029,6050.7995 A 2309.2800,2789.2800 0 0 0 6095.3653,5907.2067 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 6234.1170,6896.2340 A 2999.5200,3479.5200 0 0 0 6416.4507,6714.0196 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 5535.0271,6901.0512 A 2652.9600,3132.9600 0 0 0 5725.7607,6822.0891 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 4948.6236,7613.4159 A 3300.0000,3780.0000 0 0 0 5250.4720,7613.4830 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 4097.2024,7567.2359 A 3487.2000,3967.2000 0 0 0 4401.7811,7693.3223 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 2981.7627,7404.7922 A 4056.4800,4536.4800 0 0 0 3274.3590,7697.3732 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 2934.8382,6293.5148 A 3540.0000,4020.0000 0 0 0 3063.8066,6604.8647 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 3469.5757,5458.4198 A 2894.8800,3374.8800 0 0 0 3469.5824,5699.7508 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 3835.3448,4942.0917 A 2676.0000,3156.0000 0 0 0 3755.2835,5135.4259 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 4353.4322,4713.0673 A 2403.3600,2883.3600 0 0 0 4233.9685,4832.5404 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5100.0000,5579.0400 M 4871.7232,4888.8379 A 1985.7600,2465.7600 0 0 0 4772.7194,4929.8189 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#0000FF"  />
+<path d="M 5099.0400,5578.0800 M 5153.9407,4850.4741 A 1990.5600,2470.5600 0 0 0 5046.3706,4850.4511 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5100.0000,5579.0400 M 5586.9035,4610.2482 A 2343.8400,2823.8400 0 0 0 5439.4898,4549.0984 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 5885.3004,4902.0928 A 2296.8000,2776.8000 0 0 0 5777.4422,4794.1666 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5100.0000,5579.0400 M 5688.0419,5383.9789 A 1880.1600,2360.1600 0 0 0 5653.1967,5299.6759 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 5732.8127,5625.1739 A 1895.5200,2375.5200 0 0 0 5732.8794,5531.8925 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 5859.6493,5961.6433 A 2110.5600,2590.5600 0 0 0 5907.4879,5846.2770 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5100.0000,5579.0400 M 5919.6812,6529.7586 A 2516.6400,2996.6400 0 0 0 6050.1793,6399.3461 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 5464.4756,6682.9890 A 2422.5600,2902.5600 0 0 0 5622.3680,6617.6340 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5100.0000,5579.0400 M 4970.4447,7331.1298 A 3017.7600,3497.7600 0 0 0 5228.1395,7331.0927 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 4332.0085,7103.9831 A 2967.8400,3447.8400 0 0 0 4563.6167,7199.8196 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 3572.6039,6896.4580 A 3276.9600,3756.9600 0 0 0 3782.0769,7105.7369 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 3483.1096,6112.7250 A 2962.0800,3442.0800 0 0 0 3578.9746,6343.8981 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 3802.6945,5483.7558 A 2560.8000,3040.8000 0 0 0 3802.7202,5674.6739 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5100.0000,5579.0400 M 4123.1014,5087.8373 A 2353.4400,2833.4400 0 0 0 4061.7118,5236.1570 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5100.0000,5579.0400 M 4545.7737,4937.1189 A 2106.7200,2586.7200 0 0 0 4457.7768,5025.1639 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 4925.5173,5053.0518 A 1812.9600,2292.9600 0 0 0 4850.4670,5084.1405 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FF0000"  />
+<path d="M 5099.0400,5578.0800 M 5123.0669,5252.5655 A 1586.4000,2066.4000 0 0 0 5075.1708,5252.5539 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 5286.8192,5207.7067 A 1675.6800,2155.6800 0 0 0 5230.4745,5184.3677 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 5366.7537,5348.8839 A 1612.3200,2092.3200 0 0 0 5330.2001,5312.3242 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 5335.1813,5501.3540 A 1507.6800,1987.6800 0 0 0 5321.2813,5467.7746 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 5370.9403,5598.1495 A 1532.6400,2012.6400 0 0 0 5370.9600,5558.2790 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 5373.5687,5716.6739 A 1566.2400,2046.2400 0 0 0 5390.7173,5675.3020 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 5394.4739,5920.3774 A 1712.1600,2192.1600 0 0 0 5441.2323,5873.6356 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 5298.0110,6179.6276 A 1893.6000,2373.6000 0 0 0 5383.6723,6144.1484 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 5033.3266,6487.6370 A 2171.0400,2651.0400 0 0 0 5166.4447,6487.6538 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 4777.6795,6218.0898 A 1976.1600,2456.1600 0 0 0 4874.3606,6258.0832 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 4527.4854,6072.1810 A 2015.5200,2495.5200 0 0 0 4605.5500,6150.1622 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 4345.4302,5828.9574 A 2054.8800,2534.8800 0 0 0 4389.8829,5936.2066 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 4419.2489,5529.3803 A 1942.5600,2422.5600 0 0 0 4419.2740,5629.0427 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 4677.9268,5367.0485 A 1732.3200,2212.3200 0 0 0 4651.5375,5430.8254 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 4857.4086,5298.4045 A 1629.6000,2109.6000 0 0 0 4819.1985,5336.6408 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5099.0400,5578.0800 M 5017.9220,5331.1552 A 1521.1200,2001.1200 0 0 0 4982.6431,5345.7783 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#FFFF00"  />
+<path d="M 5100.0000,5579.0400 M 5105.4548,5504.3589 A 1334.8800,1814.8800 0 0 0 5094.5292,5504.3601 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5133.1926,5512.9914 A 1333.9200,1813.9200 0 0 0 5123.2297,5508.8649 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5136.1063,5546.0930 A 1308.9600,1788.9600 0 0 0 5131.0554,5541.0382 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5099.0400,5578.0800 M 5150.9975,5560.9131 A 1314.7200,1794.7200 0 0 0 5147.9442,5553.5310 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5099.0400,5578.0800 M 5158.4032,5583.3228 A 1318.5600,1798.5600 0 0 0 5158.4055,5574.7888 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5147.1722,5602.7597 A 1312.8000,1792.8000 0 0 0 5150.1224,5595.6406 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5162.7437,5651.6983 A 1356.0000,1836.0000 0 0 0 5172.6550,5641.7875 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5146.7494,5720.3055 A 1408.8000,1888.8000 0 0 0 5166.8163,5711.9950 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5087.3230,5738.9338 A 1421.2800,1901.2800 0 0 0 5110.8293,5738.9285 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5099.0400,5578.0800 M 5039.2322,5699.9929 A 1395.3600,1875.3600 0 0 0 5057.4626,5707.5425 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 4982.8366,5678.5277 A 1413.6000,1893.6000 0 0 0 4998.7108,5694.3857 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5099.0400,5578.0800 M 4978.7588,5617.9597 A 1386.7200,1866.7200 0 0 0 4985.8526,5635.0587 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5099.0400,5578.0800 M 4954.4664,5568.4282 A 1405.9200,1885.9200 0 0 0 4954.4712,5589.7173 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5023.6496,5540.6916 A 1345.4400,1825.4400 0 0 0 5018.8820,5552.2098 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5058.5770,5531.0960 A 1323.3600,1803.3600 0 0 0 5052.0434,5537.6317 L 5100.0000,5579.0400 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<path d="M 5100.0000,5579.0400 M 5083.6656,5531.5966 A 1308.9600,1788.9600 0 0 0 5077.0601,5534.3311 L 5099.0400,5578.0800 Z " stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round"  fill="#000000"  />
+<ellipse cx="5100.0000" cy="5579.0400" rx="95.0400" ry="95.0400"  fill="#FFFFFF" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="5148.0000" y="1864.8000" font-size="96.0000" ><![CDATA[NORTH]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="5148.0000" y="9295.2000" font-size="96.0000" ><![CDATA[SOUTH]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1336.8000" y="5714.4000" font-size="96.0000" ><![CDATA[WEST]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="8412.0000" y="5714.4000" font-size="96.0000" ><![CDATA[EAST]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="5580.0000" y="5186.4000" font-size="96.0000" ><![CDATA[3%]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="6184.8000" y="4634.4000" font-size="96.0000" ><![CDATA[6%]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="6847.2000" y="4130.4000" font-size="96.0000" ><![CDATA[9%]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="7567.2000" y="3674.4000" font-size="96.0000" ><![CDATA[12%]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="8344.8000" y="3266.4000" font-size="96.0000" ><![CDATA[15%]]></text>
+<path d="M 9300.0000,1740.0000 L 9300.0000,9420.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 900.0000,9420.0000 L 900.0000,1740.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<rect x="900.0000" y="9660.0000" width="1199.0000" height="2639.0000"  fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round" />
+<path d="M 900.0000,9660.0000 L 2100.0000,12300.0000 " stroke="#FFFFFF" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<rect x="1050.0000" y="10185.0000" width="298.9500" height="298.9500"  fill="#00FFFF" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<rect x="1050.0000" y="10485.0000" width="298.9500" height="298.9500"  fill="#008000" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<rect x="1050.0000" y="10785.0000" width="298.9500" height="298.9500"  fill="#0000FF" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<rect x="1050.0000" y="11085.0000" width="298.9500" height="298.9500"  fill="#FF0000" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<rect x="1050.0000" y="11385.0000" width="298.9500" height="298.9500"  fill="#FFFF00" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<rect x="1050.0000" y="11685.0000" width="298.9500" height="298.9500"  fill="#000000" stroke="#000000" stroke-width="1px"  stroke-linecap="round"  stroke-linejoin="round" />
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1050.0000" y="9975.0450" font-size="100.0500" ><![CDATA[W]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1149.0000" y="9975.0450" font-size="100.0500" ><![CDATA[i]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1171.0500" y="9975.0450" font-size="100.0500" ><![CDATA[n]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1227.0000" y="9975.0450" font-size="100.0500" ><![CDATA[d]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1282.9500" y="9975.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1311.0000" y="9975.0450" font-size="100.0500" ><![CDATA[S]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1378.0500" y="9975.0450" font-size="100.0500" ><![CDATA[p]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1434.0000" y="9975.0450" font-size="100.0500" ><![CDATA[e]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1489.9500" y="9975.0450" font-size="100.0500" ><![CDATA[e]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1545.9000" y="9975.0450" font-size="100.0500" ><![CDATA[d]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1601.8500" y="9975.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1629.9000" y="9975.0450" font-size="100.0500" ><![CDATA[(]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1662.9000" y="9975.0450" font-size="100.0500" ><![CDATA[m]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1746.9000" y="9975.0450" font-size="100.0500" ><![CDATA[/]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1774.9500" y="9975.0450" font-size="100.0500" ><![CDATA[s]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1824.9000" y="9975.0450" font-size="100.0500" ><![CDATA[)]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1425.0000" y="10350.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1453.0500" y="10350.0450" font-size="100.0500" ><![CDATA[>]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1511.1000" y="10350.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1539.1500" y="10350.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1595.1000" y="10350.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1651.0500" y="10350.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1679.1000" y="10350.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1735.0500" y="10350.0450" font-size="100.0500" ><![CDATA[6]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1425.0000" y="10650.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1453.0500" y="10650.0450" font-size="100.0500" ><![CDATA[8]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1509.0000" y="10650.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1537.0500" y="10650.0450" font-size="100.0500" ><![CDATA[4]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1593.0000" y="10650.0450" font-size="100.0500" ><![CDATA[9]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1648.9500" y="10650.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1677.0000" y="10650.0450" font-size="100.0500" ><![CDATA[-]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1710.0000" y="10650.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1738.0500" y="10650.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1794.0000" y="10650.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1849.9500" y="10650.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1878.0000" y="10650.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1933.9500" y="10650.0450" font-size="100.0500" ><![CDATA[6]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1425.0000" y="10950.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1453.0500" y="10950.0450" font-size="100.0500" ><![CDATA[5]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1509.0000" y="10950.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1537.0500" y="10950.0450" font-size="100.0500" ><![CDATA[4]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1593.0000" y="10950.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1648.9500" y="10950.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1677.0000" y="10950.0450" font-size="100.0500" ><![CDATA[-]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1710.0000" y="10950.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1738.0500" y="10950.0450" font-size="100.0500" ><![CDATA[8]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1794.0000" y="10950.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1822.0500" y="10950.0450" font-size="100.0500" ><![CDATA[4]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1878.0000" y="10950.0450" font-size="100.0500" ><![CDATA[9]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1425.0000" y="11250.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1453.0500" y="11250.0450" font-size="100.0500" ><![CDATA[3]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1509.0000" y="11250.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1537.0500" y="11250.0450" font-size="100.0500" ><![CDATA[3]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1593.0000" y="11250.0450" font-size="100.0500" ><![CDATA[4]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1648.9500" y="11250.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1677.0000" y="11250.0450" font-size="100.0500" ><![CDATA[-]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1710.0000" y="11250.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1738.0500" y="11250.0450" font-size="100.0500" ><![CDATA[5]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1794.0000" y="11250.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1822.0500" y="11250.0450" font-size="100.0500" ><![CDATA[4]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1878.0000" y="11250.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1425.0000" y="11550.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1453.0500" y="11550.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1509.0000" y="11550.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1537.0500" y="11550.0450" font-size="100.0500" ><![CDATA[8]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1593.0000" y="11550.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1648.9500" y="11550.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1677.0000" y="11550.0450" font-size="100.0500" ><![CDATA[-]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1710.0000" y="11550.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1738.0500" y="11550.0450" font-size="100.0500" ><![CDATA[3]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1794.0000" y="11550.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1822.0500" y="11550.0450" font-size="100.0500" ><![CDATA[3]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1878.0000" y="11550.0450" font-size="100.0500" ><![CDATA[4]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1425.0000" y="11850.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1453.0500" y="11850.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1509.0000" y="11850.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1537.0500" y="11850.0450" font-size="100.0500" ><![CDATA[5]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1593.0000" y="11850.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1648.9500" y="11850.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1677.0000" y="11850.0450" font-size="100.0500" ><![CDATA[-]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1710.0000" y="11850.0450" font-size="100.0500" ><![CDATA[ ]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1738.0500" y="11850.0450" font-size="100.0500" ><![CDATA[1]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1794.0000" y="11850.0450" font-size="100.0500" ><![CDATA[.]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1822.0500" y="11850.0450" font-size="100.0500" ><![CDATA[8]]></text>
+<text font-family="ARIAL" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="1878.0000" y="11850.0450" font-size="100.0500" ><![CDATA[0]]></text>
+<path d="M 900.0000,9660.0000 L 2100.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 2100.0000,9660.0000 L 2100.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 2100.0000,12300.0000 L 900.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 900.0000,12300.0000 L 900.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,9660.0000 L 9300.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,9660.0000 L 9300.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,10260.0000 L 6180.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,10260.0000 L 6180.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="6255.0000" y="9787.0000" font-size="100.0000" ><![CDATA[COMPANY NAME]]></text>
+<defs><clipPath id="clip-282475249"><path d="M 6255.0000,9660.0000 L 9300.0000,9660.0000 L 9300.0000,10260.0000 L 6255.0000,10260.0000 L 6255.0000,9660.0000 Z Z" /></clipPath></defs>
+<path d="M 2100.0000,9660.0000 L 4140.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,9660.0000 L 4140.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,10260.0000 L 2100.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 2100.0000,10260.0000 L 2100.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="2175.0000" y="9787.0000" font-size="100.0000" ><![CDATA[MODELER]]></text>
+<defs><clipPath id="clip-1622650073"><path d="M 2175.0000,9660.0000 L 4140.0000,9660.0000 L 4140.0000,10260.0000 L 2175.0000,10260.0000 L 2175.0000,9660.0000 Z Z" /></clipPath></defs>
+<path d="M 4140.0000,11460.0000 L 6180.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,11460.0000 L 6180.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,12300.0000 L 4140.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,12300.0000 L 4140.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="4215.0000" y="11587.0000" font-size="100.0000" ><![CDATA[PLOT YEAR-DATE-TIME]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="4215.0000" y="11759.7000" font-size="133.0000" ><![CDATA[1961 ]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="4215.0000" y="11912.7000" font-size="133.0000" ><![CDATA[Aug 1 - Aug 31]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="4215.0000" y="12065.7000" font-size="133.0000" ><![CDATA[Midnight  -  11 PM]]></text>
+<path d="M 4140.0000,9660.0000 L 6180.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,9660.0000 L 6180.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,10260.0000 L 4140.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,10260.0000 L 4140.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="4215.0000" y="9787.0000" font-size="100.0000" ><![CDATA[DATE]]></text>
+<defs><clipPath id="clip-984943658"><path d="M 4215.0000,9660.0000 L 6180.0000,9660.0000 L 6180.0000,10260.0000 L 4215.0000,10260.0000 L 4215.0000,9660.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-984943658)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="4215.0000" y="10002.7000" font-size="133.0000" ><![CDATA[11/4/2002]]></text>
+<path d="M 2100.0000,10260.0000 L 4140.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,10260.0000 L 4140.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,10860.0000 L 2100.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 2100.0000,10860.0000 L 2100.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="2175.0000" y="10387.0000" font-size="100.0000" ><![CDATA[DISPLAY]]></text>
+<defs><clipPath id="clip-1144108930"><path d="M 2175.0000,10260.0000 L 4140.0000,10260.0000 L 4140.0000,10860.0000 L 2175.0000,10860.0000 L 2175.0000,10260.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-1144108930)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="2175.0000" y="10602.7000" font-size="133.0000" ><![CDATA[Wind Speed]]></text>
+<path d="M 4140.0000,10260.0000 L 6180.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,10260.0000 L 6180.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,10860.0000 L 4140.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,10860.0000 L 4140.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="4215.0000" y="10387.0000" font-size="100.0000" ><![CDATA[UNIT]]></text>
+<defs><clipPath id="clip-470211272"><path d="M 4215.0000,10260.0000 L 6180.0000,10260.0000 L 6180.0000,10860.0000 L 4215.0000,10860.0000 L 4215.0000,10260.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-470211272)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="4215.0000" y="10602.7000" font-size="133.0000" ><![CDATA[m/s]]></text>
+<path d="M 4140.0000,10860.0000 L 6180.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,10860.0000 L 6180.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,11460.0000 L 4140.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,11460.0000 L 4140.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="4215.0000" y="10987.0000" font-size="100.0000" ><![CDATA[CALM WINDS]]></text>
+<defs><clipPath id="clip-101027544"><path d="M 4215.0000,10860.0000 L 6180.0000,10860.0000 L 6180.0000,11460.0000 L 4215.0000,11460.0000 L 4215.0000,10860.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-101027544)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="4215.0000" y="11202.7000" font-size="133.0000" ><![CDATA[3.73%]]></text>
+<path d="M 2100.0000,10860.0000 L 4140.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,10860.0000 L 4140.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,11460.0000 L 2100.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 2100.0000,11460.0000 L 2100.0000,10860.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="2175.0000" y="10987.0000" font-size="100.0000" ><![CDATA[AVG. WIND SPEED]]></text>
+<defs><clipPath id="clip-1457850878"><path d="M 2175.0000,10860.0000 L 4140.0000,10860.0000 L 4140.0000,11460.0000 L 2175.0000,11460.0000 L 2175.0000,10860.0000 Z Z" /></clipPath></defs>
+<text  clip-path="url(#clip-1457850878)" font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="2175.0000" y="11202.7000" font-size="133.0000" ><![CDATA[4.35 m/s]]></text>
+<path d="M 6180.0000,10260.0000 L 9300.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,10260.0000 L 9300.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,11460.0000 L 6180.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,11460.0000 L 6180.0000,10260.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="6255.0000" y="10387.0000" font-size="100.0000" ><![CDATA[COMMENTS]]></text>
+<path d="M 6180.0000,11460.0000 L 9300.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,11460.0000 L 9300.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,12300.0000 L 6180.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 6180.0000,12300.0000 L 6180.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="6255.0000" y="11587.0000" font-size="100.0000" ><![CDATA[PROJECT/PLOT NO.]]></text>
+<defs><clipPath id="clip-1458777923"><path d="M 6180.0000,11460.0000 L 9300.0000,11460.0000 L 9300.0000,12300.0000 L 6180.0000,12300.0000 L 6180.0000,11460.0000 Z Z" /></clipPath></defs>
+<path d="M 2100.0000,11460.0000 L 4140.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,11460.0000 L 4140.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 4140.0000,12300.0000 L 2100.0000,12300.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 2100.0000,12300.0000 L 2100.0000,11460.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="400" text-anchor="start" x="2175.0000" y="11587.0000" font-size="100.0000" ><![CDATA[ORIENTATION]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="2175.0000" y="11759.7000" font-size="133.0000" ><![CDATA[Direction]]></text>
+<text font-family="Arial" fill="#000000" style ="white-space:pre;" font-weight="700" text-anchor="start" x="2175.0000" y="11912.7000" font-size="133.0000" ><![CDATA[(blowing from)]]></text>
+<text font-family="Arial" fill="#000000" font-style="italic" style ="white-space:pre;" font-weight="400" text-anchor="start" x="900.0000" y="12412.7000" font-size="83.0000" ><![CDATA[WRPLOT View 3.5 by Lakes Environmental Software - www.lakes-environmental.com]]></text>
+<path d="M 9300.0000,1500.0000 L 9300.0000,1740.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 900.0000,1740.0000 L 900.0000,1500.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 9300.0000,9420.0000 L 9300.0000,9660.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+<path d="M 900.0000,9660.0000 L 900.0000,9420.0000 " stroke="#000000" stroke-width="1.0000"  stroke-linecap="round"  stroke-linejoin="round"  fill="none" />
+</g>
 </svg>
