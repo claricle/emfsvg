@@ -6,16 +6,214 @@
   <line stroke="#000000" stroke-width="0" x1="569" y1="-15.0" x2="569" y2="-748.0" />
   <line stroke="#000000" stroke-width="0" x1="569" y1="-748.0" x2="-14" y2="-748.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -14 -728.0 L 221 -728.0 L 234 -742.0 L 234 -748.0 L -14 -748.0 L -14 -728.0 Z " fill-rule="evenodd" />
+  <text x="-9" y="-723.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Fig: Primitives of Temporal Geometry and Topology
+  </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 98 -98.0 L 98 -58.0 L 238 -58.0 L 238 -86.0 L 226 -98.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 226 -98.0 L 226 -86.0 L 238 -86.0 Z " fill-rule="evenodd" />
+  <text x="103" y="-724.0" font-family="Carlito" font-size="12" fill="#4E5B68">
+    KEY:
+  </text>
+  <text x="167" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19107 Ed 2
+  </text>
+  <text x="184" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="277" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19111 Ed 3
+  </text>
+  <text x="294" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="387" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19170-1
+  </text>
+  <text x="398" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="134" y="-724.0" font-family="Carlito" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="113" y="-724.0" font-family="Carlito" font-size="12" fill="#000000">
+    Geometry::Geometry
+  </text>
+  <text x="376" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="359" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Topology::Topology
+  </text>
+  <text x="88" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="71" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    TemporalGeometry
+  </text>
   <line stroke="#5A5A5A" stroke-width="2" x1="11" y1="-566.0" x2="210" y2="-566.0" />
+  <text x="89" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="16" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    {self.rsid.CoordinateSystem = TemporalCS}
+  </text>
+  <text x="16" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    {self.coordinateDimension &lt;= 1}
+  </text>
+  <text x="16" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    {self.type.in{point,line} = True}
+  </text>
+  <text x="16" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    {self.spatialDimension.isEmpty = True}
+  </text>
+  <text x="422" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="407" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    TemporalTopology
+  </text>
   <line stroke="#5A5A5A" stroke-width="2" x1="345" y1="-567.0" x2="544" y2="-567.0" />
+  <text x="423" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="350" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    ::Topology
+  </text>
+  <text x="350" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    { boundary.dimension = dimension - 1 }
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 230 -186.0 L 230 -127.0 L 327 -127.0 L 327 -174.0 L 315 -186.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" d="M 315 -186.0 L 315 -174.0 L 327 -174.0 Z " fill-rule="evenodd" />
+  <text x="235" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19111 Ed 3
+  </text>
+  <text x="235" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Systems::
+  </text>
+  <text x="235" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
+    CoordinateDataType
+  </text>
+  <text x="88" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="52" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    TemporalGeometricPrimitive
+  </text>
+  <text x="152" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="151" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Geometry::
+  </text>
+  <text x="163" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Curve
+  </text>
+  <text x="429" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «Union»
+  </text>
+  <text x="428" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    Duration
+  </text>
   <line stroke="#5A5A5A" stroke-width="2" x1="362" y1="-174.0" x2="528" y2="-174.0" />
+  <text x="367" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    + 
+  </text>
+  <text x="384" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    durationLengthDT: DateTime [0..1]
+  </text>
+  <text x="367" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    + 
+  </text>
+  <text x="384" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    durationLengthI: Integer [0..1]
+  </text>
+  <text x="367" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    + 
+  </text>
+  <text x="384" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    durationLengthM: Real [0..1]
+  </text>
+  <text x="367" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    + 
+  </text>
+  <text x="384" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
+    /durationType: CoordinateDataType
+  </text>
+  <text x="23" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="22" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Geometry::
+  </text>
+  <text x="36" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Point
+  </text>
+  <text x="34" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="42" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    Instant
+  </text>
   <line stroke="#5A5A5A" stroke-width="2" x1="10" y1="-153.0" x2="102" y2="-153.0" />
+  <text x="35" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="15" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    {self.type = point}
+  </text>
+  <text x="152" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="154" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Lines::Line
+  </text>
+  <text x="422" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="385" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    TemporalTopologicalPrimitive
+  </text>
+  <text x="484" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="484" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Edge::Edge
+  </text>
+  <text x="358" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="356" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Node::Node
+  </text>
+  <text x="366" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="375" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    NodeT
+  </text>
+  <text x="475" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="485" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    EdgeT
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 228 -557.0 L 228 -498.0 L 328 -498.0 L 328 -545.0 L 316 -557.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" d="M 316 -557.0 L 316 -545.0 L 328 -545.0 Z " fill-rule="evenodd" />
+  <text x="233" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19111 Ed 3
+  </text>
+  <text x="233" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Systems::
+  </text>
+  <text x="233" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
+    TemporalCS
+  </text>
+  <text x="142" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="148" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
+    Interval
+  </text>
   <line stroke="#696969" stroke-width="1" x1="46" y1="-188.0" x2="46" y2="-224.0" />
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 52 -208.0 L 40 -208.0 L 46 -224.0 Z " fill-rule="evenodd" />
   <line stroke="#696969" stroke-width="1" x1="131" y1="-187.0" x2="131" y2="-392.0" />
@@ -56,5 +254,47 @@
   <line stroke="#696969" stroke-width="1" x1="344" y1="-692.0" x2="212" y2="-692.0" />
   <line stroke="#696969" stroke-width="1" x1="445" y1="-439.0" x2="445" y2="-489.0" />
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 451 -473.0 L 439 -473.0 L 445 -489.0 Z " fill-rule="evenodd" />
+  <text x="324" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +topology
+  </text>
+  <text x="372" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="239" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Temporal Realization
+  </text>
+  <text x="141" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +geometry
+  </text>
+  <text x="193" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="215" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +location
+  </text>
+  <text x="215" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="215" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +time
+  </text>
+  <text x="215" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="293" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +topology
+  </text>
+  <text x="325" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..*
+  </text>
+  <text x="253" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Realisation
+  </text>
+  <text x="215" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +geometry
+  </text>
+  <text x="215" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
   
 </svg>

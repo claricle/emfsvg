@@ -6,9 +6,108 @@
   <line stroke="#000000" stroke-width="0" x1="675" y1="-10.0" x2="675" y2="-701.0" />
   <line stroke="#000000" stroke-width="0" x1="675" y1="-701.0" x2="-4" y2="-701.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -4 -681.0 L 222 -681.0 L 235 -695.0 L 235 -701.0 L -4 -701.0 L -4 -681.0 Z " fill-rule="evenodd" />
+  <text x="1" y="-682.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Fig: Components of Zone Geometry and Topology
+  </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 240 -94.0 L 240 -53.0 L 376 -53.0 L 376 -82.0 L 364 -94.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 364 -94.0 L 364 -82.0 L 376 -82.0 Z " fill-rule="evenodd" />
+  <text x="245" y="-682.0" font-family="Carlito" font-size="12" fill="#4E5B68">
+    KEY:
+  </text>
+  <text x="415" y="-682.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19170-1
+  </text>
+  <text x="426" y="-682.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="305" y="-682.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19107 Ed 2
+  </text>
+  <text x="322" y="-682.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="221" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="202" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Temporal Geometry
+  </text>
+  <text x="213" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    and Topology::
+  </text>
+  <text x="205" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    TemporalTopology
+  </text>
+  <text x="51" y="-682.0" font-family="Carlito" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="29" y="-682.0" font-family="Carlito" font-size="12" fill="#000000">
+    Geometry::Geometry
+  </text>
+  <text x="51" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="33" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Topology::Topology
+  </text>
+  <text x="135" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="114" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ZoneSimpleGeometry
+  </text>
+  <text x="516" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="486" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ZoneCompoundGeometry
+  </text>
   <line stroke="#5A5A5A" stroke-width="1" x1="426" y1="-538.0" x2="650" y2="-538.0" />
+  <text x="517" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="431" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {count(Geometry)=count(TemporalGeometry)=1}
+  </text>
+  <text x="431" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {self.dimension=dimension(Geometry)+1}
+  </text>
+  <text x="337" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="329" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ZoneGeometry
+  </text>
+  <text x="222" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="203" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Temporal Geometry
+  </text>
+  <text x="214" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    and Topology::
+  </text>
+  <text x="204" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    TemporalGeometry
+  </text>
+  <text x="516" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="488" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ZoneCompoundTopology
+  </text>
+  <text x="135" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="116" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ZoneSimpleTopology
+  </text>
+  <text x="337" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    «interface»
+  </text>
+  <text x="331" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ZoneTopology
+  </text>
   <line stroke="#696969" stroke-width="1" x1="73" y1="-321.0" x2="73" y2="-395.0" />
   <line stroke="#696969" stroke-width="1" x1="159" y1="-200.0" x2="159" y2="-174.0" />
   <line stroke="#696969" stroke-width="1" x1="159" y1="-174.0" x2="354" y2="-174.0" />
@@ -44,5 +143,65 @@
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 416 -524.0 L 426 -529.0 L 416 -534.0 L 406 -529.0 Z " fill-rule="evenodd" />
   <line stroke="#696969" stroke-width="1" x1="295" y1="-529.0" x2="310" y2="-523.0" />
   <line stroke="#696969" stroke-width="1" x1="295" y1="-529.0" x2="310" y2="-535.0" />
+  <text x="298" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +componentPrimitive
+  </text>
+  <text x="298" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    2
+  </text>
+  <text x="298" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {ordered}
+  </text>
+  <text x="418" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    1
+  </text>
+  <text x="489" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +topology
+  </text>
+  <text x="548" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="419" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Spatio-Temporal Realisation
+  </text>
+  <text x="486" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +geometry
+  </text>
+  <text x="547" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="298" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +componentPrimitive
+  </text>
+  <text x="301" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    2
+  </text>
+  <text x="301" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {ordered}
+  </text>
+  <text x="414" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    1
+  </text>
+  <text x="196" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +topology
+  </text>
+  <text x="250" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="257" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Temporal Realization
+  </text>
+  <text x="195" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +geometry
+  </text>
+  <text x="248" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
+  <text x="29" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +location
+  </text>
+  <text x="85" y="-682.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    0..1
+  </text>
   
 </svg>

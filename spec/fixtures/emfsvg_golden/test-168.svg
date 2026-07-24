@@ -8,12 +8,33 @@
   <line stroke="#000000" stroke-width="1" x1="2196" y1="2281" x2="2196" y2="0" />
   <line stroke="#000000" stroke-width="1" x1="2745" y1="2281" x2="2745" y2="0" />
   <line stroke="#000000" stroke-width="1" x1="3294" y1="2281" x2="3294" y2="0" />
+  <text x="-39" y="-1" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1130
+  </text>
   <line stroke="#000000" stroke-width="1" x1="473" y1="1192" x2="473" y2="1089" />
+  <text x="484" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1140
+  </text>
   <line stroke="#000000" stroke-width="1" x1="997" y1="1192" x2="997" y2="1089" />
+  <text x="1008" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1150
+  </text>
   <line stroke="#000000" stroke-width="1" x1="1522" y1="1192" x2="1522" y2="1089" />
+  <text x="1532" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1160
+  </text>
   <line stroke="#000000" stroke-width="1" x1="2046" y1="1192" x2="2046" y2="1089" />
+  <text x="2056" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1170
+  </text>
   <line stroke="#000000" stroke-width="1" x1="2570" y1="1192" x2="2570" y2="1089" />
+  <text x="2581" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1180
+  </text>
   <line stroke="#000000" stroke-width="1" x1="3095" y1="1192" x2="3095" y2="1089" />
+  <text x="3105" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    1190
+  </text>
   <line stroke="#808000" stroke-width="1" x1="0" y1="743" x2="7" y2="725" />
   <line stroke="#000080" stroke-width="1" x1="0" y1="971" x2="7" y2="988" />
   <line stroke="#808000" stroke-width="1" x1="7" y1="725" x2="13" y2="709" />

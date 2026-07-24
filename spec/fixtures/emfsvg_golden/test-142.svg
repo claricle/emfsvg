@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <text x="1195" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 3D des Coord. Ligne &amp; Colonne ; Dimension :  1 x  2 x  3
+  </text>
+  <text x="2133" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 8 x 9
+  </text>
+  <text x="2182" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Standardisation : Profils ligne et colonne
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="8173" y1="763" x2="8165" y2="747" />
   <line stroke="#0000FF" stroke-width="17" x1="8165" y1="714" x2="8165" y2="697" />
   <line stroke="#0000FF" stroke-width="17" x1="8165" y1="664" x2="8165" y2="647" />
+  <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
+     Coord.L.
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="8173" y1="507" x2="8165" y2="498" />
   <line stroke="#FF0000" stroke-width="17" x1="8165" y1="465" x2="8165" y2="448" />
   <line stroke="#FF0000" stroke-width="17" x1="8165" y1="415" x2="8165" y2="398" />
+  <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
+     Coord.C.
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="17" d="M 6048 2427 L 4222 3609 L 4231 5963 L 6168 4881 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="17" d="M 2078 2635 L 1961 5072 L 4231 5963 L 4222 3609 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="17" d="M 3860 1312 L 2078 2635 L 4222 3609 L 6048 2427 Z " fill-rule="evenodd" />
@@ -2593,6 +2608,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="4232" y1="4033" x2="4232" y2="4049" />
   <line stroke="#FF0000" stroke-width="17" x1="4232" y1="4083" x2="4232" y2="4099" />
   <line stroke="#FF0000" stroke-width="17" x1="4232" y1="4132" x2="4232" y2="4149" />
+  <text x="3908" y="0" font-family="Arial" font-size="12" fill="#000000">
+    BUFFET
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="4537" y1="2899" x2="4531" y2="2921" />
   <line stroke="#0000FF" stroke-width="17" x1="4531" y1="2954" x2="4531" y2="2971" />
   <line stroke="#0000FF" stroke-width="17" x1="4531" y1="3004" x2="4531" y2="3020" />
@@ -2613,6 +2631,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="4547" y1="3751" x2="4547" y2="3767" />
   <line stroke="#0000FF" stroke-width="17" x1="4547" y1="3800" x2="4547" y2="3817" />
   <line stroke="#0000FF" stroke-width="17" x1="4547" y1="3850" x2="4547" y2="3867" />
+  <text x="4317" y="0" font-family="Arial" font-size="12" fill="#000000">
+    STDE
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="4558" y1="2599" x2="4564" y2="2622" />
   <line stroke="#FF0000" stroke-width="17" x1="4564" y1="2655" x2="4564" y2="2672" />
   <line stroke="#FF0000" stroke-width="17" x1="4564" y1="2705" x2="4564" y2="2722" />
@@ -2633,6 +2654,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="4564" y1="3452" x2="4564" y2="3469" />
   <line stroke="#FF0000" stroke-width="17" x1="4564" y1="3502" x2="4564" y2="3518" />
   <line stroke="#FF0000" stroke-width="17" x1="4564" y1="3551" x2="4564" y2="3568" />
+  <text x="4338" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LAGU
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="4830" y1="2405" x2="4829" y2="2423" />
   <line stroke="#FF0000" stroke-width="17" x1="4829" y1="2456" x2="4829" y2="2473" />
   <line stroke="#FF0000" stroke-width="17" x1="4829" y1="2506" x2="4829" y2="2523" />
@@ -2648,6 +2672,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="4846" y1="3004" x2="4846" y2="3020" />
   <line stroke="#FF0000" stroke-width="17" x1="4846" y1="3054" x2="4846" y2="3070" />
   <line stroke="#FF0000" stroke-width="17" x1="4846" y1="3103" x2="4844" y2="3118" />
+  <text x="4562" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LEPEN
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="4809" y1="2379" x2="4813" y2="2390" />
   <line stroke="#FF0000" stroke-width="17" x1="4813" y1="2423" x2="4813" y2="2440" />
   <line stroke="#FF0000" stroke-width="17" x1="4813" y1="2473" x2="4813" y2="2489" />
@@ -2661,6 +2688,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="4813" y1="2871" x2="4813" y2="2888" />
   <line stroke="#FF0000" stroke-width="17" x1="4813" y1="2921" x2="4813" y2="2937" />
   <line stroke="#FF0000" stroke-width="17" x1="4813" y1="2971" x2="4821" y2="2980" />
+  <text x="4647" y="0" font-family="Arial" font-size="12" fill="#000000">
+    BAY
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="4072" y1="2592" x2="4066" y2="2606" />
   <line stroke="#0000FF" stroke-width="17" x1="4066" y1="2639" x2="4066" y2="2655" />
   <line stroke="#0000FF" stroke-width="17" x1="4066" y1="2689" x2="4066" y2="2705" />
@@ -2683,6 +2713,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="4066" y1="3535" x2="4066" y2="3551" />
   <line stroke="#0000FF" stroke-width="17" x1="4066" y1="3585" x2="4066" y2="3601" />
   <line stroke="#0000FF" stroke-width="17" x1="4066" y1="3634" x2="4073" y2="3643" />
+  <text x="3824" y="0" font-family="Arial" font-size="12" fill="#000000">
+    VDMA
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="4425" y1="2403" x2="4431" y2="2423" />
   <line stroke="#0000FF" stroke-width="17" x1="4431" y1="2456" x2="4431" y2="2473" />
   <line stroke="#0000FF" stroke-width="17" x1="4431" y1="2506" x2="4431" y2="2523" />
@@ -2702,6 +2735,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="4431" y1="3203" x2="4431" y2="3220" />
   <line stroke="#0000FF" stroke-width="17" x1="4431" y1="3253" x2="4431" y2="3269" />
   <line stroke="#0000FF" stroke-width="17" x1="4431" y1="3303" x2="4431" y2="3319" />
+  <text x="4227" y="0" font-family="Arial" font-size="12" fill="#000000">
+    VDOI
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="4592" y1="2277" x2="4597" y2="2290" />
   <line stroke="#0000FF" stroke-width="17" x1="4597" y1="2323" x2="4597" y2="2340" />
   <line stroke="#0000FF" stroke-width="17" x1="4597" y1="2373" x2="4597" y2="2390" />
@@ -2721,6 +2757,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="4597" y1="3070" x2="4597" y2="3087" />
   <line stroke="#0000FF" stroke-width="17" x1="4597" y1="3120" x2="4597" y2="3137" />
   <line stroke="#0000FF" stroke-width="17" x1="4597" y1="3170" x2="4604" y2="3182" />
+  <text x="4355" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SMAR
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="4178" y1="2459" x2="4182" y2="2473" />
   <line stroke="#FF0000" stroke-width="17" x1="4182" y1="2506" x2="4182" y2="2523" />
   <line stroke="#FF0000" stroke-width="17" x1="4182" y1="2556" x2="4182" y2="2572" />
@@ -2741,6 +2780,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="4182" y1="3303" x2="4182" y2="3319" />
   <line stroke="#FF0000" stroke-width="17" x1="4182" y1="3352" x2="4182" y2="3369" />
   <line stroke="#FF0000" stroke-width="17" x1="4182" y1="3402" x2="4182" y2="3419" />
+  <text x="3833" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ABSTEN
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="4316" y1="2287" x2="4315" y2="2307" />
   <line stroke="#FF0000" stroke-width="17" x1="4315" y1="2340" x2="4315" y2="2357" />
   <line stroke="#FF0000" stroke-width="17" x1="4315" y1="2390" x2="4315" y2="2406" />
@@ -2757,6 +2799,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="4315" y1="2937" x2="4315" y2="2954" />
   <line stroke="#FF0000" stroke-width="17" x1="4315" y1="2987" x2="4315" y2="3004" />
   <line stroke="#FF0000" stroke-width="17" x1="4315" y1="3037" x2="4315" y2="3054" />
+  <text x="4031" y="0" font-family="Arial" font-size="12" fill="#000000">
+    PELEG
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="4185" y1="2323" x2="4182" y2="2340" />
   <line stroke="#0000FF" stroke-width="17" x1="4182" y1="2373" x2="4182" y2="2390" />
   <line stroke="#0000FF" stroke-width="17" x1="4182" y1="2423" x2="4182" y2="2440" />
@@ -2780,6 +2825,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="4182" y1="3319" x2="4182" y2="3336" />
   <line stroke="#0000FF" stroke-width="17" x1="4182" y1="3369" x2="4182" y2="3386" />
   <line stroke="#0000FF" stroke-width="17" x1="4182" y1="3419" x2="4182" y2="3435" />
+  <text x="3949" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ESSO
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="3937" y1="2273" x2="3933" y2="2290" />
   <line stroke="#FF0000" stroke-width="17" x1="3933" y1="2323" x2="3933" y2="2340" />
   <line stroke="#FF0000" stroke-width="17" x1="3933" y1="2373" x2="3933" y2="2390" />
@@ -2808,6 +2856,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="3933" y1="3518" x2="3933" y2="3535" />
   <line stroke="#FF0000" stroke-width="17" x1="3933" y1="3568" x2="3933" y2="3585" />
   <line stroke="#FF0000" stroke-width="17" x1="3933" y1="3618" x2="3933" y2="3634" />
+  <text x="3576" y="0" font-family="Arial" font-size="12" fill="#000000">
+    HUCHON
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="3688" y1="2212" x2="3684" y2="2224" />
   <line stroke="#0000FF" stroke-width="17" x1="3684" y1="2257" x2="3684" y2="2274" />
   <line stroke="#0000FF" stroke-width="17" x1="3684" y1="2307" x2="3684" y2="2323" />
@@ -2836,6 +2887,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="3684" y1="3452" x2="3684" y2="3469" />
   <line stroke="#0000FF" stroke-width="17" x1="3684" y1="3502" x2="3684" y2="3518" />
   <line stroke="#0000FF" stroke-width="17" x1="3684" y1="3551" x2="3684" y2="3568" />
+  <text x="3477" y="0" font-family="Arial" font-size="12" fill="#000000">
+    PARI
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="3827" y1="2147" x2="3834" y2="2157" />
   <line stroke="#0000FF" stroke-width="17" x1="3834" y1="2191" x2="3834" y2="2207" />
   <line stroke="#0000FF" stroke-width="17" x1="3834" y1="2240" x2="3834" y2="2257" />
@@ -2853,6 +2907,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="3817" y1="2838" x2="3817" y2="2854" />
   <line stroke="#0000FF" stroke-width="17" x1="3817" y1="2888" x2="3817" y2="2904" />
   <line stroke="#0000FF" stroke-width="17" x1="3817" y1="2937" x2="3817" y2="2954" />
+  <text x="3598" y="0" font-family="Arial" font-size="12" fill="#000000">
+    YVEL
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="3747" y1="2072" x2="3751" y2="2091" />
   <line stroke="#FF0000" stroke-width="17" x1="3751" y1="2124" x2="3751" y2="2141" />
   <line stroke="#FF0000" stroke-width="17" x1="3751" y1="2174" x2="3751" y2="2191" />
@@ -2873,6 +2930,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="3734" y1="2921" x2="3734" y2="2937" />
   <line stroke="#FF0000" stroke-width="17" x1="3734" y1="2971" x2="3734" y2="2987" />
   <line stroke="#FF0000" stroke-width="17" x1="3734" y1="3020" x2="3734" y2="3037" />
+  <text x="3500" y="0" font-family="Arial" font-size="12" fill="#000000">
+    COPE
+  </text>
   <line stroke="#0000FF" stroke-width="17" x1="3313" y1="2276" x2="3319" y2="2290" />
   <line stroke="#0000FF" stroke-width="17" x1="3319" y1="2323" x2="3319" y2="2340" />
   <line stroke="#0000FF" stroke-width="17" x1="3319" y1="2373" x2="3319" y2="2390" />
@@ -2889,6 +2949,9 @@
   <line stroke="#0000FF" stroke-width="17" x1="3303" y1="2921" x2="3303" y2="2937" />
   <line stroke="#0000FF" stroke-width="17" x1="3303" y1="2971" x2="3303" y2="2987" />
   <line stroke="#0000FF" stroke-width="17" x1="3303" y1="3020" x2="3299" y2="3037" />
+  <text x="3067" y="0" font-family="Arial" font-size="12" fill="#000000">
+    HTSS
+  </text>
   <line stroke="#FF0000" stroke-width="17" x1="3022" y1="2177" x2="3020" y2="2191" />
   <line stroke="#FF0000" stroke-width="17" x1="3020" y1="2224" x2="3020" y2="2240" />
   <line stroke="#FF0000" stroke-width="17" x1="3020" y1="2274" x2="3020" y2="2290" />
@@ -2904,6 +2967,9 @@
   <line stroke="#FF0000" stroke-width="17" x1="3004" y1="2771" x2="3004" y2="2788" />
   <line stroke="#FF0000" stroke-width="17" x1="3004" y1="2821" x2="3004" y2="2838" />
   <line stroke="#FF0000" stroke-width="17" x1="3004" y1="2871" x2="3004" y2="2888" />
+  <text x="2663" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SANTINI
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 3860 1312 L 6048 2427 " />
   <line stroke="#000000" stroke-width="17" x1="3829" y1="1335" x2="3860" y2="1312" />
   <line stroke="#000000" stroke-width="17" x1="4157" y1="1502" x2="4188" y2="1480" />

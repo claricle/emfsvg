@@ -12,6 +12,9 @@
   <line stroke="#000000" stroke-width="1" x1="458" y1="241" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="464" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="462" y1="262" x2="470" y2="261" />
+  <text x="477" y="0" font-family="Arial" font-size="12" fill="#000000">
+    AUTRE
+  </text>
   <path fill="#D2A277" stroke="#000000" stroke-width="1" d="M 458 241 L 456 236 L 455 231 L 453 227 L 451 222 L 449 218 L 446 213 L 444 209 L 441 204 L 439 200 L 436 196 L 433 192 L 430 188 L 426 184 L 423 180 L 420 176 L 416 173 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="458" y1="241" x2="456" y2="236" />
   <line stroke="#000000" stroke-width="1" x1="456" y1="236" x2="455" y2="231" />
@@ -32,6 +35,9 @@
   <line stroke="#000000" stroke-width="1" x1="416" y1="173" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="458" y2="241" />
   <line stroke="#000000" stroke-width="1" x1="441" y1="204" x2="448" y2="200" />
+  <text x="454" y="0" font-family="Arial" font-size="12" fill="#000000">
+    CHINOIS
+  </text>
   <path fill="#ABB065" stroke="#000000" stroke-width="1" d="M 416 173 L 412 169 L 408 166 L 404 163 L 400 160 L 396 157 L 391 154 L 387 152 L 382 149 L 378 147 L 373 145 L 368 143 L 364 141 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="416" y1="173" x2="412" y2="169" />
   <line stroke="#000000" stroke-width="1" x1="412" y1="169" x2="408" y2="166" />
@@ -48,6 +54,9 @@
   <line stroke="#000000" stroke-width="1" x1="364" y1="141" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="416" y2="173" />
   <line stroke="#000000" stroke-width="1" x1="391" y1="154" x2="395" y2="148" />
+  <text x="399" y="0" font-family="Arial" font-size="12" fill="#000000">
+    FRUI_MER
+  </text>
   <path fill="#72BB83" stroke="#000000" stroke-width="1" d="M 364 141 L 359 139 L 354 138 L 350 137 L 345 135 L 340 134 L 335 134 L 330 133 L 326 132 L 321 132 L 316 132 L 311 132 L 306 132 L 301 132 L 296 133 L 292 133 L 287 134 L 282 135 L 277 136 L 273 137 L 268 138 L 263 140 L 259 142 L 254 143 L 250 145 L 245 147 L 241 150 L 237 152 L 233 154 L 228 157 L 224 160 L 221 163 L 217 166 L 213 169 L 209 172 L 206 175 L 202 179 L 199 182 L 196 186 L 193 190 L 190 194 L 187 198 L 184 202 L 182 206 L 179 210 L 177 214 L 175 219 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="364" y1="141" x2="359" y2="139" />
   <line stroke="#000000" stroke-width="1" x1="359" y1="139" x2="354" y2="138" />
@@ -98,6 +107,9 @@
   <line stroke="#000000" stroke-width="1" x1="175" y1="219" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="364" y2="141" />
   <line stroke="#000000" stroke-width="1" x1="254" y1="143" x2="251" y2="136" />
+  <text x="248" y="0" font-family="Arial" font-size="12" fill="#000000">
+    HAMBURGR
+  </text>
   <path fill="#39BEB1" stroke="#000000" stroke-width="1" d="M 175 219 L 173 224 L 171 228 L 169 233 L 168 238 L 166 243 L 165 248 L 164 253 L 163 258 L 162 264 L 161 269 L 161 274 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="175" y1="219" x2="173" y2="224" />
   <line stroke="#000000" stroke-width="1" x1="173" y1="224" x2="171" y2="228" />
@@ -113,6 +125,9 @@
   <line stroke="#000000" stroke-width="1" x1="161" y1="274" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="175" y2="219" />
   <line stroke="#000000" stroke-width="1" x1="165" y1="246" x2="158" y2="244" />
+  <text x="151" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MEXICAIN
+  </text>
   <path fill="#64B5D6" stroke="#000000" stroke-width="1" d="M 161 274 L 161 279 L 161 284 L 161 288 L 161 293 L 161 298 L 162 303 L 163 308 L 163 312 L 164 317 L 166 322 L 167 326 L 168 331 L 170 336 L 172 340 L 174 345 L 176 349 L 178 353 L 180 358 L 182 362 L 185 366 L 188 370 L 191 374 L 193 378 L 197 381 L 200 385 L 203 388 L 206 392 L 210 395 L 214 398 L 217 402 L 221 405 L 225 407 L 229 410 L 233 413 L 237 415 L 241 417 L 246 420 L 250 422 L 255 424 L 259 425 L 264 427 L 268 428 L 273 430 L 278 431 L 282 432 L 287 433 L 292 434 L 297 434 L 301 435 L 306 435 L 311 435 L 316 435 L 321 435 L 326 434 L 330 434 L 335 433 L 340 432 L 345 431 L 349 430 L 354 429 L 359 428 L 363 426 L 368 424 L 372 423 L 377 421 L 381 418 L 385 416 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="161" y1="274" x2="161" y2="279" />
   <line stroke="#000000" stroke-width="1" x1="161" y1="279" x2="161" y2="284" />
@@ -184,6 +199,9 @@
   <line stroke="#000000" stroke-width="1" x1="385" y1="416" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="161" y2="274" />
   <line stroke="#000000" stroke-width="1" x1="231" y1="411" x2="227" y2="418" />
+  <text x="223" y="0" font-family="Arial" font-size="12" fill="#000000">
+    PIZZA
+  </text>
   <path fill="#ACA4E2" stroke="#000000" stroke-width="1" d="M 385 416 L 390 414 L 394 411 L 398 408 L 402 405 L 406 402 L 410 399 L 414 396 L 418 392 L 421 389 L 425 385 L 428 381 L 431 377 L 434 373 L 437 369 L 440 365 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="385" y1="416" x2="390" y2="414" />
   <line stroke="#000000" stroke-width="1" x1="390" y1="414" x2="394" y2="411" />
@@ -203,6 +221,9 @@
   <line stroke="#000000" stroke-width="1" x1="440" y1="365" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="385" y2="416" />
   <line stroke="#000000" stroke-width="1" x1="416" y1="394" x2="421" y2="399" />
+  <text x="426" y="0" font-family="Arial" font-size="12" fill="#000000">
+    POULET
+  </text>
   <path fill="#D995CF" stroke="#000000" stroke-width="1" d="M 440 365 L 443 360 L 446 355 L 448 351 L 450 346 L 452 341 L 454 336 L 456 331 L 458 326 L 459 321 L 460 315 L 461 310 L 462 305 L 463 299 L 463 294 L 464 289 L 464 283 L 312 283 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="440" y1="365" x2="443" y2="360" />
   <line stroke="#000000" stroke-width="1" x1="443" y1="360" x2="446" y2="355" />
@@ -223,5 +244,11 @@
   <line stroke="#000000" stroke-width="1" x1="464" y1="283" x2="312" y2="283" />
   <line stroke="#000000" stroke-width="1" x1="312" y1="283" x2="440" y2="365" />
   <line stroke="#000000" stroke-width="1" x1="458" y1="326" x2="465" y2="328" />
+  <text x="472" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SANDWICH
+  </text>
+  <text x="312" y="0" font-family="Arial" font-size="12" fill="#000000">
+    FASTF_1
+  </text>
   
 </svg>

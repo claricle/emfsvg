@@ -6,9 +6,99 @@
   <line stroke="#000000" stroke-width="0" x1="782" y1="-4.0" x2="782" y2="-572.0" />
   <line stroke="#000000" stroke-width="0" x1="782" y1="-572.0" x2="-1" y2="-572.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -1 -552.0 L 186 -552.0 L 199 -566.0 L 199 -572.0 L -1 -572.0 L -1 -552.0 Z " fill-rule="evenodd" />
+  <text x="4" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Figure 12: Sampling Manifold examples
+  </text>
+  <text x="46" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    SF_SamplingPoint
+  </text>
+  <text x="306" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    Traverse
+  </text>
+  <text x="230" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    SF_SamplingCurve
+  </text>
+  <text x="468" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    SF_SamplingSurface
+  </text>
+  <text x="237" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Interval
+  </text>
   <line stroke="#5A5A5A" stroke-width="1" x1="171" y1="-71.0" x2="334" y2="-71.0" />
+  <text x="231" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="176" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {type(shape)=GM_CurveSegment}
+  </text>
+  <text x="637" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    SF_SamplingSolid
+  </text>
+  <text x="571" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Swath
+  </text>
+  <text x="513" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    Section
+  </text>
+  <text x="669" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    LidarCloud
+  </text>
+  <text x="583" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Scene
+  </text>
+  <text x="308" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ObservationWell
+  </text>
+  <text x="180" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Flightline
+  </text>
+  <text x="62" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    Station
+  </text>
+  <text x="175" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Trajectory
+  </text>
   <line stroke="#5A5A5A" stroke-width="1" x1="136" y1="-303.0" x2="256" y2="-303.0" />
+  <text x="175" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="141" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {parameterized by time}
+  </text>
+  <text x="143" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    ShipsTrack
+  </text>
+  <text x="320" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Profile
+  </text>
+  <text x="332" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    Borehole
+  </text>
+  <text x="542" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    MapHorizon
+  </text>
+  <text x="435" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    MineLevel
+  </text>
+  <text x="698" y="-559.0" font-family="Carlito" font-size="12" fill="#000000">
+    Mine
+  </text>
+  <text x="434" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    Quadrat
+  </text>
   <line stroke="#5A5A5A" stroke-width="1" x1="406" y1="-303.0" x2="495" y2="-303.0" />
+  <text x="429" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    constraints
+  </text>
+  <text x="411" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    {shape is square}
+  </text>
+  <text x="369" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    SF_SamplingFeature
+  </text>
+  <text x="327" y="-559.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    SF_SpatialSamplingFeature
+  </text>
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 566 -350.0 L 554 -350.0 L 560 -366.0 Z " fill-rule="evenodd" />
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 389 -475.0 L 377 -475.0 L 383 -491.0 Z " fill-rule="evenodd" />
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 200 -228.0 L 188 -228.0 L 195 -244.0 Z " fill-rule="evenodd" />

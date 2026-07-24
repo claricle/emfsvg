@@ -6,8 +6,62 @@
   <line stroke="#000000" stroke-width="0" x1="420" y1="-15.0" x2="420" y2="-369.0" />
   <line stroke="#000000" stroke-width="0" x1="420" y1="-369.0" x2="-14" y2="-369.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -14 -349.0 L 144 -349.0 L 157 -363.0 L 157 -369.0 L -14 -369.0 L -14 -349.0 Z " fill-rule="evenodd" />
+  <text x="-9" y="-344.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Fig: Primitives of Zonal Identifier
+  </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 110 -98.0 L 110 -58.0 L 250 -58.0 L 250 -86.0 L 238 -98.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 238 -98.0 L 238 -86.0 L 250 -86.0 Z " fill-rule="evenodd" />
+  <text x="115" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    KEY:
+  </text>
+  <text x="184" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+    19112 Ed 2
+  </text>
+  <text x="192" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="284" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19170-1
+  </text>
+  <text x="295" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="211" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="206" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZonalIdentifier
+  </text>
+  <text x="193" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="180" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    Temporal RS using
+  </text>
+  <text x="162" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    Identifiers::PeriodIdentifier
+  </text>
+  <text x="39" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19112 Edition 2::
+  </text>
+  <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+    GeographicIdentifier
+  </text>
+  <text x="113" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="90" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    ZonalIdentifierPrimitive
+  </text>
+  <text x="313" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="291" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    ZonalIdentifierComplex
+  </text>
   <line stroke="#000000" stroke-width="1" x1="213" y1="-156.0" x2="213" y2="-172.0" />
   <line stroke="#000000" stroke-width="1" x1="213" y1="-172.0" x2="139" y2="-172.0" />
   <line stroke="#000000" stroke-width="1" x1="139" y1="-172.0" x2="139" y2="-197.0" />
@@ -22,5 +76,17 @@
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 270 -213.0 L 280 -218.0 L 270 -223.0 L 260 -218.0 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="341" y1="-238.0" x2="341" y2="-253.0" />
   <line stroke="#000000" stroke-width="1" x1="341" y1="-253.0" x2="237" y2="-253.0" />
+  <text x="198" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    +element
+  </text>
+  <text x="199" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    2
+  </text>
+  <text x="217" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    Complex
+  </text>
+  <text x="272" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
   
 </svg>

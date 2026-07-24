@@ -6,9 +6,24 @@
   <line stroke="#000000" stroke-width="0" x1="803" y1="5.0" x2="803" y2="-313.0" />
   <line stroke="#000000" stroke-width="0" x1="803" y1="-313.0" x2="-5" y2="-313.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -5 -293.0 L 158 -293.0 L 171 -307.0 L 171 -313.0 L -5 -313.0 L -5 -293.0 Z " fill-rule="evenodd" />
+  <text x="0" y="-309.0" font-family="Carlito" font-size="12" fill="#000000">
+    class SF Curve Product Curve Instances
+  </text>
+  <text x="106" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    p: ProductCurve
+  </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="106" y1="-258.0" x2="171" y2="-258.0" />
+  <text x="131" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    c
+  </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="131" y1="-33.0" x2="135" y2="-33.0" />
+  <text x="649" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    product
+  </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="649" y1="-258.0" x2="680" y2="-258.0" />
+  <text x="650" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    project
+  </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="650" y1="-33.0" x2="679" y2="-33.0" />
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 142 -234.0 L 137 -244.0 L 132 -234.0 L 137 -224.0 Z " fill-rule="evenodd" />
   <path fill="#F7DDB4" stroke="#696969" stroke-width="1" d="M 669 -234.0 L 664 -244.0 L 659 -234.0 L 664 -224.0 Z " fill-rule="evenodd" />
@@ -16,5 +31,29 @@
   <line stroke="#696969" stroke-width="1" x1="550" y1="-260.0" x2="535" y2="-266.0" />
   <line stroke="#696969" stroke-width="1" x1="550" y1="-37.0" x2="535" y2="-31.0" />
   <line stroke="#696969" stroke-width="1" x1="550" y1="-37.0" x2="535" y2="-43.0" />
+  <text x="470" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +coordinateSystem
+  </text>
+  <text x="470" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +coordinateSystem
+  </text>
+  <text x="617" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +projection
+  </text>
+  <text x="667" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    1..*
+  </text>
+  <text x="621" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +product
+  </text>
+  <text x="70" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +projectionCurve
+  </text>
+  <text x="146" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    1..* {ordered}
+  </text>
+  <text x="71" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+    +productCurve
+  </text>
   
 </svg>

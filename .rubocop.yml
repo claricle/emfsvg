@@ -35,10 +35,18 @@ Metrics/AbcSize:
     - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/CyclomaticComplexity:
-  Max: 12
+  Max: 16
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/PerceivedComplexity:
-  Max: 14
+  Max: 18
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Lint/UselessConstantScoping:
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
 
 Metrics/ParameterLists:
   Max: 8

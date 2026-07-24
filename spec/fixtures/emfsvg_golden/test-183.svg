@@ -5,6 +5,12 @@
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M -2 4501.0 L -2 -13499.0 L 31998 -13499.0 L 31998 4501.0 L -2 4501.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 4499.000000 0.000000)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 3421.628662 1077.371338)">
+  <text x="0" y="4499.0" font-family="Arial" font-size="12" fill="#00000002">
+    ʣʢʡʠ
+  </text>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2589.773010 1909.226990)">
+  <text x="0" y="4499.0" font-family="Calibri" font-size="12" fill="#00000002">
+    Hebrew text below:
+  </text>
   </g></g></g></g>
 </svg>

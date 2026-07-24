@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <text x="2157" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 2D des Coordonnées Ligne ; Dimensions :  1 x  2
+  </text>
+  <text x="2680" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 89 x 11
+  </text>
+  <text x="2846" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Standardisation : Profils ligne et colonne
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 2584 813 L 2584 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="2584" y1="813" x2="2589" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="2589" y1="846" x2="2589" y2="863" />
@@ -2370,11 +2379,290 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9128" y1="5228" x2="9144" y2="5228" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9161" y1="5228" x2="9177" y2="5228" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9194" y1="5228" x2="9211" y2="5233" />
+  <text x="9346" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Acide
+  </text>
+  <text x="12946" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Agressif
+  </text>
+  <text x="10473" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Angoissant
+  </text>
+  <text x="9296" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Asiatique
+  </text>
+  <text x="8648" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Attirant
+  </text>
+  <text x="4284" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Automnal
+  </text>
+  <text x="3425" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Bête
+  </text>
+  <text x="15110" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Brûlant
+  </text>
+  <text x="13514" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Brûl
+  </text>
+  <text x="3780" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Brumeux
+  </text>
+  <text x="4972" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Calme
+  </text>
+  <text x="3669" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Céleste
+  </text>
+  <text x="7650" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Champêtre
+  </text>
+  <text x="9870" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Chaud
+  </text>
+  <text x="3946" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Clair
+  </text>
+  <text x="9607" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Color
+  </text>
+  <text x="10436" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Comique
+  </text>
+  <text x="12336" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Cru
+  </text>
+  <text x="8363" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Décoratif
+  </text>
+  <text x="5687" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Discret
+  </text>
+  <text x="4974" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Doux
+  </text>
+  <text x="5028" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dur
+  </text>
+  <text x="14163" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dynamique
+  </text>
+  <text x="6610" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Ecclésiastique
+  </text>
+  <text x="9478" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Eclatant
+  </text>
+  <text x="11143" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Enervant
+  </text>
+  <text x="3895" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Enfantin
+  </text>
+  <text x="9313" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Ensoleill
+  </text>
+  <text x="3891" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Equilibr
+  </text>
+  <text x="5310" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Etendu
+  </text>
+  <text x="13407" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Féminin
+  </text>
+  <text x="13982" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Flamboyant
+  </text>
+  <text x="4882" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Fleuri
+  </text>
+  <text x="3657" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Fragile
+  </text>
+  <text x="5205" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Franc
+  </text>
+  <text x="3909" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Froid
+  </text>
+  <text x="13611" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Fruit
+  </text>
+  <text x="4417" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Glac
+  </text>
+  <text x="6916" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Harmonieux
+  </text>
+  <text x="3945" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Hivernal
+  </text>
+  <text x="2697" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Immacul
+  </text>
+  <text x="9603" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Joyeux
+  </text>
+  <text x="13448" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Juteux
+  </text>
+  <text x="5285" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Laid
+  </text>
+  <text x="5479" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Léger
+  </text>
+  <text x="3188" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Limpide
+  </text>
+  <text x="3611" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Lisse
+  </text>
+  <text x="3661" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Lointain
+  </text>
+  <text x="9767" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Lumineux
+  </text>
+  <text x="13194" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Malade
+  </text>
+  <text x="4301" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Masculin
+  </text>
+  <text x="13332" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Mécanique
+  </text>
+  <text x="3697" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Mièvre
+  </text>
+  <text x="4968" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Mort
+  </text>
+  <text x="4594" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Mystérieux
+  </text>
+  <text x="4492" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Naturel
+  </text>
+  <text x="2714" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Neigeux
+  </text>
+  <text x="3177" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Pale
+  </text>
+  <text x="4567" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Parfum
+  </text>
+  <text x="14708" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Passionn
+  </text>
+  <text x="3586" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Patriotique
+  </text>
+  <text x="5154" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Perdu
+  </text>
+  <text x="5039" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Printanier
+  </text>
+  <text x="4991" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Profond
+  </text>
+  <text x="3066" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Propre
+  </text>
+  <text x="2917" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Pur
+  </text>
+  <text x="4591" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Raffin
+  </text>
+  <text x="6075" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Religieux
+  </text>
+  <text x="3953" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Reposant
+  </text>
+  <text x="14886" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Révolutionnaire
+  </text>
+  <text x="3289" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Romantique
+  </text>
+  <text x="11665" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Rond
+  </text>
+  <text x="4323" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sale
+  </text>
+  <text x="14517" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sanguin
+  </text>
+  <text x="5123" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sévère
+  </text>
+  <text x="4300" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Silencieux
+  </text>
+  <text x="4238" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sinistre
+  </text>
+  <text x="4342" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sobre
+  </text>
+  <text x="4170" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sombre
+  </text>
+  <text x="7357" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sonore
+  </text>
+  <text x="8263" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sournois
+  </text>
+  <text x="3802" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sucr
+  </text>
+  <text x="4332" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Triste
+  </text>
+  <text x="4514" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Vide
+  </text>
+  <text x="5157" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Vieux
+  </text>
+  <text x="14088" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Vif
+  </text>
+  <text x="11693" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Violent
+  </text>
+  <text x="4487" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Vivant
+  </text>
+  <text x="4646" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Instable
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 963 813 L 9211 813 " />
   <line stroke="#000000" stroke-width="17" x1="2584" y1="846" x2="2584" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="4646" y1="846" x2="4646" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="6707" y1="846" x2="6707" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8769" y1="846" x2="8769" y2="813" />
+  <text x="2410" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="4472" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="6566" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="8628" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
   <line stroke="#000000" stroke-width="17" x1="1347" y1="829" x2="1347" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="1759" y1="829" x2="1759" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="2172" y1="829" x2="2172" y2="813" />
@@ -2395,6 +2683,9 @@
   <line stroke="#000000" stroke-width="17" x1="8357" y1="829" x2="8357" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8769" y1="829" x2="8769" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9182" y1="829" x2="9182" y2="813" />
+  <text x="2564" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 1; Valeur Propre : ,74246 (16,59  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 963 5908 L 9211 5908 " />
   <line stroke="#000000" stroke-width="17" x1="2584" y1="5874" x2="2584" y2="5908" />
   <line stroke="#000000" stroke-width="17" x1="4646" y1="5874" x2="4646" y2="5908" />
@@ -2429,6 +2720,30 @@
   <line stroke="#000000" stroke-width="17" x1="996" y1="4559" x2="963" y2="4559" />
   <line stroke="#000000" stroke-width="17" x1="996" y1="5233" x2="963" y2="5233" />
   <line stroke="#000000" stroke-width="17" x1="996" y1="5908" x2="963" y2="5908" />
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,25
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,50
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,75
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,00
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,25
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,50
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,75
+  </text>
+  <text x="465" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,00
+  </text>
   <line stroke="#000000" stroke-width="17" x1="979" y1="918" x2="963" y2="918" />
   <line stroke="#000000" stroke-width="17" x1="979" y1="1052" x2="962" y2="1052" />
   <line stroke="#000000" stroke-width="17" x1="979" y1="1187" x2="963" y2="1187" />
@@ -2467,6 +2782,9 @@
   <line stroke="#000000" stroke-width="17" x1="979" y1="5638" x2="963" y2="5638" />
   <line stroke="#000000" stroke-width="17" x1="979" y1="5773" x2="963" y2="5773" />
   <line stroke="#000000" stroke-width="17" x1="979" y1="5908" x2="963" y2="5908" />
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 2; Valeur Propre : ,63824 (14,26  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 9211 813 L 9211 5908 " />
   <line stroke="#000000" stroke-width="17" x1="9177" y1="1187" x2="9211" y2="1187" />
   <line stroke="#000000" stroke-width="17" x1="9177" y1="1862" x2="9211" y2="1862" />

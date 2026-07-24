@@ -7,6 +7,7 @@ module Emfsvg
     def initialize
       @pen = Pen.default
       @brush = Brush.default
+      @font = Font.default
       @text_color = Emf::Model::Geometry::Color.black
       @bk_color = Emf::Model::Geometry::Color.white
       @bk_mode = 1 # TRANSPARENT
@@ -18,7 +19,7 @@ module Emfsvg
       @world_transform = Emf::Model::Geometry::Matrix.identity
     end
 
-    attr_accessor :pen, :brush, :text_color, :bk_color, :bk_mode,
+    attr_accessor :pen, :brush, :font, :text_color, :bk_color, :bk_mode,
                   :poly_fill_mode, :map_mode, :text_align, :stretch_mode,
                   :miter_limit, :world_transform
 
@@ -26,6 +27,7 @@ module Emfsvg
       other = DeviceContext.allocate
       other.pen = pen.dup
       other.brush = brush.dup
+      other.font = font.dup
       other.text_color = text_color
       other.bk_color = bk_color
       other.bk_mode = bk_mode
@@ -95,6 +97,39 @@ module Emfsvg
 
     def dup
       Brush.new(style: style, color: color, hatch: hatch)
+    end
+  end
+
+  # Font value object: minimal subset of LOGFONT for text rendering.
+  class Font
+    DEFAULT_HEIGHT = 12
+
+    def initialize(face_name: "sans-serif", height: DEFAULT_HEIGHT, weight: 400,
+                   italic: false, underline: false, strikeout: false,
+                   escapement: 0)
+      @face_name = face_name
+      @height = height
+      @weight = weight
+      @italic = italic
+      @underline = underline
+      @strikeout = strikeout
+      @escapement = escapement
+    end
+
+    attr_reader :face_name, :height, :weight, :italic, :underline, :strikeout, :escapement
+
+    def self.default
+      new
+    end
+
+    def bold?
+      weight >= 700
+    end
+
+    def dup
+      Font.new(face_name: face_name, height: height, weight: weight,
+               italic: italic, underline: underline, strikeout: strikeout,
+               escapement: escapement)
     end
   end
 end

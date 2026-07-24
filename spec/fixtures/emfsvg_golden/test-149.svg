@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1940" height="1457" viewBox="0 0 1940 1457" version="1.1">
+  <text x="1073" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Projection des variables sur le plan factoriel (  2 x   3)
+  </text>
+  <text x="7084" y="0" font-family="Arial" font-size="12" fill="#000000">
+     Active
+  </text>
   <path stroke="#FFFFFF" stroke-width="5" d="M 1113 727 L 1113 6539 " />
   <line stroke="#C0C0C0" stroke-width="5" x1="1113" y1="727" x2="1114" y2="732" />
   <line stroke="#C0C0C0" stroke-width="5" x1="1114" y1="741" x2="1114" y2="746" />
@@ -4040,6 +4046,60 @@
   <line stroke="#C0C0C0" stroke-width="5" x1="6635" y1="6274" x2="6640" y2="6274" />
   <line stroke="#C0C0C0" stroke-width="5" x1="6650" y1="6274" x2="6655" y2="6274" />
   <line stroke="#C0C0C0" stroke-width="5" x1="6664" y1="6274" x2="6669" y2="6274" />
+  <text x="4174" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e1
+  </text>
+  <text x="4457" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e2
+  </text>
+  <text x="4703" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e3
+  </text>
+  <text x="4683" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e4
+  </text>
+  <text x="4692" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e5
+  </text>
+  <text x="3944" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e6
+  </text>
+  <text x="4486" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e7
+  </text>
+  <text x="4688" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e8
+  </text>
+  <text x="4960" y="0" font-family="Arial" font-size="12" fill="#000000">
+     e9
+  </text>
+  <text x="2428" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i1
+  </text>
+  <text x="2125" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i2
+  </text>
+  <text x="2676" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i3
+  </text>
+  <text x="2941" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i4
+  </text>
+  <text x="3253" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i5
+  </text>
+  <text x="2655" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i6
+  </text>
+  <text x="2203" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i7
+  </text>
+  <text x="2820" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i8
+  </text>
+  <text x="3308" y="0" font-family="Arial" font-size="12" fill="#000000">
+     i9
+  </text>
   <line stroke="#0000FF" stroke-width="14" x1="3759" y1="3633" x2="3785" y2="3654" />
   <line stroke="#0000FF" stroke-width="14" x1="3834" y1="3693" x2="3858" y2="3712" />
   <line stroke="#0000FF" stroke-width="14" x1="3906" y1="3751" x2="3930" y2="3770" />
@@ -4598,6 +4658,21 @@
   <line stroke="#000000" stroke-width="14" x1="3759" y1="765" x2="3759" y2="727" />
   <line stroke="#000000" stroke-width="14" x1="5081" y1="765" x2="5081" y2="727" />
   <line stroke="#000000" stroke-width="14" x1="6404" y1="765" x2="6404" y2="727" />
+  <text x="942" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="2265" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="3622" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="4944" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="6267" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
   <line stroke="#000000" stroke-width="14" x1="1113" y1="746" x2="1113" y2="727" />
   <line stroke="#000000" stroke-width="14" x1="1378" y1="746" x2="1378" y2="727" />
   <line stroke="#000000" stroke-width="14" x1="1642" y1="746" x2="1642" y2="727" />
@@ -4620,6 +4695,9 @@
   <line stroke="#000000" stroke-width="14" x1="6139" y1="746" x2="6139" y2="727" />
   <line stroke="#000000" stroke-width="14" x1="6404" y1="746" x2="6404" y2="727" />
   <line stroke="#000000" stroke-width="14" x1="6669" y1="746" x2="6669" y2="727" />
+  <text x="3016" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Fact. 2  : 14,03%
+  </text>
   <path stroke="#000000" stroke-width="14" d="M 849 6539 L 6669 6539 " />
   <line stroke="#000000" stroke-width="14" x1="1113" y1="6500" x2="1113" y2="6539" />
   <line stroke="#000000" stroke-width="14" x1="2436" y1="6500" x2="2436" y2="6539" />
@@ -4654,6 +4732,21 @@
   <line stroke="#000000" stroke-width="14" x1="887" y1="3633" x2="849" y2="3633" />
   <line stroke="#000000" stroke-width="14" x1="887" y1="4953" x2="849" y2="4953" />
   <line stroke="#000000" stroke-width="14" x1="887" y1="6274" x2="849" y2="6274" />
+  <text x="405" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="405" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="472" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="472" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="472" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
   <line stroke="#000000" stroke-width="14" x1="868" y1="991" x2="849" y2="991" />
   <line stroke="#000000" stroke-width="14" x1="868" y1="1255" x2="849" y2="1255" />
   <line stroke="#000000" stroke-width="14" x1="868" y1="1519" x2="849" y2="1519" />
@@ -4676,6 +4769,9 @@
   <line stroke="#000000" stroke-width="14" x1="868" y1="6010" x2="849" y2="6010" />
   <line stroke="#000000" stroke-width="14" x1="868" y1="6274" x2="849" y2="6274" />
   <line stroke="#000000" stroke-width="14" x1="868" y1="6539" x2="849" y2="6539" />
+  <text x="251" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Fact. 3  :  7,54%
+  </text>
   <path stroke="#000000" stroke-width="14" d="M 6669 727 L 6669 6539 " />
   <line stroke="#000000" stroke-width="14" x1="6630" y1="991" x2="6669" y2="991" />
   <line stroke="#000000" stroke-width="14" x1="6630" y1="2312" x2="6669" y2="2312" />

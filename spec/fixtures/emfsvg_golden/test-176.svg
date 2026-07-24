@@ -201,14 +201,86 @@
   <line stroke="#800000" stroke-width="1" x1="2625" y1="58" x2="2625" y2="628" />
   <line stroke="#800000" stroke-width="1" x1="2625" y1="628" x2="2110" y2="628" />
   <g transform="matrix(0.290120 0.000000 0.000000 0.289831 157.553589 157.553589)">
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          ABC
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          def
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          GHI
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          jkl
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          MNO
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          pqr
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          STU
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          vwx
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          YZ.
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          abc
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          DEF
+  </text>
+  <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+          GHI
+  </text>
+  <text x="1801" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  </text>
+  <text x="1801" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    abcdefghijklmnopqrstuvwxyz
+  </text>
   <line stroke="#800000" stroke-width="1" x1="2882" y1="229" x2="2615" y2="742" />
   <line stroke="#800000" stroke-width="1" x1="2615" y1="742" x2="3150" y2="742" />
   <line stroke="#800000" stroke-width="1" x1="3150" y1="742" x2="2882" y2="229" />
   <line stroke="#800000" stroke-width="1" x1="2882" y1="913" x2="2615" y2="400" />
   <line stroke="#800000" stroke-width="1" x1="2615" y1="400" x2="3150" y2="400" />
   <line stroke="#800000" stroke-width="1" x1="3150" y1="400" x2="2882" y2="913" />
+  <text x="2934" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    12345
+  </text>
+  <text x="2926" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    12345
+  </text>
+  <text x="2908" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    12345.
+  </text>
+  <text x="2882" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    123.456
+  </text>
+  <text x="2857" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    0.123456
+  </text>
+  <text x="2839" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    0.987654
+  </text>
+  <text x="2831" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    0.988
+  </text>
+  <text x="2882" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    123456792.
+  </text>
   <line stroke="#000000" stroke-width="1" x1="90" y1="1711" x2="1557" y2="1711" />
+  <text x="1421" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    X-axis
+  </text>
   <line stroke="#000000" stroke-width="1" x1="113" y1="1228" x2="113" y2="2193" />
+  <text x="109" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+    Y-axis
+  </text>
   <line stroke="#000000" stroke-width="1" x1="113" y1="1711" x2="127" y2="1683" />
   <line stroke="#000000" stroke-width="1" x1="127" y1="1683" x2="141" y2="1656" />
   <line stroke="#000000" stroke-width="1" x1="141" y1="1656" x2="156" y2="1629" />
@@ -451,6 +523,12 @@
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 393.578644 393.578644)">
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 374.647797 374.647797)">
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 367.930389 367.930389)">
+  <text x="752" y="0" font-family="Arial" font-size="12" fill="#000000">
+    sin
+  </text>
+  <text x="539" y="0" font-family="Arial" font-size="12" fill="#000000">
+    cos
+  </text>
   <path fill="#FF0000" stroke="#FFFFFF" stroke-width="1" d="M 1647 1970 L 2006 393 L 998 1658 L 2455 956 L 838 956 L 2295 1658 L 1287 393 Z " fill-rule="evenodd" />
   <path fill="#00FF00" stroke="#000000" stroke-width="1" d="M 1647 311 L 1287 1888 L 2295 623 L 838 1325 L 2455 1325 L 998 623 L 2006 1888 Z " fill-rule="evenodd" />
   </g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g>
