@@ -1,0 +1,61 @@
+# Contributing to emfsvg
+
+== Branches and PRs
+
+* Never commit to `main`. Create a feature branch
+  (`feat/...`, `fix/...`, `docs/...`) and open a PR.
+* Never push tags yourself. Tags are releases; the maintainer decides.
+* Squash-merge or rebase-merge is preferred; the maintainer chooses per
+  PR.
+
+== Code style
+
+* `bundle exec rubocop` must pass clean.
+* `bundle exec rspec` must pass with no failures.
+* Target Ruby 3.1+. Use pattern matching, endless ranges, and
+  frozen-string-literals.
+
+== Constraints (project-specific)
+
+These are absolute. PRs that violate them will be rejected.
+
+* **No `require_relative`** in `lib/`. No `require` of internal paths.
+  Use Ruby `autoload` declared in the immediate parent namespace's file.
+* **No `double()` in specs.** Use real instances or `Struct.new` for
+  plain data.
+* **No `send` to private methods**, no `instance_variable_set`/`get`,
+  no `respond_to?` for type checks.
+* **No AI attribution** in any commit message, PR description, code
+  comment, or changelog entry.
+* **Never delete source files** unless the user explicitly approves.
+
+== Adding a new EMF record handler
+
+In `lib/emfsvg/visitors/emr_visitor.rb`:
+
+1. Add the wire class to the `HANDLERS` hash:
+   `Emf::Emr::Binary::Records::Foo => :visit_foo`
+2. Add the handler method:
+   ```ruby
+   def visit_foo(wire)
+     # emit SVG via @builder.tag/...
+   end
+   ```
+3. Add a spec in `spec/emfsvg/` exercising the new handler against a
+   fixture or a synthetic Emf::Model::Metafile.
+
+== Adding tests
+
+* The renderer walks `Emf::Model::Metafile` directly. Use
+  `Emf.parse_file(...)` to construct test inputs.
+* The visitor and DeviceContext are exercised in isolation in
+  `state_spec.rb`.
+* The CLI is exercised via `Open3` in `cli_spec.rb`.
+
+== Running tests
+
+  bundle exec rspec                       # full suite
+  bundle exec rspec spec/svg_builder_spec.rb
+  bundle exec rspec -e "converts EMF to SVG"     # by description
+
+The full suite (27 examples) runs in under 0.1 seconds.
