@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="409" height="305" viewBox="0 0 409 305" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="5193" width="6945" height="-5193" />
   <text x="2346" y="0" font-family="Arial" font-size="12" fill="#000000">
     Val. Propres (matrice de corrél.)
   </text>
   <text x="2608" y="0" font-family="Arial" font-size="12" fill="#000000">
     Variables actives seules
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="711" y="4497" width="6082" height="-3869" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1469 645 L 1469 4497 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1469" y1="645" x2="1474" y2="662" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1474" y1="679" x2="1474" y2="696" />
@@ -2432,36 +2434,58 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="6708" y1="4107" x2="6725" y2="4107" />
   <line stroke="#C0C0C0" stroke-width="0" x1="6742" y1="4107" x2="6759" y2="4107" />
   <path stroke="#0000FF" stroke-width="17" d="M 1848 4100 L 2227 2908 L 2606 2287 L 2985 1781 L 3364 1719 L 3743 1311 L 4122 1245 L 4501 1182 L 4880 1112 L 5259 1093 L 5638 1062 " />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1837.5" cy="4115.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1837.5" cy="4115.5" rx="25.5" ry="-25.5" />
   <text x="1535" y="0" font-family="Arial" font-size="12" fill="#000000">
       36,23%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2210.5" cy="2910.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2210.5" cy="2910.5" rx="25.5" ry="-25.5" />
   <text x="1914" y="0" font-family="Arial" font-size="12" fill="#000000">
       22,17%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2600.5" cy="2299.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2600.5" cy="2299.5" rx="25.5" ry="-25.5" />
   <text x="2293" y="0" font-family="Arial" font-size="12" fill="#000000">
       14,84%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2972.5" cy="1790.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2972.5" cy="1790.5" rx="25.5" ry="-25.5" />
   <text x="2689" y="0" font-family="Arial" font-size="12" fill="#000000">
        8,87%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3362.5" cy="1722.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3362.5" cy="1722.5" rx="25.5" ry="-25.5" />
   <text x="3068" y="0" font-family="Arial" font-size="12" fill="#000000">
        8,13%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3735.0" cy="1315.5" rx="25.0" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3735.0" cy="1315.5" rx="25.0" ry="-25.5" />
   <text x="3447" y="0" font-family="Arial" font-size="12" fill="#000000">
        3,32%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4107.5" cy="1247.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4107.5" cy="1247.5" rx="25.5" ry="-25.5" />
   <text x="3826" y="0" font-family="Arial" font-size="12" fill="#000000">
        2,54%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4497.5" cy="1196.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4497.5" cy="1196.5" rx="25.5" ry="-25.5" />
   <text x="4205" y="0" font-family="Arial" font-size="12" fill="#000000">
        1,80%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4870.0" cy="1128.5" rx="25.0" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4870.0" cy="1128.5" rx="25.0" ry="-25.5" />
   <text x="4601" y="0" font-family="Arial" font-size="12" fill="#000000">
         ,97%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5242.5" cy="1094.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5242.5" cy="1094.5" rx="25.5" ry="-25.5" />
   <text x="4980" y="0" font-family="Arial" font-size="12" fill="#000000">
         ,75%
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5632.5" cy="1077.5" rx="25.5" ry="-25.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5632.5" cy="1077.5" rx="25.5" ry="-25.5" />
   <text x="5359" y="0" font-family="Arial" font-size="12" fill="#000000">
         ,38%
   </text>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="1045" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Ligne &amp; Colonne ; Dimension :  1 x  2
   </text>
@@ -9,12 +10,17 @@
   <text x="2182" y="0" font-family="Arial" font-size="12" fill="#000000">
     Standardisation : Profils ligne et colonne
   </text>
+  <ellipse fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" cx="8156.5" cy="738.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFBF0" stroke="#0000FF" stroke-width="0" cx="8156.5" cy="738.5" rx="41.5" ry="-41.5" />
   <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.L.
   </text>
+  <rect fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" x="8115" y="531" width="83" height="-83" />
+  <rect fill="#FFFBF0" stroke="#FF0000" stroke-width="0" x="8115" y="531" width="83" height="-83" />
   <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.C.
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFBF0" stroke-width="0" x="913" y="5908" width="6870" height="-5111" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1769 813 L 1769 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1769" y1="813" x2="1776" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1776" y1="846" x2="1776" y2="863" />
@@ -2348,54 +2354,88 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="7684" y1="5178" x2="7700" y2="5178" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7717" y1="5178" x2="7734" y2="5178" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7750" y1="5178" x2="7767" y2="5180" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3028.5" cy="4555.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3028.5" cy="4555.5" rx="41.5" ry="-41.5" />
   <text x="2727" y="0" font-family="Arial" font-size="12" fill="#000000">
     Paysans
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2796.5" cy="3808.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2796.5" cy="3808.5" rx="41.5" ry="-41.5" />
   <text x="2496" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ouvriers
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3510.0" cy="2132.5" rx="41.0" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3510.0" cy="2132.5" rx="41.0" ry="-41.5" />
   <text x="3155" y="0" font-family="Arial" font-size="12" fill="#000000">
     Vendeurs
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4389.5" cy="2663.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4389.5" cy="2663.5" rx="41.5" ry="-41.5" />
   <text x="3871" y="0" font-family="Arial" font-size="12" fill="#000000">
     Commerçants
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4074.5" cy="1435.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4074.5" cy="1435.5" rx="41.5" ry="-41.5" />
   <text x="3700" y="0" font-family="Arial" font-size="12" fill="#000000">
     Employés
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4389.5" cy="1933.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4389.5" cy="1933.5" rx="41.5" ry="-41.5" />
   <text x="3931" y="0" font-family="Arial" font-size="12" fill="#000000">
     Techniciens
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6298.5" cy="2995.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6298.5" cy="2995.5" rx="41.5" ry="-41.5" />
   <text x="5800" y="0" font-family="Arial" font-size="12" fill="#000000">
     Universitaires
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6464.5" cy="3841.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6464.5" cy="3841.5" rx="41.5" ry="-41.5" />
   <text x="5899" y="0" font-family="Arial" font-size="12" fill="#000000">
     Profs.Libérales
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="2108" y="4116" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="2108" y="4116" width="83" height="-83" />
   <text x="1861" y="0" font-family="Arial" font-size="12" fill="#000000">
     Sérieux
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="6821" y="5277" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="6821" y="5277" width="83" height="-83" />
   <text x="6482" y="0" font-family="Arial" font-size="12" fill="#000000">
     Généreux
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="4614" y="3336" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="4614" y="3336" width="83" height="-83" />
   <text x="4526" y="0" font-family="Arial" font-size="12" fill="#000000">
     Gai
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="3253" y="2340" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="3253" y="2340" width="83" height="-83" />
   <text x="2963" y="0" font-family="Arial" font-size="12" fill="#000000">
     Honnête
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5742" y="2423" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5742" y="2423" width="83" height="-83" />
   <text x="5402" y="0" font-family="Arial" font-size="12" fill="#000000">
     Intelligent
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="3933" y="3103" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="3933" y="3103" width="83" height="-83" />
   <text x="3603" y="0" font-family="Arial" font-size="12" fill="#000000">
     Serviable
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="3518" y="4265" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="3518" y="4265" width="83" height="-83" />
   <text x="3142" y="0" font-family="Arial" font-size="12" fill="#000000">
     Courageux
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5792" y="1892" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5792" y="1892" width="83" height="-83" />
   <text x="5310" y="0" font-family="Arial" font-size="12" fill="#000000">
     Compréhensif
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="3900" y="1577" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="3900" y="1577" width="83" height="-83" />
   <text x="3690" y="0" font-family="Arial" font-size="12" fill="#000000">
     Discret
   </text>

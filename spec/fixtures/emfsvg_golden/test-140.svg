@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="1045" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Ligne &amp; Colonne ; Dimension :  1 x  2
   </text>
@@ -9,6 +10,8 @@
   <text x="2182" y="0" font-family="Arial" font-size="12" fill="#000000">
     Standardisation : Profils ligne et colonne
   </text>
+  <ellipse fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" cx="8156.5" cy="738.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFBF0" stroke="#0000FF" stroke-width="0" cx="8156.5" cy="738.5" rx="41.5" ry="-41.5" />
   <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.L.
   </text>
@@ -17,6 +20,7 @@
   <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.C.
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFBF0" stroke-width="0" x="913" y="5908" width="6870" height="-5111" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1598 813 L 1598 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1598" y1="813" x2="1593" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1593" y1="846" x2="1593" y2="863" />
@@ -2660,27 +2664,43 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="7684" y1="5178" x2="7700" y2="5178" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7717" y1="5178" x2="7734" y2="5178" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7750" y1="5178" x2="7767" y2="5180" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6845.5" cy="1485.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6845.5" cy="1485.5" rx="41.5" ry="-41.5" />
   <text x="6426" y="0" font-family="Arial" font-size="12" fill="#000000">
     Agriculteur
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6165.5" cy="2696.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6165.5" cy="2696.5" rx="41.5" ry="-41.5" />
   <text x="5748" y="0" font-family="Arial" font-size="12" fill="#000000">
     Petitpatron
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2746.5" cy="3294.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2746.5" cy="3294.5" rx="41.5" ry="-41.5" />
   <text x="2315" y="0" font-family="Arial" font-size="12" fill="#000000">
     Prof.Cad.S.
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4970.5" cy="3974.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4970.5" cy="3974.5" rx="41.5" ry="-41.5" />
   <text x="4549" y="0" font-family="Arial" font-size="12" fill="#000000">
     Prof.interm
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5816.5" cy="4422.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5816.5" cy="4422.5" rx="41.5" ry="-41.5" />
   <text x="5520" y="0" font-family="Arial" font-size="12" fill="#000000">
     Employ
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5999.5" cy="4472.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5999.5" cy="4472.5" rx="41.5" ry="-41.5" />
   <text x="5554" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ouvrierqual
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6513.5" cy="4422.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6513.5" cy="4422.5" rx="41.5" ry="-41.5" />
   <text x="6112" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ouvriern-q
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5932.5" cy="3493.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5932.5" cy="3493.5" rx="41.5" ry="-41.5" />
   <text x="5694" y="0" font-family="Arial" font-size="12" fill="#000000">
     Inactif
   </text>

@@ -9,12 +9,16 @@
   <text x="-13" y="-876.0" font-family="Carlito" font-size="12" fill="#000000">
     class Fig: Context for Temporal RS using Identifiers
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="194" y="-48.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="205" y="-59.0" width="16" height="16" />
   <text x="228" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19111 Ed 3
   </text>
   <text x="245" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="445" y="-48.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="456" y="-59.0" width="16" height="16" />
   <text x="479" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19170-1
   </text>
@@ -26,6 +30,7 @@
   <text x="124" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     cf. Fig. ISO 19112 Ed 2 Overview
   </text>
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="6" y="-747.0" width="255" height="62" />
   <text x="131" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     RSUsingZonalIdentifiersPrimitive
   </text>
@@ -38,6 +43,7 @@
   <text x="29" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     SpatialReferenceSystemUsingGeographicIdentifiers
   </text>
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="6" y="-615.0" width="173" height="51" />
   <text x="103" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ZoneClassPrimitive
   </text>
@@ -47,6 +53,7 @@
   <text x="24" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ISO 19112 Edition 2::LocationClass
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="75" y="-405.0" width="186" height="126" />
   <text x="226" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     Location
   </text>
@@ -78,6 +85,7 @@
   <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     identifier: GeographicIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="285" y="-405.0" width="186" height="126" />
   <text x="415" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ZonePrimitive
   </text>
@@ -118,6 +126,7 @@
   <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     identifier: PeriodIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="66" y="-287.0" width="195" height="51" />
   <text x="167" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ZonalIdentifierPrimitive
   </text>
@@ -127,6 +136,7 @@
   <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ISO 19112 Edition 2::GeographicIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="285" y="-287.0" width="186" height="51" />
   <text x="377" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ZonalIdentifierPrimitive
   </text>
@@ -136,6 +146,7 @@
   <text x="347" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     PeriodIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="361" y="-615.0" width="179" height="51" />
   <text x="464" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     ZoneClassPrimitive
   </text>
@@ -145,6 +156,7 @@
   <text x="428" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     PeriodClass
   </text>
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="171" y="-107.0" width="186" height="84" />
   <text x="241" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
     «datatype»
   </text>
@@ -184,6 +196,7 @@
   <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
     DirectPosition
   </text>
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="144" y="-212.0" width="239" height="57" />
   <text x="241" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -205,6 +218,7 @@
   <text x="25" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     coordinateTuple
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="285" y="-747.0" width="255" height="62" />
   <text x="410" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
     RSUsingZonalIdentifiersPrimitive
   </text>
@@ -219,12 +233,16 @@
   <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
     KEY:
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="328" y="-48.0" width="87" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" x="339" y="-59.0" width="16" height="16" />
   <text x="362" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
     19112 Ed 2
   </text>
   <text x="370" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="60" y="-48.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="71" y="-59.0" width="16" height="16" />
   <text x="94" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19107 Ed 2
   </text>

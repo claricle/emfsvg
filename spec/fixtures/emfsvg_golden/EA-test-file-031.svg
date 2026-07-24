@@ -9,18 +9,34 @@
   <text x="0" y="-309.0" font-family="Carlito" font-size="12" fill="#000000">
     class SF Curve Product Curve Instances
   </text>
+  <rect fill="#BABBC1" stroke="#969696" stroke-width="1" x="27" y="-241.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="24" y="-244.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="24" y="-244.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="24" y="-244.0" width="228" height="34" />
   <text x="106" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     p: ProductCurve
   </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="106" y1="-258.0" x2="171" y2="-258.0" />
+  <rect fill="#BEBFC4" stroke="#969696" stroke-width="1" x="22" y="-16.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="19" y="-19.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="19" y="-19.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="19" y="-19.0" width="228" height="34" />
   <text x="131" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     c
   </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="131" y1="-33.0" x2="135" y2="-33.0" />
+  <rect fill="#BABBC1" stroke="#969696" stroke-width="1" x="553" y="-241.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="550" y="-244.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="550" y="-244.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="550" y="-244.0" width="228" height="34" />
   <text x="649" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     product
   </text>
   <line stroke="#3C3C3C" stroke-width="1" x1="649" y1="-258.0" x2="680" y2="-258.0" />
+  <rect fill="#BEBFC4" stroke="#969696" stroke-width="1" x="553" y="-16.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="550" y="-19.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="550" y="-19.0" width="228" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#DDF4F5" stroke="#5A5A5A" stroke-width="1" x="550" y="-19.0" width="228" height="34" />
   <text x="650" y="-309.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     project
   </text>

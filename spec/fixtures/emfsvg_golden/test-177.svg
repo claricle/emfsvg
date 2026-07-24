@@ -45,5 +45,7 @@
   <line stroke="#808080" stroke-width="1" x1="820" y1="2127" x2="1461" y2="2127" />
   <line stroke="#C0DCC0" stroke-width="1" x1="820" y1="2127" x2="1979" y2="1750" />
   <line stroke="#A6CAF0" stroke-width="1" x1="1461" y1="2127" x2="1979" y2="1750" />
+  <rect fill="none" stroke="#0000FF" stroke-width="1" x="51" y="51" width="2176" height="2176" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="1" cx="1139.0" cy="1139.0" rx="1088.0" ry="1088.0" />
   
 </svg>

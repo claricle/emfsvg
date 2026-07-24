@@ -39,6 +39,11 @@
   <line stroke="#000000" stroke-width="1" x1="399" y1="395" x2="399" y2="279" />
   <line stroke="#000000" stroke-width="1" x1="399" y1="279" x2="226" y2="279" />
   <line stroke="#000000" stroke-width="1" x1="226" y1="279" x2="226" y2="395" />
+  <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" cx="312.0" cy="93.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" cx="312.0" cy="93.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" cx="312.0" cy="93.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" cx="312.0" cy="93.0" rx="3.0" ry="3.0" />
+  <ellipse fill="#FFFFFF" stroke="#000000" stroke-width="1" cx="312.0" cy="93.0" rx="3.0" ry="3.0" />
   <line stroke="#000000" stroke-width="1" x1="78" y1="483" x2="78" y2="93" />
   <line stroke="#000000" stroke-width="1" x1="78" y1="483" x2="69" y2="483" />
   <line stroke="#000000" stroke-width="1" x1="78" y1="386" x2="69" y2="386" />

@@ -201,6 +201,7 @@
   <line stroke="#800000" stroke-width="1" x1="2625" y1="58" x2="2625" y2="628" />
   <line stroke="#800000" stroke-width="1" x1="2625" y1="628" x2="2110" y2="628" />
   <g transform="matrix(0.290120 0.000000 0.000000 0.289831 157.553589 157.553589)">
+  <rect fill="#0000FF" stroke="#0000FF" stroke-width="0" x="0" y="0" width="17" height="17" />
   <text x="2162" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
           ABC
   </text>
@@ -382,26 +383,47 @@
   <line stroke="#000000" stroke-width="1" x1="1506" y1="1766" x2="1520" y2="1738" />
   <line stroke="#000000" stroke-width="1" x1="1520" y1="1738" x2="1534" y2="1711" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 501.973083 501.973083)">
+  <ellipse fill="#008000" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 460.447327 460.447327)">
+  <ellipse fill="#808000" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 423.196289 423.196289)">
+  <ellipse fill="#000080" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 393.578644 393.578644)">
+  <ellipse fill="#800080" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 374.647797 374.647797)">
+  <ellipse fill="#008080" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 367.930389 367.930389)">
+  <ellipse fill="#008080" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 374.647797 374.647797)">
+  <ellipse fill="#008080" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 393.578644 393.578644)">
+  <ellipse fill="#C0DCC0" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 423.196289 423.196289)">
+  <ellipse fill="#A6CAF0" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 460.447327 460.447327)">
+  <ellipse fill="#FFFBF0" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 501.973083 501.973083)">
+  <ellipse fill="#A0A0A4" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 543.193481 543.193481)">
+  <ellipse fill="#FF0000" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 580.749878 580.749878)">
+  <ellipse fill="#00FF00" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 610.367493 610.367493)">
+  <ellipse fill="#FFFF00" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 629.298401 629.298401)">
+  <ellipse fill="#0000FF" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 635.710449 635.710449)">
+  <ellipse fill="#FF00FF" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 629.298401 629.298401)">
+  <ellipse fill="#00FFFF" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 610.367493 610.367493)">
+  <ellipse fill="#00FFFF" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 580.749878 580.749878)">
+  <ellipse fill="#808000" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 543.193481 543.193481)">
+  <ellipse fill="#800080" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 501.973083 501.973083)">
+  <ellipse fill="#0080FF" stroke="#000000" stroke-width="0" cx="20.0" cy="20.0" rx="20.0" ry="20.0" />
   <line stroke="#000000" stroke-width="0" x1="113" y1="1272" x2="127" y2="1273" />
   <line stroke="#000000" stroke-width="0" x1="127" y1="1273" x2="141" y2="1276" />
   <line stroke="#000000" stroke-width="0" x1="141" y1="1276" x2="156" y2="1280" />
@@ -503,26 +525,47 @@
   <line stroke="#000000" stroke-width="0" x1="1506" y1="1276" x2="1520" y2="1273" />
   <line stroke="#000000" stroke-width="0" x1="1520" y1="1273" x2="1534" y2="1272" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 367.930389 367.930389)">
+  <rect fill="#80FF00" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 374.647797 374.647797)">
+  <rect fill="#00FF80" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 393.578644 393.578644)">
+  <rect fill="#FF8000" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 423.196289 423.196289)">
+  <rect fill="#FF0080" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 460.447327 460.447327)">
+  <rect fill="#FF8080" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 501.973083 501.973083)">
+  <rect fill="#8080FF" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 543.193481 543.193481)">
+  <rect fill="#FFFF80" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 580.749878 580.749878)">
+  <rect fill="#FF80FF" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 610.367493 610.367493)">
+  <rect fill="#404040" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 629.298401 629.298401)">
+  <rect fill="#FF4040" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 635.710449 635.710449)">
+  <rect fill="#40FF40" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 629.298401 629.298401)">
+  <rect fill="#4040FF" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 610.367493 610.367493)">
+  <rect fill="#202020" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 580.749878 580.749878)">
+  <rect fill="#202020" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 543.193481 543.193481)">
+  <rect fill="#800000" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 501.973083 501.973083)">
+  <rect fill="#008000" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 460.447327 460.447327)">
+  <rect fill="#808000" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 423.196289 423.196289)">
+  <rect fill="#000080" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 393.578644 393.578644)">
+  <rect fill="#800080" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 374.647797 374.647797)">
+  <rect fill="#008080" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <g transform="matrix(0.298735 0.000000 0.000000 0.298437 367.930389 367.930389)">
+  <rect fill="#008080" stroke="#000000" stroke-width="0" x="0" y="0" width="40" height="40" />
   <text x="752" y="0" font-family="Arial" font-size="12" fill="#000000">
     sin
   </text>

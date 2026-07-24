@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="651" height="651" viewBox="3 3 651 651" version="1.1">
+  <rect fill="none" stroke="#000000" stroke-width="1" x="612" y="106" width="2067" height="2066" />
   <line stroke="#FF0000" stroke-width="1" x1="1647" y1="1658" x2="1647" y2="1140" />
   <line stroke="#FF0000" stroke-width="1" x1="1647" y1="1658" x2="2140" y2="1819" />
   <line stroke="#FF0000" stroke-width="1" x1="2140" y1="1300" x2="2140" y2="1819" />

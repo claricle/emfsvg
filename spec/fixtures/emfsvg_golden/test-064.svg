@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="659" height="412" viewBox="0 0 659 412" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="3460" y="0" font-family="Arial" font-size="12" fill="#000000">
     Val. Propres (matrice de corrél.)
   </text>
   <text x="3737" y="0" font-family="Arial" font-size="12" fill="#000000">
     Variables actives seules
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="695" y="6170" width="8481" height="-5354" />
   <path stroke="#D9D9D9" stroke-width="0" d="M 1753 833 L 1753 6170 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 2811 833 L 2811 6170 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 3869 833 L 3869 6170 " />
@@ -24,36 +26,48 @@
   <path stroke="#D9D9D9" stroke-width="0" d="M 695 5199 L 9161 5199 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 695 5684 L 9161 5684 " />
   <path stroke="#0000FF" stroke-width="14" d="M 2282 5694 L 2811 2204 L 3340 1577 L 3869 1461 L 4398 1419 L 4928 1351 L 5457 1330 L 5986 1323 L 6515 1322 L 7044 1318 L 7573 1318 L 8102 1318 " />
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="2276.5" cy="5702.5" rx="35.5" ry="-42.5" />
   <text x="1984" y="0" font-family="Arial" font-size="12" fill="#000000">
     75,17%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="2801.0" cy="2218.5" rx="36.0" ry="-42.5" />
   <text x="2513" y="0" font-family="Arial" font-size="12" fill="#000000">
     15,23%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="3339.0" cy="1589.5" rx="35.0" ry="-42.5" />
   <text x="3092" y="0" font-family="Arial" font-size="12" fill="#000000">
     4,45%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="3864.5" cy="1470.5" rx="35.5" ry="-42.5" />
   <text x="3621" y="0" font-family="Arial" font-size="12" fill="#000000">
     2,46%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="4389.5" cy="1419.5" rx="35.5" ry="-42.5" />
   <text x="4150" y="0" font-family="Arial" font-size="12" fill="#000000">
     1,75%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="4914.0" cy="1351.5" rx="35.0" ry="-42.5" />
   <text x="4730" y="0" font-family="Arial" font-size="12" fill="#000000">
     ,58%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="5453.0" cy="1334.5" rx="36.0" ry="-42.5" />
   <text x="5259" y="0" font-family="Arial" font-size="12" fill="#000000">
     ,22%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="5977.5" cy="1334.5" rx="35.5" ry="-42.5" />
   <text x="5788" y="0" font-family="Arial" font-size="12" fill="#000000">
     ,09%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="6502.5" cy="1334.5" rx="35.5" ry="-42.5" />
   <text x="6317" y="0" font-family="Arial" font-size="12" fill="#000000">
     ,07%
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="7041.5" cy="1334.5" rx="35.5" ry="-42.5" />
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="7566.0" cy="1334.5" rx="35.0" ry="-42.5" />
   <text x="7524" y="0" font-family="Arial" font-size="12" fill="#000000">
     9
   </text>
+  <ellipse fill="#0080FF" stroke="#0000FF" stroke-width="14" cx="8090.5" cy="1334.5" rx="35.5" ry="-42.5" />
   <path stroke="#000000" stroke-width="14" d="M 695 833 L 9161 833 " />
   <line stroke="#000000" stroke-width="14" x1="695" y1="866" x2="695" y2="833" />
   <line stroke="#000000" stroke-width="14" x1="1753" y1="866" x2="1753" y2="833" />

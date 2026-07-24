@@ -9,12 +9,14 @@
   <text x="-8" y="-506.0" font-family="Carlito" font-size="12" fill="#000000">
     class Fig: Components of RS using Zonal Identifiers
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="90" y="-435.0" width="255" height="51" />
   <text x="195" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
   <text x="169" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     RSUsingZonalIdentifiers
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="90" y="-292.0" width="179" height="58" />
   <text x="157" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -28,6 +30,7 @@
   <text x="112" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     refinementLevel: Integer
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="90" y="-123.0" width="255" height="84" />
   <text x="195" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -53,6 +56,7 @@
   <text x="112" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     representativePosition: DirectPosition [1..4] {ordered}
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="90" y="-29.0" width="255" height="48" />
   <text x="193" y="-507.0" font-family="Calibri" font-size="12" fill="#000000">
     «DataType»
   </text>

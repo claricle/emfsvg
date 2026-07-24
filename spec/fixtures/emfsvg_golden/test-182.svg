@@ -120,6 +120,8 @@
   <path stroke="#000000" stroke-width="1" fill="none" d="M 48 96 C 49 95 49 95 49 95 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
+  <path fill="#666666" stroke="#000000" stroke-width="1" d="M 48 68 L 48 51 L 37 51 L 37 68 L 48 68 Z " fill-rule="evenodd" />
+  <path fill="#666666" stroke="#000000" stroke-width="1" d="M 48 95 L 48 77 L 37 77 L 37 95 L 48 95 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#666666" stroke="#000000" stroke-width="1" d="M 48 68 L 48 51 L 37 51 L 37 68 L 48 68 Z " fill-rule="evenodd" />

@@ -14,36 +14,54 @@
   <text x="103" y="-724.0" font-family="Carlito" font-size="12" fill="#4E5B68">
     KEY:
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="133" y="-58.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="144" y="-69.0" width="16" height="16" rx="2.5" ry="2.5" />
   <text x="167" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19107 Ed 2
   </text>
   <text x="184" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="243" y="-58.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="254" y="-69.0" width="16" height="16" rx="2.5" ry="2.5" />
   <text x="277" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19111 Ed 3
   </text>
   <text x="294" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="353" y="-58.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="364" y="-69.0" width="16" height="16" rx="2.5" ry="2.5" />
   <text x="387" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19170-1
   </text>
   <text x="398" y="-724.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#B9BBC1" stroke="#969696" stroke-width="1" x="106" y="-667.0" width="107" height="43" rx="2.5" ry="2.5" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="103" y="-670.0" width="107" height="43" rx="2.5" ry="2.5" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="103" y="-670.0" width="107" height="43" rx="2.5" ry="2.5" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="103" y="-670.0" width="107" height="43" />
   <text x="134" y="-724.0" font-family="Carlito" font-size="12" fill="#000000">
     «interface»
   </text>
   <text x="113" y="-724.0" font-family="Carlito" font-size="12" fill="#000000">
     Geometry::Geometry
   </text>
+  <rect fill="#B9BBC1" stroke="#969696" stroke-width="1" x="348" y="-667.0" width="107" height="43" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="345" y="-670.0" width="107" height="43" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="345" y="-670.0" width="107" height="43" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="345" y="-670.0" width="107" height="43" />
   <text x="376" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="359" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     Topology::Topology
   </text>
+  <rect fill="#BCBDC2" stroke="#969696" stroke-width="1" x="14" y="-486.0" width="199" height="110" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="11" y="-489.0" width="199" height="110" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="11" y="-489.0" width="199" height="110" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="11" y="-489.0" width="199" height="110" />
   <text x="88" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
@@ -66,6 +84,10 @@
   <text x="16" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     {self.spatialDimension.isEmpty = True}
   </text>
+  <rect fill="#BCBDC2" stroke="#969696" stroke-width="1" x="348" y="-487.0" width="199" height="110" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-490.0" width="199" height="110" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-490.0" width="199" height="110" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-490.0" width="199" height="110" />
   <text x="422" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
@@ -93,12 +115,20 @@
   <text x="235" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
     CoordinateDataType
   </text>
+  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" x="13" y="-390.0" width="200" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="10" y="-393.0" width="200" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="10" y="-393.0" width="200" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="10" y="-393.0" width="200" height="44" />
   <text x="88" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="52" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     TemporalGeometricPrimitive
   </text>
+  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" x="142" y="-305.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="139" y="-308.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="139" y="-308.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="139" y="-308.0" width="71" height="44" />
   <text x="152" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
@@ -108,6 +138,10 @@
   <text x="163" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     Curve
   </text>
+  <rect fill="#C2C3C6" stroke="#969696" stroke-width="1" x="365" y="-110.0" width="166" height="94" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="362" y="-113.0" width="166" height="94" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="362" y="-113.0" width="166" height="94" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="362" y="-113.0" width="166" height="94" />
   <text x="429" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «Union»
   </text>
@@ -139,6 +173,10 @@
   <text x="384" y="-724.0" font-family="Calibri" font-size="12" fill="#854A2C">
     /durationType: CoordinateDataType
   </text>
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" x="13" y="-222.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="10" y="-225.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="10" y="-225.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="10" y="-225.0" width="71" height="44" />
   <text x="23" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
@@ -148,6 +186,10 @@
   <text x="36" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     Point
   </text>
+  <rect fill="#C2C3C6" stroke="#969696" stroke-width="1" x="13" y="-110.0" width="92" height="73" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="10" y="-113.0" width="92" height="73" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="10" y="-113.0" width="92" height="73" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="10" y="-113.0" width="92" height="73" />
   <text x="34" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
@@ -161,36 +203,60 @@
   <text x="15" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     {self.type = point}
   </text>
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" x="142" y="-222.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="139" y="-225.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="139" y="-225.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="139" y="-225.0" width="71" height="44" />
   <text x="152" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="154" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     Lines::Line
   </text>
+  <rect fill="#BEBFC3" stroke="#969696" stroke-width="1" x="348" y="-390.0" width="199" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-393.0" width="199" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-393.0" width="199" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-393.0" width="199" height="44" />
   <text x="422" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="385" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     TemporalTopologicalPrimitive
   </text>
+  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" x="474" y="-305.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="471" y="-308.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="471" y="-308.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="471" y="-308.0" width="71" height="44" />
   <text x="484" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="484" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     Edge::Edge
   </text>
+  <rect fill="#BFC0C4" stroke="#969696" stroke-width="1" x="348" y="-305.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="345" y="-308.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="345" y="-308.0" width="71" height="44" rx="2.5" ry="2.5" />
+  <rect fill="#F1ECFA" stroke="#0000CD" stroke-width="2" x="345" y="-308.0" width="71" height="44" />
   <text x="358" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="356" y="-724.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
     Node::Node
   </text>
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" x="348" y="-233.0" width="87" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-236.0" width="87" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-236.0" width="87" height="34" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="345" y="-236.0" width="87" height="34" />
   <text x="366" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
   <text x="375" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     NodeT
   </text>
+  <rect fill="#C1C1C5" stroke="#969696" stroke-width="1" x="457" y="-233.0" width="87" height="35" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="454" y="-236.0" width="87" height="35" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="454" y="-236.0" width="87" height="35" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="454" y="-236.0" width="87" height="35" />
   <text x="475" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>
@@ -208,6 +274,10 @@
   <text x="233" y="-724.0" font-family="Calibri" font-size="12" fill="#000000">
     TemporalCS
   </text>
+  <rect fill="#C2C3C6" stroke="#969696" stroke-width="1" x="121" y="-109.0" width="92" height="73" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="118" y="-112.0" width="92" height="73" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="118" y="-112.0" width="92" height="73" rx="2.5" ry="2.5" />
+  <rect fill="#FDFAF7" stroke="#5A5A5A" stroke-width="2" x="118" y="-112.0" width="92" height="73" />
   <text x="142" y="-724.0" font-family="Calibri" font-size="12" fill="#3C3C3C">
     «interface»
   </text>

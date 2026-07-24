@@ -6,6 +6,12 @@
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 72 72 L 72 3288 L 7768 3288 L 7768 72 L 72 72 Z " fill-rule="evenodd" />
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 0.000000 0.000000)">
   <g transform="matrix(0.062628 0.000000 0.000000 0.062798 0.000000 0.000000)">
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1072 2600 L 1008 2600 L 1008 2584 L 1072 2584 L 1072 2600 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1072 2216 L 1008 2216 L 1008 2200 L 1072 2200 L 1072 2216 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1072 1848 L 1008 1848 L 1008 1832 L 1072 1832 L 1072 1848 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1072 1480 L 1008 1480 L 1008 1464 L 1072 1464 L 1072 1480 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1072 1112 L 1008 1112 L 1008 1096 L 1072 1096 L 1072 1112 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1072 744 L 1008 744 L 1008 728 L 1072 728 L 1072 744 Z " fill-rule="nonzero" />
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 0.000000 0.000000)">
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 154.938461 154.938461)">
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 154.938461 154.938461)">
@@ -74,6 +80,9 @@
     100
   </text>
   <g transform="matrix(0.062628 0.000000 0.000000 0.062798 38.854542 38.854542)">
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 1080 2592 L 1080 2656 L 1064 2656 L 1064 2592 L 1080 2592 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 3080 2592 L 3080 2656 L 3064 2656 L 3064 2592 L 3080 2592 Z " fill-rule="nonzero" />
+  <path fill="#868686" stroke="#000000" stroke-width="1" d="M 5112 2592 L 5112 2656 L 5096 2656 L 5096 2592 L 5112 2592 Z " fill-rule="nonzero" />
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 38.854542 38.854542)">
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 174.693985 174.693985)">
   <g transform="matrix(1.002041 0.000000 0.000000 1.004762 174.693985 174.693985)">

@@ -17,11 +17,17 @@ module Emfsvg
       @stretch_mode = 1
       @miter_limit = 10.0
       @world_transform = Emf::Model::Geometry::Matrix.identity
+      @brush_origin = [0, 0]
+      @icm_mode = 0
+      @layout = 0
+      @mapper_flags = 0
+      @arc_direction = 1 # AD_COUNTERCLOCKWISE
     end
 
     attr_accessor :pen, :brush, :font, :text_color, :bk_color, :bk_mode,
                   :poly_fill_mode, :map_mode, :text_align, :stretch_mode,
-                  :miter_limit, :world_transform
+                  :miter_limit, :world_transform, :brush_origin, :icm_mode,
+                  :layout, :mapper_flags, :arc_direction
 
     def dup
       other = DeviceContext.allocate
@@ -37,6 +43,11 @@ module Emfsvg
       other.stretch_mode = stretch_mode
       other.miter_limit = miter_limit
       other.world_transform = world_transform
+      other.brush_origin = brush_origin.dup
+      other.icm_mode = icm_mode
+      other.layout = layout
+      other.mapper_flags = mapper_flags
+      other.arc_direction = arc_direction
       other
     end
   end

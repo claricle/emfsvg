@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="639" height="399" viewBox="0 0 639 399" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="6803" width="9071" height="-6803" />
   <text x="2721" y="0" font-family="Arial" font-size="12" fill="#000000">
     Projection des variables sur le plan factoriel (  1 x   2)
   </text>
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="14" cx="8270.5" cy="246.5" rx="35.5" ry="-42.5" />
   <text x="8475" y="0" font-family="Arial" font-size="12" fill="#000000">
      Active
   </text>
+  <rect fill="#FFFFFF" stroke="#0000FF" stroke-width="14" x="2098" y="6276" width="4578" height="-5494" />
   <path stroke="#D9D9D9" stroke-width="0" d="M 2305 799 L 2305 6276 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 3342 799 L 3342 6276 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 4380 799 L 4380 6276 " />
@@ -16,12 +19,14 @@
   <path stroke="#D9D9D9" stroke-width="0" d="M 2098 3537 L 6662 3537 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 2098 4782 L 6662 4782 " />
   <path stroke="#D9D9D9" stroke-width="0" d="M 2098 6027 L 6662 6027 " />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="14" cx="6413.5" cy="3767.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 5388 4110 L 6351 4110 L 6351 3872 L 5388 3872 L 5388 4110 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 5388 4110 L 6351 4110 L 6351 3872 L 5388 3872 L 5388 4110 " />
   <line stroke="#0000FF" stroke-width="14" x1="6422" y1="3753" x2="6378" y2="3827" />
   <text x="5416" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux de TAG
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="2331.5" cy="3324.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 1318 3882 L 2309 3882 L 2309 3644 L 1318 3644 L 1318 3882 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 1318 3882 L 2309 3882 L 2309 3644 L 1318 3644 L 1318 3882 " />
   <line stroke="#0000FF" stroke-width="14" x1="2337" y1="3321" x2="2339" y2="3384" />
@@ -30,12 +35,15 @@
   <text x="1346" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux de cires
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="6399.5" cy="3563.5" rx="35.5" ry="-42.5" />
   <text x="5723" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'insaturations
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="6385.5" cy="3239.5" rx="35.5" ry="-42.5" />
   <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'acides gras à longues chaînes linéaires
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="2317.5" cy="3307.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 1431 4356 L 4747 4356 L 4747 4118 L 1431 4118 L 1431 4356 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 1431 4356 L 4747 4356 L 4747 4118 L 1431 4118 L 1431 4356 " />
   <line stroke="#0000FF" stroke-width="14" x1="2324" y1="3302" x2="2381" y2="3367" />
@@ -48,9 +56,11 @@
   <text x="1459" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'acides gras à longues chaînes ramifiées
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="5435.5" cy="1658.5" rx="35.5" ry="-42.5" />
   <text x="4858" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'omégas 3
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="2671.5" cy="4651.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 2518 5054 L 4799 5054 L 4799 4816 L 2518 4816 L 2518 5054 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 2518 5054 L 4799 5054 L 4799 4816 L 2518 4816 L 2518 5054 " />
   <line stroke="#0000FF" stroke-width="14" x1="2680" y1="4646" x2="2735" y2="4660" />
@@ -65,6 +75,7 @@
   <text x="2546" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'acides isovalériques total
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="6399.5" cy="3835.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 5609 4390 L 8188 4390 L 8188 4152 L 5609 4152 L 5609 4390 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 5609 4390 L 8188 4390 L 8188 4152 L 5609 4152 L 5609 4390 " />
   <line stroke="#0000FF" stroke-width="14" x1="6402" y1="3829" x2="6463" y2="3861" />
@@ -75,6 +86,7 @@
   <text x="5637" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'acides isovalériques sur TAG
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="2345.5" cy="3256.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 1323 2582 L 3902 2582 L 3902 2344 L 1323 2344 L 1323 2582 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 1323 2582 L 3902 2582 L 3902 2344 L 1323 2344 L 1323 2582 " />
   <line stroke="#0000FF" stroke-width="14" x1="2357" y1="3245" x2="2381" y2="3180" />
@@ -85,6 +97,7 @@
   <text x="1351" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'acides isovalériques sur TAG
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="2402.5" cy="3222.5" rx="35.5" ry="-42.5" />
   <path fill="#F0F0F0" stroke="#0000FF" stroke-width="14" d="M 1249 3013 L 3417 3013 L 3417 2775 L 1249 2775 L 1249 3013 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" d="M 1249 3013 L 3417 3013 L 3417 2775 L 1249 2775 L 1249 3013 " />
   <line stroke="#0000FF" stroke-width="14" x1="2404" y1="3217" x2="2381" y2="3146" />
@@ -92,9 +105,11 @@
   <text x="1277" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'esters gras portant AIV
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="5775.5" cy="4600.5" rx="35.5" ry="-42.5" />
   <text x="4831" y="0" font-family="Arial" font-size="12" fill="#000000">
     Taux d'acides isobutyriques
   </text>
+  <ellipse fill="#F0F0F0" stroke="#0000FF" stroke-width="14" cx="4471.5" cy="1335.5" rx="35.5" ry="-42.5" />
   <text x="2631" y="0" font-family="Arial" font-size="12" fill="#000000">
     Longueur moyenne   des chaînes (hors AIV/AIB) en C
   </text>

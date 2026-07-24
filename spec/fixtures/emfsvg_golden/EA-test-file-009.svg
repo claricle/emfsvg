@@ -14,18 +14,24 @@
   <text x="55" y="-979.0" font-family="Carlito" font-size="12" fill="#000000">
     KEY:
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="475" y="-30.0" width="95" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#556B2F" stroke-width="2" x="486" y="-41.0" width="16" height="16" />
   <text x="509" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
     19115-1 Ed 1
   </text>
   <text x="521" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="358" y="-30.0" width="87" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" x="369" y="-41.0" width="16" height="16" />
   <text x="392" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
     19112 Ed 2
   </text>
   <text x="400" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="224" y="-30.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="235" y="-41.0" width="16" height="16" />
   <text x="258" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19111 Ed 3
   </text>
@@ -227,18 +233,24 @@
   <text x="116" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
     coordinates::ISO 19111 Edition 3)
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="715" y="-30.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="726" y="-41.0" width="16" height="16" />
   <text x="749" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19170-1
   </text>
   <text x="760" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="600" y="-32.0" width="85" height="56" rx="3.0" ry="3.0" />
+  <rect fill="#FFD700" stroke="#000000" stroke-width="1" x="610" y="-42.0" width="16" height="16" />
   <text x="632" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
     19156 Ed 1
   </text>
   <text x="641" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="90" y="-30.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="101" y="-41.0" width="16" height="16" />
   <text x="124" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19107 Ed 2
   </text>

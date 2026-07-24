@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="623" height="467" viewBox="0 0 623 467" version="1.1">
+  <rect fill="#FFFBF0" stroke="none" x="0" y="0" width="16507" height="12395" />
   <text x="6240" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé des Valeurs Propres
   </text>
@@ -9,6 +10,7 @@
   <text x="3949" y="0" font-family="Arial" font-size="12" fill="#000000">
     Inertie Totale = 1,3569 Chi² = 814,11 dl = 363 p = 0,0000
   </text>
+  <rect fill="#FFFFFF" stroke="none" x="1421" y="1871" width="14743" height="9152" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1421 9171 L 16139 9171 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1421" y1="9171" x2="1448" y2="9176" />
   <rect x="1448" y="9176" width="1" height="1" fill="#C0C0C0" />
@@ -2274,6 +2276,28 @@
   <path fill="#0000FF" stroke="none" d="M 12197 10221 L 13511 10284 L 13510 10297 L 13509 10310 L 12195 10247 L 12196 10234 L 12197 10221 Z " fill-rule="evenodd" />
   <path stroke="none" d="M 13510 10297 L 13511 10284 " />
   <path fill="#0000FF" stroke="none" d="M 13512 10284 L 14825 10498 L 14823 10511 L 14821 10524 L 13508 10310 L 13510 10297 L 13512 10284 Z " fill-rule="evenodd" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1685.0" cy="3349.5" rx="78.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="1685.0" cy="3349.5" rx="78.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3001.5" cy="5327.5" rx="79.5" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="3001.5" cy="5327.5" rx="79.5" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4317.0" cy="8227.5" rx="79.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="4317.0" cy="8227.5" rx="79.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5633.0" cy="8940.0" rx="78.0" ry="80.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="5633.0" cy="8940.0" rx="78.0" ry="80.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6950.0" cy="9440.5" rx="79.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="6950.0" cy="9440.5" rx="79.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="8267.0" cy="9809.5" rx="78.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="8267.0" cy="9809.5" rx="78.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="9557.0" cy="9968.5" rx="79.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="9557.0" cy="9968.5" rx="79.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="10873.0" cy="10126.0" rx="78.0" ry="80.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="10873.0" cy="10126.0" rx="78.0" ry="80.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="12189.0" cy="10231.5" rx="78.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="12189.0" cy="10231.5" rx="78.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="13506.0" cy="10310.5" rx="79.0" ry="80.5" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="13506.0" cy="10310.5" rx="79.0" ry="80.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="14822.0" cy="10522.0" rx="78.0" ry="80.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="14822.0" cy="10522.0" rx="78.0" ry="80.0" />
   <path fill="#000000" stroke="none" d="M 1421 10981 L 16139 10981 L 16139 10994 L 16139 11008 L 1421 11008 L 1421 10994 L 1421 10981 Z " fill-rule="evenodd" />
   <path fill="#000000" stroke="none" d="M 1698 10917 L 1698 10994 L 1684 10994 L 1671 10994 L 1671 10917 L 1684 10917 L 1698 10917 Z " fill-rule="evenodd" />
   <path fill="#000000" stroke="none" d="M 3012 10917 L 3012 10994 L 2998 10994 L 2985 10994 L 2985 10917 L 2998 10917 L 3012 10917 Z " fill-rule="evenodd" />
