@@ -671,7 +671,9 @@ module Emfsvg
       end
 
       def visit_set_miter_limit(wire)
-        @dc.miter_limit = wire.miter_limit
+        # MS-EMF spec: iMiterLimit is a uint32 (miter length ratio). The emf
+        # wire parses it as IEEE float, so convert bits back to uint32.
+        @dc.miter_limit = [wire.miter_limit.to_f].pack("f").unpack1("V")
       end
 
       def visit_comment(_wire); end
