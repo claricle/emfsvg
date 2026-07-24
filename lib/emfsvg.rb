@@ -13,6 +13,7 @@ module Emfsvg
   autoload :TransformStack, "emfsvg/transform_stack"
   autoload :SvgBuilder, "emfsvg/svg_builder"
   autoload :Options, "emfsvg/options"
+  autoload :Compat, "emfsvg/compat"
 
   class << self
     # Render an Emf::Model::Metafile to an SVG string.
