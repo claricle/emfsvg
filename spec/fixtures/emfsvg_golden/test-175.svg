@@ -1,504 +1,585 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="895" height="657" viewBox="21 0 895 657" version="1.1">
   <g transform="translate(0.000000 0.000000) scale(0.288178 0.288470) translate(-21.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" x1="96" y1="1141" x2="3198" y2="1141" />
-  <text x="2838" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
-    X-axis
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="96" y1="1141" x2="3198" y2="1141" />
+  <text font-family="ＭＳ ゴシック" fill="#000000" text-anchor="start" style="white-space:pre;" x="2838" y="1265" font-size="12" font-weight="400">
+    <![CDATA[X-axis]]>
   </text>
-  <line stroke="#000000" stroke-width="1" x1="144" y1="0" x2="144" y2="2281" />
-  <text x="134" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
-    Y-axis
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="144" y1="0" x2="144" y2="2281" />
+  <text font-family="ＭＳ ゴシック" fill="#000000" text-anchor="start" style="white-space:pre;" x="134" y="416" font-size="12" font-weight="400">
+    <![CDATA[Y-axis]]>
   </text>
-  <line stroke="#000000" stroke-width="1" x1="144" y1="1141" x2="174" y2="1075" />
-  <line stroke="#000000" stroke-width="1" x1="174" y1="1075" x2="204" y2="1011" />
-  <line stroke="#000000" stroke-width="1" x1="204" y1="1011" x2="234" y2="946" />
-  <line stroke="#000000" stroke-width="1" x1="234" y1="946" x2="264" y2="883" />
-  <line stroke="#000000" stroke-width="1" x1="264" y1="883" x2="294" y2="820" />
-  <line stroke="#000000" stroke-width="1" x1="294" y1="820" x2="324" y2="759" />
-  <line stroke="#000000" stroke-width="1" x1="324" y1="759" x2="354" y2="699" />
-  <line stroke="#000000" stroke-width="1" x1="354" y1="699" x2="384" y2="641" />
-  <line stroke="#000000" stroke-width="1" x1="384" y1="641" x2="414" y2="585" />
-  <line stroke="#000000" stroke-width="1" x1="414" y1="585" x2="444" y2="531" />
-  <line stroke="#000000" stroke-width="1" x1="444" y1="531" x2="474" y2="480" />
-  <line stroke="#000000" stroke-width="1" x1="474" y1="480" x2="504" y2="431" />
-  <line stroke="#000000" stroke-width="1" x1="504" y1="431" x2="534" y2="385" />
-  <line stroke="#000000" stroke-width="1" x1="534" y1="385" x2="565" y2="342" />
-  <line stroke="#000000" stroke-width="1" x1="565" y1="342" x2="595" y2="302" />
-  <line stroke="#000000" stroke-width="1" x1="595" y1="302" x2="625" y2="265" />
-  <line stroke="#000000" stroke-width="1" x1="625" y1="265" x2="655" y2="232" />
-  <line stroke="#000000" stroke-width="1" x1="655" y1="232" x2="685" y2="202" />
-  <line stroke="#000000" stroke-width="1" x1="685" y1="202" x2="715" y2="176" />
-  <line stroke="#000000" stroke-width="1" x1="715" y1="176" x2="745" y2="154" />
-  <line stroke="#000000" stroke-width="1" x1="745" y1="154" x2="775" y2="136" />
-  <line stroke="#000000" stroke-width="1" x1="775" y1="136" x2="805" y2="122" />
-  <line stroke="#000000" stroke-width="1" x1="805" y1="122" x2="835" y2="112" />
-  <line stroke="#000000" stroke-width="1" x1="835" y1="112" x2="865" y2="106" />
-  <line stroke="#000000" stroke-width="1" x1="865" y1="106" x2="895" y2="104" />
-  <line stroke="#000000" stroke-width="1" x1="895" y1="104" x2="925" y2="106" />
-  <line stroke="#000000" stroke-width="1" x1="925" y1="106" x2="955" y2="112" />
-  <line stroke="#000000" stroke-width="1" x1="955" y1="112" x2="985" y2="122" />
-  <line stroke="#000000" stroke-width="1" x1="985" y1="122" x2="1016" y2="136" />
-  <line stroke="#000000" stroke-width="1" x1="1016" y1="136" x2="1046" y2="154" />
-  <line stroke="#000000" stroke-width="1" x1="1046" y1="154" x2="1076" y2="176" />
-  <line stroke="#000000" stroke-width="1" x1="1076" y1="176" x2="1106" y2="202" />
-  <line stroke="#000000" stroke-width="1" x1="1106" y1="202" x2="1136" y2="232" />
-  <line stroke="#000000" stroke-width="1" x1="1136" y1="232" x2="1166" y2="265" />
-  <line stroke="#000000" stroke-width="1" x1="1166" y1="265" x2="1196" y2="302" />
-  <line stroke="#000000" stroke-width="1" x1="1196" y1="302" x2="1226" y2="342" />
-  <line stroke="#000000" stroke-width="1" x1="1226" y1="342" x2="1256" y2="385" />
-  <line stroke="#000000" stroke-width="1" x1="1256" y1="385" x2="1286" y2="431" />
-  <line stroke="#000000" stroke-width="1" x1="1286" y1="431" x2="1316" y2="480" />
-  <line stroke="#000000" stroke-width="1" x1="1316" y1="480" x2="1346" y2="531" />
-  <line stroke="#000000" stroke-width="1" x1="1346" y1="531" x2="1376" y2="585" />
-  <line stroke="#000000" stroke-width="1" x1="1376" y1="585" x2="1406" y2="641" />
-  <line stroke="#000000" stroke-width="1" x1="1406" y1="641" x2="1437" y2="699" />
-  <line stroke="#000000" stroke-width="1" x1="1437" y1="699" x2="1467" y2="759" />
-  <line stroke="#000000" stroke-width="1" x1="1467" y1="759" x2="1497" y2="820" />
-  <line stroke="#000000" stroke-width="1" x1="1497" y1="820" x2="1527" y2="883" />
-  <line stroke="#000000" stroke-width="1" x1="1527" y1="883" x2="1557" y2="946" />
-  <line stroke="#000000" stroke-width="1" x1="1557" y1="946" x2="1587" y2="1011" />
-  <line stroke="#000000" stroke-width="1" x1="1587" y1="1011" x2="1617" y2="1075" />
-  <line stroke="#000000" stroke-width="1" x1="1617" y1="1075" x2="1647" y2="1141" />
-  <line stroke="#000000" stroke-width="1" x1="1647" y1="1141" x2="1677" y2="1206" />
-  <line stroke="#000000" stroke-width="1" x1="1677" y1="1206" x2="1707" y2="1270" />
-  <line stroke="#000000" stroke-width="1" x1="1707" y1="1270" x2="1737" y2="1335" />
-  <line stroke="#000000" stroke-width="1" x1="1737" y1="1335" x2="1767" y2="1398" />
-  <line stroke="#000000" stroke-width="1" x1="1767" y1="1398" x2="1797" y2="1461" />
-  <line stroke="#000000" stroke-width="1" x1="1797" y1="1461" x2="1827" y2="1522" />
-  <line stroke="#000000" stroke-width="1" x1="1827" y1="1522" x2="1857" y2="1582" />
-  <line stroke="#000000" stroke-width="1" x1="1857" y1="1582" x2="1888" y2="1640" />
-  <line stroke="#000000" stroke-width="1" x1="1888" y1="1640" x2="1918" y2="1696" />
-  <line stroke="#000000" stroke-width="1" x1="1918" y1="1696" x2="1948" y2="1750" />
-  <line stroke="#000000" stroke-width="1" x1="1948" y1="1750" x2="1978" y2="1801" />
-  <line stroke="#000000" stroke-width="1" x1="1978" y1="1801" x2="2008" y2="1850" />
-  <line stroke="#000000" stroke-width="1" x1="2008" y1="1850" x2="2038" y2="1896" />
-  <line stroke="#000000" stroke-width="1" x1="2038" y1="1896" x2="2068" y2="1939" />
-  <line stroke="#000000" stroke-width="1" x1="2068" y1="1939" x2="2098" y2="1979" />
-  <line stroke="#000000" stroke-width="1" x1="2098" y1="1979" x2="2128" y2="2016" />
-  <line stroke="#000000" stroke-width="1" x1="2128" y1="2016" x2="2158" y2="2049" />
-  <line stroke="#000000" stroke-width="1" x1="2158" y1="2049" x2="2188" y2="2079" />
-  <line stroke="#000000" stroke-width="1" x1="2188" y1="2079" x2="2218" y2="2105" />
-  <line stroke="#000000" stroke-width="1" x1="2218" y1="2105" x2="2248" y2="2127" />
-  <line stroke="#000000" stroke-width="1" x1="2248" y1="2127" x2="2278" y2="2145" />
-  <line stroke="#000000" stroke-width="1" x1="2278" y1="2145" x2="2309" y2="2159" />
-  <line stroke="#000000" stroke-width="1" x1="2309" y1="2159" x2="2339" y2="2169" />
-  <line stroke="#000000" stroke-width="1" x1="2339" y1="2169" x2="2369" y2="2175" />
-  <line stroke="#000000" stroke-width="1" x1="2369" y1="2175" x2="2399" y2="2177" />
-  <line stroke="#000000" stroke-width="1" x1="2399" y1="2177" x2="2429" y2="2175" />
-  <line stroke="#000000" stroke-width="1" x1="2429" y1="2175" x2="2459" y2="2169" />
-  <line stroke="#000000" stroke-width="1" x1="2459" y1="2169" x2="2489" y2="2159" />
-  <line stroke="#000000" stroke-width="1" x1="2489" y1="2159" x2="2519" y2="2145" />
-  <line stroke="#000000" stroke-width="1" x1="2519" y1="2145" x2="2549" y2="2127" />
-  <line stroke="#000000" stroke-width="1" x1="2549" y1="2127" x2="2579" y2="2105" />
-  <line stroke="#000000" stroke-width="1" x1="2579" y1="2105" x2="2609" y2="2079" />
-  <line stroke="#000000" stroke-width="1" x1="2609" y1="2079" x2="2639" y2="2049" />
-  <line stroke="#000000" stroke-width="1" x1="2639" y1="2049" x2="2669" y2="2016" />
-  <line stroke="#000000" stroke-width="1" x1="2669" y1="2016" x2="2699" y2="1979" />
-  <line stroke="#000000" stroke-width="1" x1="2699" y1="1979" x2="2729" y2="1939" />
-  <line stroke="#000000" stroke-width="1" x1="2729" y1="1939" x2="2760" y2="1896" />
-  <line stroke="#000000" stroke-width="1" x1="2760" y1="1896" x2="2790" y2="1850" />
-  <line stroke="#000000" stroke-width="1" x1="2790" y1="1850" x2="2820" y2="1801" />
-  <line stroke="#000000" stroke-width="1" x1="2820" y1="1801" x2="2850" y2="1750" />
-  <line stroke="#000000" stroke-width="1" x1="2850" y1="1750" x2="2880" y2="1696" />
-  <line stroke="#000000" stroke-width="1" x1="2880" y1="1696" x2="2910" y2="1640" />
-  <line stroke="#000000" stroke-width="1" x1="2910" y1="1640" x2="2940" y2="1582" />
-  <line stroke="#000000" stroke-width="1" x1="2940" y1="1582" x2="2970" y2="1522" />
-  <line stroke="#000000" stroke-width="1" x1="2970" y1="1522" x2="3000" y2="1461" />
-  <line stroke="#000000" stroke-width="1" x1="3000" y1="1461" x2="3030" y2="1398" />
-  <line stroke="#000000" stroke-width="1" x1="3030" y1="1398" x2="3060" y2="1335" />
-  <line stroke="#000000" stroke-width="1" x1="3060" y1="1335" x2="3090" y2="1270" />
-  <line stroke="#000000" stroke-width="1" x1="3090" y1="1270" x2="3120" y2="1206" />
-  <line stroke="#000000" stroke-width="1" x1="3120" y1="1206" x2="3150" y2="1140" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 313.954407 313.954407)">
-  <ellipse fill="#008000" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 221.496277 221.496277)">
-  <ellipse fill="#808000" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 138.255157 138.255157)">
-  <ellipse fill="#000080" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 72.295921 72.295921)">
-  <ellipse fill="#800080" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 29.667252 29.667252)">
-  <ellipse fill="#008080" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 15.265673 15.265673)">
-  <ellipse fill="#008080" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 29.667252 29.667252)">
-  <ellipse fill="#008080" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 72.295921 72.295921)">
-  <ellipse fill="#C0DCC0" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 138.255157 138.255157)">
-  <ellipse fill="#A6CAF0" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 221.496277 221.496277)">
-  <ellipse fill="#FFFBF0" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 313.954407 313.954407)">
-  <ellipse fill="#A0A0A4" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 406.124512 406.124512)">
-  <ellipse fill="#FF0000" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 489.365631 489.365631)">
-  <ellipse fill="#00FF00" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 555.324829 555.324829)">
-  <ellipse fill="#FFFF00" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 597.953552 597.953552)">
-  <ellipse fill="#0000FF" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 612.355103 612.355103)">
-  <ellipse fill="#FF00FF" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 597.953552 597.953552)">
-  <ellipse fill="#00FFFF" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 555.324829 555.324829)">
-  <ellipse fill="#00FFFF" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 489.365631 489.365631)">
-  <ellipse fill="#808000" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 406.124512 406.124512)">
-  <ellipse fill="#800080" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 313.666382 313.666382)">
-  <ellipse fill="#0080FF" stroke="#000000" stroke-width="0" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
-  <line stroke="#000000" stroke-width="0" x1="144" y1="104" x2="174" y2="106" />
-  <line stroke="#000000" stroke-width="0" x1="174" y1="106" x2="204" y2="112" />
-  <line stroke="#000000" stroke-width="0" x1="204" y1="112" x2="234" y2="122" />
-  <line stroke="#000000" stroke-width="0" x1="234" y1="122" x2="264" y2="136" />
-  <line stroke="#000000" stroke-width="0" x1="264" y1="136" x2="294" y2="154" />
-  <line stroke="#000000" stroke-width="0" x1="294" y1="154" x2="324" y2="176" />
-  <line stroke="#000000" stroke-width="0" x1="324" y1="176" x2="354" y2="202" />
-  <line stroke="#000000" stroke-width="0" x1="354" y1="202" x2="384" y2="232" />
-  <line stroke="#000000" stroke-width="0" x1="384" y1="232" x2="414" y2="265" />
-  <line stroke="#000000" stroke-width="0" x1="414" y1="265" x2="444" y2="302" />
-  <line stroke="#000000" stroke-width="0" x1="444" y1="302" x2="474" y2="342" />
-  <line stroke="#000000" stroke-width="0" x1="474" y1="342" x2="504" y2="385" />
-  <line stroke="#000000" stroke-width="0" x1="504" y1="385" x2="534" y2="431" />
-  <line stroke="#000000" stroke-width="0" x1="534" y1="431" x2="565" y2="480" />
-  <line stroke="#000000" stroke-width="0" x1="565" y1="480" x2="595" y2="531" />
-  <line stroke="#000000" stroke-width="0" x1="595" y1="531" x2="625" y2="585" />
-  <line stroke="#000000" stroke-width="0" x1="625" y1="585" x2="655" y2="641" />
-  <line stroke="#000000" stroke-width="0" x1="655" y1="641" x2="685" y2="699" />
-  <line stroke="#000000" stroke-width="0" x1="685" y1="699" x2="715" y2="759" />
-  <line stroke="#000000" stroke-width="0" x1="715" y1="759" x2="745" y2="820" />
-  <line stroke="#000000" stroke-width="0" x1="745" y1="820" x2="775" y2="883" />
-  <line stroke="#000000" stroke-width="0" x1="775" y1="883" x2="805" y2="946" />
-  <line stroke="#000000" stroke-width="0" x1="805" y1="946" x2="835" y2="1011" />
-  <line stroke="#000000" stroke-width="0" x1="835" y1="1011" x2="865" y2="1075" />
-  <line stroke="#000000" stroke-width="0" x1="865" y1="1075" x2="895" y2="1141" />
-  <line stroke="#000000" stroke-width="0" x1="895" y1="1141" x2="925" y2="1206" />
-  <line stroke="#000000" stroke-width="0" x1="925" y1="1206" x2="955" y2="1270" />
-  <line stroke="#000000" stroke-width="0" x1="955" y1="1270" x2="985" y2="1335" />
-  <line stroke="#000000" stroke-width="0" x1="985" y1="1335" x2="1016" y2="1398" />
-  <line stroke="#000000" stroke-width="0" x1="1016" y1="1398" x2="1046" y2="1461" />
-  <line stroke="#000000" stroke-width="0" x1="1046" y1="1461" x2="1076" y2="1522" />
-  <line stroke="#000000" stroke-width="0" x1="1076" y1="1522" x2="1106" y2="1582" />
-  <line stroke="#000000" stroke-width="0" x1="1106" y1="1582" x2="1136" y2="1640" />
-  <line stroke="#000000" stroke-width="0" x1="1136" y1="1640" x2="1166" y2="1696" />
-  <line stroke="#000000" stroke-width="0" x1="1166" y1="1696" x2="1196" y2="1750" />
-  <line stroke="#000000" stroke-width="0" x1="1196" y1="1750" x2="1226" y2="1801" />
-  <line stroke="#000000" stroke-width="0" x1="1226" y1="1801" x2="1256" y2="1850" />
-  <line stroke="#000000" stroke-width="0" x1="1256" y1="1850" x2="1286" y2="1896" />
-  <line stroke="#000000" stroke-width="0" x1="1286" y1="1896" x2="1316" y2="1939" />
-  <line stroke="#000000" stroke-width="0" x1="1316" y1="1939" x2="1346" y2="1979" />
-  <line stroke="#000000" stroke-width="0" x1="1346" y1="1979" x2="1376" y2="2016" />
-  <line stroke="#000000" stroke-width="0" x1="1376" y1="2016" x2="1406" y2="2049" />
-  <line stroke="#000000" stroke-width="0" x1="1406" y1="2049" x2="1437" y2="2079" />
-  <line stroke="#000000" stroke-width="0" x1="1437" y1="2079" x2="1467" y2="2105" />
-  <line stroke="#000000" stroke-width="0" x1="1467" y1="2105" x2="1497" y2="2127" />
-  <line stroke="#000000" stroke-width="0" x1="1497" y1="2127" x2="1527" y2="2145" />
-  <line stroke="#000000" stroke-width="0" x1="1527" y1="2145" x2="1557" y2="2159" />
-  <line stroke="#000000" stroke-width="0" x1="1557" y1="2159" x2="1587" y2="2169" />
-  <line stroke="#000000" stroke-width="0" x1="1587" y1="2169" x2="1617" y2="2175" />
-  <line stroke="#000000" stroke-width="0" x1="1617" y1="2175" x2="1647" y2="2177" />
-  <line stroke="#000000" stroke-width="0" x1="1647" y1="2177" x2="1677" y2="2175" />
-  <line stroke="#000000" stroke-width="0" x1="1677" y1="2175" x2="1707" y2="2169" />
-  <line stroke="#000000" stroke-width="0" x1="1707" y1="2169" x2="1737" y2="2159" />
-  <line stroke="#000000" stroke-width="0" x1="1737" y1="2159" x2="1767" y2="2145" />
-  <line stroke="#000000" stroke-width="0" x1="1767" y1="2145" x2="1797" y2="2127" />
-  <line stroke="#000000" stroke-width="0" x1="1797" y1="2127" x2="1827" y2="2105" />
-  <line stroke="#000000" stroke-width="0" x1="1827" y1="2105" x2="1857" y2="2079" />
-  <line stroke="#000000" stroke-width="0" x1="1857" y1="2079" x2="1888" y2="2049" />
-  <line stroke="#000000" stroke-width="0" x1="1888" y1="2049" x2="1918" y2="2016" />
-  <line stroke="#000000" stroke-width="0" x1="1918" y1="2016" x2="1948" y2="1979" />
-  <line stroke="#000000" stroke-width="0" x1="1948" y1="1979" x2="1978" y2="1939" />
-  <line stroke="#000000" stroke-width="0" x1="1978" y1="1939" x2="2008" y2="1896" />
-  <line stroke="#000000" stroke-width="0" x1="2008" y1="1896" x2="2038" y2="1850" />
-  <line stroke="#000000" stroke-width="0" x1="2038" y1="1850" x2="2068" y2="1801" />
-  <line stroke="#000000" stroke-width="0" x1="2068" y1="1801" x2="2098" y2="1750" />
-  <line stroke="#000000" stroke-width="0" x1="2098" y1="1750" x2="2128" y2="1696" />
-  <line stroke="#000000" stroke-width="0" x1="2128" y1="1696" x2="2158" y2="1640" />
-  <line stroke="#000000" stroke-width="0" x1="2158" y1="1640" x2="2188" y2="1582" />
-  <line stroke="#000000" stroke-width="0" x1="2188" y1="1582" x2="2218" y2="1522" />
-  <line stroke="#000000" stroke-width="0" x1="2218" y1="1522" x2="2248" y2="1461" />
-  <line stroke="#000000" stroke-width="0" x1="2248" y1="1461" x2="2278" y2="1398" />
-  <line stroke="#000000" stroke-width="0" x1="2278" y1="1398" x2="2309" y2="1335" />
-  <line stroke="#000000" stroke-width="0" x1="2309" y1="1335" x2="2339" y2="1270" />
-  <line stroke="#000000" stroke-width="0" x1="2339" y1="1270" x2="2369" y2="1206" />
-  <line stroke="#000000" stroke-width="0" x1="2369" y1="1206" x2="2399" y2="1140" />
-  <line stroke="#000000" stroke-width="0" x1="2399" y1="1140" x2="2429" y2="1075" />
-  <line stroke="#000000" stroke-width="0" x1="2429" y1="1075" x2="2459" y2="1011" />
-  <line stroke="#000000" stroke-width="0" x1="2459" y1="1011" x2="2489" y2="946" />
-  <line stroke="#000000" stroke-width="0" x1="2489" y1="946" x2="2519" y2="883" />
-  <line stroke="#000000" stroke-width="0" x1="2519" y1="883" x2="2549" y2="820" />
-  <line stroke="#000000" stroke-width="0" x1="2549" y1="820" x2="2579" y2="759" />
-  <line stroke="#000000" stroke-width="0" x1="2579" y1="759" x2="2609" y2="699" />
-  <line stroke="#000000" stroke-width="0" x1="2609" y1="699" x2="2639" y2="641" />
-  <line stroke="#000000" stroke-width="0" x1="2639" y1="641" x2="2669" y2="585" />
-  <line stroke="#000000" stroke-width="0" x1="2669" y1="585" x2="2699" y2="531" />
-  <line stroke="#000000" stroke-width="0" x1="2699" y1="531" x2="2729" y2="480" />
-  <line stroke="#000000" stroke-width="0" x1="2729" y1="480" x2="2760" y2="431" />
-  <line stroke="#000000" stroke-width="0" x1="2760" y1="431" x2="2790" y2="385" />
-  <line stroke="#000000" stroke-width="0" x1="2790" y1="385" x2="2820" y2="342" />
-  <line stroke="#000000" stroke-width="0" x1="2820" y1="342" x2="2850" y2="302" />
-  <line stroke="#000000" stroke-width="0" x1="2850" y1="302" x2="2880" y2="265" />
-  <line stroke="#000000" stroke-width="0" x1="2880" y1="265" x2="2910" y2="232" />
-  <line stroke="#000000" stroke-width="0" x1="2910" y1="232" x2="2940" y2="202" />
-  <line stroke="#000000" stroke-width="0" x1="2940" y1="202" x2="2970" y2="176" />
-  <line stroke="#000000" stroke-width="0" x1="2970" y1="176" x2="3000" y2="154" />
-  <line stroke="#000000" stroke-width="0" x1="3000" y1="154" x2="3030" y2="136" />
-  <line stroke="#000000" stroke-width="0" x1="3030" y1="136" x2="3060" y2="122" />
-  <line stroke="#000000" stroke-width="0" x1="3060" y1="122" x2="3090" y2="112" />
-  <line stroke="#000000" stroke-width="0" x1="3090" y1="112" x2="3120" y2="106" />
-  <line stroke="#000000" stroke-width="0" x1="3120" y1="106" x2="3150" y2="104" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 15.265673 15.265673)">
-  <rect fill="#80FF00" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 29.667252 29.667252)">
-  <rect fill="#00FF80" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 72.295921 72.295921)">
-  <rect fill="#FF8000" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 138.255157 138.255157)">
-  <rect fill="#FF0080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 221.496277 221.496277)">
-  <rect fill="#FF8080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 313.954407 313.954407)">
-  <rect fill="#8080FF" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 406.124512 406.124512)">
-  <rect fill="#FFFF80" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 489.365631 489.365631)">
-  <rect fill="#FF80FF" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 555.324829 555.324829)">
-  <rect fill="#404040" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 597.953552 597.953552)">
-  <rect fill="#FF4040" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 612.355103 612.355103)">
-  <rect fill="#40FF40" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 597.953552 597.953552)">
-  <rect fill="#4040FF" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 555.324829 555.324829)">
-  <rect fill="#202020" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 489.365631 489.365631)">
-  <rect fill="#202020" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 406.124512 406.124512)">
-  <rect fill="#800000" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 313.666382 313.666382)">
-  <rect fill="#008000" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 221.496277 221.496277)">
-  <rect fill="#808000" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 138.255157 138.255157)">
-  <rect fill="#000080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 72.295921 72.295921)">
-  <rect fill="#800080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 29.667252 29.667252)">
-  <rect fill="#008080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 15.265673 15.265673)">
-  <rect fill="#008080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <text x="1410" y="0" font-family="HGPひげ文字" font-size="12" fill="#800080" text-anchor="start" dominant-baseline="alphabetic">
-    sin
-  </text>
-  <text x="1100" y="0" font-family="HGPひげ文字" font-size="12" fill="#800080" text-anchor="start" dominant-baseline="alphabetic">
-    cos
-  </text>
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 123.565544 123.565544)">
-  <line stroke="#C0DCC0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#C0DCC0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#C0DCC0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#C0DCC0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 212.567291 212.567291)">
-  <line stroke="#A6CAF0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#A6CAF0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#A6CAF0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#A6CAF0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 226.392807 226.392807)">
-  <line stroke="#FFFBF0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FFFBF0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FFFBF0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FFFBF0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 282.558960 282.558960)">
-  <line stroke="#A0A0A4" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#A0A0A4" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#A0A0A4" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#A0A0A4" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 355.718994 355.718994)">
-  <line stroke="#FF0000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF0000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF0000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF0000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 421.678223 421.678223)">
-  <line stroke="#00FF00" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#00FF00" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#00FF00" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#00FF00" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 505.783417 505.783417)">
-  <line stroke="#FFFF00" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FFFF00" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FFFF00" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FFFF00" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 502.903107 502.903107)">
-  <line stroke="#0000FF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#0000FF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#0000FF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#0000FF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 392.587036 392.587036)">
-  <line stroke="#FF00FF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF00FF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF00FF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF00FF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 278.526520 278.526520)">
-  <line stroke="#00FFFF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#00FFFF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#00FFFF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#00FFFF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 182.612015 182.612015)">
-  <line stroke="#FFFFFF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FFFFFF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FFFFFF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FFFFFF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 93.322227 93.322227)">
-  <line stroke="#808000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#808000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#808000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#808000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 38.308197 38.308197)">
-  <line stroke="#800080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#800080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#800080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#800080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 33.411663 33.411663)">
-  <line stroke="#0080FF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#0080FF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#0080FF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#0080FF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 37.444103 37.444103)">
-  <line stroke="#80FF00" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#80FF00" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#80FF00" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#80FF00" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 33.411663 33.411663)">
-  <line stroke="#00FF80" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#00FF80" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#00FF80" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#00FF80" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 64.519073 64.519073)">
-  <line stroke="#FF8000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF8000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF8000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF8000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 140.559402 140.559402)">
-  <line stroke="#FF0080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF0080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF0080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF0080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 189.524765 189.524765)">
-  <line stroke="#FF8080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF8080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF8080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF8080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 271.613770 271.613770)">
-  <line stroke="#8080FF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#8080FF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#8080FF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#8080FF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 417.645782 417.645782)">
-  <line stroke="#FFFF80" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FFFF80" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FFFF80" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FFFF80" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 510.679962 510.679962)">
-  <line stroke="#FF80FF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF80FF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF80FF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF80FF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 523.929443 523.929443)">
-  <line stroke="#404040" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#404040" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#404040" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#404040" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 390.570801 390.570801)">
-  <line stroke="#FF4040" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FF4040" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FF4040" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FF4040" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 220.632172 220.632172)">
-  <line stroke="#40FF40" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#40FF40" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#40FF40" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#40FF40" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 235.609818 235.609818)">
-  <line stroke="#4040FF" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#4040FF" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#4040FF" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#4040FF" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 239.642258 239.642258)">
-  <line stroke="#202020" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#202020" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#202020" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#202020" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 423.694427 423.694427)">
-  <line stroke="#000000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#000000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#000000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#000000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 468.627350 468.627350)">
-  <line stroke="#800000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#800000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#800000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#800000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 532.858398 532.858398)">
-  <line stroke="#008000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#008000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#008000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#008000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 370.696625 370.696625)">
-  <line stroke="#808000" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#808000" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#808000" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#808000" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 188.372650 188.372650)">
-  <line stroke="#000080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#000080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#000080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#000080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 87.273567 87.273567)">
-  <line stroke="#800080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#800080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#800080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#800080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 118.380974 118.380974)">
-  <line stroke="#008080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#008080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#008080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#008080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 219.480057 219.480057)">
-  <line stroke="#C0C0C0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#C0C0C0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#C0C0C0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#C0C0C0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 367.528290 367.528290)">
-  <line stroke="#808080" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#808080" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#808080" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#808080" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 475.828156 475.828156)">
-  <line stroke="#C0DCC0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#C0DCC0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#C0DCC0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#C0DCC0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 533.722473 533.722473)">
-  <line stroke="#A6CAF0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#A6CAF0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#A6CAF0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#A6CAF0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 449.617279 449.617279)">
-  <line stroke="#FFFBF0" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#FFFBF0" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#FFFBF0" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#FFFBF0" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
-  <g transform="matrix(0.285850 0.000000 0.000000 0.285282 299.552826 299.552826)">
-  <line stroke="#A0A0A4" stroke-width="0" x1="51" y1="0" x2="51" y2="102" />
-  <line stroke="#A0A0A4" stroke-width="0" x1="0" y1="51" x2="102" y2="51" />
-  <line stroke="#A0A0A4" stroke-width="0" x1="0" y1="0" x2="102" y2="102" />
-  <line stroke="#A0A0A4" stroke-width="0" x1="102" y1="0" x2="0" y2="102" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="144" y1="1141" x2="174" y2="1075" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="174" y1="1075" x2="204" y2="1011" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="204" y1="1011" x2="234" y2="946" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="234" y1="946" x2="264" y2="883" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="264" y1="883" x2="294" y2="820" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="294" y1="820" x2="324" y2="759" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="324" y1="759" x2="354" y2="699" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="354" y1="699" x2="384" y2="641" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="384" y1="641" x2="414" y2="585" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="414" y1="585" x2="444" y2="531" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="444" y1="531" x2="474" y2="480" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="474" y1="480" x2="504" y2="431" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="504" y1="431" x2="534" y2="385" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="534" y1="385" x2="565" y2="342" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="565" y1="342" x2="595" y2="302" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="595" y1="302" x2="625" y2="265" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="625" y1="265" x2="655" y2="232" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="655" y1="232" x2="685" y2="202" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="685" y1="202" x2="715" y2="176" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="715" y1="176" x2="745" y2="154" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="745" y1="154" x2="775" y2="136" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="775" y1="136" x2="805" y2="122" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="805" y1="122" x2="835" y2="112" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="835" y1="112" x2="865" y2="106" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="865" y1="106" x2="895" y2="104" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="895" y1="104" x2="925" y2="106" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="925" y1="106" x2="955" y2="112" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="955" y1="112" x2="985" y2="122" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="985" y1="122" x2="1016" y2="136" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1016" y1="136" x2="1046" y2="154" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1046" y1="154" x2="1076" y2="176" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1076" y1="176" x2="1106" y2="202" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1106" y1="202" x2="1136" y2="232" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1136" y1="232" x2="1166" y2="265" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1166" y1="265" x2="1196" y2="302" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1196" y1="302" x2="1226" y2="342" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1226" y1="342" x2="1256" y2="385" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1256" y1="385" x2="1286" y2="431" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1286" y1="431" x2="1316" y2="480" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1316" y1="480" x2="1346" y2="531" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1346" y1="531" x2="1376" y2="585" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1376" y1="585" x2="1406" y2="641" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1406" y1="641" x2="1437" y2="699" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1437" y1="699" x2="1467" y2="759" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1467" y1="759" x2="1497" y2="820" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1497" y1="820" x2="1527" y2="883" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1527" y1="883" x2="1557" y2="946" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1557" y1="946" x2="1587" y2="1011" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1587" y1="1011" x2="1617" y2="1075" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1617" y1="1075" x2="1647" y2="1141" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1647" y1="1141" x2="1677" y2="1206" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1677" y1="1206" x2="1707" y2="1270" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1707" y1="1270" x2="1737" y2="1335" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1737" y1="1335" x2="1767" y2="1398" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1767" y1="1398" x2="1797" y2="1461" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1797" y1="1461" x2="1827" y2="1522" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1827" y1="1522" x2="1857" y2="1582" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1857" y1="1582" x2="1888" y2="1640" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1888" y1="1640" x2="1918" y2="1696" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1918" y1="1696" x2="1948" y2="1750" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1948" y1="1750" x2="1978" y2="1801" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1978" y1="1801" x2="2008" y2="1850" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2008" y1="1850" x2="2038" y2="1896" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2038" y1="1896" x2="2068" y2="1939" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2068" y1="1939" x2="2098" y2="1979" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2098" y1="1979" x2="2128" y2="2016" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2128" y1="2016" x2="2158" y2="2049" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2158" y1="2049" x2="2188" y2="2079" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2188" y1="2079" x2="2218" y2="2105" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2218" y1="2105" x2="2248" y2="2127" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2248" y1="2127" x2="2278" y2="2145" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2278" y1="2145" x2="2309" y2="2159" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2309" y1="2159" x2="2339" y2="2169" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2339" y1="2169" x2="2369" y2="2175" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2369" y1="2175" x2="2399" y2="2177" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2399" y1="2177" x2="2429" y2="2175" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2429" y1="2175" x2="2459" y2="2169" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2459" y1="2169" x2="2489" y2="2159" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2489" y1="2159" x2="2519" y2="2145" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2519" y1="2145" x2="2549" y2="2127" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2549" y1="2127" x2="2579" y2="2105" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2579" y1="2105" x2="2609" y2="2079" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2609" y1="2079" x2="2639" y2="2049" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2639" y1="2049" x2="2669" y2="2016" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2669" y1="2016" x2="2699" y2="1979" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2699" y1="1979" x2="2729" y2="1939" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2729" y1="1939" x2="2760" y2="1896" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2760" y1="1896" x2="2790" y2="1850" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2790" y1="1850" x2="2820" y2="1801" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2820" y1="1801" x2="2850" y2="1750" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2850" y1="1750" x2="2880" y2="1696" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2880" y1="1696" x2="2910" y2="1640" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2910" y1="1640" x2="2940" y2="1582" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2940" y1="1582" x2="2970" y2="1522" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2970" y1="1522" x2="3000" y2="1461" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3000" y1="1461" x2="3030" y2="1398" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3030" y1="1398" x2="3060" y2="1335" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3060" y1="1335" x2="3090" y2="1270" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3090" y1="1270" x2="3120" y2="1206" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3120" y1="1206" x2="3150" y2="1140" />
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 20.7488 313.9544)">
+  <ellipse fill="#008000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
   </g>
-  </g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 63.9755 221.4963)">
+  <ellipse fill="#808000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 107.2023 138.2552)">
+  <ellipse fill="#000080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 150.7171 72.2959)">
+  <ellipse fill="#800080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 193.9439 29.6673)">
+  <ellipse fill="#008080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 237.1706 15.2657)">
+  <ellipse fill="#008080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 280.6855 29.6673)">
+  <ellipse fill="#008080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 323.9122 72.2959)">
+  <ellipse fill="#C0DCC0" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 367.1389 138.2552)">
+  <ellipse fill="#A6CAF0" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 410.6538 221.4963)">
+  <ellipse fill="#FFFBF0" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 453.8805 313.9544)">
+  <ellipse fill="#A0A0A4" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 497.1072 406.1245)">
+  <ellipse fill="#FF0000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 540.6221 489.3656)">
+  <ellipse fill="#00FF00" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 583.8489 555.3248)">
+  <ellipse fill="#FFFF00" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 627.0756 597.9536)">
+  <ellipse fill="#0000FF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 670.5905 612.3551)">
+  <ellipse fill="#FF00FF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 713.8172 597.9536)">
+  <ellipse fill="#00FFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 757.0439 555.3248)">
+  <ellipse fill="#00FFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 800.5588 489.3656)">
+  <ellipse fill="#808000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 843.7855 406.1245)">
+  <ellipse fill="#800080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 887.0122 313.6664)">
+  <ellipse fill="#0080FF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" cx="50.5" cy="51.0" rx="50.5" ry="51.0" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="144" y1="104" x2="174" y2="106" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="174" y1="106" x2="204" y2="112" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="204" y1="112" x2="234" y2="122" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="234" y1="122" x2="264" y2="136" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="264" y1="136" x2="294" y2="154" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="294" y1="154" x2="324" y2="176" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="324" y1="176" x2="354" y2="202" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="354" y1="202" x2="384" y2="232" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="384" y1="232" x2="414" y2="265" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="414" y1="265" x2="444" y2="302" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="444" y1="302" x2="474" y2="342" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="474" y1="342" x2="504" y2="385" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="504" y1="385" x2="534" y2="431" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="534" y1="431" x2="565" y2="480" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="565" y1="480" x2="595" y2="531" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="595" y1="531" x2="625" y2="585" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="625" y1="585" x2="655" y2="641" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="655" y1="641" x2="685" y2="699" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="685" y1="699" x2="715" y2="759" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="715" y1="759" x2="745" y2="820" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="745" y1="820" x2="775" y2="883" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="775" y1="883" x2="805" y2="946" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="805" y1="946" x2="835" y2="1011" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="835" y1="1011" x2="865" y2="1075" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="865" y1="1075" x2="895" y2="1141" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="895" y1="1141" x2="925" y2="1206" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="925" y1="1206" x2="955" y2="1270" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="955" y1="1270" x2="985" y2="1335" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="985" y1="1335" x2="1016" y2="1398" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1016" y1="1398" x2="1046" y2="1461" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1046" y1="1461" x2="1076" y2="1522" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1076" y1="1522" x2="1106" y2="1582" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1106" y1="1582" x2="1136" y2="1640" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1136" y1="1640" x2="1166" y2="1696" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1166" y1="1696" x2="1196" y2="1750" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1196" y1="1750" x2="1226" y2="1801" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1226" y1="1801" x2="1256" y2="1850" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1256" y1="1850" x2="1286" y2="1896" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1286" y1="1896" x2="1316" y2="1939" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1316" y1="1939" x2="1346" y2="1979" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1346" y1="1979" x2="1376" y2="2016" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1376" y1="2016" x2="1406" y2="2049" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1406" y1="2049" x2="1437" y2="2079" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1437" y1="2079" x2="1467" y2="2105" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1467" y1="2105" x2="1497" y2="2127" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1497" y1="2127" x2="1527" y2="2145" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1527" y1="2145" x2="1557" y2="2159" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1557" y1="2159" x2="1587" y2="2169" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1587" y1="2169" x2="1617" y2="2175" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1617" y1="2175" x2="1647" y2="2177" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1647" y1="2177" x2="1677" y2="2175" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1677" y1="2175" x2="1707" y2="2169" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1707" y1="2169" x2="1737" y2="2159" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1737" y1="2159" x2="1767" y2="2145" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1767" y1="2145" x2="1797" y2="2127" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1797" y1="2127" x2="1827" y2="2105" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1827" y1="2105" x2="1857" y2="2079" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1857" y1="2079" x2="1888" y2="2049" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1888" y1="2049" x2="1918" y2="2016" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1918" y1="2016" x2="1948" y2="1979" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1948" y1="1979" x2="1978" y2="1939" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1978" y1="1939" x2="2008" y2="1896" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2008" y1="1896" x2="2038" y2="1850" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2038" y1="1850" x2="2068" y2="1801" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2068" y1="1801" x2="2098" y2="1750" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2098" y1="1750" x2="2128" y2="1696" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2128" y1="1696" x2="2158" y2="1640" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2158" y1="1640" x2="2188" y2="1582" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2188" y1="1582" x2="2218" y2="1522" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2218" y1="1522" x2="2248" y2="1461" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2248" y1="1461" x2="2278" y2="1398" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2278" y1="1398" x2="2309" y2="1335" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2309" y1="1335" x2="2339" y2="1270" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2339" y1="1270" x2="2369" y2="1206" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2369" y1="1206" x2="2399" y2="1140" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2399" y1="1140" x2="2429" y2="1075" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2429" y1="1075" x2="2459" y2="1011" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2459" y1="1011" x2="2489" y2="946" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2489" y1="946" x2="2519" y2="883" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2519" y1="883" x2="2549" y2="820" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2549" y1="820" x2="2579" y2="759" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2579" y1="759" x2="2609" y2="699" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2609" y1="699" x2="2639" y2="641" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2639" y1="641" x2="2669" y2="585" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2669" y1="585" x2="2699" y2="531" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2699" y1="531" x2="2729" y2="480" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2729" y1="480" x2="2760" y2="431" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2760" y1="431" x2="2790" y2="385" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2790" y1="385" x2="2820" y2="342" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2820" y1="342" x2="2850" y2="302" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2850" y1="302" x2="2880" y2="265" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2880" y1="265" x2="2910" y2="232" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2910" y1="232" x2="2940" y2="202" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2940" y1="202" x2="2970" y2="176" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="2970" y1="176" x2="3000" y2="154" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3000" y1="154" x2="3030" y2="136" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3030" y1="136" x2="3060" y2="122" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3060" y1="122" x2="3090" y2="112" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3090" y1="112" x2="3120" y2="106" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="3120" y1="106" x2="3150" y2="104" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 20.7488 15.2657)">
+  <rect fill="#80FF00" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 63.9755 29.6673)">
+  <rect fill="#00FF80" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 107.2023 72.2959)">
+  <rect fill="#FF8000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 150.7171 138.2552)">
+  <rect fill="#FF0080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 193.9439 221.4963)">
+  <rect fill="#FF8080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 237.1706 313.9544)">
+  <rect fill="#8080FF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 280.6855 406.1245)">
+  <rect fill="#FFFF80" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 323.9122 489.3656)">
+  <rect fill="#FF80FF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 367.1389 555.3248)">
+  <rect fill="#404040" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 410.6538 597.9536)">
+  <rect fill="#FF4040" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 453.8805 612.3551)">
+  <rect fill="#40FF40" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 497.1072 597.9536)">
+  <rect fill="#4040FF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 540.6221 555.3248)">
+  <rect fill="#202020" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 583.8489 489.3656)">
+  <rect fill="#202020" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 627.0756 406.1245)">
+  <rect fill="#800000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 670.5905 313.6664)">
+  <rect fill="#008000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 713.8172 221.4963)">
+  <rect fill="#808000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 757.0439 138.2552)">
+  <rect fill="#000080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 800.5588 72.2959)">
+  <rect fill="#800080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 843.7855 29.6673)">
+  <rect fill="#008080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 887.0122 15.2657)">
+  <rect fill="#008080" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="101" height="102" />
+  <text font-family="HGPひげ文字" fill="#800080" text-anchor="start" style="white-space:pre;" x="1410" y="447" font-size="12" font-weight="400">
+    <![CDATA[sin]]>
+  </text>
+  <text font-family="HGPひげ文字" fill="#800080" text-anchor="start" style="white-space:pre;" x="1100" y="1382" font-size="12" font-weight="400">
+    <![CDATA[cos]]>
+  </text>
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 552.1493 123.5655)">
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 542.0630 212.5673)">
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 481.8338 226.3928)">
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 389.9050 282.5590)">
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 389.9050 355.7190)">
+  <line stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF0000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 377.8015 421.6782)">
+  <line stroke="#00FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#00FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#00FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#00FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 233.7124 505.7834)">
+  <line stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FFFF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 154.4635 502.9031)">
+  <line stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#0000FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 144.3772 392.5870)">
+  <line stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF00FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 136.5964 278.5265)">
+  <line stroke="#00FFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#00FFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#00FFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#00FFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 64.2637 182.6120)">
+  <line stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 63.3992 93.3222)">
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 139.4782 38.3082)">
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 319.5895 33.4117)">
+  <line stroke="#0080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#0080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#0080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#0080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 510.0753 37.4441)">
+  <line stroke="#80FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#80FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#80FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#80FF00" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 676.0659 33.4117)">
+  <line stroke="#00FF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#00FF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#00FF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#00FF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 684.1348 64.5191)">
+  <line stroke="#FF8000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF8000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF8000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF8000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 746.3813 140.5594)">
+  <line stroke="#FF0080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF0080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF0080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF0080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 829.3766 189.5248)">
+  <line stroke="#FF8080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF8080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF8080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF8080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 755.3148 271.6138)">
+  <line stroke="#8080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#8080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#8080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#8080FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 781.2509 417.6458)">
+  <line stroke="#FFFF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FFFF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FFFF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FFFF80" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 848.3964 510.6800)">
+  <line stroke="#FF80FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF80FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF80FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF80FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 735.1423 523.9294)">
+  <line stroke="#404040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#404040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#404040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#404040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 631.1100 390.5708)">
+  <line stroke="#FF4040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FF4040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FF4040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FF4040" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 548.9793 220.6322)">
+  <line stroke="#40FF40" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#40FF40" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#40FF40" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#40FF40" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 379.8188 235.6098)">
+  <line stroke="#4040FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#4040FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#4040FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#4040FF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 224.4908 239.6423)">
+  <line stroke="#202020" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#202020" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#202020" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#202020" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 140.3427 423.6944)">
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 71.4682 468.6273)">
+  <line stroke="#800000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#800000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#800000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#800000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 175.5005 532.8584)">
+  <line stroke="#008000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#008000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#008000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#008000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 267.7175 370.6966)">
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#808000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 274.6337 188.3727)">
+  <line stroke="#000080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#000080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#000080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#000080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 417.8583 87.2736)">
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#800080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 565.1172 118.3810)">
+  <line stroke="#008080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#008080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#008080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#008080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 475.7821 219.4801)">
+  <line stroke="#C0C0C0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#C0C0C0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#C0C0C0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#C0C0C0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 544.9448 367.5283)">
+  <line stroke="#808080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#808080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#808080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#808080" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 450.9987 475.8282)">
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#C0DCC0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 525.9250 533.7225)">
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#A6CAF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 645.2308 449.6173)">
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#FFFBF0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  <g transform="matrix(0.2858 0.0000 0.0000 0.2853 630.2455 299.5528)">
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="51" y1="0" x2="51" y2="102" />
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="51" x2="102" y2="51" />
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="0" y1="0" x2="102" y2="102" />
+  <line stroke="#A0A0A4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="102" y1="0" x2="0" y2="102" />
+  </g>
+  </g>
 </svg>

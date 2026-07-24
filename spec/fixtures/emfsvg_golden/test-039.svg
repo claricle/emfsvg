@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14030" height="9920" viewBox="0 0 14030 9920" version="1.1">
-  <g transform="matrix(0.550498 -0.317830 0.317830 0.550498 4459.500000 4459.500000)">
-  <rect fill="#FFFFAD" stroke="#000000" stroke-width="1" x="0" y="0" width="14031" height="9921" />
-  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    libUEMF v0.1.17
+  <g transform="matrix(0.5505 -0.3178 0.3178 0.5505 0.0000 4459.5000)">
+  <rect fill="#FFFFAD" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="14031" height="9921" />
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="9700" y="210.8" font-size="12" font-weight="400">
+    <![CDATA[libUEMF v0.1.17]]>
   </text>
-  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    July 25, 2014
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="9700" y="510.8" font-size="12" font-weight="400">
+    <![CDATA[July 25, 2014]]>
   </text>
-  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    EMF test: 04
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="9700" y="810.8" font-size="12" font-weight="400">
+    <![CDATA[EMF test: 04]]>
   </text>
-  <ellipse fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" cx="250.0" cy="1450.0" rx="150.0" ry="150.0" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="500" y="1300" width="300" height="300" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="900" y1="1300" x2="1200" y2="1500" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="1200" y1="1500" x2="1200" y2="1700" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="1200" y1="1700" x2="900" y2="1500" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 1343.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1450.000000 1600.000000" />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 1643.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1750.000000 1600.000000" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="1800" y1="1300" x2="1750" y2="1450" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 1943.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 2050.000000 1600.000000 Z" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 2243.9339828220177 1343.933982822018 A 150.000000 150.000000 0 0 0 2350.000000 1600.000000 L 2350.000000 1450.000000 Z" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="2600" y="1300" width="300" height="300" rx="50.0" ry="12.5" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 3100 1300 L 3200 1600 L 3000 1400 L 3200 1400 L 3000 1600 Z " fill-rule="nonzero" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 3400 1300 L 3500 1600 L 3300 1400 L 3500 1400 L 3300 1600 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 200 1800 C 300 1900 300 2000 200 2100 C 100 2000 100 1900 200 1800 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 700 1800 L 800 1900 L 800 2000 L 700 2100 L 600 2000 L 600 1900 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 1200 1800 L 1300 1900 L 1300 2000 L 1200 2100 L 1100 2000 L 1100 1900 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 1700 1800 C 1800 1900 1800 2000 1700 2100 " />
-  <path stroke="#000000" stroke-width="1" d="M 2200 1800 L 2300 1900 L 2300 2000 L 2200 2100 L 2100 2000 L 2100 1900 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 3200 1800 C 3300 1900 3300 2000 3200 2100 C 3100 2000 3100 1900 3200 1800 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3700 1800 L 3800 1900 L 3800 2000 L 3700 2100 L 3600 2000 L 3600 1900 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 4200 1800 L 4300 1900 L 4300 2000 L 4200 2100 L 4100 2000 L 4100 1900 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 4700 1800 C 4800 1900 4800 2000 4700 2100 " />
-  <path stroke="#000000" stroke-width="1" d="M 5200 1800 L 5300 1900 L 5300 2000 L 5200 2100 L 5100 2000 L 5100 1900 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 6200 1800 C 6300 1900 6300 2000 6200 2100 C 6100 2000 6100 1900 6200 1800 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 6700 1800 L 6800 1900 L 6800 2000 L 6700 2100 L 6600 2000 L 6600 1900 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 7200 1800 L 7300 1900 L 7300 2000 L 7200 2100 L 7100 2000 L 7100 1900 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 7700 1800 C 7800 1900 7800 2000 7700 2100 " />
-  <path stroke="#000000" stroke-width="1" d="M 8200 1800 L 8300 1900 L 8300 2000 L 8200 2100 L 8100 2000 L 8100 1900 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 200 2300 C 300 2400 300 2500 200 2600 C 100 2500 100 2400 200 2300 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 700 2300 L 800 2400 L 800 2500 L 700 2600 L 600 2500 L 600 2400 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 1200 2300 L 1300 2400 L 1300 2500 L 1200 2600 L 1100 2500 L 1100 2400 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 1700 2300 C 1800 2400 1800 2500 1700 2600 " />
-  <path stroke="#000000" stroke-width="1" d="M 2200 2300 L 2300 2400 L 2300 2500 L 2200 2600 L 2100 2500 L 2100 2400 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 3200 2300 C 3300 2400 3300 2500 3200 2600 C 3100 2500 3100 2400 3200 2300 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3700 2300 L 3800 2400 L 3800 2500 L 3700 2600 L 3600 2500 L 3600 2400 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 4200 2300 L 4300 2400 L 4300 2500 L 4200 2600 L 4100 2500 L 4100 2400 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 4700 2300 C 4800 2400 4800 2500 4700 2600 " />
-  <path stroke="#000000" stroke-width="1" d="M 5200 2300 L 5300 2400 L 5300 2500 L 5200 2600 L 5100 2500 L 5100 2400 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 6200 2300 C 6300 2400 6300 2500 6200 2600 C 6100 2500 6100 2400 6200 2300 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 6700 2300 L 6800 2400 L 6800 2500 L 6700 2600 L 6600 2500 L 6600 2400 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 7200 2300 L 7300 2400 L 7300 2500 L 7200 2600 L 7100 2500 L 7100 2400 " />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 7700 2300 C 7800 2400 7800 2500 7700 2600 " />
-  <path stroke="#000000" stroke-width="1" d="M 8200 2300 L 8300 2400 L 8300 2500 L 8200 2600 L 8100 2500 L 8100 2400 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 350 2800 L 287 2750 L 250 2713 L 200 2700 L 150 2713 L 113 2750 L 100 2800 L 113 2850 L 150 2887 L 200 2900 L 250 2887 L 287 2850 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 660 2794 L 595 2745 L 557 2709 L 504 2698 L 450 2714 L 409 2753 L 393 2804 L 405 2855 L 443 2891 L 496 2902 L 550 2886 L 591 2847 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 953 2786 L 893 2736 L 859 2697 L 809 2687 L 757 2707 L 716 2752 L 698 2809 L 707 2864 L 741 2903 L 791 2913 L 843 2893 L 884 2848 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1239 2800 L 1181 2736 L 1146 2689 L 1100 2673 L 1054 2689 L 1019 2736 L 1007 2800 L 1019 2864 L 1054 2911 L 1100 2927 L 1146 2911 L 1181 2864 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1549 2832 L 1476 2757 L 1431 2703 L 1379 2676 L 1332 2681 L 1303 2719 L 1301 2779 L 1324 2843 L 1369 2897 L 1421 2924 L 1468 2919 L 1497 2881 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1893 2843 L 1798 2777 L 1740 2731 L 1671 2704 L 1611 2702 L 1574 2727 L 1571 2771 L 1602 2823 L 1660 2869 L 1729 2896 L 1789 2898 L 1826 2873 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2232 2800 L 2134 2765 L 2077 2739 L 2000 2730 L 1923 2739 L 1866 2765 L 1845 2800 L 1866 2835 L 1923 2861 L 2000 2870 L 2077 2861 L 2134 2835 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2506 2732 L 2442 2718 L 2408 2703 L 2345 2714 L 2270 2748 L 2203 2796 L 2162 2845 L 2158 2882 L 2192 2897 L 2255 2886 L 2330 2852 L 2397 2804 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2718 2718 L 2696 2682 L 2687 2650 L 2654 2659 L 2608 2704 L 2559 2777 L 2521 2854 L 2504 2918 L 2513 2950 L 2546 2941 L 2592 2896 L 2641 2823 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2950 2800 L 2929 2709 L 2917 2642 L 2900 2618 L 2883 2642 L 2871 2709 L 2867 2800 L 2871 2891 L 2883 2958 L 2900 2982 L 2917 2958 L 2929 2891 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3291 2913 L 3215 2792 L 3165 2709 L 3125 2652 L 3104 2634 L 3110 2661 L 3139 2725 L 3185 2808 L 3235 2891 L 3275 2948 L 3296 2966 L 3290 2939 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3725 2930 L 3587 2850 L 3500 2800 L 3413 2750 L 3350 2713 L 3326 2700 L 3350 2713 L 3413 2750 L 3500 2800 L 3587 2850 L 3650 2887 L 3674 2900 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 200 3150 L 150 3213 L 113 3250 L 100 3300 L 113 3350 L 150 3387 L 200 3400 L 250 3387 L 287 3350 L 300 3300 L 287 3250 L 250 3213 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 494 3140 L 445 3205 L 409 3243 L 398 3296 L 414 3350 L 453 3391 L 504 3407 L 555 3395 L 591 3357 L 602 3304 L 586 3250 L 547 3209 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 786 3147 L 736 3207 L 697 3241 L 687 3291 L 707 3343 L 752 3384 L 809 3402 L 864 3393 L 903 3359 L 913 3309 L 893 3257 L 848 3216 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1100 3161 L 1036 3219 L 989 3254 L 973 3300 L 989 3346 L 1036 3381 L 1100 3393 L 1164 3381 L 1211 3346 L 1227 3300 L 1211 3254 L 1164 3219 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1432 3151 L 1357 3224 L 1303 3269 L 1276 3321 L 1281 3368 L 1319 3397 L 1379 3399 L 1443 3376 L 1497 3331 L 1524 3279 L 1519 3232 L 1481 3203 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1743 3107 L 1677 3202 L 1631 3260 L 1604 3329 L 1602 3389 L 1627 3426 L 1671 3429 L 1723 3398 L 1769 3340 L 1796 3271 L 1798 3211 L 1773 3174 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2000 3068 L 1965 3166 L 1939 3223 L 1930 3300 L 1939 3377 L 1965 3434 L 2000 3455 L 2035 3434 L 2061 3377 L 2070 3300 L 2061 3223 L 2035 3166 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2232 3094 L 2218 3158 L 2203 3192 L 2214 3255 L 2248 3330 L 2296 3397 L 2345 3438 L 2382 3442 L 2397 3408 L 2386 3345 L 2352 3270 L 2304 3203 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2518 3182 L 2482 3204 L 2450 3213 L 2459 3246 L 2504 3292 L 2577 3341 L 2654 3379 L 2718 3396 L 2750 3387 L 2741 3354 L 2696 3308 L 2623 3259 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2900 3250 L 2809 3271 L 2742 3283 L 2718 3300 L 2742 3317 L 2809 3329 L 2900 3333 L 2991 3329 L 3058 3317 L 3082 3300 L 3058 3283 L 2991 3271 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3313 3209 L 3192 3285 L 3109 3335 L 3052 3375 L 3034 3396 L 3061 3390 L 3125 3361 L 3208 3315 L 3291 3265 L 3348 3225 L 3366 3204 L 3339 3210 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3630 3075 L 3550 3213 L 3500 3300 L 3450 3387 L 3413 3450 L 3400 3474 L 3413 3450 L 3450 3387 L 3500 3300 L 3550 3213 L 3587 3150 L 3600 3126 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 4150 3300 L 4087 3250 L 4050 3213 " />
-  <path stroke="#000000" stroke-width="1" d="M 4000 3200 L 3950 3213 L 3913 3250 L 3900 3300 " />
-  <path stroke="#000000" stroke-width="1" d="M 3913 3350 L 3950 3387 L 4000 3400 L 4050 3387 L 4087 3350 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4450 3300 L 4387 3250 L 4350 3213 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4300 3200 L 4250 3213 L 4213 3250 L 4200 3300 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4213 3350 L 4250 3387 L 4300 3400 L 4350 3387 L 4387 3350 Z " fill-rule="evenodd" />
-  <path stroke="#000000" stroke-width="1" d="M 4750 3300 L 4687 3250 L 4650 3213 " />
-  <path stroke="#000000" stroke-width="1" d="M 4600 3200 L 4550 3213 L 4513 3250 " />
-  <path stroke="#000000" stroke-width="1" d="M 4500 3300 L 4513 3350 L 4550 3387 " />
-  <path stroke="#000000" stroke-width="1" d="M 4600 3400 L 4650 3387 L 4687 3350 " />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 5050 3300 L 4987 3250 L 4950 3213 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4900 3200 L 4850 3213 L 4813 3250 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4800 3300 L 4813 3350 L 4850 3387 Z " fill-rule="evenodd" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 4900 3400 L 4950 3387 L 4987 3350 Z " fill-rule="evenodd" />
+  <ellipse fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" cx="250.0" cy="1450.0" rx="150.0" ry="150.0" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="500" y="1300" width="300" height="300" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x1="900" y1="1300" x2="1200" y2="1500" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x1="1200" y1="1500" x2="1200" y2="1700" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x1="1200" y1="1700" x2="900" y2="1500" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1343.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1450.000000 1600.000000" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1643.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1750.000000 1600.000000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x1="1800" y1="1300" x2="1750" y2="1450" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1943.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 2050.000000 1600.000000 Z" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 2243.9339828220177 1343.933982822018 A 150.000000 150.000000 0 0 0 2350.000000 1600.000000 L 2350.000000 1450.000000 Z" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="2600" y="1300" width="300" height="300" rx="50.0" ry="12.5" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 3100 1300 L 3200 1600 L 3000 1400 L 3200 1400 L 3000 1600 Z " fill-rule="nonzero" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 3400 1300 L 3500 1600 L 3300 1400 L 3500 1400 L 3300 1600 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 200 1800 C 300 1900 300 2000 200 2100 C 100 2000 100 1900 200 1800 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 700 1800 L 800 1900 L 800 2000 L 700 2100 L 600 2000 L 600 1900 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1200 1800 L 1300 1900 L 1300 2000 L 1200 2100 L 1100 2000 L 1100 1900 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 1700 1800 C 1800 1900 1800 2000 1700 2100 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2200 1800 L 2300 1900 L 2300 2000 L 2200 2100 L 2100 2000 L 2100 1900 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 3200 1800 C 3300 1900 3300 2000 3200 2100 C 3100 2000 3100 1900 3200 1800 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3700 1800 L 3800 1900 L 3800 2000 L 3700 2100 L 3600 2000 L 3600 1900 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4200 1800 L 4300 1900 L 4300 2000 L 4200 2100 L 4100 2000 L 4100 1900 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 4700 1800 C 4800 1900 4800 2000 4700 2100 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5200 1800 L 5300 1900 L 5300 2000 L 5200 2100 L 5100 2000 L 5100 1900 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 6200 1800 C 6300 1900 6300 2000 6200 2100 C 6100 2000 6100 1900 6200 1800 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6700 1800 L 6800 1900 L 6800 2000 L 6700 2100 L 6600 2000 L 6600 1900 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7200 1800 L 7300 1900 L 7300 2000 L 7200 2100 L 7100 2000 L 7100 1900 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 7700 1800 C 7800 1900 7800 2000 7700 2100 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 8200 1800 L 8300 1900 L 8300 2000 L 8200 2100 L 8100 2000 L 8100 1900 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 200 2300 C 300 2400 300 2500 200 2600 C 100 2500 100 2400 200 2300 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 700 2300 L 800 2400 L 800 2500 L 700 2600 L 600 2500 L 600 2400 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1200 2300 L 1300 2400 L 1300 2500 L 1200 2600 L 1100 2500 L 1100 2400 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 1700 2300 C 1800 2400 1800 2500 1700 2600 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2200 2300 L 2300 2400 L 2300 2500 L 2200 2600 L 2100 2500 L 2100 2400 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 3200 2300 C 3300 2400 3300 2500 3200 2600 C 3100 2500 3100 2400 3200 2300 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3700 2300 L 3800 2400 L 3800 2500 L 3700 2600 L 3600 2500 L 3600 2400 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4200 2300 L 4300 2400 L 4300 2500 L 4200 2600 L 4100 2500 L 4100 2400 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 4700 2300 C 4800 2400 4800 2500 4700 2600 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5200 2300 L 5300 2400 L 5300 2500 L 5200 2600 L 5100 2500 L 5100 2400 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 6200 2300 C 6300 2400 6300 2500 6200 2600 C 6100 2500 6100 2400 6200 2300 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 6700 2300 L 6800 2400 L 6800 2500 L 6700 2600 L 6600 2500 L 6600 2400 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 7200 2300 L 7300 2400 L 7300 2500 L 7200 2600 L 7100 2500 L 7100 2400 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M 7700 2300 C 7800 2400 7800 2500 7700 2600 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 8200 2300 L 8300 2400 L 8300 2500 L 8200 2600 L 8100 2500 L 8100 2400 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 350 2800 L 287 2750 L 250 2713 L 200 2700 L 150 2713 L 113 2750 L 100 2800 L 113 2850 L 150 2887 L 200 2900 L 250 2887 L 287 2850 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 660 2794 L 595 2745 L 557 2709 L 504 2698 L 450 2714 L 409 2753 L 393 2804 L 405 2855 L 443 2891 L 496 2902 L 550 2886 L 591 2847 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 953 2786 L 893 2736 L 859 2697 L 809 2687 L 757 2707 L 716 2752 L 698 2809 L 707 2864 L 741 2903 L 791 2913 L 843 2893 L 884 2848 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1239 2800 L 1181 2736 L 1146 2689 L 1100 2673 L 1054 2689 L 1019 2736 L 1007 2800 L 1019 2864 L 1054 2911 L 1100 2927 L 1146 2911 L 1181 2864 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1549 2832 L 1476 2757 L 1431 2703 L 1379 2676 L 1332 2681 L 1303 2719 L 1301 2779 L 1324 2843 L 1369 2897 L 1421 2924 L 1468 2919 L 1497 2881 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1893 2843 L 1798 2777 L 1740 2731 L 1671 2704 L 1611 2702 L 1574 2727 L 1571 2771 L 1602 2823 L 1660 2869 L 1729 2896 L 1789 2898 L 1826 2873 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2232 2800 L 2134 2765 L 2077 2739 L 2000 2730 L 1923 2739 L 1866 2765 L 1845 2800 L 1866 2835 L 1923 2861 L 2000 2870 L 2077 2861 L 2134 2835 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2506 2732 L 2442 2718 L 2408 2703 L 2345 2714 L 2270 2748 L 2203 2796 L 2162 2845 L 2158 2882 L 2192 2897 L 2255 2886 L 2330 2852 L 2397 2804 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2718 2718 L 2696 2682 L 2687 2650 L 2654 2659 L 2608 2704 L 2559 2777 L 2521 2854 L 2504 2918 L 2513 2950 L 2546 2941 L 2592 2896 L 2641 2823 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2950 2800 L 2929 2709 L 2917 2642 L 2900 2618 L 2883 2642 L 2871 2709 L 2867 2800 L 2871 2891 L 2883 2958 L 2900 2982 L 2917 2958 L 2929 2891 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3291 2913 L 3215 2792 L 3165 2709 L 3125 2652 L 3104 2634 L 3110 2661 L 3139 2725 L 3185 2808 L 3235 2891 L 3275 2948 L 3296 2966 L 3290 2939 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3725 2930 L 3587 2850 L 3500 2800 L 3413 2750 L 3350 2713 L 3326 2700 L 3350 2713 L 3413 2750 L 3500 2800 L 3587 2850 L 3650 2887 L 3674 2900 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 200 3150 L 150 3213 L 113 3250 L 100 3300 L 113 3350 L 150 3387 L 200 3400 L 250 3387 L 287 3350 L 300 3300 L 287 3250 L 250 3213 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 494 3140 L 445 3205 L 409 3243 L 398 3296 L 414 3350 L 453 3391 L 504 3407 L 555 3395 L 591 3357 L 602 3304 L 586 3250 L 547 3209 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 786 3147 L 736 3207 L 697 3241 L 687 3291 L 707 3343 L 752 3384 L 809 3402 L 864 3393 L 903 3359 L 913 3309 L 893 3257 L 848 3216 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1100 3161 L 1036 3219 L 989 3254 L 973 3300 L 989 3346 L 1036 3381 L 1100 3393 L 1164 3381 L 1211 3346 L 1227 3300 L 1211 3254 L 1164 3219 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1432 3151 L 1357 3224 L 1303 3269 L 1276 3321 L 1281 3368 L 1319 3397 L 1379 3399 L 1443 3376 L 1497 3331 L 1524 3279 L 1519 3232 L 1481 3203 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 1743 3107 L 1677 3202 L 1631 3260 L 1604 3329 L 1602 3389 L 1627 3426 L 1671 3429 L 1723 3398 L 1769 3340 L 1796 3271 L 1798 3211 L 1773 3174 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2000 3068 L 1965 3166 L 1939 3223 L 1930 3300 L 1939 3377 L 1965 3434 L 2000 3455 L 2035 3434 L 2061 3377 L 2070 3300 L 2061 3223 L 2035 3166 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2232 3094 L 2218 3158 L 2203 3192 L 2214 3255 L 2248 3330 L 2296 3397 L 2345 3438 L 2382 3442 L 2397 3408 L 2386 3345 L 2352 3270 L 2304 3203 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2518 3182 L 2482 3204 L 2450 3213 L 2459 3246 L 2504 3292 L 2577 3341 L 2654 3379 L 2718 3396 L 2750 3387 L 2741 3354 L 2696 3308 L 2623 3259 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 2900 3250 L 2809 3271 L 2742 3283 L 2718 3300 L 2742 3317 L 2809 3329 L 2900 3333 L 2991 3329 L 3058 3317 L 3082 3300 L 3058 3283 L 2991 3271 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3313 3209 L 3192 3285 L 3109 3335 L 3052 3375 L 3034 3396 L 3061 3390 L 3125 3361 L 3208 3315 L 3291 3265 L 3348 3225 L 3366 3204 L 3339 3210 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3630 3075 L 3550 3213 L 3500 3300 L 3450 3387 L 3413 3450 L 3400 3474 L 3413 3450 L 3450 3387 L 3500 3300 L 3550 3213 L 3587 3150 L 3600 3126 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4150 3300 L 4087 3250 L 4050 3213 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4000 3200 L 3950 3213 L 3913 3250 L 3900 3300 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 3913 3350 L 3950 3387 L 4000 3400 L 4050 3387 L 4087 3350 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4450 3300 L 4387 3250 L 4350 3213 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4300 3200 L 4250 3213 L 4213 3250 L 4200 3300 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4213 3350 L 4250 3387 L 4300 3400 L 4350 3387 L 4387 3350 Z " fill-rule="evenodd" />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4750 3300 L 4687 3250 L 4650 3213 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4600 3200 L 4550 3213 L 4513 3250 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4500 3300 L 4513 3350 L 4550 3387 " />
+  <path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4600 3400 L 4650 3387 L 4687 3350 " />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 5050 3300 L 4987 3250 L 4950 3213 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4900 3200 L 4850 3213 L 4813 3250 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4800 3300 L 4813 3350 L 4850 3387 Z " fill-rule="evenodd" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 4900 3400 L 4950 3387 L 4987 3350 Z " fill-rule="evenodd" />
   <rect x="400" y="4200" width="200" height="200" fill="#FFFF00" />
   <rect x="800" y="4600" width="200" height="200" fill="#000000" />
   <rect x="400" y="4650" width="200" height="200" fill="#FFFF00" />
@@ -99,99 +99,99 @@
   <rect x="100" y="4200" width="100" height="200" fill="#FFFF00" />
   <rect x="100" y="4650" width="0" height="200" fill="#FFFF00" />
   <rect x="300" y="4850" width="0" height="200" fill="#0000FF" />
-  <path stroke="#FF00FF" stroke-width="4" d="M 200 3700 L 400 3900 L 200 4100 " />
-  <path stroke="#FF00FF" stroke-width="5" stroke-dasharray="4 2" d="M 300 3700 L 500 3900 L 300 4100 " />
-  <path stroke="#FF00FF" stroke-width="6" stroke-dasharray="1 2" d="M 400 3700 L 600 3900 L 400 4100 " />
-  <path stroke="#FF00FF" stroke-width="7" stroke-dasharray="4 2 1 2" d="M 500 3700 L 700 3900 L 500 4100 " />
-  <path stroke="#FF00FF" stroke-width="8" stroke-dasharray="4 2 1 2 1 2" d="M 600 3700 L 800 3900 L 600 4100 " />
-  <path stroke="#000004" stroke-width="1" stroke-dasharray="4 2" d="M 700 3700 L 900 3900 L 700 4100 " />
-  <path stroke="#000004" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 800 3700 L 1000 3900 L 800 4100 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 520 5200 L 1120 5400 L 520 5600 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 600 5200 L 1200 5400 L 600 5600 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 520 5650 L 1120 5850 L 520 6050 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 600 5650 L 1200 5850 L 600 6050 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 520 6100 L 1120 6300 L 520 6500 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 600 6100 L 1200 6300 L 600 6500 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 770 5200 L 1370 5400 L 770 5600 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 850 5200 L 1450 5400 L 850 5600 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 770 5650 L 1370 5850 L 770 6050 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 850 5650 L 1450 5850 L 850 6050 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 770 6100 L 1370 6300 L 770 6500 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 850 6100 L 1450 6300 L 850 6500 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1020 5200 L 1620 5400 L 1020 5600 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1100 5200 L 1700 5400 L 1100 5600 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1020 5650 L 1620 5850 L 1020 6050 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1100 5650 L 1700 5850 L 1100 6050 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1020 6100 L 1620 6300 L 1020 6500 " />
-  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1100 6100 L 1700 6300 L 1100 6500 " />
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHDIBITS 1
+  <path stroke="#FF00FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 200 3700 L 400 3900 L 200 4100 " />
+  <path stroke="#FF00FF" stroke-width="5" stroke-dasharray="25.0000,25.0000" stroke-linecap="round" stroke-linejoin="round" d="M 300 3700 L 500 3900 L 300 4100 " />
+  <path stroke="#FF00FF" stroke-width="6" stroke-dasharray="6.0000,6.0000" stroke-linecap="round" stroke-linejoin="round" d="M 400 3700 L 600 3900 L 400 4100 " />
+  <path stroke="#FF00FF" stroke-width="7" stroke-dasharray="35.0000,35.0000,7.0000,35.0000" stroke-linecap="round" stroke-linejoin="round" d="M 500 3700 L 700 3900 L 500 4100 " />
+  <path stroke="#FF00FF" stroke-width="8" stroke-dasharray="40.0000,40.0000,8.0000,8.0000,8.0000,40.0000" stroke-linecap="round" stroke-linejoin="round" d="M 600 3700 L 800 3900 L 600 4100 " />
+  <path stroke="#000004" stroke-width="1" stroke-dasharray="5.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 700 3700 L 900 3900 L 700 4100 " />
+  <path stroke="#000004" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 800 3700 L 1000 3900 L 800 4100 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 520 5200 L 1120 5400 L 520 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 600 5200 L 1200 5400 L 600 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 520 5650 L 1120 5850 L 520 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 600 5650 L 1200 5850 L 600 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 520 6100 L 1120 6300 L 520 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 600 6100 L 1200 6300 L 600 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 770 5200 L 1370 5400 L 770 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 850 5200 L 1450 5400 L 850 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 770 5650 L 1370 5850 L 770 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 850 5650 L 1450 5850 L 850 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 770 6100 L 1370 6300 L 770 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 850 6100 L 1450 6300 L 850 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1020 5200 L 1620 5400 L 1020 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1100 5200 L 1700 5400 L 1100 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1020 5650 L 1620 5850 L 1020 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1100 5650 L 1700 5850 L 1100 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1020 6100 L 1620 6300 L 1020 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" d="M 1100 6100 L 1700 6300 L 1100 6500 " />
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="5010.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHDIBITS 1]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    BITBLT        1
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="5230.8" font-size="12" font-weight="400">
+    <![CDATA[BITBLT        1]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHBLT    1
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="5450.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHBLT    1]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHDIBITS 2
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="5690.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHDIBITS 2]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    BITBLT        2
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="5910.8" font-size="12" font-weight="400">
+    <![CDATA[BITBLT        2]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHBLT    2
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="6130.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHBLT    2]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHDIBITS 3
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="6370.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHDIBITS 3]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    BITBLT        3
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="6590.8" font-size="12" font-weight="400">
+    <![CDATA[BITBLT        3]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHBLT    3
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="6810.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHBLT    3]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHDIBITS 4
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="7050.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHDIBITS 4]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    BITBLT        4
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="7270.8" font-size="12" font-weight="400">
+    <![CDATA[BITBLT        4]]>
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHBLT    4
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="7490.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHBLT    4]]>
   </text>
-  <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR32 
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5400" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR32 ]]>
   </text>
-  <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR24 
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5620" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR24 ]]>
   </text>
-  <text x="5840" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR16 
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5840" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR16 ]]>
   </text>
-  <text x="6060" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    -COLOR16 
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="6060" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[-COLOR16 ]]>
   </text>
-  <text x="6280" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR8  
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="6280" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR8  ]]>
   </text>
-  <text x="6500" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR4  
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="6500" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR4  ]]>
   </text>
-  <text x="6720" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +MONO    
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="6720" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+MONO    ]]>
   </text>
-  <text x="6940" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    -MONO    
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="6940" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[-MONO    ]]>
   </text>
-  <text x="7160" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR8 0
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="7160" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR8 0]]>
   </text>
-  <text x="7380" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +COLOR4 0
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="7380" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+COLOR4 0]]>
   </text>
-  <text x="7600" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    +MONO   0
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="7600" y="4980.8" font-size="12" font-weight="400">
+    <![CDATA[+MONO   0]]>
   </text>
   <image x="5400" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
   <image x="5400" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
@@ -230,286 +230,286 @@
   <image x="7600" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
   <image x="7600" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
   <image x="7600" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    STRETCHDIBITS
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5000" y="8010.8" font-size="12" font-weight="400">
+    <![CDATA[STRETCHDIBITS]]>
   </text>
   <image x="5400" y="8000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAUElEQVQYlW2OwQ3AMAgDrxJjwP6DAXO0j1QJQfiFMGfzvBBKKG7DIAGgjIrfni4SQPwsrHJLmy4ZZdVsyKulhm/utBT6ytHbzv74uhDvXJV9Tw0bLHsWOIMAAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
-  <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    PNG
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5400" y="7980.8" font-size="12" font-weight="400">
+    <![CDATA[PNG]]>
   </text>
   <image x="5620" y="8000" width="200" height="200" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAAKAAoDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQYH/8QAFQEBAQAAAAAAAAAAAAAAAAAABQf/2gAMAwEAAhADEAAAAY4hpBODYRQ6qtZDP//EABwQAAEDBQAAAAAAAAAAAAAAAAMAAQUCBBITIf/aAAgBAQABBQKJvxaHnugJUsnX/8QAHxEAAgECBwAAAAAAAAAAAAAAAAECAwQFBhEVISIx/9oACAEDAQE/AczXm46xj6Twrs+CqNI//8QAHhEAAQQBBQAAAAAAAAAAAAAAAAECAyEFBhEUFmL/2gAIAQIBAT8BiwnNpEOleTT7UqhsbNko/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECMiIxkf/aAAgBAQAGPwJSk8ixZ9Ns/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAERIVHx/9oACAEBAAE/IUlKlLSBgrAu8f/aAAwDAQACAAMAAAAQ2Q//xAAaEQEBAAIDAAAAAAAAAAAAAAABABEhQcHw/9oACAEDAQE/ENyedyqPJmuVlKpf/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQAhMUGRwf/aAAgBAgEBPxCrfg0PMW1ciKuDRP/EABkQAQEBAAMAAAAAAAAAAAAAAAEAESExQf/aAAgBAQABPxAxsaVphAAoA9RBCDgBQ4Ki+6v/2Q==" preserveAspectRatio="none" />
-  <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    JPG
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2900" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3000" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3100" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3200" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3300" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3400" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3500" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3600" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3700" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3800" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3900" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4000" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4100" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4200" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4300" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4400" y="5000" width="90" height="4019" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4530" y1="4950" x2="4530" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4540" y1="4950" x2="4540" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4550" y1="4950" x2="4550" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4560" y1="4950" x2="4560" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4570" y1="4950" x2="4570" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4580" y1="4950" x2="4580" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4590" y1="4950" x2="4590" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4600" y1="4950" x2="4600" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4610" y1="4950" x2="4610" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4620" y1="4950" x2="4620" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4630" y1="4950" x2="4630" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4640" y1="4950" x2="4640" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4650" y1="4950" x2="4650" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4660" y1="4950" x2="4660" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4670" y1="4950" x2="4670" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4680" y1="4950" x2="4680" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4730" y1="4950" x2="4730" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4740" y1="4950" x2="4740" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4750" y1="4950" x2="4750" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4760" y1="4950" x2="4760" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4770" y1="4950" x2="4770" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4780" y1="4950" x2="4780" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4790" y1="4950" x2="4790" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4800" y1="4950" x2="4800" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4810" y1="4950" x2="4810" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4820" y1="4950" x2="4820" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4830" y1="4950" x2="4830" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4840" y1="4950" x2="4840" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4850" y1="4950" x2="4850" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4860" y1="4950" x2="4860" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4870" y1="4950" x2="4870" y2="9069" />
-  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4880" y1="4950" x2="4880" y2="9069" />
-  <text x="100" y="0" font-family="Arial" font-size="12" fill="#0000FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Text8 from U_EMREXTTEXTOUTA
-  </text>
-  <text x="100" y="0" font-family="Arial" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Text16 from U_EMREXTTEXTOUTW
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5480" y="80" width="40" height="40" />
-  <text x="5500" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:default
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="80" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x00
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="180" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
-    textalignment:0x02
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="280" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x04
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="380" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
-    textalignment:0x06
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="480" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    textalignment:0x08
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="580" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-after-edge">
-    textalignment:0x0A
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="680" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    textalignment:0x0C
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="780" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-after-edge">
-    textalignment:0x0E
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="880" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x10
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="980" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
-    textalignment:0x12
-  </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="1080" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x14
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="5620" y="7980.8" font-size="12" font-weight="400">
+    <![CDATA[JPG]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="2900" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3000" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3100" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3200" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3300" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3400" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3500" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3600" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3700" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3800" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3900" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4000" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4100" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4200" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4300" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4400" y="5000" width="90" height="4019" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4530" y1="4950" x2="4530" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4540" y1="4950" x2="4540" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4550" y1="4950" x2="4550" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4560" y1="4950" x2="4560" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4570" y1="4950" x2="4570" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4580" y1="4950" x2="4580" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4590" y1="4950" x2="4590" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4600" y1="4950" x2="4600" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4610" y1="4950" x2="4610" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4620" y1="4950" x2="4620" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4630" y1="4950" x2="4630" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4640" y1="4950" x2="4640" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4650" y1="4950" x2="4650" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4660" y1="4950" x2="4660" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4670" y1="4950" x2="4670" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4680" y1="4950" x2="4680" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4730" y1="4950" x2="4730" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4740" y1="4950" x2="4740" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4750" y1="4950" x2="4750" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4760" y1="4950" x2="4760" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4770" y1="4950" x2="4770" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4780" y1="4950" x2="4780" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4790" y1="4950" x2="4790" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4800" y1="4950" x2="4800" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4810" y1="4950" x2="4810" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4820" y1="4950" x2="4820" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4830" y1="4950" x2="4830" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4840" y1="4950" x2="4840" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4850" y1="4950" x2="4850" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4860" y1="4950" x2="4860" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4870" y1="4950" x2="4870" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x1="4880" y1="4950" x2="4880" y2="9069" />
+  <text font-family="Arial" fill="#0000FF" text-anchor="start" style="white-space:pre;" x="100" y="660.8" font-size="12" font-weight="400">
+    <![CDATA[Text8 from U_EMREXTTEXTOUTA]]>
+  </text>
+  <text font-family="Arial" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="100" y="960.8" font-size="12" font-weight="400">
+    <![CDATA[Text16 from U_EMREXTTEXTOUTW]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5480" y="80" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="5500" y="110.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:default]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="80" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="110.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x00]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="180" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="end" style="white-space:pre;" x="6000" y="210.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x02]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="280" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x04]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="380" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="middle" style="white-space:pre;" x="6000" y="410.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x06]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="480" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="500" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x08]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="580" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="end" style="white-space:pre;" x="6000" y="600" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x0A]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="680" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="700" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x0C]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="780" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="middle" style="white-space:pre;" x="6000" y="800" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x0E]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="880" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="910.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x10]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="980" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="end" style="white-space:pre;" x="6000" y="1010.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x12]]>
+  </text>
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="1080" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="1110.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x14]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="1180" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
-    textalignment:0x16
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="1180" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="middle" style="white-space:pre;" x="6000" y="1210.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x16]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="1280" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    textalignment:0x18
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5980" y="1280" width="40" height="40" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="6000" y="1300" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x18]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="60" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x00
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="60" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="110.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x00]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="160" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
-    textalignment:0x02
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="160" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="end" style="white-space:pre;" x="7000" y="210.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x02]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="260" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x04
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="260" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x04]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="360" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
-    textalignment:0x06
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="360" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="middle" style="white-space:pre;" x="7000" y="410.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x06]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="460" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    textalignment:0x08
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="460" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="500" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x08]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="560" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-after-edge">
-    textalignment:0x0A
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="560" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="end" style="white-space:pre;" x="7000" y="600" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x0A]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="660" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    textalignment:0x0C
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="660" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="700" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x0C]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="760" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-after-edge">
-    textalignment:0x0E
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="760" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="middle" style="white-space:pre;" x="7000" y="800" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x0E]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="860" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x10
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="860" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="910.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x10]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="960" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
-    textalignment:0x12
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="960" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="end" style="white-space:pre;" x="7000" y="1010.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x12]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="1060" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    textalignment:0x14
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="1060" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="1110.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x14]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="1160" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
-    textalignment:0x16
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="1160" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="middle" style="white-space:pre;" x="7000" y="1210.8" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x16]]>
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="1260" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    textalignment:0x18
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="6960" y="1260" width="80" height="80" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="7000" y="1300" font-size="12" font-weight="400">
+    <![CDATA[textalignment:0x18]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:0
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:0]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:30
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:30]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:60
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:60]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:90
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:90]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:120
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:120]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:150
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:150]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:180
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:180]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:210
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:210]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:240
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:240]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:270
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:270]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:300
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:300]]>
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
-    ....Degrees:330
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8000" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:330]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:0
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:0]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:30
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:30]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:60
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:60]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:90
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:90]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:120
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:120]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:150
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:150]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:180
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:180]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:210
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:210]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:240
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:240]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:270
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:270]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:300
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:300]]>
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    ....Degrees:330
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="8600" y="310.8" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:330]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:0
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:0]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:30
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:30]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:60
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:60]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:90
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:90]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:120
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:120]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:150
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:150]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:180
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:180]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:210
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:210]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:240
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:240]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:270
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:270]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:300
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:300]]>
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
-    ....Degrees:330
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="9200" y="300" font-size="12" font-weight="400">
+    <![CDATA[....Degrees:330]]>
   </text>
   <defs>
     <pattern id="hatch-1" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -518,7 +518,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2000" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-1)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="2000" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-2" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -526,7 +526,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-2)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2330" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-2)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="2330" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-3" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -534,7 +534,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-3)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2660" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-3)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="2660" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-4" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -542,7 +542,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-4)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2990" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-4)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="2990" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-5" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -550,7 +550,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-5)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3320" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-5)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3320" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-6" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -558,7 +558,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-6)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3650" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-6)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3650" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-7" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -566,7 +566,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-7)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3980" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-7)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="3980" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-8" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -574,7 +574,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-8)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4310" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-8)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4310" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-9" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -582,7 +582,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-9)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4640" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-9)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4640" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-10" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -590,7 +590,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-10)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4970" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-10)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="4970" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-11" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -598,7 +598,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-11)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5300" y="3500" width="300" height="300" />
+  <rect fill="url(#hatch-11)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5300" y="3500" width="300" height="300" />
   <defs>
     <pattern id="hatch-12" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -606,19 +606,19 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-12)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5630" y="3500" width="300" height="300" />
-  <line stroke="#000000" stroke-width="2" x1="6300" y1="3600" x2="6300" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="6630" y1="3600" x2="6630" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="6960" y1="3600" x2="6960" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="7290" y1="3600" x2="7290" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="7620" y1="3600" x2="7620" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="7950" y1="3600" x2="7950" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="8280" y1="3600" x2="8280" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="8610" y1="3600" x2="8610" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="8940" y1="3600" x2="8940" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="9270" y1="3600" x2="9270" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="9600" y1="3600" x2="9600" y2="4100" />
-  <line stroke="#000000" stroke-width="2" x1="9930" y1="3600" x2="9930" y2="4100" />
+  <rect fill="url(#hatch-12)" stroke="#000000" stroke-width="1" stroke-dasharray="5.0000,5.0000,1.0000,1.0000,1.0000,5.0000" stroke-linecap="round" stroke-linejoin="round" x="5630" y="3500" width="300" height="300" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="6300" y1="3600" x2="6300" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="6630" y1="3600" x2="6630" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="6960" y1="3600" x2="6960" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="7290" y1="3600" x2="7290" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="7620" y1="3600" x2="7620" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="7950" y1="3600" x2="7950" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="8280" y1="3600" x2="8280" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="8610" y1="3600" x2="8610" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="8940" y1="3600" x2="8940" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="9270" y1="3600" x2="9270" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="9600" y1="3600" x2="9600" y2="4100" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="9930" y1="3600" x2="9930" y2="4100" />
   <defs>
     <pattern id="hatch-13" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -626,7 +626,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-13)" stroke="#000000" stroke-width="2" x="2000" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-13)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2000" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-14" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -634,7 +634,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-14)" stroke="#000000" stroke-width="2" x="2330" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-14)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2330" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-15" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -642,7 +642,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-15)" stroke="#000000" stroke-width="2" x="2660" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-15)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2660" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-16" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -650,7 +650,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-16)" stroke="#000000" stroke-width="2" x="2990" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-16)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2990" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-17" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -658,7 +658,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-17)" stroke="#000000" stroke-width="2" x="3320" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-17)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="3320" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-18" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -666,7 +666,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-18)" stroke="#000000" stroke-width="2" x="3650" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-18)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="3650" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-19" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -674,7 +674,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-19)" stroke="#000000" stroke-width="2" x="3980" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-19)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="3980" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-20" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -682,7 +682,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-20)" stroke="#000000" stroke-width="2" x="4310" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-20)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4310" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-21" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -690,7 +690,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-21)" stroke="#000000" stroke-width="2" x="4640" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-21)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4640" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-22" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -698,7 +698,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-22)" stroke="#000000" stroke-width="2" x="4970" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-22)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4970" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-23" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -706,7 +706,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-23)" stroke="#000000" stroke-width="2" x="5300" y="3830" width="300" height="300" />
+  <rect fill="url(#hatch-23)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5300" y="3830" width="300" height="300" />
   <defs>
     <pattern id="hatch-24" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -714,53 +714,53 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-24)" stroke="#000000" stroke-width="2" x="5630" y="3830" width="300" height="300" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2330" y="4160" width="30" height="30" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2660" y="4160" width="60" height="60" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2990" y="4160" width="90" height="90" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="3320" y="4160" width="120" height="120" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="3650" y="4160" width="150" height="150" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="3980" y="4160" width="180" height="180" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="4310" y="4160" width="210" height="210" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="4640" y="4160" width="240" height="240" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="4970" y="4160" width="270" height="270" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="5300" y="4160" width="300" height="300" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="5630" y="4160" width="330" height="330" />
-  <line stroke="#000000" stroke-width="2" x1="6600" y1="4150" x2="6600" y2="4870" />
-  <line stroke="#000000" stroke-width="5" x1="6600" y1="4260" x2="6600" y2="4760" />
-  <line stroke="#000000" stroke-width="5" x1="6930" y1="4150" x2="6930" y2="4870" />
-  <line stroke="#000004" stroke-width="5" x1="6930" y1="4260" x2="6930" y2="4760" />
-  <line stroke="#000004" stroke-width="5" x1="7260" y1="4150" x2="7260" y2="4870" />
-  <line stroke="#000000" stroke-width="6" x1="7260" y1="4260" x2="7260" y2="4760" />
-  <line stroke="#000000" stroke-width="6" x1="7590" y1="4150" x2="7590" y2="4870" />
-  <line stroke="#000004" stroke-width="6" x1="7590" y1="4260" x2="7590" y2="4760" />
-  <line stroke="#000004" stroke-width="6" x1="7920" y1="4150" x2="7920" y2="4870" />
-  <line stroke="#000000" stroke-width="3" x1="7920" y1="4260" x2="7920" y2="4760" />
-  <line stroke="#000000" stroke-width="3" x1="8250" y1="4150" x2="8250" y2="4870" />
-  <line stroke="#000004" stroke-width="3" x1="8250" y1="4260" x2="8250" y2="4760" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="2330" y="4520" width="30" height="30" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="2660" y="4520" width="60" height="60" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="2990" y="4520" width="90" height="90" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="3320" y="4520" width="120" height="120" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="3650" y="4520" width="150" height="150" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="3980" y="4520" width="180" height="180" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="4310" y="4520" width="210" height="210" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="4640" y="4520" width="240" height="240" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="4970" y="4520" width="270" height="270" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="5300" y="4520" width="300" height="300" />
-  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="5630" y="4520" width="330" height="330" />
-  <line stroke="#000004" stroke-width="3" x1="9300" y1="4150" x2="9300" y2="4870" />
-  <line stroke="#000000" stroke-width="5" x1="9300" y1="4260" x2="9300" y2="4760" />
-  <line stroke="#000000" stroke-width="5" x1="9630" y1="4150" x2="9630" y2="4870" />
-  <line stroke="#000004" stroke-width="5" x1="9630" y1="4260" x2="9630" y2="4760" />
-  <line stroke="#000004" stroke-width="5" x1="9960" y1="4150" x2="9960" y2="4870" />
-  <line stroke="#000000" stroke-width="6" x1="9960" y1="4260" x2="9960" y2="4760" />
-  <line stroke="#000000" stroke-width="6" x1="10290" y1="4150" x2="10290" y2="4870" />
-  <line stroke="#000004" stroke-width="6" x1="10290" y1="4260" x2="10290" y2="4760" />
-  <line stroke="#000004" stroke-width="6" x1="10620" y1="4150" x2="10620" y2="4870" />
-  <line stroke="#000000" stroke-width="3" x1="10620" y1="4260" x2="10620" y2="4760" />
-  <line stroke="#000000" stroke-width="3" x1="10950" y1="4150" x2="10950" y2="4870" />
-  <line stroke="#000004" stroke-width="3" x1="10950" y1="4260" x2="10950" y2="4760" />
+  <rect fill="url(#hatch-24)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5630" y="3830" width="300" height="300" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2330" y="4160" width="30" height="30" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2660" y="4160" width="60" height="60" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="2990" y="4160" width="90" height="90" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="3320" y="4160" width="120" height="120" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="3650" y="4160" width="150" height="150" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="3980" y="4160" width="180" height="180" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4310" y="4160" width="210" height="210" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4640" y="4160" width="240" height="240" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="4970" y="4160" width="270" height="270" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5300" y="4160" width="300" height="300" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5630" y="4160" width="330" height="330" />
+  <line stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="6600" y1="4150" x2="6600" y2="4870" />
+  <line stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="6600" y1="4260" x2="6600" y2="4760" />
+  <line stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="6930" y1="4150" x2="6930" y2="4870" />
+  <line stroke="#000004" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="6930" y1="4260" x2="6930" y2="4760" />
+  <line stroke="#000004" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="7260" y1="4150" x2="7260" y2="4870" />
+  <line stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="7260" y1="4260" x2="7260" y2="4760" />
+  <line stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="7590" y1="4150" x2="7590" y2="4870" />
+  <line stroke="#000004" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="7590" y1="4260" x2="7590" y2="4760" />
+  <line stroke="#000004" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="7920" y1="4150" x2="7920" y2="4870" />
+  <line stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="7920" y1="4260" x2="7920" y2="4760" />
+  <line stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="8250" y1="4150" x2="8250" y2="4870" />
+  <line stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="8250" y1="4260" x2="8250" y2="4760" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="2330" y="4520" width="30" height="30" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="2660" y="4520" width="60" height="60" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="2990" y="4520" width="90" height="90" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="3320" y="4520" width="120" height="120" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="3650" y="4520" width="150" height="150" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="3980" y="4520" width="180" height="180" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="4310" y="4520" width="210" height="210" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="4640" y="4520" width="240" height="240" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="4970" y="4520" width="270" height="270" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="5300" y="4520" width="300" height="300" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="5630" y="4520" width="330" height="330" />
+  <line stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="9300" y1="4150" x2="9300" y2="4870" />
+  <line stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="9300" y1="4260" x2="9300" y2="4760" />
+  <line stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="9630" y1="4150" x2="9630" y2="4870" />
+  <line stroke="#000004" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="9630" y1="4260" x2="9630" y2="4760" />
+  <line stroke="#000004" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="9960" y1="4150" x2="9960" y2="4870" />
+  <line stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="9960" y1="4260" x2="9960" y2="4760" />
+  <line stroke="#000000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="10290" y1="4150" x2="10290" y2="4870" />
+  <line stroke="#000004" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="10290" y1="4260" x2="10290" y2="4760" />
+  <line stroke="#000004" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" x1="10620" y1="4150" x2="10620" y2="4870" />
+  <line stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="10620" y1="4260" x2="10620" y2="4760" />
+  <line stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="10950" y1="4150" x2="10950" y2="4870" />
+  <line stroke="#000004" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x1="10950" y1="4260" x2="10950" y2="4760" />
   <defs>
     <pattern id="hatch-25" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="#00FFFF" />
@@ -768,9 +768,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-25)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5000" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:+ bC:Q tC:K 
+  <rect fill="url(#hatch-25)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="5000" width="700" height="300" />
+  <text font-family="Courier New" fill="#000000" text-anchor="middle" style="white-space:pre;" x="8350" y="5160.8" font-size="12" font-weight="400">
+    <![CDATA[bk:+ bC:Q tC:K ]]>
   </text>
   <defs>
     <pattern id="hatch-26" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -779,9 +779,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-26)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5400" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:+ bC:Q tC:G 
+  <rect fill="url(#hatch-26)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="5400" width="700" height="300" />
+  <text font-family="Courier New" fill="#007F00" text-anchor="middle" style="white-space:pre;" x="8350" y="5560.8" font-size="12" font-weight="400">
+    <![CDATA[bk:+ bC:Q tC:G ]]>
   </text>
   <defs>
     <pattern id="hatch-27" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -790,9 +790,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-27)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5800" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:+ bC:R tC:K 
+  <rect fill="url(#hatch-27)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="5800" width="700" height="300" />
+  <text font-family="Courier New" fill="#000000" text-anchor="middle" style="white-space:pre;" x="8350" y="5960.8" font-size="12" font-weight="400">
+    <![CDATA[bk:+ bC:R tC:K ]]>
   </text>
   <defs>
     <pattern id="hatch-28" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -801,9 +801,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-28)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6200" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:+ bC:R tC:G 
+  <rect fill="url(#hatch-28)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="6200" width="700" height="300" />
+  <text font-family="Courier New" fill="#007F00" text-anchor="middle" style="white-space:pre;" x="8350" y="6360.8" font-size="12" font-weight="400">
+    <![CDATA[bk:+ bC:R tC:G ]]>
   </text>
   <defs>
     <pattern id="hatch-29" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -812,9 +812,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-29)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6600" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:- bC:Q tC:K 
+  <rect fill="url(#hatch-29)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="6600" width="700" height="300" />
+  <text font-family="Courier New" fill="#000000" text-anchor="middle" style="white-space:pre;" x="8350" y="6760.8" font-size="12" font-weight="400">
+    <![CDATA[bk:- bC:Q tC:K ]]>
   </text>
   <defs>
     <pattern id="hatch-30" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -823,9 +823,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-30)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7000" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:- bC:Q tC:G 
+  <rect fill="url(#hatch-30)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="7000" width="700" height="300" />
+  <text font-family="Courier New" fill="#007F00" text-anchor="middle" style="white-space:pre;" x="8350" y="7160.8" font-size="12" font-weight="400">
+    <![CDATA[bk:- bC:Q tC:G ]]>
   </text>
   <defs>
     <pattern id="hatch-31" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -834,9 +834,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-31)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7400" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:- bC:R tC:K 
+  <rect fill="url(#hatch-31)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="7400" width="700" height="300" />
+  <text font-family="Courier New" fill="#000000" text-anchor="middle" style="white-space:pre;" x="8350" y="7560.8" font-size="12" font-weight="400">
+    <![CDATA[bk:- bC:R tC:K ]]>
   </text>
   <defs>
     <pattern id="hatch-32" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -845,40 +845,40 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-32)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7800" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
-    bk:- bC:R tC:G 
+  <rect fill="url(#hatch-32)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x="8000" y="7800" width="700" height="300" />
+  <text font-family="Courier New" fill="#007F00" text-anchor="middle" style="white-space:pre;" x="8350" y="7960.8" font-size="12" font-weight="400">
+    <![CDATA[bk:- bC:R tC:G ]]>
   </text>
-  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Path contains invalid operations.
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="8800" y="5010.8" font-size="12" font-weight="400">
+    <![CDATA[Path contains invalid operations.]]>
   </text>
-  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Any graphic produced is acceptable.
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="8800" y="5060.8" font-size="12" font-weight="400">
+    <![CDATA[Any graphic produced is acceptable.]]>
   </text>
-  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
-    Rendering program should not crash.
+  <text font-family="Courier New" fill="#000000" text-anchor="start" style="white-space:pre;" x="8800" y="5110.8" font-size="12" font-weight="400">
+    <![CDATA[Rendering program should not crash.]]>
   </text>
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5200" x2="9000" y2="5300" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5300" x2="9100" y2="5400" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5400" x2="9000" y2="5500" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5500" x2="9100" y2="5600" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5600" x2="9000" y2="5700" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5700" x2="9100" y2="5800" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5800" x2="9000" y2="5900" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5900" x2="9100" y2="6000" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6000" x2="9000" y2="6100" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6100" x2="9100" y2="6200" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6200" x2="9000" y2="6300" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6300" x2="9100" y2="6400" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6400" x2="9000" y2="6500" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6500" x2="9100" y2="6600" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6600" x2="9000" y2="6700" />
-  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6700" x2="9100" y2="6800" />
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    NoClip
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="5200" x2="9000" y2="5300" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="5300" x2="9100" y2="5400" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="5400" x2="9000" y2="5500" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="5500" x2="9100" y2="5600" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="5600" x2="9000" y2="5700" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="5700" x2="9100" y2="5800" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="5800" x2="9000" y2="5900" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="5900" x2="9100" y2="6000" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="6000" x2="9000" y2="6100" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="6100" x2="9100" y2="6200" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="6200" x2="9000" y2="6300" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="6300" x2="9100" y2="6400" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="6400" x2="9000" y2="6500" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="6500" x2="9100" y2="6600" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9100" y1="6600" x2="9000" y2="6700" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" x1="9000" y1="6700" x2="9100" y2="6800" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="1350.8" font-size="12" font-weight="400">
+    <![CDATA[NoClip]]>
   </text>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="1470.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-33" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -887,12 +887,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-33)" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" d="M 13547 1744 L 13441 1651 L 13333 1742 L 13389 1613 L 13269 1538 L 13410 1552 L 13443 1414 L 13474 1552 L 13615 1542 L 13493 1614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-33)" stroke="#000000" stroke-width="2" stroke-dasharray="2.0000,2.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 1744 L 13441 1651 L 13333 1742 L 13389 1613 L 13269 1538 L 13410 1552 L 13443 1414 L 13474 1552 L 13615 1542 L 13493 1614 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="1620.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include)
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="1850.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include)]]>
   </text>
   <defs>
     <pattern id="hatch-34" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -901,14 +901,14 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-34)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="1900" width="200" height="400" />
+  <rect fill="url(#hatch-34)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="1900" width="200" height="400" />
   <defs>
     <clipPath id="clip-1">
       <rect x="13250" y="1900" width="200" height="400" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="1970.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-35" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -917,12 +917,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-35)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-35)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="2120.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rects (include,include)
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="2350.8" font-size="12" font-weight="400">
+    <![CDATA[Rects (include,include)]]>
   </text>
   <defs>
     <pattern id="hatch-36" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -931,7 +931,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-36)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2400" width="200" height="400" />
+  <rect fill="url(#hatch-36)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="2400" width="200" height="400" />
   <defs>
     <pattern id="hatch-37" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -939,7 +939,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-37)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2600" width="400" height="200" />
+  <rect fill="url(#hatch-37)" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="2600" width="400" height="200" />
   <defs>
     <clipPath id="clip-2">
       <rect x="13250" y="2400" width="200" height="-100" />
@@ -950,8 +950,8 @@
       <rect x="13250" y="2600" width="200" height="-300" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="2470.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-38" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -960,12 +960,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-38)" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-38)" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="2620.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (exclude)
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="2850.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (exclude)]]>
   </text>
   <defs>
     <pattern id="hatch-39" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -974,14 +974,14 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-39)" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2900" width="200" height="400" />
+  <rect fill="url(#hatch-39)" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="2900" width="200" height="400" />
   <defs>
     <clipPath id="clip-4">
       <rect x="13250" y="2900" width="200" height="400" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="2970.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-40" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -990,12 +990,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-40)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-40)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="3120.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rects (exclude,exclude)
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="3350.8" font-size="12" font-weight="400">
+    <![CDATA[Rects (exclude,exclude)]]>
   </text>
   <defs>
     <pattern id="hatch-41" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1004,7 +1004,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-41)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3400" width="200" height="400" />
+  <rect fill="url(#hatch-41)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="3400" width="200" height="400" />
   <defs>
     <pattern id="hatch-42" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1012,7 +1012,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-42)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3600" width="400" height="200" />
+  <rect fill="url(#hatch-42)" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="3600" width="400" height="200" />
   <defs>
     <clipPath id="clip-5">
       <rect x="13250" y="3400" width="200" height="400" />
@@ -1023,8 +1023,8 @@
       <rect x="13250" y="3600" width="400" height="200" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="3470.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-43" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1033,12 +1033,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-43)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-43)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="3620.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include) AND path
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="3850.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include) AND path]]>
   </text>
   <defs>
     <pattern id="hatch-44" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1047,7 +1047,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-44)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3900" width="200" height="400" />
+  <rect fill="url(#hatch-44)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="3900" width="200" height="400" />
   <defs>
     <pattern id="hatch-45" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1055,7 +1055,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-45)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <path fill="url(#hatch-45)" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-7">
       <rect x="13250" y="3900" width="200" height="-100" />
@@ -1068,9 +1068,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-46)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <path fill="url(#hatch-46)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="3970.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-47" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1079,12 +1079,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-47)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-47)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="4120.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include) OR path
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="4350.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include) OR path]]>
   </text>
   <defs>
     <pattern id="hatch-48" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1093,7 +1093,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-48)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4400" width="200" height="400" />
+  <rect fill="url(#hatch-48)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="4400" width="200" height="400" />
   <defs>
     <pattern id="hatch-49" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1101,7 +1101,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-49)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <path fill="url(#hatch-49)" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-8">
       <rect x="13250" y="4400" width="200" height="-600" />
@@ -1114,9 +1114,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-50)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <path fill="url(#hatch-50)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="4470.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-51" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1125,12 +1125,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-51)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-51)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="4620.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include) XOR path
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="4850.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include) XOR path]]>
   </text>
   <defs>
     <pattern id="hatch-52" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1139,7 +1139,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-52)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4900" width="200" height="400" />
+  <rect fill="url(#hatch-52)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="4900" width="200" height="400" />
   <defs>
     <pattern id="hatch-53" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1147,7 +1147,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-53)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <path fill="url(#hatch-53)" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-9">
       <rect x="13250" y="4900" width="200" height="-1100" />
@@ -1160,9 +1160,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-54)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <path fill="url(#hatch-54)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="4970.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-55" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1171,12 +1171,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-55)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-55)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="5120.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include) DIFF path
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="5350.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include) DIFF path]]>
   </text>
   <defs>
     <pattern id="hatch-56" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1185,7 +1185,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-56)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5400" width="200" height="400" />
+  <rect fill="url(#hatch-56)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="5400" width="200" height="400" />
   <defs>
     <pattern id="hatch-57" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1193,7 +1193,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-57)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <path fill="url(#hatch-57)" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-10">
       <rect x="13250" y="5400" width="200" height="-1600" />
@@ -1206,9 +1206,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-58)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <path fill="url(#hatch-58)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="5470.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-59" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1217,12 +1217,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-59)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-59)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="5620.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include) COPY path
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="5850.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include) COPY path]]>
   </text>
   <defs>
     <pattern id="hatch-60" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1231,7 +1231,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-60)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5900" width="200" height="400" />
+  <rect fill="url(#hatch-60)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="5900" width="200" height="400" />
   <defs>
     <pattern id="hatch-61" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1239,7 +1239,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-61)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <path fill="url(#hatch-61)" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-11">
       <rect x="13250" y="5900" width="200" height="-2100" />
@@ -1252,9 +1252,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-62)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <path fill="url(#hatch-62)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="5970.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-63" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1263,12 +1263,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-63)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-63)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="6120.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rect (include,offset)
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="6350.8" font-size="12" font-weight="400">
+    <![CDATA[Rect (include,offset)]]>
   </text>
   <defs>
     <pattern id="hatch-64" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1277,7 +1277,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-64)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6400" width="200" height="400" />
+  <rect fill="url(#hatch-64)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="6400" width="200" height="400" />
   <defs>
     <pattern id="hatch-65" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1285,14 +1285,14 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-65)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="6420" width="200" height="400" />
+  <rect fill="url(#hatch-65)" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13350" y="6420" width="200" height="400" />
   <defs>
     <clipPath id="clip-12">
       <rect x="13250" y="6400" width="200" height="-2600" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="6470.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-66" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1301,12 +1301,12 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-66)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-66)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="6620.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    Rects (include,include,offset)
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13250" y="6850.8" font-size="12" font-weight="400">
+    <![CDATA[Rects (include,include,offset)]]>
   </text>
   <defs>
     <pattern id="hatch-67" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1315,7 +1315,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-67)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6900" width="200" height="400" />
+  <rect fill="url(#hatch-67)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="6900" width="200" height="400" />
   <defs>
     <pattern id="hatch-68" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1323,7 +1323,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-68)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="7100" width="400" height="200" />
+  <rect fill="url(#hatch-68)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13250" y="7100" width="400" height="200" />
   <defs>
     <pattern id="hatch-69" width="8" height="8" patternUnits="userSpaceOnUse">
       <rect width="8" height="8" fill="none" />
@@ -1331,7 +1331,7 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <rect fill="url(#hatch-69)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="7120" width="200" height="200" />
+  <rect fill="url(#hatch-69)" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" x="13350" y="7120" width="200" height="200" />
   <defs>
     <clipPath id="clip-13">
       <rect x="13250" y="6900" width="200" height="-3100" />
@@ -1342,8 +1342,8 @@
       <rect x="13250" y="7100" width="200" height="-3300" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextBeneathStarTest1
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="6970.8" font-size="12" font-weight="400">
+    <![CDATA[TextBeneathStarTest1]]>
   </text>
   <defs>
     <pattern id="hatch-70" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -1352,9 +1352,9 @@
       <path d="[]" stroke="#3F7FFF" stroke-width="1" />
     </pattern>
   </defs>
-  <path fill="url(#hatch-70)" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
-    TextAbove__StarTest2
+  <path fill="url(#hatch-70)" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" stroke-dasharray="1.0000,1.0000" stroke-linecap="round" stroke-linejoin="round" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
+  <text font-family="Courier New" fill="#FF00FF" text-anchor="start" style="white-space:pre;" x="13220" y="7120.8" font-size="12" font-weight="400">
+    <![CDATA[TextAbove__StarTest2]]>
   </text>
   </g>
 </svg>
