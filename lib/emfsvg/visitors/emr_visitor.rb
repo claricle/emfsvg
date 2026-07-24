@@ -1308,8 +1308,14 @@ module Emfsvg
         when :chord
           d << "Z "
           emit_path_element_closed(d)
+          # Chord: cur_x/cur_y stays at end point.
+          @current_x = end_pt[0]
+          @current_y = end_pt[1]
         else
           emit_path_element(d, closed: false, leading_fill_space: true)
+          # Arc: cur_x/cur_y updated to end point (point_draw_d).
+          @current_x = end_pt[0]
+          @current_y = end_pt[1]
         end
       end
 
