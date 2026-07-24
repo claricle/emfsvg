@@ -126,9 +126,8 @@ module Emfsvg
         Emf::Emr::Binary::Records::PaintRgn => :visit_paint_rgn
       }.freeze
 
-      attr_reader :current_x, :current_y
-
-      def initialize(builder, dc, object_table, transform_stack, bounds, fix_y, options)
+      def initialize(builder, dc, object_table, transform_stack, bounds, fix_y, options,
+                     scaling: 1.0, ref_x: 0.0, ref_y: 0.0, px_per_mm: 1.0)
         @builder = builder
         @dc = dc
         @object_table = object_table
@@ -136,11 +135,20 @@ module Emfsvg
         @bounds = bounds
         @fix_y = fix_y
         @options = options
+        @scaling = scaling
+        @ref_x = ref_x
+        @ref_y = ref_y
+        @px_per_mm = px_per_mm
         @current_x = 0
         @current_y = 0
         @path_d = nil
         @open_groups = 0
-        @viewport_group_open = false
+      end
+
+      attr_reader :current_x, :current_y, :open_groups
+
+      def open_group_count
+        @open_groups
       end
 
       # The Emf wire-record-adapter calls this. Dispatch by wire class.
@@ -159,10 +167,30 @@ module Emfsvg
       end
 
       def flush_open_groups
-        @builder.raw("</g>") if @viewport_group_open
-        @viewport_group_open = false
         @builder.raw("</g>" * @open_groups)
         @open_groups = 0
+      end
+
+      # --- point_cal equivalents (matching libemf2svg's coordinate pipeline) ---
+
+      def cal_x(x)
+        (((x - @dc.window_org[0]) * sf_x) + @dc.viewport_org[0]) * @scaling
+      end
+
+      def cal_y(y)
+        (((y - @dc.window_org[1]) * sf_y) + @dc.viewport_org[1]) * @scaling
+      end
+
+      def scale_dim_x(w)
+        w * sf_x * @scaling
+      end
+
+      def scale_dim_y(h)
+        h * sf_y.abs * @scaling
+      end
+
+      def fmt(n)
+        format("%.4f", n.to_f)
       end
 
       # --- Handlers ---
@@ -256,7 +284,6 @@ module Emfsvg
 
       def visit_set_viewport_ext_ex(wire)
         @dc.viewport_ext = [wire.extent.cx, wire.extent.cy]
-        emit_viewport_scale
       end
 
       def visit_move_to_ex(wire)
@@ -838,34 +865,6 @@ module Emfsvg
         Emf::Model::Geometry::Rect.new(left: left, top: top, right: right, bottom: bottom)
       end
 
-      def emit_viewport_scale
-        return if @dc.map_mode == 1 # MM_TEXT: 1:1, no scaling
-
-        wx, wy = @dc.window_ext
-        vx, vy = @dc.viewport_ext
-        return if wx.nil? || wx.zero? || wy.nil? || wy.zero?
-        return if vx.nil? || vy.nil?
-
-        sx = vx.to_f / wx
-        sy = vy.to_f / wy
-
-        # Close previous viewport group if open
-        if @viewport_group_open
-          @builder.raw("</g>")
-          @viewport_group_open = false
-        end
-
-        # Only emit a group if the scale is non-identity
-        return if sx == 1.0 && sy == 1.0
-
-        wox, woy = @dc.window_org
-        vox, voy = @dc.viewport_org
-        transform = format("translate(%f %f) scale(%f %f) translate(%f %f)",
-                           vox, voy, sx, sy, -wox, -woy)
-        @builder.tag("g", { "transform" => transform })
-        @viewport_group_open = true
-      end
-
       def emit_clip_def(region)
         return if region.nil? || region.empty?
 
@@ -1229,15 +1228,55 @@ module Emfsvg
         @dc.poly_fill_mode == 2 ? "nonzero" : "evenodd"
       end
 
-      def maybe_flip_y(y)
-        return y unless @fix_y
+      # Scale factors matching libemf2svg's point_cal switch on MapMode.
+      def sf_x
+        case @dc.map_mode
+        when 1 then 1.0
+        when 2 then @px_per_mm * 0.1
+        when 3 then @px_per_mm * 0.01
+        when 4 then @px_per_mm * 0.01 * 25.4
+        when 5 then @px_per_mm * 0.001 * 25.4
+        when 6 then @px_per_mm / 1440.0 * 25.4
+        when 7, 8
+          if extents_set?
+            @dc.viewport_ext[0].to_f / @dc.window_ext[0]
+          else
+            1.0
+          end
+        else
+          1.0
+        end
+      end
 
-        # Wine/Sparx Y-repair: invert the Y anchor for the offending span.
-        # This is a per-coordinate heuristic; the C library does it
-        # selectively based on the bounding box. For now, mirror Y around
-        # the bounds centre.
-        centre = (@bounds.top + @bounds.bottom) / 2.0
-        (2 * centre) - y
+      def sf_y
+        case @dc.map_mode
+        when 1 then 1.0
+        when 2 then @px_per_mm * 0.1 * -1
+        when 3 then @px_per_mm * 0.01 * -1
+        when 4 then @px_per_mm * 0.01 * 25.4 * -1
+        when 5 then @px_per_mm * 0.001 * 25.4 * -1
+        when 6 then @px_per_mm / 1440.0 * 25.4 * -1
+        when 7 # ISOTROPIC: same as sf_x
+          sf_x
+        when 8 # ANISOTROPIC
+          if extents_set?
+            @dc.viewport_ext[1].to_f / @dc.window_ext[1]
+          else
+            @fix_y ? -1.0 : 1.0
+          end
+        else
+          1.0
+        end
+      end
+
+      def extents_set?
+        wx, = @dc.window_ext
+        vx, = @dc.viewport_ext
+        !wx.nil? && wx != 0 && !vx.nil? && vx != 0
+      end
+
+      def maybe_flip_y(y)
+        cal_y(y)
       end
 
       def emit_transform_group(matrix)

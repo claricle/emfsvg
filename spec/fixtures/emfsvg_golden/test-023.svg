@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="135" viewBox="8 8 230 135" version="1.1">
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230.0000" height="135.0000">
+  <g transform="translate(-8.0000, -8.0000)">
   <g transform="matrix(0.9606 0.0000 0.0000 0.9403 -168.8996 -82.5057)">
-  <path fill="#FFCC67" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 311 125 L 292 109 L 279 139 L 234 120 L 244 148 L 197 151 L 228 173 L 184 182 L 221 198 L 198 215 L 237 218 L 239 240 L 268 217 L 281 227 L 294 212 L 313 222 L 319 202 L 350 212 L 347 192 L 394 200 L 366 178 L 387 171 L 373 159 L 424 140 L 366 140 L 384 117 L 345 135 L 348 96 Z " fill-rule="evenodd" />
+  <path fill="#FFCC67" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" d="M 311 125.0 L 292 109.0 L 279 139.0 L 234 120.0 L 244 148.0 L 197 151.0 L 228 173.0 L 184 182.0 L 221 198.0 L 198 215.0 L 237 218.0 L 239 240.0 L 268 217.0 L 281 227.0 L 294 212.0 L 313 222.0 L 319 202.0 L 350 212.0 L 347 192.0 L 394 200.0 L 366 178.0 L 387 171.0 L 373 159.0 L 424 140.0 L 366 140.0 L 384 117.0 L 345 135.0 L 348 96.0 Z " fill-rule="evenodd" />
   </g>
   <g transform="matrix(0.9606 0.0000 0.0000 0.9403 -168.8996 -82.5057)">
+  </g>
   </g>
 </svg>

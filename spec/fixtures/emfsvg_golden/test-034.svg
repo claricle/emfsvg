@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="40" viewBox="1 1 53 40" version="1.1">
-  <g transform="translate(0.000000 0.000000) scale(0.038248 0.037500) translate(0.000000 0.000000)">
-  <path fill="#DD7CBB" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 1403 556 L 1394 609 L 1385 661 L 1367 714 L 1350 758 L 1314 811 L 1288 855 L 1244 891 L 1200 926 L 1103 997 L 988 1041 L 856 1076 L 785 1076 L 715 1085 L 644 1076 L 582 1076 L 450 1041 L 335 997 L 238 926 L 194 891 L 150 855 L 115 811 L 88 758 L 62 714 L 44 661 L 35 609 L 35 556 L 35 503 L 44 450 L 62 406 L 88 353 L 115 309 L 150 265 L 194 229 L 238 185 L 335 123 L 450 79 L 582 44 L 644 35 L 715 35 L 785 35 L 856 44 L 988 79 L 1103 123 L 1200 185 L 1244 229 L 1288 265 L 1314 309 L 1350 353 L 1367 406 L 1385 450 L 1394 503 L 1403 556 Z " fill-rule="nonzero" />
-  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 565 467 L 282 591 L 282 538 L 503 441 L 282 353 L 282 300 L 565 414 L 565 467 Z " fill-rule="nonzero" />
-  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 900 423 L 1182 300 L 1182 353 L 962 441 L 1182 538 L 1182 591 L 900 467 L 900 423 Z " fill-rule="nonzero" />
-  <path fill="#DD7CBB" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 1076 873 L 1094 864 L 1094 847 L 1076 829 L 1041 811 L 935 776 L 794 750 L 723 741 L 662 741 L 591 750 L 538 767 L 485 785 L 459 820 L 450 847 L 441 873 L 441 926 L 723 908 L 935 891 L 1076 873 Z " fill-rule="nonzero" />
-  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 512 432 L 309 450 Z " fill-rule="nonzero" />
-  <path stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 512 432 L 309 450 " />
-  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 944 441 L 1129 459 Z " fill-rule="nonzero" />
-  <path stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 944 441 L 1129 459 " />
-  </g>
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53.0000" height="40.0000">
+  <g transform="translate(-1.0000, -1.0000)">
+  <path fill="#DD7CBB" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 1403 20.849999999999998 L 1394 22.8375 L 1385 24.787499999999998 L 1367 26.775 L 1350 28.425 L 1314 30.412499999999998 L 1288 32.0625 L 1244 33.4125 L 1200 34.725 L 1103 37.387499999999996 L 988 39.0375 L 856 40.35 L 785 40.35 L 715 40.6875 L 644 40.35 L 582 40.35 L 450 39.0375 L 335 37.387499999999996 L 238 34.725 L 194 33.4125 L 150 32.0625 L 115 30.412499999999998 L 88 28.425 L 62 26.775 L 44 24.787499999999998 L 35 22.8375 L 35 20.849999999999998 L 35 18.8625 L 44 16.875 L 62 15.225 L 88 13.237499999999999 L 115 11.5875 L 150 9.9375 L 194 8.5875 L 238 6.9375 L 335 4.6125 L 450 2.9625 L 582 1.65 L 644 1.3125 L 715 1.3125 L 785 1.3125 L 856 1.65 L 988 2.9625 L 1103 4.6125 L 1200 6.9375 L 1244 8.5875 L 1288 9.9375 L 1314 11.5875 L 1350 13.237499999999999 L 1367 15.225 L 1385 16.875 L 1394 18.8625 L 1403 20.849999999999998 Z " fill-rule="nonzero" />
+  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 565 17.5125 L 282 22.162499999999998 L 282 20.175 L 503 16.537499999999998 L 282 13.237499999999999 L 282 11.25 L 565 15.524999999999999 L 565 17.5125 Z " fill-rule="nonzero" />
+  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 900 15.862499999999999 L 1182 11.25 L 1182 13.237499999999999 L 962 16.537499999999998 L 1182 20.175 L 1182 22.162499999999998 L 900 17.5125 L 900 15.862499999999999 Z " fill-rule="nonzero" />
+  <path fill="#DD7CBB" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 1076 32.7375 L 1094 32.4 L 1094 31.7625 L 1076 31.0875 L 1041 30.412499999999998 L 935 29.099999999999998 L 794 28.125 L 723 27.787499999999998 L 662 27.787499999999998 L 591 28.125 L 538 28.7625 L 485 29.4375 L 459 30.75 L 450 31.7625 L 441 32.7375 L 441 34.725 L 723 34.05 L 935 33.4125 L 1076 32.7375 Z " fill-rule="nonzero" />
+  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 512 16.2 L 309 16.875 Z " fill-rule="nonzero" />
+  <path stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 512 16.2 L 309 16.875 " />
+  <path fill="#DD7CBB" stroke-width="1px" stroke="#DD7CBB" d="M 944 16.537499999999998 L 1129 17.2125 Z " fill-rule="nonzero" />
+  <path stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M 944 16.537499999999998 L 1129 17.2125 " />
   
+  </g>
 </svg>
