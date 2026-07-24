@@ -28,6 +28,7 @@
   </defs>
   <rect fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#FFFFFF" stroke-width="1" x="1260" y="1740" width="7679" height="7679" />
   <line stroke="#FFFFFF" stroke-width="1" clip-path="url(#clip-3)" x1="1260" y1="1740" x2="8940" y2="9420" />
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
   <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1 2" cx="4000.0" cy="3999.0" rx="3999.0" ry="3999.0" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1 2" cx="4000.0" cy="3999.0" rx="3199.0" ry="3199.0" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000080" stroke-width="1" stroke-dasharray="1 2" cx="4000.0" cy="3999.0" rx="2399.0" ry="2399.0" />
@@ -124,6 +125,14 @@
   <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" d="M 3956.8510706991246 3949.058335027874 A 66.000000 66.000000 0 1 1 3950.045171 3955.866312 L 4000.000000 3999.000000 Z" />
   <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" d="M 3983.32402302591 3949.606362694787 A 51.500000 51.500000 0 1 1 3976.377176 3952.482775 L 3999.500000 3998.500000 Z" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" cx="4000.0" cy="3999.0" rx="99.0" ry="99.0" />
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
   <text x="4050" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     NORTH
   </text>
@@ -151,6 +160,12 @@
   <text x="7380" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     15%
   </text>
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(1260.000000 1740.000000) scale(0.960000 0.960000) translate(0.000000 0.000000)">
   <defs>
     <clipPath id="clip-4">
       <rect x="0" y="0" width="10200" height="13200" />
@@ -170,12 +185,22 @@
   </defs>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="1" x="900" y="9660" width="1199" height="2639" />
   <line stroke="#FFFFFF" stroke-width="1" clip-path="url(#clip-6)" x1="900" y1="9660" x2="2100" y2="12300" />
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
   <rect fill="#00FFFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="3500" width="1993" height="1993" />
   <rect fill="#008000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="5500" width="1993" height="1993" />
   <rect fill="#0000FF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="7500" width="1993" height="1993" />
   <rect fill="#FF0000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="9500" width="1993" height="1993" />
   <rect fill="#FFFF00" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="11500" width="1993" height="1993" />
   <rect fill="#000000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="13500" width="1993" height="1993" />
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
   <text x="1000" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     W
   </text>
@@ -431,6 +456,12 @@
   <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
+  </g>
+  <g transform="translate(900.000000 9660.000000) scale(0.150000 0.150000) translate(0.000000 0.000000)">
   <defs>
     <clipPath id="clip-7">
       <rect x="0" y="0" width="10200" height="13200" />
@@ -634,5 +665,6 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="900" y1="1740" x2="900" y2="1500" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="9300" y1="9420" x2="9300" y2="9660" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="900" y1="9660" x2="900" y2="9420" />
+  </g>
   
 </svg>

@@ -4,6 +4,7 @@
   <g transform="matrix(0.250000 0.000000 0.000000 0.250000 4499.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M -2 4501.0 L -2 -13499.0 L 23998 -13499.0 L 23998 4501.0 L -2 4501.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 4499.000000 0.000000)">
+  <g transform="translate(1050.000000 788.000000) scale(5.909091 7.082324) translate(0.000000 0.000000)">
   <defs>
     <clipPath id="clip-1">
       <rect x="0" y="0" width="661" height="414" />
@@ -2233,6 +2234,8 @@
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 4499.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" stroke-dasharray="1 2" clip-path="url(#clip-3)" d="M 30396 -18764.0 L 30396 -27564.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 4499.000000 0.000000)">
+  </g>
+  <g transform="translate(3542.000000 4038.000000) scale(0.390625 0.389803) translate(0.000000 0.000000)">
   <text x="1548" y="4499.0" font-family="Times New Roman" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     03
   </text>
@@ -2304,5 +2307,6 @@
   <path stroke="#000000" stroke-width="1" clip-path="url(#clip-3)" fill="none" d="M 7498 -17719.0 C 7492 -17699.0 7500 -17682.0 7509 -17666.0 " />
   <path stroke="#000000" stroke-width="1" clip-path="url(#clip-3)" d="M 16196 -22164.0 L 15749 -22159.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 4499.000000 0.000000)">
+  </g>
   </g></g></g></g></g></g></g></g>
 </svg>

@@ -140,6 +140,7 @@ module Emfsvg
         @current_y = 0
         @path_d = nil
         @open_groups = 0
+        @viewport_group_open = false
       end
 
       # The Emf wire-record-adapter calls this. Dispatch by wire class.
@@ -158,6 +159,8 @@ module Emfsvg
       end
 
       def flush_open_groups
+        @builder.raw("</g>") if @viewport_group_open
+        @viewport_group_open = false
         @builder.raw("</g>" * @open_groups)
         @open_groups = 0
       end
@@ -239,13 +242,22 @@ module Emfsvg
         @object_table.store(wire.ih_brush, :brush, brush)
       end
 
-      def visit_set_window_org_ex(_wire); end
+      def visit_set_window_org_ex(wire)
+        @dc.window_org = [wire.origin.x, wire.origin.y]
+      end
 
-      def visit_set_window_ext_ex(_wire); end
+      def visit_set_window_ext_ex(wire)
+        @dc.window_ext = [wire.extent.cx, wire.extent.cy]
+      end
 
-      def visit_set_viewport_org_ex(_wire); end
+      def visit_set_viewport_org_ex(wire)
+        @dc.viewport_org = [wire.origin.x, wire.origin.y]
+      end
 
-      def visit_set_viewport_ext_ex(_wire); end
+      def visit_set_viewport_ext_ex(wire)
+        @dc.viewport_ext = [wire.extent.cx, wire.extent.cy]
+        emit_viewport_scale
+      end
 
       def visit_move_to_ex(wire)
         @current_x = wire.origin.x
@@ -824,6 +836,34 @@ module Emfsvg
         bottom = body.getbyte(32) | (body.getbyte(33) << 8) |
                  (body.getbyte(34) << 16) | (body.getbyte(35) << 24)
         Emf::Model::Geometry::Rect.new(left: left, top: top, right: right, bottom: bottom)
+      end
+
+      def emit_viewport_scale
+        return if @dc.map_mode == 1 # MM_TEXT: 1:1, no scaling
+
+        wx, wy = @dc.window_ext
+        vx, vy = @dc.viewport_ext
+        return if wx.nil? || wx.zero? || wy.nil? || wy.zero?
+        return if vx.nil? || vy.nil?
+
+        sx = vx.to_f / wx
+        sy = vy.to_f / wy
+
+        # Close previous viewport group if open
+        if @viewport_group_open
+          @builder.raw("</g>")
+          @viewport_group_open = false
+        end
+
+        # Only emit a group if the scale is non-identity
+        return if sx == 1.0 && sy == 1.0
+
+        wox, woy = @dc.window_org
+        vox, voy = @dc.viewport_org
+        transform = format("translate(%f %f) scale(%f %f) translate(%f %f)",
+                           vox, voy, sx, sy, -wox, -woy)
+        @builder.tag("g", { "transform" => transform })
+        @viewport_group_open = true
       end
 
       def emit_clip_def(region)

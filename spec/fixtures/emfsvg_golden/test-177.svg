@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="652" height="652" viewBox="2 2 652 652" version="1.1">
+  <g transform="translate(0.000000 0.000000) scale(0.299590 0.300046) translate(-44.000000 -44.000000)">
   <line stroke="#800000" stroke-width="1" x1="2177" y1="1141" x2="1979" y2="531" />
   <line stroke="#008000" stroke-width="1" x1="2177" y1="1141" x2="1461" y2="154" />
   <line stroke="#808000" stroke-width="1" x1="2177" y1="1141" x2="820" y2="154" />
@@ -47,5 +48,6 @@
   <line stroke="#A6CAF0" stroke-width="1" x1="1461" y1="2127" x2="1979" y2="1750" />
   <rect fill="none" stroke="#0000FF" stroke-width="1" x="51" y="51" width="2176" height="2176" />
   <ellipse fill="none" stroke="#0000FF" stroke-width="1" cx="1139.0" cy="1139.0" rx="1088.0" ry="1088.0" />
+  </g>
   
 </svg>
