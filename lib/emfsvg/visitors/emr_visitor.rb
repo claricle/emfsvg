@@ -119,7 +119,11 @@ module Emfsvg
         Emf::Emr::Binary::Records::BitBlt => :visit_bit_blt,
         Emf::Emr::Binary::Records::StretchBlt => :visit_stretch_blt,
         Emf::Emr::Binary::Records::ExtSelectClipRgn => :visit_ext_select_clip_rgn,
-        Emf::Emr::Binary::Records::GradientFill => :visit_gradient_fill
+        Emf::Emr::Binary::Records::GradientFill => :visit_gradient_fill,
+        Emf::Emr::Binary::Records::FillRgn => :visit_fill_rgn,
+        Emf::Emr::Binary::Records::FrameRgn => :visit_frame_rgn,
+        Emf::Emr::Binary::Records::InvertRgn => :visit_invert_rgn,
+        Emf::Emr::Binary::Records::PaintRgn => :visit_paint_rgn
       }.freeze
 
       attr_reader :current_x, :current_y
@@ -526,27 +530,27 @@ module Emfsvg
       # --- Drawing handlers ---
 
       def visit_poly_polygon(wire)
-        emit_poly_multi(wire.a_poly_counts.to_a, wire.aptl.to_a, closed: true, point_size: 8)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.aptl.to_a, closed: true, _point_size: 8)
       end
 
       def visit_poly_polygon16(wire)
-        emit_poly_multi(wire.a_poly_counts.to_a, wire.apts.to_a, closed: true, point_size: 4)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.apts.to_a, closed: true, _point_size: 4)
       end
 
       def visit_poly_polyline(wire)
-        emit_poly_multi(wire.a_poly_counts.to_a, wire.aptl.to_a, closed: false, point_size: 8)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.aptl.to_a, closed: false, _point_size: 8)
       end
 
       def visit_poly_polyline16(wire)
-        emit_poly_multi(wire.a_poly_counts.to_a, wire.apts.to_a, closed: false, point_size: 4)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.apts.to_a, closed: false, _point_size: 4)
       end
 
       def visit_poly_draw(wire)
-        emit_poly_draw(wire.aptl.to_a, wire.ab_types.to_a, point_size: 8)
+        emit_poly_draw(wire.aptl.to_a, wire.ab_types.to_a, _point_size: 8)
       end
 
       def visit_poly_draw16(wire)
-        emit_poly_draw(wire.apts.to_a, wire.ab_types.to_a, point_size: 4)
+        emit_poly_draw(wire.apts.to_a, wire.ab_types.to_a, _point_size: 4)
       end
 
       def visit_angle_arc(wire)
@@ -602,11 +606,88 @@ module Emfsvg
         @object_table.store(wire.ih_object, :brush, Brush.new(style: Brush::PATTERN))
       end
 
+      # --- Region operations (TODO 08) ---
+
+      def visit_fill_rgn(wire)
+        bounds = parse_rgn_body_bounds(wire.body.to_s)
+        return unless bounds
+
+        entry = @object_table.lookup(wire.ih_brush)
+        color = entry&.brush? ? entry.object.color : @dc.brush.color
+        attrs = {
+          "x" => bounds.left, "y" => maybe_flip_y(bounds.top),
+          "width" => bounds.right - bounds.left,
+          "height" => bounds.bottom - bounds.top,
+          "fill" => color.to_hex
+        }.merge(clip_attrs)
+        @builder.tag("rect", attrs, single: true)
+      end
+
+      def visit_frame_rgn(wire)
+        bounds = parse_rgn_body_bounds(wire.body.to_s)
+        return unless bounds
+
+        entry = @object_table.lookup(wire.ih_brush)
+        color = entry&.brush? ? entry.object.color : @dc.brush.color
+        attrs = {
+          "x" => bounds.left, "y" => maybe_flip_y(bounds.top),
+          "width" => bounds.right - bounds.left,
+          "height" => bounds.bottom - bounds.top,
+          "fill" => "none", "stroke" => color.to_hex, "stroke-width" => 1
+        }.merge(clip_attrs)
+        @builder.tag("rect", attrs, single: true)
+      end
+
+      def visit_invert_rgn(wire)
+        bounds = parse_rgn_body_bounds(wire.body.to_s)
+        return unless bounds
+
+        attrs = {
+          "x" => bounds.left, "y" => maybe_flip_y(bounds.top),
+          "width" => bounds.right - bounds.left,
+          "height" => bounds.bottom - bounds.top,
+          "fill" => "#FFFFFF", "filter" => "url(#invert)"
+        }.merge(clip_attrs)
+        @builder.tag("rect", attrs, single: true)
+      end
+
+      def visit_paint_rgn(wire)
+        bounds = parse_rgn_body_bounds(wire.body.to_s)
+        return unless bounds
+
+        attrs = {
+          "x" => bounds.left, "y" => maybe_flip_y(bounds.top),
+          "width" => bounds.right - bounds.left,
+          "height" => bounds.bottom - bounds.top
+        }.merge(fill_attrs).merge(clip_attrs)
+        @builder.tag("rect", attrs, single: true)
+      end
+
       def visit_ext_create_pen(wire)
-        # Full ExtCreatePen layout is complex; for now extract ih_pen
-        # and create a default Pen. TODO: parse the full struct.
-        pen = Pen.new
-        @object_table.store(wire.ih_pen, :pen, pen)
+        # Parse the ExtCreatePen body to extract pen style, width, and color.
+        # Layout after header + ihPen: offBmi, cbBmi, offStyle, cbStyle,
+        # dwStyleCount, dwPenStyle, dwWidth, ulHoverStyle,
+        # then LOGBRUSH32 (style uint32 + COLORREF 4 + hatch uint32)
+        body = wire.body.to_s
+        if body.bytesize >= 44
+          pen_style = body.getbyte(20) | (body.getbyte(21) << 8) |
+                      (body.getbyte(22) << 16) | (body.getbyte(23) << 24)
+          width = body.getbyte(24) | (body.getbyte(25) << 8) |
+                  (body.getbyte(26) << 16) | (body.getbyte(27) << 24)
+          # COLORREF is at body offset 36 (B,G,R,reserved)
+          b = body.getbyte(36)
+          g = body.getbyte(37)
+          r = body.getbyte(38)
+          line_style = pen_style & 0x0F
+          pen = Pen.new(
+            style: line_style,
+            width: [width, 1].max,
+            color: Emf::Model::Geometry::Color.new(red: r, green: g, blue: b)
+          )
+          @object_table.store(wire.ih_pen, :pen, pen)
+        else
+          @object_table.store(wire.ih_pen, :pen, Pen.new)
+        end
       end
 
       # --- Bitmap handlers ---
@@ -715,7 +796,7 @@ module Emfsvg
       def parse_rgn_data_bounds(rgn_data)
         return nil if rgn_data.nil? || rgn_data.bytesize < 32
 
-        # RGNDATAHEADER.rclBounds is at offset 16 (after dwSize+iType+nCount+nRgnSize)
+        # RGNDATAHEADER.rclBounds at offset 16
         left = rgn_data.getbyte(16) | (rgn_data.getbyte(17) << 8) |
                (rgn_data.getbyte(18) << 16) | (rgn_data.getbyte(19) << 24)
         top = rgn_data.getbyte(20) | (rgn_data.getbyte(21) << 8) |
@@ -724,6 +805,24 @@ module Emfsvg
                 (rgn_data.getbyte(26) << 16) | (rgn_data.getbyte(27) << 24)
         bottom = rgn_data.getbyte(28) | (rgn_data.getbyte(29) << 8) |
                  (rgn_data.getbyte(30) << 16) | (rgn_data.getbyte(31) << 24)
+        Emf::Model::Geometry::Rect.new(left: left, top: top, right: right, bottom: bottom)
+      end
+
+      # Region ops (FillRgn etc.) carry ih_brush then cbRgnData then
+      # RGNDATA. Extract bounds from the body.
+      def parse_rgn_body_bounds(body)
+        return nil if body.nil? || body.bytesize < 36
+
+        # body layout: cbRgnData (4) + RGNDATAHEADER (32 min)
+        # rclBounds is at RGNDATAHEADER offset 16 = body offset 4+16 = 20
+        left = body.getbyte(20) | (body.getbyte(21) << 8) |
+               (body.getbyte(22) << 16) | (body.getbyte(23) << 24)
+        top = body.getbyte(24) | (body.getbyte(25) << 8) |
+              (body.getbyte(26) << 16) | (body.getbyte(27) << 24)
+        right = body.getbyte(28) | (body.getbyte(29) << 8) |
+                (body.getbyte(30) << 16) | (body.getbyte(31) << 24)
+        bottom = body.getbyte(32) | (body.getbyte(33) << 8) |
+                 (body.getbyte(34) << 16) | (body.getbyte(35) << 24)
         Emf::Model::Geometry::Rect.new(left: left, top: top, right: right, bottom: bottom)
       end
 
@@ -782,8 +881,6 @@ module Emfsvg
       end
 
       def emit_ext_text(wire, utf16:)
-        # Offsets are from the start of the EMR record. wire.to_binary_s
-        # gives us the full record bytes.
         record_bytes = wire.to_binary_s
         off_string = wire.off_string
         n_chars = wire.n_chars
@@ -801,23 +898,40 @@ module Emfsvg
                              .encode("UTF-8", undef: :replace, replace: "?")
                end
 
-        # The starting position for ExtTextOut is the WmfRect16 reference
-        # point — but in practice the position often comes from a previous
-        # MoveToEx. We use the WmfRect16 origin as a fallback.
+        # Position: use WmfRect16 origin (or current pen position).
         x = wire.wmf_rect_left
         y = maybe_flip_y(wire.wmf_rect_top)
+
+        # Text alignment from device context.
+        # Horizontal: TA_LEFT=0x00, TA_RIGHT=0x02, TA_CENTER=0x06
+        # Vertical: TA_TOP=0x00, TA_BOTTOM=0x08, TA_BASELINE=0x18
+        align = @dc.text_align
+        anchor = case align & 0x06
+                 when 0x02 then "end"
+                 when 0x06 then "middle"
+                 else "start"
+                 end
+        baseline = case align & 0x18
+                   when 0x08 then "text-after-edge"
+                   when 0x18 then "alphabetic"
+                   else "text-before-edge"
+                   end
 
         font = @dc.font
         attrs = {
           "x" => x, "y" => y,
           "font-family" => font.face_name,
-          "font-size" => font.height,
-          "fill" => @dc.text_color.to_hex
+          "font-size" => font.height.abs,
+          "fill" => @dc.text_color.to_hex,
+          "text-anchor" => anchor,
+          "dominant-baseline" => baseline
         }
         attrs["font-weight"] = "bold" if font.bold?
         attrs["font-style"] = "italic" if font.italic
-        attrs["text-decoration"] = "underline" if font.underline
-        attrs["text-decoration"] = font.strikeout ? "line-through" : "underline" if font.underline && font.strikeout
+        decorations = []
+        decorations << "underline" if font.underline
+        decorations << "line-through" if font.strikeout
+        attrs["text-decoration"] = decorations.join(" ") unless decorations.empty?
 
         @builder.tag("text", attrs) { @builder.text(text) }
       end

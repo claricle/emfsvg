@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="895" height="657" viewBox="21 0 895 657" version="1.1">
   <line stroke="#000000" stroke-width="1" x1="96" y1="1141" x2="3198" y2="1141" />
-  <text x="2838" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+  <text x="2838" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     X-axis
   </text>
   <line stroke="#000000" stroke-width="1" x1="144" y1="0" x2="144" y2="2281" />
-  <text x="134" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000">
+  <text x="134" y="0" font-family="ＭＳ ゴシック" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Y-axis
   </text>
   <line stroke="#000000" stroke-width="1" x1="144" y1="1141" x2="174" y2="1075" />
@@ -292,10 +292,10 @@
   <rect fill="#008080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
   <g transform="matrix(0.285850 0.000000 0.000000 0.285282 15.265673 15.265673)">
   <rect fill="#008080" stroke="#000000" stroke-width="0" x="0" y="0" width="101" height="102" />
-  <text x="1410" y="0" font-family="HGPひげ文字" font-size="12" fill="#800080">
+  <text x="1410" y="0" font-family="HGPひげ文字" font-size="12" fill="#800080" text-anchor="start" dominant-baseline="alphabetic">
     sin
   </text>
-  <text x="1100" y="0" font-family="HGPひげ文字" font-size="12" fill="#800080">
+  <text x="1100" y="0" font-family="HGPひげ文字" font-size="12" fill="#800080" text-anchor="start" dominant-baseline="alphabetic">
     cos
   </text>
   <g transform="matrix(0.285850 0.000000 0.000000 0.285282 123.565544 123.565544)">

@@ -11,7 +11,7 @@
       <rect x="218" y="8" width="189" height="17" />
     </clipPath>
   </defs>
-  <text x="220" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="220" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dendrogramme de 10  Variables
   </text>
   <defs>
@@ -24,7 +24,7 @@
       <rect x="269" y="27" width="87" height="-2" />
     </clipPath>
   </defs>
-  <text x="271" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="271" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Saut Minimum
   </text>
   <defs>
@@ -37,7 +37,7 @@
       <rect x="278" y="46" width="69" height="-21" />
     </clipPath>
   </defs>
-  <text x="279" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="279" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     1-r Pearson
   </text>
   <defs>
@@ -1466,22 +1466,22 @@
   <rect x="512" y="416" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-9)" x1="608" y1="413" x2="608" y2="416" />
   <rect x="608" y="416" width="1" height="1" fill="#000000" />
-  <text x="121" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="121" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,3
   </text>
-  <text x="217" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="217" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,4
   </text>
-  <text x="312" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="312" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="408" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="408" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,6
   </text>
-  <text x="503" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="503" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,7
   </text>
-  <text x="599" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="599" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,8
   </text>
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-9)" x1="154" y1="415" x2="154" y2="416" />
@@ -1524,7 +1524,7 @@
   <rect x="584" y="416" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-9)" x1="608" y1="415" x2="608" y2="416" />
   <rect x="608" y="416" width="1" height="1" fill="#000000" />
-  <text x="323" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="323" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Agrégation
   </text>
   <path stroke="#000000" stroke-width="0" clip-path="url(#clip-9)" d="M 130 71 L 608 71 " />
@@ -1605,34 +1605,34 @@
   <rect x="130" y="102" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-9)" x1="133" y1="71" x2="130" y2="71" />
   <rect x="130" y="71" width="1" height="1" fill="#000000" />
-  <text x="46" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="46" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     C-Hédonisme
   </text>
-  <text x="9" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     E-Centration sur soi
   </text>
-  <text x="46" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="46" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     D-Stimulation
   </text>
-  <text x="32" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="32" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     F-Universalisme
   </text>
-  <text x="35" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="35" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     G-Bienveillance
   </text>
-  <text x="62" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="62" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     H-Tradition
   </text>
-  <text x="38" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="38" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     J-Conformisme
   </text>
-  <text x="63" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="63" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     K-Sécurité
   </text>
-  <text x="69" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="69" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     A-Pouvoir
   </text>
-  <text x="7" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     B-Accomplissement
   </text>
   <path stroke="#000000" stroke-width="0" clip-path="url(#clip-9)" d="M 608 416 L 608 71 " />

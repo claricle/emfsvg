@@ -6,194 +6,194 @@
   <line stroke="#000000" stroke-width="0" x1="585" y1="-7.0" x2="585" y2="-685.0" />
   <line stroke="#000000" stroke-width="0" x1="585" y1="-685.0" x2="-4" y2="-685.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -4 -665.0 L 298 -665.0 L 311 -679.0 L 311 -685.0 L -4 -685.0 L -4 -665.0 Z " fill-rule="evenodd" />
-  <text x="1" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="1" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     class Fig: DGGS Core - Components of Core Quantization Functions module
   </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 190 -91.0 L 190 -50.0 L 326 -50.0 L 326 -79.0 L 314 -91.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 314 -91.0 L 314 -79.0 L 326 -79.0 Z " fill-rule="evenodd" />
-  <text x="195" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="195" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     KEY:
   </text>
   <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="310" y="-50.0" width="93" height="58" rx="3.0" ry="3.0" />
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="321" y="-61.0" width="16" height="16" />
-  <text x="344" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="344" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
     ISO 19170-1
   </text>
-  <text x="355" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="355" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
   <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="221" y="-50.0" width="85" height="56" rx="3.0" ry="3.0" />
   <rect fill="#FFD700" stroke="#000000" stroke-width="1" x="231" y="-60.0" width="16" height="16" />
-  <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
     19156 Ed 1
   </text>
-  <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-473.0" width="222" height="61" />
-  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «interface»
   </text>
-  <text x="242" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="242" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     DataAssignmentProcess
   </text>
   <line stroke="#000000" stroke-width="2" x1="179" y1="-498.0" x2="401" y2="-498.0" />
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     cellContext: QuantizationContext
   </text>
   <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="21" y="-473.0" width="133" height="61" />
-  <text x="61" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="61" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     observation::
   </text>
-  <text x="47" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="47" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ObservationContext
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-575.0" width="222" height="75" />
-  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «interface»
   </text>
-  <text x="246" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="246" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     QuantizationFunctions
   </text>
   <line stroke="#000000" stroke-width="2" x1="179" y1="-614.0" x2="401" y2="-614.0" />
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     cellContext: Quantization [1..6]
   </text>
   <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="427" y="-473.0" width="133" height="61" />
-  <text x="463" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="463" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «FeatureType»
   </text>
-  <text x="441" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="441" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     observation::OM_Process
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="20" y="-218.0" width="100" height="119" />
-  <text x="49" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="49" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «CodeList»
   </text>
-  <text x="45" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="45" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Quantization
   </text>
   <line stroke="#000000" stroke-width="1" x1="20" y1="-301.0" x2="120" y2="-301.0" />
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     asCoordinates
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     asDataCells
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     asDataTiles
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     asGraphicCells
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     asGraphicTiles
   </text>
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     asTags
   </text>
   <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="222" y="-371.0" width="133" height="61" />
-  <text x="307" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="307" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     AnyFeature
   </text>
-  <text x="258" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="258" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «FeatureType»
   </text>
-  <text x="226" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="226" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     observation::OM_Observation
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="20" y="-371.0" width="179" height="61" />
-  <text x="87" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="87" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «interface»
   </text>
-  <text x="69" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="69" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     QuantizationContext
   </text>
   <line stroke="#000000" stroke-width="1" x1="20" y1="-396.0" x2="199" y2="-396.0" />
-  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="25" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     role: Quantization
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="323" y="-99.0" width="237" height="84" />
-  <text x="419" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="419" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «interface»
   </text>
-  <text x="349" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="349" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Core RS using Zonal Identifiers with Structured
   </text>
-  <text x="411" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="411" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Geometry::Cell
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="21" y="-99.0" width="237" height="84" />
-  <text x="117" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="117" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «interface»
   </text>
-  <text x="76" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="76" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Zonal RS using Identifiers::Zone
   </text>
   <line stroke="#000000" stroke-width="1" x1="21" y1="-147.0" x2="258" y2="-147.0" />
-  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     /extent: EX_Extent
   </text>
-  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     identifier: ZonalIdentifier
   </text>
-  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="26" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     representativePosition: DirectPosition [1..4] {ordered}
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-235.0" width="222" height="84" />
-  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «interface»
   </text>
-  <text x="254" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="254" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     DGG_Observation
   </text>
   <line stroke="#000000" stroke-width="2" x1="179" y1="-283.0" x2="401" y2="-283.0" />
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     field: OM_Observation [1..*]
   </text>
-  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="184" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
-  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     identifier: ZonalIdentifier [1..*]
   </text>
   <line stroke="#000000" stroke-width="1" x1="291" y1="-536.0" x2="291" y2="-574.0" />
@@ -237,55 +237,55 @@
   <line stroke="#000000" stroke-width="1" x1="148" y1="-189.0" x2="142" y2="-184.0" />
   <line stroke="#000000" stroke-width="1" x1="142" y1="-184.0" x2="157" y2="-190.0" />
   <line stroke="#000000" stroke-width="1" x1="142" y1="-184.0" x2="150" y2="-197.0" />
-  <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +data
   </text>
-  <text x="304" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="304" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0..*
   </text>
-  <text x="297" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="297" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1..*
   </text>
-  <text x="379" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="379" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +generatedObservation
   </text>
-  <text x="359" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="359" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0..*
   </text>
-  <text x="418" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="418" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ProcessUsed
   </text>
-  <text x="515" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="515" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +procedure
   </text>
-  <text x="506" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="506" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="442" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="442" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +sampling feature geometry
   </text>
-  <text x="18" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="18" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +sampling feature identifier
   </text>
-  <text x="206" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="206" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +identifier
   </text>
-  <text x="294" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="294" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1..*
   </text>
-  <text x="327" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="327" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +topology
   </text>
-  <text x="315" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="315" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="267" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="267" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Realisation
   </text>
-  <text x="218" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="218" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +position
   </text>
-  <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
   

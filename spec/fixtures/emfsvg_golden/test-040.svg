@@ -2,28 +2,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14030" height="9920" viewBox="0 0 14030 9920" version="1.1">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <rect fill="#FFFFAD" stroke="#000000" stroke-width="1" x="0" y="0" width="14031" height="9921" />
-  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     libUEMF v0.1.17
   </text>
-  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     July 25, 2014
   </text>
-  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="9700" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     EMF test: 00
   </text>
-  <ellipse fill="#C47FFF" stroke="#000000" stroke-width="1" cx="250.0" cy="1450.0" rx="150.0" ry="150.0" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="500" y="1300" width="300" height="300" />
-  <line stroke="#000000" stroke-width="1" x1="900" y1="1300" x2="1200" y2="1500" />
-  <line stroke="#000000" stroke-width="1" x1="1200" y1="1500" x2="1200" y2="1700" />
-  <line stroke="#000000" stroke-width="1" x1="1200" y1="1700" x2="900" y2="1500" />
-  <path stroke="#000000" stroke-width="1" d="M 1343.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1450.000000 1600.000000" />
-  <path stroke="#000000" stroke-width="1" d="M 1643.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1750.000000 1600.000000" />
-  <line stroke="#000000" stroke-width="1" x1="1800" y1="1300" x2="1750" y2="1450" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 1943.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 2050.000000 1600.000000 Z" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 2243.9339828220177 1343.933982822018 A 150.000000 150.000000 0 0 0 2350.000000 1600.000000 L 2350.000000 1450.000000 Z" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="2600" y="1300" width="300" height="300" rx="50.0" ry="12.5" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3100 1300 L 3200 1600 L 3000 1400 L 3200 1400 L 3000 1600 Z " fill-rule="nonzero" />
-  <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 3400 1300 L 3500 1600 L 3300 1400 L 3500 1400 L 3300 1600 Z " fill-rule="evenodd" />
+  <ellipse fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" cx="250.0" cy="1450.0" rx="150.0" ry="150.0" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="500" y="1300" width="300" height="300" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="900" y1="1300" x2="1200" y2="1500" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="1200" y1="1500" x2="1200" y2="1700" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="1200" y1="1700" x2="900" y2="1500" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 1343.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1450.000000 1600.000000" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 1643.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 1750.000000 1600.000000" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x1="1800" y1="1300" x2="1750" y2="1450" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 1943.933982822018 1343.933982822018 A 150.000000 150.000000 0 1 1 2050.000000 1600.000000 Z" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 2243.9339828220177 1343.933982822018 A 150.000000 150.000000 0 0 0 2350.000000 1600.000000 L 2350.000000 1450.000000 Z" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="2600" y="1300" width="300" height="300" rx="50.0" ry="12.5" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 3100 1300 L 3200 1600 L 3000 1400 L 3200 1400 L 3000 1600 Z " fill-rule="nonzero" />
+  <path fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 3400 1300 L 3500 1600 L 3300 1400 L 3500 1400 L 3300 1600 Z " fill-rule="evenodd" />
   <path stroke="#000000" stroke-width="1" fill="none" d="M 200 1800 C 300 1900 300 2000 200 2100 C 100 2000 100 1900 200 1800 " />
   <path fill="#C47FFF" stroke="#000000" stroke-width="1" d="M 700 1800 L 800 1900 L 800 2000 L 700 2100 L 600 2000 L 600 1900 Z " fill-rule="evenodd" />
   <path stroke="#000000" stroke-width="1" d="M 1200 1800 L 1300 1900 L 1300 2000 L 1200 2100 L 1100 2000 L 1100 1900 " />
@@ -104,93 +104,93 @@
   <path stroke="#FF00FF" stroke-width="6" stroke-dasharray="1 2" d="M 400 3700 L 600 3900 L 400 4100 " />
   <path stroke="#FF00FF" stroke-width="7" stroke-dasharray="4 2 1 2" d="M 500 3700 L 700 3900 L 500 4100 " />
   <path stroke="#FF00FF" stroke-width="8" stroke-dasharray="4 2 1 2 1 2" d="M 600 3700 L 800 3900 L 600 4100 " />
-  <path stroke="#000000" stroke-width="1" d="M 700 3700 L 900 3900 L 700 4100 " />
-  <path stroke="#000000" stroke-width="1" d="M 800 3700 L 1000 3900 L 800 4100 " />
-  <path stroke="#000000" stroke-width="1" d="M 520 5200 L 1120 5400 L 520 5600 " />
-  <path stroke="#000000" stroke-width="1" d="M 600 5200 L 1200 5400 L 600 5600 " />
-  <path stroke="#000000" stroke-width="1" d="M 520 5650 L 1120 5850 L 520 6050 " />
-  <path stroke="#000000" stroke-width="1" d="M 600 5650 L 1200 5850 L 600 6050 " />
-  <path stroke="#000000" stroke-width="1" d="M 520 6100 L 1120 6300 L 520 6500 " />
-  <path stroke="#000000" stroke-width="1" d="M 600 6100 L 1200 6300 L 600 6500 " />
-  <path stroke="#000000" stroke-width="1" d="M 770 5200 L 1370 5400 L 770 5600 " />
-  <path stroke="#000000" stroke-width="1" d="M 850 5200 L 1450 5400 L 850 5600 " />
-  <path stroke="#000000" stroke-width="1" d="M 770 5650 L 1370 5850 L 770 6050 " />
-  <path stroke="#000000" stroke-width="1" d="M 850 5650 L 1450 5850 L 850 6050 " />
-  <path stroke="#000000" stroke-width="1" d="M 770 6100 L 1370 6300 L 770 6500 " />
-  <path stroke="#000000" stroke-width="1" d="M 850 6100 L 1450 6300 L 850 6500 " />
-  <path stroke="#000000" stroke-width="1" d="M 1020 5200 L 1620 5400 L 1020 5600 " />
-  <path stroke="#000000" stroke-width="1" d="M 1100 5200 L 1700 5400 L 1100 5600 " />
-  <path stroke="#000000" stroke-width="1" d="M 1020 5650 L 1620 5850 L 1020 6050 " />
-  <path stroke="#000000" stroke-width="1" d="M 1100 5650 L 1700 5850 L 1100 6050 " />
-  <path stroke="#000000" stroke-width="1" d="M 1020 6100 L 1620 6300 L 1020 6500 " />
-  <path stroke="#000000" stroke-width="1" d="M 1100 6100 L 1700 6300 L 1100 6500 " />
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <path stroke="#000004" stroke-width="1" stroke-dasharray="4 2" d="M 700 3700 L 900 3900 L 700 4100 " />
+  <path stroke="#000004" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 800 3700 L 1000 3900 L 800 4100 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 520 5200 L 1120 5400 L 520 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 600 5200 L 1200 5400 L 600 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 520 5650 L 1120 5850 L 520 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 600 5650 L 1200 5850 L 600 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 520 6100 L 1120 6300 L 520 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 600 6100 L 1200 6300 L 600 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 770 5200 L 1370 5400 L 770 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 850 5200 L 1450 5400 L 850 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 770 5650 L 1370 5850 L 770 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 850 5650 L 1450 5850 L 850 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 770 6100 L 1370 6300 L 770 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 850 6100 L 1450 6300 L 850 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1020 5200 L 1620 5400 L 1020 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1100 5200 L 1700 5400 L 1100 5600 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1020 5650 L 1620 5850 L 1020 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1100 5650 L 1700 5850 L 1100 6050 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1020 6100 L 1620 6300 L 1020 6500 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" d="M 1100 6100 L 1700 6300 L 1100 6500 " />
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHDIBITS 1
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     BITBLT        1
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHBLT    1
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHDIBITS 2
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     BITBLT        2
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHBLT    2
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHDIBITS 3
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     BITBLT        3
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHBLT    3
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHDIBITS 4
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     BITBLT        4
   </text>
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHBLT    4
   </text>
-  <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR32 
   </text>
-  <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR24 
   </text>
-  <text x="5840" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5840" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR16 
   </text>
-  <text x="6060" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="6060" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -COLOR16 
   </text>
-  <text x="6280" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="6280" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR8  
   </text>
-  <text x="6500" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="6500" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR4  
   </text>
-  <text x="6720" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="6720" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +MONO    
   </text>
-  <text x="6940" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="6940" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -MONO    
   </text>
-  <text x="7160" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="7160" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR8 0
   </text>
-  <text x="7380" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="7380" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +COLOR4 0
   </text>
-  <text x="7600" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="7600" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +MONO   0
   </text>
   <image x="5400" y="5000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAA6UlEQVR42iVQbbWmIQicIEMPCEIQ6IFBDKI9njcIV3aPf1CZTzTQP6KvorejV6Cz0L7RdtDyof+dH8AfyavkdnIFmUX6Ju2Q8pH4sXEBvaReVd2uukI1S9W3qh1VuSq42tjAgOfdt7uvcM96w7vYdpPtgu2NBcQiY6nGco8VEVkRg7AVJisEKxoJVJKVqpXulRGV+cZHa1kmWYKshgOTYezt/4JDPJin69vEtzxzDQOOkcdUj82PxTKrtDFox8SOwE5DgE/IT0SvDFxiiVTKpJC3KJ9Avlf3K3yqnJamgMk2tsfRiA3PW+k/426RGFVsRH4AAAAASUVORK5CYII=" preserveAspectRatio="none" />
@@ -230,457 +230,457 @@
   <image x="7600" y="5680" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
   <image x="7600" y="6360" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
   <image x="7600" y="7040" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGUlEQVR42mNgYGD4v2rVKjhmwBBA5mAVAABtHSvVa+4w5QAAAABJRU5ErkJggg==" preserveAspectRatio="none" />
-  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5000" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STRETCHDIBITS
   </text>
   <image x="5400" y="8000" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAUElEQVQYlW2OwQ3AMAgDrxJjwP6DAXO0j1QJQfiFMGfzvBBKKG7DIAGgjIrfni4SQPwsrHJLmy4ZZdVsyKulhm/utBT6ytHbzv74uhDvXJV9Tw0bLHsWOIMAAAAAAElFTkSuQmCC" preserveAspectRatio="none" />
-  <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     PNG
   </text>
   <image x="5620" y="8000" width="200" height="200" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCAAKAAoDAREAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQYH/8QAFQEBAQAAAAAAAAAAAAAAAAAABQf/2gAMAwEAAhADEAAAAY4hpBODYRQ6qtZDP//EABwQAAEDBQAAAAAAAAAAAAAAAAMAAQUCBBITIf/aAAgBAQABBQKJvxaHnugJUsnX/8QAHxEAAgECBwAAAAAAAAAAAAAAAAECAwQFBhEVISIx/9oACAEDAQE/AczXm46xj6Twrs+CqNI//8QAHhEAAQQBBQAAAAAAAAAAAAAAAAECAyEFBhEUFmL/2gAIAQIBAT8BiwnNpEOleTT7UqhsbNko/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECMiIxkf/aAAgBAQAGPwJSk8ixZ9Ns/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAERIVHx/9oACAEBAAE/IUlKlLSBgrAu8f/aAAwDAQACAAMAAAAQ2Q//xAAaEQEBAAIDAAAAAAAAAAAAAAABABEhQcHw/9oACAEDAQE/ENyedyqPJmuVlKpf/8QAGhEBAAIDAQAAAAAAAAAAAAAAAQAhMUGRwf/aAAgBAgEBPxCrfg0PMW1ciKuDRP/EABkQAQEBAAMAAAAAAAAAAAAAAAEAESExQf/aAAgBAQABPxAxsaVphAAoA9RBCDgBQ4Ki+6v/2Q==" preserveAspectRatio="none" />
-  <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="5620" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     JPG
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="2900" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3000" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3100" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3200" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3300" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3400" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3500" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3600" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3700" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3800" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="3900" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="4000" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="4100" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="4200" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="4300" y="5000" width="90" height="4019" />
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="4400" y="5000" width="90" height="4019" />
-  <line stroke="#000000" stroke-width="1" x1="4530" y1="4950" x2="4530" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4540" y1="4950" x2="4540" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4550" y1="4950" x2="4550" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4560" y1="4950" x2="4560" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4570" y1="4950" x2="4570" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4580" y1="4950" x2="4580" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4590" y1="4950" x2="4590" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4600" y1="4950" x2="4600" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4610" y1="4950" x2="4610" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4620" y1="4950" x2="4620" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4630" y1="4950" x2="4630" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4640" y1="4950" x2="4640" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4650" y1="4950" x2="4650" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4660" y1="4950" x2="4660" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4670" y1="4950" x2="4670" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4680" y1="4950" x2="4680" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4730" y1="4950" x2="4730" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4740" y1="4950" x2="4740" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4750" y1="4950" x2="4750" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4760" y1="4950" x2="4760" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4770" y1="4950" x2="4770" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4780" y1="4950" x2="4780" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4790" y1="4950" x2="4790" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4800" y1="4950" x2="4800" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4810" y1="4950" x2="4810" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4820" y1="4950" x2="4820" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4830" y1="4950" x2="4830" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4840" y1="4950" x2="4840" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4850" y1="4950" x2="4850" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4860" y1="4950" x2="4860" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4870" y1="4950" x2="4870" y2="9069" />
-  <line stroke="#000000" stroke-width="1" x1="4880" y1="4950" x2="4880" y2="9069" />
-  <text x="100" y="0" font-family="Arial" font-size="12" fill="#0000FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2900" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3000" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3100" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3200" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3300" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3400" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3500" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3600" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3700" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3800" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3900" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4000" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4100" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4200" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4300" y="5000" width="90" height="4019" />
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4400" y="5000" width="90" height="4019" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4530" y1="4950" x2="4530" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4540" y1="4950" x2="4540" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4550" y1="4950" x2="4550" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4560" y1="4950" x2="4560" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4570" y1="4950" x2="4570" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4580" y1="4950" x2="4580" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4590" y1="4950" x2="4590" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4600" y1="4950" x2="4600" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4610" y1="4950" x2="4610" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4620" y1="4950" x2="4620" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4630" y1="4950" x2="4630" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4640" y1="4950" x2="4640" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4650" y1="4950" x2="4650" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4660" y1="4950" x2="4660" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4670" y1="4950" x2="4670" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4680" y1="4950" x2="4680" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4730" y1="4950" x2="4730" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4740" y1="4950" x2="4740" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4750" y1="4950" x2="4750" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4760" y1="4950" x2="4760" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4770" y1="4950" x2="4770" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4780" y1="4950" x2="4780" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4790" y1="4950" x2="4790" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4800" y1="4950" x2="4800" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4810" y1="4950" x2="4810" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4820" y1="4950" x2="4820" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4830" y1="4950" x2="4830" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4840" y1="4950" x2="4840" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4850" y1="4950" x2="4850" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4860" y1="4950" x2="4860" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4870" y1="4950" x2="4870" y2="9069" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x1="4880" y1="4950" x2="4880" y2="9069" />
+  <text x="100" y="0" font-family="Arial" font-size="12" fill="#0000FF" text-anchor="start" dominant-baseline="text-before-edge">
     Text8 from U_EMREXTTEXTOUTA
   </text>
-  <text x="100" y="0" font-family="Arial" font-size="12" fill="#FF00FF">
+  <text x="100" y="0" font-family="Arial" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Text16 from U_EMREXTTEXTOUTW
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5480" y="80" width="40" height="40" />
-  <text x="5500" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5480" y="80" width="40" height="40" />
+  <text x="5500" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:default
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="80" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="80" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x00
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="180" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="180" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
     textalignment:0x02
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="280" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="280" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x04
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="380" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="380" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
     textalignment:0x06
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="480" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="480" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     textalignment:0x08
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="580" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="580" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-after-edge">
     textalignment:0x0A
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="680" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="680" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     textalignment:0x0C
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="780" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="780" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-after-edge">
     textalignment:0x0E
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="880" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="880" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x10
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="980" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="980" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
     textalignment:0x12
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="1080" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="1080" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x14
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="1180" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="1180" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
     textalignment:0x16
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="5980" y="1280" width="40" height="40" />
-  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5980" y="1280" width="40" height="40" />
+  <text x="6000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     textalignment:0x18
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="60" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="60" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x00
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="160" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="160" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
     textalignment:0x02
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="260" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="260" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x04
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="360" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="360" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
     textalignment:0x06
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="460" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="460" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     textalignment:0x08
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="560" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="560" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-after-edge">
     textalignment:0x0A
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="660" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="660" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     textalignment:0x0C
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="760" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="760" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-after-edge">
     textalignment:0x0E
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="860" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="860" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x10
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="960" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="960" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="end" dominant-baseline="text-before-edge">
     textalignment:0x12
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="1060" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="1060" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     textalignment:0x14
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="1160" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="1160" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="middle" dominant-baseline="text-before-edge">
     textalignment:0x16
   </text>
-  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" x="6960" y="1260" width="80" height="80" />
-  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <rect fill="#C47FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="6960" y="1260" width="80" height="80" />
+  <text x="7000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     textalignment:0x18
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:0
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:30
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:60
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:90
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:120
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:150
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:180
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:210
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:240
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:270
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:300
   </text>
-  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8000" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="alphabetic">
     ....Degrees:330
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:0
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:30
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:60
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:90
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:120
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:150
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:180
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:210
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:240
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:270
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:300
   </text>
-  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="8600" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     ....Degrees:330
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:0
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:30
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:60
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:90
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:120
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:150
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:180
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:210
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:240
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:270
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:300
   </text>
-  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="9200" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-after-edge">
     ....Degrees:330
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2000" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2330" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2660" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2990" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="3320" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="3650" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="3980" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="4310" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="4640" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="4970" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="5300" y="3500" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="5630" y="3500" width="300" height="300" />
-  <line stroke="#000000" stroke-width="1" x1="6300" y1="3600" x2="6300" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="6630" y1="3600" x2="6630" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="6960" y1="3600" x2="6960" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="7290" y1="3600" x2="7290" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="7620" y1="3600" x2="7620" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="7950" y1="3600" x2="7950" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="8280" y1="3600" x2="8280" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="8610" y1="3600" x2="8610" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="8940" y1="3600" x2="8940" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="9270" y1="3600" x2="9270" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="9600" y1="3600" x2="9600" y2="4100" />
-  <line stroke="#000000" stroke-width="1" x1="9930" y1="3600" x2="9930" y2="4100" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2000" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2330" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2660" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="2990" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="3320" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="3650" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="3980" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="4310" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="4640" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="4970" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="5300" y="3830" width="300" height="300" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="5630" y="3830" width="300" height="300" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="2330" y="4160" width="30" height="30" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="2660" y="4160" width="60" height="60" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="2990" y="4160" width="90" height="90" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="3320" y="4160" width="120" height="120" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="3650" y="4160" width="150" height="150" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="3980" y="4160" width="180" height="180" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="4310" y="4160" width="210" height="210" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="4640" y="4160" width="240" height="240" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="4970" y="4160" width="270" height="270" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="5300" y="4160" width="300" height="300" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="5630" y="4160" width="330" height="330" />
-  <line stroke="#000000" stroke-width="1" x1="6600" y1="4150" x2="6600" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="6600" y1="4260" x2="6600" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="6930" y1="4150" x2="6930" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="6930" y1="4260" x2="6930" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="7260" y1="4150" x2="7260" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="7260" y1="4260" x2="7260" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="7590" y1="4150" x2="7590" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="7590" y1="4260" x2="7590" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="7920" y1="4150" x2="7920" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="7920" y1="4260" x2="7920" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="8250" y1="4150" x2="8250" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="8250" y1="4260" x2="8250" y2="4760" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="2330" y="4520" width="30" height="30" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="2660" y="4520" width="60" height="60" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="2990" y="4520" width="90" height="90" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="3320" y="4520" width="120" height="120" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="3650" y="4520" width="150" height="150" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="3980" y="4520" width="180" height="180" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="4310" y="4520" width="210" height="210" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="4640" y="4520" width="240" height="240" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="4970" y="4520" width="270" height="270" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="5300" y="4520" width="300" height="300" />
-  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="5630" y="4520" width="330" height="330" />
-  <line stroke="#000000" stroke-width="1" x1="9300" y1="4150" x2="9300" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="9300" y1="4260" x2="9300" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="9630" y1="4150" x2="9630" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="9630" y1="4260" x2="9630" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="9960" y1="4150" x2="9960" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="9960" y1="4260" x2="9960" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="10290" y1="4150" x2="10290" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="10290" y1="4260" x2="10290" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="10620" y1="4150" x2="10620" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="10620" y1="4260" x2="10620" y2="4760" />
-  <line stroke="#000000" stroke-width="1" x1="10950" y1="4150" x2="10950" y2="4870" />
-  <line stroke="#000000" stroke-width="1" x1="10950" y1="4260" x2="10950" y2="4760" />
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="5000" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2000" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2330" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2660" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="2990" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3320" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3650" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="3980" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4310" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4640" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="4970" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5300" y="3500" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2 1 2 1 2" x="5630" y="3500" width="300" height="300" />
+  <line stroke="#000000" stroke-width="2" x1="6300" y1="3600" x2="6300" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="6630" y1="3600" x2="6630" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="6960" y1="3600" x2="6960" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="7290" y1="3600" x2="7290" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="7620" y1="3600" x2="7620" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="7950" y1="3600" x2="7950" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="8280" y1="3600" x2="8280" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="8610" y1="3600" x2="8610" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="8940" y1="3600" x2="8940" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="9270" y1="3600" x2="9270" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="9600" y1="3600" x2="9600" y2="4100" />
+  <line stroke="#000000" stroke-width="2" x1="9930" y1="3600" x2="9930" y2="4100" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2000" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2330" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2660" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="2990" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="3320" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="3650" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="3980" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="4310" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="4640" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="4970" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="5300" y="3830" width="300" height="300" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" x="5630" y="3830" width="300" height="300" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2330" y="4160" width="30" height="30" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2660" y="4160" width="60" height="60" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="2990" y="4160" width="90" height="90" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="3320" y="4160" width="120" height="120" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="3650" y="4160" width="150" height="150" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="3980" y="4160" width="180" height="180" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="4310" y="4160" width="210" height="210" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="4640" y="4160" width="240" height="240" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="4970" y="4160" width="270" height="270" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="5300" y="4160" width="300" height="300" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="5630" y="4160" width="330" height="330" />
+  <line stroke="#000000" stroke-width="2" x1="6600" y1="4150" x2="6600" y2="4870" />
+  <line stroke="#000000" stroke-width="5" x1="6600" y1="4260" x2="6600" y2="4760" />
+  <line stroke="#000000" stroke-width="5" x1="6930" y1="4150" x2="6930" y2="4870" />
+  <line stroke="#000004" stroke-width="5" x1="6930" y1="4260" x2="6930" y2="4760" />
+  <line stroke="#000004" stroke-width="5" x1="7260" y1="4150" x2="7260" y2="4870" />
+  <line stroke="#000000" stroke-width="6" x1="7260" y1="4260" x2="7260" y2="4760" />
+  <line stroke="#000000" stroke-width="6" x1="7590" y1="4150" x2="7590" y2="4870" />
+  <line stroke="#000004" stroke-width="6" x1="7590" y1="4260" x2="7590" y2="4760" />
+  <line stroke="#000004" stroke-width="6" x1="7920" y1="4150" x2="7920" y2="4870" />
+  <line stroke="#000000" stroke-width="3" x1="7920" y1="4260" x2="7920" y2="4760" />
+  <line stroke="#000000" stroke-width="3" x1="8250" y1="4150" x2="8250" y2="4870" />
+  <line stroke="#000004" stroke-width="3" x1="8250" y1="4260" x2="8250" y2="4760" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="2330" y="4520" width="30" height="30" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="2660" y="4520" width="60" height="60" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="2990" y="4520" width="90" height="90" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="3320" y="4520" width="120" height="120" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="3650" y="4520" width="150" height="150" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="3980" y="4520" width="180" height="180" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="4310" y="4520" width="210" height="210" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="4640" y="4520" width="240" height="240" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="4970" y="4520" width="270" height="270" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="5300" y="4520" width="300" height="300" />
+  <rect fill="#FFFFFF" stroke="#000004" stroke-width="3" x="5630" y="4520" width="330" height="330" />
+  <line stroke="#000004" stroke-width="3" x1="9300" y1="4150" x2="9300" y2="4870" />
+  <line stroke="#000000" stroke-width="5" x1="9300" y1="4260" x2="9300" y2="4760" />
+  <line stroke="#000000" stroke-width="5" x1="9630" y1="4150" x2="9630" y2="4870" />
+  <line stroke="#000004" stroke-width="5" x1="9630" y1="4260" x2="9630" y2="4760" />
+  <line stroke="#000004" stroke-width="5" x1="9960" y1="4150" x2="9960" y2="4870" />
+  <line stroke="#000000" stroke-width="6" x1="9960" y1="4260" x2="9960" y2="4760" />
+  <line stroke="#000000" stroke-width="6" x1="10290" y1="4150" x2="10290" y2="4870" />
+  <line stroke="#000004" stroke-width="6" x1="10290" y1="4260" x2="10290" y2="4760" />
+  <line stroke="#000004" stroke-width="6" x1="10620" y1="4150" x2="10620" y2="4870" />
+  <line stroke="#000000" stroke-width="3" x1="10620" y1="4260" x2="10620" y2="4760" />
+  <line stroke="#000000" stroke-width="3" x1="10950" y1="4150" x2="10950" y2="4870" />
+  <line stroke="#000004" stroke-width="3" x1="10950" y1="4260" x2="10950" y2="4760" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5000" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:Q tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="5400" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5400" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:Q tC:G 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="5800" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="5800" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:R tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="6200" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6200" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:+ bC:R tC:G 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="6600" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="6600" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:Q tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="7000" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7000" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:Q tC:G 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="7400" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7400" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:R tC:K 
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="8000" y="7800" width="700" height="300" />
-  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00">
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x="8000" y="7800" width="700" height="300" />
+  <text x="8350" y="0" font-family="Courier New" font-size="12" fill="#007F00" text-anchor="middle" dominant-baseline="text-before-edge">
     bk:- bC:R tC:G 
   </text>
-  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Path contains invalid operations.
   </text>
-  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Any graphic produced is acceptable.
   </text>
-  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000">
+  <text x="8800" y="0" font-family="Courier New" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Rendering program should not crash.
   </text>
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="5200" x2="9000" y2="5300" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="5300" x2="9100" y2="5400" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="5400" x2="9000" y2="5500" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="5500" x2="9100" y2="5600" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="5600" x2="9000" y2="5700" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="5700" x2="9100" y2="5800" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="5800" x2="9000" y2="5900" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="5900" x2="9100" y2="6000" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="6000" x2="9000" y2="6100" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="6100" x2="9100" y2="6200" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="6200" x2="9000" y2="6300" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="6300" x2="9100" y2="6400" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="6400" x2="9000" y2="6500" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="6500" x2="9100" y2="6600" />
-  <line stroke="#000000" stroke-width="1" x1="9100" y1="6600" x2="9000" y2="6700" />
-  <line stroke="#000000" stroke-width="1" x1="9000" y1="6700" x2="9100" y2="6800" />
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5200" x2="9000" y2="5300" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5300" x2="9100" y2="5400" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5400" x2="9000" y2="5500" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5500" x2="9100" y2="5600" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5600" x2="9000" y2="5700" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5700" x2="9100" y2="5800" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="5800" x2="9000" y2="5900" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="5900" x2="9100" y2="6000" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6000" x2="9000" y2="6100" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6100" x2="9100" y2="6200" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6200" x2="9000" y2="6300" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6300" x2="9100" y2="6400" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6400" x2="9000" y2="6500" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6500" x2="9100" y2="6600" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9100" y1="6600" x2="9000" y2="6700" />
+  <line stroke="#000000" stroke-width="2" stroke-dasharray="1 2" x1="9000" y1="6700" x2="9100" y2="6800" />
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     NoClip
   </text>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" stroke="#000000" stroke-width="1" d="M 13547 1744 L 13441 1651 L 13333 1742 L 13389 1613 L 13269 1538 L 13410 1552 L 13443 1414 L 13474 1552 L 13615 1542 L 13493 1614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" stroke="#000000" stroke-width="2" stroke-dasharray="1 2" d="M 13547 1744 L 13441 1651 L 13333 1742 L 13389 1613 L 13269 1538 L 13410 1552 L 13443 1414 L 13474 1552 L 13615 1542 L 13493 1614 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include)
   </text>
-  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" x="13250" y="1900" width="200" height="400" />
+  <rect fill="#3F7FFF" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="1900" width="200" height="400" />
   <defs>
     <clipPath id="clip-1">
       <rect x="13250" y="1900" width="200" height="400" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2244 L 13441 2151 L 13333 2242 L 13389 2113 L 13269 2038 L 13410 2052 L 13443 1914 L 13474 2052 L 13615 2042 L 13493 2114 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rects (include,include)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" x="13250" y="2400" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" x="13250" y="2600" width="400" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2400" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2600" width="400" height="200" />
   <defs>
     <clipPath id="clip-2">
       <rect x="13250" y="2400" width="200" height="-100" />
@@ -691,34 +691,34 @@
       <rect x="13250" y="2600" width="200" height="-300" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 2744 L 13441 2651 L 13333 2742 L 13389 2613 L 13269 2538 L 13410 2552 L 13443 2414 L 13474 2552 L 13615 2542 L 13493 2614 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (exclude)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" x="13250" y="2900" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="2900" width="200" height="400" />
   <defs>
     <clipPath id="clip-4">
       <rect x="13250" y="2900" width="200" height="400" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3244 L 13441 3151 L 13333 3242 L 13389 3113 L 13269 3038 L 13410 3052 L 13443 2914 L 13474 3052 L 13615 3042 L 13493 3114 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rects (exclude,exclude)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" x="13250" y="3400" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" x="13250" y="3600" width="400" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3400" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-4)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3600" width="400" height="200" />
   <defs>
     <clipPath id="clip-5">
       <rect x="13250" y="3400" width="200" height="400" />
@@ -729,126 +729,126 @@
       <rect x="13250" y="3600" width="400" height="200" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 3744 L 13441 3651 L 13333 3742 L 13389 3613 L 13269 3538 L 13410 3552 L 13443 3414 L 13474 3552 L 13615 3542 L 13493 3614 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) AND path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="13250" y="3900" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="3900" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-7">
       <rect x="13250" y="3900" width="200" height="-100" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 3900 L 13350 3905 L 13500 3950 L 13550 4300 L 13425 4250 L 13325 4100 L 13300 3950 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4244 L 13441 4151 L 13333 4242 L 13389 4113 L 13269 4038 L 13410 4052 L 13443 3914 L 13474 4052 L 13615 4042 L 13493 4114 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) OR path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" x="13250" y="4400" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4400" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-8">
       <rect x="13250" y="4400" width="200" height="-600" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4400 L 13350 4405 L 13500 4450 L 13550 4800 L 13425 4750 L 13325 4600 L 13300 4450 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 4744 L 13441 4651 L 13333 4742 L 13389 4613 L 13269 4538 L 13410 4552 L 13443 4414 L 13474 4552 L 13615 4542 L 13493 4614 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) XOR path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" x="13250" y="4900" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="4900" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-8)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-9">
       <rect x="13250" y="4900" width="200" height="-1100" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 4900 L 13350 4905 L 13500 4950 L 13550 5300 L 13425 5250 L 13325 5100 L 13300 4950 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5244 L 13441 5151 L 13333 5242 L 13389 5113 L 13269 5038 L 13410 5052 L 13443 4914 L 13474 5052 L 13615 5042 L 13493 5114 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) DIFF path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" x="13250" y="5400" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5400" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-10">
       <rect x="13250" y="5400" width="200" height="-1600" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5400 L 13350 5405 L 13500 5450 L 13550 5800 L 13425 5750 L 13325 5600 L 13300 5450 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 5744 L 13441 5651 L 13333 5742 L 13389 5613 L 13269 5538 L 13410 5552 L 13443 5414 L 13474 5552 L 13615 5542 L 13493 5614 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include) COPY path
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" x="13250" y="5900" width="200" height="400" />
-  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="5900" width="200" height="400" />
+  <path fill="#3F7FFF" clip-path="url(#clip-10)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
   <defs>
     <clipPath id="clip-11">
       <rect x="13250" y="5900" width="200" height="-2100" />
     </clipPath>
   </defs>
-  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13250 5900 L 13350 5905 L 13500 5950 L 13550 6300 L 13425 6250 L 13325 6100 L 13300 5950 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6244 L 13441 6151 L 13333 6242 L 13389 6113 L 13269 6038 L 13410 6052 L 13443 5914 L 13474 6052 L 13615 6042 L 13493 6114 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rect (include,offset)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" x="13250" y="6400" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" x="13350" y="6420" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6400" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="6420" width="200" height="400" />
   <defs>
     <clipPath id="clip-12">
       <rect x="13250" y="6400" width="200" height="-2600" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 6744 L 13441 6651 L 13333 6742 L 13389 6613 L 13269 6538 L 13410 6552 L 13443 6414 L 13474 6552 L 13615 6542 L 13493 6614 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
-  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13250" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     Rects (include,include,offset)
   </text>
-  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" x="13250" y="6900" width="200" height="400" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" x="13250" y="7100" width="400" height="200" />
-  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" x="13350" y="7120" width="200" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="6900" width="200" height="400" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13250" y="7100" width="400" height="200" />
+  <rect fill="#3F7FFF" clip-path="url(#clip-12)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" x="13350" y="7120" width="200" height="200" />
   <defs>
     <clipPath id="clip-13">
       <rect x="13250" y="6900" width="200" height="-3100" />
@@ -859,11 +859,11 @@
       <rect x="13250" y="7100" width="200" height="-3300" />
     </clipPath>
   </defs>
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextBeneathStarTest1
   </text>
-  <path fill="#3F7FFF" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
-  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF">
+  <path fill="#3F7FFF" clip-path="url(#clip-14)" stroke="#000000" stroke-width="1" stroke-dasharray="1 2" d="M 13547 7244 L 13441 7151 L 13333 7242 L 13389 7113 L 13269 7038 L 13410 7052 L 13443 6914 L 13474 7052 L 13615 7042 L 13493 7114 Z " fill-rule="nonzero" />
+  <text x="13220" y="0" font-family="Courier New" font-size="12" fill="#FF00FF" text-anchor="start" dominant-baseline="text-before-edge">
     TextAbove__StarTest2
   </text>
   </g>

@@ -6,7 +6,7 @@
   <line stroke="#000000" stroke-width="0" x1="715" y1="15.0" x2="715" y2="-682.0" />
   <line stroke="#000000" stroke-width="0" x1="715" y1="-682.0" x2="6" y2="-682.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M 6 -662.0 L 331 -662.0 L 344 -676.0 L 344 -682.0 L 6 -682.0 L 6 -662.0 Z " fill-rule="evenodd" />
-  <text x="11" y="-688.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="11" y="-688.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     class Context Diagram: Package Suppliers of Data quality information - Imagery
   </text>
   <path fill="#C6C6C8" stroke="#969696" stroke-width="1" d="M 48 -49.0 L 192 -49.0 L 192 -25.0 L 48 -25.0 L 48 -49.0 Z " fill-rule="evenodd" />
@@ -14,16 +14,16 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 45 -52.0 L 189 -52.0 L 189 -28.0 L 45 -28.0 L 45 -52.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 45 -88.0 L 155 -88.0 L 155 -52.0 L 45 -52.0 L 45 -88.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 45 -88.0 L 155 -88.0 L 155 -52.0 L 45 -52.0 L 45 -88.0 Z " fill-rule="evenodd" />
-  <text x="50" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="50" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="50" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="50" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Distribution information
   </text>
-  <text x="65" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="65" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 
   </text>
-  <text x="83" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="83" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (Corrigendum 1))
   </text>
   <path fill="#C5C6C7" stroke="#969696" stroke-width="1" d="M 203 -79.0 L 345 -79.0 L 345 -55.0 L 203 -55.0 L 203 -79.0 Z " fill-rule="evenodd" />
@@ -31,16 +31,16 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 200 -82.0 L 342 -82.0 L 342 -58.0 L 200 -58.0 L 200 -82.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 200 -118.0 L 305 -118.0 L 305 -82.0 L 200 -82.0 L 200 -118.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 200 -118.0 L 305 -118.0 L 305 -82.0 L 200 -82.0 L 200 -118.0 Z " fill-rule="evenodd" />
-  <text x="205" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="205" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="205" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="205" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Content information
   </text>
-  <text x="219" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="219" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 
   </text>
-  <text x="237" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="237" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (Corrigendum 1))
   </text>
   <path fill="#C5C5C7" stroke="#969696" stroke-width="1" d="M 358 -119.0 L 554 -119.0 L 554 -95.0 L 358 -95.0 L 358 -119.0 Z " fill-rule="evenodd" />
@@ -48,13 +48,13 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 355 -122.0 L 551 -122.0 L 551 -98.0 L 355 -98.0 L 355 -122.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 355 -158.0 L 508 -158.0 L 508 -122.0 L 355 -122.0 L 355 -158.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 355 -158.0 L 508 -158.0 L 508 -122.0 L 355 -122.0 L 355 -158.0 Z " fill-rule="evenodd" />
-  <text x="360" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="360" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="360" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="360" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Spatial representation information
   </text>
-  <text x="367" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="367" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 (Corrigendum 1))
   </text>
   <path fill="#C3C3C6" stroke="#969696" stroke-width="1" d="M 458 -214.0 L 609 -214.0 L 609 -190.0 L 458 -190.0 L 458 -214.0 Z " fill-rule="evenodd" />
@@ -62,16 +62,16 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 455 -217.0 L 606 -217.0 L 606 -193.0 L 455 -193.0 L 455 -217.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 455 -253.0 L 571 -253.0 L 571 -217.0 L 455 -217.0 L 455 -253.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 455 -253.0 L 571 -253.0 L 571 -217.0 L 455 -217.0 L 455 -253.0 Z " fill-rule="evenodd" />
-  <text x="460" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="460" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="460" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="460" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Identification information
   </text>
-  <text x="478" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="478" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 
   </text>
-  <text x="497" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="497" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (Corrigendum 1))
   </text>
   <path fill="#C0C1C5" stroke="#969696" stroke-width="1" d="M 513 -314.0 L 633 -314.0 L 633 -290.0 L 513 -290.0 L 513 -314.0 Z " fill-rule="evenodd" />
@@ -79,13 +79,13 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 510 -317.0 L 630 -317.0 L 630 -293.0 L 510 -293.0 L 510 -317.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 510 -353.0 L 615 -353.0 L 615 -317.0 L 510 -317.0 L 510 -353.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 510 -353.0 L 615 -353.0 L 615 -317.0 L 510 -317.0 L 510 -353.0 Z " fill-rule="evenodd" />
-  <text x="515" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="515" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="515" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="515" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Units of Measure
   </text>
-  <text x="541" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="541" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from Derived)
   </text>
   <path fill="#BFC0C4" stroke="#969696" stroke-width="1" d="M 518 -394.0 L 694 -394.0 L 694 -370.0 L 518 -370.0 L 518 -394.0 Z " fill-rule="evenodd" />
@@ -93,13 +93,13 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 515 -397.0 L 691 -397.0 L 691 -373.0 L 515 -373.0 L 515 -397.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 515 -433.0 L 652 -433.0 L 652 -397.0 L 515 -397.0 L 515 -433.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 515 -433.0 L 652 -433.0 L 652 -397.0 L 515 -397.0 L 515 -433.0 Z " fill-rule="evenodd" />
-  <text x="520" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="520" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="520" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="520" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Reference system information
   </text>
-  <text x="517" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="517" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 (Corrigendum 1))
   </text>
   <path fill="#BDBEC3" stroke="#969696" stroke-width="1" d="M 528 -489.0 L 648 -489.0 L 648 -473.0 L 528 -473.0 L 528 -489.0 Z " fill-rule="evenodd" />
@@ -107,13 +107,13 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 525 -492.0 L 645 -492.0 L 645 -476.0 L 525 -476.0 L 525 -492.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 525 -528.0 L 630 -528.0 L 630 -492.0 L 525 -492.0 L 525 -528.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 525 -528.0 L 630 -528.0 L 630 -492.0 L 525 -492.0 L 525 -528.0 Z " fill-rule="evenodd" />
-  <text x="530" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="530" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="530" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="530" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Text
   </text>
-  <text x="554" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="554" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from Primitive)
   </text>
   <path fill="#BABCC1" stroke="#969696" stroke-width="1" d="M 460 -609.0 L 694 -609.0 L 694 -585.0 L 460 -585.0 L 460 -609.0 Z " fill-rule="evenodd" />
@@ -121,13 +121,13 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 457 -612.0 L 691 -612.0 L 691 -588.0 L 457 -588.0 L 457 -612.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 457 -648.0 L 640 -648.0 L 640 -612.0 L 457 -612.0 L 457 -648.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 457 -648.0 L 640 -648.0 L 640 -612.0 L 457 -612.0 L 457 -648.0 Z " fill-rule="evenodd" />
-  <text x="462" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="462" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="462" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="462" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Citation and responsible party information
   </text>
-  <text x="488" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="488" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 (Corrigendum 1))
   </text>
   <path fill="#BABBC1" stroke="#969696" stroke-width="1" d="M 252 -621.0 L 443 -621.0 L 443 -589.0 L 252 -589.0 L 252 -621.0 Z " fill-rule="evenodd" />
@@ -135,7 +135,7 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 249 -624.0 L 440 -624.0 L 440 -592.0 L 249 -592.0 L 249 -624.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 249 -644.0 L 356 -644.0 L 356 -624.0 L 249 -624.0 L 249 -644.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 249 -644.0 L 356 -644.0 L 356 -624.0 L 249 -624.0 L 249 -644.0 Z " fill-rule="evenodd" />
-  <text x="254" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="254" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Acquisition information
   </text>
   <path fill="#BABCC1" stroke="#969696" stroke-width="1" d="M 33 -609.0 L 178 -609.0 L 178 -585.0 L 33 -585.0 L 33 -609.0 Z " fill-rule="evenodd" />
@@ -143,16 +143,16 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 30 -612.0 L 175 -612.0 L 175 -588.0 L 30 -588.0 L 30 -612.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 30 -648.0 L 142 -648.0 L 142 -612.0 L 30 -612.0 L 30 -648.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 30 -648.0 L 142 -648.0 L 142 -612.0 L 30 -612.0 L 30 -648.0 Z " fill-rule="evenodd" />
-  <text x="35" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="35" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     «Leaf»
   </text>
-  <text x="35" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="35" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Data quality information
   </text>
-  <text x="50" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="50" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (from ISO 19115 Edition 1 
   </text>
-  <text x="69" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="69" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     (Corrigendum 1))
   </text>
   <path fill="#BFC0C4" stroke="#969696" stroke-width="1" d="M 78 -390.0 L 271 -390.0 L 271 -358.0 L 78 -358.0 L 78 -390.0 Z " fill-rule="evenodd" />
@@ -160,7 +160,7 @@
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 75 -393.0 L 268 -393.0 L 268 -361.0 L 75 -361.0 L 75 -393.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 75 -413.0 L 208 -413.0 L 208 -393.0 L 75 -393.0 L 75 -413.0 Z " fill-rule="evenodd" />
   <path fill="#FAF3F0" stroke="#5A5A5A" stroke-width="1" d="M 75 -413.0 L 208 -413.0 L 208 -393.0 L 75 -393.0 L 75 -413.0 Z " fill-rule="evenodd" />
-  <text x="80" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C">
+  <text x="80" y="-688.0" font-family="Carlito" font-size="12" fill="#3C3C3C" text-anchor="start" dominant-baseline="text-before-edge">
     Extended lineage information
   </text>
   <line stroke="#000000" stroke-width="1" x1="110" y1="-588.0" x2="119" y2="-575.0" />

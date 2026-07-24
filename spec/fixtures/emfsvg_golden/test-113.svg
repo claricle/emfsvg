@@ -11,7 +11,7 @@
       <rect x="3402" y="7020" width="2556" height="-7037" />
     </clipPath>
   </defs>
-  <text x="3427" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3427" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dendrogramme de 15 Obs.
   </text>
   <defs>
@@ -19,7 +19,7 @@
       <rect x="4000" y="6605" width="1360" height="-265" />
     </clipPath>
   </defs>
-  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Méth. de Ward
   </text>
   <defs>
@@ -27,7 +27,7 @@
       <rect x="4000" y="6605" width="1360" height="-564" />
     </clipPath>
   </defs>
-  <text x="3850" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3850" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Euclidiennes
   </text>
   <defs>
@@ -521,19 +521,19 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="5609" y1="846" x2="5609" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="7376" y1="846" x2="7376" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="9144" y1="846" x2="9144" y2="813" />
-  <text x="2016" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2016" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="3783" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3783" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     5
   </text>
-  <text x="5493" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5493" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     10
   </text>
-  <text x="7260" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7260" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     15
   </text>
-  <text x="9028" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9028" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     20
   </text>
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="2427" y1="829" x2="2427" y2="813" />
@@ -556,7 +556,7 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8437" y1="829" x2="8437" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8790" y1="829" x2="8790" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="9144" y1="829" x2="9144" y2="813" />
-  <text x="4887" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4887" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Agrégation
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" d="M 2074 5908 L 9144 5908 " />
@@ -603,49 +603,49 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="2107" y1="5271" x2="2074" y2="5271" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="2107" y1="5589" x2="2074" y2="5589" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="2107" y1="5908" x2="2074" y2="5908" />
-  <text x="1011" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1011" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Sociologie
   </text>
-  <text x="1094" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1094" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Médecine
   </text>
-  <text x="1111" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1111" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Ethologie
   </text>
-  <text x="862" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="862" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Psychologie
   </text>
-  <text x="995" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="995" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Didactique
   </text>
-  <text x="1061" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1061" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Astrologie
   </text>
-  <text x="845" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="845" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Linguistique
   </text>
-  <text x="1177" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1177" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Ecologie
   </text>
-  <text x="962" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="962" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Neurologie
   </text>
-  <text x="99" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="99" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Biologie moléculaire
   </text>
-  <text x="845" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="845" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Technologie
   </text>
-  <text x="1244" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1244" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Science
   </text>
-  <text x="231" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="231" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Physique nucléaire
   </text>
-  <text x="829" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="829" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Informatique
   </text>
-  <text x="1277" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1277" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Algèbre
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" d="M 9144 813 L 9144 5908 " />

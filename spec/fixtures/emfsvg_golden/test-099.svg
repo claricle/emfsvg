@@ -11,7 +11,7 @@
       <rect x="3153" y="7020" width="3054" height="-7037" />
     </clipPath>
   </defs>
-  <text x="3186" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3186" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dendrogramme de 10  Variables
   </text>
   <defs>
@@ -19,7 +19,7 @@
       <rect x="4000" y="6605" width="1360" height="-265" />
     </clipPath>
   </defs>
-  <text x="4024" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4024" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Saut Minimum
   </text>
   <defs>
@@ -27,7 +27,7 @@
       <rect x="4000" y="6605" width="1360" height="-564" />
     </clipPath>
   </defs>
-  <text x="3618" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3618" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Matrice dissemblances
   </text>
   <defs>
@@ -984,28 +984,28 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="6724" y1="846" x2="6724" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="7926" y1="846" x2="7926" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="9128" y1="846" x2="9128" y2="813" />
-  <text x="572" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="572" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,3
   </text>
-  <text x="1774" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1774" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,4
   </text>
-  <text x="2976" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2976" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="4179" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4179" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,6
   </text>
-  <text x="5381" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5381" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,7
   </text>
-  <text x="6583" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6583" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,8
   </text>
-  <text x="7785" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7785" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,9
   </text>
-  <text x="8987" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8987" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="1014" y1="829" x2="1014" y2="813" />
@@ -1036,7 +1036,7 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8527" y1="829" x2="8527" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8827" y1="829" x2="8827" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="9128" y1="829" x2="9128" y2="813" />
-  <text x="4199" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4199" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Agrégation
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" d="M 714 5908 L 9128 5908 " />
@@ -1089,34 +1089,34 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="747" y1="4981" x2="714" y2="4981" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="747" y1="5444" x2="714" y2="5444" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="747" y1="5908" x2="714" y2="5908" />
-  <text x="216" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="216" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Idee
   </text>
-  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Hier
   </text>
-  <text x="249" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="249" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Patr
   </text>
-  <text x="149" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="149" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Fami
   </text>
-  <text x="183" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="183" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Cout
   </text>
-  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Anci
   </text>
-  <text x="216" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="216" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Sect
   </text>
-  <text x="133" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="133" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Form
   </text>
-  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Resp
   </text>
-  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Rend
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" d="M 9128 813 L 9128 5908 " />
