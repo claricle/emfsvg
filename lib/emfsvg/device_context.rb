@@ -104,7 +104,7 @@ module Emfsvg
     HATCHED = 2
     PATTERN = 3
 
-    def initialize(style: SOLID, color: Emf::Model::Geometry::Color.white, hatch: 0)
+    def initialize(style: SOLID, color: Emf::Model::Geometry::Color.black, hatch: 0)
       @style = style
       @color = color
       @hatch = hatch

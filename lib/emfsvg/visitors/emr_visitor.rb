@@ -48,10 +48,10 @@ module Emfsvg
         Emf::Emr::Binary::Records::Polyline16 => :visit_polyline16,
         Emf::Emr::Binary::Records::PolyBezier => :visit_poly_bezier,
         Emf::Emr::Binary::Records::PolyBezier16 => :visit_poly_bezier16,
-        Emf::Emr::Binary::Records::PolyBezierTo => :visit_poly_bezier,
-        Emf::Emr::Binary::Records::PolyBezierTo16 => :visit_poly_bezier16,
-        Emf::Emr::Binary::Records::PolylineTo => :visit_polyline,
-        Emf::Emr::Binary::Records::PolylineTo16 => :visit_polyline16,
+        Emf::Emr::Binary::Records::PolyBezierTo => :visit_poly_bezier_to,
+        Emf::Emr::Binary::Records::PolyBezierTo16 => :visit_poly_bezier_to16,
+        Emf::Emr::Binary::Records::PolylineTo => :visit_polyline_to,
+        Emf::Emr::Binary::Records::PolylineTo16 => :visit_polyline_to16,
         Emf::Emr::Binary::Records::BeginPath => :visit_begin_path,
         Emf::Emr::Binary::Records::EndPath => :visit_end_path,
         Emf::Emr::Binary::Records::CloseFigure => :visit_close_figure,
@@ -483,12 +483,55 @@ module Emfsvg
         emit_path_polygon(wire.apts.to_a, closed: false)
       end
 
+      # PolylineTo continues from current position — no M for first point,
+      # all L. Matches C's polyline_draw with ispolygon=false.
+      def visit_polyline_to(wire)
+        emit_polyline_to_common(wire.aptl.to_a)
+      end
+
+      def visit_polyline_to16(wire)
+        emit_polyline_to_common(wire.apts.to_a)
+      end
+
+      def emit_polyline_to_common(points)
+        return if points.empty?
+
+        if @in_path
+          points.each do |p|
+            @builder.raw("L ")
+            @builder.raw(point_str(p))
+          end
+          @current_x = points.last.x
+          @current_y = points.last.y
+          return
+        end
+
+        # Standalone PolylineTo (rare): emit a path starting at cur.
+        d = +"M #{fmt(cal_x(@current_x))},#{fmt(cal_y(@current_y))} "
+        points.each do |p|
+          d << "L "
+          d << point_str(p)
+        end
+        emit_path_element(d, closed: false, leading_fill_space: true)
+        @current_x = points.last.x
+        @current_y = points.last.y
+      end
+
       def visit_poly_bezier(wire)
         emit_poly_bezier_common(wire.aptl.to_a, starting_point: true)
       end
 
       def visit_poly_bezier16(wire)
         emit_poly_bezier_common(wire.apts.to_a, starting_point: true)
+      end
+
+      # PolyBezierTo continues from current position — no starting M.
+      def visit_poly_bezier_to(wire)
+        emit_poly_bezier_common(wire.aptl.to_a, starting_point: false)
+      end
+
+      def visit_poly_bezier_to16(wire)
+        emit_poly_bezier_common(wire.apts.to_a, starting_point: false)
       end
 
       # Matches cubic_bezier_draw / cubic_bezier16_draw.
@@ -498,13 +541,14 @@ module Emfsvg
       def emit_poly_bezier_common(points, starting_point:)
         return if points.size < 4
 
+        ctrl_points = starting_point ? points[1..] : points
+
         if @in_path
-          # Inside BeginPath..EndPath: append directly to open d-string.
           if starting_point
             @builder.raw("M ")
             @builder.raw(point_str(points.first))
           end
-          points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
+          ctrl_points.each_slice(3) do |ctrl1, ctrl2, endpt|
             next if [ctrl1, ctrl2, endpt].any?(&:nil?)
 
             @builder.raw("C ")
@@ -522,7 +566,7 @@ module Emfsvg
           d << "M "
           d << point_str(points.first)
         end
-        points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
+        ctrl_points.each_slice(3) do |ctrl1, ctrl2, endpt|
           next if [ctrl1, ctrl2, endpt].any?(&:nil?)
 
           d << "C "
