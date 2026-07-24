@@ -112,7 +112,12 @@ module Emfsvg
         Emf::Emr::Binary::Records::SetTextJustification => :visit_set_text_justification,
         Emf::Emr::Binary::Records::CreateMonoBrush => :visit_create_mono_brush,
         Emf::Emr::Binary::Records::CreateDibPatternBrushPt => :visit_create_dib_pattern_brush_pt,
-        Emf::Emr::Binary::Records::ExtCreatePen => :visit_ext_create_pen
+        Emf::Emr::Binary::Records::ExtCreatePen => :visit_ext_create_pen,
+        Emf::Emr::Binary::Records::StretchDIBits => :stretch_d_i_bits,
+        Emf::Emr::Binary::Records::AlphaBlend => :alpha_blend,
+        Emf::Emr::Binary::Records::TransparentBlt => :transparent_blt,
+        Emf::Emr::Binary::Records::BitBlt => :bit_blt,
+        Emf::Emr::Binary::Records::StretchBlt => :stretch_blt,
       }.freeze
 
       attr_reader :current_x, :current_y
@@ -597,6 +602,54 @@ module Emfsvg
         @object_table.store(wire.ih_pen, :pen, pen)
       end
 
+      # --- Bitmap handlers ---
+
+      def visit_stretch_dibits(wire)
+        record_bytes = wire.to_binary_s
+        emit_image_from_dib(
+          record_bytes, wire.off_bmi_src, wire.cb_bmi_src,
+          wire.off_bits_src, wire.cb_bits_src,
+          x: wire.x_dest, y: wire.y_dest,
+          width: wire.cx_dest, height: wire.cy_dest
+        )
+      end
+
+      def visit_alpha_blend(wire)
+        # AlphaBlend has a similar layout to StretchDIBits but with
+        # a fixed alpha (bfBlendOp) and explicit source/dest dimensions.
+        # The trailing body contains the BITMAPINFO + pixels.
+        # For MVP: emit an image element using bounds-derived position.
+        emit_image_from_body(
+          wire, wire.rcl_bounds.left, wire.rcl_bounds.top,
+          wire.rcl_bounds.right - wire.rcl_bounds.left,
+          wire.rcl_bounds.bottom - wire.rcl_bounds.top
+        )
+      end
+
+      def visit_transparent_blt(wire)
+        emit_image_from_body(
+          wire, wire.rcl_bounds.left, wire.rcl_bounds.top,
+          wire.rcl_bounds.right - wire.rcl_bounds.left,
+          wire.rcl_bounds.bottom - wire.rcl_bounds.top
+        )
+      end
+
+      def visit_bit_blt(wire)
+        emit_image_from_body(
+          wire, wire.rcl_bounds.left, wire.rcl_bounds.top,
+          wire.rcl_bounds.right - wire.rcl_bounds.left,
+          wire.rcl_bounds.bottom - wire.rcl_bounds.top
+        )
+      end
+
+      def visit_stretch_blt(wire)
+        emit_image_from_body(
+          wire, wire.rcl_bounds.left, wire.rcl_bounds.top,
+          wire.rcl_bounds.right - wire.rcl_bounds.left,
+          wire.rcl_bounds.bottom - wire.rcl_bounds.top
+        )
+      end
+
       private
 
       # LOGFONT_PANOSE face name lives at offset 28 within LOGFONT (after
@@ -711,7 +764,7 @@ module Emfsvg
         @builder.tag("path", attrs, single: true)
       end
 
-      def emit_poly_multi(counts, all_points, closed:, _point_size:)
+      def emit_poly_multi(counts, all_points, closed:, point_size:)
         return if counts.empty? || all_points.empty?
 
         # Walk sub-paths, slicing all_points by cumulative counts.
@@ -725,7 +778,7 @@ module Emfsvg
         end
       end
 
-      def emit_poly_draw(points, types, _point_size:)
+      def emit_poly_draw(points, types, point_size:)
         return if points.empty? || types.empty?
 
         pt_moveto = 1
@@ -757,6 +810,58 @@ module Emfsvg
         end
         attrs = fill_attrs.merge(stroke_attrs).merge("d" => d)
         @builder.tag("path", attrs, single: true)
+      end
+
+      def emit_image_from_dib(record_bytes, off_bmi, cb_bmi, off_bits, cb_bits, x:, y:, width:, height:)
+        return if off_bmi.zero? || cb_bmi.zero?
+
+        bmi_bytes = record_bytes[off_bmi, cb_bmi]
+        bits_bytes = record_bytes[off_bits, cb_bits] || +""
+        dib_bytes = bmi_bytes.to_s + bits_bytes.to_s
+        result = DibDecoder.decode(dib_bytes)
+        return unless result
+
+        href = build_image_href(result)
+        attrs = {
+          "x" => x, "y" => maybe_flip_y(y),
+          "width" => width, "height" => height,
+          "xlink:href" => href, "preserveAspectRatio" => "none"
+        }
+        @builder.tag("image", attrs, single: true)
+      end
+
+      def emit_image_from_body(wire, x, y, width, height)
+        # For wire classes where we haven't decoded the BMI offsets:
+        # try to find the bitmap data in the trailing body.
+        body = if wire.is_a?(Emf::Emr::Binary::Records::StretchDIBits)
+                 wire.trailing.to_s
+               else
+                 wire.body.to_s
+               end
+        return if body.bytesize < 40
+
+        result = DibDecoder.decode(body)
+        return unless result
+
+        href = build_image_href(result)
+        attrs = {
+          "x" => x, "y" => maybe_flip_y(y),
+          "width" => width, "height" => height,
+          "xlink:href" => href, "preserveAspectRatio" => "none"
+        }
+        @builder.tag("image", attrs, single: true)
+      end
+
+      def build_image_href(result)
+        case result.color_type
+        when :jpeg
+          "data:image/jpeg;base64,#{Base64.strict_encode64(result.pixels)}"
+        when :png
+          "data:image/png;base64,#{Base64.strict_encode64(result.pixels)}"
+        else
+          png_bytes = PngEncoder.encode(result.width, result.height, result.pixels)
+          "data:image/png;base64,#{Base64.strict_encode64(png_bytes)}"
+        end
       end
 
       def emit_path_polygon(points, closed:)

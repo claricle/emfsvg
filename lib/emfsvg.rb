@@ -14,6 +14,8 @@ module Emfsvg
   autoload :SvgBuilder, "emfsvg/svg_builder"
   autoload :Options, "emfsvg/options"
   autoload :Compat, "emfsvg/compat"
+  autoload :DibDecoder, "emfsvg/dib_decoder"
+  autoload :PngEncoder, "emfsvg/png_encoder"
 
   class << self
     # Render an Emf::Model::Metafile to an SVG string.
