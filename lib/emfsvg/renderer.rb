@@ -37,8 +37,6 @@ module Emfsvg
       emit_svg_open do
         emit_header_translate_group do
           visit_records
-          # Close any open world transform groups
-          @builder.raw("</g>" * @open_groups) if @open_groups.positive?
         end
       end
       result = @builder.to_s

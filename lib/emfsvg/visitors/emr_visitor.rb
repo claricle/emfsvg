@@ -173,7 +173,7 @@ module Emfsvg
       end
 
       def flush_open_groups
-        @builder.raw("</g>" * @open_groups)
+        @open_groups.times { @builder.rawln("</g>") }
         @open_groups = 0
       end
 
@@ -937,16 +937,16 @@ module Emfsvg
         #   offBmi (4), cbBmi (4), offBits (4), cbBits (4),
         #   then EXTLOGPEN32:
         #     elpPenStyle (4), elpWidth (4), elpBrushStyle (4),
-        #     elpColor (COLORREF: B,G,R,reserved — 4 bytes),
+        #     elpColor (COLORREF: R,G,B,reserved — 4 bytes),
         #     elpHatch (4), elpNumEntries (4), elpStyleEntry[]
         body = wire.body.to_s
         if body.bytesize >= 32
           pen_style = body.unpack1("V", offset: 16)
           width = body.unpack1("V", offset: 20)
-          # COLORREF at body offset 28: B,G,R,reserved
-          b = body.getbyte(28)
+          # COLORREF at body offset 28: low byte is R, then G, then B
+          r = body.getbyte(28)
           g = body.getbyte(29)
-          r = body.getbyte(30)
+          b = body.getbyte(30)
           pen = Pen.new(
             style: pen_style,
             width: width,
