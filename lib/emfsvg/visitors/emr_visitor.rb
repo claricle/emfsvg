@@ -690,24 +690,38 @@ module Emfsvg
       end
 
       def visit_angle_arc(wire)
-        # AngleArc: arc on a circle of given radius around ptlCenter,
-        # from start_angle to start_angle + sweep_angle (both in degrees).
-        cx = cal_x(wire.ptl_center.x)
-        cy = cal_y(wire.ptl_center.y)
-        r = wire.n_radius
-        start_rad = wire.start_angle * Math::PI / 180.0
-        sweep_rad = wire.sweep_angle * Math::PI / 180.0
-        end_rad = start_rad + sweep_rad
-        sx = cx + (r * Math.cos(start_rad))
-        sy = cy + (r * Math.sin(start_rad))
-        ex = cx + (r * Math.cos(end_rad))
-        ey = cy + (r * Math.sin(end_rad))
-        large = wire.sweep_angle.abs > 180 ? 1 : 0
-        sweep = wire.sweep_angle.negative? ? 0 : 1
-        d = format("M %.4f %.4f A %.4f %.4f 0 %d %d %.4f %.4f",
-                   sx, sy, r, r, large, sweep, ex, ey)
-        attrs = stroke_attrs.merge("fill" => "none", "d" => d)
-        @builder.tag("path", attrs, single: true)
+        # Mirror libemf2svg's arc_circle_draw:
+        #   startPathDraw emits `<path d="M cur_x,cur_y `
+        #   then `M start_x,start_y A radii 0 large_arc sweep end_x,end_y `
+        #   then endPathDraw emits closing quote + stroke + ` fill="none" />`
+        cx_raw = wire.ptl_center.x
+        cy_raw = wire.ptl_center.y
+        r_raw = wire.n_radius
+        start_angle = wire.start_angle
+        sweep_angle = wire.sweep_angle
+
+        # arcdir: 1 = AD_COUNTERCLOCKWISE (sweep=large=0), else 1/1.
+        arcdir = @dc.arc_direction || 1
+        sweep_flag = arcdir.positive? ? 1 : 0
+        large_arc_flag = arcdir.positive? ? 1 : 0
+
+        start_rad = start_angle * Math::PI / 180.0
+        end_rad = (start_angle + sweep_angle) * Math::PI / 180.0
+        sx_raw = (r_raw * Math.cos(start_rad)) + cx_raw
+        sy_raw = (r_raw * Math.sin(start_rad)) + cy_raw
+        ex_raw = (r_raw * Math.cos(end_rad)) + cx_raw
+        ey_raw = (r_raw * Math.sin(end_rad)) + cy_raw
+
+        d = +"M "
+        d << format("%.4f,%.4f ", cal_x(@current_x), cal_y(@current_y))
+        d << "M "
+        d << format("%.4f,%.4f ", cal_x(sx_raw), cal_y(sy_raw))
+        d << "A "
+        d << format("%.4f,%.4f ", scale_dim_x(r_raw), scale_dim_y(r_raw))
+        d << "0 "
+        d << "#{large_arc_flag} #{sweep_flag} "
+        d << format("%.4f,%.4f ", cal_x(ex_raw), cal_y(ey_raw))
+        emit_path_element(d, closed: false, leading_fill_space: true)
       end
 
       # --- Escape and color-management no-ops ---
@@ -800,24 +814,23 @@ module Emfsvg
       end
 
       def visit_ext_create_pen(wire)
-        # Parse the ExtCreatePen body to extract pen style, width, and color.
-        # Layout after header + ihPen: offBmi, cbBmi, offStyle, cbStyle,
-        # dwStyleCount, dwPenStyle, dwWidth, ulHoverStyle,
-        # then LOGBRUSH32 (style uint32 + COLORREF 4 + hatch uint32)
+        # EMREXTCREATEPEN body layout (after EMR + ihPen) per MS-EMF 2.3.7.9:
+        #   offBmi (4), cbBmi (4), offBits (4), cbBits (4),
+        #   then EXTLOGPEN32:
+        #     elpPenStyle (4), elpWidth (4), elpBrushStyle (4),
+        #     elpColor (COLORREF: B,G,R,reserved — 4 bytes),
+        #     elpHatch (4), elpNumEntries (4), elpStyleEntry[]
         body = wire.body.to_s
-        if body.bytesize >= 44
-          pen_style = body.getbyte(20) | (body.getbyte(21) << 8) |
-                      (body.getbyte(22) << 16) | (body.getbyte(23) << 24)
-          width = body.getbyte(24) | (body.getbyte(25) << 8) |
-                  (body.getbyte(26) << 16) | (body.getbyte(27) << 24)
-          # COLORREF is at body offset 36 (B,G,R,reserved)
-          b = body.getbyte(36)
-          g = body.getbyte(37)
-          r = body.getbyte(38)
-          line_style = pen_style & 0x0F
+        if body.bytesize >= 32
+          pen_style = body.unpack1("V", offset: 16)
+          width = body.unpack1("V", offset: 20)
+          # COLORREF at body offset 28: B,G,R,reserved
+          b = body.getbyte(28)
+          g = body.getbyte(29)
+          r = body.getbyte(30)
           pen = Pen.new(
-            style: line_style,
-            width: [width, 1].max,
+            style: pen_style,
+            width: width,
             color: Emf::Model::Geometry::Color.new(red: r, green: g, blue: b)
           )
           @object_table.store(wire.ih_pen, :pen, pen)
@@ -1173,15 +1186,39 @@ module Emfsvg
       def emit_poly_multi(counts, all_points, closed:, _point_size:)
         return if counts.empty? || all_points.empty?
 
-        # Walk sub-paths, slicing all_points by cumulative counts.
+        # libemf2svg emits ALL sub-polygons in a single <path> element,
+        # separated by Z M between sub-polygons. Each sub-polygon ends with
+        # `Z `, then the next starts with `M `. The path closes with `Z" `
+        # (single Z appended by U_EMRPOLYPOLYGON_draw).
+        d = +""
         offset = 0
-        counts.each do |count|
+        counts.each_with_index do |count, _idx|
           sub_points = all_points[offset, count]
           offset += count
           next unless sub_points && sub_points.size == count
 
-          emit_path_polygon(sub_points, closed: closed)
+          d << "M "
+          d << point_str(sub_points.first)
+          sub_points[1..].each do |p|
+            d << "L "
+            d << point_str(p)
+          end
+          d << "Z " if closed
         end
+        return if d.empty?
+
+        # PolyPolygon emits as a closed path (Z already in d-string, then
+        # U_EMRPOLYPOLYGON_draw appends another Z and `"`).
+        @builder.raw("<path ")
+        @builder.raw(clip_path_attr_string)
+        @builder.raw("d=\"")
+        @builder.raw(d)
+        @builder.raw("Z\" ")
+        emit_stroke_draw
+        emit_fill_draw
+        emit_unfilled_unstroked
+        @builder.raw("/>")
+        @builder.newline
       end
 
       def emit_poly_draw(points, types, _point_size:)
@@ -1599,19 +1636,19 @@ module Emfsvg
       end
 
       def emit_transform_group(matrix)
-        # Close previous transform group before opening new one
-        # (matches libemf2svg's transform_draw which closes prior <g>)
+        # Mirror libemf2svg's transform_draw: close previous transform group
+        # before opening new one, emit `<g transform="matrix(...)">\n`,
+        # with eDx/eDy passed through scaleX/scaleY (sign-preserving).
         if @open_groups.positive?
-          @builder.raw("</g>")
+          @builder.rawln("</g>")
           @open_groups -= 1
         end
-        attrs = {
-          "transform" => format("matrix(%.4f %.4f %.4f %.4f %.4f %.4f)",
-                                matrix.m11, matrix.m12,
-                                matrix.m21, matrix.m22,
-                                matrix.dx, matrix.dy)
-        }
-        @builder.tag("g", attrs)
+        dx_scaled = matrix.dx * sf_x * @scaling
+        dy_scaled = matrix.dy * sf_y * @scaling
+        @builder.rawln(format("<g transform=\"matrix(%.4f %.4f %.4f %.4f %.4f %.4f)\">",
+                              matrix.m11, matrix.m12,
+                              matrix.m21, matrix.m22,
+                              dx_scaled, dy_scaled))
         @open_groups += 1
       end
 

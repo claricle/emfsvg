@@ -120,7 +120,8 @@ module Emfsvg
 
     def emit_header_translate_group
       if @fix_broken_y
-        @builder.rawln('<g transform="translate(0.0000, 0.0000)">')
+        # Match libemf2svg's literal "0.00 00" (typo in the C source).
+        @builder.rawln('<g transform="translate(0.0000, 0.00 00)">')
       else
         tx = format("%.4f", -1.0 * @ref_x * @scaling)
         ty = format("%.4f", -1.0 * @ref_y * @scaling)
