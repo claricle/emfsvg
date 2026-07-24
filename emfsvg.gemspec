@@ -28,4 +28,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = %w[lib]
 
   spec.add_dependency "emf", "~> 0.1"
+  spec.add_dependency "rexml", "~> 3.3"
 end

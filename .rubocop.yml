@@ -87,6 +87,7 @@ Style/FormatStringToken:
   Exclude:
     - "lib/emfsvg/visitors/emr_visitor.rb"
     - "lib/emfsvg/svg_builder.rb"
+    - "lib/emfsvg/compat.rb"
 
 Lint/MissingSuper:
   Exclude:
