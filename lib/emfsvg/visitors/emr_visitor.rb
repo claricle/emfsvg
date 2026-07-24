@@ -1637,9 +1637,12 @@ module Emfsvg
           return
         end
 
-        # Color then width (C order: color_stroke then width_stroke)
+        # Color then width (C order: color_stroke then width_stroke).
+        # COSMETIC pen uses hardcoded width=1; GEOMETRIC uses pen.width.
+        pen_type = style & 0x000F0000
+        width_for_emit = (pen_type == 0x00010000) ? pen.width : 1
         @builder.raw("stroke=\"#{rgb_hex(pen.color)}\" ")
-        emit_width_stroke(pen.width)
+        emit_width_stroke(width_for_emit)
         @last_stroke_set = true
 
         # Dash style
