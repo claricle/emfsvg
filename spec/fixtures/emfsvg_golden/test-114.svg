@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="2000" y="0" font-family="Arial" font-size="12" fill="#000000">
     Projection des ind. sur le plan factoriel (  1 x   2)
   </text>
@@ -9,12 +10,17 @@
   <text x="3053" y="0" font-family="Arial" font-size="12" fill="#000000">
     Var. à obs. actives : Actif
   </text>
+  <ellipse fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" cx="8389.5" cy="738.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFBF0" stroke="#0000FF" stroke-width="0" cx="8389.5" cy="738.5" rx="41.5" ry="-41.5" />
   <text x="8613" y="0" font-family="Arial" font-size="12" fill="#000000">
      Active
   </text>
+  <rect fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" x="8348" y="531" width="83" height="-83" />
+  <rect fill="#FFFBF0" stroke="#FF0000" stroke-width="0" x="8348" y="531" width="83" height="-83" />
   <text x="8613" y="0" font-family="Arial" font-size="12" fill="#000000">
      Suppl.
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFBF0" stroke-width="0" x="913" y="5908" width="7153" height="-5111" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1805 813 L 1805 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1805" y1="813" x2="1809" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1809" y1="846" x2="1809" y2="863" />
@@ -3044,48 +3050,78 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="7949" y1="5394" x2="7966" y2="5394" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7983" y1="5394" x2="7999" y2="5394" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8016" y1="5394" x2="8032" y2="5394" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2514.5" cy="2082.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2514.5" cy="2082.5" rx="41.5" ry="-41.5" />
   <text x="2208" y="0" font-family="Arial" font-size="12" fill="#000000">
     Algèbre
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2879.5" cy="3227.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2879.5" cy="3227.5" rx="41.5" ry="-41.5" />
   <text x="2066" y="0" font-family="Arial" font-size="12" fill="#000000">
     Biologie moléculaire
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4505.5" cy="2530.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4505.5" cy="2530.5" rx="41.5" ry="-41.5" />
   <text x="4096" y="0" font-family="Arial" font-size="12" fill="#000000">
     Didactique
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3858.5" cy="2049.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3858.5" cy="2049.5" rx="41.5" ry="-41.5" />
   <text x="3519" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ecologie
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4290.0" cy="3543.5" rx="41.0" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4290.0" cy="3543.5" rx="41.0" ry="-41.5" />
   <text x="3910" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ethologie
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2348.5" cy="4323.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2348.5" cy="4323.5" rx="41.5" ry="-41.5" />
   <text x="1858" y="0" font-family="Arial" font-size="12" fill="#000000">
     Informatique
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3709.5" cy="3028.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3709.5" cy="3028.5" rx="41.5" ry="-41.5" />
   <text x="3244" y="0" font-family="Arial" font-size="12" fill="#000000">
     Linguistique
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4489.5" cy="4688.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4489.5" cy="4688.5" rx="41.5" ry="-41.5" />
   <text x="4100" y="0" font-family="Arial" font-size="12" fill="#000000">
     Médecine
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3393.5" cy="3244.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3393.5" cy="3244.5" rx="41.5" ry="-41.5" />
   <text x="2971" y="0" font-family="Arial" font-size="12" fill="#000000">
     Neurologie
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2796.5" cy="4588.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2796.5" cy="4588.5" rx="41.5" ry="-41.5" />
   <text x="2060" y="0" font-family="Arial" font-size="12" fill="#000000">
     Physique nucléaire
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5352.5" cy="3294.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5352.5" cy="3294.5" rx="41.5" ry="-41.5" />
   <text x="4881" y="0" font-family="Arial" font-size="12" fill="#000000">
     Psychologie
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2481.5" cy="3244.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2481.5" cy="3244.5" rx="41.5" ry="-41.5" />
   <text x="2178" y="0" font-family="Arial" font-size="12" fill="#000000">
     Science
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4937.5" cy="3825.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4937.5" cy="3825.5" rx="41.5" ry="-41.5" />
   <text x="4525" y="0" font-family="Arial" font-size="12" fill="#000000">
     Sociologie
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2580.5" cy="3476.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2580.5" cy="3476.5" rx="41.5" ry="-41.5" />
   <text x="2088" y="0" font-family="Arial" font-size="12" fill="#000000">
     Technologie
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="6539" y="4796" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="6539" y="4796" width="83" height="-83" />
   <text x="6198" y="0" font-family="Arial" font-size="12" fill="#000000">
     Astrologie
   </text>

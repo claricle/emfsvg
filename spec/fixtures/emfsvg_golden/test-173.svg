@@ -528,5 +528,7 @@
   <line stroke="#800000" stroke-width="1" x1="2013" y1="1701" x2="2103" y2="1526" />
   <line stroke="#008000" stroke-width="1" x1="2013" y1="1701" x2="2159" y2="1337" />
   <line stroke="#808000" stroke-width="1" x1="2103" y1="1526" x2="2159" y2="1337" />
+  <rect fill="none" stroke="#8000FF" stroke-width="1" x="51" y="51" width="2176" height="2176" />
+  <ellipse fill="none" stroke="#8000FF" stroke-width="1" cx="1139.0" cy="1139.0" rx="1088.0" ry="1088.0" />
   
 </svg>

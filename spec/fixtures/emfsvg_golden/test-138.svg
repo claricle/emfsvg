@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1940" height="1457" viewBox="0 0 1940 1457" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="1073" y="0" font-family="Arial" font-size="12" fill="#000000">
     Projection des variables sur le plan factoriel (  1 x   2)
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="6896.0" cy="448.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" cx="6895.5" cy="447.5" rx="33.5" ry="-33.5" />
   <text x="7084" y="0" font-family="Arial" font-size="12" fill="#000000">
      Active
   </text>
+  <rect fill="#FFFFFF" stroke="#0000FF" stroke-width="0" x="849" y="6539" width="5825" height="-5817" />
   <path stroke="#FFFFFF" stroke-width="5" d="M 1113 727 L 1113 6539 " />
   <line stroke="#C0C0C0" stroke-width="5" x1="1113" y1="727" x2="1114" y2="732" />
   <line stroke="#C0C0C0" stroke-width="5" x1="1114" y1="741" x2="1114" y2="746" />
@@ -4046,57 +4050,93 @@
   <line stroke="#C0C0C0" stroke-width="5" x1="6635" y1="6274" x2="6640" y2="6274" />
   <line stroke="#C0C0C0" stroke-width="5" x1="6650" y1="6274" x2="6655" y2="6274" />
   <line stroke="#C0C0C0" stroke-width="5" x1="6664" y1="6274" x2="6669" y2="6274" />
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1659.0" cy="4184.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1658.5" cy="4184.5" rx="33.5" ry="-33.5" />
   <text x="1554" y="0" font-family="Arial" font-size="12" fill="#000000">
      e1
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1765.0" cy="4468.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1765.0" cy="4468.5" rx="34.0" ry="-33.5" />
   <text x="1661" y="0" font-family="Arial" font-size="12" fill="#000000">
      e2
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1919.0" cy="4714.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1919.5" cy="4713.5" rx="33.5" ry="-33.5" />
   <text x="1813" y="0" font-family="Arial" font-size="12" fill="#000000">
      e3
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1832.5" cy="4694.5" rx="48.5" ry="-48.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1832.5" cy="4694.5" rx="33.5" ry="-33.5" />
   <text x="1728" y="0" font-family="Arial" font-size="12" fill="#000000">
      e4
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1977.0" cy="4704.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1977.0" cy="4704.5" rx="34.0" ry="-33.5" />
   <text x="1871" y="0" font-family="Arial" font-size="12" fill="#000000">
      e5
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="2252.0" cy="3953.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2252.0" cy="3953.0" rx="34.0" ry="-34.0" />
   <text x="2147" y="0" font-family="Arial" font-size="12" fill="#000000">
      e6
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1620.0" cy="4497.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1620.5" cy="4497.5" rx="33.5" ry="-33.5" />
   <text x="1514" y="0" font-family="Arial" font-size="12" fill="#000000">
      e7
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1803.5" cy="4699.0" rx="48.5" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1803.5" cy="4699.5" rx="33.5" ry="-33.5" />
   <text x="1698" y="0" font-family="Arial" font-size="12" fill="#000000">
      e8
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1972.0" cy="4969.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1972.5" cy="4969.0" rx="33.5" ry="-34.0" />
   <text x="1867" y="0" font-family="Arial" font-size="12" fill="#000000">
      e9
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1827.5" cy="2403.0" rx="48.5" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1827.5" cy="2402.5" rx="33.5" ry="-33.5" />
   <text x="1744" y="0" font-family="Arial" font-size="12" fill="#000000">
      i1
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="2112.0" cy="2104.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2112.0" cy="2104.5" rx="34.0" ry="-33.5" />
   <text x="2028" y="0" font-family="Arial" font-size="12" fill="#000000">
      i2
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1818.0" cy="2653.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1818.0" cy="2653.0" rx="34.0" ry="-34.0" />
   <text x="1738" y="0" font-family="Arial" font-size="12" fill="#000000">
      i3
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1774.5" cy="2918.0" rx="48.5" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1774.5" cy="2917.5" rx="33.5" ry="-33.5" />
   <text x="1691" y="0" font-family="Arial" font-size="12" fill="#000000">
      i4
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1813.0" cy="3231.0" rx="48.0" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1813.0" cy="3230.5" rx="34.0" ry="-33.5" />
   <text x="1730" y="0" font-family="Arial" font-size="12" fill="#000000">
      i5
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="2184.5" cy="2634.0" rx="48.5" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2184.5" cy="2633.5" rx="33.5" ry="-33.5" />
   <text x="2102" y="0" font-family="Arial" font-size="12" fill="#000000">
      i6
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="2015.5" cy="2181.0" rx="48.5" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2015.5" cy="2181.5" rx="33.5" ry="-33.5" />
   <text x="1935" y="0" font-family="Arial" font-size="12" fill="#000000">
      i7
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1721.5" cy="2797.5" rx="48.5" ry="-48.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1721.5" cy="2797.5" rx="33.5" ry="-33.5" />
   <text x="1640" y="0" font-family="Arial" font-size="12" fill="#000000">
      i8
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="1639.5" cy="3284.0" rx="48.5" ry="-48.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1639.5" cy="3283.5" rx="33.5" ry="-33.5" />
   <text x="1559" y="0" font-family="Arial" font-size="12" fill="#000000">
      i9
   </text>

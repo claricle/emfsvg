@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="3460" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé des Valeurs Propres
   </text>
@@ -9,6 +10,7 @@
   <text x="3667" y="0" font-family="Arial" font-size="12" fill="#000000">
     Inertie Totale = 4,0000
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="846" y="5908" width="8331" height="-5111" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 846 1449 L 9161 1449 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="846" y1="1449" x2="863" y2="1444" />
   <line stroke="#C0C0C0" stroke-width="0" x1="880" y1="1444" x2="896" y2="1444" />
@@ -1774,6 +1776,46 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9111" y1="5277" x2="9128" y2="5277" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9144" y1="5277" x2="9161" y2="5271" />
   <path stroke="#0000FF" stroke-width="17" d="M 924 5419 L 1316 3559 L 1708 3271 L 2101 2891 L 2493 2419 L 2885 2195 L 3277 2087 L 3669 2069 L 4062 1986 L 4454 1889 L 4846 1876 L 5238 1732 L 5631 1601 L 6023 1503 L 6415 1480 L 6807 1358 L 7199 1283 L 7592 1158 L 7984 1054 L 8376 894 " />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="921.5" cy="5435.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="921.5" cy="5435.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1302.5" cy="3559.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1302.5" cy="3559.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1701.5" cy="3277.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1701.5" cy="3277.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2099.5" cy="2895.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2099.5" cy="2895.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2481.5" cy="2431.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2481.5" cy="2431.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2879.5" cy="2198.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2879.5" cy="2198.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3261.5" cy="2099.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3261.5" cy="2099.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3659.5" cy="2082.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3659.5" cy="2082.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4057.5" cy="1999.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4057.5" cy="1999.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4439.5" cy="1900.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4439.5" cy="1900.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4837.5" cy="1883.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4837.5" cy="1883.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5235.5" cy="1734.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5235.5" cy="1734.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5617.5" cy="1601.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5617.5" cy="1601.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6015.5" cy="1518.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6015.5" cy="1518.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6414.5" cy="1485.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6414.5" cy="1485.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6795.5" cy="1369.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6795.5" cy="1369.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7194.5" cy="1286.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7194.5" cy="1286.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7575.5" cy="1170.0" rx="41.5" ry="-41.0" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7575.5" cy="1170.0" rx="41.5" ry="-41.0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7974.5" cy="1070.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7974.5" cy="1070.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="8372.5" cy="904.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="8372.5" cy="904.5" rx="41.5" ry="-41.5" />
   <path stroke="#000000" stroke-width="17" d="M 846 813 L 9161 813 " />
   <line stroke="#000000" stroke-width="17" x1="1316" y1="846" x2="1316" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="2101" y1="846" x2="2101" y2="813" />

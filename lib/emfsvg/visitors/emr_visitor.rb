@@ -39,9 +39,9 @@ module Emfsvg
         Emf::Emr::Binary::Records::Ellipse => :visit_ellipse,
         Emf::Emr::Binary::Records::RoundRect => :visit_round_rect,
         Emf::Emr::Binary::Records::Arc => :visit_arc,
-        Emf::Emr::Binary::Records::ArcTo => :visit_arc,
-        Emf::Emr::Binary::Records::Chord => :visit_arc,
-        Emf::Emr::Binary::Records::Pie => :visit_arc,
+        Emf::Emr::Binary::Records::ArcTo => :visit_arc_to,
+        Emf::Emr::Binary::Records::Chord => :visit_chord,
+        Emf::Emr::Binary::Records::Pie => :visit_pie,
         Emf::Emr::Binary::Records::Polygon => :visit_polygon,
         Emf::Emr::Binary::Records::Polyline => :visit_polyline,
         Emf::Emr::Binary::Records::Polygon16 => :visit_polygon16,
@@ -68,7 +68,51 @@ module Emfsvg
         Emf::Emr::Binary::Records::ExtTextOutW => :visit_ext_text_out_w,
         Emf::Emr::Binary::Records::ExtTextOutA => :visit_ext_text_out_a,
         Emf::Emr::Binary::Records::IntersectClipRect => :visit_intersect_clip_rect,
-        Emf::Emr::Binary::Records::ExcludeClipRect => :visit_exclude_clip_rect
+        Emf::Emr::Binary::Records::ExcludeClipRect => :visit_exclude_clip_rect,
+        Emf::Emr::Binary::Records::SetBrushOrgEx => :visit_set_brush_org_ex,
+        Emf::Emr::Binary::Records::SetMetArgn => :visit_set_met_argn,
+        Emf::Emr::Binary::Records::OffsetClipRgn => :visit_offset_clip_rgn,
+        Emf::Emr::Binary::Records::SetIcmMode => :visit_set_icm_mode,
+        Emf::Emr::Binary::Records::SetLayout => :visit_set_layout,
+        Emf::Emr::Binary::Records::ScaleViewportExtEx => :visit_scale_viewport_ext_ex,
+        Emf::Emr::Binary::Records::ScaleWindowExtEx => :visit_scale_window_ext_ex,
+        Emf::Emr::Binary::Records::SetMapperFlags => :visit_set_mapper_flags,
+        Emf::Emr::Binary::Records::SetArcDirection => :visit_set_arc_direction,
+        Emf::Emr::Binary::Records::RealizePalette => :visit_realize_palette,
+        Emf::Emr::Binary::Records::SelectPalette => :visit_select_palette,
+        Emf::Emr::Binary::Records::CreatePalette => :visit_create_palette,
+        Emf::Emr::Binary::Records::ResizePalette => :visit_resize_palette,
+        Emf::Emr::Binary::Records::SetPaletteEntries => :visit_set_palette_entries,
+        Emf::Emr::Binary::Records::PolyPolygon => :visit_poly_polygon,
+        Emf::Emr::Binary::Records::PolyPolygon16 => :visit_poly_polygon16,
+        Emf::Emr::Binary::Records::PolyPolyline => :visit_poly_polyline,
+        Emf::Emr::Binary::Records::PolyPolyline16 => :visit_poly_polyline16,
+        Emf::Emr::Binary::Records::PolyDraw => :visit_poly_draw,
+        Emf::Emr::Binary::Records::PolyDraw16 => :visit_poly_draw16,
+        Emf::Emr::Binary::Records::AngleArc => :visit_angle_arc,
+        Emf::Emr::Binary::Records::DrawEscape => :visit_draw_escape,
+        Emf::Emr::Binary::Records::ExtEscape => :visit_ext_escape,
+        Emf::Emr::Binary::Records::NamedEscape => :visit_named_escape,
+        Emf::Emr::Binary::Records::SmallTextOut => :visit_small_text_out,
+        Emf::Emr::Binary::Records::SetLinkedUfis => :visit_set_linked_ufis,
+        Emf::Emr::Binary::Records::ForceUfiMapping => :visit_force_ufi_mapping,
+        Emf::Emr::Binary::Records::ColorCorrectPalette => :visit_color_correct_palette,
+        Emf::Emr::Binary::Records::SetIcmProfileA => :visit_set_icm_profile_a,
+        Emf::Emr::Binary::Records::SetIcmProfileW => :visit_set_icm_profile_w,
+        Emf::Emr::Binary::Records::ColorMatchToTargetW => :visit_color_match_to_target_w,
+        Emf::Emr::Binary::Records::CreateColorspace => :visit_create_colorspace,
+        Emf::Emr::Binary::Records::CreateColorspaceW => :visit_create_colorspace_w,
+        Emf::Emr::Binary::Records::SetColorspace => :visit_set_colorspace,
+        Emf::Emr::Binary::Records::DeleteColorspace => :visit_delete_colorspace,
+        Emf::Emr::Binary::Records::GlsRecord => :visit_gls_record,
+        Emf::Emr::Binary::Records::GlsBoundedRecord => :visit_gls_bounded_record,
+        Emf::Emr::Binary::Records::PixelFormat => :visit_pixel_format,
+        Emf::Emr::Binary::Records::PolyTextOutA => :visit_poly_text_out_a,
+        Emf::Emr::Binary::Records::PolyTextOutW => :visit_poly_text_out_w,
+        Emf::Emr::Binary::Records::SetTextJustification => :visit_set_text_justification,
+        Emf::Emr::Binary::Records::CreateMonoBrush => :visit_create_mono_brush,
+        Emf::Emr::Binary::Records::CreateDibPatternBrushPt => :visit_create_dib_pattern_brush_pt,
+        Emf::Emr::Binary::Records::ExtCreatePen => :visit_ext_create_pen
       }.freeze
 
       attr_reader :current_x, :current_y
@@ -251,7 +295,21 @@ module Emfsvg
       end
 
       # TODO: arc/chord/pie arc reconstruction
-      def visit_arc(wire); end
+      def visit_arc(wire)
+        emit_arc(wire, mode: :arc)
+      end
+
+      def visit_arc_to(wire)
+        emit_arc(wire, mode: :arc)
+      end
+
+      def visit_chord(wire)
+        emit_arc(wire, mode: :chord)
+      end
+
+      def visit_pie(wire)
+        emit_arc(wire, mode: :pie)
+      end
 
       def visit_polygon(wire)
         emit_path_polygon(wire.aptl.to_a, closed: true)
@@ -413,6 +471,132 @@ module Emfsvg
 
       def visit_exclude_clip_rect(_wire); end
 
+      # --- State-only handlers (no SVG output) ---
+
+      def visit_set_brush_org_ex(wire)
+        @dc.brush_origin = [wire.ptl_origin.x, wire.ptl_origin.y]
+      end
+
+      def visit_set_metargn(_wire); end
+
+      def visit_offset_clip_rgn(_wire); end
+
+      def visit_set_icm_mode(wire)
+        @dc.icm_mode = wire.mode
+      end
+
+      def visit_set_layout(wire)
+        @dc.layout = wire.mode
+      end
+
+      def visit_scale_viewport_ext_ex(_wire); end
+
+      def visit_scale_window_ext_ex(_wire); end
+
+      def visit_set_mapper_flags(wire)
+        @dc.mapper_flags = wire.flags
+      end
+
+      def visit_set_arc_direction(wire)
+        @dc.arc_direction = wire.arc_direction
+      end
+
+      def visit_realize_palette(_wire); end
+
+      def visit_select_palette(_wire); end
+
+      def visit_create_palette(_wire); end
+
+      def visit_resize_palette(_wire); end
+
+      def visit_set_palette_entries(_wire); end
+
+      # --- Drawing handlers ---
+
+      def visit_poly_polygon(wire)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.aptl.to_a, closed: true, point_size: 8)
+      end
+
+      def visit_poly_polygon16(wire)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.apts.to_a, closed: true, point_size: 4)
+      end
+
+      def visit_poly_polyline(wire)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.aptl.to_a, closed: false, point_size: 8)
+      end
+
+      def visit_poly_polyline16(wire)
+        emit_poly_multi(wire.a_poly_counts.to_a, wire.apts.to_a, closed: false, point_size: 4)
+      end
+
+      def visit_poly_draw(wire)
+        emit_poly_draw(wire.aptl.to_a, wire.ab_types.to_a, point_size: 8)
+      end
+
+      def visit_poly_draw16(wire)
+        emit_poly_draw(wire.apts.to_a, wire.ab_types.to_a, point_size: 4)
+      end
+
+      def visit_angle_arc(wire)
+        # AngleArc: arc on a circle of given radius around ptlCenter,
+        # from start_angle to start_angle + sweep_angle (both in degrees).
+        cx = wire.ptl_center.x
+        cy = wire.ptl_center.y
+        r = wire.n_radius
+        start_rad = wire.start_angle * Math::PI / 180.0
+        sweep_rad = wire.sweep_angle * Math::PI / 180.0
+        end_rad = start_rad + sweep_rad
+        sx = cx + (r * Math.cos(start_rad))
+        sy = cy + (r * Math.sin(start_rad))
+        ex = cx + (r * Math.cos(end_rad))
+        ey = cy + (r * Math.sin(end_rad))
+        large = wire.sweep_angle.abs > 180 ? 1 : 0
+        sweep = wire.sweep_angle.negative? ? 0 : 1
+        d = format("M %f %f A %f %f 0 %d %d %f %f",
+                   sx, maybe_flip_y(sy), r, r, large, sweep, ex, maybe_flip_y(ey))
+        attrs = stroke_attrs.merge("fill" => "none", "d" => d)
+        @builder.tag("path", attrs, single: true)
+      end
+
+      # --- Escape and color-management no-ops ---
+
+      def visit_noop(_wire); end
+      def visit_draw_escape(_wire); end
+      def visit_ext_escape(_wire); end
+      def visit_named_escape(_wire); end
+      def visit_small_text_out(_wire); end
+      def visit_set_linked_ufis(_wire); end
+      def visit_force_ufi_mapping(_wire); end
+      def visit_color_correct_palette(_wire); end
+      def visit_set_icm_profile_a(_wire); end
+      def visit_set_icm_profile_w(_wire); end
+      def visit_color_match_to_target_w(_wire); end
+      def visit_create_colorspace(_wire); end
+      def visit_create_colorspace_w(_wire); end
+      def visit_set_colorspace(_wire); end
+      def visit_delete_colorspace(_wire); end
+      def visit_gls_record(_wire); end
+      def visit_gls_bounded_record(_wire); end
+      def visit_pixel_format(_wire); end
+      def visit_poly_text_out_a(_wire); end
+      def visit_poly_text_out_w(_wire); end
+      def visit_set_text_justification(_wire); end
+
+      def visit_create_mono_brush(wire)
+        @object_table.store(wire.ih_object, :brush, Brush.new(style: Brush::SOLID))
+      end
+
+      def visit_create_dib_pattern_brush_pt(wire)
+        @object_table.store(wire.ih_object, :brush, Brush.new(style: Brush::PATTERN))
+      end
+
+      def visit_ext_create_pen(wire)
+        # Full ExtCreatePen layout is complex; for now extract ih_pen
+        # and create a default Pen. TODO: parse the full struct.
+        pen = Pen.new
+        @object_table.store(wire.ih_pen, :pen, pen)
+      end
+
       private
 
       # LOGFONT_PANOSE face name lives at offset 28 within LOGFONT (after
@@ -488,6 +672,91 @@ module Emfsvg
         attrs["text-decoration"] = font.strikeout ? "line-through" : "underline" if font.underline && font.strikeout
 
         @builder.tag("text", attrs) { @builder.text(text) }
+      end
+
+      def emit_arc(wire, mode:)
+        l = wire.rcl_box.left
+        t = wire.rcl_box.top
+        r = wire.rcl_box.right
+        b = wire.rcl_box.bottom
+        cx = (l + r) / 2.0
+        cy = (t + b) / 2.0
+        rx = (r - l) / 2.0
+        ry = (b - t) / 2.0
+        return if rx <= 0 || ry <= 0
+
+        # Start/end angles from rays through ptl_start/ptl_end
+        start_ang = Math.atan2(wire.ptl_start.y - cy, wire.ptl_start.x - cx)
+        end_ang = Math.atan2(wire.ptl_end.y - cy, wire.ptl_end.x - cx)
+        ccw = (@dc.arc_direction || 1) == 2 # AD_COUNTERCLOCKWISE=1, AD_CLOCKWISE=2
+        sweep = ccw ? (start_ang - end_ang) : (end_ang - start_ang)
+        sweep += (2 * Math::PI) if sweep.negative?
+        sweep = (2 * Math::PI) - sweep if sweep > 2 * Math::PI
+        large = sweep > Math::PI ? 1 : 0
+        sweep_flag = ccw ? 0 : 1
+        sx = cx + (rx * Math.cos(start_ang))
+        sy = cy + (ry * Math.sin(start_ang))
+        ex = cx + (rx * Math.cos(end_ang))
+        ey = cy + (ry * Math.sin(end_ang))
+
+        d = "M #{sx} #{maybe_flip_y(sy)} "
+        d << format("A %f %f 0 %d %d %f %f", rx, ry, large, sweep_flag, ex, maybe_flip_y(ey))
+        case mode
+        when :chord
+          d << " Z"
+        when :pie
+          d << format(" L %f %f Z", cx, maybe_flip_y(cy))
+        end
+        attrs = (mode == :arc ? stroke_attrs : fill_attrs.merge(stroke_attrs)).merge("d" => d)
+        @builder.tag("path", attrs, single: true)
+      end
+
+      def emit_poly_multi(counts, all_points, closed:, _point_size:)
+        return if counts.empty? || all_points.empty?
+
+        # Walk sub-paths, slicing all_points by cumulative counts.
+        offset = 0
+        counts.each do |count|
+          sub_points = all_points[offset, count]
+          offset += count
+          next unless sub_points && sub_points.size == count
+
+          emit_path_polygon(sub_points, closed: closed)
+        end
+      end
+
+      def emit_poly_draw(points, types, _point_size:)
+        return if points.empty? || types.empty?
+
+        pt_moveto = 1
+        pt_lineto = 2
+        pt_bezierto = 4
+        pt_closefigure = 8
+
+        d = +""
+        bezier_buf = []
+        i = 0
+        types.each_with_index do |t, _idx|
+          pt = points[i]
+          i += 1
+          case t & 0x07
+          when pt_moveto
+            d << "M #{pt.x} #{maybe_flip_y(pt.y)} "
+          when pt_lineto
+            d << "L #{pt.x} #{maybe_flip_y(pt.y)} "
+          when pt_bezierto
+            bezier_buf << pt
+            if bezier_buf.size == 3
+              d << "C #{bezier_buf[0].x} #{maybe_flip_y(bezier_buf[0].y)} "
+              d << "#{bezier_buf[1].x} #{maybe_flip_y(bezier_buf[1].y)} "
+              d << "#{bezier_buf[2].x} #{maybe_flip_y(bezier_buf[2].y)} "
+              bezier_buf.clear
+            end
+          end
+          d << "Z " if (t & pt_closefigure).nonzero?
+        end
+        attrs = fill_attrs.merge(stroke_attrs).merge("d" => d)
+        @builder.tag("path", attrs, single: true)
       end
 
       def emit_path_polygon(points, closed:)

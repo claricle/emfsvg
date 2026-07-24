@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="623" height="467" viewBox="0 0 623 467" version="1.1">
+  <rect fill="#FFFBF0" stroke="none" x="0" y="0" width="624" height="468" />
   <text x="148" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Colonne ; Dimension :  3 x  4
   </text>
   <text x="141" y="0" font-family="Arial" font-size="12" fill="#000000">
     Table d'Entrée (Lignes x Colonnes) : 16 x 16 (Table de Burt)
   </text>
+  <rect fill="#FFFFFF" stroke="none" x="58" y="52" width="551" height="365" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 149 416 L 149 52 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="149" y1="416" x2="149" y2="415" />
   <rect x="149" y="415" width="1" height="1" fill="#C0C0C0" />
@@ -4061,51 +4063,83 @@
   <rect x="606" y="125" width="1" height="1" fill="#C0C0C0" />
   <line stroke="#C0C0C0" stroke-width="0" x1="607" y1="125" x2="608" y2="125" />
   <rect x="608" y="125" width="1" height="1" fill="#C0C0C0" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="425.0" cy="376.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="425.0" cy="376.0" rx="3.0" ry="3.0" />
   <text x="401" y="0" font-family="Arial" font-size="12" fill="#32CD32">
     SEXE:M
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="424.0" cy="170.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="424.0" cy="170.0" rx="3.0" ry="3.0" />
   <text x="401" y="0" font-family="Arial" font-size="12" fill="#32CD32">
     SEXE:F
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="463.0" cy="258.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="463.0" cy="258.0" rx="3.0" ry="3.0" />
   <text x="433" y="0" font-family="Arial" font-size="12" fill="#000000">
     AGE:age1
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="272.0" cy="239.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="272.0" cy="239.0" rx="3.0" ry="3.0" />
   <text x="242" y="0" font-family="Arial" font-size="12" fill="#FF6820">
     AGE:age2
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="514.0" cy="317.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="514.0" cy="317.0" rx="3.0" ry="3.0" />
   <text x="484" y="0" font-family="Arial" font-size="12" fill="#000000">
     AGE:age3
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="510.0" cy="300.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="510.0" cy="300.0" rx="3.0" ry="3.0" />
   <text x="456" y="0" font-family="Arial" font-size="12" fill="#000000">
     RELIGION:hindoue
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="82.0" cy="61.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="82.0" cy="61.0" rx="3.0" ry="3.0" />
   <text x="38" y="0" font-family="Arial" font-size="12" fill="#FF6820">
     RELIGION:sikh
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="432.0" cy="283.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="432.0" cy="283.0" rx="3.0" ry="3.0" />
   <text x="371" y="0" font-family="Arial" font-size="12" fill="#000000">
     RELIGION:musulman
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="412.0" cy="244.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="412.0" cy="244.0" rx="3.0" ry="3.0" />
   <text x="367" y="0" font-family="Arial" font-size="12" fill="#000000">
     NATIONAL:Inde
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="574.0" cy="194.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="574.0" cy="194.0" rx="3.0" ry="3.0" />
   <text x="518" y="0" font-family="Arial" font-size="12" fill="#FF6820">
     NATIONAL:Bengale
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="274.0" cy="385.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="274.0" cy="385.0" rx="3.0" ry="3.0" />
   <text x="214" y="0" font-family="Arial" font-size="12" fill="#FF6820">
     NATIONAL:Pakistan
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="318.0" cy="272.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="318.0" cy="272.0" rx="3.0" ry="3.0" />
   <text x="244" y="0" font-family="Arial" font-size="12" fill="#000000">
     LIEUNAI:Grande-Bretagne
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="448.0" cy="253.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="448.0" cy="253.0" rx="3.0" ry="3.0" />
   <text x="360" y="0" font-family="Arial" font-size="12" fill="#000000">
     LIEUNAI:sous-continent indien
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="462.0" cy="346.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="462.0" cy="346.0" rx="3.0" ry="3.0" />
   <text x="415" y="0" font-family="Arial" font-size="12" fill="#000000">
     LIEUNAI:ailleurs
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="411.0" cy="262.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="411.0" cy="262.0" rx="3.0" ry="3.0" />
   <text x="375" y="0" font-family="Arial" font-size="12" fill="#000000">
     ENFANT:oui
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="444.0" cy="282.0" rx="3.0" ry="3.0" />
+  <ellipse fill="none" stroke="#0000FF" stroke-width="0" cx="444.0" cy="282.0" rx="3.0" ry="3.0" />
   <text x="406" y="0" font-family="Arial" font-size="12" fill="#000000">
     ENFANT:non
   </text>

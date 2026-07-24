@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="623" height="467" viewBox="0 0 623 467" version="1.1">
+  <rect fill="#FFFBF0" stroke="none" x="0" y="0" width="624" height="468" />
   <text x="220" y="0" font-family="Arial" font-size="12" fill="#000000">
     Dendrogramme de 10  Variables
   </text>
@@ -9,6 +10,7 @@
   <text x="279" y="0" font-family="Arial" font-size="12" fill="#000000">
     1-r Pearson
   </text>
+  <rect fill="#FFFFFF" stroke="none" x="130" y="71" width="479" height="346" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 226 416 L 226 71 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="226" y1="416" x2="226" y2="415" />
   <rect x="226" y="415" width="1" height="1" fill="#C0C0C0" />

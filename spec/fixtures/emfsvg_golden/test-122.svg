@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="1045" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Ligne &amp; Colonne ; Dimension :  1 x  2
   </text>
@@ -9,12 +10,17 @@
   <text x="2182" y="0" font-family="Arial" font-size="12" fill="#000000">
     Standardisation : Profils ligne et colonne
   </text>
+  <ellipse fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" cx="8156.5" cy="738.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFBF0" stroke="#0000FF" stroke-width="0" cx="8156.5" cy="738.5" rx="41.5" ry="-41.5" />
   <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.L.
   </text>
+  <rect fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" x="8115" y="531" width="83" height="-83" />
+  <rect fill="#FFFBF0" stroke="#FF0000" stroke-width="0" x="8115" y="531" width="83" height="-83" />
   <text x="8381" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.C.
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFBF0" stroke-width="0" x="913" y="5908" width="6904" height="-5111" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1773 813 L 1773 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1773" y1="813" x2="1776" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1776" y1="846" x2="1776" y2="863" />
@@ -3608,33 +3614,53 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="7717" y1="5510" x2="7734" y2="5510" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7750" y1="5510" x2="7767" y2="5510" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7783" y1="5510" x2="7799" y2="5516" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2099.5" cy="3974.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2099.5" cy="3974.5" rx="41.5" ry="-41.5" />
   <text x="1794" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ligne1
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3061.5" cy="2497.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3061.5" cy="2497.5" rx="41.5" ry="-41.5" />
   <text x="2752" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ligne2
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4472.5" cy="1501.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4472.5" cy="1501.5" rx="41.5" ry="-41.5" />
   <text x="4165" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ligne3
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5584.5" cy="2763.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5584.5" cy="2763.5" rx="41.5" ry="-41.5" />
   <text x="5271" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ligne4
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6132.5" cy="4372.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6132.5" cy="4372.5" rx="41.5" ry="-41.5" />
   <text x="5821" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ligne5
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="1958" y="4597" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="1958" y="4597" width="83" height="-83" />
   <text x="1809" y="0" font-family="Arial" font-size="12" fill="#000000">
     Var1
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="2722" y="2954" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="2722" y="2954" width="83" height="-83" />
   <text x="2567" y="0" font-family="Arial" font-size="12" fill="#000000">
     Var2
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="4414" y="1660" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="4414" y="1660" width="83" height="-83" />
   <text x="4258" y="0" font-family="Arial" font-size="12" fill="#000000">
     Var3
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5842" y="3236" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5842" y="3236" width="83" height="-83" />
   <text x="5680" y="0" font-family="Arial" font-size="12" fill="#000000">
     Var4
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="6472" y="5294" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="6472" y="5294" width="83" height="-83" />
   <text x="6311" y="0" font-family="Arial" font-size="12" fill="#000000">
     Var5
   </text>

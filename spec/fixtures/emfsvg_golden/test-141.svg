@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="996" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Ligne &amp; Colonne ; Dimension :  1 x  2
   </text>
@@ -9,9 +10,12 @@
   <text x="2132" y="0" font-family="Arial" font-size="12" fill="#000000">
     Standardisation : Profils ligne et colonne
   </text>
+  <rect fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" x="8016" y="531" width="83" height="-83" />
+  <rect fill="#FFFBF0" stroke="#FF0000" stroke-width="0" x="8016" y="531" width="83" height="-83" />
   <text x="8281" y="0" font-family="Arial" font-size="12" fill="#000000">
      Suppl.Lig.
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFBF0" stroke-width="0" x="913" y="5908" width="6771" height="-5111" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1588 813 L 1588 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1588" y1="813" x2="1593" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1593" y1="846" x2="1593" y2="863" />
@@ -2637,36 +2641,58 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="7584" y1="5178" x2="7601" y2="5178" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7617" y1="5178" x2="7634" y2="5178" />
   <line stroke="#C0C0C0" stroke-width="0" x1="7651" y1="5178" x2="7667" y2="5180" />
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5261" y="3601" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5261" y="3601" width="83" height="-83" />
   <text x="4997" y="0" font-family="Arial" font-size="12" fill="#000000">
     Homme
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5925" y="3933" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5925" y="3933" width="83" height="-83" />
   <text x="5671" y="0" font-family="Arial" font-size="12" fill="#000000">
     Femme
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5477" y="4497" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5477" y="4497" width="83" height="-83" />
   <text x="5306" y="0" font-family="Arial" font-size="12" fill="#000000">
     15-24
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5394" y="4647" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5394" y="4647" width="83" height="-83" />
   <text x="5213" y="0" font-family="Arial" font-size="12" fill="#000000">
     25-34
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5377" y="3867" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5377" y="3867" width="83" height="-83" />
   <text x="5209" y="0" font-family="Arial" font-size="12" fill="#000000">
     35-49
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5759" y="3037" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5759" y="3037" width="83" height="-83" />
   <text x="5581" y="0" font-family="Arial" font-size="12" fill="#000000">
     50-64
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="6041" y="2771" width="83" height="-82" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="6041" y="2771" width="83" height="-82" />
   <text x="5874" y="0" font-family="Arial" font-size="12" fill="#000000">
     65et+
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="6456" y="3186" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="6456" y="3186" width="83" height="-83" />
   <text x="6180" y="0" font-family="Arial" font-size="12" fill="#000000">
     Primaire
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5593" y="4066" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5593" y="4066" width="83" height="-83" />
   <text x="5197" y="0" font-family="Arial" font-size="12" fill="#000000">
     Secondaire
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="5377" y="5111" width="83" height="-82" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="5377" y="5111" width="83" height="-82" />
   <text x="4974" y="0" font-family="Arial" font-size="12" fill="#000000">
     Techn. Prof
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" x="3634" y="3651" width="83" height="-83" />
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="3634" y="3651" width="83" height="-83" />
   <text x="3297" y="0" font-family="Arial" font-size="12" fill="#000000">
     Supérieur
   </text>

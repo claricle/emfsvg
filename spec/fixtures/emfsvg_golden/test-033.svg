@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="660" height="370" viewBox="0 0 660 370" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="6316" width="9366" height="-6316" />
   <text x="1991" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Ligne &amp; Colonne ; Dimension :  2 x  3
   </text>
@@ -9,12 +10,15 @@
   <text x="2805" y="0" font-family="Arial" font-size="12" fill="#000000">
     Standardisation : Profils ligne et colonne
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="8444.5" cy="681.0" rx="27.5" ry="-34.0" />
   <text x="8629" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.L.
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="8417" y="477" width="55" height="-68" />
   <text x="8629" y="0" font-family="Arial" font-size="12" fill="#000000">
      Coord.C.
   </text>
+  <rect fill="#FFFFFF" stroke="#FF0000" stroke-width="0" x="737" y="5278" width="7410" height="-4529" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1969 766 L 1969 5278 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1969" y1="766" x2="1970" y2="783" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1970" y1="800" x2="1970" y2="817" />
@@ -1995,108 +1999,143 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="8048" y1="4460" x2="8062" y2="4460" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8077" y1="4460" x2="8091" y2="4460" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8105" y1="4460" x2="8119" y2="4460" />
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="6985.5" cy="1277.0" rx="28.5" ry="-34.0" />
   <text x="6764" y="0" font-family="Arial" font-size="12" fill="#000000">
     Alsace
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4676.0" cy="3047.0" rx="28.0" ry="-34.0" />
   <text x="4347" y="0" font-family="Arial" font-size="12" fill="#000000">
     Aquitaine
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4676.0" cy="3047.0" rx="28.0" ry="-34.0" />
   <text x="4353" y="0" font-family="Arial" font-size="12" fill="#000000">
     Auvergne
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5497.5" cy="2809.0" rx="28.5" ry="-34.0" />
   <text x="5128" y="0" font-family="Arial" font-size="12" fill="#000000">
     Bourgogne
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4732.5" cy="2520.0" rx="28.5" ry="-34.0" />
   <text x="4435" y="0" font-family="Arial" font-size="12" fill="#000000">
     Bretagne
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5242.5" cy="2485.5" rx="28.5" ry="-34.5" />
   <text x="5017" y="0" font-family="Arial" font-size="12" fill="#000000">
     Centre
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="6022.5" cy="2639.0" rx="28.5" ry="-34.0" />
   <text x="5282" y="0" font-family="Arial" font-size="12" fill="#000000">
     Champagne-Ardennes
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="7495.5" cy="3592.0" rx="28.5" ry="-34.0" />
   <text x="7314" y="0" font-family="Arial" font-size="12" fill="#000000">
     Corse
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5781.0" cy="2826.0" rx="28.0" ry="-34.0" />
   <text x="5272" y="0" font-family="Arial" font-size="12" fill="#000000">
     Franche-Comte
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="6716.5" cy="2622.0" rx="28.5" ry="-34.0" />
   <text x="6281" y="0" font-family="Arial" font-size="12" fill="#000000">
     Ile-de-France
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5951.5" cy="3558.0" rx="28.5" ry="-34.0" />
   <text x="5220" y="0" font-family="Arial" font-size="12" fill="#000000">
     Languedoc-Roussillon
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4307.5" cy="3796.0" rx="28.5" ry="-34.0" />
   <text x="4004" y="0" font-family="Arial" font-size="12" fill="#000000">
     Limousin
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5597.0" cy="2707.0" rx="28.0" ry="-34.0" />
   <text x="5325" y="0" font-family="Arial" font-size="12" fill="#000000">
     Lorraine
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4789.5" cy="3422.0" rx="28.5" ry="-34.0" />
   <text x="4320" y="0" font-family="Arial" font-size="12" fill="#000000">
     Midi-Pyrenees
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4916.5" cy="3933.0" rx="28.5" ry="-34.0" />
   <text x="4288" y="0" font-family="Arial" font-size="12" fill="#000000">
     Nord-Pas-de-Calais
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4520.0" cy="2315.0" rx="28.0" ry="-34.0" />
   <text x="3932" y="0" font-family="Arial" font-size="12" fill="#000000">
     Basse-Normandie
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5015.5" cy="3081.0" rx="27.5" ry="-34.0" />
   <text x="4435" y="0" font-family="Arial" font-size="12" fill="#000000">
     Haute-Normandie
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4165.5" cy="1719.0" rx="28.5" ry="-34.0" />
   <text x="3631" y="0" font-family="Arial" font-size="12" fill="#000000">
     Pays-de-la-Loire
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="5228.5" cy="3354.0" rx="28.5" ry="-34.0" />
   <text x="4947" y="0" font-family="Arial" font-size="12" fill="#000000">
     Picardie
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="4250.5" cy="2979.0" rx="28.5" ry="-34.0" />
   <text x="3674" y="0" font-family="Arial" font-size="12" fill="#000000">
     Poitou-Charentes
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="7368.0" cy="2724.0" rx="28.0" ry="-34.0" />
   <text x="6438" y="0" font-family="Arial" font-size="12" fill="#000000">
     Provence-Alpes-Cote-d-Azur
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="6078.5" cy="2281.0" rx="28.5" ry="-34.0" />
   <text x="5659" y="0" font-family="Arial" font-size="12" fill="#000000">
     Rhone-Alpes
   </text>
+  <ellipse fill="#0000FF" stroke="#0000FF" stroke-width="0" cx="7665.5" cy="4784.0" rx="28.5" ry="-34.0" />
   <text x="7357" y="0" font-family="Arial" font-size="12" fill="#000000">
     Outremer
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="6759" y="2622" width="57" height="-68" />
   <text x="6535" y="0" font-family="Arial" font-size="12" fill="#000000">
     Sarkozy
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="5016" y="2009" width="57" height="-68" />
   <text x="4816" y="0" font-family="Arial" font-size="12" fill="#000000">
     Bayrou
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="5455" y="3558" width="57" height="-68" />
   <text x="5296" y="0" font-family="Arial" font-size="12" fill="#000000">
     Royal
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="5980" y="3098" width="56" height="-68" />
   <text x="5764" y="0" font-family="Arial" font-size="12" fill="#000000">
     Le Pen
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="3797" y="3149" width="57" height="-68" />
   <text x="3433" y="0" font-family="Arial" font-size="12" fill="#000000">
     Besancenot
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="2933" y="1090" width="57" height="-69" />
   <text x="2736" y="0" font-family="Arial" font-size="12" fill="#000000">
     Villiers
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="5526" y="2043" width="57" height="-68" />
   <text x="5316" y="0" font-family="Arial" font-size="12" fill="#000000">
     Voynet
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="3882" y="3524" width="57" height="-68" />
   <text x="3613" y="0" font-family="Arial" font-size="12" fill="#000000">
     Laguiller
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="5271" y="3149" width="57" height="-68" />
   <text x="5130" y="0" font-family="Arial" font-size="12" fill="#000000">
     Bove
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="5455" y="4426" width="57" height="-68" />
   <text x="5285" y="0" font-family="Arial" font-size="12" fill="#000000">
     Buffet
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="1304" y="3933" width="56" height="-68" />
   <text x="1109" y="0" font-family="Arial" font-size="12" fill="#000000">
     Nihous
   </text>
+  <rect fill="#FF0000" stroke="#FF0000" stroke-width="0" x="4492" y="3609" width="56" height="-68" />
   <text x="4210" y="0" font-family="Arial" font-size="12" fill="#000000">
     Schivardi
   </text>

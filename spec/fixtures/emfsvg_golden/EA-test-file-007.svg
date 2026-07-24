@@ -9,18 +9,23 @@
   <text x="-9" y="-1026.0" font-family="Carlito" font-size="12" fill="#000000">
     class Fig: DGGS Core - Core Reference System using Zonal Identifiers with Structured Geometry
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="449" y="-58.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="460" y="-69.0" width="16" height="16" />
   <text x="483" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19170-1
   </text>
   <text x="494" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="347" y="-58.0" width="95" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#556B2F" stroke-width="2" x="358" y="-69.0" width="16" height="16" />
   <text x="381" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
     19115-1 Ed 1
   </text>
   <text x="393" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="3" x="216" y="-403.0" width="240" height="113" />
   <text x="439" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     CRS
   </text>
@@ -55,6 +60,7 @@
   <text x="238" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     DGGS_RefSys: DGG_ReferenceSystemType
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="108" y="-308.0" width="175" height="58" />
   <text x="173" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -68,6 +74,7 @@
   <text x="130" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     refinementRatio: Integer
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="10" y="-176.0" width="273" height="84" />
   <text x="124" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -89,6 +96,7 @@
   <text x="263" y="-1027.0" font-family="Arial" font-size="12" fill="#556B2F">
     Reference system information
   </text>
+  <rect fill="#FFFFFF" stroke="#556B2F" stroke-width="2" x="190" y="-911.0" width="289" height="48" />
   <text x="225" y="-1027.0" font-family="Calibri" font-size="12" fill="#556B2F">
     Reference system information::MD_ReferenceSystem
   </text>
@@ -110,6 +118,7 @@
   <text x="291" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     System
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="350" y="-786.0" width="155" height="93" />
   <text x="411" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «Union»
   </text>
@@ -141,6 +150,7 @@
   <text x="372" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     ZIRS: MD_Identifier
   </text>
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="267" y="-554.0" width="139" height="62" />
   <text x="353" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     ObjectUsage
   </text>
@@ -153,6 +163,7 @@
   <text x="327" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     :CRS
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="12" y="-756.0" width="126" height="123" />
   <text x="54" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «CodeList»
   </text>
@@ -190,6 +201,7 @@
   <text x="34" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     cellEquiSized
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="530" y="-756.0" width="126" height="123" />
   <text x="572" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «CodeList»
   </text>
@@ -233,6 +245,7 @@
   <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     solidCentredChildCell
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="387" y="-121.0" width="121" height="40" />
   <text x="423" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «DataType»
   </text>
@@ -245,6 +258,7 @@
   <text x="426" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     Identifiers)
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="164" y="-786.0" width="154" height="93" />
   <text x="219" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -273,6 +287,7 @@
   <text x="186" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     topologicalDimension: Integer
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="387" y="-176.0" width="273" height="84" />
   <text x="501" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -298,6 +313,7 @@
   <text x="409" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     representativePosition: DirectPosition [1..4] {ordered}
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="387" y="-308.0" width="175" height="58" />
   <text x="452" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -311,12 +327,14 @@
   <text x="409" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     refinementLevel: Integer
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="3" x="407" y="-687.0" width="254" height="43" />
   <text x="512" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
   <text x="432" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     Zonal RS using Identifiers::RSUsingZonalIdentifiers
   </text>
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="540" y="-121.0" width="121" height="40" />
   <text x="578" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
     «datatype»
   </text>
@@ -326,6 +344,7 @@
   <text x="543" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
     (from Coordinate Data Types)
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="3" x="12" y="-687.0" width="254" height="43" />
   <text x="117" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -337,18 +356,23 @@
   <text x="95" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
     KEY:
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="125" y="-58.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="136" y="-69.0" width="16" height="16" />
   <text x="159" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19107 Ed 2
   </text>
   <text x="176" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="236" y="-58.0" width="104" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="247" y="-69.0" width="16" height="16" />
   <text x="270" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19111 Ed 3
   </text>
   <text x="287" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#0000CD" stroke-width="2" x="530" y="-911.0" width="127" height="48" />
   <text x="571" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
     «datatype»
   </text>
@@ -366,6 +390,7 @@
   <text x="554" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
     Geometry
   </text>
+  <rect fill="#FFFFFF" stroke="#32CD32" stroke-width="2" x="12" y="-911.0" width="126" height="48" />
   <text x="53" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="2083" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Colonne ; Dimension :  1 x  2
   </text>
   <text x="1983" y="0" font-family="Arial" font-size="12" fill="#000000">
     Table d'Entrée (Lignes x Colonnes) : 23 x 23 (Table de Burt)
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="747" y="6207" width="8397" height="-5410" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1794 813 L 1794 6207 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1794" y1="813" x2="1792" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1792" y1="846" x2="1792" y2="863" />
@@ -2170,69 +2172,113 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9045" y1="5128" x2="9061" y2="5128" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9078" y1="5128" x2="9094" y2="5128" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9111" y1="5128" x2="9128" y2="5128" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4688.5" cy="3758.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4688.5" cy="3758.5" rx="41.5" ry="-41.5" />
   <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:jamais
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2281.5" cy="3095.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2281.5" cy="3095.5" rx="41.5" ry="-41.5" />
   <text x="1585" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:une fois
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5103.5" cy="3924.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5103.5" cy="3924.5" rx="41.5" ry="-41.5" />
   <text x="4363" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:rarement
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5335.5" cy="3924.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5335.5" cy="3924.5" rx="41.5" ry="-41.5" />
   <text x="4476" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:quelquefois
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4920.5" cy="5501.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4920.5" cy="5501.5" rx="41.5" ry="-41.5" />
   <text x="4222" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:souvent
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5318.5" cy="5252.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5318.5" cy="5252.5" rx="41.5" ry="-41.5" />
   <text x="4472" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:très souvent
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3775.5" cy="2663.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3775.5" cy="2663.5" rx="41.5" ry="-41.5" />
   <text x="3302" y="0" font-family="Arial" font-size="12" fill="#000000">
     CONSOM:nr
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5733.5" cy="5368.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5733.5" cy="5368.5" rx="41.5" ry="-41.5" />
   <text x="5268" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:nr
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="9036.5" cy="2032.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="9036.5" cy="2032.5" rx="41.5" ry="-41.5" />
   <text x="8231" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:agriculteur
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4339.5" cy="5484.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4339.5" cy="5484.5" rx="41.5" ry="-41.5" />
   <text x="3685" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:artisan
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="8024.5" cy="4290.0" rx="41.5" ry="-41.0" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="8024.5" cy="4290.0" rx="41.5" ry="-41.0" />
   <text x="7263" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:cadre sup
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7094.5" cy="4522.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7094.5" cy="4522.5" rx="41.5" ry="-41.5" />
   <text x="6193" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:cadre moyen
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2713.5" cy="4538.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2713.5" cy="4538.5" rx="41.5" ry="-41.5" />
   <text x="2029" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:employ
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2082.5" cy="4804.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2082.5" cy="4804.5" rx="41.5" ry="-41.5" />
   <text x="1430" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:ouvrier
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5103.5" cy="4489.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5103.5" cy="4489.5" rx="41.5" ry="-41.5" />
   <text x="4489" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:retrait
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4572.5" cy="2862.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4572.5" cy="2862.5" rx="41.5" ry="-41.5" />
   <text x="3982" y="0" font-family="Arial" font-size="12" fill="#000000">
     SITPROF:autre
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="3642.5" cy="1618.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="3642.5" cy="1618.5" rx="41.5" ry="-41.5" />
   <text x="2970" y="0" font-family="Arial" font-size="12" fill="#000000">
     REVENU:- de 5kF
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2547.5" cy="4323.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2547.5" cy="4323.5" rx="41.5" ry="-41.5" />
   <text x="1585" y="0" font-family="Arial" font-size="12" fill="#000000">
     REVENU:entre 5 et 10 kF
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4937.5" cy="4655.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4937.5" cy="4655.5" rx="41.5" ry="-41.5" />
   <text x="3910" y="0" font-family="Arial" font-size="12" fill="#000000">
     REVENU:entre 10 et 15 kF
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4489.5" cy="4621.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4489.5" cy="4621.5" rx="41.5" ry="-41.5" />
   <text x="3464" y="0" font-family="Arial" font-size="12" fill="#000000">
     REVENU:entre 15 et 20 kF
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7227.5" cy="3609.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7227.5" cy="3609.5" rx="41.5" ry="-41.5" />
   <text x="6461" y="0" font-family="Arial" font-size="12" fill="#000000">
     REVENU:+ de 20 kF
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5601.5" cy="3742.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5601.5" cy="3742.5" rx="41.5" ry="-41.5" />
   <text x="4814" y="0" font-family="Arial" font-size="12" fill="#000000">
     REVENU:ne sait pas
   </text>

@@ -9,6 +9,7 @@
   <text x="-1" y="-414.0" font-family="Carlito" font-size="12" fill="#000000">
     class Fig: Primitives of Zone
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="18" y="-76.0" width="173" height="97" />
   <text x="156" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     Location
   </text>
@@ -37,6 +38,7 @@
   <text x="40" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     identifier: GeographicIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="232" y="-50.0" width="160" height="123" />
   <text x="290" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -74,18 +76,21 @@
   <text x="254" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     identifier: PeriodIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="146" y="-230.0" width="117" height="36" />
   <text x="182" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     «interface»
   </text>
   <text x="177" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     ZonePrimitive
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="340" y="-230.0" width="117" height="36" />
   <text x="376" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     «interface»
   </text>
   <text x="367" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     ZoneCompound
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="156" y="-312.0" width="268" height="84" />
   <text x="268" y="-415.0" font-family="Carlito" font-size="12" fill="#000000">
     «interface»
   </text>

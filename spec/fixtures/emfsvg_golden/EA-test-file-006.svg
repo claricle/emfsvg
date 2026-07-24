@@ -14,18 +14,23 @@
   <text x="195" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
     KEY:
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="310" y="-50.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="321" y="-61.0" width="16" height="16" />
   <text x="344" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19170-1
   </text>
   <text x="355" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="221" y="-50.0" width="85" height="56" rx="3.0" ry="3.0" />
+  <rect fill="#FFD700" stroke="#000000" stroke-width="1" x="231" y="-60.0" width="16" height="16" />
   <text x="253" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
     19156 Ed 1
   </text>
   <text x="262" y="-669.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-473.0" width="222" height="61" />
   <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -39,12 +44,14 @@
   <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     cellContext: QuantizationContext
   </text>
+  <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="21" y="-473.0" width="133" height="61" />
   <text x="61" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     observation::
   </text>
   <text x="47" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     ObservationContext
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-575.0" width="222" height="75" />
   <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -58,12 +65,14 @@
   <text x="201" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     cellContext: Quantization [1..6]
   </text>
+  <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="427" y="-473.0" width="133" height="61" />
   <text x="463" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «FeatureType»
   </text>
   <text x="441" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     observation::OM_Process
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="20" y="-218.0" width="100" height="119" />
   <text x="49" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «CodeList»
   </text>
@@ -107,6 +116,7 @@
   <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     asTags
   </text>
+  <rect fill="#FEE350" stroke="#000000" stroke-width="1" x="222" y="-371.0" width="133" height="61" />
   <text x="307" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     AnyFeature
   </text>
@@ -116,6 +126,7 @@
   <text x="226" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     observation::OM_Observation
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="20" y="-371.0" width="179" height="61" />
   <text x="87" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -129,6 +140,7 @@
   <text x="42" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     role: Quantization
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="323" y="-99.0" width="237" height="84" />
   <text x="419" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -138,6 +150,7 @@
   <text x="411" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     Geometry::Cell
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="21" y="-99.0" width="237" height="84" />
   <text x="117" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
     «interface»
   </text>
@@ -163,6 +176,7 @@
   <text x="43" y="-669.0" font-family="Carlito" font-size="12" fill="#000000">
     representativePosition: DirectPosition [1..4] {ordered}
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="179" y="-235.0" width="222" height="84" />
   <text x="268" y="-669.0" font-family="Calibri" font-size="12" fill="#000000">
     «interface»
   </text>

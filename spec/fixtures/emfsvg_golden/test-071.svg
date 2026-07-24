@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="607" height="454" viewBox="0 0 607 454" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="6803" width="9071" height="-6803" />
   <text x="2074" y="0" font-family="Arial" font-size="12" fill="#000000">
     Tracé 2D des Coordonnées Colonne ; Dimension :  1 x  2
   </text>
@@ -9,6 +10,7 @@
   <text x="2797" y="0" font-family="Arial" font-size="12" fill="#000000">
     Standardisation : Profils ligne et colonne
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="835" y="5741" width="7982" height="-4993" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1559 763 L 1559 5741 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1559" y1="763" x2="1552" y2="777" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1552" y1="792" x2="1552" y2="807" />
@@ -4905,39 +4907,63 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="8713" y1="5353" x2="8728" y2="5353" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8743" y1="5353" x2="8758" y2="5353" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8773" y1="5353" x2="8788" y2="5353" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5274.0" cy="1981.0" rx="37.0" ry="-37.0" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5274.0" cy="1981.0" rx="37.0" ry="-37.0" />
   <text x="5062" y="0" font-family="Arial" font-size="12" fill="#000000">
     NF-F
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1797.5" cy="4343.5" rx="37.5" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1797.5" cy="4343.5" rx="37.5" ry="-37.5" />
   <text x="1601" y="0" font-family="Arial" font-size="12" fill="#000000">
     FF-F
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6886.0" cy="4702.5" rx="38.0" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6886.0" cy="4702.5" rx="38.0" ry="-37.5" />
   <text x="6683" y="0" font-family="Arial" font-size="12" fill="#000000">
     EF-F
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5527.5" cy="2668.5" rx="37.5" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5527.5" cy="2668.5" rx="37.5" ry="-37.5" />
   <text x="5307" y="0" font-family="Arial" font-size="12" fill="#000000">
     NF-E
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1663.5" cy="4358.5" rx="37.5" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1663.5" cy="4358.5" rx="37.5" ry="-37.5" />
   <text x="1459" y="0" font-family="Arial" font-size="12" fill="#000000">
     FF-E
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7541.5" cy="4463.0" rx="37.5" ry="-37.0" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7541.5" cy="4463.0" rx="37.5" ry="-37.0" />
   <text x="7330" y="0" font-family="Arial" font-size="12" fill="#000000">
     EF-E
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="4826.5" cy="2265.5" rx="37.5" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="4826.5" cy="2265.5" rx="37.5" ry="-37.5" />
   <text x="4614" y="0" font-family="Arial" font-size="12" fill="#000000">
     NF-A
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1812.5" cy="4164.0" rx="37.5" ry="-37.0" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1812.5" cy="4164.0" rx="37.5" ry="-37.0" />
   <text x="1600" y="0" font-family="Arial" font-size="12" fill="#000000">
     FF-A
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="7004.5" cy="4986.5" rx="37.5" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="7004.5" cy="4986.5" rx="37.5" ry="-37.5" />
   <text x="6782" y="0" font-family="Arial" font-size="12" fill="#000000">
     EF-A
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="5095.0" cy="1203.5" rx="37.0" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="5095.0" cy="1203.5" rx="37.0" ry="-37.5" />
   <text x="4882" y="0" font-family="Arial" font-size="12" fill="#000000">
     NF-P
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1618.5" cy="3939.5" rx="37.5" ry="-37.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1618.5" cy="3939.5" rx="37.5" ry="-37.5" />
   <text x="1404" y="0" font-family="Arial" font-size="12" fill="#000000">
     FF-P
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="6960.0" cy="4777.0" rx="37.0" ry="-37.0" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="6960.0" cy="4777.0" rx="37.0" ry="-37.0" />
   <text x="6739" y="0" font-family="Arial" font-size="12" fill="#000000">
     EF-P
   </text>

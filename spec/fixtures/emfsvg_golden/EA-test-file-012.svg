@@ -14,24 +14,30 @@
   <text x="115" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
     KEY:
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="150" y="-58.0" width="99" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" x="161" y="-69.0" width="16" height="16" />
   <text x="184" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
     19112 Ed 2
   </text>
   <text x="192" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="250" y="-58.0" width="93" height="58" rx="3.0" ry="3.0" />
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="261" y="-69.0" width="16" height="16" />
   <text x="284" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
     ISO 19170-1
   </text>
   <text x="295" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
      
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="162" y="-294.0" width="146" height="40" />
   <text x="211" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
     «DataType»
   </text>
   <text x="206" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
     ZonalIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="155" y="-107.0" width="124" height="48" />
   <text x="193" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
     «DataType»
   </text>
@@ -41,6 +47,7 @@
   <text x="162" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
     Identifiers::PeriodIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="10" y="-107.0" width="107" height="48" />
   <text x="39" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
     «DataType»
   </text>
@@ -50,12 +57,14 @@
   <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
     GeographicIdentifier
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="80" y="-197.0" width="115" height="40" />
   <text x="113" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
     «DataType»
   </text>
   <text x="90" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
     ZonalIdentifierPrimitive
   </text>
+  <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="280" y="-197.0" width="115" height="40" />
   <text x="313" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
     «DataType»
   </text>

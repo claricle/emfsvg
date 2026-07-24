@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <rect fill="#FFFBF0" stroke="#000000" stroke-width="1" x="0" y="7020" width="9360" height="-7020" />
   <text x="1004" y="0" font-family="Arial" font-size="12" fill="#000000">
     Projection des variables sur le plan factoriel (  1 x   2)
   </text>
+  <ellipse fill="#FFFBF0" stroke="#FFFBF0" stroke-width="0" cx="6878.5" cy="489.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFBF0" stroke="#0000FF" stroke-width="0" cx="6878.5" cy="489.5" rx="41.5" ry="-41.5" />
   <text x="7103" y="0" font-family="Arial" font-size="12" fill="#000000">
      Active
   </text>
+  <rect fill="#FFFFFF" stroke="#FFFBF0" stroke-width="0" x="929" y="6506" width="5709" height="-5709" />
   <path stroke="#FFFFFF" stroke-width="0" d="M 1187 813 L 1187 6506 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1187" y1="813" x2="1195" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1195" y1="846" x2="1195" y2="863" />
@@ -1736,33 +1740,53 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="6539" y1="6240" x2="6555" y2="6240" />
   <line stroke="#C0C0C0" stroke-width="0" x1="6572" y1="6240" x2="6589" y2="6240" />
   <line stroke="#C0C0C0" stroke-width="0" x1="6605" y1="6240" x2="6622" y2="6247" />
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2082.5" cy="5003.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2082.5" cy="5003.5" rx="41.5" ry="-41.5" />
   <text x="1729" y="0" font-family="Arial" font-size="12" fill="#000000">
      TRAV_1
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1800.5" cy="4953.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1800.5" cy="4953.5" rx="41.5" ry="-41.5" />
   <text x="1459" y="0" font-family="Arial" font-size="12" fill="#000000">
      TRAV_2
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1833.5" cy="4854.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1833.5" cy="4854.5" rx="41.5" ry="-41.5" />
   <text x="1488" y="0" font-family="Arial" font-size="12" fill="#000000">
      TRAV_3
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1335.5" cy="3609.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1335.5" cy="3609.5" rx="41.5" ry="-41.5" />
   <text x="915" y="0" font-family="Arial" font-size="12" fill="#000000">
      OCCUP_1
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1501.5" cy="3808.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1501.5" cy="3808.5" rx="41.5" ry="-41.5" />
   <text x="1086" y="0" font-family="Arial" font-size="12" fill="#000000">
      OCCUP_2
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2281.5" cy="2099.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2281.5" cy="2099.5" rx="41.5" ry="-41.5" />
   <text x="1936" y="0" font-family="Arial" font-size="12" fill="#000000">
      DOMI_1
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2032.5" cy="2066.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2032.5" cy="2066.5" rx="41.5" ry="-41.5" />
   <text x="1690" y="0" font-family="Arial" font-size="12" fill="#000000">
      DOMI_2
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="2099.5" cy="2182.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="2099.5" cy="2182.5" rx="41.5" ry="-41.5" />
   <text x="1767" y="0" font-family="Arial" font-size="12" fill="#000000">
      DOMI_3
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1302.5" cy="3709.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1302.5" cy="3709.5" rx="41.5" ry="-41.5" />
   <text x="873" y="0" font-family="Arial" font-size="12" fill="#000000">
      DIVERS_1
   </text>
+  <ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" cx="1435.5" cy="3792.5" rx="41.5" ry="-41.5" />
+  <ellipse fill="#FFFFFF" stroke="#0000FF" stroke-width="0" cx="1435.5" cy="3792.5" rx="41.5" ry="-41.5" />
   <text x="1005" y="0" font-family="Arial" font-size="12" fill="#000000">
      DIVERS_2
   </text>
