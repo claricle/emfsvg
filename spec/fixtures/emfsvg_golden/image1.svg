@@ -6,375 +6,620 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 240 14464 L 6304 14464 L 6304 240 L 240 240 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="217" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «FeatureType»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="228" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Veglenke
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 240 832 L 6288 832 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     veglenkeid: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     kjoreretning: Kjoreretning
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     feltoversikt: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Klassifisering»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     typeveg: TypeVeg
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     funksjonellvegklasse: Vegklasse
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     motorvegtype: Motorvegtype [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     klasselandbruksveg: Landbruksvegklasse [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     serviceveg: JaNei
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     beredskapsveg: JaNei
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Fartsgrense»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrense: FartsgrenseVerdi [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel: FartsgrenseVerdi [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel_type: TypeFartsgrenseVariabel [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel_ukedag: UkedagFartsgrenseVariabel [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel_datofra: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel_datotil: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel_klokkesletttil: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fartsgrensevariabel_klokkeslettfra: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Begrensninger»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     skiltahoyde: Real [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     trafikkreguleringer: TypeTrafikkregulering [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     trafikkreguleringer_merknad: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransporthverdagulordagperiode1frakl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransporthverdagulordagperiode1tilkl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransporthverdagulordagperiode2frakl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransporthverdagulordagperiode2tilkl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransportlordagperiode1frakl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransportlordagperiode1tilkl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransportlordagperiode2frakl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransportlordagperiode2tilkl: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransportlordagfra: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_kjoringtileiendommenetillatt: JaNei [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gagatereguleringer_varetransportlordagtil: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     bruksklasse_spesialtransport_bruksklassehelår: BruksklasseHelar [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     bruksklasse_spesialtransport_bruksklassevinter: BruksklasseVinter [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     bruksklasse_spesialtransport_maksvogntoglengde: MaksVogntoglengde [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     bruksklasse_spesialtransport_veggruppe: Veggruppe [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     bruksklasse_spesialtransport_merknad: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Beredskap»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     vinterstengt_fradato: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     vinterstengt_tildato: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     nattestengt_fradato: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     nattestengt_tildato: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Stedfesting»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     kommunenummer: Kommunenummer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     adressekode: Integer [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     adressenavn: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     vegsystemreferanse: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     vegsystemreferanse_fra_meter: Integer [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     vegsystemreferanse_til_meter: Integer [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     metrert_lengde: Real [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     geometrilengde: Real
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     veglenkesekvensid: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fra_posisjon: Real
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     til_posisjon: Real
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     superstedfesting_veglenkesekvensid: Integer [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     superstedfesting_fra_posisjon: Real [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     superstedfesting_til_posisjon: Real [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fra_node: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     til_node: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     medium: Medium [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     senterlinje: Kurve
   </text>
@@ -384,30 +629,46 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="532" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «CodeList»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="528" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Kjoreretning
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7184 832 L 9152 832 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Med
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Mot
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Begge
   </text>
@@ -417,9 +678,13 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="563" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «CodeList»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="547" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Kommunenummer
   </text>
@@ -429,63 +694,101 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="554" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «FeatureType»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="549" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Svingerestriksjon
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7120 4496 L 10208 4496 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     merknad: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="500" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Stedfesting»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fra_veglenkeid: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     til_veglenkeid: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fra_veglenkesekvensid: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     fra_posisjon: Real
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     til_veglenkesekvensid: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     til_posisjon: Real
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     posisjon: Punkt
   </text>
@@ -495,57 +798,91 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="554" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «FeatureType»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="559" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Vegsperring
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7104 7648 L 10208 7648 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     type: TypeVegsperring
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     funksjon: FunksjonVegsperring [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     gjeldertidsrom: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     merknad: CharacterString [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="499" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «Stedfesting»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     veglenkeid_1: Integer
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     veglenkeid_2: Integer [0..1]
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     posisjon: Punkt
   </text>
@@ -555,86 +892,139 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="563" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «CodeList»
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="568" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Medium
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7120 11824 L 10208 11824 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Alltid i vann = V
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     I bygning/bygningsmessig anlegg = B
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     I luft = L
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     På isbre = I
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     På sjøbunnen = S
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     På terrenget/på bakkenivå = T
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     På vannoverflaten = O
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Tidvis under vann = D
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Under isbre = J
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Under sjøbunnen = W
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Under terrenget = U
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     + 
   </text>
+  </g>
+  <g transform="translate(0.000000 -342.000000) scale(1.000000 -1.000000) translate(0.000000 0.000000)">
   <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Ukjent = X
   </text>
+  </g>
   </g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g>
 </svg>
