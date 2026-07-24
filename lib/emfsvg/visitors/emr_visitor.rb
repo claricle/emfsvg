@@ -143,6 +143,7 @@ module Emfsvg
         @current_y = 0
         @path_d = nil
         @open_groups = 0
+        @in_path = false
       end
 
       attr_reader :current_x, :current_y, :open_groups
@@ -369,12 +370,24 @@ module Emfsvg
       def visit_move_to_ex(wire)
         @current_x = wire.origin.x
         @current_y = wire.origin.y
+        return unless @in_path
+
+        # In path: emit `M X,Y ` directly to the open d-string.
+        @builder.raw("M ")
+        @builder.raw(point_str(wire.origin))
       end
 
       def visit_line_to(wire)
-        # Matches U_EMRLINETO_draw → lineto_draw → startPathDraw + "L X,Y " + endPathDraw
-        # endPathDraw emits ` fill="none"` (WITH leading space) — different
-        # from U_EMRPOLYLINE_draw which emits `fill="none"` (no leading).
+        if @in_path
+          # In path: emit `L X,Y ` to the open d-string, no wrapping.
+          @builder.raw("L ")
+          @builder.raw(format("%.4f,%.4f ", cal_x(wire.origin.x), cal_y(wire.origin.y)))
+          @current_x = wire.origin.x
+          @current_y = wire.origin.y
+          return
+        end
+
+        # Standalone LineTo (not in path): full <path> element via endPathDraw.
         d = +"M #{fmt(cal_x(@current_x))},#{fmt(cal_y(@current_y))} "
         d << "L #{fmt(cal_x(wire.origin.x))},#{fmt(cal_y(wire.origin.y))} "
         emit_path_element(d, closed: false, leading_fill_space: true)
@@ -478,6 +491,25 @@ module Emfsvg
       def emit_poly_bezier_common(points, starting_point:)
         return if points.size < 4
 
+        if @in_path
+          # Inside BeginPath..EndPath: append directly to open d-string.
+          if starting_point
+            @builder.raw("M ")
+            @builder.raw(point_str(points.first))
+          end
+          points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
+            next if [ctrl1, ctrl2, endpt].any?(&:nil?)
+
+            @builder.raw("C ")
+            @builder.raw(point_str(ctrl1))
+            @builder.raw(point_str(ctrl2))
+            @builder.raw(point_str(endpt))
+          end
+          @current_x = points.last.x
+          @current_y = points.last.y
+          return
+        end
+
         d = +"M #{fmt(cal_x(@current_x))},#{fmt(cal_y(@current_y))} "
         if starting_point
           d << "M "
@@ -497,15 +529,32 @@ module Emfsvg
       end
 
       def visit_begin_path(_wire)
-        @path_d = +""
+        # libemf2svg's U_EMRBEGINPATH_draw emits `<path d="` immediately and
+        # sets inPath=true. Subsequent path-building records append to the
+        # open d-string; they don't emit their own <path> wrapping.
+        @builder.raw("<path ")
+        @builder.raw(clip_path_attr_string)
+        @builder.raw("d=\"")
+        @in_path = true
       end
 
       def visit_end_path(_wire)
-        @path_d = nil
+        # U_EMRENDPATH_draw emits closing quote, then optional stroke/fill
+        # based on which later record (FillPath/StrokePath/StrokeAndFillPath)
+        # was analysed to consume this path. Without the two-pass analysis we
+        # always emit both stroke_draw and fill_draw, then `fill="none" ` if
+        # not filled (NO leading space — different from endPathDraw).
+        @in_path = false
+        @builder.raw("\" ")
+        emit_stroke_draw
+        emit_fill_draw
+        @builder.raw("fill=\"none\" ") unless @last_fill_set
+        @builder.raw("stroke=\"none\" ") unless @last_stroke_set
+        @builder.rawln("/>")
       end
 
       def visit_close_figure(_wire)
-        @path_d&.<<("Z ")
+        @builder.raw("Z ") if @in_path
       end
 
       def visit_fill_path(_wire)
@@ -1369,6 +1418,19 @@ module Emfsvg
 
       def emit_path_polygon(points, closed:)
         return if points.empty?
+
+        if @in_path
+          # Inside BeginPath..EndPath: append `M X,Y L X,Y ... [Z]` directly
+          # to the open d-string (no element wrapping).
+          @builder.raw("M ")
+          @builder.raw(point_str(points.first))
+          points[1..].each do |p|
+            @builder.raw("L ")
+            @builder.raw(point_str(p))
+          end
+          @builder.raw("Z ") if closed
+          return
+        end
 
         d = +"M "
         d << point_str(points.first)
