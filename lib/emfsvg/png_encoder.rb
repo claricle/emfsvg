@@ -39,6 +39,9 @@ module Emfsvg
           raw << "\x00" # filter type 0 (None)
           raw << rgba_bytes.bytes[y * stride, stride].pack("C*")
         end
+        # Note: libemf2svg uses libpng which produces different (better-
+        # compressed) output. Byte parity for images is not achievable
+        # without a libpng binding.
         Zlib::Deflate.deflate(raw, 9)
       end
     end
