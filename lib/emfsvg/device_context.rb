@@ -23,6 +23,7 @@ module Emfsvg
       @mapper_flags = 0
       @arc_direction = 1 # AD_COUNTERCLOCKWISE
       @clip_region = nil
+      @clip_id = nil
       @window_ext = [0, 0]
       @viewport_ext = [0, 0]
       @window_org = [0, 0]
@@ -33,7 +34,8 @@ module Emfsvg
                   :poly_fill_mode, :map_mode, :text_align, :stretch_mode,
                   :miter_limit, :world_transform, :brush_origin, :icm_mode,
                   :layout, :mapper_flags, :arc_direction, :clip_region,
-                  :window_ext, :viewport_ext, :window_org, :viewport_org
+                  :clip_id, :window_ext, :viewport_ext, :window_org,
+                  :viewport_org
 
     def dup
       other = DeviceContext.allocate
@@ -55,6 +57,7 @@ module Emfsvg
       other.mapper_flags = mapper_flags
       other.arc_direction = arc_direction
       other.clip_region = clip_region
+      other.clip_id = clip_id
       other.window_ext = window_ext.dup
       other.viewport_ext = viewport_ext.dup
       other.window_org = window_org.dup
@@ -124,9 +127,9 @@ module Emfsvg
 
   # Font value object: minimal subset of LOGFONT for text rendering.
   class Font
-    DEFAULT_HEIGHT = 12
+    DEFAULT_HEIGHT = 0
 
-    def initialize(face_name: "sans-serif", height: DEFAULT_HEIGHT, weight: 400,
+    def initialize(face_name: nil, height: DEFAULT_HEIGHT, weight: 0,
                    italic: false, underline: false, strikeout: false,
                    escapement: 0)
       @face_name = face_name

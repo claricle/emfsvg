@@ -17,6 +17,7 @@ module Emfsvg
   autoload :DibDecoder, "emfsvg/dib_decoder"
   autoload :PngEncoder, "emfsvg/png_encoder"
   autoload :ClipRegion, "emfsvg/clip_region"
+  autoload :BsdRand, "emfsvg/bsd_rand"
 
   class << self
     # Render an Emf::Model::Metafile to an SVG string.
@@ -40,7 +41,7 @@ module Emfsvg
 
     # Parse from a file path then render.
     def from_file(path, **options)
-      from_bytes(File.read(path, mode: "rb"), **options)
+      from_bytes(File.binread(path), **options)
     end
   end
 end

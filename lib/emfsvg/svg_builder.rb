@@ -1,44 +1,45 @@
 # frozen_string_literal: true
 
 module Emfsvg
-  # Lightweight XML builder tailored to SVG output. No external dependency.
-  # Emits indented XML with explicit attribute ordering.
+  # Lightweight XML builder matching libemf2svg's exact byte output:
+  #   - no indentation
+  #   - self-closing elements use `/>` (no leading space)
+  #   - callers control newlines explicitly via `rawln` / `newline`
   class SvgBuilder
     def initialize
-      @out = +""
-      @indent = 0
+      @out = (+"").force_encoding("ASCII-8BIT")
     end
 
     attr_reader :out
 
-    def declaration
-      @out << %(<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n)
-      self
-    end
-
-    def doctype
-      @out << %(<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n)
-      self
-    end
-
     def tag(name, attrs = {}, single: false)
       open_tag(name, attrs, single: single)
       if block_given?
-        @indent += 1
         yield
-        @indent -= 1
         close_tag(name)
       end
       self
     end
 
     def text(content)
-      @out << indent << escape_text(content) << "\n"
+      @out << escape_text(content)
       self
     end
 
+    # Raw append, no newline.
     def raw(string)
-      @out << indent << string << "\n"
+      @out << string
+      self
+    end
+
+    # Raw append with trailing newline.
+    def rawln(string)
+      @out << string << "\n"
+      self
+    end
+
+    def newline
+      @out << "\n"
       self
     end
 
@@ -49,21 +50,17 @@ module Emfsvg
     private
 
     def open_tag(name, attrs, single:)
-      @out << indent << "<" << name
+      @out << "<" << name
       attrs.each do |k, v|
         next if v.nil?
 
-        @out << %( #{k}=") << escape_attr(v.to_s) << '"'
+        @out << " " << k.to_s << '="' << escape_attr(v.to_s) << '"'
       end
-      @out << (single ? " />\n" : ">\n")
+      @out << (single ? "/>" : ">")
     end
 
     def close_tag(name)
-      @out << indent << "</" << name << ">\n"
-    end
-
-    def indent
-      "  " * @indent
+      @out << "</" << name << ">"
     end
 
     def escape_attr(value)

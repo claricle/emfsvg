@@ -171,14 +171,32 @@ module Emfsvg
         @open_groups = 0
       end
 
-      # --- point_cal equivalents (matching libemf2svg's coordinate pipeline) ---
+      # Per-element coordinate transformation matching libemf2svg's point_cal().
+      #
+      # CRITICAL: window/viewport origins are ONLY applied for ISOTROPIC and
+      # ANISOTROPIC modes. For MM_TEXT and metric modes, the C code leaves
+      # windowOrgX/Y and viewPortOrgX/Y at 0.0 (initialized but never set
+      # inside the switch). This is NOT a bug in the C code — it's the
+      # intentional GDI behavior for those map modes.
 
       def cal_x(x)
-        (((x - @dc.window_org[0]) * sf_x) + @dc.viewport_org[0]) * @scaling
+        if use_orgs?
+          (((x - @dc.window_org[0]) * sf_x) + @dc.viewport_org[0]) * @scaling
+        else
+          x * sf_x * @scaling
+        end
       end
 
       def cal_y(y)
-        (((y - @dc.window_org[1]) * sf_y) + @dc.viewport_org[1]) * @scaling
+        if use_orgs?
+          (((y - @dc.window_org[1]) * sf_y) + @dc.viewport_org[1]) * @scaling
+        else
+          y * sf_y * @scaling
+        end
+      end
+
+      def use_orgs?
+        @dc.map_mode == 7 || @dc.map_mode == 8 # ISOTROPIC or ANISOTROPIC
       end
 
       def scale_dim_x(w)
@@ -237,14 +255,76 @@ module Emfsvg
         @dc = @transform_stack.restore(wire.saved_dc) || @dc
       end
 
+      ColorRGB = Struct.new(:r, :g, :b) do
+        def to_color
+          Emf::Model::Geometry::Color.new(red: r, green: g, blue: b)
+        end
+      end
+
+      STOCK_OBJECT_FLAG = 0x80000000
+      # Stock object indices (low 31 bits when STOCK_OBJECT_FLAG is set),
+      # matching MS-EMF 2.1.7. Used by visit_select_object.
+      STOCK = {
+        0 => [:brush, :white],   # WHITE_BRUSH
+        1 => [:brush, :ltgray],  # LTGRAY_BRUSH
+        2 => [:brush, :gray],    # GRAY_BRUSH
+        3 => [:brush, :dkgray],  # DKGRAY_BRUSH
+        4 => [:brush, :black],   # BLACK_BRUSH
+        5 => [:brush, :null],    # NULL_BRUSH
+        6 => [:pen, :white],     # WHITE_PEN
+        7 => [:pen, :black],     # BLACK_PEN
+        8 => [:pen, :null]       # NULL_PEN
+      }.freeze
+
+      STOCK_BRUSH_COLORS = {
+        white: ColorRGB.new(0xFF, 0xFF, 0xFF),
+        ltgray: ColorRGB.new(0xC0, 0xC0, 0xC0),
+        gray: ColorRGB.new(0x80, 0x80, 0x80),
+        dkgray: ColorRGB.new(0x40, 0x40, 0x40),
+        black: ColorRGB.new(0x00, 0x00, 0x00)
+      }.freeze
+
       def visit_select_object(wire)
-        entry = @object_table.lookup(wire.ih_object)
+        ih = wire.ih_object
+
+        # Stock object?
+        if (ih & STOCK_OBJECT_FLAG).positive?
+          index = ih & 0x7FFFFFFF
+          apply_stock_object(index)
+          return
+        end
+
+        entry = @object_table.lookup(ih)
         return unless entry
 
         case entry.type
         when :pen then @dc.pen = entry.object
         when :brush then @dc.brush = entry.object
         when :font then @dc.font = entry.object
+        end
+      end
+
+      def apply_stock_object(index)
+        kind, variant = STOCK[index]
+        return unless kind
+
+        case kind
+        when :brush
+          if variant == :null
+            @dc.brush = Brush.new(style: Brush::NULL,
+                                  color: Emf::Model::Geometry::Color.white)
+          else
+            @dc.brush = Brush.new(style: Brush::SOLID,
+                                  color: STOCK_BRUSH_COLORS[variant].to_color)
+          end
+        when :pen
+          if variant == :null
+            @dc.pen = Pen.new(style: Pen::NULL, width: 1,
+                              color: Emf::Model::Geometry::Color.black)
+          else
+            @dc.pen = Pen.new(style: Pen::SOLID, width: 1,
+                              color: STOCK_BRUSH_COLORS[variant].to_color)
+          end
         end
       end
 
@@ -292,11 +372,12 @@ module Emfsvg
       end
 
       def visit_line_to(wire)
-        attrs = stroke_attrs.merge(
-          "x1" => fmt(cal_x(@current_x)), "y1" => fmt(cal_y(@current_y)),
-          "x2" => fmt(cal_x(wire.origin.x)), "y2" => fmt(cal_y(wire.origin.y))
-        )
-        @builder.tag("line", attrs, single: true)
+        # Matches U_EMRLINETO_draw → lineto_draw → startPathDraw + "L X,Y " + endPathDraw
+        # endPathDraw emits ` fill="none"` (WITH leading space) — different
+        # from U_EMRPOLYLINE_draw which emits `fill="none"` (no leading).
+        d = +"M #{fmt(cal_x(@current_x))},#{fmt(cal_y(@current_y))} "
+        d << "L #{fmt(cal_x(wire.origin.x))},#{fmt(cal_y(wire.origin.y))} "
+        emit_path_element(d, closed: false, leading_fill_space: true)
         @current_x = wire.origin.x
         @current_y = wire.origin.y
       end
@@ -312,11 +393,9 @@ module Emfsvg
           dim_y = -dim_y
           lt_y -= dim_y
         end
-        attrs = fill_attrs.merge(stroke_attrs).merge(
-          "x" => fmt(lt_x), "y" => fmt(lt_y),
-          "width" => fmt(dim_x), "height" => fmt(dim_y)
-        )
-        @builder.tag("rect", attrs, single: true)
+        geom = format("x=\"%.4f\" y=\"%.4f\" width=\"%.4f\" height=\"%.4f\"",
+                      lt_x, lt_y, dim_x, dim_y)
+        emit_shape_element("rect", geom)
       end
 
       def visit_ellipse(wire)
@@ -328,11 +407,9 @@ module Emfsvg
         cy = (lt_y + rb_y) / 2.0
         rx = (rb_x - lt_x).abs / 2.0
         ry = (rb_y - lt_y).abs / 2.0
-        attrs = fill_attrs.merge(stroke_attrs).merge(
-          "cx" => fmt(cx), "cy" => fmt(cy),
-          "rx" => fmt(rx), "ry" => fmt(ry)
-        )
-        @builder.tag("ellipse", attrs, single: true)
+        geom = format("cx=\"%.4f\" cy=\"%.4f\" rx=\"%.4f\" ry=\"%.4f\"",
+                      cx, cy, rx, ry)
+        emit_shape_element("ellipse", geom)
       end
 
       def visit_round_rect(wire)
@@ -340,14 +417,17 @@ module Emfsvg
         lt_y = cal_y(wire.rcl_box.top)
         rb_x = cal_x(wire.rcl_box.right)
         rb_y = cal_y(wire.rcl_box.bottom)
-        rx = (cal_x(wire.szl_corner.cx) - cal_x(0)).abs / 2.0
-        ry = (cal_y(wire.szl_corner.cy) - cal_y(0)).abs / 2.0
-        attrs = fill_attrs.merge(stroke_attrs).merge(
-          "x" => fmt(lt_x), "y" => fmt(lt_y),
-          "width" => fmt(rb_x - lt_x), "height" => fmt(rb_y - lt_y),
-          "rx" => fmt(rx), "ry" => fmt(ry)
-        )
-        @builder.tag("rect", attrs, single: true)
+        dim_x = rb_x - lt_x
+        dim_y = rb_y - lt_y
+        if @fix_y && dim_y.negative?
+          dim_y = -dim_y
+          lt_y -= dim_y
+        end
+        rx = scale_dim_x(wire.szl_corner.cx.to_i)
+        ry = scale_dim_x(wire.szl_corner.cy.to_i)
+        geom = format("x=\"%.4f\" y=\"%.4f\" width=\"%.4f\" height=\"%.4f\" rx=\"%.4f\" ry=\"%.4f\"",
+                      lt_x, lt_y, dim_x, dim_y, rx, ry)
+        emit_shape_element("rect", geom)
       end
 
       # TODO: arc/chord/pie arc reconstruction
@@ -383,39 +463,35 @@ module Emfsvg
         emit_path_polygon(wire.apts.to_a, closed: false)
       end
 
-      # TODO: bezier curve reconstruction
       def visit_poly_bezier(wire)
-        points = wire.aptl.to_a
-        return if points.size < 4
-
-        d = "M #{fmt(cal_x(points.first.x))} #{fmt(cal_y(points.first.y))} "
-        points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
-          next if [ctrl1, ctrl2, endpt].any?(&:nil?)
-
-          d << "C #{fmt(cal_x(ctrl1.x))} #{fmt(cal_y(ctrl1.y))} "
-          d << "#{fmt(cal_x(ctrl2.x))} #{fmt(cal_y(ctrl2.y))} "
-          d << "#{fmt(cal_x(endpt.x))} #{fmt(cal_y(endpt.y))} "
-        end
-        attrs = stroke_attrs.merge("fill" => "none", "d" => d)
-        @builder.tag("path", attrs, single: true)
-        @current_x = points.last.x
-        @current_y = points.last.y
+        emit_poly_bezier_common(wire.aptl.to_a, starting_point: true)
       end
 
       def visit_poly_bezier16(wire)
-        points = wire.apts.to_a
+        emit_poly_bezier_common(wire.apts.to_a, starting_point: true)
+      end
+
+      # Matches cubic_bezier_draw / cubic_bezier16_draw.
+      # startPathDraw emits `M cur_x,cur_y ` (from the device context's
+      # current position). If starting_point is true (PolyBezier, not To),
+      # an additional `M point[0]` is emitted before the C commands.
+      def emit_poly_bezier_common(points, starting_point:)
         return if points.size < 4
 
-        d = "M #{fmt(cal_x(points.first.x))} #{fmt(cal_y(points.first.y))} "
+        d = +"M #{fmt(cal_x(@current_x))},#{fmt(cal_y(@current_y))} "
+        if starting_point
+          d << "M "
+          d << point_str(points.first)
+        end
         points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
           next if [ctrl1, ctrl2, endpt].any?(&:nil?)
 
-          d << "C #{fmt(cal_x(ctrl1.x))} #{fmt(cal_y(ctrl1.y))} "
-          d << "#{fmt(cal_x(ctrl2.x))} #{fmt(cal_y(ctrl2.y))} "
-          d << "#{fmt(cal_x(endpt.x))} #{fmt(cal_y(endpt.y))} "
+          d << "C "
+          d << point_str(ctrl1)
+          d << point_str(ctrl2)
+          d << point_str(endpt)
         end
-        attrs = stroke_attrs.merge("fill" => "none", "d" => d)
-        @builder.tag("path", attrs, single: true)
+        emit_path_element(d, closed: false, leading_fill_space: true)
         @current_x = points.last.x
         @current_y = points.last.y
       end
@@ -486,23 +562,45 @@ module Emfsvg
 
       def visit_comment(_wire); end
 
-      def visit_set_pixel_v(wire)
-        color = Emf::Model::Geometry::Color.from_wire(wire.cr_color)
-        attrs = {
-          "x" => fmt(cal_x(wire.ptl_pixel.x)), "y" => fmt(cal_y(wire.ptl_pixel.y)),
-          "width" => "1.0000", "height" => "1.0000", "fill" => color.to_hex
-        }
-        @builder.tag("rect", attrs, single: true)
+      def visit_set_pixel_v(_wire)
+        # FLAG_IGNORED in libemf2svg — emits nothing.
       end
 
       def visit_create_font_indirect_w(wire)
-        # Parse the LOGFONT_PANOSE from body bytes. We only extract the
-        # face name (UTF-16LE at offset 28 + 28 = 56 bytes into the body,
-        # after the fixed LOGFONT fields). Store in object table.
         body = wire.body.to_s
-        face_name = parse_logfont_face_name(body, utf16: true)
-        font = Font.new(face_name: face_name)
+        font = parse_logfont(body, utf16: true)
         @object_table.store(wire.ih_object, :font, font)
+      end
+
+      # Parse a LOGFONT struct from body bytes (MS-WMF 2.2.13).
+      # Layout:
+      #   0  int32 lfHeight
+      #   4  int32 lfWidth
+      #   8  int32 lfEscapement (tenths of a degree)
+      #   12 int32 lfOrientation
+      #   16 int32 lfWeight
+      #   20 byte  lfItalic
+      #   21 byte  lfUnderline
+      #   22 byte  lfStrikeOut
+      #   ... (charset etc ignored)
+      #   28 32 UTF-16 chars lfFaceName (64 bytes)
+      def parse_logfont(body, utf16:)
+        return Font.default if body.nil? || body.bytesize < 28
+
+        height = body.unpack("l<")[0]
+        _width = body.unpack("l<", offset: 4)[0]
+        # libemf2svg reduces lfEscapement modulo 3600 (so 3600 → 0, no rotation).
+        escapement = body.unpack("l<", offset: 8)[0] % 3600
+        weight = body.unpack("l<", offset: 16)[0]
+        italic = body.getbyte(20) != 0
+        underline = body.getbyte(21) != 0
+        strikeout = body.getbyte(22) != 0
+        face_name = parse_logfont_face_name(body, utf16: utf16)
+        Font.new(face_name: face_name, height: height, weight: weight,
+                 italic: italic, underline: underline, strikeout: strikeout,
+                 escapement: escapement)
+      rescue StandardError
+        Font.default
       end
 
       def visit_ext_text_out_w(wire)
@@ -514,16 +612,14 @@ module Emfsvg
       end
 
       def visit_intersect_clip_rect(wire)
-        new_region = ClipRegion.new(bounds: Emf::Model::Geometry::Rect.from_wire(wire.rcl_clip))
-        @dc.clip_region = (@dc.clip_region || ClipRegion.new).combine(new_region, ClipRegion::RGN_AND)
+        # libemf2svg's clip_rgn_mix ignores the mode and REPLACES the clip
+        # region with the new rect. We replicate that.
+        @dc.clip_region = ClipRegion.new(bounds: Emf::Model::Geometry::Rect.from_wire(wire.rcl_clip))
         emit_clip_def(@dc.clip_region)
       end
 
       def visit_exclude_clip_rect(wire)
-        # ExcludeClipRect = subtract rclClip from current region.
-        # MVP: replace with the inverse bounding rect (lossy but safe).
-        new_region = ClipRegion.new(bounds: Emf::Model::Geometry::Rect.from_wire(wire.rcl_clip))
-        @dc.clip_region = (@dc.clip_region || ClipRegion.new).combine(new_region, ClipRegion::RGN_DIFF)
+        @dc.clip_region = ClipRegion.new(bounds: Emf::Model::Geometry::Rect.from_wire(wire.rcl_clip))
         emit_clip_def(@dc.clip_region)
       end
 
@@ -781,10 +877,16 @@ module Emfsvg
       # --- Clip region handlers (TODO 06) ---
 
       def visit_ext_select_clip_rgn(wire)
+        # RGN_COPY (5) with no region data resets the clip in libemf2svg.
+        if wire.dw_mode == 5 || wire.dw_mode.zero?
+          @dc.clip_region = nil
+          @dc.clip_id = nil
+          return
+        end
+
         bounds = parse_rgn_data_bounds(wire.rgn_data.to_s)
         new_region = bounds ? ClipRegion.new(bounds: bounds) : ClipRegion.new
-        mode = wire.dw_mode.zero? ? ClipRegion::RGN_COPY : wire.dw_mode
-        @dc.clip_region = (@dc.clip_region || ClipRegion.new).combine(new_region, mode)
+        @dc.clip_region = new_region
         emit_clip_def(@dc.clip_region)
       end
 
@@ -869,21 +971,42 @@ module Emfsvg
       def emit_clip_def(region)
         return if region.nil? || region.empty?
 
-        @clip_counter ||= 0
-        @clip_counter += 1
-        id = "clip-#{@clip_counter}"
-        @builder.tag("defs") do
-          @builder.tag("clipPath", { "id" => id }) do
-            region.to_svg_element(@builder)
+        clip_id = BsdRand.next
+        @builder.raw("<defs><clipPath id=\"clip-#{clip_id}\">")
+        @builder.raw("<path d=\"")
+        @builder.raw(clip_region_path_d(region))
+        @builder.raw("Z\" />")
+        @builder.rawln("</clipPath></defs>")
+        @dc.clip_id = clip_id
+      end
+
+      # Build the path-d string for a clip region matching libemf2svg's
+      # draw_path output (segments: M, L, ..., then implicit Z appended by
+      # caller).
+      def clip_region_path_d(region)
+        if region.path_d
+          region.path_d
+        elsif region.bounds
+          b = region.bounds
+          pts = [[b.left, b.top], [b.right, b.top],
+                 [b.right, b.bottom], [b.left, b.bottom], [b.left, b.top]]
+          d = +"M "
+          d << format("%.4f,%.4f ", cal_x(pts.first[0]), cal_y(pts.first[1]))
+          pts[1..].each do |x, y|
+            d << "L "
+            d << format("%.4f,%.4f ", cal_x(x), cal_y(y))
           end
+          d << "Z "
+          d
+        else
+          ""
         end
-        @current_clip_id = id
       end
 
       def clip_attrs
-        return {} unless @current_clip_id
+        return {} unless @dc.clip_id
 
-        { "clip-path" => "url(##{@current_clip_id})" }
+        { "clip-path" => "url(#clip-#{@dc.clip_id})" }
       end
 
       # LOGFONT_PANOSE face name lives at offset 28 within LOGFONT (after
@@ -924,67 +1047,87 @@ module Emfsvg
         record_bytes = wire.to_binary_s
         off_string = wire.off_string
         n_chars = wire.n_chars
-        return if n_chars.zero? || off_string.zero?
-        return if off_string >= record_bytes.bytesize
 
-        string_bytes = record_bytes[off_string, utf16 ? n_chars * 2 : n_chars]
-        return unless string_bytes && !string_bytes.empty?
-
-        text = if utf16
-                 string_bytes.force_encoding("UTF-16LE")
-                             .encode("UTF-8", undef: :replace, replace: "?")
+        text = if off_string && off_string.positive? && off_string < record_bytes.bytesize
+                 string_bytes = record_bytes[off_string, utf16 ? n_chars * 2 : n_chars]
+                 if string_bytes && !string_bytes.empty?
+                   if utf16
+                     string_bytes.force_encoding("UTF-16LE")
+                                 .encode("UTF-8", undef: :replace, replace: "?")
+                   else
+                     string_bytes.force_encoding("CP1252")
+                                 .encode("UTF-8", undef: :replace, replace: "?")
+                   end
+                 else
+                   ""
+                 end
                else
-                 string_bytes.force_encoding("CP1252")
-                             .encode("UTF-8", undef: :replace, replace: "?")
+                 ""
                end
 
-        # Position: use ptlReference via point_cal pipeline.
+        # libemf2svg emits the <text> element even when the string is empty.
         x = cal_x(wire.ptl_reference.x)
         y = cal_y(wire.ptl_reference.y)
 
-        # Text alignment (matches libemf2svg text_style_draw).
-        align = @dc.text_align
-        anchor = case align & 0x06
-                 when 0x02 then "end"
-                 when 0x06 then "middle"
-                 else "start"
-                 end
-
         font = @dc.font
-        font_height = font.height.abs
+        font_height = (scale_dim_x(font.height.to_i)).abs
 
-        # Vertical offset: libemf2svg adds font_height * 0.9 for TA_TOP.
-        y_pos = if align.allbits?(0x18) || align.allbits?(0x08)
-                  y
-                else
-                  y + (font_height * 0.9)
-                end
+        @builder.raw("<text ")
+        @builder.raw(clip_path_attr_string)
+        emit_text_style(font, font_height, x, y)
+        @builder.raw(">")
+        @builder.raw("<![CDATA[#{text}]]>")
+        @builder.rawln("</text>")
+      end
 
-        attrs = {
-          "font-family" => font.face_name,
-          "fill" => @dc.text_color.to_hex,
-          "text-anchor" => anchor,
-          "style" => "white-space:pre;",
-          "x" => fmt(x), "y" => fmt(y_pos),
-          "font-size" => fmt(font_height)
-        }
+      # Mirror libemf2svg's text_style_draw. Attributes are written in the
+      # exact C order with the exact spacing, including the quirky
+      # `style ="..."` (space before `=`).
+      # NOTE: text_style_draw does NOT prefix with a space; the caller
+      # (text_draw) emits the trailing space of `<text ` (and any trailing
+      # space from clipset_draw) before this method runs.
+      def emit_text_style(font, font_height, x, y)
+        @builder.raw("font-family=\"#{font.face_name}\" ") if font.face_name
+        @builder.raw("fill=\"#{@dc.text_color.to_hex}\" ")
 
-        # Font rotation from escapement (tenths of a degree)
+        orientation = sf_y > 0 ? -1 : 1
         if font.escapement != 0
-          rotation = -font.escapement / 10
-          attrs["transform"] = format("rotate(%d, %.4f, %.4f) translate(0, %.4f)",
-                                      rotation, x, y_pos, font_height * 0.9)
+          rotation = orientation * font.escapement / 10
+          @builder.raw(format("transform=\"rotate(%d, %.4f, %.4f) translate(0, %.4f)\" ",
+                              rotation, x, (y + font_height * 0.9), font_height * 0.9))
         end
 
-        attrs["font-weight"] = font.weight if font.weight != 0
-        attrs["font-style"] = "italic" if font.italic
+        @builder.raw("font-style=\"italic\" ") if font.italic
+        # Quirk: libemf2svg prints "style =\"...\"" with a space before `=`.
+        @builder.raw("style =\"white-space:pre;\" ")
 
-        decorations = []
-        decorations << "underline" if font.underline
-        decorations << "line-through" if font.strikeout
-        attrs["text-decoration"] = decorations.join(",") unless decorations.empty?
+        if font.underline && font.strikeout
+          @builder.raw("text-decoration=\"line-through,underline\" ")
+        elsif font.underline
+          @builder.raw("text-decoration=\"underline\" ")
+        elsif font.strikeout
+          @builder.raw("text-decoration=\"line-through\" ")
+        end
 
-        @builder.tag("text", attrs) { @builder.raw("<![CDATA[#{text}]]>") }
+        @builder.raw("font-weight=\"#{font.weight}\" ") if font.weight != 0
+
+        align = @dc.text_align
+        anchor = case align & 0x06
+                 when 0x06 then "middle"
+                 when 0x02 then "end"
+                 else "start"
+                 end
+        @builder.raw("text-anchor=\"#{anchor}\" ")
+
+        # Vertical position: TA_BOTTOM (0x08) or TA_BASELINE (0x18) use Org.y;
+        # otherwise add font_height * 0.9.
+        if (align & 0x18) == 0x18 || (align & 0x18) == 0x08
+          y_pos = y
+        else
+          y_pos = y + (font_height * 0.9)
+        end
+        @builder.raw(format("x=\"%.4f\" y=\"%.4f\" ", x, y_pos))
+        @builder.raw(format("font-size=\"%.4f\" ", font_height))
       end
 
       def emit_arc(wire, mode:)
@@ -1130,13 +1273,185 @@ module Emfsvg
       def emit_path_polygon(points, closed:)
         return if points.empty?
 
-        d = +""
-        d << "M #{fmt(cal_x(points.first.x))} #{fmt(cal_y(points.first.y))} "
-        points[1..].each { |p| d << "L #{fmt(cal_x(p.x))} #{fmt(cal_y(p.y))} " }
-        d << "Z " if closed
-        attrs = (closed ? fill_attrs.merge(stroke_attrs) : stroke_attrs).merge("d" => d)
-        attrs["fill-rule"] = fill_rule_attr if closed
-        @builder.tag("path", attrs, single: true)
+        d = +"M "
+        d << point_str(points.first)
+        points[1..].each do |p|
+          d << "L "
+          d << point_str(p)
+        end
+        emit_path_element(d, closed: closed)
+      end
+
+      # Emits a <path> element matching libemf2svg's exact byte layout:
+      #   <path [clip-path="..."] d="..."Z" [stroke attrs] [fill attrs] [...]/>\n
+      # For closed paths the trailing Z is appended; for open paths it's omitted.
+      # Stroke is emitted before fill (matching U_EMRPOLYGON_draw ordering).
+      def emit_path_element(d_string, closed:, leading_fill_space: false)
+        @builder.raw("<path ")
+        @builder.raw(clip_path_attr_string)
+        @builder.raw("d=\"")
+        @builder.raw(d_string)
+        @builder.raw(closed ? "Z\" " : "\" ")
+        emit_stroke_draw
+        if closed
+          emit_fill_draw
+          emit_unfilled_unstroked
+        else
+          # Open paths: no fill_draw call. libemf2svg emits `fill="none"` as
+          # fallback. LineTo (endPathDraw) prefixes with a space; Polyline
+          # does not.
+          @builder.raw(" ") if leading_fill_space
+          @builder.raw("fill=\"none\" ")
+          @builder.raw("stroke=\"none\" ") unless @last_stroke_set
+        end
+        @builder.raw("/>")
+        @builder.newline
+      end
+
+      # Emits a shape element (rect/ellipse) matching libemf2svg byte layout:
+      #   <rect x=".." y=".." width=".." height=".." [rx ry] [fill] [stroke] [clip]/>\n
+      # Fill is emitted before stroke (matching U_EMRRECTANGLE_draw ordering).
+      def emit_shape_element(tag_name, geometry_str)
+        @builder.raw("<")
+        @builder.raw(tag_name)
+        @builder.raw(" ")
+        @builder.raw(geometry_str)
+        @builder.raw(" ")
+        emit_fill_draw
+        emit_stroke_draw
+        @builder.raw(clip_path_attr_string)
+        emit_unfilled_unstroked
+        @builder.raw("/>")
+        @builder.newline
+      end
+
+      # Mirror libemf2svg's "if (!filled) fill=\"none\"" / "if (!stroked) stroke=\"none\""
+      # trailing fallbacks. Tracks state via @last_fill_set / @last_stroke_set.
+      def emit_unfilled_unstroked
+        @builder.raw("fill=\"none\" ") unless @last_fill_set
+        @builder.raw("stroke=\"none\" ") unless @last_stroke_set
+      end
+
+      # Format a single point as libemf2svg's point_draw would: "X,Y "
+      def point_str(p)
+        format("%.4f,%.4f ", cal_x(p.x), cal_y(p.y))
+      end
+
+      # Mirror libemf2svg's clipset_draw: emits " clip-path=\"url(#clip-N)\" "
+      # only if a clip is currently set. Note the leading and trailing space.
+      def clip_path_attr_string
+        return "" unless @dc.clip_id
+
+        " clip-path=\"url(#clip-#{@dc.clip_id})\" "
+      end
+
+      # Mirror libemf2svg's fill_draw. Emits fill-rule prefix (depending on
+      # brush style — see note below) then the fill attribute. Sets
+      # @last_fill_set so the caller can decide whether to add fallback
+      # `fill="none"`.
+      #
+      # Quirk: in C, the first switch on fill_mode overlaps with brush style
+      # constants — U_BS_NULL(1) matches U_ALTERNATE(1) → "evenodd", and
+      # U_BS_HATCHED(2) matches U_WINDING(2) → "nonzero". Other brush styles
+      # produce a single space. We replicate this exactly.
+      def emit_fill_draw
+        brush = @dc.brush
+        @last_fill_set = false
+        case brush.style
+        when Brush::SOLID
+          @builder.raw(" ")
+          @builder.raw(fill_color_attr(brush))
+          @last_fill_set = true
+        when Brush::NULL
+          @builder.raw("fill=\"none\" ")
+          @last_fill_set = true
+        when Brush::HATCHED
+          @hatch_counter ||= 0
+          @hatch_counter += 1
+          id = "hatch-#{@hatch_counter}"
+          emit_hatch_pattern(id, brush.hatch, brush.color, @dc.bk_color, @dc.bk_mode)
+          @builder.raw("fill-rule=\"nonzero\" fill=\"url(##{id})\" ")
+          @last_fill_set = true
+        else
+          @builder.raw(" ")
+          @builder.raw(fill_color_attr(brush))
+          @last_fill_set = true
+        end
+      end
+
+      def fill_color_attr(brush)
+        "fill=\"#{brush.color.to_hex}\" "
+      end
+
+      # Mirror libemf2svg's stroke_draw. Emits stroke attrs depending on pen
+      # type (NULL/COSMETIC/GEOMETRIC) and dash style. Does NOT add a leading
+      # space — the caller is responsible for spacing.
+      def emit_stroke_draw
+        pen = @dc.pen
+        @last_stroke_set = false
+        style = pen.style
+
+        if (style & 0xFF) == Pen::NULL
+          if @dc.brush.style != Brush::NULL
+            @builder.raw("stroke-width=\"1px\" stroke=\"#{@dc.brush.color.to_hex}\" ")
+          else
+            @builder.raw("stroke=\"none\" stroke-width=\"0.0\" ")
+          end
+          @last_stroke_set = true
+          return
+        end
+
+        # Color then width (C order: color_stroke then width_stroke)
+        @builder.raw("stroke=\"#{pen.color.to_hex}\" ")
+        emit_width_stroke(pen.width)
+        @last_stroke_set = true
+
+        # Dash style
+        unit_stroke = (pen.width || 1) * @scaling
+        dash_len = unit_stroke * 5
+        dot_len = unit_stroke
+        case style & 0xFF
+        when Pen::DASH
+          @builder.raw(format("stroke-dasharray=\"%.4f,%.4f\" ", dash_len, dash_len))
+        when Pen::DOT
+          @builder.raw(format("stroke-dasharray=\"%.4f,%.4f\" ", dot_len, dot_len))
+        when Pen::DASHDOT
+          @builder.raw(format("stroke-dasharray=\"%.4f,%.4f,%.4f,%.4f\" ",
+                              dash_len, dash_len, dot_len, dash_len))
+        when Pen::DASHDOTDOT
+          @builder.raw(format("stroke-dasharray=\"%.4f,%.4f,%.4f,%.4f,%.4f,%.4f\" ",
+                              dash_len, dash_len, dot_len, dot_len, dot_len, dash_len))
+        end
+
+        # Line cap (bits 8-11)
+        case style & 0x0F00
+        when 0x0000 then @builder.raw(" stroke-linecap=\"round\" ") # PS_ENDCAP_ROUND default
+        when 0x0100 then @builder.raw(" stroke-linecap=\"square\" ")
+        when 0x0200 then @builder.raw(" stroke-linecap=\"butt\" ")
+        end
+
+        # Line join (bits 12-15)
+        case style & 0xF000
+        when 0x0000 then @builder.raw(" stroke-linejoin=\"round\" ") # PS_JOIN_ROUND default
+        when 0x1000 then @builder.raw(" stroke-linejoin=\"bevel\" ")
+        when 0x2000
+          @builder.raw(" stroke-linejoin=\"miter\" ")
+          if @dc.miter_limit
+            @builder.raw(format(" stroke-miterlimit=\"%.4f\" ", @scaling * @dc.miter_limit))
+          end
+        end
+      end
+
+      # Mirror libemf2svg's width_stroke: tmp_w = scaleX(width); if (tmp_w/scaling)<1
+      # emit "1px", else emit the scaled width.
+      def emit_width_stroke(width)
+        w = [width.to_i, 1].max
+        tmp_w = scale_dim_x(w)
+        if (tmp_w / @scaling) < 1.0
+          @builder.raw("stroke-width=\"1px\" ")
+        else
+          @builder.raw(format("stroke-width=\"%.4f\" ", tmp_w))
+        end
       end
 
       HATCH_PATTERNS = {

@@ -28,6 +28,7 @@ module Emfsvg
       @dc = DeviceContext.new
       @object_table = ObjectTable.new
       @transform_stack = TransformStack.new
+      BsdRand.reset
       compute_header_params
     end
 
@@ -89,7 +90,7 @@ module Emfsvg
     end
 
     def emit_xml_declaration
-      @builder.raw('<?xml version="1.0"  encoding="UTF-8" standalone="no"?>')
+      @builder.rawln('<?xml version="1.0"  encoding="UTF-8" standalone="no"?>')
     end
 
     def emit_svg_open(&)
@@ -107,19 +108,26 @@ module Emfsvg
         "height" => h
       }
       attrs["xmlns:svg"] = "http://www.w3.org/2000/svg" if @options.namespace == "svg"
-      @builder.tag("svg", attrs, &)
+      @builder.raw("<")
+      @builder.raw("svg")
+      attrs.each do |k, v|
+        @builder.raw(" #{k}=\"#{v}\"")
+      end
+      @builder.rawln(">")
+      yield
+      @builder.rawln("</svg>")
     end
 
     def emit_header_translate_group
       if @fix_broken_y
-        @builder.raw('<g transform="translate(0.0000, 0.0000)">')
+        @builder.rawln('<g transform="translate(0.0000, 0.0000)">')
       else
         tx = format("%.4f", -1.0 * @ref_x * @scaling)
         ty = format("%.4f", -1.0 * @ref_y * @scaling)
-        @builder.raw("<g transform=\"translate(#{tx}, #{ty})\">")
+        @builder.rawln("<g transform=\"translate(#{tx}, #{ty})\">")
       end
       yield
-      @builder.raw("</g>")
+      @builder.rawln("</g>")
     end
 
     def visit_records
