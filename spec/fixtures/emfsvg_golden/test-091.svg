@@ -11,11 +11,11 @@
       <rect x="71" y="5190" width="9212" height="-5207" />
     </clipPath>
   </defs>
-  <text x="2856" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2856" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Projection des variables sur le plan factoriel (  1 x   2)
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-2)" stroke="#0000FF" stroke-width="14" cx="8546.5" cy="238.0" rx="28.5" ry="-34.0" />
-  <text x="8744" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8744" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
      Active
   </text>
   <defs>
@@ -38,7 +38,7 @@
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 4960 3225 L 5923 3225 L 5923 2987 L 4960 2987 L 4960 3225 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" d="M 4960 3225 L 5923 3225 L 5923 2987 L 4960 2987 L 4960 3225 " />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="5965" y1="2877" x2="5938" y2="2944" />
-  <text x="4988" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4988" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux de TAG
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="3047.5" cy="2569.5" rx="28.5" ry="-34.5" />
@@ -49,15 +49,15 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="2820" y1="2706" x2="2764" y2="2740" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="2707" y1="2774" x2="2650" y2="2808" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="2594" y1="2842" x2="2566" y2="2865" />
-  <text x="2099" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2099" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux de cires
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="5952.5" cy="2723.0" rx="28.5" ry="-34.0" />
-  <text x="5270" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5270" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'insaturations
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="5938.5" cy="2501.0" rx="28.5" ry="-34.0" />
-  <text x="4342" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4342" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides gras à longues chaînes linéaires
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="3033.5" cy="2552.0" rx="28.5" ry="-34.0" />
@@ -70,11 +70,11 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3487" y1="3029" x2="3543" y2="3097" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3600" y1="3148" x2="3657" y2="3216" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3713" y1="3267" x2="3761" y2="3311" />
-  <text x="2131" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2131" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides gras à longues chaînes ramifiées
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="5258.5" cy="1378.0" rx="28.5" ry="-34.0" />
-  <text x="4683" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4683" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'omégas 3
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="3288.0" cy="3522.0" rx="28.0" ry="-34.0" />
@@ -88,7 +88,7 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3855" y1="3607" x2="3912" y2="3607" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3968" y1="3624" x2="4025" y2="3624" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="4082" y1="3642" x2="4139" y2="3642" />
-  <text x="3088" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3088" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isovalériques total
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="5952.5" cy="2927.0" rx="28.5" ry="-34.0" />
@@ -99,7 +99,7 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="6179" y1="3080" x2="6236" y2="3114" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="6293" y1="3148" x2="6349" y2="3182" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="6406" y1="3216" x2="6419" y2="3228" />
-  <text x="5158" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5158" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isovalériques sur TAG
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="3061.5" cy="2518.0" rx="28.5" ry="-34.0" />
@@ -110,7 +110,7 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3161" y1="2246" x2="3189" y2="2178" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3217" y1="2110" x2="3246" y2="2042" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3274" y1="1974" x2="3302" y2="1906" />
-  <text x="2042" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2042" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isovalériques sur TAG
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="3089.5" cy="2501.0" rx="28.5" ry="-34.0" />
@@ -118,15 +118,15 @@
   <path stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" d="M 1940 2315 L 4108 2315 L 4108 2077 L 1940 2077 L 1940 2315 " />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3095" y1="2494" x2="3061" y2="2433" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3033" y1="2365" x2="3024" y2="2315" />
-  <text x="1968" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1968" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'esters gras portant AIV
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="5513.5" cy="3488.0" rx="28.5" ry="-34.0" />
-  <text x="4556" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4556" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isobutyriques
   </text>
   <ellipse fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" cx="4578.0" cy="1140.0" rx="28.0" ry="-34.0" />
-  <text x="2731" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2731" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Longueur moyenne   des chaînes (hors AIV/AIB) en C
   </text>
   <path stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" d="M 4507 2723 L 5965 2877 L 4507 2723 L 3048 2568 L 4507 2723 L 5957 2731 L 4507 2723 L 5943 2504 L 4507 2723 L 3038 2554 L 4507 2723 L 5264 1376 L 4507 2723 L 3293 3515 L 4507 2723 L 5951 2931 L 4507 2723 L 3062 2514 L 4507 2723 L 3095 2494 L 4507 2723 L 5512 3482 L 4507 2723 L 4573 1141 L 4507 2723 " />
@@ -170,22 +170,22 @@
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" x1="5840" y1="783" x2="5840" y2="766" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" x1="5988" y1="783" x2="5988" y2="766" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" x1="6137" y1="783" x2="6137" y2="766" />
-  <text x="2891" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2891" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,0
   </text>
-  <text x="3632" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3632" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="4401" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4401" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="5141" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5141" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="5882" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5882" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
-  <text x="3926" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3926" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Fact. 1  : 75,17%
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" d="M 2877 4680 L 6137 4680 " />
@@ -244,22 +244,22 @@
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" x1="2891" y1="4324" x2="2877" y2="4324" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" x1="2891" y1="4502" x2="2877" y2="4502" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" x1="2891" y1="4680" x2="2877" y2="4680" />
-  <text x="2522" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2522" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,0
   </text>
-  <text x="2522" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2522" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="2578" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2578" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="2578" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2578" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="2578" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2578" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
-  <text x="2372" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2372" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Fact. 2  : 15,23%
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-3)" d="M 6137 766 L 6137 4680 " />
@@ -294,7 +294,7 @@
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 4960 3225 L 5923 3225 L 5923 2987 L 4960 2987 L 4960 3225 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" d="M 4960 3225 L 5923 3225 L 5923 2987 L 4960 2987 L 4960 3225 " />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="5965" y1="2877" x2="5938" y2="2944" />
-  <text x="4988" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4988" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux de TAG
   </text>
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 2071 3103 L 3062 3103 L 3062 2865 L 2071 2865 L 2071 3103 Z " fill-rule="evenodd" />
@@ -304,13 +304,13 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="2820" y1="2706" x2="2764" y2="2740" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="2707" y1="2774" x2="2650" y2="2808" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="2594" y1="2842" x2="2566" y2="2865" />
-  <text x="2099" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2099" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux de cires
   </text>
-  <text x="5270" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5270" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'insaturations
   </text>
-  <text x="4342" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4342" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides gras à longues chaînes linéaires
   </text>
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 2103 3549 L 5419 3549 L 5419 3311 L 2103 3311 L 2103 3549 Z " fill-rule="evenodd" />
@@ -322,10 +322,10 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3487" y1="3029" x2="3543" y2="3097" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3600" y1="3148" x2="3657" y2="3216" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3713" y1="3267" x2="3761" y2="3311" />
-  <text x="2131" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2131" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides gras à longues chaînes ramifiées
   </text>
-  <text x="4683" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4683" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'omégas 3
   </text>
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 3060 3897 L 5341 3897 L 5341 3659 L 3060 3659 L 3060 3897 Z " fill-rule="evenodd" />
@@ -338,7 +338,7 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3855" y1="3607" x2="3912" y2="3607" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3968" y1="3624" x2="4025" y2="3624" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="4082" y1="3642" x2="4139" y2="3642" />
-  <text x="3088" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3088" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isovalériques total
   </text>
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 5130 3466 L 7709 3466 L 7709 3228 L 5130 3228 L 5130 3466 Z " fill-rule="evenodd" />
@@ -348,7 +348,7 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="6179" y1="3080" x2="6236" y2="3114" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="6293" y1="3148" x2="6349" y2="3182" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="6406" y1="3216" x2="6419" y2="3228" />
-  <text x="5158" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5158" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isovalériques sur TAG
   </text>
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 2014 1892 L 4593 1892 L 4593 1654 L 2014 1654 L 2014 1892 Z " fill-rule="evenodd" />
@@ -358,20 +358,20 @@
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3161" y1="2246" x2="3189" y2="2178" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3217" y1="2110" x2="3246" y2="2042" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3274" y1="1974" x2="3302" y2="1906" />
-  <text x="2042" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2042" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isovalériques sur TAG
   </text>
   <path fill="#F0F0F0" clip-path="url(#clip-3)" stroke="#0000FF" stroke-width="14" d="M 1940 2315 L 4108 2315 L 4108 2077 L 1940 2077 L 1940 2315 Z " fill-rule="evenodd" />
   <path stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" d="M 1940 2315 L 4108 2315 L 4108 2077 L 1940 2077 L 1940 2315 " />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3095" y1="2494" x2="3061" y2="2433" />
   <line stroke="#0000FF" stroke-width="14" clip-path="url(#clip-3)" x1="3033" y1="2365" x2="3024" y2="2315" />
-  <text x="1968" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1968" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'esters gras portant AIV
   </text>
-  <text x="4556" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4556" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Taux d'acides isobutyriques
   </text>
-  <text x="2731" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2731" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Longueur moyenne   des chaînes (hors AIV/AIB) en C
   </text>
   

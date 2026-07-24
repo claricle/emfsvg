@@ -6,69 +6,69 @@
   <line stroke="#000000" stroke-width="0" x1="420" y1="-15.0" x2="420" y2="-369.0" />
   <line stroke="#000000" stroke-width="0" x1="420" y1="-369.0" x2="-14" y2="-369.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -14 -349.0 L 144 -349.0 L 157 -363.0 L 157 -369.0 L -14 -369.0 L -14 -349.0 Z " fill-rule="evenodd" />
-  <text x="-9" y="-344.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="-9" y="-344.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     class Fig: Primitives of Zonal Identifier
   </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 110 -98.0 L 110 -58.0 L 250 -58.0 L 250 -86.0 L 238 -98.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 238 -98.0 L 238 -86.0 L 250 -86.0 Z " fill-rule="evenodd" />
-  <text x="115" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="115" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     KEY:
   </text>
   <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="150" y="-58.0" width="99" height="58" rx="3.0" ry="3.0" />
   <rect fill="#FFFFFF" stroke="#EB8066" stroke-width="2" x="161" y="-69.0" width="16" height="16" />
-  <text x="184" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="184" y="-345.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
     19112 Ed 2
   </text>
-  <text x="192" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="192" y="-345.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
   <rect fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" x="250" y="-58.0" width="93" height="58" rx="3.0" ry="3.0" />
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="261" y="-69.0" width="16" height="16" />
-  <text x="284" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="284" y="-345.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
     ISO 19170-1
   </text>
-  <text x="295" y="-345.0" font-family="Carlito" font-size="12" fill="#003060">
+  <text x="295" y="-345.0" font-family="Carlito" font-size="12" fill="#003060" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="2" x="162" y="-294.0" width="146" height="40" />
-  <text x="211" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="211" y="-345.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «DataType»
   </text>
-  <text x="206" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="206" y="-345.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ZonalIdentifier
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="155" y="-107.0" width="124" height="48" />
-  <text x="193" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="193" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «DataType»
   </text>
-  <text x="180" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="180" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Temporal RS using
   </text>
-  <text x="162" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="162" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Identifiers::PeriodIdentifier
   </text>
   <rect fill="#FFFFFF" stroke="#EA8066" stroke-width="2" x="10" y="-107.0" width="107" height="48" />
-  <text x="39" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="39" y="-345.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «DataType»
   </text>
-  <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ISO 19112 Edition 2::
   </text>
-  <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000">
+  <text x="22" y="-345.0" font-family="Calibri" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     GeographicIdentifier
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="80" y="-197.0" width="115" height="40" />
-  <text x="113" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="113" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «DataType»
   </text>
-  <text x="90" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="90" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ZonalIdentifierPrimitive
   </text>
   <rect fill="#FFFFFF" stroke="#000000" stroke-width="1" x="280" y="-197.0" width="115" height="40" />
-  <text x="313" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="313" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     «DataType»
   </text>
-  <text x="291" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="291" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ZonalIdentifierComplex
   </text>
   <line stroke="#000000" stroke-width="1" x1="213" y1="-156.0" x2="213" y2="-172.0" />
@@ -85,16 +85,16 @@
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 270 -213.0 L 280 -218.0 L 270 -223.0 L 260 -218.0 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="341" y1="-238.0" x2="341" y2="-253.0" />
   <line stroke="#000000" stroke-width="1" x1="341" y1="-253.0" x2="237" y2="-253.0" />
-  <text x="198" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="198" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     +element
   </text>
-  <text x="199" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="199" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2
   </text>
-  <text x="217" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="217" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Complex
   </text>
-  <text x="272" y="-345.0" font-family="Carlito" font-size="12" fill="#000000">
+  <text x="272" y="-345.0" font-family="Carlito" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
   

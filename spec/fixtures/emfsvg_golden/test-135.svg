@@ -11,7 +11,7 @@
       <rect x="2058" y="7020" width="5244" height="-7037" />
     </clipPath>
   </defs>
-  <text x="2083" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2083" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Tracé 2D des Coordonnées Colonne ; Dimension :  1 x  2
   </text>
   <defs>
@@ -19,7 +19,7 @@
       <rect x="1958" y="6605" width="5444" height="-265" />
     </clipPath>
   </defs>
-  <text x="1983" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1983" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Table d'Entrée (Lignes x Colonnes) : 23 x 23 (Table de Burt)
   </text>
   <defs>
@@ -2194,112 +2194,112 @@
   <line stroke="#C0C0C0" stroke-width="0" clip-path="url(#clip-4)" x1="9111" y1="5128" x2="9128" y2="5128" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="4688.5" cy="3758.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="4688.5" cy="3758.5" rx="41.5" ry="-41.5" />
-  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CONSOM:jamais
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="2281.5" cy="3095.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="2281.5" cy="3095.5" rx="41.5" ry="-41.5" />
-  <text x="1585" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1585" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CONSOM:une fois
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="5103.5" cy="3924.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="5103.5" cy="3924.5" rx="41.5" ry="-41.5" />
-  <text x="4363" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4363" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CONSOM:rarement
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="5335.5" cy="3924.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="5335.5" cy="3924.5" rx="41.5" ry="-41.5" />
-  <text x="4476" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4476" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CONSOM:quelquefois
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="4920.5" cy="5501.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="4920.5" cy="5501.5" rx="41.5" ry="-41.5" />
-  <text x="4222" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4222" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CONSOM:souvent
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="5318.5" cy="5252.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="5318.5" cy="5252.5" rx="41.5" ry="-41.5" />
-  <text x="4472" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4472" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     CONSOM:très souvent
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="3775.5" cy="2663.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="3775.5" cy="2663.5" rx="41.5" ry="-41.5" />
-  <text x="3302" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3302" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CONSOM:nr
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="5733.5" cy="5368.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="5733.5" cy="5368.5" rx="41.5" ry="-41.5" />
-  <text x="5268" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5268" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:nr
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="9036.5" cy="2032.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="9036.5" cy="2032.5" rx="41.5" ry="-41.5" />
-  <text x="8231" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8231" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:agriculteur
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="4339.5" cy="5484.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="4339.5" cy="5484.5" rx="41.5" ry="-41.5" />
-  <text x="3685" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3685" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:artisan
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="8024.5" cy="4290.0" rx="41.5" ry="-41.0" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="8024.5" cy="4290.0" rx="41.5" ry="-41.0" />
-  <text x="7263" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7263" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:cadre sup
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="7094.5" cy="4522.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="7094.5" cy="4522.5" rx="41.5" ry="-41.5" />
-  <text x="6193" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6193" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:cadre moyen
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="2713.5" cy="4538.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="2713.5" cy="4538.5" rx="41.5" ry="-41.5" />
-  <text x="2029" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2029" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:employ
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="2082.5" cy="4804.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="2082.5" cy="4804.5" rx="41.5" ry="-41.5" />
-  <text x="1430" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1430" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:ouvrier
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="5103.5" cy="4489.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="5103.5" cy="4489.5" rx="41.5" ry="-41.5" />
-  <text x="4489" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4489" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:retrait
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="4572.5" cy="2862.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="4572.5" cy="2862.5" rx="41.5" ry="-41.5" />
-  <text x="3982" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3982" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SITPROF:autre
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="3642.5" cy="1618.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="3642.5" cy="1618.5" rx="41.5" ry="-41.5" />
-  <text x="2970" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2970" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     REVENU:- de 5kF
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="2547.5" cy="4323.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="2547.5" cy="4323.5" rx="41.5" ry="-41.5" />
-  <text x="1585" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1585" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     REVENU:entre 5 et 10 kF
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="4937.5" cy="4655.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="4937.5" cy="4655.5" rx="41.5" ry="-41.5" />
-  <text x="3910" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3910" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     REVENU:entre 10 et 15 kF
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="4489.5" cy="4621.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="4489.5" cy="4621.5" rx="41.5" ry="-41.5" />
-  <text x="3464" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3464" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     REVENU:entre 15 et 20 kF
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="7227.5" cy="3609.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="7227.5" cy="3609.5" rx="41.5" ry="-41.5" />
-  <text x="6461" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6461" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     REVENU:+ de 20 kF
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#FFFFFF" stroke-width="0" cx="5601.5" cy="3742.5" rx="41.5" ry="-41.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="5601.5" cy="3742.5" rx="41.5" ry="-41.5" />
-  <text x="4814" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4814" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     REVENU:ne sait pas
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" d="M 747 813 L 9128 813 " />
@@ -2312,31 +2312,31 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="7032" y1="846" x2="7032" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="8080" y1="846" x2="8080" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="9128" y1="846" x2="9128" y2="813" />
-  <text x="573" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="573" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -2,0
   </text>
-  <text x="1620" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1620" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,5
   </text>
-  <text x="2668" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2668" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,0
   </text>
-  <text x="3715" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3715" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="4796" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4796" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="5844" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5844" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="6891" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6891" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
-  <text x="7939" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7939" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,5
   </text>
-  <text x="8987" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8987" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2,0
   </text>
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="956" y1="829" x2="956" y2="812" />
@@ -2379,7 +2379,7 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="8708" y1="829" x2="8708" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="8918" y1="829" x2="8918" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="9128" y1="829" x2="9128" y2="813" />
-  <text x="2414" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2414" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dimension 1; Valeur Propre : ,50085 (7,513  % d'Inertie)
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" d="M 747 6207 L 9128 6207 " />
@@ -2457,22 +2457,22 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="780" y1="4049" x2="747" y2="4049" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="780" y1="5128" x2="747" y2="5128" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="780" y1="6207" x2="747" y2="6207" />
-  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -3
   </text>
-  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -2
   </text>
-  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1
   </text>
-  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2
   </text>
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="763" y1="1082" x2="747" y2="1082" />
@@ -2495,7 +2495,7 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="763" y1="5667" x2="747" y2="5667" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="763" y1="5937" x2="747" y2="5937" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" x1="763" y1="6207" x2="747" y2="6207" />
-  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dimension 2; Valeur Propre : ,45481 (6,822  % d'Inertie)
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-4)" d="M 9128 813 L 9128 6207 " />

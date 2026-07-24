@@ -11,7 +11,7 @@
       <rect x="71" y="7020" width="9232" height="-7037" />
     </clipPath>
   </defs>
-  <text x="3616" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3616" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dendrogramme de 15 Obs.
   </text>
   <defs>
@@ -19,7 +19,7 @@
       <rect x="71" y="6578" width="9232" height="-272" />
     </clipPath>
   </defs>
-  <text x="4134" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4134" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Méth. de Ward
   </text>
   <defs>
@@ -27,7 +27,7 @@
       <rect x="71" y="6578" width="9232" height="-578" />
     </clipPath>
   </defs>
-  <text x="3978" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3978" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Euclidiennes
   </text>
   <defs>
@@ -83,34 +83,34 @@
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" x1="8093" y1="850" x2="8093" y2="833" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" x1="8627" y1="850" x2="8627" y2="833" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" x1="9161" y1="850" x2="9161" y2="833" />
-  <text x="575" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="575" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="1642" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1642" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2
   </text>
-  <text x="2709" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2709" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="3776" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3776" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     6
   </text>
-  <text x="4843" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4843" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="5860" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5860" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     10
   </text>
-  <text x="6927" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6927" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     12
   </text>
-  <text x="7994" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7994" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     14
   </text>
-  <text x="9062" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9062" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     16
   </text>
-  <text x="4275" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4275" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Agrégation
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" d="M 624 5863 L 9161 5863 " />
@@ -157,49 +157,49 @@
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" x1="666" y1="5235" x2="624" y2="5235" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" x1="666" y1="5549" x2="624" y2="5549" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" x1="666" y1="5864" x2="624" y2="5864" />
-  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me f
   </text>
-  <text x="169" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="169" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me c
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me b
   </text>
-  <text x="99" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="99" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me m
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me n
   </text>
-  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me l
   </text>
-  <text x="169" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="169" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me k
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me h
   </text>
-  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me j
   </text>
-  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="212" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me i
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me d
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me g
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me o
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me e
   </text>
-  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="155" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Me a
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-5)" d="M 9161 833 L 9161 5864 " />

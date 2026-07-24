@@ -11,7 +11,7 @@
       <rect x="2127" y="4875" width="2268" height="-4892" />
     </clipPath>
   </defs>
-  <text x="2148" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2148" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Tracé 1D des Coordonnées Ligne et Colonne ; Dimension :  1
   </text>
   <defs>
@@ -19,7 +19,7 @@
       <rect x="2425" y="4620" width="1673" height="-119" />
     </clipPath>
   </defs>
-  <text x="2453" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2453" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Table d'Entrée (Lignes x Colonnes) : 23 x 12
   </text>
   <defs>
@@ -27,7 +27,7 @@
       <rect x="2510" y="4620" width="1503" height="-272" />
     </clipPath>
   </defs>
-  <text x="2538" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2538" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Standardisation : Profils ligne et colonne
   </text>
   <defs>
@@ -35,7 +35,7 @@
       <rect x="2510" y="4620" width="1503" height="-424" />
     </clipPath>
   </defs>
-  <text x="1921" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1921" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Valeur Propre : ,01476 (44,169  % d'Inertie) Contribution au Chi² : 5371E2
   </text>
   <defs>
@@ -1516,184 +1516,184 @@
   <line stroke="#C0C0C0" stroke-width="0" clip-path="url(#clip-6)" x1="6380" y1="3635" x2="6395" y2="3631" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1622.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1622.5" rx="7.5" ry="-8.5" />
-  <text x="1840" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1840" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Alsace
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2590.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2590.5" rx="7.5" ry="-8.5" />
-  <text x="1797" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1797" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Aquitaine
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2318.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2318.5" rx="7.5" ry="-8.5" />
-  <text x="1790" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1790" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Auvergne
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1910.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1910.5" rx="7.5" ry="-8.5" />
-  <text x="1769" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1769" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Bourgogne
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2811.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2811.5" rx="7.5" ry="-8.5" />
-  <text x="1797" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1797" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Bretagne
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1910.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1910.5" rx="7.5" ry="-8.5" />
-  <text x="1840" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1840" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Centre
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1333.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1333.5" rx="7.5" ry="-8.5" />
-  <text x="1563" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1563" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Champagne-Ardennes
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1299.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1299.5" rx="7.5" ry="-8.5" />
-  <text x="1854" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1854" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Corse
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1690.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1690.5" rx="7.5" ry="-8.5" />
-  <text x="1677" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1677" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Franche-Comte
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2811.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2811.5" rx="7.5" ry="-8.5" />
-  <text x="1719" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1719" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Ile-de-France
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1707.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1707.5" rx="7.5" ry="-8.5" />
-  <text x="1577" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1577" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Languedoc-Roussillon
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2522.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2522.5" rx="7.5" ry="-8.5" />
-  <text x="1804" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1804" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Limousin
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1588.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1588.5" rx="7.5" ry="-8.5" />
-  <text x="1818" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1818" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Lorraine
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2692.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2692.5" rx="7.5" ry="-8.5" />
-  <text x="1705" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1705" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Midi-Pyrenees
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1384.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1384.5" rx="7.5" ry="-8.5" />
-  <text x="1613" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1613" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Nord-Pas-de-Calais
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2063.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2063.5" rx="7.5" ry="-8.5" />
-  <text x="1641" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1641" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Basse-Normandie
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1809.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1809.5" rx="7.5" ry="-8.5" />
-  <text x="1648" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1648" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Haute-Normandie
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2556.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2556.5" rx="7.5" ry="-8.5" />
-  <text x="1670" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1670" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Pays-de-la-Loire
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1248.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1248.5" rx="7.5" ry="-8.5" />
-  <text x="1818" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1818" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Picardie
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2573.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2573.5" rx="7.5" ry="-8.5" />
-  <text x="1648" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1648" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Poitou-Charentes
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="1571.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="1571.5" rx="7.5" ry="-8.5" />
-  <text x="1443" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1443" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Provence-Alpes-Cote-d-Azur
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="2182.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="2182.5" rx="7.5" ry="-8.5" />
-  <text x="1733" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1733" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Rhone-Alpes
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="1949.5" cy="3728.5" rx="7.5" ry="-8.5" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="1949.5" cy="3728.5" rx="7.5" ry="-8.5" />
-  <text x="1783" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1783" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Outremer
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="2174" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="2174" width="14" height="-17" />
-  <text x="4767" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4767" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Sarkozy
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="2497" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="2497" width="14" height="-17" />
-  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Bayrou
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="2803" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="2803" width="14" height="-17" />
-  <text x="4817" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4817" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Royal
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="849" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="849" width="14" height="-17" />
-  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Le Pen
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="1716" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="1716" width="14" height="-17" />
-  <text x="4704" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4704" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Besancenot
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="1953" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="1953" width="14" height="-17" />
-  <text x="4803" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4803" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Villiers
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="2344" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="2344" width="14" height="-17" />
-  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Voynet
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="1308" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="1308" width="14" height="-17" />
-  <text x="4774" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4774" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Laguiller
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="2310" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="2310" width="14" height="-17" />
-  <text x="4824" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4824" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Bove
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="1784" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="1784" width="14" height="-17" />
-  <text x="4803" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4803" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Buffet
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="1308" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="1308" width="14" height="-17" />
-  <text x="4796" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4796" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Nihous
   </text>
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" x="4906" y="1699" width="14" height="-17" />
   <rect fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FF0000" stroke-width="0" x="4906" y="1699" width="14" height="-17" />
-  <text x="4753" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4753" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Schivardi
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" d="M 482 272 L 6395 272 " />
-  <text x="1620" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1620" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Coordonnées Ligne
   </text>
-  <text x="4640" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4640" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Coord. Colonne
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" d="M 482 4111 L 6395 4111 " />
@@ -1707,31 +1707,31 @@
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="510" y1="3151" x2="482" y2="3151" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="510" y1="3631" x2="482" y2="3631" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="510" y1="4110" x2="482" y2="4110" />
-  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,4
   </text>
-  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,3
   </text>
-  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,2
   </text>
-  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,1
   </text>
-  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,1
   </text>
-  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,2
   </text>
-  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,3
   </text>
-  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,4
   </text>
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="496" y1="391" x2="482" y2="391" />
@@ -1766,7 +1766,7 @@
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="496" y1="3871" x2="482" y2="3871" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="496" y1="3991" x2="482" y2="3991" />
   <line stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" x1="496" y1="4110" x2="482" y2="4110" />
-  <text x="150" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="150" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Valeur Coordonnée
   </text>
   <path stroke="#000000" stroke-width="14" clip-path="url(#clip-6)" d="M 6395 272 L 6395 4111 " />

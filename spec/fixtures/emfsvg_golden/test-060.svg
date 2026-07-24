@@ -11,7 +11,7 @@
       <rect x="6187" y="210" width="4159" height="451" />
     </clipPath>
   </defs>
-  <text x="6240" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6240" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Tracé des Valeurs Propres
   </text>
   <defs>
@@ -24,7 +24,7 @@
       <rect x="6187" y="711" width="4159" height="-50" />
     </clipPath>
   </defs>
-  <text x="4896" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4896" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Table d'Entrée (Lignes x Colonnes) : 34 x 12
   </text>
   <defs>
@@ -37,7 +37,7 @@
       <rect x="6187" y="1213" width="4159" height="-552" />
     </clipPath>
   </defs>
-  <text x="3949" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3949" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Inertie Totale = 1,3569 Chi² = 814,11 dl = 363 p = 0,0000
   </text>
   <defs>
@@ -2356,43 +2356,43 @@
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 13524 10917 L 13524 10994 L 13510 10994 L 13497 10994 L 13497 10917 L 13510 10917 L 13524 10917 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 14837 10917 L 14837 10994 L 14823 10994 L 14810 10994 L 14810 10917 L 14823 10917 L 14837 10917 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 16153 10917 L 16153 10994 L 16139 10994 L 16126 10994 L 16126 10917 L 16139 10917 L 16153 10917 Z " fill-rule="evenodd" />
-  <text x="1593" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1593" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="2906" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2906" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2
   </text>
-  <text x="4220" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4220" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     3
   </text>
-  <text x="5534" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5534" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="6848" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6848" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     5
   </text>
-  <text x="8162" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8162" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     6
   </text>
-  <text x="9476" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9476" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     7
   </text>
-  <text x="10790" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="10790" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="12104" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="12104" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     9
   </text>
-  <text x="13326" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="13326" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     10
   </text>
-  <text x="14640" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="14640" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     11
   </text>
-  <text x="15956" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="15956" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     12
   </text>
-  <text x="7238" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7238" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Nbre de Dimensions
   </text>
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1421 1858 L 16139 1858 L 16139 1871 L 16139 1885 L 1421 1885 L 1421 1871 L 1421 1858 Z " fill-rule="evenodd" />
@@ -2415,22 +2415,22 @@
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1499 5536 L 1421 5536 L 1421 5522 L 1421 5509 L 1499 5509 L 1499 5522 L 1499 5536 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1499 3711 L 1421 3711 L 1421 3697 L 1421 3684 L 1499 3684 L 1499 3697 L 1499 3711 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1499 1887 L 1421 1887 L 1421 1873 L 1421 1860 L 1499 1860 L 1499 1873 L 1499 1887 Z " fill-rule="evenodd" />
-  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,1
   </text>
-  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,2
   </text>
-  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,3
   </text>
-  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,4
   </text>
-  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="762" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1446 10553 L 1421 10553 L 1421 10539 L 1421 10526 L 1446 10526 L 1446 10539 L 1446 10553 Z " fill-rule="evenodd" />
@@ -2453,7 +2453,7 @@
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1446 2798 L 1421 2798 L 1421 2784 L 1421 2771 L 1446 2771 L 1446 2784 L 1446 2798 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1446 2342 L 1421 2342 L 1421 2328 L 1421 2315 L 1446 2315 L 1446 2328 L 1446 2342 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 1446 1887 L 1421 1887 L 1421 1873 L 1421 1860 L 1446 1860 L 1446 1873 L 1446 1887 Z " fill-rule="evenodd" />
-  <text x="473" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="473" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Valeur Propre
   </text>
   <path fill="#000000" clip-path="url(#clip-9)" stroke="none" d="M 16126 10994 L 16126 1871 L 16139 1871 L 16153 1871 L 16153 10994 L 16139 10994 L 16126 10994 Z " fill-rule="evenodd" />

@@ -11,7 +11,7 @@
       <rect x="146" y="8" width="333" height="17" />
     </clipPath>
   </defs>
-  <text x="148" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="148" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Tracé 2D des Coordonnées Colonne ; Dimension :  1 x  2
   </text>
   <defs>
@@ -24,7 +24,7 @@
       <rect x="146" y="27" width="333" height="-2" />
     </clipPath>
   </defs>
-  <text x="140" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="140" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Table d'Entrée (Lignes x Colonnes) : 16 x 16 (Table de Burt)
   </text>
   <defs>
@@ -3548,67 +3548,67 @@
   <line stroke="#C0C0C0" stroke-width="0" clip-path="url(#clip-6)" x1="607" y1="66" x2="608" y2="66" />
   <rect x="608" y="66" width="1" height="1" fill="#C0C0C0" />
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 245 271 L 245 271 L 245 271 L 245 271 L 245 271 L 245 270 L 245 270 L 245 270 L 244 270 L 244 270 L 244 270 L 244 270 L 244 269 L 244 269 L 244 269 L 244 269 L 244 269 L 244 269 L 244 269 L 243 269 L 243 269 L 243 268 L 243 268 L 243 268 L 243 268 L 243 268 L 243 268 L 242 268 L 242 268 L 242 268 L 242 268 L 242 268 L 242 268 L 242 268 L 241 268 L 241 268 L 241 268 L 241 268 L 241 268 L 241 268 L 241 268 L 240 268 L 240 268 L 240 269 L 240 269 L 240 269 L 240 269 L 240 269 L 240 269 L 240 269 L 239 269 L 239 269 L 239 270 L 239 270 L 239 270 L 239 270 L 239 270 L 239 270 L 239 270 L 239 271 L 239 271 L 239 271 L 239 271 L 239 271 L 239 271 L 239 271 L 239 271 L 239 272 L 239 272 L 239 272 L 239 272 L 239 272 L 239 272 L 239 272 L 239 273 L 239 273 L 239 273 L 239 273 L 240 273 L 240 273 L 240 273 L 240 273 L 240 273 L 240 274 L 240 274 L 240 274 L 240 274 L 241 274 L 241 274 L 241 274 L 241 274 L 241 274 L 241 274 L 241 274 L 242 274 L 242 274 L 242 274 L 242 274 L 242 274 L 242 274 L 242 274 L 243 274 L 243 274 L 243 274 L 243 274 L 243 274 L 243 274 L 243 274 L 243 274 L 244 273 L 244 273 L 244 273 L 244 273 L 244 273 L 244 273 L 244 273 L 244 273 L 244 273 L 244 272 L 244 272 L 245 272 L 245 272 L 245 272 L 245 272 L 245 272 L 245 271 L 245 271 L 245 271 " />
-  <text x="217" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="217" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SEXE:M
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 244 280 L 244 280 L 244 280 L 244 280 L 244 279 L 244 279 L 244 279 L 244 279 L 243 279 L 243 279 L 243 279 L 243 278 L 243 278 L 243 278 L 243 278 L 243 278 L 243 278 L 243 278 L 243 278 L 242 278 L 242 277 L 242 277 L 242 277 L 242 277 L 242 277 L 242 277 L 242 277 L 241 277 L 241 277 L 241 277 L 241 277 L 241 277 L 241 277 L 241 277 L 240 277 L 240 277 L 240 277 L 240 277 L 240 277 L 240 277 L 240 277 L 239 277 L 239 277 L 239 277 L 239 278 L 239 278 L 239 278 L 239 278 L 239 278 L 239 278 L 238 278 L 238 278 L 238 278 L 238 279 L 238 279 L 238 279 L 238 279 L 238 279 L 238 279 L 238 279 L 238 280 L 238 280 L 238 280 L 238 280 L 238 280 L 238 280 L 238 280 L 238 280 L 238 281 L 238 281 L 238 281 L 238 281 L 238 281 L 238 281 L 238 281 L 238 282 L 238 282 L 238 282 L 239 282 L 239 282 L 239 282 L 239 282 L 239 282 L 239 283 L 239 283 L 239 283 L 239 283 L 240 283 L 240 283 L 240 283 L 240 283 L 240 283 L 240 283 L 240 283 L 241 283 L 241 283 L 241 283 L 241 283 L 241 283 L 241 283 L 241 283 L 242 283 L 242 283 L 242 283 L 242 283 L 242 283 L 242 283 L 242 283 L 242 283 L 243 282 L 243 282 L 243 282 L 243 282 L 243 282 L 243 282 L 243 282 L 243 282 L 243 281 L 243 281 L 243 281 L 244 281 L 244 281 L 244 281 L 244 281 L 244 280 L 244 280 L 244 280 L 244 280 " />
-  <text x="217" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="217" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SEXE:F
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 177 128 L 177 127 L 177 127 L 177 127 L 177 127 L 177 127 L 177 127 L 177 127 L 177 126 L 177 126 L 177 126 L 177 126 L 177 126 L 176 126 L 176 126 L 176 125 L 176 125 L 176 125 L 176 125 L 176 125 L 176 125 L 176 125 L 175 125 L 175 125 L 175 125 L 175 125 L 175 125 L 175 125 L 175 125 L 174 124 L 174 124 L 174 124 L 174 124 L 174 124 L 174 124 L 174 125 L 174 125 L 173 125 L 173 125 L 173 125 L 173 125 L 173 125 L 173 125 L 173 125 L 172 125 L 172 125 L 172 125 L 172 125 L 172 125 L 172 126 L 172 126 L 172 126 L 172 126 L 172 126 L 171 126 L 171 126 L 171 127 L 171 127 L 171 127 L 171 127 L 171 127 L 171 127 L 171 127 L 171 128 L 171 128 L 171 128 L 171 128 L 171 128 L 171 128 L 171 128 L 171 128 L 171 129 L 171 129 L 171 129 L 172 129 L 172 129 L 172 129 L 172 129 L 172 130 L 172 130 L 172 130 L 172 130 L 172 130 L 172 130 L 173 130 L 173 130 L 173 130 L 173 130 L 173 130 L 173 130 L 173 131 L 174 131 L 174 131 L 174 131 L 174 131 L 174 131 L 174 131 L 174 131 L 174 131 L 175 131 L 175 131 L 175 131 L 175 130 L 175 130 L 175 130 L 175 130 L 176 130 L 176 130 L 176 130 L 176 130 L 176 130 L 176 130 L 176 130 L 176 130 L 176 129 L 177 129 L 177 129 L 177 129 L 177 129 L 177 129 L 177 129 L 177 128 L 177 128 L 177 128 L 177 128 L 177 128 L 177 128 L 177 128 " />
-  <text x="144" y="0" font-family="Arial" font-size="12" fill="#32CD32">
+  <text x="144" y="0" font-family="Arial" font-size="12" fill="#32CD32" text-anchor="start" dominant-baseline="alphabetic">
     AGE:age1
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 234 369 L 234 369 L 234 368 L 234 368 L 234 368 L 234 368 L 234 368 L 234 368 L 234 368 L 233 367 L 233 367 L 233 367 L 233 367 L 233 367 L 233 367 L 233 367 L 233 367 L 233 367 L 233 366 L 233 366 L 232 366 L 232 366 L 232 366 L 232 366 L 232 366 L 232 366 L 232 366 L 231 366 L 231 366 L 231 366 L 231 366 L 231 366 L 231 366 L 231 366 L 231 366 L 230 366 L 230 366 L 230 366 L 230 366 L 230 366 L 230 366 L 230 366 L 229 366 L 229 366 L 229 366 L 229 366 L 229 367 L 229 367 L 229 367 L 229 367 L 229 367 L 228 367 L 228 367 L 228 367 L 228 367 L 228 368 L 228 368 L 228 368 L 228 368 L 228 368 L 228 368 L 228 368 L 228 369 L 228 369 L 228 369 L 228 369 L 228 369 L 228 369 L 228 369 L 228 370 L 228 370 L 228 370 L 228 370 L 228 370 L 228 370 L 228 370 L 228 370 L 229 371 L 229 371 L 229 371 L 229 371 L 229 371 L 229 371 L 229 371 L 229 371 L 229 371 L 230 371 L 230 372 L 230 372 L 230 372 L 230 372 L 230 372 L 230 372 L 231 372 L 231 372 L 231 372 L 231 372 L 231 372 L 231 372 L 231 372 L 231 372 L 232 372 L 232 372 L 232 372 L 232 372 L 232 371 L 232 371 L 232 371 L 233 371 L 233 371 L 233 371 L 233 371 L 233 371 L 233 371 L 233 371 L 233 370 L 233 370 L 233 370 L 233 370 L 234 370 L 234 370 L 234 370 L 234 370 L 234 369 L 234 369 L 234 369 L 234 369 L 234 369 " />
-  <text x="201" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="201" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     AGE:age2
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 349 398 L 349 397 L 349 397 L 349 397 L 349 397 L 349 397 L 349 397 L 349 397 L 349 396 L 349 396 L 349 396 L 349 396 L 349 396 L 349 396 L 348 396 L 348 396 L 348 395 L 348 395 L 348 395 L 348 395 L 348 395 L 348 395 L 348 395 L 347 395 L 347 395 L 347 395 L 347 395 L 347 395 L 347 395 L 347 395 L 346 395 L 346 395 L 346 395 L 346 395 L 346 395 L 346 395 L 346 395 L 345 395 L 345 395 L 345 395 L 345 395 L 345 395 L 345 395 L 345 395 L 345 395 L 344 395 L 344 395 L 344 395 L 344 396 L 344 396 L 344 396 L 344 396 L 344 396 L 344 396 L 344 396 L 343 396 L 343 397 L 343 397 L 343 397 L 343 397 L 343 397 L 343 397 L 343 397 L 343 398 L 343 398 L 343 398 L 343 398 L 343 398 L 343 398 L 343 398 L 343 399 L 343 399 L 343 399 L 344 399 L 344 399 L 344 399 L 344 399 L 344 399 L 344 400 L 344 400 L 344 400 L 344 400 L 344 400 L 345 400 L 345 400 L 345 400 L 345 400 L 345 400 L 345 400 L 345 400 L 345 401 L 346 401 L 346 401 L 346 401 L 346 401 L 346 401 L 346 401 L 346 401 L 347 401 L 347 401 L 347 401 L 347 401 L 347 400 L 347 400 L 347 400 L 348 400 L 348 400 L 348 400 L 348 400 L 348 400 L 348 400 L 348 400 L 348 400 L 348 400 L 349 399 L 349 399 L 349 399 L 349 399 L 349 399 L 349 399 L 349 399 L 349 399 L 349 398 L 349 398 L 349 398 L 349 398 L 349 398 L 349 398 " />
-  <text x="316" y="0" font-family="Arial" font-size="12" fill="#FF0000">
+  <text x="316" y="0" font-family="Arial" font-size="12" fill="#FF0000" text-anchor="start" dominant-baseline="alphabetic">
     AGE:age3
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 769 249 L 769 249 L 769 249 L 769 249 L 769 249 L 769 248 L 769 248 L 769 248 L 769 248 L 769 248 L 769 248 L 769 248 L 769 247 L 768 247 L 768 247 L 768 247 L 768 247 L 768 247 L 768 247 L 768 247 L 768 247 L 768 246 L 767 246 L 767 246 L 767 246 L 767 246 L 767 246 L 767 246 L 767 246 L 766 246 L 766 246 L 766 246 L 766 246 L 766 246 L 766 246 L 766 246 L 766 246 L 765 246 L 765 246 L 765 246 L 765 246 L 765 246 L 765 246 L 765 247 L 764 247 L 764 247 L 764 247 L 764 247 L 764 247 L 764 247 L 764 247 L 764 247 L 764 248 L 764 248 L 763 248 L 763 248 L 763 248 L 763 248 L 763 248 L 763 249 L 763 249 L 763 249 L 763 249 L 763 249 L 763 249 L 763 249 L 763 249 L 763 250 L 763 250 L 763 250 L 763 250 L 763 250 L 763 250 L 763 251 L 764 251 L 764 251 L 764 251 L 764 251 L 764 251 L 764 251 L 764 251 L 764 251 L 764 252 L 764 252 L 765 252 L 765 252 L 765 252 L 765 252 L 765 252 L 765 252 L 765 252 L 766 252 L 766 252 L 766 252 L 766 252 L 766 252 L 766 252 L 766 252 L 766 252 L 767 252 L 767 252 L 767 252 L 767 252 L 767 252 L 767 252 L 767 252 L 768 252 L 768 252 L 768 252 L 768 252 L 768 251 L 768 251 L 768 251 L 768 251 L 768 251 L 769 251 L 769 251 L 769 251 L 769 251 L 769 250 L 769 250 L 769 250 L 769 250 L 769 250 L 769 250 L 769 249 L 769 249 L 769 249 " />
-  <text x="711" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="711" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     RELIGION:hindoue
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 612 259 L 612 259 L 612 259 L 612 259 L 612 259 L 612 258 L 612 258 L 612 258 L 612 258 L 612 258 L 612 258 L 611 258 L 611 257 L 611 257 L 611 257 L 611 257 L 611 257 L 611 257 L 611 257 L 611 257 L 611 257 L 610 257 L 610 256 L 610 256 L 610 256 L 610 256 L 610 256 L 610 256 L 609 256 L 609 256 L 609 256 L 609 256 L 609 256 L 609 256 L 609 256 L 608 256 L 608 256 L 608 256 L 608 256 L 608 256 L 608 256 L 608 256 L 607 257 L 607 257 L 607 257 L 607 257 L 607 257 L 607 257 L 607 257 L 607 257 L 607 257 L 606 257 L 606 258 L 606 258 L 606 258 L 606 258 L 606 258 L 606 258 L 606 258 L 606 259 L 606 259 L 606 259 L 606 259 L 606 259 L 606 259 L 606 259 L 606 259 L 606 260 L 606 260 L 606 260 L 606 260 L 606 260 L 606 260 L 606 260 L 606 261 L 606 261 L 606 261 L 607 261 L 607 261 L 607 261 L 607 261 L 607 261 L 607 262 L 607 262 L 607 262 L 607 262 L 608 262 L 608 262 L 608 262 L 608 262 L 608 262 L 608 262 L 608 262 L 609 262 L 609 262 L 609 262 L 609 262 L 609 262 L 609 262 L 609 262 L 610 262 L 610 262 L 610 262 L 610 262 L 610 262 L 610 262 L 610 262 L 611 262 L 611 262 L 611 262 L 611 261 L 611 261 L 611 261 L 611 261 L 611 261 L 611 261 L 611 261 L 612 261 L 612 260 L 612 260 L 612 260 L 612 260 L 612 260 L 612 260 L 612 260 L 612 259 L 612 259 L 612 259 " />
-  <text x="564" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="564" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     RELIGION:sikh
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 1 288 L 1 288 L 1 288 L 1 288 L 1 287 L 1 287 L 1 287 L 1 287 L 1 287 L 1 287 L 1 287 L 0 286 L 0 286 L 0 286 L 0 286 L 0 286 L 0 286 L 0 286 L 0 286 L 0 286 L 0 286 L -1 285 L -1 285 L -1 285 L -1 285 L -1 285 L -1 285 L -1 285 L -2 285 L -2 285 L -2 285 L -2 285 L -2 285 L -2 285 L -2 285 L -3 285 L -3 285 L -3 285 L -3 285 L -3 285 L -3 285 L -3 285 L -4 285 L -4 286 L -4 286 L -4 286 L -4 286 L -4 286 L -4 286 L -4 286 L -4 286 L -5 286 L -5 286 L -5 287 L -5 287 L -5 287 L -5 287 L -5 287 L -5 287 L -5 287 L -5 288 L -5 288 L -5 288 L -5 288 L -5 288 L -5 288 L -5 288 L -5 288 L -5 289 L -5 289 L -5 289 L -5 289 L -5 289 L -5 289 L -5 289 L -5 290 L -5 290 L -4 290 L -4 290 L -4 290 L -4 290 L -4 290 L -4 290 L -4 290 L -4 291 L -4 291 L -3 291 L -3 291 L -3 291 L -3 291 L -3 291 L -3 291 L -3 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -1 291 L -1 291 L -1 291 L -1 291 L -1 291 L -1 291 L -1 291 L 0 291 L 0 290 L 0 290 L 0 290 L 0 290 L 0 290 L 0 290 L 0 290 L 0 290 L 0 290 L 1 289 L 1 289 L 1 289 L 1 289 L 1 289 L 1 289 L 1 289 L 1 288 L 1 288 L 1 288 L 1 288 " />
-  <text x="-64" y="-1" font-family="Arial" font-size="12" fill="#000000">
+  <text x="-64" y="-1" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     RELIGION:musulman
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 708 253 L 708 253 L 708 253 L 708 253 L 708 253 L 708 252 L 708 252 L 708 252 L 708 252 L 708 252 L 708 252 L 708 252 L 708 251 L 708 251 L 708 251 L 708 251 L 707 251 L 707 251 L 707 251 L 707 251 L 707 251 L 707 251 L 707 250 L 707 250 L 706 250 L 706 250 L 706 250 L 706 250 L 706 250 L 706 250 L 706 250 L 705 250 L 705 250 L 705 250 L 705 250 L 705 250 L 705 250 L 705 250 L 705 250 L 704 250 L 704 250 L 704 250 L 704 251 L 704 251 L 704 251 L 704 251 L 704 251 L 703 251 L 703 251 L 703 251 L 703 251 L 703 251 L 703 252 L 703 252 L 703 252 L 703 252 L 703 252 L 703 252 L 703 252 L 703 253 L 703 253 L 702 253 L 702 253 L 702 253 L 702 253 L 702 253 L 702 253 L 703 254 L 703 254 L 703 254 L 703 254 L 703 254 L 703 254 L 703 255 L 703 255 L 703 255 L 703 255 L 703 255 L 703 255 L 703 255 L 703 255 L 704 255 L 704 256 L 704 256 L 704 256 L 704 256 L 704 256 L 704 256 L 704 256 L 705 256 L 705 256 L 705 256 L 705 256 L 705 256 L 705 256 L 705 256 L 705 256 L 706 256 L 706 256 L 706 256 L 706 256 L 706 256 L 706 256 L 706 256 L 707 256 L 707 256 L 707 256 L 707 256 L 707 256 L 707 256 L 707 255 L 707 255 L 708 255 L 708 255 L 708 255 L 708 255 L 708 255 L 708 255 L 708 255 L 708 254 L 708 254 L 708 254 L 708 254 L 708 254 L 708 254 L 708 253 L 708 253 L 708 253 " />
-  <text x="659" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="659" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     NATIONAL:Inde
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M -27 286 L -27 286 L -27 286 L -27 286 L -27 285 L -27 285 L -27 285 L -27 285 L -27 285 L -27 285 L -27 285 L -27 284 L -27 284 L -28 284 L -28 284 L -28 284 L -28 284 L -28 284 L -28 284 L -28 284 L -28 284 L -28 283 L -29 283 L -29 283 L -29 283 L -29 283 L -29 283 L -29 283 L -29 283 L -30 283 L -30 283 L -30 283 L -30 283 L -30 283 L -30 283 L -30 283 L -31 283 L -31 283 L -31 283 L -31 283 L -31 283 L -31 283 L -31 283 L -32 284 L -32 284 L -32 284 L -32 284 L -32 284 L -32 284 L -32 284 L -32 284 L -32 284 L -32 284 L -33 285 L -33 285 L -33 285 L -33 285 L -33 285 L -33 285 L -33 285 L -33 286 L -33 286 L -33 286 L -33 286 L -33 286 L -33 286 L -33 286 L -33 286 L -33 287 L -33 287 L -33 287 L -33 287 L -33 287 L -33 287 L -33 287 L -32 288 L -32 288 L -32 288 L -32 288 L -32 288 L -32 288 L -32 288 L -32 288 L -32 288 L -32 289 L -31 289 L -31 289 L -31 289 L -31 289 L -31 289 L -31 289 L -31 289 L -30 289 L -30 289 L -30 289 L -30 289 L -30 289 L -30 289 L -30 289 L -29 289 L -29 289 L -29 289 L -29 289 L -29 289 L -29 289 L -29 289 L -28 289 L -28 289 L -28 288 L -28 288 L -28 288 L -28 288 L -28 288 L -28 288 L -28 288 L -27 288 L -27 288 L -27 287 L -27 287 L -27 287 L -27 287 L -27 287 L -27 287 L -27 287 L -27 286 L -27 286 L -27 286 L -27 286 " />
-  <text x="-88" y="-1" font-family="Arial" font-size="12" fill="#000000">
+  <text x="-88" y="-1" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     NATIONAL:Bengale
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 4 291 L 4 291 L 4 291 L 4 291 L 4 290 L 4 290 L 4 290 L 4 290 L 4 290 L 4 290 L 4 290 L 3 289 L 3 289 L 3 289 L 3 289 L 3 289 L 3 289 L 3 289 L 3 289 L 3 289 L 3 288 L 2 288 L 2 288 L 2 288 L 2 288 L 2 288 L 2 288 L 2 288 L 1 288 L 1 288 L 1 288 L 1 288 L 1 288 L 1 288 L 1 288 L 0 288 L 0 288 L 0 288 L 0 288 L 0 288 L 0 288 L 0 288 L 0 288 L -1 288 L -1 289 L -1 289 L -1 289 L -1 289 L -1 289 L -1 289 L -1 289 L -2 289 L -2 289 L -2 290 L -2 290 L -2 290 L -2 290 L -2 290 L -2 290 L -2 290 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 291 L -2 292 L -2 292 L -2 292 L -2 292 L -2 292 L -2 292 L -2 292 L -2 293 L -2 293 L -1 293 L -1 293 L -1 293 L -1 293 L -1 293 L -1 293 L -1 293 L -1 294 L 0 294 L 0 294 L 0 294 L 0 294 L 0 294 L 0 294 L 0 294 L 0 294 L 1 294 L 1 294 L 1 294 L 1 294 L 1 294 L 1 294 L 1 294 L 2 294 L 2 294 L 2 294 L 2 294 L 2 294 L 2 294 L 2 294 L 3 294 L 3 293 L 3 293 L 3 293 L 3 293 L 3 293 L 3 293 L 3 293 L 3 293 L 3 293 L 4 292 L 4 292 L 4 292 L 4 292 L 4 292 L 4 292 L 4 292 L 4 291 L 4 291 L 4 291 L 4 291 " />
-  <text x="-59" y="-1" font-family="Arial" font-size="12" fill="#000000">
+  <text x="-59" y="-1" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     NATIONAL:Pakistan
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 181 68 L 181 68 L 181 68 L 181 67 L 181 67 L 181 67 L 181 67 L 181 67 L 181 67 L 181 66 L 181 66 L 181 66 L 181 66 L 180 66 L 180 66 L 180 66 L 180 66 L 180 66 L 180 65 L 180 65 L 180 65 L 179 65 L 179 65 L 179 65 L 179 65 L 179 65 L 179 65 L 179 65 L 179 65 L 178 65 L 178 65 L 178 65 L 178 65 L 178 65 L 178 65 L 178 65 L 177 65 L 177 65 L 177 65 L 177 65 L 177 65 L 177 65 L 177 65 L 176 65 L 176 65 L 176 65 L 176 66 L 176 66 L 176 66 L 176 66 L 176 66 L 176 66 L 176 66 L 175 66 L 175 66 L 175 67 L 175 67 L 175 67 L 175 67 L 175 67 L 175 67 L 175 68 L 175 68 L 175 68 L 175 68 L 175 68 L 175 68 L 175 68 L 175 68 L 175 69 L 175 69 L 175 69 L 175 69 L 175 69 L 175 69 L 176 69 L 176 70 L 176 70 L 176 70 L 176 70 L 176 70 L 176 70 L 176 70 L 176 70 L 176 70 L 177 70 L 177 70 L 177 71 L 177 71 L 177 71 L 177 71 L 177 71 L 178 71 L 178 71 L 178 71 L 178 71 L 178 71 L 178 71 L 178 71 L 179 71 L 179 71 L 179 71 L 179 71 L 179 71 L 179 71 L 179 70 L 179 70 L 180 70 L 180 70 L 180 70 L 180 70 L 180 70 L 180 70 L 180 70 L 180 70 L 181 70 L 181 69 L 181 69 L 181 69 L 181 69 L 181 69 L 181 69 L 181 69 L 181 68 L 181 68 L 181 68 L 181 68 L 181 68 " />
-  <text x="102" y="0" font-family="Arial" font-size="12" fill="#32CD32">
+  <text x="102" y="0" font-family="Arial" font-size="12" fill="#32CD32" text-anchor="start" dominant-baseline="alphabetic">
     LIEUNAI:Grande-Bretagne
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 121 335 L 121 335 L 121 335 L 121 334 L 121 334 L 121 334 L 121 334 L 121 334 L 121 334 L 121 334 L 121 333 L 121 333 L 121 333 L 121 333 L 121 333 L 121 333 L 120 333 L 120 333 L 120 333 L 120 332 L 120 332 L 120 332 L 120 332 L 120 332 L 119 332 L 119 332 L 119 332 L 119 332 L 119 332 L 119 332 L 119 332 L 118 332 L 118 332 L 118 332 L 118 332 L 118 332 L 118 332 L 118 332 L 118 332 L 117 332 L 117 332 L 117 332 L 117 332 L 117 332 L 117 332 L 117 333 L 116 333 L 116 333 L 116 333 L 116 333 L 116 333 L 116 333 L 116 333 L 116 333 L 116 334 L 116 334 L 116 334 L 116 334 L 116 334 L 116 334 L 115 334 L 115 335 L 115 335 L 115 335 L 115 335 L 115 335 L 115 335 L 115 335 L 116 335 L 116 336 L 116 336 L 116 336 L 116 336 L 116 336 L 116 336 L 116 336 L 116 337 L 116 337 L 116 337 L 116 337 L 116 337 L 116 337 L 117 337 L 117 337 L 117 337 L 117 337 L 117 338 L 117 338 L 117 338 L 118 338 L 118 338 L 118 338 L 118 338 L 118 338 L 118 338 L 118 338 L 118 338 L 119 338 L 119 338 L 119 338 L 119 338 L 119 338 L 119 338 L 119 338 L 120 338 L 120 338 L 120 337 L 120 337 L 120 337 L 120 337 L 120 337 L 120 337 L 121 337 L 121 337 L 121 337 L 121 337 L 121 336 L 121 336 L 121 336 L 121 336 L 121 336 L 121 336 L 121 336 L 121 335 L 121 335 L 121 335 L 121 335 L 121 335 " />
-  <text x="29" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="29" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     LIEUNAI:sous-continent indien
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 895 285 L 895 285 L 895 285 L 895 285 L 895 284 L 895 284 L 895 284 L 895 284 L 895 284 L 895 284 L 895 284 L 895 283 L 895 283 L 895 283 L 895 283 L 895 283 L 895 283 L 894 283 L 894 283 L 894 283 L 894 282 L 894 282 L 894 282 L 894 282 L 894 282 L 893 282 L 893 282 L 893 282 L 893 282 L 893 282 L 893 282 L 893 282 L 893 282 L 892 282 L 892 282 L 892 282 L 892 282 L 892 282 L 892 282 L 892 282 L 891 282 L 891 282 L 891 282 L 891 282 L 891 283 L 891 283 L 891 283 L 890 283 L 890 283 L 890 283 L 890 283 L 890 283 L 890 283 L 890 284 L 890 284 L 890 284 L 890 284 L 890 284 L 890 284 L 890 284 L 890 285 L 890 285 L 890 285 L 890 285 L 890 285 L 890 285 L 890 285 L 890 285 L 890 286 L 890 286 L 890 286 L 890 286 L 890 286 L 890 286 L 890 286 L 890 287 L 890 287 L 890 287 L 890 287 L 890 287 L 890 287 L 891 287 L 891 287 L 891 287 L 891 288 L 891 288 L 891 288 L 891 288 L 892 288 L 892 288 L 892 288 L 892 288 L 892 288 L 892 288 L 892 288 L 893 288 L 893 288 L 893 288 L 893 288 L 893 288 L 893 288 L 893 288 L 893 288 L 894 288 L 894 288 L 894 288 L 894 288 L 894 288 L 894 287 L 894 287 L 894 287 L 895 287 L 895 287 L 895 287 L 895 287 L 895 287 L 895 287 L 895 286 L 895 286 L 895 286 L 895 286 L 895 286 L 895 286 L 895 286 L 895 285 L 895 285 L 895 285 L 895 285 " />
-  <text x="844" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="844" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     LIEUNAI:ailleurs
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 282 379 L 282 379 L 282 378 L 281 378 L 281 378 L 281 378 L 281 378 L 281 378 L 281 378 L 281 377 L 281 377 L 281 377 L 281 377 L 281 377 L 281 377 L 281 377 L 281 377 L 280 376 L 280 376 L 280 376 L 280 376 L 280 376 L 280 376 L 280 376 L 280 376 L 279 376 L 279 376 L 279 376 L 279 376 L 279 376 L 279 376 L 279 376 L 279 376 L 278 376 L 278 376 L 278 376 L 278 376 L 278 376 L 278 376 L 278 376 L 277 376 L 277 376 L 277 376 L 277 376 L 277 376 L 277 376 L 277 376 L 277 377 L 276 377 L 276 377 L 276 377 L 276 377 L 276 377 L 276 377 L 276 377 L 276 378 L 276 378 L 276 378 L 276 378 L 276 378 L 276 378 L 276 378 L 276 379 L 276 379 L 276 379 L 276 379 L 276 379 L 276 379 L 276 379 L 276 379 L 276 380 L 276 380 L 276 380 L 276 380 L 276 380 L 276 380 L 276 380 L 276 381 L 276 381 L 276 381 L 277 381 L 277 381 L 277 381 L 277 381 L 277 381 L 277 381 L 277 381 L 277 381 L 278 382 L 278 382 L 278 382 L 278 382 L 278 382 L 278 382 L 278 382 L 279 382 L 279 382 L 279 382 L 279 382 L 279 382 L 279 382 L 279 382 L 279 382 L 280 382 L 280 381 L 280 381 L 280 381 L 280 381 L 280 381 L 280 381 L 280 381 L 281 381 L 281 381 L 281 381 L 281 381 L 281 380 L 281 380 L 281 380 L 281 380 L 281 380 L 281 380 L 281 380 L 281 379 L 281 379 L 281 379 L 282 379 L 282 379 L 282 379 " />
-  <text x="242" y="0" font-family="Arial" font-size="12" fill="#FF0000">
+  <text x="242" y="0" font-family="Arial" font-size="12" fill="#FF0000" text-anchor="start" dominant-baseline="alphabetic">
     ENFANT:oui
   </text>
   <path stroke="#0000FF" stroke-width="0" clip-path="url(#clip-6)" d="M 190 129 L 190 129 L 190 128 L 190 128 L 190 128 L 190 128 L 190 128 L 190 128 L 190 127 L 190 127 L 190 127 L 190 127 L 189 127 L 189 127 L 189 127 L 189 127 L 189 126 L 189 126 L 189 126 L 189 126 L 189 126 L 188 126 L 188 126 L 188 126 L 188 126 L 188 126 L 188 126 L 188 126 L 188 126 L 187 126 L 187 126 L 187 126 L 187 126 L 187 126 L 187 126 L 187 126 L 186 126 L 186 126 L 186 126 L 186 126 L 186 126 L 186 126 L 186 126 L 185 126 L 185 126 L 185 126 L 185 126 L 185 126 L 185 127 L 185 127 L 185 127 L 185 127 L 185 127 L 184 127 L 184 127 L 184 127 L 184 128 L 184 128 L 184 128 L 184 128 L 184 128 L 184 128 L 184 129 L 184 129 L 184 129 L 184 129 L 184 129 L 184 129 L 184 129 L 184 129 L 184 130 L 184 130 L 184 130 L 184 130 L 184 130 L 185 130 L 185 130 L 185 131 L 185 131 L 185 131 L 185 131 L 185 131 L 185 131 L 185 131 L 185 131 L 186 131 L 186 131 L 186 131 L 186 132 L 186 132 L 186 132 L 186 132 L 187 132 L 187 132 L 187 132 L 187 132 L 187 132 L 187 132 L 187 132 L 188 132 L 188 132 L 188 132 L 188 132 L 188 132 L 188 131 L 188 131 L 188 131 L 189 131 L 189 131 L 189 131 L 189 131 L 189 131 L 189 131 L 189 131 L 189 131 L 189 130 L 190 130 L 190 130 L 190 130 L 190 130 L 190 130 L 190 130 L 190 129 L 190 129 L 190 129 L 190 129 L 190 129 L 190 129 " />
-  <text x="149" y="0" font-family="Arial" font-size="12" fill="#32CD32">
+  <text x="149" y="0" font-family="Arial" font-size="12" fill="#32CD32" text-anchor="start" dominant-baseline="alphabetic">
     ENFANT:non
   </text>
   <defs>
@@ -3625,16 +3625,16 @@
   <rect x="425" y="416" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" x1="608" y1="413" x2="608" y2="416" />
   <rect x="608" y="416" width="1" height="1" fill="#000000" />
-  <text x="47" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="47" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="416" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="416" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="599" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="599" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" x1="94" y1="415" x2="94" y2="416" />
@@ -3667,7 +3667,7 @@
   <rect x="571" y="416" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" x1="608" y1="415" x2="608" y2="416" />
   <rect x="608" y="416" width="1" height="1" fill="#000000" />
-  <text x="172" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="172" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dimension 1; Valeur Propre : ,39413 (23,65  % d'Inertie)
   </text>
   <path stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" d="M 58 52 L 608 52 " />
@@ -3770,22 +3770,22 @@
   <rect x="58" y="136" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" x1="61" y1="66" x2="58" y2="66" />
   <rect x="58" y="66" width="1" height="1" fill="#000000" />
-  <text x="29" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="29" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,0
   </text>
-  <text x="29" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="29" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
-  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="33" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,5
   </text>
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" x1="59" y1="402" x2="58" y2="402" />
@@ -3840,7 +3840,7 @@
   <rect x="58" y="66" width="1" height="1" fill="#000000" />
   <line stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" x1="59" y1="52" x2="58" y2="52" />
   <rect x="58" y="52" width="1" height="1" fill="#000000" />
-  <text x="18" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="18" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dimension 2; Valeur Propre : ,36380 (21,83  % d'Inertie)
   </text>
   <path stroke="#000000" stroke-width="0" clip-path="url(#clip-7)" d="M 608 416 L 608 52 " />

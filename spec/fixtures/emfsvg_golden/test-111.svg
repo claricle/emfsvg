@@ -11,7 +11,7 @@
       <rect x="3186" y="7020" width="2988" height="-7037" />
     </clipPath>
   </defs>
-  <text x="3219" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3219" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dendrogramme de 6   Variables
   </text>
   <defs>
@@ -19,7 +19,7 @@
       <rect x="4000" y="6605" width="1360" height="-265" />
     </clipPath>
   </defs>
-  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Méth. de Ward
   </text>
   <defs>
@@ -27,7 +27,7 @@
       <rect x="4000" y="6605" width="1360" height="-564" />
     </clipPath>
   </defs>
-  <text x="3850" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3850" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Euclidiennes
   </text>
   <defs>
@@ -1136,31 +1136,31 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="7011" y1="846" x2="7011" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8077" y1="846" x2="8077" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="9144" y1="846" x2="9144" y2="813" />
-  <text x="556" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="556" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="1622" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1622" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2
   </text>
-  <text x="2688" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2688" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="3754" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3754" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     6
   </text>
-  <text x="4821" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4821" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="5829" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5829" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     10
   </text>
-  <text x="6895" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6895" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     12
   </text>
-  <text x="7961" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="7961" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     14
   </text>
-  <text x="9028" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9028" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     16
   </text>
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="1147" y1="829" x2="1147" y2="813" />
@@ -1179,7 +1179,7 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8077" y1="829" x2="8077" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="8610" y1="829" x2="8610" y2="813" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="9144" y1="829" x2="9144" y2="813" />
-  <text x="4157" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4157" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Dist. Agrégation
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" d="M 614 5908 L 9144 5908 " />
@@ -1217,22 +1217,22 @@
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="647" y1="4452" x2="614" y2="4452" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="647" y1="5180" x2="614" y2="5180" />
   <line stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" x1="647" y1="5908" x2="614" y2="5908" />
-  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     LEG
   </text>
-  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     DET
   </text>
-  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     VIT
   </text>
-  <text x="132" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="132" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     PAS
   </text>
-  <text x="149" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="149" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     STA
   </text>
-  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     TAI
   </text>
   <path stroke="#000000" stroke-width="17" clip-path="url(#clip-5)" d="M 9144 813 L 9144 5908 " />

@@ -11,7 +11,7 @@
       <rect x="4168" y="7200" width="1760" height="-7217" />
     </clipPath>
   </defs>
-  <text x="4168" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="4168" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
     3D Surface Plot 
   </text>
   <defs>
@@ -19,13 +19,13 @@
       <rect x="2723" y="6768" width="4650" height="-266" />
     </clipPath>
   </defs>
-  <text x="2723" y="0" font-family="Arial" font-size="12" fill="#FF0000">
+  <text x="2723" y="0" font-family="Arial" font-size="12" fill="#FF0000" text-anchor="start" dominant-baseline="alphabetic">
     MEASURE03
   </text>
-  <text x="3885" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3885" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
      =
   </text>
-  <text x="4051" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="4051" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
      Distance Weighted Least Squares
   </text>
   <defs>
@@ -19427,23 +19427,23 @@
   <line stroke="#C0C0C0" stroke-width="17" clip-path="url(#clip-4)" x1="3032" y1="5131" x2="2992" y2="5131" />
   <line stroke="#C0C0C0" stroke-width="17" clip-path="url(#clip-4)" x1="3031" y1="5170" x2="2991" y2="5170" />
   <path fill="#B10000" clip-path="url(#clip-4)" stroke="#000000" stroke-width="17" d="M 356 366 L 711 366 L 711 152 L 356 152 Z " fill-rule="evenodd" />
-  <text x="755" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="755" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
      &lt; 12 
   </text>
   <path fill="#FF4600" clip-path="url(#clip-4)" stroke="#000000" stroke-width="17" d="M 1397 366 L 1752 366 L 1752 152 L 1397 152 Z " fill-rule="evenodd" />
-  <text x="1796" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="1796" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
      &lt; 10 
   </text>
   <path fill="#E5FF00" clip-path="url(#clip-4)" stroke="#000000" stroke-width="17" d="M 2438 366 L 2793 366 L 2793 152 L 2438 152 Z " fill-rule="evenodd" />
-  <text x="2837" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="2837" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
      &lt; 8 
   </text>
   <path fill="#00EF00" clip-path="url(#clip-4)" stroke="#000000" stroke-width="17" d="M 3346 366 L 3701 366 L 3701 152 L 3346 152 Z " fill-rule="evenodd" />
-  <text x="3745" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="3745" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
      &lt; 6 
   </text>
   <path fill="#007D22" clip-path="url(#clip-4)" stroke="#000000" stroke-width="17" d="M 4254 366 L 4609 366 L 4609 152 L 4254 152 Z " fill-rule="evenodd" />
-  <text x="4653" y="0" font-family="Arial" font-size="12" fill="#C0C0C0">
+  <text x="4653" y="0" font-family="Arial" font-size="12" fill="#C0C0C0" text-anchor="start" dominant-baseline="alphabetic">
      &lt; 4 
   </text>
   

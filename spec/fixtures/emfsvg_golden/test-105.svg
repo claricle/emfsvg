@@ -11,7 +11,7 @@
       <rect x="1869" y="210" width="8161" height="451" />
     </clipPath>
   </defs>
-  <text x="1908" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1908" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Projection des variables sur le plan factoriel (  1 x   2)
   </text>
   <defs>
@@ -26,7 +26,7 @@
   </defs>
   <ellipse fill="#FFFBF0" clip-path="url(#clip-4)" stroke="#FFFBF0" stroke-width="0" cx="12111.0" cy="11576.5" rx="79.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-4)" stroke="#0000FF" stroke-width="0" cx="12111.0" cy="11576.5" rx="79.0" ry="80.5" />
-  <text x="12471" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="12471" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
      Active
   </text>
   <defs>
@@ -3892,57 +3892,57 @@
   <rect x="11610" y="1319" width="1" height="1" fill="#C0C0C0" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="3106.0" cy="7041.5" rx="78.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="3106.0" cy="7041.5" rx="78.0" ry="80.5" />
-  <text x="2550" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2550" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      animal
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="9688.0" cy="8649.5" rx="78.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="9688.0" cy="8649.5" rx="78.0" ry="80.5" />
-  <text x="8889" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8889" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      pâtisserie
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="10557.0" cy="7410.5" rx="79.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="10557.0" cy="7410.5" rx="79.0" ry="80.5" />
-  <text x="9906" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9906" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      sucrerie
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="5633.0" cy="1847.0" rx="78.0" ry="80.0" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="5633.0" cy="1847.0" rx="78.0" ry="80.0" />
-  <text x="4880" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4880" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      nettoyant
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="8977.0" cy="2795.5" rx="78.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="8977.0" cy="2795.5" rx="78.0" ry="80.5" />
-  <text x="8037" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8037" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
      cosmétique
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="9030.0" cy="3612.5" rx="78.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="9030.0" cy="3612.5" rx="78.0" ry="80.5" />
-  <text x="8663" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8663" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      fleur
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="10057.0" cy="6566.5" rx="78.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="10057.0" cy="6566.5" rx="78.0" ry="80.5" />
-  <text x="9737" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="9737" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      fruit
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="6292.0" cy="4721.0" rx="79.0" ry="80.0" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="6292.0" cy="4721.0" rx="79.0" ry="80.0" />
-  <text x="5446" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5446" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      pharmacie
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="2553.0" cy="6884.0" rx="79.0" ry="80.0" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="2553.0" cy="6884.0" rx="79.0" ry="80.0" />
-  <text x="1660" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1660" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      moisissure
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="4291.0" cy="6356.0" rx="78.0" ry="80.0" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="4291.0" cy="6356.0" rx="78.0" ry="80.0" />
-  <text x="3774" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3774" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      nature
   </text>
   <ellipse fill="#FFFFFF" clip-path="url(#clip-6)" stroke="#FFFFFF" stroke-width="0" cx="7055.0" cy="8386.5" rx="78.0" ry="80.5" />
   <ellipse fill="none" clip-path="url(#clip-6)" stroke="#0000FF" stroke-width="0" cx="7055.0" cy="8386.5" rx="78.0" ry="80.5" />
-  <text x="6608" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6608" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
      épice
   </text>
   <path fill="#0000FF" clip-path="url(#clip-6)" stroke="none" d="M 6585 5946 L 6479 5973 L 6476 5960 L 6473 5947 L 6579 5920 L 6582 5933 L 6585 5946 Z " fill-rule="evenodd" />
@@ -8091,19 +8091,19 @@
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 6596 10917 L 6596 10994 L 6582 10994 L 6569 10994 L 6569 10917 L 6582 10917 L 6596 10917 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 8892 10917 L 8892 10994 L 8878 10994 L 8865 10994 L 8865 10917 L 8878 10917 L 8892 10917 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 11190 10917 L 11190 10994 L 11176 10994 L 11163 10994 L 11163 10917 L 11176 10917 L 11190 10917 Z " fill-rule="evenodd" />
-  <text x="1697" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="1697" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,0
   </text>
-  <text x="3995" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="3995" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="6346" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6346" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="8642" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="8642" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="10940" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="10940" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 2000 10970 L 2000 10994 L 1986 10994 L 1973 10994 L 1973 10970 L 1986 10970 L 2000 10970 Z " fill-rule="evenodd" />
@@ -8128,7 +8128,7 @@
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 10730 10970 L 10730 10994 L 10716 10994 L 10703 10994 L 10703 10970 L 10716 10970 L 10730 10970 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 11190 10970 L 11190 10994 L 11176 10994 L 11163 10994 L 11163 10970 L 11176 10970 L 11190 10970 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 11651 10970 L 11651 10994 L 11637 10994 L 11624 10994 L 11624 10970 L 11637 10970 L 11651 10970 Z " fill-rule="evenodd" />
-  <text x="5252" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="5252" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Fact. 1  : 36,23%
   </text>
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1527 857 L 11637 857 L 11637 870 L 11637 884 L 1527 884 L 1527 870 L 1527 857 Z " fill-rule="evenodd" />
@@ -8165,19 +8165,19 @@
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1605 5947 L 1527 5947 L 1527 5933 L 1527 5920 L 1605 5920 L 1605 5933 L 1605 5947 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1605 3647 L 1527 3647 L 1527 3633 L 1527 3620 L 1605 3620 L 1605 3633 L 1605 3647 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1605 1345 L 1527 1345 L 1527 1331 L 1527 1318 L 1605 1318 L 1605 1331 L 1605 1345 Z " fill-rule="evenodd" />
-  <text x="764" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="764" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -1,0
   </text>
-  <text x="764" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="764" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -0,5
   </text>
-  <text x="868" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="868" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,0
   </text>
-  <text x="868" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="868" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0,5
   </text>
-  <text x="868" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="868" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1,0
   </text>
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1552 10549 L 1527 10549 L 1527 10535 L 1527 10522 L 1552 10522 L 1552 10535 L 1552 10549 Z " fill-rule="evenodd" />
@@ -8202,7 +8202,7 @@
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1552 1806 L 1527 1806 L 1527 1792 L 1527 1779 L 1552 1779 L 1552 1792 L 1552 1806 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1552 1345 L 1527 1345 L 1527 1331 L 1527 1318 L 1552 1318 L 1552 1331 L 1552 1345 Z " fill-rule="evenodd" />
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 1552 884 L 1527 884 L 1527 870 L 1527 857 L 1552 857 L 1552 870 L 1552 884 Z " fill-rule="evenodd" />
-  <text x="473" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="473" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="alphabetic">
     Fact. 2  : 22,17%
   </text>
   <path fill="#000000" clip-path="url(#clip-7)" stroke="none" d="M 11624 10994 L 11624 870 L 11637 870 L 11651 870 L 11651 10994 L 11637 10994 L 11624 10994 Z " fill-rule="evenodd" />

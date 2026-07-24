@@ -5,7 +5,7 @@
   <line stroke="#000000" stroke-width="1" x1="9300" y1="900" x2="9300" y2="1500" />
   <line stroke="#000000" stroke-width="1" x1="9300" y1="1500" x2="900" y2="1500" />
   <line stroke="#000000" stroke-width="1" x1="900" y1="1500" x2="900" y2="900" />
-  <text x="975" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="975" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     WIND ROSE PLOT
   </text>
   <defs>
@@ -13,7 +13,7 @@
       <rect x="975" y="900" width="8325" height="600" />
     </clipPath>
   </defs>
-  <text x="975" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="975" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Station #14839 - MILWAUKEE/GENERAL MITCHELL FI, WI
   </text>
   <defs>
@@ -132,31 +132,31 @@
   <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" d="M 3965.8312681665093 3959.529928191951 A 51.500000 51.500000 0 1 1 3960.519655 3964.843163 L 3999.500000 3998.500000 Z" />
   <path fill="#000000" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" d="M 3988.689768087463 3964.8228343175647 A 36.000000 36.000000 0 1 1 3983.834661 3966.833530 L 4000.000000 3999.000000 Z" />
   <ellipse fill="#FFFFFF" clip-path="url(#clip-3)" stroke="#000000" stroke-width="1" cx="4000.0" cy="3999.0" rx="99.0" ry="99.0" />
-  <text x="4050" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4050" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     NORTH
   </text>
-  <text x="4050" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4050" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     SOUTH
   </text>
-  <text x="80" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="80" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     WEST
   </text>
-  <text x="7450" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="7450" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     EAST
   </text>
-  <text x="4500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     3%
   </text>
-  <text x="5130" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5130" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     6%
   </text>
-  <text x="5820" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5820" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     9%
   </text>
-  <text x="6570" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6570" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     12%
   </text>
-  <text x="7380" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="7380" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     15%
   </text>
   <defs>
@@ -184,259 +184,259 @@
   <rect fill="#FF0000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="9500" width="1993" height="1993" />
   <rect fill="#FFFF00" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="11500" width="1993" height="1993" />
   <rect fill="#000000" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" x="1000" y="13500" width="1993" height="1993" />
-  <text x="1000" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="1000" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     W
   </text>
-  <text x="1660" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="1660" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     i
   </text>
-  <text x="1807" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="1807" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     n
   </text>
-  <text x="2180" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="2180" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     d
   </text>
-  <text x="2553" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="2553" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="2740" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="2740" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     S
   </text>
-  <text x="3187" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3187" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     p
   </text>
-  <text x="3560" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3560" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     e
   </text>
-  <text x="3933" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3933" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     e
   </text>
-  <text x="4306" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4306" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     d
   </text>
-  <text x="4679" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4679" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="4866" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4866" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     (
   </text>
-  <text x="5086" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5086" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     m
   </text>
-  <text x="5646" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5646" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     /
   </text>
-  <text x="5833" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5833" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     s
   </text>
-  <text x="6166" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6166" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     )
   </text>
-  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     &gt;
   </text>
-  <text x="4074" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4074" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="4261" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4261" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="4634" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4634" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="5007" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5007" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="5194" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5194" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="5567" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5567" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     6
   </text>
-  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     9
   </text>
-  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -
   </text>
-  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="6333" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6333" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="6893" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6893" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     6
   </text>
-  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     5
   </text>
-  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -
   </text>
-  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     9
   </text>
-  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     3
   </text>
-  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     3
   </text>
-  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -
   </text>
-  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     5
   </text>
-  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -
   </text>
-  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     3
   </text>
-  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     3
   </text>
-  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     4
   </text>
-  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3500" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="3687" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
-  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4060" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4247" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     5
   </text>
-  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4620" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="4993" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5180" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     -
   </text>
-  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5400" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
      
   </text>
-  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5587" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1
   </text>
-  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="5960" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     .
   </text>
-  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6147" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     8
   </text>
-  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000">
+  <text x="6520" y="0" font-family="ARIAL" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     0
   </text>
   <defs>
@@ -452,7 +452,7 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="9300" y1="9660" x2="9300" y2="10260" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="9300" y1="10260" x2="6180" y2="10260" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="6180" y1="10260" x2="6180" y2="9660" />
-  <text x="6255" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6255" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     COMPANY NAME
   </text>
   <defs>
@@ -469,7 +469,7 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" x1="4140" y1="9660" x2="4140" y2="10260" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" x1="4140" y1="10260" x2="2100" y2="10260" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" x1="2100" y1="10260" x2="2100" y2="9660" />
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     MODELER
   </text>
   <defs>
@@ -486,23 +486,23 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="6180" y1="11460" x2="6180" y2="12300" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="6180" y1="12300" x2="4140" y2="12300" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="4140" y1="12300" x2="4140" y2="11460" />
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     PLOT YEAR-DATE-TIME
   </text>
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     1961 
   </text>
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Feb 1 - Feb 29
   </text>
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Midnight  -  11 PM
   </text>
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="4140" y1="9660" x2="6180" y2="9660" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="6180" y1="9660" x2="6180" y2="10260" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="6180" y1="10260" x2="4140" y2="10260" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="4140" y1="10260" x2="4140" y2="9660" />
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     DATE
   </text>
   <defs>
@@ -510,7 +510,7 @@
       <rect x="4215" y="9660" width="1965" height="600" />
     </clipPath>
   </defs>
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     11/4/2002
   </text>
   <defs>
@@ -522,7 +522,7 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-13)" x1="4140" y1="10260" x2="4140" y2="10860" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-13)" x1="4140" y1="10860" x2="2100" y2="10860" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-13)" x1="2100" y1="10860" x2="2100" y2="10260" />
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     DISPLAY
   </text>
   <defs>
@@ -530,7 +530,7 @@
       <rect x="2175" y="10260" width="1965" height="600" />
     </clipPath>
   </defs>
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Wind Speed
   </text>
   <defs>
@@ -542,7 +542,7 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" x1="6180" y1="10260" x2="6180" y2="10860" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" x1="6180" y1="10860" x2="4140" y2="10860" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" x1="4140" y1="10860" x2="4140" y2="10260" />
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     UNIT
   </text>
   <defs>
@@ -550,7 +550,7 @@
       <rect x="4215" y="10260" width="1965" height="600" />
     </clipPath>
   </defs>
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     m/s
   </text>
   <defs>
@@ -562,7 +562,7 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" x1="6180" y1="10860" x2="6180" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" x1="6180" y1="11460" x2="4140" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" x1="4140" y1="11460" x2="4140" y2="10860" />
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     CALM WINDS
   </text>
   <defs>
@@ -570,7 +570,7 @@
       <rect x="4215" y="10860" width="1965" height="600" />
     </clipPath>
   </defs>
-  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="4215" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     2.41%
   </text>
   <defs>
@@ -582,7 +582,7 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" x1="4140" y1="10860" x2="4140" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" x1="4140" y1="11460" x2="2100" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" x1="2100" y1="11460" x2="2100" y2="10860" />
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     AVG. WIND SPEED
   </text>
   <defs>
@@ -590,7 +590,7 @@
       <rect x="2175" y="10860" width="1965" height="600" />
     </clipPath>
   </defs>
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     5.44 m/s
   </text>
   <defs>
@@ -602,14 +602,14 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="9300" y1="10260" x2="9300" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="9300" y1="11460" x2="6180" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="6180" y1="11460" x2="6180" y2="10260" />
-  <text x="6255" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6255" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     COMMENTS
   </text>
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="6180" y1="11460" x2="9300" y2="11460" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="9300" y1="11460" x2="9300" y2="12300" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="9300" y1="12300" x2="6180" y2="12300" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-21)" x1="6180" y1="12300" x2="6180" y2="11460" />
-  <text x="6255" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="6255" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     PROJECT/PLOT NO.
   </text>
   <defs>
@@ -626,16 +626,16 @@
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="4140" y1="11460" x2="4140" y2="12300" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="4140" y1="12300" x2="2100" y2="12300" />
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="2100" y1="12300" x2="2100" y2="11460" />
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     ORIENTATION
   </text>
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     Direction
   </text>
-  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="2175" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     (blowing from)
   </text>
-  <text x="900" y="0" font-family="Arial" font-size="12" fill="#000000">
+  <text x="900" y="0" font-family="Arial" font-size="12" fill="#000000" text-anchor="start" dominant-baseline="text-before-edge">
     WRPLOT View 3.5 by Lakes Environmental Software - www.lakes-environmental.com
   </text>
   <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="9300" y1="1500" x2="9300" y2="1740" />

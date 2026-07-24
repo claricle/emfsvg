@@ -5,30 +5,30 @@
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M -4 2251.0 L -4 -15749.0 L 23996 -15749.0 L 23996 2251.0 L -4 2251.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" stroke="#000000" stroke-width="1" d="M 19573 -14013.0 L 21104 -11203.0 L 21192 -11251.0 L 19661 -14061.0 L 19573 -14013.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" stroke="#000000" stroke-width="1" d="M 20992 -11199.0 L 21267 -11008.0 L 21256 -11343.0 L 20992 -11199.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 19573 -14013.0 L 21104 -11203.0 L 21192 -11251.0 L 19661 -14061.0 L 19573 -14013.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 20992 -11199.0 L 21267 -11008.0 L 21256 -11343.0 L 20992 -11199.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" stroke="#000000" stroke-width="1" d="M 19344 -13137.0 L 13999 -10872.0 L 14038 -10780.0 L 19383 -13045.0 L 19344 -13137.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" stroke="#000000" stroke-width="1" d="M 14006 -10984.0 L 13788 -10729.0 L 14123 -10708.0 L 14006 -10984.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 19344 -13137.0 L 13999 -10872.0 L 14038 -10780.0 L 19383 -13045.0 L 19344 -13137.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 14006 -10984.0 L 13788 -10729.0 L 14123 -10708.0 L 14006 -10984.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 17746 -13478.0 L 19590 -11819.0 L 21434 -13478.0 L 19590 -15137.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 17746 -13478.0 L 19590 -11819.0 L 21434 -13478.0 L 19590 -15137.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 17732 -13487.0 C 17730 -13483.0 17730 -13478.0 17730 -13473.0 " />
-  <line stroke="#000000" stroke-width="1" x1="17735" y1="-13466.0" x2="19579" y2="-11807.0" />
-  <line stroke="#000000" stroke-width="1" x1="19579" y1="-11807.0" x2="21445" y2="-13466.0" />
-  <path stroke="#000000" stroke-width="1" fill="none" d="M 21449 -13469.0 C 21451 -13473.0 21451 -13478.0 21451 -13483.0 " />
-  <line stroke="#000000" stroke-width="1" x1="21445" y1="-13491.0" x2="19601" y2="-15149.0" />
-  <path stroke="#000000" stroke-width="1" d="M 19579 -15125.0 L 21423 -13466.0 L 21423 -13491.0 L 19579 -11832.0 L 19601 -11832.0 L 17758 -13491.0 L 17758 -13466.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" fill="none" d="M 17732 -13487.0 C 17730 -13483.0 17730 -13478.0 17730 -13473.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" x1="17735" y1="-13466.0" x2="19579" y2="-11807.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" x1="19579" y1="-11807.0" x2="21445" y2="-13466.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" fill="none" d="M 21449 -13469.0 C 21451 -13473.0 21451 -13478.0 21451 -13483.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" x1="21445" y1="-13491.0" x2="19601" y2="-15149.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 19579 -15125.0 L 21423 -13466.0 L 21423 -13491.0 L 19579 -11832.0 L 19601 -11832.0 L 17758 -13491.0 L 17758 -13466.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#000000" stroke="#000000" stroke-width="1" d="M 21142 -3029.0 L 21142 -7179.0 L 20942 -7179.0 L 20942 -3029.0 L 21142 -3029.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" stroke="#000000" stroke-width="1" d="M 21342 -7079.0 L 21042 -7679.0 L 20742 -7079.0 L 21342 -7079.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 21142 -3029.0 L 21142 -7179.0 L 20942 -7179.0 L 20942 -3029.0 L 21142 -3029.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 21342 -7079.0 L 21042 -7679.0 L 20742 -7079.0 L 21342 -7079.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 16142 -1920.0 L 21030 2180.0 L 25917 -1920.0 L 21030 -6020.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 16142 -1920.0 L 21030 2180.0 L 25917 -1920.0 L 21030 -6020.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-1">
@@ -36,58 +36,58 @@
     </clipPath>
   </defs>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 16113 -1940.0 C 16109 -1930.0 16109 -1920.0 16109 -1911.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="16121" y1="-1895.0" x2="21009" y2="2205.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="21009" y1="2205.0" x2="25939" y2="-1895.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 25946 -1901.0 C 25951 -1911.0 25951 -1920.0 25951 -1930.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="25939" y1="-1946.0" x2="21051" y2="-6046.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" d="M 21009 -5995.0 L 25896 -1895.0 L 25896 -1946.0 L 21009 2154.0 L 21051 2154.0 L 16164 -1946.0 L 16164 -1895.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 16113 -1940.0 C 16109 -1930.0 16109 -1920.0 16109 -1911.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="16121" y1="-1895.0" x2="21009" y2="2205.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="21009" y1="2205.0" x2="25939" y2="-1895.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 25946 -1901.0 C 25951 -1911.0 25951 -1920.0 25951 -1930.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="25939" y1="-1946.0" x2="21051" y2="-6046.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" d="M 21009 -5995.0 L 25896 -1895.0 L 25896 -1946.0 L 21009 2154.0 L 21051 2154.0 L 16164 -1946.0 L 16164 -1895.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 15564 -21458.0 L 19752 -16223.0 L 19908 -16348.0 L 15721 -21583.0 L 15564 -21458.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 19533 -16177.0 L 20142 -15895.0 L 20002 -16551.0 L 19533 -16177.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 15564 -21458.0 L 19752 -16223.0 L 19908 -16348.0 L 15721 -21583.0 L 15564 -21458.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 19533 -16177.0 L 20142 -15895.0 L 20002 -16551.0 L 19533 -16177.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 12375 -21345.0 L 15746 -18395.0 L 19117 -21345.0 L 15746 -24295.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 12375 -21345.0 L 15746 -18395.0 L 19117 -21345.0 L 15746 -24295.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 12346 -21364.0 C 12341 -21355.0 12341 -21345.0 12341 -21336.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="12353" y1="-21320.0" x2="15724" y2="-18370.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="15724" y1="-18370.0" x2="19139" y2="-21320.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 19147 -21327.0 C 19151 -21336.0 19151 -21345.0 19151 -21355.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="19139" y1="-21371.0" x2="15768" y2="-24321.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" d="M 15724 -24270.0 L 19096 -21320.0 L 19096 -21371.0 L 15724 -18421.0 L 15768 -18421.0 L 12397 -21371.0 L 12397 -21320.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 12346 -21364.0 C 12341 -21355.0 12341 -21345.0 12341 -21336.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="12353" y1="-21320.0" x2="15724" y2="-18370.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="15724" y1="-18370.0" x2="19139" y2="-21320.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 19147 -21327.0 C 19151 -21336.0 19151 -21345.0 19151 -21355.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="19139" y1="-21371.0" x2="15768" y2="-24321.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" d="M 15724 -24270.0 L 19096 -21320.0 L 19096 -21371.0 L 15724 -18421.0 L 15768 -18421.0 L 12397 -21371.0 L 12397 -21320.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 16421 -6865.0 L 9963 -13678.0 L 9939 -13655.0 L 16397 -6842.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 16421 -6865.0 L 9963 -13678.0 L 9939 -13655.0 L 16397 -6842.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 3244 -5533.0 L 17431 -6700.0 L 17428 -6733.0 L 3241 -5566.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 3244 -5533.0 L 17431 -6700.0 L 17428 -6733.0 L 3241 -5566.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 18609 -14492.0 L 20909 -12438.0 L 23209 -14492.0 L 20909 -16546.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18609 -14492.0 L 20909 -12438.0 L 23209 -14492.0 L 20909 -16546.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 18579 -14510.0 C 18575 -14501.0 18575 -14492.0 18575 -14482.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="18586" y1="-14467.0" x2="20886" y2="-12413.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="20886" y1="-12413.0" x2="23231" y2="-14467.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 23238 -14473.0 C 23242 -14482.0 23242 -14492.0 23242 -14501.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="23231" y1="-14517.0" x2="20931" y2="-16571.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" d="M 20886 -16521.0 L 23186 -14467.0 L 23186 -14517.0 L 20886 -12462.0 L 20931 -12462.0 L 18631 -14517.0 L 18631 -14467.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 18579 -14510.0 C 18575 -14501.0 18575 -14492.0 18575 -14482.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="18586" y1="-14467.0" x2="20886" y2="-12413.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="20886" y1="-12413.0" x2="23231" y2="-14467.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 23238 -14473.0 C 23242 -14482.0 23242 -14492.0 23242 -14501.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="23231" y1="-14517.0" x2="20931" y2="-16571.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" d="M 20886 -16521.0 L 23186 -14467.0 L 23186 -14517.0 L 20886 -12462.0 L 20931 -12462.0 L 18631 -14517.0 L 18631 -14467.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 3797 -5404.0 L 17780 -2037.0 L 17788 -2070.0 L 3805 -5437.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 3797 -5404.0 L 17780 -2037.0 L 17788 -2070.0 L 3805 -5437.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" d="M 18709 -9666.0 L 21009 -7612.0 L 23309 -9666.0 L 21009 -11720.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFFF" clip-path="url(#clip-1)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18709 -9666.0 L 21009 -7612.0 L 23309 -9666.0 L 21009 -11720.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 18679 -9685.0 C 18675 -9676.0 18675 -9666.0 18675 -9657.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="18686" y1="-9641.0" x2="20986" y2="-7587.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="20986" y1="-7587.0" x2="23331" y2="-9641.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" fill="none" d="M 23338 -9648.0 C 23342 -9657.0 23342 -9666.0 23342 -9676.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" x1="23331" y1="-9691.0" x2="21031" y2="-11745.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-1)" d="M 20986 -11696.0 L 23286 -9641.0 L 23286 -9691.0 L 20986 -7637.0 L 21031 -7637.0 L 18731 -9691.0 L 18731 -9641.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 18679 -9685.0 C 18675 -9676.0 18675 -9666.0 18675 -9657.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="18686" y1="-9641.0" x2="20986" y2="-7587.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="20986" y1="-7587.0" x2="23331" y2="-9641.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" fill="none" d="M 23338 -9648.0 C 23342 -9657.0 23342 -9666.0 23342 -9676.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" x1="23331" y1="-9691.0" x2="21031" y2="-11745.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-1)" d="M 20986 -11696.0 L 23286 -9641.0 L 23286 -9691.0 L 20986 -7637.0 L 21031 -7637.0 L 18731 -9691.0 L 18731 -9641.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-2">
@@ -95,22 +95,22 @@
     </clipPath>
   </defs>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" d="M 11604 -13970.0 L 12496 -13697.0 L 13384 -13424.0 L 14261 -13150.0 L 15124 -12873.0 L 15968 -12594.0 L 16788 -12312.0 L 17187 -12169.0 L 17579 -12026.0 L 17963 -11881.0 L 18337 -11735.0 L 18701 -11588.0 L 19056 -11440.0 L 19399 -11290.0 L 19732 -11138.0 L 20052 -10985.0 L 20359 -10831.0 L 20654 -10674.0 L 20934 -10515.0 L 21200 -10355.0 L 21451 -10193.0 L 21686 -10029.0 L 21906 -9863.0 L 22108 -9694.0 L 22293 -9523.0 L 22460 -9350.0 L 22608 -9175.0 L 22675 -9086.0 L 22737 -8997.0 L 22795 -8907.0 L 22848 -8817.0 L 22897 -8726.0 L 22941 -8634.0 L 22981 -8542.0 L 23016 -8449.0 L 23048 -8356.0 L 23075 -8262.0 L 23099 -8168.0 L 23118 -8073.0 L 23134 -7977.0 L 23145 -7881.0 L 23153 -7785.0 L 23158 -7688.0 L 23159 -7591.0 L 23156 -7493.0 L 23150 -7394.0 L 23140 -7296.0 L 23127 -7196.0 L 23111 -7096.0 L 23093 -6996.0 L 23070 -6895.0 L 23017 -6692.0 L 22953 -6488.0 L 22877 -6282.0 L 22792 -6075.0 L 22697 -5866.0 L 22593 -5656.0 L 22480 -5445.0 L 22360 -5233.0 L 22232 -5020.0 L 22098 -4805.0 L 21958 -4590.0 L 21812 -4374.0 L 21662 -4158.0 L 21507 -3941.0 L 21349 -3723.0 L 21188 -3505.0 L 20859 -3069.0 L 20525 -2631.0 L 20551 -2610.0 L 20885 -3048.0 L 21215 -3486.0 L 21376 -3704.0 L 21535 -3921.0 L 21689 -4139.0 L 21840 -4356.0 L 21986 -4572.0 L 22126 -4788.0 L 22261 -5002.0 L 22389 -5216.0 L 22510 -5429.0 L 22622 -5641.0 L 22727 -5852.0 L 22822 -6062.0 L 22909 -6271.0 L 22984 -6478.0 L 23050 -6684.0 L 23103 -6888.0 L 23125 -6989.0 L 23144 -7091.0 L 23160 -7192.0 L 23174 -7292.0 L 23183 -7392.0 L 23189 -7492.0 L 23192 -7591.0 L 23191 -7690.0 L 23187 -7788.0 L 23178 -7886.0 L 23166 -7983.0 L 23151 -8080.0 L 23131 -8176.0 L 23107 -8272.0 L 23079 -8367.0 L 23048 -8461.0 L 23011 -8555.0 L 22971 -8649.0 L 22926 -8741.0 L 22877 -8833.0 L 22823 -8925.0 L 22765 -9016.0 L 22702 -9107.0 L 22634 -9196.0 L 22484 -9374.0 L 22316 -9548.0 L 22130 -9720.0 L 21926 -9889.0 L 21706 -10056.0 L 21469 -10221.0 L 21218 -10384.0 L 20951 -10544.0 L 20669 -10703.0 L 20374 -10860.0 L 20066 -11016.0 L 19745 -11169.0 L 19413 -11320.0 L 19068 -11470.0 L 18714 -11619.0 L 18349 -11766.0 L 17974 -11913.0 L 17591 -12057.0 L 17199 -12201.0 L 16799 -12343.0 L 15979 -12626.0 L 15135 -12905.0 L 14271 -13181.0 L 13393 -13456.0 L 12506 -13729.0 L 11614 -14001.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 11604 -13970.0 L 12496 -13697.0 L 13384 -13424.0 L 14261 -13150.0 L 15124 -12873.0 L 15968 -12594.0 L 16788 -12312.0 L 17187 -12169.0 L 17579 -12026.0 L 17963 -11881.0 L 18337 -11735.0 L 18701 -11588.0 L 19056 -11440.0 L 19399 -11290.0 L 19732 -11138.0 L 20052 -10985.0 L 20359 -10831.0 L 20654 -10674.0 L 20934 -10515.0 L 21200 -10355.0 L 21451 -10193.0 L 21686 -10029.0 L 21906 -9863.0 L 22108 -9694.0 L 22293 -9523.0 L 22460 -9350.0 L 22608 -9175.0 L 22675 -9086.0 L 22737 -8997.0 L 22795 -8907.0 L 22848 -8817.0 L 22897 -8726.0 L 22941 -8634.0 L 22981 -8542.0 L 23016 -8449.0 L 23048 -8356.0 L 23075 -8262.0 L 23099 -8168.0 L 23118 -8073.0 L 23134 -7977.0 L 23145 -7881.0 L 23153 -7785.0 L 23158 -7688.0 L 23159 -7591.0 L 23156 -7493.0 L 23150 -7394.0 L 23140 -7296.0 L 23127 -7196.0 L 23111 -7096.0 L 23093 -6996.0 L 23070 -6895.0 L 23017 -6692.0 L 22953 -6488.0 L 22877 -6282.0 L 22792 -6075.0 L 22697 -5866.0 L 22593 -5656.0 L 22480 -5445.0 L 22360 -5233.0 L 22232 -5020.0 L 22098 -4805.0 L 21958 -4590.0 L 21812 -4374.0 L 21662 -4158.0 L 21507 -3941.0 L 21349 -3723.0 L 21188 -3505.0 L 20859 -3069.0 L 20525 -2631.0 L 20551 -2610.0 L 20885 -3048.0 L 21215 -3486.0 L 21376 -3704.0 L 21535 -3921.0 L 21689 -4139.0 L 21840 -4356.0 L 21986 -4572.0 L 22126 -4788.0 L 22261 -5002.0 L 22389 -5216.0 L 22510 -5429.0 L 22622 -5641.0 L 22727 -5852.0 L 22822 -6062.0 L 22909 -6271.0 L 22984 -6478.0 L 23050 -6684.0 L 23103 -6888.0 L 23125 -6989.0 L 23144 -7091.0 L 23160 -7192.0 L 23174 -7292.0 L 23183 -7392.0 L 23189 -7492.0 L 23192 -7591.0 L 23191 -7690.0 L 23187 -7788.0 L 23178 -7886.0 L 23166 -7983.0 L 23151 -8080.0 L 23131 -8176.0 L 23107 -8272.0 L 23079 -8367.0 L 23048 -8461.0 L 23011 -8555.0 L 22971 -8649.0 L 22926 -8741.0 L 22877 -8833.0 L 22823 -8925.0 L 22765 -9016.0 L 22702 -9107.0 L 22634 -9196.0 L 22484 -9374.0 L 22316 -9548.0 L 22130 -9720.0 L 21926 -9889.0 L 21706 -10056.0 L 21469 -10221.0 L 21218 -10384.0 L 20951 -10544.0 L 20669 -10703.0 L 20374 -10860.0 L 20066 -11016.0 L 19745 -11169.0 L 19413 -11320.0 L 19068 -11470.0 L 18714 -11619.0 L 18349 -11766.0 L 17974 -11913.0 L 17591 -12057.0 L 17199 -12201.0 L 16799 -12343.0 L 15979 -12626.0 L 15135 -12905.0 L 14271 -13181.0 L 13393 -13456.0 L 12506 -13729.0 L 11614 -14001.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" d="M 6801 -3537.0 L 6801 -10762.0 L 6601 -10762.0 L 6601 -3537.0 L 6801 -3537.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" d="M 7001 -10662.0 L 6701 -11262.0 L 6401 -10662.0 L 7001 -10662.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 6801 -3537.0 L 6801 -10762.0 L 6601 -10762.0 L 6601 -3537.0 L 6801 -3537.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 7001 -10662.0 L 6701 -11262.0 L 6401 -10662.0 L 7001 -10662.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" d="M 16601 -1920.0 L 21034 1880.0 L 25467 -1920.0 L 21034 -5720.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-2)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 16601 -1920.0 L 21034 1880.0 L 25467 -1920.0 L 21034 -5720.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-2)" fill="none" d="M 16535 -1963.0 C 16526 -1942.0 16526 -1920.0 16526 -1899.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-2)" x1="16552" y1="-1864.0" x2="20985" y2="1936.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-2)" x1="20985" y1="1936.0" x2="25516" y2="-1864.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-2)" fill="none" d="M 25533 -1878.0 C 25542 -1899.0 25542 -1920.0 25542 -1942.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-2)" x1="25516" y1="-1977.0" x2="21083" y2="-5777.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-2)" d="M 20985 -5664.0 L 25419 -1864.0 L 25419 -1977.0 L 20985 1823.0 L 21083 1823.0 L 16650 -1977.0 L 16650 -1864.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-2)" fill="none" d="M 16535 -1963.0 C 16526 -1942.0 16526 -1920.0 16526 -1899.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-2)" x1="16552" y1="-1864.0" x2="20985" y2="1936.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-2)" x1="20985" y1="1936.0" x2="25516" y2="-1864.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-2)" fill="none" d="M 25533 -1878.0 C 25542 -1899.0 25542 -1920.0 25542 -1942.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-2)" x1="25516" y1="-1977.0" x2="21083" y2="-5777.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-2)" d="M 20985 -5664.0 L 25419 -1864.0 L 25419 -1977.0 L 20985 1823.0 L 21083 1823.0 L 16650 -1977.0 L 16650 -1864.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-3">
@@ -119,7 +119,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2062.724411 184.275589)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2062.724411 184.275589)">
-  <text x="17" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="17" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     reference 
   </text>
   <defs>
@@ -129,7 +129,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2062.724411 184.275589)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2062.724411 184.275589)">
-  <text x="240" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="240" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     data 
   </text>
   <defs>
@@ -139,7 +139,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2002.724411 244.275589)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2002.724411 244.275589)">
-  <text x="22" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="22" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     item definition 
   </text>
   <defs>
@@ -149,17 +149,17 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1942.724396 304.275604)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1942.724396 304.275604)">
-  <text x="104" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="104" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     by text
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" d="M 2726 -11295.0 L 2726 -14729.0 L 10534 -14729.0 L 10534 -11295.0 L 2726 -11295.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-6)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 2726 -11295.0 L 2726 -14729.0 L 10534 -14729.0 L 10534 -11295.0 L 2726 -11295.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-6)" x1="2692" y1="-11295.0" x2="10534" y2="-11262.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-6)" x1="10534" y1="-11262.0" x2="10567" y2="-14729.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-6)" x1="10567" y1="-14729.0" x2="2726" y2="-14762.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-6)" d="M 2726 -14695.0 L 10534 -14695.0 L 10501 -14729.0 L 10501 -11295.0 L 10534 -11329.0 L 2726 -11329.0 L 2759 -11295.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-6)" x1="2692" y1="-11295.0" x2="10534" y2="-11262.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-6)" x1="10534" y1="-11262.0" x2="10567" y2="-14729.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-6)" x1="10567" y1="-14729.0" x2="2726" y2="-14762.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-6)" d="M 2726 -14695.0 L 10534 -14695.0 L 10501 -14729.0 L 10501 -11295.0 L 10534 -11329.0 L 2726 -11329.0 L 2759 -11295.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-7">
@@ -168,28 +168,28 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1322.833313 924.166687)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1322.833313 924.166687)">
-  <text x="38" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="38" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     pipeline scraper
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 18959 -9658.0 L 21005 -7820.0 L 23051 -9658.0 L 21005 -11495.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18959 -9658.0 L 21005 -7820.0 L 23051 -9658.0 L 21005 -11495.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" fill="none" d="M 18930 -9676.0 C 18926 -9667.0 18926 -9658.0 18926 -9649.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="18937" y1="-9633.0" x2="20983" y2="-7796.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="20983" y1="-7796.0" x2="23073" y2="-9633.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" fill="none" d="M 23080 -9639.0 C 23084 -9649.0 23084 -9658.0 23084 -9667.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="23073" y1="-9683.0" x2="21027" y2="-11520.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" d="M 20983 -11471.0 L 23029 -9633.0 L 23029 -9683.0 L 20983 -7845.0 L 21027 -7845.0 L 18981 -9683.0 L 18981 -9633.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" fill="none" d="M 18930 -9676.0 C 18926 -9667.0 18926 -9658.0 18926 -9649.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" x1="18937" y1="-9633.0" x2="20983" y2="-7796.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" x1="20983" y1="-7796.0" x2="23073" y2="-9633.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" fill="none" d="M 23080 -9639.0 C 23084 -9649.0 23084 -9658.0 23084 -9667.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" x1="23073" y1="-9683.0" x2="21027" y2="-11520.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" d="M 20983 -11471.0 L 23029 -9633.0 L 23029 -9683.0 L 20983 -7845.0 L 21027 -7845.0 L 18981 -9683.0 L 18981 -9633.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" d="M 2751 -2070.0 L 2751 -5504.0 L 10559 -5504.0 L 10559 -2070.0 L 2751 -2070.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-7)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 2751 -2070.0 L 2751 -5504.0 L 10559 -5504.0 L 10559 -2070.0 L 2751 -2070.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="2676" y1="-2070.0" x2="10559" y2="-1995.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="10559" y1="-1995.0" x2="10634" y2="-5504.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" x1="10634" y1="-5504.0" x2="2751" y2="-5579.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-7)" d="M 2751 -5429.0 L 10559 -5429.0 L 10484 -5504.0 L 10484 -2070.0 L 10559 -2145.0 L 2751 -2145.0 L 2826 -2070.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" x1="2676" y1="-2070.0" x2="10559" y2="-1995.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" x1="10559" y1="-1995.0" x2="10634" y2="-5504.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" x1="10634" y1="-5504.0" x2="2751" y2="-5579.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-7)" d="M 2751 -5429.0 L 10559 -5429.0 L 10484 -5504.0 L 10484 -2070.0 L 10559 -2145.0 L 2751 -2145.0 L 2826 -2070.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-8">
@@ -198,7 +198,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1929.395660 317.604340)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1929.395660 317.604340)">
-  <text x="14" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="14" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     class of inanimate 
   </text>
   <defs>
@@ -208,23 +208,23 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1869.395660 377.604340)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1869.395660 377.604340)">
-  <text x="51" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="51" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     physical object
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 18151 450.0 L 18147 -1066.0 L 18047 -1066.0 L 18051 451.0 L 18151 450.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 18247 -1016.0 L 18096 -1316.0 L 17947 -1016.0 L 18247 -1016.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18151 450.0 L 18147 -1066.0 L 18047 -1066.0 L 18051 451.0 L 18151 450.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18247 -1016.0 L 18096 -1316.0 L 17947 -1016.0 L 18247 -1016.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" d="M 24434 -22900.0 L 26480 -21062.0 L 28526 -22900.0 L 26480 -24737.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-9)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 24434 -22900.0 L 26480 -21062.0 L 28526 -22900.0 L 26480 -24737.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" fill="none" d="M 24405 -22918.0 C 24401 -22909.0 24401 -22900.0 24401 -22890.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" x1="24412" y1="-22875.0" x2="26458" y2="-21037.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" x1="26458" y1="-21037.0" x2="28548" y2="-22875.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" fill="none" d="M 28555 -22881.0 C 28559 -22890.0 28559 -22900.0 28559 -22909.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" x1="28548" y1="-22924.0" x2="26502" y2="-24762.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-9)" d="M 26458 -24712.0 L 28504 -22875.0 L 28504 -22924.0 L 26458 -21087.0 L 26502 -21087.0 L 24456 -22924.0 L 24456 -22875.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-9)" fill="none" d="M 24405 -22918.0 C 24401 -22909.0 24401 -22900.0 24401 -22890.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-9)" x1="24412" y1="-22875.0" x2="26458" y2="-21037.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-9)" x1="26458" y1="-21037.0" x2="28548" y2="-22875.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-9)" fill="none" d="M 28555 -22881.0 C 28559 -22890.0 28559 -22900.0 28559 -22909.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-9)" x1="28548" y1="-22924.0" x2="26502" y2="-24762.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-9)" d="M 26458 -24712.0 L 28504 -22875.0 L 28504 -22924.0 L 26458 -21087.0 L 26502 -21087.0 L 24456 -22924.0 L 24456 -22875.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-10">
@@ -233,7 +233,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 532.000000 1715.000000)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 532.000000 1715.000000)">
-  <text x="101" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="101" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     source
   </text>
   <defs>
@@ -243,19 +243,19 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 936.687378 1310.312622)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 936.687378 1310.312622)">
-  <text x="102" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="102" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     extract
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" d="M 17855 -13472.0 L 19584 -11936.0 L 21314 -13472.0 L 19584 -15008.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-11)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 17855 -13472.0 L 19584 -11936.0 L 21314 -13472.0 L 19584 -15008.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" fill="none" d="M 17841 -13482.0 C 17839 -13477.0 17839 -13472.0 17839 -13468.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="17844" y1="-13460.0" x2="19573" y2="-11924.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="19573" y1="-11924.0" x2="21325" y2="-13460.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" fill="none" d="M 21328 -13463.0 C 21330 -13468.0 21330 -13472.0 21330 -13477.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" x1="21325" y1="-13485.0" x2="19596" y2="-15021.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-11)" d="M 19573 -14996.0 L 21303 -13460.0 L 21303 -13485.0 L 19573 -11949.0 L 19596 -11949.0 L 17866 -13485.0 L 17866 -13460.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-11)" fill="none" d="M 17841 -13482.0 C 17839 -13477.0 17839 -13472.0 17839 -13468.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-11)" x1="17844" y1="-13460.0" x2="19573" y2="-11924.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-11)" x1="19573" y1="-11924.0" x2="21325" y2="-13460.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-11)" fill="none" d="M 21328 -13463.0 C 21330 -13468.0 21330 -13472.0 21330 -13477.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-11)" x1="21325" y1="-13485.0" x2="19596" y2="-15021.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-11)" d="M 19573 -14996.0 L 21303 -13460.0 L 21303 -13485.0 L 19573 -11949.0 L 19596 -11949.0 L 17866 -13485.0 L 17866 -13460.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-12">
@@ -264,7 +264,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 347.104004 1899.895996)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 347.104004 1899.895996)">
-  <text x="75" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="75" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     source of  
   </text>
   <defs>
@@ -274,7 +274,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 287.104004 1959.895996)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 287.104004 1959.895996)">
-  <text x="41" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="41" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     adapted text
   </text>
   <defs>
@@ -284,7 +284,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1508.562317 738.437683)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1508.562317 738.437683)">
-  <text x="42" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="42" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     represented
   </text>
   <defs>
@@ -294,17 +294,17 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1670.541687 576.458313)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1670.541687 576.458313)">
-  <text x="98" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="98" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     pattern
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-15)" stroke="#000000" stroke-width="1" d="M 15221 -1299.0 L 15221 -2995.0 L 20946 -2995.0 L 20946 -1299.0 L 15221 -1299.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-15)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 15221 -1299.0 L 15221 -2995.0 L 20946 -2995.0 L 20946 -1299.0 L 15221 -1299.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" x1="15184" y1="-1299.0" x2="20946" y2="-1262.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" x1="20946" y1="-1262.0" x2="20984" y2="-2995.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" x1="20984" y1="-2995.0" x2="15221" y2="-3033.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-15)" d="M 15221 -2958.0 L 20946 -2958.0 L 20909 -2995.0 L 20909 -1299.0 L 20946 -1337.0 L 15221 -1337.0 L 15259 -1299.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-15)" x1="15184" y1="-1299.0" x2="20946" y2="-1262.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-15)" x1="20946" y1="-1262.0" x2="20984" y2="-2995.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-15)" x1="20984" y1="-2995.0" x2="15221" y2="-3033.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-15)" d="M 15221 -2958.0 L 20946 -2958.0 L 20909 -2995.0 L 20909 -1299.0 L 20946 -1337.0 L 15221 -1337.0 L 15259 -1299.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-16">
@@ -313,7 +313,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1757.260345 489.739655)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1757.260345 489.739655)">
-  <text x="65" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="65" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     Physical object that has 
   </text>
   <defs>
@@ -323,17 +323,17 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1697.260315 549.739685)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1697.260315 549.739685)">
-  <text x="66" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="66" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     blades or brushes …….
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-17)" stroke="#000000" stroke-width="1" d="M 7446 -12899.0 L 7446 -14620.0 L 12526 -14620.0 L 12526 -12899.0 L 7446 -12899.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-17)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 7446 -12899.0 L 7446 -14620.0 L 12526 -14620.0 L 12526 -12899.0 L 7446 -12899.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" x1="7409" y1="-12899.0" x2="12526" y2="-12862.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" x1="12526" y1="-12862.0" x2="12563" y2="-14620.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" x1="12563" y1="-14620.0" x2="7446" y2="-14658.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-17)" d="M 7446 -14583.0 L 12526 -14583.0 L 12488 -14620.0 L 12488 -12899.0 L 12526 -12937.0 L 7446 -12937.0 L 7484 -12899.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-17)" x1="7409" y1="-12899.0" x2="12526" y2="-12862.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-17)" x1="12526" y1="-12862.0" x2="12563" y2="-14620.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-17)" x1="12563" y1="-14620.0" x2="7446" y2="-14658.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-17)" d="M 7446 -14583.0 L 12526 -14583.0 L 12488 -14620.0 L 12488 -12899.0 L 12526 -12937.0 L 7446 -12937.0 L 7484 -12899.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-18">
@@ -342,7 +342,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 305.697876 1941.302124)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 305.697876 1941.302124)">
-  <text x="48" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="48" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     Schlumberger Oilfield 
   </text>
   <defs>
@@ -352,21 +352,21 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 245.697876 2001.302124)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 245.697876 2001.302124)">
-  <text x="188" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="188" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     Glossary
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" d="M 5621 -13699.0 L 7205 -13696.0 L 7205 -13796.0 L 5622 -13799.0 L 5621 -13699.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" d="M 7154 -13596.0 L 7455 -13745.0 L 7155 -13896.0 L 7154 -13596.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 5621 -13699.0 L 7205 -13696.0 L 7205 -13796.0 L 5622 -13799.0 L 5621 -13699.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 7154 -13596.0 L 7455 -13745.0 L 7155 -13896.0 L 7154 -13596.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" d="M 15234 -5899.0 L 15234 -7595.0 L 20959 -7595.0 L 20959 -5899.0 L 15234 -5899.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-19)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 15234 -5899.0 L 15234 -7595.0 L 20959 -7595.0 L 20959 -5899.0 L 15234 -5899.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" x1="15196" y1="-5899.0" x2="20959" y2="-5862.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" x1="20959" y1="-5862.0" x2="20996" y2="-7595.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" x1="20996" y1="-7595.0" x2="15234" y2="-7633.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-19)" d="M 15234 -7558.0 L 20959 -7558.0 L 20921 -7595.0 L 20921 -5899.0 L 20959 -5937.0 L 15234 -5937.0 L 15271 -5899.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-19)" x1="15196" y1="-5899.0" x2="20959" y2="-5862.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-19)" x1="20959" y1="-5862.0" x2="20996" y2="-7595.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-19)" x1="20996" y1="-7595.0" x2="15234" y2="-7633.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-19)" d="M 15234 -7558.0 L 20959 -7558.0 L 20921 -7595.0 L 20921 -5899.0 L 20959 -5937.0 L 15234 -5937.0 L 15271 -5899.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-20">
@@ -375,7 +375,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1182.260376 1064.739624)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1182.260376 1064.739624)">
-  <text x="15" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="15" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     A pipeline scraper is pushed 
   </text>
   <defs>
@@ -385,7 +385,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1122.260376 1124.739624)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1122.260376 1124.739624)">
-  <text x="90" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="90" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     along a pipeline …….
   </text>
   <defs>
@@ -395,7 +395,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1198.145630 1048.854370)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1198.145630 1048.854370)">
-  <text x="42" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="42" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     represented
   </text>
   <defs>
@@ -405,34 +405,34 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1258.562317 988.437683)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1258.562317 988.437683)">
-  <text x="98" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="98" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     pattern
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#000000" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" d="M 18163 -4116.0 L 18160 -5629.0 L 18060 -5629.0 L 18063 -4116.0 L 18163 -4116.0 Z " fill-rule="nonzero" />
-  <path fill="#000000" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" d="M 18260 -5579.0 L 18109 -5879.0 L 17960 -5578.0 L 18260 -5579.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18163 -4116.0 L 18160 -5629.0 L 18060 -5629.0 L 18063 -4116.0 L 18163 -4116.0 Z " fill-rule="nonzero" />
+  <path fill="#000000" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18260 -5579.0 L 18109 -5879.0 L 17960 -5578.0 L 18260 -5579.0 Z " fill-rule="nonzero" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" d="M 18842 -14483.0 L 20888 -12645.0 L 22934 -14483.0 L 20888 -16320.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 18842 -14483.0 L 20888 -12645.0 L 22934 -14483.0 L 20888 -16320.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" fill="none" d="M 18813 -14501.0 C 18809 -14492.0 18809 -14483.0 18809 -14474.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="18820" y1="-14458.0" x2="20866" y2="-12621.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="20866" y1="-12621.0" x2="22956" y2="-14458.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" fill="none" d="M 22963 -14464.0 C 22967 -14474.0 22967 -14483.0 22967 -14492.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="22956" y1="-14508.0" x2="20911" y2="-16345.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" d="M 20866 -16296.0 L 22912 -14458.0 L 22912 -14508.0 L 20866 -12670.0 L 20911 -12670.0 L 18865 -14508.0 L 18865 -14458.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" fill="none" d="M 18813 -14501.0 C 18809 -14492.0 18809 -14483.0 18809 -14474.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" x1="18820" y1="-14458.0" x2="20866" y2="-12621.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" x1="20866" y1="-12621.0" x2="22956" y2="-14458.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" fill="none" d="M 22963 -14464.0 C 22967 -14474.0 22967 -14483.0 22967 -14492.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" x1="22956" y1="-14508.0" x2="20911" y2="-16345.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" d="M 20866 -16296.0 L 22912 -14458.0 L 22912 -14508.0 L 20866 -12670.0 L 20911 -12670.0 L 18865 -14508.0 L 18865 -14458.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" d="M 20417 -10231.0 L 21440 -9312.0 L 22463 -10231.0 L 21440 -11149.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-23)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 20417 -10231.0 L 21440 -9312.0 L 22463 -10231.0 L 21440 -11149.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" fill="none" d="M 20403 -10240.0 C 20401 -10235.0 20401 -10231.0 20401 -10226.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="20406" y1="-10218.0" x2="21429" y2="-9300.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="21429" y1="-9300.0" x2="22474" y2="-10218.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" fill="none" d="M 22478 -10221.0 C 22480 -10226.0 22480 -10231.0 22480 -10235.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" x1="22474" y1="-10243.0" x2="21451" y2="-11162.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-23)" d="M 21429 -11137.0 L 22452 -10218.0 L 22452 -10243.0 L 21429 -9324.0 L 21451 -9324.0 L 20428 -10243.0 L 20428 -10218.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" fill="none" d="M 20403 -10240.0 C 20401 -10235.0 20401 -10231.0 20401 -10226.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" x1="20406" y1="-10218.0" x2="21429" y2="-9300.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" x1="21429" y1="-9300.0" x2="22474" y2="-10218.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" fill="none" d="M 22478 -10221.0 C 22480 -10226.0 22480 -10231.0 22480 -10235.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" x1="22474" y1="-10243.0" x2="21451" y2="-11162.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-23)" d="M 21429 -11137.0 L 22452 -10218.0 L 22452 -10243.0 L 21429 -9324.0 L 21451 -9324.0 L 20428 -10243.0 L 20428 -10218.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-24">
@@ -441,7 +441,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 939.291626 1307.708374)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 939.291626 1307.708374)">
-  <text x="102" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="102" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     extract
   </text>
   <defs>
@@ -451,19 +451,19 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 332.000000 1915.000000)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 332.000000 1915.000000)">
-  <text x="101" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="101" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     source
   </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path fill="#FFFFCC" clip-path="url(#clip-25)" stroke="#000000" stroke-width="1" d="M 12742 -21370.0 L 15742 -18745.0 L 18742 -21370.0 L 15742 -23995.0 Z " fill-rule="evenodd" />
+  <path fill="#FFFFCC" clip-path="url(#clip-25)" stroke="#000000" stroke-width="1" stroke-dasharray="4 2" d="M 12742 -21370.0 L 15742 -18745.0 L 18742 -21370.0 L 15742 -23995.0 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-25)" fill="none" d="M 12677 -21413.0 C 12667 -21392.0 12667 -21370.0 12667 -21349.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-25)" x1="12693" y1="-21314.0" x2="15693" y2="-18689.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-25)" x1="15693" y1="-18689.0" x2="18792" y2="-21314.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-25)" fill="none" d="M 18808 -21328.0 C 18817 -21349.0 18817 -21370.0 18817 -21392.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-25)" x1="18792" y1="-21427.0" x2="15792" y2="-24052.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-25)" d="M 15693 -23939.0 L 18693 -21314.0 L 18693 -21427.0 L 15693 -18802.0 L 15792 -18802.0 L 12792 -21427.0 L 12792 -21314.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-25)" fill="none" d="M 12677 -21413.0 C 12667 -21392.0 12667 -21370.0 12667 -21349.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-25)" x1="12693" y1="-21314.0" x2="15693" y2="-18689.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-25)" x1="15693" y1="-18689.0" x2="18792" y2="-21314.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-25)" fill="none" d="M 18808 -21328.0 C 18817 -21349.0 18817 -21370.0 18817 -21392.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-25)" x1="18792" y1="-21427.0" x2="15792" y2="-24052.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-25)" d="M 15693 -23939.0 L 18693 -21314.0 L 18693 -21427.0 L 15693 -18802.0 L 15792 -18802.0 L 12792 -21427.0 L 12792 -21314.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-26">
@@ -472,41 +472,41 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 802.312378 1444.687622)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 802.312378 1444.687622)">
-  <text x="128" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="128" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     note
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" fill="none" d="M 1702 -13031.0 C 1831 -12902.0 1991 -12902.0 1991 -12902.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 1991 -12902.0 L 5367 -12902.0 L 5367 -12902.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" fill="none" d="M 5526 -12902.0 C 5655 -13031.0 5655 -13191.0 5655 -13191.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 5655 -13191.0 L 5655 -14344.0 L 5655 -14344.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" fill="none" d="M 5655 -14503.0 C 5526 -14632.0 5367 -14632.0 5367 -14632.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 5367 -14632.0 L 1991 -14632.0 L 1991 -14632.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" fill="none" d="M 1831 -14632.0 C 1702 -14503.0 1702 -14344.0 1702 -14344.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" fill="none" d="M 1702 -13031.0 C 1831 -12902.0 1991 -12902.0 1991 -12902.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 1991 -12902.0 L 5367 -12902.0 L 5367 -12902.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" fill="none" d="M 5526 -12902.0 C 5655 -13031.0 5655 -13191.0 5655 -13191.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 5655 -13191.0 L 5655 -14344.0 L 5655 -14344.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" fill="none" d="M 5655 -14503.0 C 5526 -14632.0 5367 -14632.0 5367 -14632.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 5367 -14632.0 L 1991 -14632.0 L 1991 -14632.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" fill="none" d="M 1831 -14632.0 C 1702 -14503.0 1702 -14344.0 1702 -14344.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 1667 -13160.0 L 1671 -13127.0 L 1689 -13068.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1665" y1="-13191.0" x2="1718" y2="-13012.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1718" y1="-13012.0" x2="1758" y2="-12963.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1758" y1="-12963.0" x2="1805" y2="-12923.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1805" y1="-12923.0" x2="1861" y2="-12892.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 1922 -12873.0 L 1956 -12867.0 L 1989 -12865.0 L 5367 -12865.0 L 5399 -12867.0 L 5431 -12871.0 L 5490 -12889.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1861" y1="-12892.0" x2="5546" y2="-12918.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5546" y1="-12918.0" x2="5595" y2="-12958.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5595" y1="-12958.0" x2="5635" y2="-13005.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5635" y1="-13005.0" x2="5666" y2="-13061.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 5685 -13122.0 L 5691 -13156.0 L 5693 -13189.0 L 5693 -14344.0 L 5691 -14375.0 L 5687 -14408.0 L 5669 -14467.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5666" y1="-13061.0" x2="5639" y2="-14523.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5639" y1="-14523.0" x2="5600" y2="-14572.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5600" y1="-14572.0" x2="5553" y2="-14612.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5553" y1="-14612.0" x2="5497" y2="-14642.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 5436 -14662.0 L 5403 -14668.0 L 5369 -14669.0 L 1991 -14669.0 L 1960 -14668.0 L 1927 -14663.0 L 1868 -14645.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="5497" y1="-14642.0" x2="1812" y2="-14616.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1812" y1="-14616.0" x2="1763" y2="-14576.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1763" y1="-14576.0" x2="1723" y2="-14529.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" x1="1723" y1="-14529.0" x2="1692" y2="-14474.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 1673 -14413.0 L 1667 -14379.0 L 1665 -14346.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-26)" d="M 1741 -14368.0 L 1744 -14391.0 L 1761 -14445.0 L 1758 -14438.0 L 1784 -14487.0 L 1780 -14481.0 L 1816 -14523.0 L 1811 -14519.0 L 1854 -14554.0 L 1847 -14550.0 L 1896 -14576.0 L 1889 -14574.0 L 1939 -14589.0 L 1963 -14593.0 L 1991 -14594.0 L 5366 -14595.0 L 5391 -14593.0 L 5415 -14590.0 L 5469 -14574.0 L 5462 -14576.0 L 5511 -14550.0 L 5504 -14554.0 L 5547 -14519.0 L 5542 -14523.0 L 5578 -14481.0 L 5573 -14487.0 L 5600 -14438.0 L 5597 -14445.0 L 5612 -14396.0 L 5617 -14372.0 L 5618 -14344.0 L 5618 -13193.0 L 5617 -13167.0 L 5614 -13144.0 L 5597 -13089.0 L 5600 -13096.0 L 5573 -13047.0 L 5578 -13054.0 L 5542 -13011.0 L 5547 -13016.0 L 5504 -12980.0 L 5511 -12984.0 L 5462 -12958.0 L 5469 -12961.0 L 5420 -12946.0 L 5395 -12941.0 L 5367 -12940.0 L 1993 -12940.0 L 1967 -12941.0 L 1944 -12944.0 L 1889 -12961.0 L 1896 -12958.0 L 1847 -12984.0 L 1854 -12980.0 L 1811 -13016.0 L 1816 -13011.0 L 1780 -13054.0 L 1784 -13047.0 L 1758 -13096.0 L 1761 -13089.0 L 1746 -13139.0 L 1741 -13163.0 L 1740 -13191.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 1667 -13160.0 L 1671 -13127.0 L 1689 -13068.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1665" y1="-13191.0" x2="1718" y2="-13012.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1718" y1="-13012.0" x2="1758" y2="-12963.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1758" y1="-12963.0" x2="1805" y2="-12923.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1805" y1="-12923.0" x2="1861" y2="-12892.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 1922 -12873.0 L 1956 -12867.0 L 1989 -12865.0 L 5367 -12865.0 L 5399 -12867.0 L 5431 -12871.0 L 5490 -12889.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1861" y1="-12892.0" x2="5546" y2="-12918.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5546" y1="-12918.0" x2="5595" y2="-12958.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5595" y1="-12958.0" x2="5635" y2="-13005.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5635" y1="-13005.0" x2="5666" y2="-13061.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 5685 -13122.0 L 5691 -13156.0 L 5693 -13189.0 L 5693 -14344.0 L 5691 -14375.0 L 5687 -14408.0 L 5669 -14467.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5666" y1="-13061.0" x2="5639" y2="-14523.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5639" y1="-14523.0" x2="5600" y2="-14572.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5600" y1="-14572.0" x2="5553" y2="-14612.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5553" y1="-14612.0" x2="5497" y2="-14642.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 5436 -14662.0 L 5403 -14668.0 L 5369 -14669.0 L 1991 -14669.0 L 1960 -14668.0 L 1927 -14663.0 L 1868 -14645.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="5497" y1="-14642.0" x2="1812" y2="-14616.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1812" y1="-14616.0" x2="1763" y2="-14576.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1763" y1="-14576.0" x2="1723" y2="-14529.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" x1="1723" y1="-14529.0" x2="1692" y2="-14474.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 1673 -14413.0 L 1667 -14379.0 L 1665 -14346.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-26)" d="M 1741 -14368.0 L 1744 -14391.0 L 1761 -14445.0 L 1758 -14438.0 L 1784 -14487.0 L 1780 -14481.0 L 1816 -14523.0 L 1811 -14519.0 L 1854 -14554.0 L 1847 -14550.0 L 1896 -14576.0 L 1889 -14574.0 L 1939 -14589.0 L 1963 -14593.0 L 1991 -14594.0 L 5366 -14595.0 L 5391 -14593.0 L 5415 -14590.0 L 5469 -14574.0 L 5462 -14576.0 L 5511 -14550.0 L 5504 -14554.0 L 5547 -14519.0 L 5542 -14523.0 L 5578 -14481.0 L 5573 -14487.0 L 5600 -14438.0 L 5597 -14445.0 L 5612 -14396.0 L 5617 -14372.0 L 5618 -14344.0 L 5618 -13193.0 L 5617 -13167.0 L 5614 -13144.0 L 5597 -13089.0 L 5600 -13096.0 L 5573 -13047.0 L 5578 -13054.0 L 5542 -13011.0 L 5547 -13016.0 L 5504 -12980.0 L 5511 -12984.0 L 5462 -12958.0 L 5469 -12961.0 L 5420 -12946.0 L 5395 -12941.0 L 5367 -12940.0 L 1993 -12940.0 L 1967 -12941.0 L 1944 -12944.0 L 1889 -12961.0 L 1896 -12958.0 L 1847 -12984.0 L 1854 -12980.0 L 1811 -13016.0 L 1816 -13011.0 L 1780 -13054.0 L 1784 -13047.0 L 1758 -13096.0 L 1761 -13089.0 L 1746 -13139.0 L 1741 -13163.0 L 1740 -13191.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-27">
@@ -515,49 +515,49 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 274.794434 1972.205566)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 274.794434 1972.205566)">
-  <text x="97" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="97" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     document
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" fill="none" d="M 16149 -3728.0 C 16245 -3632.0 16363 -3632.0 16363 -3632.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 16363 -3632.0 L 19889 -3632.0 L 19889 -3632.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" fill="none" d="M 20007 -3632.0 C 20102 -3728.0 20102 -3846.0 20102 -3846.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 20102 -3846.0 L 20102 -4700.0 L 20102 -4700.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" fill="none" d="M 20102 -4818.0 C 20007 -4914.0 19889 -4914.0 19889 -4914.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 19889 -4914.0 L 16363 -4914.0 L 16363 -4914.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" fill="none" d="M 16245 -4914.0 C 16149 -4818.0 16149 -4700.0 16149 -4700.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" fill="none" d="M 16149 -3728.0 C 16245 -3632.0 16363 -3632.0 16363 -3632.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 16363 -3632.0 L 19889 -3632.0 L 19889 -3632.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" fill="none" d="M 20007 -3632.0 C 20102 -3728.0 20102 -3846.0 20102 -3846.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 20102 -3846.0 L 20102 -4700.0 L 20102 -4700.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" fill="none" d="M 20102 -4818.0 C 20007 -4914.0 19889 -4914.0 19889 -4914.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 19889 -4914.0 L 16363 -4914.0 L 16363 -4914.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" fill="none" d="M 16245 -4914.0 C 16149 -4818.0 16149 -4700.0 16149 -4700.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16112" y1="-3846.0" x2="16117" y2="-3799.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16117" y1="-3799.0" x2="16131" y2="-3752.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16131" y1="-3752.0" x2="16153" y2="-3709.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16153" y1="-3709.0" x2="16184" y2="-3671.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16184" y1="-3671.0" x2="16220" y2="-3640.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16220" y1="-3640.0" x2="16263" y2="-3616.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16263" y1="-3616.0" x2="16309" y2="-3601.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 16360 -3595.0 L 19889 -3594.0 L 19936 -3599.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16309" y1="-3601.0" x2="19983" y2="-3613.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="19983" y1="-3613.0" x2="20026" y2="-3635.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20026" y1="-3635.0" x2="20064" y2="-3666.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20064" y1="-3666.0" x2="20095" y2="-3703.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20095" y1="-3703.0" x2="20119" y2="-3745.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20119" y1="-3745.0" x2="20134" y2="-3792.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 20140 -3842.0 L 20140 -4700.0 L 20135 -4747.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20134" y1="-3792.0" x2="20121" y2="-4795.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20121" y1="-4795.0" x2="20099" y2="-4838.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20099" y1="-4838.0" x2="20069" y2="-4876.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20069" y1="-4876.0" x2="20032" y2="-4907.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="20032" y1="-4907.0" x2="19990" y2="-4931.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="19990" y1="-4931.0" x2="19943" y2="-4946.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 19893 -4952.0 L 16363 -4952.0 L 16317 -4947.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="19943" y1="-4946.0" x2="16269" y2="-4933.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16269" y1="-4933.0" x2="16226" y2="-4911.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16226" y1="-4911.0" x2="16189" y2="-4881.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16189" y1="-4881.0" x2="16157" y2="-4845.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16157" y1="-4845.0" x2="16133" y2="-4802.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16133" y1="-4802.0" x2="16118" y2="-4755.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" x1="16118" y1="-4755.0" x2="16112" y2="-4704.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-27)" d="M 16191 -4740.0 L 16190 -4732.0 L 16202 -4773.0 L 16200 -4766.0 L 16219 -4803.0 L 16215 -4796.0 L 16241 -4828.0 L 16236 -4823.0 L 16268 -4849.0 L 16262 -4845.0 L 16298 -4864.0 L 16292 -4862.0 L 16332 -4874.0 L 16324 -4873.0 L 16363 -4877.0 L 19885 -4877.0 L 19928 -4873.0 L 19921 -4874.0 L 19961 -4862.0 L 19954 -4864.0 L 19991 -4845.0 L 19985 -4849.0 L 20016 -4823.0 L 20011 -4828.0 L 20037 -4797.0 L 20033 -4803.0 L 20052 -4766.0 L 20050 -4773.0 L 20062 -4732.0 L 20061 -4740.0 L 20065 -4700.0 L 20065 -3850.0 L 20061 -3807.0 L 20062 -3814.0 L 20050 -3774.0 L 20052 -3781.0 L 20033 -3744.0 L 20037 -3750.0 L 20011 -3719.0 L 20016 -3724.0 L 19984 -3697.0 L 19991 -3702.0 L 19954 -3682.0 L 19961 -3685.0 L 19921 -3672.0 L 19928 -3674.0 L 19889 -3669.0 L 16367 -3669.0 L 16324 -3674.0 L 16332 -3672.0 L 16292 -3685.0 L 16298 -3682.0 L 16262 -3702.0 L 16268 -3697.0 L 16237 -3724.0 L 16241 -3719.0 L 16215 -3751.0 L 16219 -3744.0 L 16200 -3781.0 L 16202 -3774.0 L 16190 -3814.0 L 16191 -3807.0 L 16187 -3846.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16112" y1="-3846.0" x2="16117" y2="-3799.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16117" y1="-3799.0" x2="16131" y2="-3752.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16131" y1="-3752.0" x2="16153" y2="-3709.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16153" y1="-3709.0" x2="16184" y2="-3671.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16184" y1="-3671.0" x2="16220" y2="-3640.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16220" y1="-3640.0" x2="16263" y2="-3616.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16263" y1="-3616.0" x2="16309" y2="-3601.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 16360 -3595.0 L 19889 -3594.0 L 19936 -3599.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16309" y1="-3601.0" x2="19983" y2="-3613.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="19983" y1="-3613.0" x2="20026" y2="-3635.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20026" y1="-3635.0" x2="20064" y2="-3666.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20064" y1="-3666.0" x2="20095" y2="-3703.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20095" y1="-3703.0" x2="20119" y2="-3745.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20119" y1="-3745.0" x2="20134" y2="-3792.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 20140 -3842.0 L 20140 -4700.0 L 20135 -4747.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20134" y1="-3792.0" x2="20121" y2="-4795.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20121" y1="-4795.0" x2="20099" y2="-4838.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20099" y1="-4838.0" x2="20069" y2="-4876.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20069" y1="-4876.0" x2="20032" y2="-4907.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="20032" y1="-4907.0" x2="19990" y2="-4931.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="19990" y1="-4931.0" x2="19943" y2="-4946.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 19893 -4952.0 L 16363 -4952.0 L 16317 -4947.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="19943" y1="-4946.0" x2="16269" y2="-4933.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16269" y1="-4933.0" x2="16226" y2="-4911.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16226" y1="-4911.0" x2="16189" y2="-4881.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16189" y1="-4881.0" x2="16157" y2="-4845.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16157" y1="-4845.0" x2="16133" y2="-4802.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16133" y1="-4802.0" x2="16118" y2="-4755.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" x1="16118" y1="-4755.0" x2="16112" y2="-4704.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-27)" d="M 16191 -4740.0 L 16190 -4732.0 L 16202 -4773.0 L 16200 -4766.0 L 16219 -4803.0 L 16215 -4796.0 L 16241 -4828.0 L 16236 -4823.0 L 16268 -4849.0 L 16262 -4845.0 L 16298 -4864.0 L 16292 -4862.0 L 16332 -4874.0 L 16324 -4873.0 L 16363 -4877.0 L 19885 -4877.0 L 19928 -4873.0 L 19921 -4874.0 L 19961 -4862.0 L 19954 -4864.0 L 19991 -4845.0 L 19985 -4849.0 L 20016 -4823.0 L 20011 -4828.0 L 20037 -4797.0 L 20033 -4803.0 L 20052 -4766.0 L 20050 -4773.0 L 20062 -4732.0 L 20061 -4740.0 L 20065 -4700.0 L 20065 -3850.0 L 20061 -3807.0 L 20062 -3814.0 L 20050 -3774.0 L 20052 -3781.0 L 20033 -3744.0 L 20037 -3750.0 L 20011 -3719.0 L 20016 -3724.0 L 19984 -3697.0 L 19991 -3702.0 L 19954 -3682.0 L 19961 -3685.0 L 19921 -3672.0 L 19928 -3674.0 L 19889 -3669.0 L 16367 -3669.0 L 16324 -3674.0 L 16332 -3672.0 L 16292 -3685.0 L 16298 -3682.0 L 16262 -3702.0 L 16268 -3697.0 L 16237 -3724.0 L 16241 -3719.0 L 16215 -3751.0 L 16219 -3744.0 L 16200 -3781.0 L 16202 -3774.0 L 16190 -3814.0 L 16191 -3807.0 L 16187 -3846.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-28">
@@ -566,49 +566,49 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1461.558899 785.441101)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 1461.558899 785.441101)">
-  <text x="169" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="169" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     text
   </text>
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" fill="none" d="M 16126 814.0 C 16222 909.0 16340 909.0 16340 909.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 16340 909.0 L 19865 909.0 L 19865 909.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" fill="none" d="M 19983 909.0 C 20079 814.0 20079 696.0 20079 696.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 20079 696.0 L 20079 -159.0 L 20079 -159.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" fill="none" d="M 20079 -277.0 C 19983 -373.0 19865 -373.0 19865 -373.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 19865 -373.0 L 16340 -373.0 L 16340 -373.0 " />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" fill="none" d="M 16222 -373.0 C 16126 -277.0 16126 -159.0 16126 -159.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" fill="none" d="M 16126 814.0 C 16222 909.0 16340 909.0 16340 909.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 16340 909.0 L 19865 909.0 L 19865 909.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" fill="none" d="M 19983 909.0 C 20079 814.0 20079 696.0 20079 696.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 20079 696.0 L 20079 -159.0 L 20079 -159.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" fill="none" d="M 20079 -277.0 C 19983 -373.0 19865 -373.0 19865 -373.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 19865 -373.0 L 16340 -373.0 L 16340 -373.0 " />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" fill="none" d="M 16222 -373.0 C 16126 -277.0 16126 -159.0 16126 -159.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <g transform="matrix(0.125000 0.000000 0.000000 0.125000 2247.000000 0.000000)">
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16088" y1="696.0" x2="16093" y2="742.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16093" y1="742.0" x2="16107" y2="790.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16107" y1="790.0" x2="16129" y2="833.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16129" y1="833.0" x2="16160" y2="871.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16160" y1="871.0" x2="16197" y2="901.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16197" y1="901.0" x2="16239" y2="925.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16239" y1="925.0" x2="16286" y2="940.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 16336 946.0 L 19865 947.0 L 19912 942.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16286" y1="940.0" x2="19960" y2="928.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="19960" y1="928.0" x2="20003" y2="906.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20003" y1="906.0" x2="20040" y2="875.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20040" y1="875.0" x2="20071" y2="839.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20071" y1="839.0" x2="20095" y2="796.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20095" y1="796.0" x2="20110" y2="750.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 20116 699.0 L 20116 -159.0 L 20112 -206.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20110" y1="750.0" x2="20098" y2="-254.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20098" y1="-254.0" x2="20076" y2="-297.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20076" y1="-297.0" x2="20046" y2="-335.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20046" y1="-335.0" x2="20009" y2="-366.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="20009" y1="-366.0" x2="19966" y2="-390.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="19966" y1="-390.0" x2="19920" y2="-405.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 19869 -411.0 L 16340 -411.0 L 16293 -406.0 " />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="19920" y1="-405.0" x2="16246" y2="-392.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16246" y1="-392.0" x2="16203" y2="-370.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16203" y1="-370.0" x2="16165" y2="-340.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16165" y1="-340.0" x2="16134" y2="-303.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16134" y1="-303.0" x2="16110" y2="-260.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16110" y1="-260.0" x2="16095" y2="-214.0" />
-  <line stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" x1="16095" y1="-214.0" x2="16089" y2="-163.0" />
-  <path stroke="#000000" stroke-width="1" clip-path="url(#clip-28)" d="M 16168 -199.0 L 16166 -191.0 L 16179 -231.0 L 16176 -225.0 L 16196 -261.0 L 16191 -255.0 L 16218 -287.0 L 16213 -282.0 L 16244 -308.0 L 16238 -304.0 L 16275 -323.0 L 16268 -321.0 L 16308 -333.0 L 16301 -332.0 L 16340 -336.0 L 19862 -336.0 L 19905 -332.0 L 19897 -333.0 L 19937 -321.0 L 19931 -323.0 L 19967 -304.0 L 19961 -308.0 L 19993 -282.0 L 19987 -287.0 L 20013 -255.0 L 20009 -261.0 L 20029 -225.0 L 20026 -231.0 L 20039 -191.0 L 20037 -199.0 L 20041 -159.0 L 20042 692.0 L 20037 735.0 L 20039 727.0 L 20026 767.0 L 20029 761.0 L 20009 797.0 L 20014 791.0 L 19988 823.0 L 19993 818.0 L 19961 844.0 L 19967 839.0 L 19931 859.0 L 19937 856.0 L 19897 869.0 L 19905 867.0 L 19865 872.0 L 16344 872.0 L 16301 867.0 L 16308 869.0 L 16268 856.0 L 16275 859.0 L 16238 839.0 L 16244 844.0 L 16213 818.0 L 16218 822.0 L 16191 791.0 L 16196 797.0 L 16176 761.0 L 16179 767.0 L 16166 727.0 L 16168 735.0 L 16163 696.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16088" y1="696.0" x2="16093" y2="742.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16093" y1="742.0" x2="16107" y2="790.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16107" y1="790.0" x2="16129" y2="833.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16129" y1="833.0" x2="16160" y2="871.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16160" y1="871.0" x2="16197" y2="901.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16197" y1="901.0" x2="16239" y2="925.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16239" y1="925.0" x2="16286" y2="940.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 16336 946.0 L 19865 947.0 L 19912 942.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16286" y1="940.0" x2="19960" y2="928.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="19960" y1="928.0" x2="20003" y2="906.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20003" y1="906.0" x2="20040" y2="875.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20040" y1="875.0" x2="20071" y2="839.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20071" y1="839.0" x2="20095" y2="796.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20095" y1="796.0" x2="20110" y2="750.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 20116 699.0 L 20116 -159.0 L 20112 -206.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20110" y1="750.0" x2="20098" y2="-254.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20098" y1="-254.0" x2="20076" y2="-297.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20076" y1="-297.0" x2="20046" y2="-335.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20046" y1="-335.0" x2="20009" y2="-366.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="20009" y1="-366.0" x2="19966" y2="-390.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="19966" y1="-390.0" x2="19920" y2="-405.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 19869 -411.0 L 16340 -411.0 L 16293 -406.0 " />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="19920" y1="-405.0" x2="16246" y2="-392.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16246" y1="-392.0" x2="16203" y2="-370.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16203" y1="-370.0" x2="16165" y2="-340.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16165" y1="-340.0" x2="16134" y2="-303.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16134" y1="-303.0" x2="16110" y2="-260.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16110" y1="-260.0" x2="16095" y2="-214.0" />
+  <line stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" x1="16095" y1="-214.0" x2="16089" y2="-163.0" />
+  <path stroke="#000000" stroke-width="1" stroke-dasharray="4 2" clip-path="url(#clip-28)" d="M 16168 -199.0 L 16166 -191.0 L 16179 -231.0 L 16176 -225.0 L 16196 -261.0 L 16191 -255.0 L 16218 -287.0 L 16213 -282.0 L 16244 -308.0 L 16238 -304.0 L 16275 -323.0 L 16268 -321.0 L 16308 -333.0 L 16301 -332.0 L 16340 -336.0 L 19862 -336.0 L 19905 -332.0 L 19897 -333.0 L 19937 -321.0 L 19931 -323.0 L 19967 -304.0 L 19961 -308.0 L 19993 -282.0 L 19987 -287.0 L 20013 -255.0 L 20009 -261.0 L 20029 -225.0 L 20026 -231.0 L 20039 -191.0 L 20037 -199.0 L 20041 -159.0 L 20042 692.0 L 20037 735.0 L 20039 727.0 L 20026 767.0 L 20029 761.0 L 20009 797.0 L 20014 791.0 L 19988 823.0 L 19993 818.0 L 19961 844.0 L 19967 839.0 L 19931 859.0 L 19937 856.0 L 19897 869.0 L 19905 867.0 L 19865 872.0 L 16344 872.0 L 16301 867.0 L 16308 869.0 L 16268 856.0 L 16275 859.0 L 16238 839.0 L 16244 844.0 L 16213 818.0 L 16218 822.0 L 16191 791.0 L 16196 797.0 L 16176 761.0 L 16179 767.0 L 16166 727.0 L 16168 735.0 L 16163 696.0 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2247.000000 0.000000)">
   <defs>
     <clipPath id="clip-29">
@@ -617,7 +617,7 @@
   </defs>
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2029.205872 217.794128)">
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 2029.205872 217.794128)">
-  <text x="63" y="2247.0" font-family="Arial" font-size="12" fill="#00000002">
+  <text x="63" y="2247.0" font-family="Arial" font-size="12" fill="#00000002" text-anchor="start" dominant-baseline="alphabetic">
     definition text
   </text>
   <defs>
