@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <text x="3485" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dendrogramme de 9 Obs.
+  </text>
+  <text x="4033" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Méth. de Ward
+  </text>
+  <text x="3327" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Carré distances Euclidiennes
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 3115 813 L 3115 5908 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="3115" y1="813" x2="3120" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="3120" y1="846" x2="3120" y2="863" />
@@ -479,6 +488,21 @@
   <line stroke="#000000" stroke-width="17" x1="5119" y1="846" x2="5119" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="7123" y1="846" x2="7123" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9127" y1="846" x2="9127" y2="813" />
+  <text x="971" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="2974" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,1
+  </text>
+  <text x="4978" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,2
+  </text>
+  <text x="6982" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,3
+  </text>
+  <text x="8986" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,4
+  </text>
   <line stroke="#000000" stroke-width="17" x1="1612" y1="829" x2="1612" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="2113" y1="829" x2="2113" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="2614" y1="829" x2="2614" y2="813" />
@@ -495,6 +519,9 @@
   <line stroke="#000000" stroke-width="17" x1="8125" y1="829" x2="8125" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8626" y1="829" x2="8626" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9127" y1="829" x2="9127" y2="813" />
+  <text x="4398" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dist. Agrégation
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 1112 5908 L 9128 5908 " />
   <line stroke="#000000" stroke-width="17" x1="1112" y1="5874" x2="1112" y2="5908" />
   <line stroke="#000000" stroke-width="17" x1="3115" y1="5874" x2="3115" y2="5908" />
@@ -529,6 +556,33 @@
   <line stroke="#000000" stroke-width="17" x1="1145" y1="4889" x2="1112" y2="4889" />
   <line stroke="#000000" stroke-width="17" x1="1145" y1="5398" x2="1112" y2="5398" />
   <line stroke="#000000" stroke-width="17" x1="1145" y1="5908" x2="1112" y2="5908" />
+  <text x="249" y="0" font-family="Arial" font-size="12" fill="#000000">
+    BUFFET
+  </text>
+  <text x="348" y="0" font-family="Arial" font-size="12" fill="#000000">
+    PELEG
+  </text>
+  <text x="232" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ABSTEN
+  </text>
+  <text x="481" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LAGU
+  </text>
+  <text x="647" y="0" font-family="Arial" font-size="12" fill="#000000">
+    BAY
+  </text>
+  <text x="348" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LEPEN
+  </text>
+  <text x="249" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SANTINI
+  </text>
+  <text x="448" y="0" font-family="Arial" font-size="12" fill="#000000">
+    COPE
+  </text>
+  <text x="116" y="0" font-family="Arial" font-size="12" fill="#000000">
+    HUCHON
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 9128 813 L 9128 5908 " />
   <line stroke="#000000" stroke-width="17" x1="9094" y1="813" x2="9128" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9094" y1="1322" x2="9128" y2="1322" />

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <text x="2456" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 1D Coordonnées Colonne ; Dimension :  2
+  </text>
+  <text x="2796" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 8 x 9
+  </text>
+  <text x="2846" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Standardisation : Profils ligne et colonne
+  </text>
+  <text x="1410" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Valeur Propre : ,00466 (19,575  % d'Inertie) Contribution au Chi² : 28640,
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 912 1493 L 9211 1493 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="912" y1="1493" x2="929" y2="1494" />
   <line stroke="#C0C0C0" stroke-width="0" x1="946" y1="1494" x2="963" y2="1494" />
@@ -1004,7 +1016,37 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9111" y1="4580" x2="9128" y2="4580" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9144" y1="4580" x2="9161" y2="4580" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9177" y1="4580" x2="9194" y2="4580" />
+  <text x="4614" y="0" font-family="Arial" font-size="12" fill="#000000">
+    HUCHON
+  </text>
+  <text x="4780" y="0" font-family="Arial" font-size="12" fill="#000000">
+    COPE
+  </text>
+  <text x="4681" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SANTINI
+  </text>
+  <text x="4730" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LEPEN
+  </text>
+  <text x="4681" y="0" font-family="Arial" font-size="12" fill="#000000">
+    BUFFET
+  </text>
+  <text x="4797" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LAGU
+  </text>
+  <text x="4730" y="0" font-family="Arial" font-size="12" fill="#000000">
+    PELEG
+  </text>
+  <text x="4880" y="0" font-family="Arial" font-size="12" fill="#000000">
+    BAY
+  </text>
+  <text x="4672" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ABSTEN
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 913 465 L 9211 465 " />
+  <text x="4340" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Coord. Colonne
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 913 5609 L 9211 5609 " />
   <path stroke="#000000" stroke-width="17" d="M 913 465 L 913 5609 " />
   <line stroke="#000000" stroke-width="17" x1="946" y1="464" x2="912" y2="464" />
@@ -1013,6 +1055,24 @@
   <line stroke="#000000" stroke-width="17" x1="946" y1="3551" x2="913" y2="3551" />
   <line stroke="#000000" stroke-width="17" x1="946" y1="4580" x2="913" y2="4580" />
   <line stroke="#000000" stroke-width="17" x1="946" y1="5608" x2="913" y2="5608" />
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,2
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,1
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,1
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,2
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,3
+  </text>
   <line stroke="#000000" stroke-width="17" x1="929" y1="722" x2="913" y2="722" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="979" x2="913" y2="979" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="1236" x2="913" y2="1236" />
@@ -1033,6 +1093,9 @@
   <line stroke="#000000" stroke-width="17" x1="929" y1="5094" x2="913" y2="5094" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="5351" x2="913" y2="5351" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="5608" x2="913" y2="5608" />
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Valeur Coordonnée
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 9211 465 L 9211 5609 " />
   <line stroke="#000000" stroke-width="17" x1="9177" y1="464" x2="9211" y2="464" />
   <line stroke="#000000" stroke-width="17" x1="9177" y1="1493" x2="9211" y2="1493" />

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <text x="2083" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 2D des Coordonnées Colonne ; Dimension :  2 x  3
+  </text>
+  <text x="1983" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 22 x 22 (Table de Burt)
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 1939 813 L 1939 6207 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1939" y1="813" x2="1942" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1942" y1="846" x2="1942" y2="863" />
@@ -2891,6 +2897,90 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9045" y1="5526" x2="9061" y2="5526" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9078" y1="5526" x2="9094" y2="5526" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9111" y1="5526" x2="9128" y2="5532" />
+  <text x="5634" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Seul
+  </text>
+  <text x="2419" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Coloc
+  </text>
+  <text x="1754" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Couple
+  </text>
+  <text x="4698" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Parents et NR
+  </text>
+  <text x="7611" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Cit
+  </text>
+  <text x="4826" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Studio
+  </text>
+  <text x="2363" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Appart
+  </text>
+  <text x="6044" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Chambre
+  </text>
+  <text x="4827" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Autre
+  </text>
+  <text x="6389" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:NR2
+  </text>
+  <text x="5763" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANC:
+  </text>
+  <text x="6161" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &lt; 1 an
+  </text>
+  <text x="4415" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANC:1-3 ans
+  </text>
+  <text x="3251" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANC:
+  </text>
+  <text x="3649" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &gt; 3ans
+  </text>
+  <text x="4994" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANC:NA et NR
+  </text>
+  <text x="4488" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:
+  </text>
+  <text x="5185" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &lt; 1km
+  </text>
+  <text x="4148" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:1 à 5 km
+  </text>
+  <text x="4382" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:
+  </text>
+  <text x="5079" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &gt; 5 km et NR
+  </text>
+  <text x="7751" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUP:
+  </text>
+  <text x="8149" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &lt; 10 m²
+  </text>
+  <text x="5945" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUP:10 à 20 m²
+  </text>
+  <text x="4059" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUP:20 à 30 m²
+  </text>
+  <text x="2831" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUP:
+  </text>
+  <text x="3229" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &gt; 30 m²
+  </text>
+  <text x="6330" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUP:NR5
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 913 813 L 9128 813 " />
   <line stroke="#000000" stroke-width="17" x1="913" y1="846" x2="913" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="1939" y1="846" x2="1939" y2="813" />
@@ -2901,6 +2991,33 @@
   <line stroke="#000000" stroke-width="17" x1="7074" y1="846" x2="7074" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8101" y1="846" x2="8101" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9128" y1="846" x2="9128" y2="813" />
+  <text x="739" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -2,0
+  </text>
+  <text x="1765" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,5
+  </text>
+  <text x="2792" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="3819" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="4879" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="5906" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="6933" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
+  <text x="7960" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,5
+  </text>
+  <text x="8987" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,0
+  </text>
   <line stroke="#000000" stroke-width="17" x1="1118" y1="829" x2="1118" y2="812" />
   <line stroke="#000000" stroke-width="17" x1="1323" y1="829" x2="1323" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="1529" y1="829" x2="1529" y2="813" />
@@ -2941,6 +3058,9 @@
   <line stroke="#000000" stroke-width="17" x1="8717" y1="829" x2="8717" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8922" y1="829" x2="8922" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9128" y1="829" x2="9128" y2="813" />
+  <text x="2497" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 2; Valeur Propre : ,40329 (11,86  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 913 6207 L 9128 6207 " />
   <line stroke="#000000" stroke-width="17" x1="913" y1="6173" x2="913" y2="6207" />
   <line stroke="#000000" stroke-width="17" x1="1939" y1="6173" x2="1939" y2="6207" />
@@ -3001,6 +3121,33 @@
   <line stroke="#000000" stroke-width="17" x1="946" y1="4858" x2="913" y2="4858" />
   <line stroke="#000000" stroke-width="17" x1="946" y1="5532" x2="913" y2="5532" />
   <line stroke="#000000" stroke-width="17" x1="946" y1="6207" x2="913" y2="6207" />
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,5
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,5
+  </text>
   <line stroke="#000000" stroke-width="17" x1="929" y1="947" x2="913" y2="947" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="1082" x2="913" y2="1082" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="1217" x2="913" y2="1217" />
@@ -3041,6 +3188,9 @@
   <line stroke="#000000" stroke-width="17" x1="929" y1="5937" x2="913" y2="5937" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="6072" x2="913" y2="6072" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="6207" x2="913" y2="6207" />
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 3; Valeur Propre : ,32884 (9,672  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 9128 813 L 9128 6207 " />
   <line stroke="#000000" stroke-width="17" x1="9094" y1="813" x2="9128" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9094" y1="1487" x2="9128" y2="1487" />

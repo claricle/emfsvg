@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="458" height="286" viewBox="0 0 458 286" version="1.1">
+  <text x="2148" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 1D des Coordonnées Ligne et Colonne ; Dimension :  1
+  </text>
+  <text x="2453" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 23 x 12
+  </text>
+  <text x="2538" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Standardisation : Profils ligne et colonne
+  </text>
+  <text x="1921" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Valeur Propre : ,01476 (44,169  % d'Inertie) Contribution au Chi² : 5371E2
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 482 751 L 6395 751 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="482" y1="751" x2="496" y2="747" />
   <line stroke="#C0C0C0" stroke-width="0" x1="510" y1="747" x2="525" y2="747" />
@@ -1470,7 +1482,118 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="6324" y1="3635" x2="6338" y2="3635" />
   <line stroke="#C0C0C0" stroke-width="0" x1="6352" y1="3635" x2="6366" y2="3635" />
   <line stroke="#C0C0C0" stroke-width="0" x1="6380" y1="3635" x2="6395" y2="3631" />
+  <text x="1840" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Alsace
+  </text>
+  <text x="1797" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Aquitaine
+  </text>
+  <text x="1790" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Auvergne
+  </text>
+  <text x="1769" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Bourgogne
+  </text>
+  <text x="1797" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Bretagne
+  </text>
+  <text x="1840" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Centre
+  </text>
+  <text x="1563" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Champagne-Ardennes
+  </text>
+  <text x="1854" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Corse
+  </text>
+  <text x="1677" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Franche-Comte
+  </text>
+  <text x="1719" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Ile-de-France
+  </text>
+  <text x="1577" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Languedoc-Roussillon
+  </text>
+  <text x="1804" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Limousin
+  </text>
+  <text x="1818" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Lorraine
+  </text>
+  <text x="1705" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Midi-Pyrenees
+  </text>
+  <text x="1613" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Nord-Pas-de-Calais
+  </text>
+  <text x="1641" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Basse-Normandie
+  </text>
+  <text x="1648" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Haute-Normandie
+  </text>
+  <text x="1670" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Pays-de-la-Loire
+  </text>
+  <text x="1818" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Picardie
+  </text>
+  <text x="1648" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Poitou-Charentes
+  </text>
+  <text x="1443" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Provence-Alpes-Cote-d-Azur
+  </text>
+  <text x="1733" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Rhone-Alpes
+  </text>
+  <text x="1783" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Outremer
+  </text>
+  <text x="4767" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Sarkozy
+  </text>
+  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Bayrou
+  </text>
+  <text x="4817" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Royal
+  </text>
+  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Le Pen
+  </text>
+  <text x="4704" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Besancenot
+  </text>
+  <text x="4803" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Villiers
+  </text>
+  <text x="4789" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Voynet
+  </text>
+  <text x="4774" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Laguiller
+  </text>
+  <text x="4824" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Bove
+  </text>
+  <text x="4803" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Buffet
+  </text>
+  <text x="4796" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Nihous
+  </text>
+  <text x="4753" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Schivardi
+  </text>
   <path stroke="#000000" stroke-width="14" d="M 482 272 L 6395 272 " />
+  <text x="1620" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Coordonnées Ligne
+  </text>
+  <text x="4640" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Coord. Colonne
+  </text>
   <path stroke="#000000" stroke-width="14" d="M 482 4111 L 6395 4111 " />
   <path stroke="#000000" stroke-width="14" d="M 482 272 L 482 4111 " />
   <line stroke="#000000" stroke-width="14" x1="510" y1="271" x2="481" y2="271" />
@@ -1482,6 +1605,33 @@
   <line stroke="#000000" stroke-width="14" x1="510" y1="3151" x2="482" y2="3151" />
   <line stroke="#000000" stroke-width="14" x1="510" y1="3631" x2="482" y2="3631" />
   <line stroke="#000000" stroke-width="14" x1="510" y1="4110" x2="482" y2="4110" />
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,4
+  </text>
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,3
+  </text>
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,2
+  </text>
+  <text x="269" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,1
+  </text>
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,1
+  </text>
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,2
+  </text>
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,3
+  </text>
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,4
+  </text>
   <line stroke="#000000" stroke-width="14" x1="496" y1="391" x2="482" y2="391" />
   <line stroke="#000000" stroke-width="14" x1="496" y1="511" x2="482" y2="511" />
   <line stroke="#000000" stroke-width="14" x1="496" y1="631" x2="482" y2="631" />
@@ -1514,6 +1664,9 @@
   <line stroke="#000000" stroke-width="14" x1="496" y1="3871" x2="482" y2="3871" />
   <line stroke="#000000" stroke-width="14" x1="496" y1="3991" x2="482" y2="3991" />
   <line stroke="#000000" stroke-width="14" x1="496" y1="4110" x2="482" y2="4110" />
+  <text x="150" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Valeur Coordonnée
+  </text>
   <path stroke="#000000" stroke-width="14" d="M 6395 272 L 6395 4111 " />
   <line stroke="#000000" stroke-width="14" x1="6366" y1="271" x2="6394" y2="271" />
   <line stroke="#000000" stroke-width="14" x1="6366" y1="751" x2="6395" y2="751" />

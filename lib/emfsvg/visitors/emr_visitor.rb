@@ -62,7 +62,13 @@ module Emfsvg
         Emf::Emr::Binary::Records::SetWorldTransform => :visit_set_world_transform,
         Emf::Emr::Binary::Records::ModifyWorldTransform => :visit_modify_world_transform,
         Emf::Emr::Binary::Records::SetMiterLimit => :visit_set_miter_limit,
-        Emf::Emr::Binary::Records::Comment => :visit_comment
+        Emf::Emr::Binary::Records::Comment => :visit_comment,
+        Emf::Emr::Binary::Records::SetPixelV => :visit_set_pixel_v,
+        Emf::Emr::Binary::Records::CreateFontIndirectW => :visit_create_font_indirect_w,
+        Emf::Emr::Binary::Records::ExtTextOutW => :visit_ext_text_out_w,
+        Emf::Emr::Binary::Records::ExtTextOutA => :visit_ext_text_out_a,
+        Emf::Emr::Binary::Records::IntersectClipRect => :visit_intersect_clip_rect,
+        Emf::Emr::Binary::Records::ExcludeClipRect => :visit_exclude_clip_rect
       }.freeze
 
       attr_reader :current_x, :current_y
@@ -152,6 +158,7 @@ module Emfsvg
         case entry.type
         when :pen then @dc.pen = entry.object
         when :brush then @dc.brush = entry.object
+        when :font then @dc.font = entry.object
         end
       end
 
@@ -263,9 +270,44 @@ module Emfsvg
       end
 
       # TODO: bezier curve reconstruction
-      def visit_poly_bezier(wire); end
+      def visit_poly_bezier(wire)
+        # PolyBezier: first point is start anchor; subsequent points in
+        # groups of 3 (control1, control2, end). Each group is one cubic
+        # Bezier segment.
+        points = wire.aptl.to_a
+        return if points.size < 4
 
-      def visit_poly_bezier16(wire); end
+        d = "M #{points.first.x} #{maybe_flip_y(points.first.y)} "
+        points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
+          next if [ctrl1, ctrl2, endpt].any?(&:nil?)
+
+          d << "C #{ctrl1.x} #{maybe_flip_y(ctrl1.y)} "
+          d << "#{ctrl2.x} #{maybe_flip_y(ctrl2.y)} "
+          d << "#{endpt.x} #{maybe_flip_y(endpt.y)} "
+        end
+        attrs = stroke_attrs.merge("fill" => "none", "d" => d)
+        @builder.tag("path", attrs, single: true)
+        @current_x = points.last.x
+        @current_y = points.last.y
+      end
+
+      def visit_poly_bezier16(wire)
+        points = wire.apts.to_a
+        return if points.size < 4
+
+        d = "M #{points.first.x} #{maybe_flip_y(points.first.y)} "
+        points[1..].each_slice(3) do |ctrl1, ctrl2, endpt|
+          next if [ctrl1, ctrl2, endpt].any?(&:nil?)
+
+          d << "C #{ctrl1.x} #{maybe_flip_y(ctrl1.y)} "
+          d << "#{ctrl2.x} #{maybe_flip_y(ctrl2.y)} "
+          d << "#{endpt.x} #{maybe_flip_y(endpt.y)} "
+        end
+        attrs = stroke_attrs.merge("fill" => "none", "d" => d)
+        @builder.tag("path", attrs, single: true)
+        @current_x = points.last.x
+        @current_y = points.last.y
+      end
 
       def visit_begin_path(_wire)
         @path_d = +""
@@ -333,7 +375,120 @@ module Emfsvg
 
       def visit_comment(_wire); end
 
+      def visit_set_pixel_v(wire)
+        # SetPixelV draws a single pixel of a given color at ptlPixel.
+        # SVG approximation: a 1x1 rect at the pixel position.
+        color = Emf::Model::Geometry::Color.from_wire(wire.cr_color)
+        attrs = {
+          "x" => wire.ptl_pixel.x, "y" => maybe_flip_y(wire.ptl_pixel.y),
+          "width" => 1, "height" => 1, "fill" => color.to_hex
+        }
+        @builder.tag("rect", attrs, single: true)
+      end
+
+      def visit_create_font_indirect_w(wire)
+        # Parse the LOGFONT_PANOSE from body bytes. We only extract the
+        # face name (UTF-16LE at offset 28 + 28 = 56 bytes into the body,
+        # after the fixed LOGFONT fields). Store in object table.
+        body = wire.body.to_s
+        face_name = parse_logfont_face_name(body, utf16: true)
+        font = Font.new(face_name: face_name)
+        @object_table.store(wire.ih_object, :font, font)
+      end
+
+      def visit_ext_text_out_w(wire)
+        emit_ext_text(wire, utf16: true)
+      end
+
+      def visit_ext_text_out_a(wire)
+        emit_ext_text(wire, utf16: false)
+      end
+
+      def visit_intersect_clip_rect(wire)
+        # IntersectClipRect restricts the clip region. SVG approximation:
+        # wrap subsequent primitives in a <clipPath>. For now, log only.
+        # Full clip handling requires maintaining the clip region across
+        # records, which is a TODO.
+      end
+
+      def visit_exclude_clip_rect(_wire); end
+
       private
+
+      # LOGFONT_PANOSE face name lives at offset 28 within LOGFONT (after
+      # 5-byte fixed prefix and the 23-byte full PANOSE bits in the
+      # LOGFONT_PANOSE variant) — but CreateFontIndirectW's body starts
+      # at the LOGFONT struct itself, where the face name is at offset 28.
+      # The face name is 32 UTF-16LE chars (64 bytes) for LOGFONT_W.
+      LOGFONT_FACE_NAME_OFFSET = 28
+      LOGFONT_FACE_NAME_MAX_BYTES = 64
+
+      def parse_logfont_face_name(body, utf16:)
+        return "sans-serif" if body.bytesize < LOGFONT_FACE_NAME_OFFSET + 2
+
+        raw = body.bytes[LOGFONT_FACE_NAME_OFFSET, LOGFONT_FACE_NAME_MAX_BYTES]
+        return "sans-serif" unless raw
+
+        if utf16
+          # Take until double-null (string terminator).
+          terminated = []
+          raw.each_slice(2) do |pair|
+            break if pair == [0, 0]
+
+            terminated.concat(pair)
+          end
+          decoded = terminated.pack("C*").force_encoding("UTF-16LE")
+                              .encode("UTF-8", undef: :replace, replace: "?")
+          decoded.empty? ? "sans-serif" : decoded
+        else
+          # 8-bit ANSI; assume CP1252.
+          raw.take_while { |b| !b.zero? }.pack("C*").force_encoding("CP1252")
+             .encode("UTF-8", undef: :replace, replace: "?")
+        end
+      rescue StandardError
+        "sans-serif"
+      end
+
+      def emit_ext_text(wire, utf16:)
+        # Offsets are from the start of the EMR record. wire.to_binary_s
+        # gives us the full record bytes.
+        record_bytes = wire.to_binary_s
+        off_string = wire.off_string
+        n_chars = wire.n_chars
+        return if n_chars.zero? || off_string.zero?
+        return if off_string >= record_bytes.bytesize
+
+        string_bytes = record_bytes[off_string, utf16 ? n_chars * 2 : n_chars]
+        return unless string_bytes && !string_bytes.empty?
+
+        text = if utf16
+                 string_bytes.force_encoding("UTF-16LE")
+                             .encode("UTF-8", undef: :replace, replace: "?")
+               else
+                 string_bytes.force_encoding("CP1252")
+                             .encode("UTF-8", undef: :replace, replace: "?")
+               end
+
+        # The starting position for ExtTextOut is the WmfRect16 reference
+        # point — but in practice the position often comes from a previous
+        # MoveToEx. We use the WmfRect16 origin as a fallback.
+        x = wire.wmf_rect_left
+        y = maybe_flip_y(wire.wmf_rect_top)
+
+        font = @dc.font
+        attrs = {
+          "x" => x, "y" => y,
+          "font-family" => font.face_name,
+          "font-size" => font.height,
+          "fill" => @dc.text_color.to_hex
+        }
+        attrs["font-weight"] = "bold" if font.bold?
+        attrs["font-style"] = "italic" if font.italic
+        attrs["text-decoration"] = "underline" if font.underline
+        attrs["text-decoration"] = font.strikeout ? "line-through" : "underline" if font.underline && font.strikeout
+
+        @builder.tag("text", attrs) { @builder.text(text) }
+      end
 
       def emit_path_polygon(points, closed:)
         return if points.empty?

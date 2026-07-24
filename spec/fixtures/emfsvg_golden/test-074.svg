@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="452" height="340" viewBox="0 0 452 340" version="1.1">
+  <text x="1872" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 2D des Coordonnées Colonne ; Dimension :  2 x  4
+  </text>
+  <text x="1712" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 16 x 16 (Table de Burt)
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 2291 838 L 2291 5945 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="2291" y1="838" x2="2283" y2="858" />
   <line stroke="#C0C0C0" stroke-width="0" x1="2283" y1="878" x2="2283" y2="898" />
@@ -1926,6 +1932,54 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="8731" y1="5207" x2="8751" y2="5207" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8771" y1="5207" x2="8791" y2="5207" />
   <line stroke="#C0C0C0" stroke-width="0" x1="8811" y1="5207" x2="8831" y2="5215" />
+  <text x="4142" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SEXE:M
+  </text>
+  <text x="4032" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SEXE:F
+  </text>
+  <text x="6287" y="0" font-family="Arial" font-size="12" fill="#000000">
+    AGE:age1
+  </text>
+  <text x="2534" y="0" font-family="Arial" font-size="12" fill="#000000">
+    AGE:age2
+  </text>
+  <text x="2079" y="0" font-family="Arial" font-size="12" fill="#000000">
+    AGE:age3
+  </text>
+  <text x="3977" y="0" font-family="Arial" font-size="12" fill="#000000">
+    RELIGION:hindoue
+  </text>
+  <text x="4046" y="0" font-family="Arial" font-size="12" fill="#000000">
+    RELIGION:sikh
+  </text>
+  <text x="3269" y="0" font-family="Arial" font-size="12" fill="#000000">
+    RELIGION:musulman
+  </text>
+  <text x="4066" y="0" font-family="Arial" font-size="12" fill="#000000">
+    NATIONAL:Inde
+  </text>
+  <text x="3362" y="0" font-family="Arial" font-size="12" fill="#000000">
+    NATIONAL:Bengale
+  </text>
+  <text x="3288" y="0" font-family="Arial" font-size="12" fill="#000000">
+    NATIONAL:Pakistan
+  </text>
+  <text x="6464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LIEUNAI:Grande-Bretagne
+  </text>
+  <text x="2116" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LIEUNAI:sous-continent indien
+  </text>
+  <text x="3558" y="0" font-family="Arial" font-size="12" fill="#000000">
+    LIEUNAI:ailleurs
+  </text>
+  <text x="2270" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ENFANT:oui
+  </text>
+  <text x="6146" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ENFANT:non
+  </text>
   <path stroke="#000000" stroke-width="20" d="M 1201 838 L 8831 838 " />
   <line stroke="#000000" stroke-width="20" x1="1201" y1="877" x2="1201" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="2291" y1="877" x2="2291" y2="838" />
@@ -1935,6 +1989,30 @@
   <line stroke="#000000" stroke-width="20" x1="6651" y1="877" x2="6651" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="7741" y1="877" x2="7741" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="8831" y1="877" x2="8831" y2="838" />
+  <text x="1021" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,5
+  </text>
+  <text x="2111" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="3201" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="4321" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="5411" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="6501" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
+  <text x="7591" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,5
+  </text>
+  <text x="8681" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,0
+  </text>
   <line stroke="#000000" stroke-width="20" x1="1419" y1="857" x2="1419" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="1637" y1="857" x2="1637" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="1854" y1="857" x2="1854" y2="837" />
@@ -1970,6 +2048,9 @@
   <line stroke="#000000" stroke-width="20" x1="8395" y1="857" x2="8395" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="8613" y1="857" x2="8613" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="8831" y1="857" x2="8831" y2="838" />
+  <text x="2373" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 2; Valeur Propre : ,36380 (21,83  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="20" d="M 1201 5945 L 8831 5945 " />
   <line stroke="#000000" stroke-width="20" x1="1201" y1="5905" x2="1201" y2="5945" />
   <line stroke="#000000" stroke-width="20" x1="2291" y1="5905" x2="2291" y2="5945" />
@@ -2023,6 +2104,30 @@
   <line stroke="#000000" stroke-width="20" x1="1241" y1="4485" x2="1201" y2="4485" />
   <line stroke="#000000" stroke-width="20" x1="1241" y1="5215" x2="1201" y2="5215" />
   <line stroke="#000000" stroke-width="20" x1="1241" y1="5945" x2="1201" y2="5945" />
+  <text x="740" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,5
+  </text>
+  <text x="740" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="740" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="800" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="800" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="800" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
+  <text x="800" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,5
+  </text>
+  <text x="800" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,0
+  </text>
   <line stroke="#000000" stroke-width="20" x1="1221" y1="983" x2="1201" y2="983" />
   <line stroke="#000000" stroke-width="20" x1="1221" y1="1129" x2="1201" y2="1129" />
   <line stroke="#000000" stroke-width="20" x1="1221" y1="1275" x2="1201" y2="1275" />
@@ -2058,6 +2163,12 @@
   <line stroke="#000000" stroke-width="20" x1="1221" y1="5653" x2="1201" y2="5653" />
   <line stroke="#000000" stroke-width="20" x1="1221" y1="5799" x2="1201" y2="5799" />
   <line stroke="#000000" stroke-width="20" x1="1221" y1="5945" x2="1201" y2="5945" />
+  <text x="295" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 4; Valeur Propre : ,17802 (10,68  %
+  </text>
+  <text x="561" y="0" font-family="Arial" font-size="12" fill="#000000">
+    d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="20" d="M 8831 838 L 8831 5945 " />
   <line stroke="#000000" stroke-width="20" x1="8790" y1="838" x2="8831" y2="838" />
   <line stroke="#000000" stroke-width="20" x1="8790" y1="1567" x2="8831" y2="1567" />

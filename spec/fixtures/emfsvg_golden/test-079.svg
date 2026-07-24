@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="563" height="422" viewBox="0 0 563 422" version="1.1">
+  <text x="2083" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Tracé 2D des Coordonnées Colonne ; Dimension :  1 x  2
+  </text>
+  <text x="1983" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Table d'Entrée (Lignes x Colonnes) : 25 x 25 (Table de Burt)
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 1497 813 L 1497 6207 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1497" y1="813" x2="1494" y2="830" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1494" y1="846" x2="1494" y2="863" />
@@ -4401,6 +4407,99 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9111" y1="5908" x2="9128" y2="5908" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9144" y1="5908" x2="9161" y2="5908" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9177" y1="5908" x2="9194" y2="5908" />
+  <text x="2784" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Seul
+  </text>
+  <text x="6565" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Coloc
+  </text>
+  <text x="6537" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Couple
+  </text>
+  <text x="21964" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:Parents
+  </text>
+  <text x="14513" y="0" font-family="Arial" font-size="12" fill="#000000">
+    MODE:NR1
+  </text>
+  <text x="2361" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Cité
+  </text>
+  <text x="2492" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Studio
+  </text>
+  <text x="6446" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Appart
+  </text>
+  <text x="6437" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Chambre
+  </text>
+  <text x="21719" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:Autre
+  </text>
+  <text x="15982" y="0" font-family="Arial" font-size="12" fill="#000000">
+    TYPE:NR2
+  </text>
+  <text x="2866" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANCIENN:
+  </text>
+  <text x="3663" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &lt; 1 an
+  </text>
+  <text x="4335" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANCIENN:1-3 ans
+  </text>
+  <text x="4192" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANCIENN:
+  </text>
+  <text x="4989" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &gt; 3ans
+  </text>
+  <text x="21219" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANCIENN:NA
+  </text>
+  <text x="22524" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ANCIENN:NR3
+  </text>
+  <text x="2921" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:
+  </text>
+  <text x="3618" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &lt; 1km
+  </text>
+  <text x="6523" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:1 à 5 km
+  </text>
+  <text x="18223" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:
+  </text>
+  <text x="18920" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &gt; 5 km
+  </text>
+  <text x="19697" y="0" font-family="Arial" font-size="12" fill="#000000">
+    ELOIGN:NR4
+  </text>
+  <text x="1859" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUPERF:
+  </text>
+  <text x="2589" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &lt; 10 m²
+  </text>
+  <text x="3130" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUPERF:10 à 20 m²
+  </text>
+  <text x="2614" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUPERF:20 à 30 m²
+  </text>
+  <text x="11704" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUPERF:
+  </text>
+  <text x="12434" y="0" font-family="Arial" font-size="12" fill="#000000">
+    &gt; 30 m²
+  </text>
+  <text x="24939" y="0" font-family="Arial" font-size="12" fill="#000000">
+    SUPERF:NR5
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 913 813 L 9211 813 " />
   <line stroke="#000000" stroke-width="17" x1="1497" y1="846" x2="1497" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="2327" y1="846" x2="2327" y2="813" />
@@ -4412,6 +4511,36 @@
   <line stroke="#000000" stroke-width="17" x1="7306" y1="846" x2="7306" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8135" y1="846" x2="8135" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8965" y1="846" x2="8965" y2="813" />
+  <text x="1323" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,9
+  </text>
+  <text x="2153" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,8
+  </text>
+  <text x="2983" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,7
+  </text>
+  <text x="3812" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,6
+  </text>
+  <text x="4642" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="5472" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,4
+  </text>
+  <text x="6302" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,3
+  </text>
+  <text x="7132" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,2
+  </text>
+  <text x="7961" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,1
+  </text>
+  <text x="8824" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
   <line stroke="#000000" stroke-width="17" x1="999" y1="829" x2="999" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="1165" y1="829" x2="1165" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="1331" y1="829" x2="1331" y2="813" />
@@ -4462,6 +4591,9 @@
   <line stroke="#000000" stroke-width="17" x1="8799" y1="829" x2="8799" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="8965" y1="829" x2="8965" y2="813" />
   <line stroke="#000000" stroke-width="17" x1="9131" y1="829" x2="9131" y2="813" />
+  <text x="2539" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 1; Valeur Propre : ,72327 (18,08  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 913 6207 L 9211 6207 " />
   <line stroke="#000000" stroke-width="17" x1="1497" y1="6173" x2="1497" y2="6207" />
   <line stroke="#000000" stroke-width="17" x1="2327" y1="6173" x2="2327" y2="6207" />
@@ -4535,6 +4667,39 @@
   <line stroke="#000000" stroke-width="17" x1="946" y1="4953" x2="913" y2="4953" />
   <line stroke="#000000" stroke-width="17" x1="946" y1="5427" x2="913" y2="5427" />
   <line stroke="#000000" stroke-width="17" x1="946" y1="5900" x2="913" y2="5900" />
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1,0
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,8
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,6
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,4
+  </text>
+  <text x="464" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,2
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,2
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,4
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,6
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,8
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
   <line stroke="#000000" stroke-width="17" x1="929" y1="926" x2="913" y2="926" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="1044" x2="913" y2="1044" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="1163" x2="913" y2="1163" />
@@ -4580,6 +4745,9 @@
   <line stroke="#000000" stroke-width="17" x1="929" y1="5900" x2="913" y2="5900" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="6019" x2="913" y2="6019" />
   <line stroke="#000000" stroke-width="17" x1="929" y1="6137" x2="913" y2="6137" />
+  <text x="298" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Dimension 2; Valeur Propre : ,43130 (10,78  % d'Inertie)
+  </text>
   <path stroke="#000000" stroke-width="17" d="M 9211 813 L 9211 6207 " />
   <line stroke="#000000" stroke-width="17" x1="9177" y1="1163" x2="9211" y2="1163" />
   <line stroke="#000000" stroke-width="17" x1="9177" y1="1636" x2="9211" y2="1636" />

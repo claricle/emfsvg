@@ -6,62 +6,245 @@
   <line stroke="#000000" stroke-width="0" x1="862" y1="-6.0" x2="862" y2="-994.0" />
   <line stroke="#000000" stroke-width="0" x1="862" y1="-994.0" x2="-7" y2="-994.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -7 -974.0 L 134 -974.0 L 147 -988.0 L 147 -994.0 L -7 -994.0 L -7 -974.0 Z " fill-rule="evenodd" />
+  <text x="-2" y="-978.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Fig: DGGS Package Diagram
+  </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 50 -70.0 L 50 -30.0 L 190 -30.0 L 190 -58.0 L 178 -70.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 178 -70.0 L 178 -58.0 L 190 -58.0 Z " fill-rule="evenodd" />
+  <text x="55" y="-979.0" font-family="Carlito" font-size="12" fill="#000000">
+    KEY:
+  </text>
+  <text x="509" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+    19115-1 Ed 1
+  </text>
+  <text x="521" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="392" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+    19112 Ed 2
+  </text>
+  <text x="400" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="258" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19111 Ed 3
+  </text>
+  <text x="275" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="4" d="M 45 -592.0 L 810 -592.0 L 810 -99.0 L 45 -99.0 L 45 -592.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="4" d="M 45 -613.0 L 166 -613.0 L 166 -592.0 L 45 -592.0 L 45 -613.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="4" d="M 45 -613.0 L 166 -613.0 L 166 -592.0 L 45 -592.0 L 45 -613.0 Z " fill-rule="evenodd" />
+  <text x="50" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19170-1 Edition 1
+  </text>
+  <text x="287" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid systems)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 485 -551.0 L 792 -551.0 L 792 -513.0 L 485 -513.0 L 485 -551.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 485 -572.0 L 616 -572.0 L 616 -551.0 L 485 -551.0 L 485 -572.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 485 -572.0 L 616 -572.0 L 616 -551.0 L 485 -551.0 L 485 -572.0 Z " fill-rule="evenodd" />
+  <text x="490" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Equal-Area Earth DGGS
+  </text>
   <path fill="#FEE350" stroke="#000000" stroke-width="1" d="M 485 -691.0 L 790 -691.0 L 790 -655.0 L 485 -655.0 L 485 -691.0 Z " fill-rule="evenodd" />
   <path fill="#FEE350" stroke="#000000" stroke-width="1" d="M 485 -712.0 L 590 -712.0 L 590 -691.0 L 485 -691.0 L 485 -712.0 Z " fill-rule="evenodd" />
   <path fill="#FEE350" stroke="#000000" stroke-width="1" d="M 485 -712.0 L 590 -712.0 L 590 -691.0 L 485 -691.0 L 485 -712.0 Z " fill-rule="evenodd" />
+  <text x="490" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    observation
+  </text>
+  <text x="485" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19156 Observations and measurements::
+  </text>
+  <text x="535" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19156 Edition 1::Observation schema)
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 73 -939.0 L 322 -939.0 L 322 -919.0 L 73 -919.0 L 73 -939.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 73 -960.0 L 239 -960.0 L 239 -939.0 L 73 -939.0 L 73 -960.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 73 -960.0 L 239 -960.0 L 239 -939.0 L 73 -939.0 L 73 -960.0 Z " fill-rule="evenodd" />
+  <text x="78" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Reference Systems
+  </text>
+  <text x="90" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19111 Referencing by 
+  </text>
+  <text x="116" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    coordinates::ISO 19111 Edition 3)
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 485 -773.0 L 790 -773.0 L 790 -753.0 L 485 -753.0 L 485 -773.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 485 -794.0 L 610 -794.0 L 610 -773.0 L 485 -773.0 L 485 -794.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 485 -794.0 L 610 -794.0 L 610 -773.0 L 485 -773.0 L 485 -794.0 Z " fill-rule="evenodd" />
+  <text x="490" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Operations
+  </text>
+  <text x="489" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19111 Referencing by coordinates::ISO 
+  </text>
+  <text x="597" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    19111 Edition 3)
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 485 -856.0 L 790 -856.0 L 790 -836.0 L 485 -836.0 L 485 -856.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 485 -877.0 L 590 -877.0 L 590 -856.0 L 485 -856.0 L 485 -877.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 485 -877.0 L 590 -877.0 L 590 -856.0 L 485 -856.0 L 485 -877.0 Z " fill-rule="evenodd" />
+  <text x="490" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Common Classes
+  </text>
+  <text x="489" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19111 Referencing by coordinates::ISO 
+  </text>
+  <text x="597" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    19111 Edition 3)
+  </text>
   <path fill="#FFFFFF" stroke="#5757FF" stroke-width="2" d="M 73 -856.0 L 322 -856.0 L 322 -836.0 L 73 -836.0 L 73 -856.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#5757FF" stroke-width="2" d="M 73 -877.0 L 184 -877.0 L 184 -856.0 L 73 -856.0 L 73 -877.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#5757FF" stroke-width="2" d="M 73 -877.0 L 184 -877.0 L 184 -856.0 L 73 -856.0 L 73 -877.0 Z " fill-rule="evenodd" />
+  <text x="78" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19107 Edition 2
+  </text>
+  <text x="89" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19107 Spatial schema)
+  </text>
   <path fill="#FFFFFF" stroke="#EA8066" stroke-width="2" d="M 73 -772.0 L 322 -772.0 L 322 -752.0 L 73 -752.0 L 73 -772.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#EA8066" stroke-width="2" d="M 73 -793.0 L 184 -793.0 L 184 -772.0 L 73 -772.0 L 73 -793.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#EA8066" stroke-width="2" d="M 73 -793.0 L 184 -793.0 L 184 -772.0 L 73 -772.0 L 73 -793.0 Z " fill-rule="evenodd" />
+  <text x="78" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19112 Edition 2
+  </text>
+  <text x="74" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19112 Spatial referencing by 
+  </text>
+  <text x="144" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    geographic identifier)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 430 -475.0 L 791 -475.0 L 791 -120.0 L 430 -120.0 L 430 -475.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 430 -496.0 L 535 -496.0 L 535 -475.0 L 430 -475.0 L 430 -496.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 430 -496.0 L 535 -496.0 L 535 -475.0 L 430 -475.0 L 430 -496.0 Z " fill-rule="evenodd" />
+  <text x="435" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGGS Core
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 465 -328.0 L 753 -328.0 L 753 -308.0 L 465 -308.0 L 465 -328.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 465 -349.0 L 618 -349.0 L 618 -328.0 L 465 -328.0 L 465 -349.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 465 -349.0 L 618 -349.0 L 618 -328.0 L 465 -328.0 L 465 -349.0 Z " fill-rule="evenodd" />
+  <text x="470" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Core Quantization Functions
+  </text>
+  <text x="468" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid systems::
+  </text>
+  <text x="525" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19170-1 Edition 1::DGGS Core)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 466 -178.0 L 754 -178.0 L 754 -157.0 L 466 -157.0 L 466 -178.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 466 -199.0 L 626 -199.0 L 626 -178.0 L 466 -178.0 L 466 -199.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 466 -199.0 L 626 -199.0 L 626 -178.0 L 466 -178.0 L 466 -199.0 Z " fill-rule="evenodd" />
+  <text x="471" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Core Interoperation Functions
+  </text>
+  <text x="469" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid systems::
+  </text>
+  <text x="526" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19170-1 Edition 1::DGGS Core)
+  </text>
   <path fill="#FFFFFF" stroke="#556B2F" stroke-width="2" d="M 485 -939.0 L 790 -939.0 L 790 -919.0 L 485 -919.0 L 485 -939.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#556B2F" stroke-width="2" d="M 485 -960.0 L 650 -960.0 L 650 -939.0 L 485 -939.0 L 485 -960.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#556B2F" stroke-width="2" d="M 485 -960.0 L 650 -960.0 L 650 -939.0 L 485 -939.0 L 485 -960.0 Z " fill-rule="evenodd" />
+  <text x="490" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Reference system information
+  </text>
+  <text x="487" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19115 Metadata::ISO 19115-1 Edition 1)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 462 -434.0 L 774 -434.0 L 774 -392.0 L 462 -392.0 L 462 -434.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 462 -455.0 L 759 -455.0 L 759 -434.0 L 462 -434.0 L 462 -455.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 462 -455.0 L 759 -455.0 L 759 -434.0 L 462 -434.0 L 462 -455.0 Z " fill-rule="evenodd" />
+  <text x="467" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Core RS using Zonal Identifiers with Structured Geometry
+  </text>
+  <text x="467" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid systems::ISO 
+  </text>
+  <text x="543" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    19170-1 Edition 1::DGGS Core)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 60 -547.0 L 376 -547.0 L 376 -328.0 L 60 -328.0 L 60 -547.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 60 -568.0 L 241 -568.0 L 241 -547.0 L 60 -547.0 L 60 -568.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 60 -568.0 L 241 -568.0 L 241 -547.0 L 60 -547.0 L 60 -568.0 Z " fill-rule="evenodd" />
+  <text x="65" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Common Spatio-temporal Classes
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 90 -498.0 L 347 -498.0 L 347 -478.0 L 90 -478.0 L 90 -498.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 90 -519.0 L 301 -519.0 L 301 -498.0 L 90 -498.0 L 90 -519.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 90 -519.0 L 301 -519.0 L 301 -498.0 L 90 -498.0 L 90 -519.0 Z " fill-rule="evenodd" />
+  <text x="95" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Temporal and Zonal RS using Identifiers
+  </text>
+  <text x="100" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid 
+  </text>
+  <text x="99" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    systems::ISO 19170-1 Edition 1::Common Spatio-
+  </text>
+  <text x="174" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    temporal Classes)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 90 -398.0 L 347 -398.0 L 347 -378.0 L 90 -378.0 L 90 -398.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 90 -419.0 L 256 -419.0 L 256 -398.0 L 90 -398.0 L 90 -419.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="2" d="M 90 -419.0 L 256 -419.0 L 256 -398.0 L 90 -398.0 L 90 -419.0 Z " fill-rule="evenodd" />
+  <text x="95" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Temporal and Zonal Geometry
+  </text>
+  <text x="100" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid 
+  </text>
+  <text x="99" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    systems::ISO 19170-1 Edition 1::Common Spatio-
+  </text>
+  <text x="174" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    temporal Classes)
+  </text>
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 465 -252.0 L 753 -252.0 L 753 -233.0 L 465 -233.0 L 465 -252.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 465 -273.0 L 644 -273.0 L 644 -252.0 L 465 -252.0 L 465 -273.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 465 -273.0 L 644 -273.0 L 644 -252.0 L 465 -252.0 L 465 -273.0 Z " fill-rule="evenodd" />
+  <text x="470" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Core Topological Query Functions
+  </text>
+  <text x="468" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19170 Discrete global grid systems::
+  </text>
+  <text x="525" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19170-1 Edition 1::DGGS Core)
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 73 -675.0 L 322 -675.0 L 322 -655.0 L 73 -655.0 L 73 -675.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 73 -696.0 L 186 -696.0 L 186 -675.0 L 73 -675.0 L 73 -696.0 Z " fill-rule="evenodd" />
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 73 -696.0 L 186 -696.0 L 186 -675.0 L 73 -675.0 L 73 -696.0 Z " fill-rule="evenodd" />
+  <text x="78" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Systems
+  </text>
+  <text x="90" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from ISO TC211::ISO 19111 Referencing by 
+  </text>
+  <text x="116" y="-979.0" font-family="Calibri" font-size="12" fill="#000000">
+    coordinates::ISO 19111 Edition 3)
+  </text>
+  <text x="749" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19170-1
+  </text>
+  <text x="760" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="632" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+    19156 Ed 1
+  </text>
+  <text x="641" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="124" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19107 Ed 2
+  </text>
+  <text x="141" y="-979.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
   <line stroke="#000000" stroke-width="1" x1="781" y1="-310.0" x2="781" y2="-303.0" />
   <line stroke="#000000" stroke-width="1" x1="781" y1="-299.0" x2="781" y2="-292.0" />
   <line stroke="#000000" stroke-width="1" x1="781" y1="-288.0" x2="781" y2="-281.0" />

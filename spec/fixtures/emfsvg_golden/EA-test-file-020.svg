@@ -6,50 +6,635 @@
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 240 14464 L 6304 14464 L 6304 240 L 240 240 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="217" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «FeatureType»
+  </text>
+  <text x="228" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Veglenke
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 240 832 L 6288 832 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    veglenkeid: Integer
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    kjoreretning: Kjoreretning
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    feltoversikt: CharacterString [0..1]
+  </text>
+  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Klassifisering»
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    typeveg: TypeVeg
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    funksjonellvegklasse: Vegklasse
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    motorvegtype: Motorvegtype [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    klasselandbruksveg: Landbruksvegklasse [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    serviceveg: JaNei
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    beredskapsveg: JaNei
+  </text>
+  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Fartsgrense»
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrense: FartsgrenseVerdi [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel: FartsgrenseVerdi [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel_type: TypeFartsgrenseVariabel [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel_ukedag: UkedagFartsgrenseVariabel [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel_datofra: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel_datotil: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel_klokkesletttil: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fartsgrensevariabel_klokkeslettfra: CharacterString [0..1]
+  </text>
+  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Begrensninger»
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    skiltahoyde: Real [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    trafikkreguleringer: TypeTrafikkregulering [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    trafikkreguleringer_merknad: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransporthverdagulordagperiode1frakl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransporthverdagulordagperiode1tilkl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransporthverdagulordagperiode2frakl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransporthverdagulordagperiode2tilkl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransportlordagperiode1frakl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransportlordagperiode1tilkl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransportlordagperiode2frakl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransportlordagperiode2tilkl: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransportlordagfra: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_kjoringtileiendommenetillatt: JaNei [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gagatereguleringer_varetransportlordagtil: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    bruksklasse_spesialtransport_bruksklassehelår: BruksklasseHelar [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    bruksklasse_spesialtransport_bruksklassevinter: BruksklasseVinter [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    bruksklasse_spesialtransport_maksvogntoglengde: MaksVogntoglengde [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    bruksklasse_spesialtransport_veggruppe: Veggruppe [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    bruksklasse_spesialtransport_merknad: CharacterString [0..1]
+  </text>
+  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Beredskap»
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    vinterstengt_fradato: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    vinterstengt_tildato: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    nattestengt_fradato: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    nattestengt_tildato: CharacterString [0..1]
+  </text>
+  <text x="70" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Stedfesting»
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    kommunenummer: Kommunenummer
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    adressekode: Integer [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    adressenavn: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    vegsystemreferanse: CharacterString [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    vegsystemreferanse_fra_meter: Integer [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    vegsystemreferanse_til_meter: Integer [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    metrert_lengde: Real [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    geometrilengde: Real
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    veglenkesekvensid: Integer
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fra_posisjon: Real
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    til_posisjon: Real
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    superstedfesting_veglenkesekvensid: Integer [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    superstedfesting_fra_posisjon: Real [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    superstedfesting_til_posisjon: Real [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fra_node: Integer
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    til_node: Integer
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    medium: Medium [0..1]
+  </text>
+  <text x="63" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="80" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    senterlinje: Kurve
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7184 240 L 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7184 1664 L 9168 1664 L 9168 240 L 7184 240 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="532" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «CodeList»
+  </text>
+  <text x="528" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Kjoreretning
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7184 832 L 9152 832 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Med
+  </text>
+  <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Mot
+  </text>
+  <text x="497" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="514" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Begge
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 9808 L 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 10736 L 10224 10736 L 10224 9808 L 7120 9808 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="563" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «CodeList»
+  </text>
+  <text x="547" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Kommunenummer
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 3904 L 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 6768 L 10224 6768 L 10224 3904 L 7120 3904 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="554" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «FeatureType»
+  </text>
+  <text x="549" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Svingerestriksjon
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7120 4496 L 10208 4496 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    merknad: CharacterString [0..1]
+  </text>
+  <text x="500" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Stedfesting»
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fra_veglenkeid: Integer
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    til_veglenkeid: Integer
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fra_veglenkesekvensid: Integer
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    fra_posisjon: Real
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    til_veglenkesekvensid: Integer
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    til_posisjon: Real
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    posisjon: Punkt
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7104 7056 L 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7104 9520 L 10224 9520 L 10224 7056 L 7104 7056 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="554" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «FeatureType»
+  </text>
+  <text x="559" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Vegsperring
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7104 7648 L 10208 7648 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    type: TypeVegsperring
+  </text>
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    funksjon: FunksjonVegsperring [0..1]
+  </text>
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    gjeldertidsrom: CharacterString [0..1]
+  </text>
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    merknad: CharacterString [0..1]
+  </text>
+  <text x="499" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «Stedfesting»
+  </text>
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    veglenkeid_1: Integer
+  </text>
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    veglenkeid_2: Integer [0..1]
+  </text>
+  <text x="492" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="509" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    posisjon: Punkt
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 11232 L 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 7120 14448 L 10224 14448 L 10224 11232 L 7120 11232 Z " fill-rule="evenodd" />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="563" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    «CodeList»
+  </text>
+  <text x="568" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Medium
+  </text>
   <g transform="matrix(0.062500 0.000000 0.000000 0.062500 0.000000 0.000000)">
   <path stroke="#000000" stroke-width="1" d="M 7120 11824 L 10208 11824 " />
   <g transform="matrix(1.000000 0.000000 0.000000 1.000000 0.000000 0.000000)">
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Alltid i vann = V
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    I bygning/bygningsmessig anlegg = B
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    I luft = L
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    På isbre = I
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    På sjøbunnen = S
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    På terrenget/på bakkenivå = T
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    På vannoverflaten = O
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Tidvis under vann = D
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Under isbre = J
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Under sjøbunnen = W
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Under terrenget = U
+  </text>
+  <text x="493" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="510" y="0" font-family="Calibri" font-size="12" fill="#000000">
+    Ukjent = X
+  </text>
   </g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g></g>
 </svg>

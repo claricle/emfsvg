@@ -6,26 +6,383 @@
   <line stroke="#000000" stroke-width="0" x1="686" y1="-15.0" x2="686" y2="-1051.0" />
   <line stroke="#000000" stroke-width="0" x1="686" y1="-1051.0" x2="-14" y2="-1051.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -14 -1031.0 L 374 -1031.0 L 387 -1045.0 L 387 -1051.0 L -14 -1051.0 L -14 -1031.0 Z " fill-rule="evenodd" />
+  <text x="-9" y="-1026.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Fig: DGGS Core - Core Reference System using Zonal Identifiers with Structured Geometry
+  </text>
+  <text x="483" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19170-1
+  </text>
+  <text x="494" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="381" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+    19115-1 Ed 1
+  </text>
+  <text x="393" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="439" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    CRS
+  </text>
+  <text x="314" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="289" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGG_ReferenceSystem
+  </text>
   <line stroke="#000000" stroke-width="3" x1="216" y1="-464.0" x2="456" y2="-464.0" />
+  <text x="221" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="238" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGGS_Grids: DGG_GridConstraint [1..*] {ordered}
+  </text>
+  <text x="221" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="238" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGGS_Refinement: DGG_RefinementStrategy [1..*]
+  </text>
+  <text x="221" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="238" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGGS_RefinementRatio: Integer [1..*] {sequence}
+  </text>
+  <text x="221" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="238" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGGS_RefSys: DGG_ReferenceSystemType
+  </text>
+  <text x="173" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="158" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DiscreteGlobalGrid
+  </text>
   <line stroke="#000000" stroke-width="1" x1="108" y1="-330.0" x2="283" y2="-330.0" />
+  <text x="113" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="130" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    refinementRatio: Integer
+  </text>
+  <text x="124" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="140" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Cell
+  </text>
   <line stroke="#000000" stroke-width="1" x1="10" y1="-224.0" x2="283" y2="-224.0" />
+  <text x="15" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="32" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    upNormal(point: DirectPosition*): Vector
+  </text>
   <path fill="#FFFFFF" stroke="#556B2F" stroke-width="2" d="M 258 -1017.0 L 258 -977.0 L 408 -977.0 L 408 -1005.0 L 396 -1017.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#556B2F" stroke-width="2" d="M 396 -1017.0 L 396 -1005.0 L 408 -1005.0 Z " fill-rule="evenodd" />
+  <text x="263" y="-1027.0" font-family="Arial" font-size="12" fill="#556B2F">
+    ISO 19115-1
+  </text>
+  <text x="263" y="-1027.0" font-family="Arial" font-size="12" fill="#556B2F">
+    Reference system information
+  </text>
+  <text x="225" y="-1027.0" font-family="Calibri" font-size="12" fill="#556B2F">
+    Reference system information::MD_ReferenceSystem
+  </text>
   <line stroke="#556B2F" stroke-width="2" x1="190" y1="-933.0" x2="479" y2="-933.0" />
+  <text x="195" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="212" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    referenceSystemIdentifier: MD_Identifier [0..1]
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 286 -697.0 L 286 -639.0 L 389 -639.0 L 389 -685.0 L 377 -697.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" d="M 377 -697.0 L 377 -685.0 L 389 -685.0 Z " fill-rule="evenodd" />
+  <text x="291" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19111 Ed 3
+  </text>
+  <text x="291" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Reference
+  </text>
+  <text x="291" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    System
+  </text>
+  <text x="411" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «Union»
+  </text>
+  <text x="370" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGG_ReferenceSystemType
+  </text>
   <line stroke="#000000" stroke-width="1" x1="350" y1="-843.0" x2="505" y2="-843.0" />
+  <text x="355" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="372" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    CRS: CoordinateMetadata
+  </text>
+  <text x="355" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="372" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    GLOBE: GeometryData
+  </text>
+  <text x="355" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="372" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    MDRS: MD_ReferenceSystem
+  </text>
+  <text x="355" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="372" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZIRS: MD_Identifier
+  </text>
+  <text x="353" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    ObjectUsage
+  </text>
+  <text x="314" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="273" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinate Reference Systems:
+  </text>
+  <text x="327" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    :CRS
+  </text>
+  <text x="54" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «CodeList»
+  </text>
+  <text x="35" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGG_GridConstraint
+  </text>
   <line stroke="#000000" stroke-width="1" x1="12" y1="-843.0" x2="138" y2="-843.0" />
+  <text x="17" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="34" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    cellAxisAligned
+  </text>
+  <text x="17" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="34" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    cellConformal
+  </text>
+  <text x="17" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="34" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    cellEquiAngular
+  </text>
+  <text x="17" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="34" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    cellEquiDistant
+  </text>
+  <text x="17" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="34" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    cellEquiSized
+  </text>
+  <text x="572" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «CodeList»
+  </text>
+  <text x="541" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    DGG_RefinementStrategy
+  </text>
   <line stroke="#000000" stroke-width="1" x1="530" y1="-843.0" x2="656" y2="-843.0" />
+  <text x="535" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    centredChildCell
+  </text>
+  <text x="535" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    edgeCentredChildCell
+  </text>
+  <text x="535" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    faceCentredChildCell
+  </text>
+  <text x="535" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    nestedChildCell
+  </text>
+  <text x="535" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    nodeCentredChildCell
+  </text>
+  <text x="535" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="552" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    solidCentredChildCell
+  </text>
+  <text x="423" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="418" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZonalIdentifier
+  </text>
+  <text x="406" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    (from Zonal RS using 
+  </text>
+  <text x="426" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Identifiers)
+  </text>
+  <text x="219" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="178" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Zonal Geometry and Topology::
+  </text>
+  <text x="211" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZoneGeometry
+  </text>
   <line stroke="#000000" stroke-width="1" x1="164" y1="-830.0" x2="318" y2="-830.0" />
+  <text x="169" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="186" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    spatialDimension: Integer
+  </text>
+  <text x="169" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="186" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    temporalDimension: Integer
+  </text>
+  <text x="169" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="186" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    topologicalDimension: Integer
+  </text>
+  <text x="501" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="460" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Zonal RS using Identifiers::Zone
+  </text>
   <line stroke="#000000" stroke-width="1" x1="387" y1="-224.0" x2="660" y2="-224.0" />
+  <text x="392" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="409" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    /extent: EX_Extent
+  </text>
+  <text x="392" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="409" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    identifier: ZonalIdentifier
+  </text>
+  <text x="392" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="409" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    representativePosition: DirectPosition [1..4] {ordered}
+  </text>
+  <text x="452" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="401" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Zonal RS using Identifiers::ZoneClass
+  </text>
   <line stroke="#000000" stroke-width="1" x1="387" y1="-330.0" x2="562" y2="-330.0" />
+  <text x="392" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="409" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    refinementLevel: Integer
+  </text>
+  <text x="512" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="432" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Zonal RS using Identifiers::RSUsingZonalIdentifiers
+  </text>
+  <text x="578" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    «datatype»
+  </text>
+  <text x="573" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    DirectPosition
+  </text>
+  <text x="543" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    (from Coordinate Data Types)
+  </text>
+  <text x="117" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="107" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    GlobeGeometry
+  </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 90 -98.0 L 90 -58.0 L 230 -58.0 L 230 -86.0 L 218 -98.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 218 -98.0 L 218 -86.0 L 230 -86.0 Z " fill-rule="evenodd" />
+  <text x="95" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    KEY:
+  </text>
+  <text x="159" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19107 Ed 2
+  </text>
+  <text x="176" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="270" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19111 Ed 3
+  </text>
+  <text x="287" y="-1027.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="571" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    «datatype»
+  </text>
+  <text x="564" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    GeometryData
+  </text>
+  <text x="561" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    (from Geometry)
+  </text>
   <path fill="#FFFFFF" stroke="#0000CD" stroke-width="2" d="M 549 -1017.0 L 549 -977.0 L 639 -977.0 L 639 -1005.0 L 627 -1017.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#0000CD" stroke-width="2" d="M 627 -1017.0 L 627 -1005.0 L 639 -1005.0 Z " fill-rule="evenodd" />
+  <text x="554" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    ISO 19107 Ed 2
+  </text>
+  <text x="554" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Geometry
+  </text>
+  <text x="53" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="48" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinates::
+  </text>
+  <text x="33" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    CoordinateMetadata
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 30 -1017.0 L 30 -977.0 L 120 -977.0 L 120 -1005.0 L 108 -1017.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" d="M 108 -1017.0 L 108 -1005.0 L 120 -1005.0 Z " fill-rule="evenodd" />
+  <text x="35" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19111 Ed 3
+  </text>
+  <text x="35" y="-1027.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinates
+  </text>
   <line stroke="#556B2F" stroke-width="1" x1="334" y1="-976.0" x2="334" y2="-973.0" />
   <line stroke="#556B2F" stroke-width="1" x1="334" y1="-969.0" x2="334" y2="-966.0" />
   <line stroke="#556B2F" stroke-width="1" x1="334" y1="-962.0" x2="334" y2="-961.0" />
@@ -137,5 +494,164 @@
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 590 -675.0 L 585 -685.0 L 580 -675.0 L 585 -665.0 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="585" y1="-261.0" x2="591" y2="-276.0" />
   <line stroke="#000000" stroke-width="1" x1="585" y1="-261.0" x2="579" y2="-276.0" />
+  <text x="420" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    DGGSIdentifiers
+  </text>
+  <text x="287" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +topology
+  </text>
+  <text x="287" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="307" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Realisation
+  </text>
+  <text x="343" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +position
+  </text>
+  <text x="379" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="271" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +dimension
+  </text>
+  <text x="272" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="316" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Realisation
+  </text>
+  <text x="347" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +orientation
+  </text>
+  <text x="397" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="507" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +comprises
+  </text>
+  <text x="469" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1..*
+  </text>
+  <text x="448" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="499" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Comprises
+  </text>
+  <text x="504" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +incorporatedIn
+  </text>
+  <text x="506" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="22" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +comprises
+  </text>
+  <text x="91" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    2..*
+  </text>
+  <text x="91" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="31" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Comprises
+  </text>
+  <text x="33" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +isPartOf
+  </text>
+  <text x="67" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="231" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +cell
+  </text>
+  <text x="197" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    2..*
+  </text>
+  <text x="176" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="230" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Comprises
+  </text>
+  <text x="232" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +grid
+  </text>
+  <text x="205" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="111" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +tessellation
+  </text>
+  <text x="187" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1..*
+  </text>
+  <text x="187" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="122" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Tessellates
+  </text>
+  <text x="132" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +whole
+  </text>
+  <text x="155" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="263" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +refinementRatio
+  </text>
+  <text x="287" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="309" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Realisation
+  </text>
+  <text x="344" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +refinementLevel
+  </text>
+  <text x="379" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="599" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +comprises
+  </text>
+  <text x="558" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    2..*
+  </text>
+  <text x="537" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="588" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Comprises
+  </text>
+  <text x="592" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +incorporatedIn
+  </text>
+  <text x="595" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="185" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    DGGSgeometry
+  </text>
+  <text x="419" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +zone
+  </text>
+  <text x="467" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    2..*
+  </text>
+  <text x="467" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="396" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    Comprises
+  </text>
+  <text x="418" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    +class
+  </text>
+  <text x="469" y="-1027.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
   
 </svg>

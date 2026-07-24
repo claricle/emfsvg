@@ -6,18 +6,231 @@
   <line stroke="#000000" stroke-width="0" x1="565" y1="-5.0" x2="565" y2="-891.0" />
   <line stroke="#000000" stroke-width="0" x1="565" y1="-891.0" x2="-18" y2="-891.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="0" d="M -18 -871.0 L 192 -871.0 L 205 -885.0 L 205 -891.0 L -18 -891.0 L -18 -871.0 Z " fill-rule="evenodd" />
+  <text x="-13" y="-876.0" font-family="Carlito" font-size="12" fill="#000000">
+    class Fig: Context for Temporal RS using Identifiers
+  </text>
+  <text x="228" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19111 Ed 3
+  </text>
+  <text x="245" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="479" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19170-1
+  </text>
+  <text x="490" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
   <path fill="#FFFFFF" stroke="#EA8066" stroke-width="2" d="M 119 -857.0 L 119 -825.0 L 262 -825.0 L 262 -845.0 L 250 -857.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#EA8066" stroke-width="2" d="M 250 -857.0 L 250 -845.0 L 262 -845.0 Z " fill-rule="evenodd" />
+  <text x="124" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    cf. Fig. ISO 19112 Ed 2 Overview
+  </text>
+  <text x="131" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    RSUsingZonalIdentifiersPrimitive
+  </text>
+  <text x="111" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="92" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19112 Edition 2::
+  </text>
+  <text x="29" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    SpatialReferenceSystemUsingGeographicIdentifiers
+  </text>
+  <text x="103" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZoneClassPrimitive
+  </text>
+  <text x="70" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="24" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19112 Edition 2::LocationClass
+  </text>
+  <text x="226" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    Location
+  </text>
+  <text x="205" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZonePrimitive
+  </text>
+  <text x="146" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="115" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    Spatial Location::LocationS
+  </text>
   <line stroke="#000000" stroke-width="2" x1="75" y1="-466.0" x2="261" y2="-466.0" />
+  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    coordinateTuple: DirectPosition [2..3]
+  </text>
+  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    /extent: EX_Extent
+  </text>
+  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="97" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    identifier: GeographicIdentifier
+  </text>
+  <text x="415" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZonePrimitive
+  </text>
+  <text x="356" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="365" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    Period
+  </text>
   <line stroke="#000000" stroke-width="2" x1="285" y1="-479.0" x2="471" y2="-479.0" />
+  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    /begin: DirectPosition
+  </text>
+  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    coordinateTuple: DirectPosition
+  </text>
+  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    /end: DirectPosition
+  </text>
+  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    /extent: EX_TemporalExtent
+  </text>
+  <text x="290" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="307" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    identifier: PeriodIdentifier
+  </text>
+  <text x="167" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZonalIdentifierPrimitive
+  </text>
+  <text x="139" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="80" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ISO 19112 Edition 2::GeographicIdentifier
+  </text>
+  <text x="377" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZonalIdentifierPrimitive
+  </text>
+  <text x="354" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «DataType»
+  </text>
+  <text x="347" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    PeriodIdentifier
+  </text>
+  <text x="464" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    ZoneClassPrimitive
+  </text>
+  <text x="428" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="428" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    PeriodClass
+  </text>
+  <text x="241" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    «datatype»
+  </text>
+  <text x="237" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    DirectPosition
+  </text>
   <line stroke="#0000CD" stroke-width="2" x1="171" y1="-155.0" x2="357" y2="-155.0" />
+  <text x="176" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="193" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    coordinate: Real [1..*] {sequence}
+  </text>
+  <text x="176" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="193" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    /dimension: Integer
+  </text>
+  <text x="176" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="193" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    /rsid: RSID [1..*] {ordered}
+  </text>
+  <text x="206" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    (from Coordinate Data Types)
+  </text>
   <path fill="#FFFFFF" stroke="#0000CD" stroke-width="2" d="M 20 -191.0 L 20 -137.0 L 120 -137.0 L 120 -179.0 L 108 -191.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#0000CD" stroke-width="2" d="M 108 -191.0 L 108 -179.0 L 120 -179.0 Z " fill-rule="evenodd" />
+  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    ISO 19107 Ed 2
+  </text>
+  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    CoordinateDataType::
+  </text>
+  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    DirectPosition
+  </text>
+  <text x="241" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="208" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    Coordinates::CoordinateSet
+  </text>
   <line stroke="#32CD32" stroke-width="2" x1="144" y1="-233.0" x2="383" y2="-233.0" />
+  <text x="149" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    + 
+  </text>
+  <text x="166" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    coordinateTuple: DirectPosition [1..*] {ordered}
+  </text>
   <path fill="#FFFFFF" stroke="#32CD32" stroke-width="2" d="M 20 -270.0 L 20 -227.0 L 110 -227.0 L 110 -258.0 L 98 -270.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#32CD32" stroke-width="2" d="M 98 -270.0 L 98 -258.0 L 110 -258.0 Z " fill-rule="evenodd" />
+  <text x="25" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    cf. ISO 19111 Ed 3
+  </text>
+  <text x="25" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    coordinateTuple
+  </text>
+  <text x="410" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    RSUsingZonalIdentifiersPrimitive
+  </text>
+  <text x="390" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    «interface»
+  </text>
+  <text x="312" y="-877.0" font-family="Calibri" font-size="12" fill="#000000">
+    TemporalReferenceSystemUsingPeriodIdentifiers
+  </text>
   <path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" d="M 20 -88.0 L 20 -48.0 L 160 -48.0 L 160 -76.0 L 148 -88.0 Z " fill-rule="evenodd" />
   <path fill="#DCDCDC" stroke="#FFFFFF" stroke-width="1" d="M 148 -88.0 L 148 -76.0 L 160 -76.0 Z " fill-rule="evenodd" />
+  <text x="25" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    KEY:
+  </text>
+  <text x="362" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+    19112 Ed 2
+  </text>
+  <text x="370" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
+  <text x="94" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+    ISO 19107 Ed 2
+  </text>
+  <text x="111" y="-877.0" font-family="Carlito" font-size="12" fill="#003060">
+     
+  </text>
   <line stroke="#000000" stroke-width="1" x1="97" y1="-668.0" x2="96" y2="-746.0" />
   <path fill="#FFFFFF" stroke="#000000" stroke-width="1" d="M 101 -736.0 L 96 -746.0 L 91 -736.0 L 96 -726.0 Z " fill-rule="evenodd" />
   <line stroke="#000000" stroke-width="1" x1="96" y1="-726.0" x2="102" y2="-711.0" />
@@ -74,5 +287,68 @@
   <line stroke="#32CD32" stroke-width="1" x1="129" y1="-230.0" x2="126" y2="-231.0" />
   <line stroke="#32CD32" stroke-width="1" x1="122" y1="-233.0" x2="119" y2="-235.0" />
   <line stroke="#32CD32" stroke-width="1" x1="115" y1="-237.0" x2="112" y2="-238.0" />
+  <text x="18" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +childOf 0..*
+  </text>
+  <text x="46" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    TypeHierarchy
+  </text>
+  <text x="62" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +parentOf 0..*
+  </text>
+  <text x="17" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +childOf 0..*
+  </text>
+  <text x="41" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    LocationHierarchy
+  </text>
+  <text x="86" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +parentOf 0..*
+  </text>
+  <text x="33" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +comprises
+  </text>
+  <text x="112" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    1..*
+  </text>
+  <text x="111" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    Comprises
+  </text>
+  <text x="14" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +incorporatedIn
+  </text>
+  <text x="109" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    1..*
+  </text>
+  <text x="270" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +component
+  </text>
+  <text x="338" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    1..*
+  </text>
+  <text x="338" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    {ordered}
+  </text>
+  <text x="341" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="386" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +parentOf 0..*
+  </text>
+  <text x="422" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    PeriodHierarchy
+  </text>
+  <text x="474" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +childOf 0..*
+  </text>
+  <text x="438" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +parentOf 1
+  </text>
+  <text x="445" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    TypeHierarchy
+  </text>
+  <text x="472" y="-877.0" font-family="Carlito" font-size="12" fill="#000000">
+    +childOf 1
+  </text>
   
 </svg>

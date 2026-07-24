@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="527" height="395" viewBox="0 0 527 395" version="1.1">
+  <text x="3306" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Val. Propres (matrice de corrél.)
+  </text>
+  <text x="3625" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Variables actives seules
+  </text>
   <path stroke="#FFFFFF" stroke-width="0" d="M 1827 815 L 1827 6205 " />
   <line stroke="#C0C0C0" stroke-width="0" x1="1827" y1="815" x2="1826" y2="833" />
   <line stroke="#C0C0C0" stroke-width="0" x1="1826" y1="851" x2="1826" y2="869" />
@@ -3349,6 +3355,24 @@
   <line stroke="#C0C0C0" stroke-width="0" x1="9165" y1="5673" x2="9183" y2="5673" />
   <line stroke="#C0C0C0" stroke-width="0" x1="9200" y1="5673" x2="9218" y2="5666" />
   <path stroke="#0000FF" stroke-width="18" d="M 2751 5553 L 3675 2450 L 4599 2323 L 5522 1448 L 6446 1427 L 7370 1388 " />
+  <text x="2370" y="0" font-family="Arial" font-size="12" fill="#000000">
+      64,93%
+  </text>
+  <text x="3294" y="0" font-family="Arial" font-size="12" fill="#000000">
+      16,96%
+  </text>
+  <text x="4218" y="0" font-family="Arial" font-size="12" fill="#000000">
+      14,99%
+  </text>
+  <text x="5168" y="0" font-family="Arial" font-size="12" fill="#000000">
+       1,46%
+  </text>
+  <text x="6092" y="0" font-family="Arial" font-size="12" fill="#000000">
+       1,13%
+  </text>
+  <text x="7042" y="0" font-family="Arial" font-size="12" fill="#000000">
+        ,53%
+  </text>
   <path stroke="#000000" stroke-width="18" d="M 904 815 L 9218 815 " />
   <line stroke="#000000" stroke-width="18" x1="904" y1="850" x2="904" y2="815" />
   <line stroke="#000000" stroke-width="18" x1="1827" y1="850" x2="1827" y2="815" />
@@ -3360,6 +3384,39 @@
   <line stroke="#000000" stroke-width="18" x1="7370" y1="850" x2="7370" y2="815" />
   <line stroke="#000000" stroke-width="18" x1="8294" y1="850" x2="8294" y2="815" />
   <line stroke="#000000" stroke-width="18" x1="9218" y1="850" x2="9218" y2="815" />
+  <text x="816" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -1
+  </text>
+  <text x="1774" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0
+  </text>
+  <text x="2698" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1
+  </text>
+  <text x="3622" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2
+  </text>
+  <text x="4546" y="0" font-family="Arial" font-size="12" fill="#000000">
+    3
+  </text>
+  <text x="5469" y="0" font-family="Arial" font-size="12" fill="#000000">
+    4
+  </text>
+  <text x="6393" y="0" font-family="Arial" font-size="12" fill="#000000">
+    5
+  </text>
+  <text x="7317" y="0" font-family="Arial" font-size="12" fill="#000000">
+    6
+  </text>
+  <text x="8241" y="0" font-family="Arial" font-size="12" fill="#000000">
+    7
+  </text>
+  <text x="9165" y="0" font-family="Arial" font-size="12" fill="#000000">
+    8
+  </text>
+  <text x="3997" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Numéro de valeur propre
+  </text>
   <path stroke="#000000" stroke-width="18" d="M 904 6205 L 9218 6205 " />
   <line stroke="#000000" stroke-width="18" x1="904" y1="6169" x2="904" y2="6205" />
   <line stroke="#000000" stroke-width="18" x1="1827" y1="6169" x2="1827" y2="6205" />
@@ -3383,6 +3440,39 @@
   <line stroke="#000000" stroke-width="18" x1="939" y1="5127" x2="904" y2="5127" />
   <line stroke="#000000" stroke-width="18" x1="939" y1="5666" x2="904" y2="5666" />
   <line stroke="#000000" stroke-width="18" x1="939" y1="6205" x2="904" y2="6205" />
+  <text x="460" y="0" font-family="Arial" font-size="12" fill="#000000">
+    -0,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    0,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    1,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    2,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    3,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    3,5
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    4,0
+  </text>
+  <text x="531" y="0" font-family="Arial" font-size="12" fill="#000000">
+    4,5
+  </text>
   <line stroke="#000000" stroke-width="18" x1="921" y1="922" x2="904" y2="922" />
   <line stroke="#000000" stroke-width="18" x1="921" y1="1030" x2="904" y2="1030" />
   <line stroke="#000000" stroke-width="18" x1="921" y1="1138" x2="904" y2="1138" />
@@ -3433,6 +3523,9 @@
   <line stroke="#000000" stroke-width="18" x1="921" y1="5989" x2="904" y2="5989" />
   <line stroke="#000000" stroke-width="18" x1="921" y1="6097" x2="904" y2="6097" />
   <line stroke="#000000" stroke-width="18" x1="921" y1="6205" x2="904" y2="6205" />
+  <text x="283" y="0" font-family="Arial" font-size="12" fill="#000000">
+    Valeur propre
+  </text>
   <path stroke="#000000" stroke-width="18" d="M 9218 815 L 9218 6205 " />
   <line stroke="#000000" stroke-width="18" x1="9182" y1="815" x2="9218" y2="815" />
   <line stroke="#000000" stroke-width="18" x1="9182" y1="1354" x2="9218" y2="1354" />
