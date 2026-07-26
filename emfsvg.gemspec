@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.adoc"
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  spec.files = Dir.glob("lib/**/*.rb") + %w[README.adoc LICENSE.txt]
+  spec.files = Dir.glob("lib/**/*.rb") + Dir.glob("lib/**/*.txt") + %w[README.adoc LICENSE.txt]
   spec.bindir = "exe"
   spec.executables = %w[emfsvg]
   spec.require_paths = %w[lib]
