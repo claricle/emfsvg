@@ -1,0 +1,79 @@
+# frozen_string_literal: true
+
+require "spec_helper"
+
+# Specs for Emfsvg::FormatHelpers — C-printf-compatible float formatting.
+#
+# These specs document the contract that fmt() must produce the same
+# output as libemf2svg's C printf("%.4f", v) for any IEEE-754 double,
+# including values whose decimal display is a midpoint but whose stored
+# bits are slightly above or below (e.g. 459.04375 is stored as
+# 459.04374999… and must round to "459.0437", not "459.0438").
+RSpec.describe Emfsvg::FormatHelpers do
+  describe ".fmt" do
+    it "formats a simple integer" do
+      expect(described_class.fmt(1)).to eq("1.0000")
+    end
+
+    it "formats a fractional value" do
+      expect(described_class.fmt(0.5)).to eq("0.5000")
+    end
+
+    it "preserves 4 decimal places" do
+      expect(described_class.fmt(123.4)).to eq("123.4000")
+    end
+
+    it "rounds half-to-even on exact-midpoint doubles" do
+      # 4499.03125 is exactly representable as a double → midpoint.
+      # C printf rounds to even → "4499.0312".
+      expect(described_class.fmt(4499.03125)).to eq("4499.0312")
+    end
+
+    it "rounds based on actual stored bits for sub-midpoint display values" do
+      # 459.04375 displays as a midpoint but is stored as 459.04374999…
+      # C reads the actual bits → "459.0437".
+      expect(described_class.fmt(459.04375)).to eq("459.0437")
+    end
+
+    it "rounds based on actual stored bits for super-midpoint display values" do
+      # 330.70375 displays as a midpoint but is stored as 330.70375000…01
+      # → "330.7038".
+      expect(described_class.fmt(330.70375)).to eq("330.7038")
+    end
+
+    it "handles negative values" do
+      expect(described_class.fmt(-459.04375)).to eq("-459.0437")
+    end
+
+    it "handles zero" do
+      expect(described_class.fmt(0)).to eq("0.0000")
+    end
+
+    it "truncates extra decimals" do
+      expect(described_class.fmt(1.123456789)).to eq("1.1235")
+    end
+
+    it "accepts string input" do
+      expect(described_class.fmt("459.04375")).to eq("459.0437")
+    end
+
+    it "accepts integer input" do
+      expect(described_class.fmt(42)).to eq("42.0000")
+    end
+  end
+
+  describe ".fmt_xy" do
+    it "formats a coordinate pair with trailing space" do
+      expect(described_class.fmt_xy(1.5, 2.5)).to eq("1.5000,2.5000 ")
+    end
+
+    it "applies the same rounding as fmt" do
+      expect(described_class.fmt_xy(459.04375, 330.70375))
+        .to eq("459.0437,330.7038 ")
+    end
+
+    it "handles negative coordinates" do
+      expect(described_class.fmt_xy(-1.0, -2.0)).to eq("-1.0000,-2.0000 ")
+    end
+  end
+end

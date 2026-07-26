@@ -1,0 +1,42 @@
+= Changelog
+
+All notable changes to `emfsvg` will be documented in this file.
+
+== [Unreleased]
+
+=== Added
+
+* EMF+ structured rendering (after `emf` lands its EMF+ parser).
+* Bitmap record rendering (StretchDIBits, AlphaBlend, TransparentBlt).
+* Arc / Chord / Pie reconstruction.
+* Bezier curve reconstruction.
+
+== [0.1.0] — 2026-07-24
+
+=== Added
+
+* Initial release of `emfsvg`.
+* Public API: `Emfsvg.to_svg`, `Emfsvg.from_file`, `Emfsvg.from_bytes`,
+  `Emfsvg.from_bytes`.
+* `Emfsvg::Renderer` orchestrates the metafile walk.
+* `Emfsvg::SvgBuilder` lightweight XML builder (no external dep).
+* `Emfsvg::DeviceContext` GDI state snapshot (pen, brush, transform,
+  text/bk colors, miter limit).
+* `Emfsvg::ObjectTable` 1-indexed pen/brush registry.
+* `Emfsvg::TransformStack` SaveDC/RestoreDC stack.
+* `Emfsvg::Visitors::EmrVisitor` walks records and dispatches to
+  per-record handlers.
+* Handlers for: Rectangle, Ellipse, RoundRect, LineTo, MoveToEx,
+  Polygon/Polyline (16-bit variants), path begin/end/close/fill/stroke,
+  SetTextColor, SetBkColor, SetBkMode, SetMapMode, SetPolyFillMode,
+  SetTextAlign, SetRop2, SetStretchBltMode, SetWorldTransform,
+  ModifyWorldTransform, SetMiterLimit, CreatePen, CreateBrushIndirect,
+  SelectObject, DeleteObject, SaveDc, RestoreDc, SetWindow/Viewport
+  Org/Ext.
+* `emfsvg` CLI: `convert` subcommand with `--width`, `--height`,
+  `--namespace`, `--verbose`, `--emf-plus` options. Plus `version` and
+  `help`.
+* Sparx/Wine Y-repair heuristic (matches libemf2svg's `fixBrokenYTransform`).
+* Output-size guard: refuses to emit more than 500 MB of SVG.
+* 27 specs, 0 failures. Rubocop clean.
+* CI workflow for Ruby 3.1–3.4.

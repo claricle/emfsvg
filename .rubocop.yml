@@ -1,0 +1,112 @@
+---
+inherit_from: .rubocop_todo.yml
+
+plugins:
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  SuggestExtensions: false
+  Exclude:
+    - "pkg/**/*"
+    - "vendor/**/*"
+    - "spec/fixtures/**/*"
+
+Layout/LineLength:
+  Max: 140
+
+Metrics/MethodLength:
+  Max: 35
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Metrics/ModuleLength:
+  Max: 400
+
+Metrics/ClassLength:
+  Max: 400
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Metrics/AbcSize:
+  Max: 70
+  Exclude:
+    - "lib/emfsvg/renderer.rb"
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Metrics/CyclomaticComplexity:
+  Max: 16
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Metrics/PerceivedComplexity:
+  Max: 18
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Lint/UselessConstantScoping:
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Metrics/ParameterLists:
+  Max: 11
+
+Metrics/BlockLength:
+  Exclude:
+    - "emfsvg.gemspec"
+    - "spec/**/*"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Naming/MethodParameterName:
+  AllowedNames:
+    - x
+    - y
+    - cx
+    - cy
+    - dx
+    - dy
+    - m11
+    - m12
+    - m21
+    - m22
+    - id
+    - io
+    - dc
+    - b
+    - t
+    - l
+    - r
+    - d
+    - a
+    - w
+    - h
+    - n
+
+Lint/FloatComparison:
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+
+Style/FormatStringToken:
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+    - "lib/emfsvg/svg_builder.rb"
+    - "lib/emfsvg/compat.rb"
+
+Lint/MissingSuper:
+  Exclude:
+    - "lib/emfsvg/**/*.rb"
+
+Lint/DuplicateBranch:
+  Exclude:
+    - "lib/emfsvg/visitors/emr_visitor.rb"
+    - "lib/emfsvg/clip_region.rb"

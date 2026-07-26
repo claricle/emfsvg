@@ -1,0 +1,104 @@
+= emfsvg: pure-Ruby EMF to SVG transformer
+
+`emfsvg` converts Microsoft Enhanced Metafile (EMF) documents to SVG
+using the [`emf`](https://github.com/claricle/emf) gem's domain model.
+It is a clean-room Ruby replacement for the FFI wrapper around the
+GPLv2 `libemf2svg` C library.
+
+== Synopsis
+
+  require "emfsvg"
+
+  svg = Emfsvg.from_file("image.emf")
+  svg = Emfsvg.from_bytes(emf_bytes, width: 400, height: 300)
+  metafile = Emf.parse(emf_bytes)
+  svg = Emfsvg.to_svg(metafile, namespace: "svg")
+
+== Command-line tool
+
+  emfsvg convert INPUT.emf OUTPUT.svg [options]
+
+Options:
+
+  -w, --width PIXELS      Override viewport width
+  -h, --height PIXELS     Override viewport height
+  -n, --namespace NAME    XML namespace prefix (e.g. svg)
+  -v, --verbose           Print record-by-record dispatch to STDERR
+      --emf-plus          Render EMF+ records instead of EMF fallback
+
+== Architecture
+
+`emfsvg` adds a renderer layer on top of `emf`'s domain model:
+
+  Emf::Model::Metafile
+       v
+  Emfsvg::Renderer
+       v
+  Emfsvg::Visitors::EmrVisitor
+       v
+  Emfsvg::SvgBuilder (XML)
+       v
+  Emfsvg::DeviceContext (GDI state)
+       v
+  Emfsvg::ObjectTable (1-indexed pen/brush/font handles)
+
+The renderer walks the metafile's records, dispatching each to a
+`visit_<record_type>` method on the visitor. State changes (pen,
+brush, transform, clip) flow through the `DeviceContext`; persistent
+objects are stored in the `ObjectTable`.
+
+=== Handlers
+
+The visitor handles a useful subset of EMF records out of the box:
+
+* *Primitives*: `Rectangle`, `Ellipse`, `RoundRect`, `LineTo`,
+  `MoveToEx`, `Arc` (stub), `Polygon`, `Polyline` + 16-bit variants
+* *Paths*: `BeginPath`/`EndPath`/`CloseFigure`/`FillPath`/`StrokePath`/
+  `StrokeAndFillPath`/`AbortPath`
+* *State*: `SetTextColor`, `SetBkColor`, `SetBkMode`, `SetMapMode`,
+  `SetRop2`, `SetPolyFillMode`, `SetTextAlign`, `SetStretchBltMode`
+* *Transform*: `SetWorldTransform`, `ModifyWorldTransform`
+* *Objects*: `CreatePen`, `CreateBrushIndirect`, `SelectObject`,
+  `DeleteObject`, `SaveDc`, `RestoreDc`
+* *Misc*: `SetMiterLimit`, `SetWindowExtEx`, `SetViewportExtEx`
+
+Unsupported record types fall through silently (verbose mode logs
+them).
+
+=== Sparx/Wine Y-repair
+
+EMFs from Sparx Enterprise Architect under Wine have only the Y anchor
+negated. The detector (`rclBounds.top * rclBounds.bottom < 0`) and the
+per-coordinate repair live in `Emfsvg::Renderer` and
+`Emfsvg::Visitors::EmrVisitor#maybe_flip_y`, matching the behaviour
+of the C library.
+
+== Installation
+
+  gem install emfsvg
+
+Or in your Gemfile:
+
+  gem "emfsvg", "~> 0.1"
+  gem "emf", "~> 0.1"
+
+Requires Ruby >= 3.1.
+
+== Development
+
+  git clone https://github.com/claricle/emfsvg
+  cd emfsvg
+  bundle install
+  bundle exec rspec
+  bundle exec rubocop
+
+== Status
+
+EMF-to-SVG renders the common subset of records from the EMF
+fixtures. Bitmap records (StretchDIBits, AlphaBlend, etc.) and
+EMF+ drawing records are not yet rendered. Corrupted inputs are
+resilient through the `emf` parser's hardened error handling.
+
+== License
+
+BSD-2-Clause. See `LICENSE.txt`.

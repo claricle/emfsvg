@@ -1,0 +1,69 @@
+#! /usr/bin/env ruby
+# frozen_string_literal: true
+
+require "optparse"
+
+$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+require "emfsvg"
+
+module EmfsvgCLI
+  module_function
+
+  def run(argv)
+    command = argv.shift
+    case command
+    when "convert" then convert(argv)
+    when "version", "-V", "--version"
+      puts "emfsvg #{Emfsvg::VERSION}"
+    when "help", "-h", "--help", nil
+      print_help
+    else
+      warn "emfsvg: unknown command '#{command}'"
+      print_help
+      exit 1
+    end
+  end
+
+  def convert(argv)
+    options = {}
+    parser = OptionParser.new do |opts|
+      opts.banner = "Usage: emfsvg convert [OPTIONS] INPUT.emf OUTPUT.svg"
+      opts.on("-w", "--width PIXELS", Integer, "Override viewport width") { |v| options[:width] = v }
+      opts.on("-h", "--height PIXELS", Integer, "Override viewport height") { |v| options[:height] = v }
+      opts.on("-n", "--namespace NAME", "XML namespace prefix (e.g. svg)") { |v| options[:namespace] = v }
+      opts.on("-v", "--verbose", "Print record-by-record dispatch to STDERR") { options[:verbose] = true }
+      opts.on("--emf-plus", "Render EMF+ records instead of EMF fallback") { options[:emf_plus] = true }
+    end
+
+    args = parser.parse(argv)
+    if args.length != 2
+      warn parser
+      exit 2
+    end
+
+    input, output = args
+    svg = Emfsvg.from_file(input, **options)
+    File.write(output, svg)
+    warn "Wrote #{output} (#{svg.bytesize} bytes)"
+  end
+
+  def print_help
+    puts <<~HELP
+      emfsvg #{Emfsvg::VERSION} — EMF to SVG transformer
+
+      Usage:
+        emfsvg convert INPUT.emf OUTPUT.svg [options]
+        emfsvg version
+        emfsvg help
+
+      Options:
+        -w, --width PIXELS      Override viewport width
+        -h, --height PIXELS     Override viewport height
+        -n, --namespace NAME    XML namespace prefix (e.g. svg)
+        -v, --verbose           Print record-by-record dispatch to STDERR
+            --emf-plus          Render EMF+ records instead of EMF fallback
+    HELP
+  end
+end
+
+EmfsvgCLI.run(ARGV)
