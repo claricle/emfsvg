@@ -6,6 +6,7 @@ module Emfsvg
   autoload :VERSION, "emfsvg/version"
   autoload :Error, "emfsvg/error"
   autoload :FormatError, "emfsvg/error"
+  autoload :ParseError, "emfsvg/error"
   autoload :RenderError, "emfsvg/error"
   autoload :Renderer, "emfsvg/renderer"
   autoload :DeviceContext, "emfsvg/device_context"
@@ -19,6 +20,10 @@ module Emfsvg
   autoload :BsdRand, "emfsvg/bsd_rand"
   autoload :FormatHelpers, "emfsvg/format_helpers"
   autoload :GlyphIndexMapper, "emfsvg/glyph_index_mapper"
+  autoload :PngDecoder, "emfsvg/png_decoder"
+  autoload :DibEncoder, "emfsvg/dib_encoder"
+  autoload :Svg, "emfsvg/svg"
+  autoload :Translation, "emfsvg/translation"
 
   class << self
     # Render an Emf::Model::Metafile to an SVG string.
@@ -43,6 +48,22 @@ module Emfsvg
     # Parse from a file path then render.
     def from_file(path, **options)
       from_bytes(File.binread(path), **options)
+    end
+
+    # Translate an Svg::Document to EMF bytes.
+    def to_emf(document)
+      metafile = Translation::EmfRenderer.call(document)
+      Emf.serialize(metafile)
+    end
+
+    # Parse SVG string and translate to EMF bytes.
+    def from_svg(svg_string)
+      to_emf(Svg::Parser.call(svg_string))
+    end
+
+    # Parse SVG from a file path and translate to EMF bytes.
+    def from_svg_file(path)
+      from_svg(File.read(path))
     end
   end
 end

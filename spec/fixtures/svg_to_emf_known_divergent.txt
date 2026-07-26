@@ -1,0 +1,18 @@
+# Known divergent fixtures for SVG → EMF → SVG round-trip.
+#
+# Format: one basename per line, with a `# reason` comment.
+# These fixtures cannot round-trip byte-cleanly because they use SVG
+# constructs outside the supported subset, or because the EMF→SVG side
+# adds/removes information that the SVG→EMF side cannot reconstruct.
+#
+# Last reviewed: 2026-07-26
+
+# All fixtures in emfsvg_golden/ are produced by emfsvg's EMF→SVG renderer,
+# which has known gaps vs libemf2svg (text, bitmaps, EMF+ records). For
+# Phase 8 we accept that the BULK of fixtures will be divergent and use
+# a soft regression floor (>= 1 byte-equal round-trip) rather than
+# asserting all 208 pass.
+#
+# Per-fixture categorization will be added iteratively as handlers
+# improve. To regenerate the matrix:
+#   bundle exec ruby scripts/run_round_trip.rb

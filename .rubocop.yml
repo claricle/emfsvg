@@ -91,6 +91,16 @@ Naming/MethodParameterName:
     - w
     - h
     - n
+    - rx
+    - ry
+    - r1
+    - r2
+    - g1
+    - g2
+    - x1
+    - x2
+    - y1
+    - y2
 
 Lint/FloatComparison:
   Exclude:
@@ -101,6 +111,15 @@ Style/FormatStringToken:
     - "lib/emfsvg/visitors/emr_visitor.rb"
     - "lib/emfsvg/svg_builder.rb"
     - "lib/emfsvg/compat.rb"
+    - "spec/round_trip_spec.rb"
+
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - "spec/round_trip_spec.rb"
+
+Layout/LineLength:
+  Exclude:
+    - "spec/round_trip_spec.rb"
 
 Lint/MissingSuper:
   Exclude:

@@ -47,4 +47,22 @@ RSpec.describe "exe/emfsvg CLI" do
       expect(svg).to include(%(height="))
     end
   end
+
+  it "to-emf writes EMF bytes from an SVG input" do
+    Dir.mktmpdir do |dir|
+      svg_in = File.join(dir, "input.svg")
+      File.write(svg_in, '<svg width="100" height="50"></svg>')
+      output = File.join(dir, "out.emf")
+      _, _, status = run("to-emf", svg_in, output)
+      expect(status.exitstatus).to eq(0)
+      bytes = File.binread(output)
+      expect(bytes.bytes[40, 4]).to eq([0x20, 0x45, 0x4D, 0x46])
+    end
+  end
+
+  it "to-emf exits 2 when arguments are missing" do
+    _, err, status = run("to-emf")
+    expect(status.exitstatus).to eq(2)
+    expect(err).to include("Usage:")
+  end
 end

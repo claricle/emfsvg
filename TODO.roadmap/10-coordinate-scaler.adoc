@@ -1,0 +1,100 @@
+= Phase 10: Decimal-coordinate support via MapMode
+
+Status: infrastructure landed (Scaler, DecimalDetector, Context helpers,
+handler refactor to use Context.point_l / rect_l / size_l). Automatic
+activation deferred — Fixed scaler interacts with emfsvg's renderer in
+ways that drop some drawing records (27 fewer elements on test-001).
+The Scaler infrastructure is sound: synthetic decimal-coord SVGs round-trip
+correctly. The record-drop issue requires debugging emfsvg's renderer
+behaviour under non-trivial MapMode + decimal coords + clip wrapping.
+
+== Goal
+
+emfsvg's EMF→SVG renderer emits decimal coordinates (e.g.
+`font-size="11.9910"`, `<path d="M 306.6667,...">`) when the source
+EMF uses a non-MM_TEXT map mode with a non-trivial scale factor
+(`sf_x = viewport_ext / window_ext`).
+
+The current SVG→EMF translation truncates all coordinates to int32
+with `to_i`, assuming `sf_x=1`. That loses precision: input
+`306.6667` becomes EMF int `306`, emfsvg re-renders as `306.0000`.
+This is the root cause of the `font attr` (9), `geometry attr` (3),
+and `path d` (3) failure categories — 15/30 of the current scan.
+
+== Approach
+
+Add a `Scaler` abstraction that converts SVG decimal coordinates to
+EMF int32 coordinates with a chosen scale factor.
+
+* `Emfsvg::Translation::Scaler::Identity` — `to_int(x) = x.to_i`
+  (current behaviour, used when SVG has no decimal coords).
+* `Emfsvg::Translation::Scaler::Fixed` — `to_int(x) = (x * FACTOR).round`
+  with `FACTOR = 10_000` (4 decimal places, matching emfsvg's `%.4f`
+  output format).
+
+The renderer picks the scaler by walking the SVG element tree before
+dispatch and checking if any coordinate attribute has a non-integer
+value. If yes, installs `Scaler::Fixed` and emits three preparatory
+records at the head of the EMF:
+
+  SetMapMode(MM_ANISOTROPIC = 8)
+  SetWindowExtEx(10_000, 10_000)
+  SetViewportExtEx(1, 1)
+
+emfsvg's renderer then computes `sf_x = 1/10_000 = 0.0001`. For an
+EMF int coord of `1_199_100`, `cal_x` returns `11.991`, formatted as
+`"11.9910"`. Round-trip byte-equality preserved.
+
+== Why scale factor 10_000
+
+emfsvg formats coordinates with `%.4f` (4 decimal places). A scale
+factor of 10_000 matches that precision exactly — no rounding loss
+in either direction. Larger factors (100_000+) overflow int32 for
+typical large coords (e.g. `23998 * 100_000 = 2_399_800_000` is
+near the int32 max of `2_147_483_647`).
+
+For coords larger than ~200_000 in SVG units, the scaler downgrades
+to `Identity` automatically (with a warning) to avoid overflow.
+
+== Deliverables
+
+* `lib/emfsvg/translation/scaler.rb` — `Scaler` module namespace
+* `lib/emfsvg/translation/scaler/identity.rb` — identity scaler
+* `lib/emfsvg/translation/scaler/fixed.rb` — fixed-factor scaler
+* `lib/emfsvg/translation/decimal_detector.rb` — walks SVG, decides
+  if Scale::Fixed is needed
+* `lib/emfsvg/translation/context.rb` — gains `scaler` accessor +
+  `point_l` / `rect_l` / `size_l` helpers that route through scaler
+* All handlers — replace their local `point_l`/`rect_l` methods with
+  the Context helpers (DRY: one path for scaling)
+* `lib/emfsvg/translation/emf_renderer.rb` — runs DecimalDetector,
+  installs scaler, emits MapMode records when needed
+* `lib/emfsvg/translation/header_builder.rb` — bounds stay in
+  device units (NOT scaled); only drawing coords scale
+* Specs for scaler, detector, and end-to-end round-trip with decimal
+  coords
+
+== Acceptance criteria
+
+* A synthetic SVG with `<rect x="10.5" y="20.25" width="100.123"
+  height="50.987"/>` round-trips byte-equal.
+* The 15 `font attr` / `geometry attr` / `path d` failures in the
+  30-fixture scan drop to 0 (or near 0).
+* Existing integer-coord synthetic SVGs still round-trip (Identity
+  scaler preserves prior behaviour).
+* No int32 overflow on coords up to ~200_000 SVG units.
+* Rubocop clean. Spec coverage for scaler + detector.
+
+== Architecture notes
+
+The scaler lives on Context (not threaded through method args)
+because:
+
+* It's a cross-cutting concern — every handler needs it.
+* The dispatcher already injects Context; no API churn.
+* Scaler is chosen once per translation (not per element), so a
+  shared reference is appropriate.
+
+OCP: adding a new scaler (e.g. a fractional-aware scaler that picks
+the smallest factor covering all decimals) means adding a new class
+in `scaler/`, not editing existing handlers.

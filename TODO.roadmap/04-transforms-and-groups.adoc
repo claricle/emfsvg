@@ -1,0 +1,45 @@
+= Phase 04: Transforms and groups
+
+Status: done
+
+== Goal
+
+Translate SVG `<g>` grouping and `transform="..."` attribute into
+`SaveDC` / `SetWorldTransform` / `ModifyWorldTransform` / `RestoreDC`
+records.
+
+Depends on: link:03-shape-handlers.adoc[Phase 03].
+
+== Deliverables
+
+* `lib/emfsvg/svg/transform.rb` — `Svg::TransformParser` parses
+  `transform="..."` syntax: `translate()`, `scale()`, `rotate()`,
+  `matrix()`, `skewX()`, `skewY()`. Returns an `Emf::Model::Geometry
+  ::Matrix` (compose left-to-right).
+* `lib/emfsvg/translation/handlers/group_handler.rb` — `<g>` handler.
+  Emits `SaveDC` at entry, `SetWorldTransform`/`ModifyWorldTransform`
+  if transform= present, recurses into children, `RestoreDC` at exit.
+* `lib/emfsvg/svg/elements/group.rb` — fill in (children list,
+  optional transform).
+* `spec/svg/transform_parser_spec.rb`.
+* `spec/translation/handlers/group_handler_spec.rb`.
+
+== Composition order
+
+SVG transforms compose left-to-right; the leftmost transform is
+applied last to coordinates. Equivalent EMF: emit
+`SetWorldTransform(M_n × ... × M_1)` once with the composed matrix.
+
+|===
+| SVG | EMF
+| `transform="translate(10,0) scale(2)"` | `SetWorldTransform(translate × scale)`
+| `<g transform="...">`                  | `SaveDC` + `SetWorldTransform(...)` + children + `RestoreDC(-1)`
+|===
+
+== Acceptance criteria
+
+* Transform parser handles all 6 functions, with optional commas,
+  multiple functions in sequence.
+* Group handler emits SaveDC before children, RestoreDC(-1) after.
+* Round-trip: SVGs containing nested `<g transform=...>` groups
+  round-trip byte-clean.

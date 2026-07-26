@@ -1,0 +1,34 @@
+= Phase 07: Images
+
+Status: done (PNG data URIs only)
+
+== Goal
+
+Translate SVG `<image xlink:href="data:...">` into `StretchDIBits`
+records with embedded DIB data.
+
+Depends on: link:03-shape-handlers.adoc[Phase 03].
+
+== Deliverables
+
+* `lib/emfsvg/png_decoder.rb` — decode PNG bytes to RGBA pixel buffer
+  + dimensions. Wraps the `libpng` gem (already a runtime dep).
+* `lib/emfsvg/dib_encoder.rb` — encode RGBA pixels + dimensions to
+  Windows DIB (BITMAPINFOHEADER + pixel array). The inverse of the
+  existing `DibDecoder`.
+* `lib/emfsvg/translation/handlers/image_handler.rb`
+* `lib/emfsvg/svg/elements/image.rb`
+* Specs.
+
+== Out of scope for v1
+
+* Non-data-URI `href` (file paths, http URLs).
+* JPEG embedded in DIB (`biJPEG`).
+* `<use>` referencing `<image>`.
+
+== Acceptance criteria
+
+* `<image href="data:image/png;base64,...">` round-trips byte-clean
+  through SVG→EMF→SVG.
+* Non-PNG data URIs (e.g. `data:image/jpeg`) — decode best-effort or
+  list as divergent.
