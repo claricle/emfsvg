@@ -1,0 +1,52 @@
+= Phase 02: SVG path-data parser
+
+Status: done
+
+== Goal
+
+Standalone, fully-spec'd tokenizer for SVG path `d="..."` attribute.
+Pure parser, no EMF concerns. Used by Phase 03's `<path>` handler.
+
+Depends on: nothing (pure parser, can land before Phase 01).
+
+== Deliverables
+
+* `lib/emfsvg/svg/path_data.rb` — `Svg::PathData` module with `.parse
+  (string)` returning a list of commands.
+* `lib/emfsvg/svg/path_data/command.rb` — `PathData::Command` struct:
+  `letter` (e.g. `"M"`, `"L"`, `"c"`), `args` array of floats.
+* `spec/svg/path_data_spec.rb` — exhaustive coverage.
+
+== Commands to support
+
+|===
+| Letter | Args | Notes
+| M / m  | x y          | move; subsequent pairs are implicit L
+| L / l  | x y          | line
+| H / h  | x            | horizontal line
+| V / v  | y            | vertical line
+| C / c  | x1 y1 x2 y2 x y | cubic bezier
+| S / s  | x2 y2 x y    | smooth cubic
+| Q / q  | x1 y1 x y    | quadratic bezier
+| T / t  | x y          | smooth quadratic
+| A / a  | rx ry x-axis-rotation large-arc sweep x y | elliptical arc
+| Z / z  | (none)       | close path
+|===
+
+== Grammar notes
+
+* Commands can repeat with implicit command letter
+  (`L 1 2 3 4` = two L commands).
+* Separators: comma, whitespace, or none (e.g. `M1,2L3,4`).
+* Absolute (uppercase) vs relative (lowercase) preserved in `letter`.
+* Arc command's `large-arc-flag` and `sweep-flag` are 0/1.
+* Scientific notation in numbers (`1e-3`).
+
+== Acceptance criteria
+
+* All commands above parse correctly with abs/rel variants.
+* Implicit repeats: `M 0 0 L 1 1 2 2` → `[M(0,0), L(1,1), L(2,2)]`.
+* Whitespace/comma/no-separator all handled.
+* Invalid input raises `Emfsvg::FormatError` with offset.
+* No use of regex for the whole parse — character-by-character state
+  machine. (Regex for individual number tokens is fine.)

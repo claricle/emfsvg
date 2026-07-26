@@ -5,5 +5,7 @@ module Emfsvg
 
   class FormatError < Error; end
 
+  class ParseError < Error; end
+
   class RenderError < Error; end
 end

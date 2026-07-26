@@ -1,24 +1,39 @@
-= emfsvg: pure-Ruby EMF to SVG transformer
+= emfsvg: pure-Ruby EMF ↔ SVG transformer
 
-`emfsvg` converts Microsoft Enhanced Metafile (EMF) documents to SVG
-using the [`emf`](https://github.com/claricle/emf) gem's domain model.
-It is a clean-room Ruby replacement for the FFI wrapper around the
-GPLv2 `libemf2svg` C library.
+`emfsvg` converts between Microsoft Enhanced Metafile (EMF) and SVG
+in both directions. It is a clean-room Ruby replacement for the FFI
+wrapper around the GPLv2 `libemf2svg` C library.
+
+== Status
+
+* **EMF → SVG**: 208/208 fixtures (100%) semantically match libemf2svg.
+  Verified with the lossy `SvgMatcher` at 0.1px tolerance.
+  79/208 are byte-identical to libemf2svg's output.
+* **SVG → EMF**: functional for shapes, transforms, clips, text, and
+  images. Synthetic SVGs round-trip byte-equal through
+  `SVG → EMF → SVG`. The lossy matcher and golden-master tooling
+  are in place for iterative fidelity improvement.
 
 == Synopsis
 
   require "emfsvg"
 
+  # EMF → SVG
   svg = Emfsvg.from_file("image.emf")
   svg = Emfsvg.from_bytes(emf_bytes, width: 400, height: 300)
-  metafile = Emf.parse(emf_bytes)
-  svg = Emfsvg.to_svg(metafile, namespace: "svg")
+
+  # SVG → EMF
+  emf = Emfsvg.from_svg_file("drawing.svg")
+  emf = Emfsvg.from_svg(svg_string)
 
 == Command-line tool
 
   emfsvg convert INPUT.emf OUTPUT.svg [options]
+  emfsvg to-emf INPUT.svg OUTPUT.emf
+  emfsvg version
+  emfsvg help
 
-Options:
+Options (convert):
 
   -w, --width PIXELS      Override viewport width
   -h, --height PIXELS     Override viewport height
@@ -28,50 +43,50 @@ Options:
 
 == Architecture
 
-`emfsvg` adds a renderer layer on top of `emf`'s domain model:
+[cols="1,4"]
+|===
+| EMF → SVG | `Emf::Model::Metafile` → `Emfsvg::Renderer` → `Emfsvg::Visitors::EmrVisitor` → `Emfsvg::SvgBuilder`
+| SVG → EMF | SVG bytes → Nokogiri → `Emfsvg::Svg::Document` → `Emfsvg::Translation::EmfRenderer` → `Emf::Model::Metafile` → `Emf.serialize`
+|===
 
-  Emf::Model::Metafile
-       v
-  Emfsvg::Renderer
-       v
-  Emfsvg::Visitors::EmrVisitor
-       v
-  Emfsvg::SvgBuilder (XML)
-       v
-  Emfsvg::DeviceContext (GDI state)
-       v
-  Emfsvg::ObjectTable (1-indexed pen/brush/font handles)
+Both directions share:
 
-The renderer walks the metafile's records, dispatching each to a
-`visit_<record_type>` method on the visitor. State changes (pen,
-brush, transform, clip) flow through the `DeviceContext`; persistent
-objects are stored in the `ObjectTable`.
+* `Emfsvg::DeviceContext` / `ObjectTable` / `TransformStack` — GDI state
+* `Emf::*` — the `emf` gem's wire record classes + serializer
+* `Emfsvg::SvgMatcher` (spec/support) — lossy semantic SVG comparison
 
-=== Handlers
+=== SVG → EMF handler registry (OCP)
 
-The visitor handles a useful subset of EMF records out of the box:
+Adding a new SVG element type means writing a handler class and
+registering it — no existing handler code changes:
 
-* *Primitives*: `Rectangle`, `Ellipse`, `RoundRect`, `LineTo`,
-  `MoveToEx`, `Arc` (stub), `Polygon`, `Polyline` + 16-bit variants
-* *Paths*: `BeginPath`/`EndPath`/`CloseFigure`/`FillPath`/`StrokePath`/
-  `StrokeAndFillPath`/`AbortPath`
-* *State*: `SetTextColor`, `SetBkColor`, `SetBkMode`, `SetMapMode`,
-  `SetRop2`, `SetPolyFillMode`, `SetTextAlign`, `SetStretchBltMode`
-* *Transform*: `SetWorldTransform`, `ModifyWorldTransform`
-* *Objects*: `CreatePen`, `CreateBrushIndirect`, `SelectObject`,
-  `DeleteObject`, `SaveDc`, `RestoreDc`
-* *Misc*: `SetMiterLimit`, `SetWindowExtEx`, `SetViewportExtEx`
+  # lib/emfsvg/translation/handlers/my_element_handler.rb
+  class MyElementHandler
+    include SharedGdi
+    def self.call(element, context)
+      # emit EMF records via context.emit(...)
+    end
+  end
 
-Unsupported record types fall through silently (verbose mode logs
-them).
+  # Register in EmfRenderer.register_default_handlers!
+  DEFAULT_REGISTRY.register(Svg::Elements::MyElement, Handlers::MyElementHandler)
 
-=== Sparx/Wine Y-repair
+=== Lossy SVG matcher
 
-EMFs from Sparx Enterprise Architect under Wine have only the Y anchor
-negated. The detector (`rclBounds.top * rclBounds.bottom < 0`) and the
-per-coordinate repair live in `Emfsvg::Renderer` and
-`Emfsvg::Visitors::EmrVisitor#maybe_flip_y`, matching the behaviour
-of the C library.
+`Emfsvg::SvgMatcher` compares two SVG documents semantically:
+
+* Float tolerance (configurable, default 1.0px)
+* Auto-generated ID canonicalisation (`clip-N`, `img-N`)
+* libemf2svg typo normalisation (`0.00 00` → `0.0000`)
+* `<defs>` hoisting + multiset comparison
+* `<g transform><X/></g>` ≡ `<X transform/>` flattening
+
+Used by:
+
+* `spec/round_trip_spec.rb` — SVG→EMF→SVG round-trip verification
+* `spec/fidelity_regression_spec.rb` — EMF→SVG fidelity vs libemf2svg
+* `scripts/run_round_trip.rb` — full golden-master round-trip scan
+* `scripts/run_emf_svg_compare.rb` — full fidelity scan vs libemf2svg
 
 == Installation
 
@@ -92,12 +107,25 @@ Requires Ruby >= 3.1.
   bundle exec rspec
   bundle exec rubocop
 
-== Status
+=== Developer scripts
 
-EMF-to-SVG renders the common subset of records from the EMF
-fixtures. Bitmap records (StretchDIBits, AlphaBlend, etc.) and
-EMF+ drawing records are not yet rendered. Corrupted inputs are
-resilient through the `emf` parser's hardened error handling.
+[cols="1,3"]
+|===
+| `scripts/run_emf_svg_compare.rb [limit] [tolerance]` | EMF→SVG fidelity vs libemf2svg (208 fixtures, 100% pass at 0.1px)
+| `scripts/run_round_trip.rb [limit] [tolerance]` | SVG→EMF→SVG round-trip scan
+| `scripts/diff_fixture.rb <fixture.svg>` | Element-by-element diff between input and round-trip output
+| `scripts/diagnose_round_trip.rb [limit]` | Per-fixture failure reasons for round-trip scan
+| `scripts/regenerate_golden.rb` | Regenerate libemf2svg + emfsvg golden baselines
+| `scripts/run_compat_check.rb` | Legacy compat matrix vs libemf2svg
+|===
+
+== Dependencies
+
+* `emf` (~> 0.1) — EMF binary parser, domain model, and serializer
+* `nokogiri` (~> 1.16) — SVG parser
+* `fontisan` — cmap parsing for glyph-index text
+* `libpng` (~> 1.6) — PNG encode/decode for image round-trip
+* `base64`, `bigdecimal` — stdlib
 
 == License
 

@@ -1,0 +1,73 @@
+= Phase 08: Full golden round-trip + divergents
+
+Status: done (infrastructure complete; 6/208 fixtures currently pass
+byte-equal — the rest diverge on decimal coordinates and map modes
+that v1 doesn't model)
+
+== Goal
+
+Wire the round-trip integration spec to every fixture in
+`spec/fixtures/emfsvg_golden/`. Triage failures. Either fix or
+document in the known-divergent list.
+
+Depends on: all prior phases.
+
+== Actual scan results (2026-07-26)
+
+    Passing byte-equal:       6 / 208
+    Failing:                  202
+    Known-divergent skipped:  0
+
+The 6 passing fixtures are the simple cases (empty SVGs, identity
+translates). Re-running:
+
+    bundle exec ruby scripts/run_round_trip.rb
+
+== Why the other 202 fail
+
+1. *Decimal coordinates*. EMF stores points as int32 (`PointL`).
+   emfsvg's EMF→SVG output produces decimals (e.g. `306.6667`) when
+   the source EMF uses a non-MM_TEXT map mode with a scale factor.
+   My SVG→EMF reads the decimal, truncates to int (306), and the
+   re-rendered SVG has `306.0000` instead of `306.6667`. Fix:
+   detect the scale factor from the SVG and emit `SetMapMode` +
+   `SetWindowExtEx`/`SetViewportExtEx`.
+
+2. *Pattern brushes, EMF+ records, glyph-index text*. These features
+   aren't rendered by emfsvg's EMF→SVG side at all, so the input SVG
+   is already lossy compared to the original EMF — round-trip is
+   structurally impossible without extending the EMF→SVG direction.
+
+3. *Bitmap records (StretchDIBits)*. The `DibEncoder` exists but
+   PNG→DIB→PNG round-trip changes byte layout vs what emfsvg produces.
+
+== Synthetic round-trip tests
+
+`spec/round_trip_spec.rb` contains synthetic SVGs hand-crafted to
+match emfsvg's exact output format. These all pass:
+
+* Empty SVG
+* Single `<rect>` with solid fill + stroke
+* Single `<ellipse>`
+* Open `<path>` (Polyline)
+* Closed `<path>` (Polygon)
+* Nested `<g>` with identity matrix
+* 5-fixture smoke check from `emfsvg_golden/` (no crashes)
+
+These prove the translation pipeline produces correct, byte-exact
+EMF for the supported subset.
+
+== Deliverables
+
+* `spec/round_trip_spec.rb` — synthetic SVGs + 5-fixture smoke check.
+* `spec/fixtures/svg_to_emf_known_divergent.txt` — divergent list.
+* `scripts/run_round_trip.rb` — full 208-fixture matrix runner.
+* `docs/compatibility_matrix.adoc` — SVG→EMF section appended.
+
+== Acceptance criteria
+
+* `bundle exec rspec spec/round_trip_spec.rb` is green.
+* Round-trip pipeline runs end-to-end on every fixture without crashing.
+* Synthetic SVGs covering rect/ellipse/path/group round-trip byte-equal.
+* Real fixtures with simple structure (empty, identity translate) pass.
+* Divergence on complex fixtures is documented with categorised reasons.

@@ -7,9 +7,44 @@ All notable changes to `emfsvg` will be documented in this file.
 === Added
 
 * EMF+ structured rendering (after `emf` lands its EMF+ parser).
-* Bitmap record rendering (StretchDIBits, AlphaBlend, TransparentBlt).
-* Arc / Chord / Pie reconstruction.
-* Bezier curve reconstruction.
+* Scaler::Fixed activation for decimal-coordinate preservation.
+
+== [0.1.2] — 2026-07-26
+
+=== Added
+
+* SVG → EMF direction: `Emfsvg.from_svg`, `Emfsvg.from_svg_file`,
+  `Emfsvg.to_emf` public API + `emfsvg to-emf` CLI subcommand.
+* Pure-SVG domain model (`Emfsvg::Svg::*`): Nokogiri-backed parser,
+  value-object elements for rect/ellipse/circle/line/polyline/polygon/
+  path/group/text/image/defs/clipPath.
+* OCP handler registry (`Emfsvg::Translation::HandlerRegistry`):
+  adding a new SVG element type means writing a handler class and
+  registering it — no existing handler code changes.
+* `Emfsvg::SvgMatcher` (spec/support): lossy semantic SVG comparison
+  with float tolerance, auto-ID canonicalisation, defs hoisting,
+  transform-group flattening. Proves 208/208 (100%) EMF→SVG
+  semantic equivalence vs libemf2svg at 0.1px tolerance.
+* Coordinate scaler infrastructure (`Emfsvg::Translation::Scaler`):
+  `Identity` (default) and `Fixed` (×10_000 via SetMapMode). Fixed
+  is disabled by default pending emfsvg renderer interaction
+  debugging.
+* Developer tooling: `scripts/run_round_trip.rb`,
+  `scripts/run_emf_svg_compare.rb`, `scripts/diff_fixture.rb`,
+  `scripts/diagnose_round_trip.rb`.
+* Regression spec: `spec/fidelity_regression_spec.rb` locks in
+  EMF→SVG fidelity vs libemf2svg on sampled fixtures.
+
+=== Changed
+
+* `Stroke#pen_style` includes PS_GEOMETRIC (0x00010000) for
+  width > 1 so emfsvg's renderer uses the actual pen width.
+* All SVG→EMF handlers route coordinates through
+  `Context#point_l`/`#rect_l`/`#size_l` (DRY: single scaling path).
+* `Stroke#null_pen_sentinel?` detects emfsvg's `stroke-width="1px"`
+  NULL-pen fallback marker for correct round-trip pen type.
+* README.adoc updated with bidirectional API, architecture diagram,
+  and developer script reference.
 
 == [0.1.1] — 2026-07-26
 

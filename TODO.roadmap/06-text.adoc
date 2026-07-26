@@ -1,0 +1,39 @@
+= Phase 06: Text
+
+Status: done (basic LOGFONT + ExtTextOutW; glyph-index path out of scope)
+
+== Goal
+
+Translate SVG `<text>` elements into `CreateFontIndirectW` +
+`ExtTextOutW` records. Basic path only; glyph-index path out of scope.
+
+Depends on: link:03-shape-handlers.adoc[Phase 03].
+
+== Deliverables
+
+* `lib/emfsvg/svg/font.rb` — `Svg::Font` value object: face_name,
+  height, weight, italic, underline, strikeout, escapement. Parses
+  `font-family`, `font-size`, `font-weight`, `font-style`,
+  `text-decoration`.
+* `lib/emfsvg/svg/text_align.rb` — maps `text-anchor`
+  (start/middle/end) to EMF `SetTextAlign` flags.
+* `lib/emfsvg/translation/handlers/text_handler.rb`
+* `lib/emfsvg/svg/elements/text.rb`
+* Specs.
+
+== Out of scope for v1
+
+* Glyph-index text (ETO_GLYPH_INDEX). Fixtures using this end up in
+  the known-divergent list.
+* `<tspan>` nested positioning.
+* `<textPath>`.
+* RTL/bidirectional text (Hebrew/Arabic charsets).
+
+== Acceptance criteria
+
+* Basic LTR text with `font-family`, `font-size`, `font-weight`,
+  `text-anchor` round-trips byte-clean.
+* `SetTextAlign` emitted before each `ExtTextOutW` when alignment
+  changes.
+* Font handle lifecycle: CreateFontIndirectW + SelectObject + draw +
+  DeleteObject (per-element for v1).

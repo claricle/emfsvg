@@ -1,0 +1,45 @@
+= Phase 00: Skeleton + Public API + CLI
+
+Status: done
+
+== Goal
+
+Stand up the SVG→EMF pipeline end-to-end with no real translation yet.
+An empty/trivial SVG must produce a valid (empty) EMF that round-trips
+through `Emf.parse` and re-renders to a byte-identical empty SVG.
+
+== Deliverables
+
+* `Gemfile` / `emfsvg.gemspec`: add `nokogiri` runtime dep, drop
+  `rexml` dev dep usage where it can be replaced.
+* `lib/emfsvg/svg.rb` — namespace file with autoloads.
+* `lib/emfsvg/svg/parser.rb` — `Svg::Parser.call(string)` returns
+  `Svg::Document`. Wraps Nokogiri.
+* `lib/emfsvg/svg/document.rb` — `Svg::Document` (root + viewBox +
+  width/height attrs).
+* `lib/emfsvg/svg/element.rb` — `Svg::Element` base. Just holds the
+  Nokogiri node for now; subclasses added in later phases.
+* `lib/emfsvg/translation.rb` — namespace file.
+* `lib/emfsvg/translation/emf_renderer.rb` — orchestrator. Takes a
+  `Svg::Document`, walks elements, builds an `Emf::Model::Metafile`
+  with header + EOF, calls `Emf.serialize`.
+* `lib/emfsvg/translation/header_builder.rb` — computes EMF header
+  fields from SVG `viewBox`/`width`/`height`.
+* `lib/emfsvg.rb` — add `to_emf`, `from_svg`, `from_svg_file`
+  class methods + autoloads.
+* `exe/emfsvg` — add `to-emf` subcommand.
+* `spec/svg/parser_spec.rb`
+* `spec/emf_renderer_spec.rb` — empty SVG round-trip.
+
+== Acceptance criteria
+
+* `bundle exec rspec` passes (existing 27 + new specs).
+* `bundle exec rubocop` clean.
+* `Emfsvg.from_svg('<svg width="100" height="100"></svg>')` returns
+  EMF bytes that:
+  * Start with the EMF signature `" EMF"` (`\x20\x45\x4d\x46`).
+  * Parse cleanly via `Emf.parse(bytes)`.
+  * Render back via `Emfsvg.from_bytes(bytes)` to an SVG whose root
+    `<svg>` has matching width/height.
+* CLI: `emfsvg to-emf IN.svg OUT.emf` writes the bytes; `emfsvg help`
+  lists it.

@@ -13,6 +13,7 @@ module EmfsvgCLI
     command = argv.shift
     case command
     when "convert" then convert(argv)
+    when "to-emf" then to_emf(argv)
     when "version", "-V", "--version"
       puts "emfsvg #{Emfsvg::VERSION}"
     when "help", "-h", "--help", nil
@@ -47,16 +48,34 @@ module EmfsvgCLI
     warn "Wrote #{output} (#{svg.bytesize} bytes)"
   end
 
+  def to_emf(argv)
+    parser = OptionParser.new do |opts|
+      opts.banner = "Usage: emfsvg to-emf INPUT.svg OUTPUT.emf"
+    end
+
+    args = parser.parse(argv)
+    if args.length != 2
+      warn parser
+      exit 2
+    end
+
+    input, output = args
+    emf = Emfsvg.from_svg_file(input)
+    File.binwrite(output, emf)
+    warn "Wrote #{output} (#{emf.bytesize} bytes)"
+  end
+
   def print_help
     puts <<~HELP
-      emfsvg #{Emfsvg::VERSION} — EMF to SVG transformer
+      emfsvg #{Emfsvg::VERSION} — EMF <-> SVG transformer
 
       Usage:
         emfsvg convert INPUT.emf OUTPUT.svg [options]
+        emfsvg to-emf INPUT.svg OUTPUT.emf
         emfsvg version
         emfsvg help
 
-      Options:
+      Options (convert):
         -w, --width PIXELS      Override viewport width
         -h, --height PIXELS     Override viewport height
         -n, --namespace NAME    XML namespace prefix (e.g. svg)

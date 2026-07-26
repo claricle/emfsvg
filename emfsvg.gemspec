@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "emf", "~> 0.1"
   spec.add_dependency "fontisan"
   spec.add_dependency "libpng", "~> 1.6"
+  spec.add_dependency "nokogiri", "~> 1.16"
 end

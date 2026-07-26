@@ -12,3 +12,7 @@ group :development do
   gem "rubocop", "~> 1.65"
   gem "rubocop-performance", "~> 1.21"
 end
+
+# Always-available for development scripts and tests; gemspec declares
+# the runtime dep that ships to consumers.
+gem "nokogiri", "~> 1.16"
