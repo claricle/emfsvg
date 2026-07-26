@@ -1,19 +1,17 @@
 # frozen_string_literal: true
 
-# Compares emfsvg's output against libemf2svg's reference output for the
-# same EMF input. Used by spec/compat_with_libemf2svg_spec.rb.
+# Spec-only utility: structurally compares emfsvg's output against
+# libemf2svg's reference output for the same EMF input. Used by
+# spec/compat_with_libemf2svg_spec.rb and scripts/regenerate_golden.rb.
 #
-# This is NOT a "must produce identical SVG" test — emfsvg is a clean-room
-# rewrite that handles a subset of EMF records. It IS:
-#   - a structural-equivalence check for the records emfsvg handles
-#   - a quantification of the gap (compatibility ratio per fixture)
-#   - a regression guard so the ratio doesn't shrink over time
+# This is NOT shipped in the gem. Lives under spec/support/ and loaded
+# only when running the test suite or developer scripts.
 #
 # Usage:
-#   Emfsvg::Compat::Comparator.call(fixtures_glob, ref_dir, out_dir)
+#   Emfsvg::Compat.compare_glob(fixtures_glob)
 #
 # Requires the libemf2svg-conv binary (or our emf2svg_ref wrapper) at
-# Emfsvg::Compat::LIBEMF2SVG_REF_PATH. The spec auto-skips if missing.
+# Emfsvg::Compat::REF_BINARY_DEFAULT. The spec auto-skips if missing.
 
 require "open3"
 require "fileutils"

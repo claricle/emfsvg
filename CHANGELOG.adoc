@@ -11,6 +11,16 @@ All notable changes to `emfsvg` will be documented in this file.
 * Arc / Chord / Pie reconstruction.
 * Bezier curve reconstruction.
 
+== [0.1.1] — 2026-07-26
+
+=== Changed
+
+* Moved `Emfsvg::Compat` (libemf2svg comparison utility) from
+  `lib/emfsvg/compat.rb` to `spec/support/emfsvg_compat.rb`. It is a
+  developer/test-only tool and was incorrectly shipped in the gem.
+* Removed `rexml` as a runtime dependency; it is now a development
+  dependency (used only by the spec-side compat utility).
+
 == [0.1.0] — 2026-07-24
 
 === Added

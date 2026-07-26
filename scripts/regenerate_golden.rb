@@ -11,8 +11,9 @@
 # See spec/fixtures/README.md for build instructions.
 
 $LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+$LOAD_PATH.unshift(File.expand_path("../spec", __dir__))
 require "emfsvg"
-require "emfsvg/compat"
+require "support/emfsvg_compat"
 require "fileutils"
 
 EMF_GLOBS = %w[

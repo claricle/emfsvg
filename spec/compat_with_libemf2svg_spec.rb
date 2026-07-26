@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "emfsvg/compat"
+# Emfsvg::Compat is loaded by spec_helper via spec/support/emfsvg_compat.rb
 
 # Comparison spec against libemf2svg (the C reference implementation).
 #

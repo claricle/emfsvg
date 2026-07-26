@@ -6,6 +6,7 @@ gemspec
 
 group :development do
   gem "rake", "~> 13.0"
+  gem "rexml", "~> 3.3"
   gem "rspec", "~> 3.13"
   gem "rspec-collection_matchers"
   gem "rubocop", "~> 1.65"
