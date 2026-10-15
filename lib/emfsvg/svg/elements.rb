@@ -4,7 +4,7 @@ module Emfsvg
   module Svg
     # Subclasses of Svg::Element for the supported SVG shape vocabulary.
     # Each subclass parses its typed attributes at construction time
-    # (no Nokogiri node is retained). Register in Svg::Element's
+    # (no leptris node is retained). Register in Svg::Element's
     # registry so Svg::Element.from_node dispatches correctly.
     module Elements
       autoload :Stylable, "emfsvg/svg/elements/stylable"

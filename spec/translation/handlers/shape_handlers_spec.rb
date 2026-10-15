@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "nokogiri"
+require "leptris"
 
 RSpec.describe Emfsvg::Translation::Handlers::RectHandler do
   let(:context) { Emfsvg::Translation::Context.new }
@@ -9,7 +9,7 @@ RSpec.describe Emfsvg::Translation::Handlers::RectHandler do
   def rect_node(attrs)
     attrs_str = attrs.map { |k, v| %(#{k}="#{v}") }.join(" ")
     Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML("<rect #{attrs_str}/>").root
+      Leptris::XML.parse("<rect #{attrs_str}/>").root
     )
   end
 
@@ -50,7 +50,7 @@ RSpec.describe Emfsvg::Translation::Handlers::EllipseHandler do
   it "emits Ellipse with bounds cx-rx, cy-ry, cx+rx, cy+ry" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<ellipse cx="50" cy="40" rx="20" ry="10"/>').root
+      Leptris::XML.parse('<ellipse cx="50" cy="40" rx="20" ry="10"/>').root
     )
     described_class.call(element, context)
     ellipse = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::Ellipse) }
@@ -63,7 +63,7 @@ RSpec.describe Emfsvg::Translation::Handlers::CircleHandler do
   it "delegates to EllipseHandler with rx=ry=r" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<circle cx="50" cy="50" r="25"/>').root
+      Leptris::XML.parse('<circle cx="50" cy="50" r="25"/>').root
     )
     described_class.call(element, context)
     ellipse = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::Ellipse) }
@@ -77,7 +77,7 @@ RSpec.describe Emfsvg::Translation::Handlers::LineHandler do
   it "emits MoveToEx then LineTo" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<line x1="0" y1="0" x2="100" y2="50"/>').root
+      Leptris::XML.parse('<line x1="0" y1="0" x2="100" y2="50"/>').root
     )
     described_class.call(element, context)
     move = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::MoveToEx) }
@@ -91,7 +91,7 @@ RSpec.describe Emfsvg::Translation::Handlers::PolylineHandler do
   it "emits a Polyline record with the points" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<polyline points="0,0 100,0 100,100"/>').root
+      Leptris::XML.parse('<polyline points="0,0 100,0 100,100"/>').root
     )
     described_class.call(element, context)
     poly = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::Polyline) }
@@ -104,7 +104,7 @@ RSpec.describe Emfsvg::Translation::Handlers::PolygonHandler do
   it "emits a Polygon record (closed)" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<polygon points="0,0 100,0 100,100"/>').root
+      Leptris::XML.parse('<polygon points="0,0 100,0 100,100"/>').root
     )
     described_class.call(element, context)
     poly = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::Polygon) }
@@ -116,7 +116,7 @@ RSpec.describe Emfsvg::Translation::Handlers::PathHandler do
   it "emits a Polyline for an M/L-only path" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML(%(<path d="M 0 0 L 100 0 L 100 100"/>)).root
+      Leptris::XML.parse(%(<path d="M 0 0 L 100 0 L 100 100"/>)).root
     )
     described_class.call(element, context)
     poly = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::Polyline) }
@@ -127,7 +127,7 @@ RSpec.describe Emfsvg::Translation::Handlers::PathHandler do
   it "emits a Polygon for a closed M/L/Z path" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML(%(<path d="M 0 0 L 100 0 L 100 100 Z"/>)).root
+      Leptris::XML.parse(%(<path d="M 0 0 L 100 0 L 100 100 Z"/>)).root
     )
     described_class.call(element, context)
     poly = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::Polygon) }
@@ -137,7 +137,7 @@ RSpec.describe Emfsvg::Translation::Handlers::PathHandler do
   it "emits a PolyBezier when cubic C commands present" do
     context = Emfsvg::Translation::Context.new
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML(%(<path d="M 0 0 C 10 10 20 20 30 30"/>)).root
+      Leptris::XML.parse(%(<path d="M 0 0 C 10 10 20 20 30 30"/>)).root
     )
     described_class.call(element, context)
     bezier = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::PolyBezier) }

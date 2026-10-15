@@ -16,4 +16,4 @@ end
 
 # Always-available for development scripts and tests; gemspec declares
 # the runtime dep that ships to consumers.
-gem "nokogiri", "~> 1.16"
+gem "leptris"

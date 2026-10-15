@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "nokogiri"
+require "leptris"
 
 RSpec.describe Emfsvg::Translation::Handlers::TextHandler do
   let(:context) { Emfsvg::Translation::Context.new }
 
   it "emits CreateFontIndirectW + SetTextColor + ExtTextOutW + SelectObject + DeleteObject" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<text x="10" y="20" font-family="Arial" font-size="14" fill="#000000">Hello</text>').root
+      Leptris::XML.parse('<text x="10" y="20" font-family="Arial" font-size="14" fill="#000000">Hello</text>').root
     )
     described_class.call(element, context)
 
@@ -21,7 +21,7 @@ RSpec.describe Emfsvg::Translation::Handlers::TextHandler do
 
   it "encodes text content as UTF-16LE in the trailing bytes" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<text x="0" y="0" font-family="Arial" font-size="12" fill="#000000">Hi</text>').root
+      Leptris::XML.parse('<text x="0" y="0" font-family="Arial" font-size="12" fill="#000000">Hi</text>').root
     )
     described_class.call(element, context)
     extext = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::ExtTextOutW) }
@@ -32,7 +32,7 @@ RSpec.describe Emfsvg::Translation::Handlers::TextHandler do
 
   it "skips empty content" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<text x="0" y="0" font-family="Arial" font-size="12" fill="#000000"></text>').root
+      Leptris::XML.parse('<text x="0" y="0" font-family="Arial" font-size="12" fill="#000000"></text>').root
     )
     described_class.call(element, context)
     expect(context.records).to be_empty

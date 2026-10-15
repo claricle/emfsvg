@@ -3,7 +3,7 @@
 module Emfsvg
   # Pure SVG domain model. No EMF knowledge lives here.
   #
-  # Svg::Parser consumes a Nokogiri-parsed SVG document and produces
+  # Svg::Parser consumes a leptris-parsed SVG document and produces
   # Svg::Document / Svg::Element value objects. Translation layer
   # (Emfsvg::Translation) consumes these.
   module Svg

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "nokogiri"
+require "leptris"
 require "libpng"
 
 RSpec.describe Emfsvg::PngDecoder do
@@ -51,7 +51,7 @@ RSpec.describe Emfsvg::Translation::Handlers::ImageHandler do
 
   def image_node(attrs)
     attrs_str = attrs.map { |k, v| %(#{k}="#{v}") }.join(" ")
-    Emfsvg::Svg::Element.from_node(Nokogiri::XML("<image #{attrs_str}/>").root)
+    Emfsvg::Svg::Element.from_node(Leptris::XML.parse("<image #{attrs_str}/>").root)
   end
 
   it "skips non-PNG images silently" do

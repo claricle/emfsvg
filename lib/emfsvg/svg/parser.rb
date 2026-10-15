@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require "nokogiri"
+require "leptris"
 
 module Emfsvg
   module Svg
     # Parses an SVG document string into a Svg::Document value object.
-    # Nokogiri is the only XML/HTML parser used in this gem.
+    # leptris is the only XML parser used in this gem.
     #
     # Width/height are coerced to floats (CSS units other than px are
     # out of scope for v1; a numeric value is treated as user units).
@@ -14,7 +14,11 @@ module Emfsvg
       module_function
 
       def call(string)
-        doc = Nokogiri::XML(string, &:noblanks)
+        doc = begin
+          Leptris::XML.parse(string, options: Leptris::XML::ParseOptions.noblanks)
+        rescue Leptris::XML::ParseError
+          raise ParseError, "not an SVG document: unparseable content"
+        end
         root = doc.root
         raise ParseError, "not an SVG document: missing root element" unless root
 
