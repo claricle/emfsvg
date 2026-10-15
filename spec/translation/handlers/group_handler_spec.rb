@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "nokogiri"
+require "leptris"
 
 RSpec.describe Emfsvg::Translation::Handlers::GroupHandler do
   let(:context) { Emfsvg::Translation::Context.new }
 
   it "emits SaveDC at start and RestoreDC(-1) at end" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML("<g><rect width=\"10\" height=\"10\"/></g>").root
+      Leptris::XML.parse("<g><rect width=\"10\" height=\"10\"/></g>").root
     )
     described_class.call(element, context)
     wire_classes = context.records.map { |r| r.wire.class }
@@ -19,7 +19,7 @@ RSpec.describe Emfsvg::Translation::Handlers::GroupHandler do
 
   it "emits SetWorldTransform when transform= is present" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML('<g transform="translate(10, 20)"><rect/></g>').root
+      Leptris::XML.parse('<g transform="translate(10, 20)"><rect/></g>').root
     )
     described_class.call(element, context)
     swt = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::SetWorldTransform) }
@@ -30,7 +30,7 @@ RSpec.describe Emfsvg::Translation::Handlers::GroupHandler do
 
   it "always emits SetWorldTransform (even for identity) so the group wrapper round-trips" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML("<g><rect/></g>").root
+      Leptris::XML.parse("<g><rect/></g>").root
     )
     described_class.call(element, context)
     swt = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::SetWorldTransform) }
@@ -39,7 +39,7 @@ RSpec.describe Emfsvg::Translation::Handlers::GroupHandler do
 
   it "dispatches child elements between SaveDC and RestoreDC" do
     element = Emfsvg::Svg::Element.from_node(
-      Nokogiri::XML("<g><rect/><ellipse/></g>").root
+      Leptris::XML.parse("<g><rect/><ellipse/></g>").root
     )
     described_class.call(element, context)
     # SaveDC, then rect/ellipse handler records, then RestoreDC

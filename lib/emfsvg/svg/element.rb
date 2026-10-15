@@ -6,7 +6,7 @@ module Emfsvg
     # carry typed semantic fields; the base provides a uniform interface
     # for the translation layer's dispatch.
     #
-    # Element instances are immutable: built once from a Nokogiri node
+    # Element instances are immutable: built once from a leptris node
     # via the .from_node factory. The node is not retained.
     class Element
       ELEMENT_NAME = "abstract"

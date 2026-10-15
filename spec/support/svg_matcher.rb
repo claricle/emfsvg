@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "nokogiri"
+require "leptris"
 
 module Emfsvg
   # Lossy SVG comparison for round-trip testing. Two SVG documents are
@@ -77,17 +77,15 @@ module Emfsvg
     # Internal helpers --------------------------------------------------
 
     def parse(svg)
-      doc = Nokogiri::XML(svg, &:noblanks)
-      doc.remove_namespaces!
-      doc
+      Leptris::XML.parse(svg, options: Leptris::XML::ParseOptions.noblanks)
     end
 
     def collect_defs_children(root)
-      root.search("//defs").flat_map(&:element_children)
+      root.css("defs").flat_map(&:element_children)
     end
 
     def strip_defs(root)
-      root.search("//defs").each(&:remove)
+      root.css("defs").each(&:remove)
     end
 
     # Walk a tree and hoist `<g transform="M"><single_child/></g>` to
@@ -112,7 +110,7 @@ module Emfsvg
       child_transform = child.attributes["transform"]&.value
       merged = compose_transforms(g_transform, child_transform)
 
-      # Set the merged transform directly on the child node. Nokogiri's
+      # Set the merged transform directly on the child node.
       # `replace(child)` moves child out of g into g's position in the
       # tree (preserving child's own children).
       if merged && !merged.empty?

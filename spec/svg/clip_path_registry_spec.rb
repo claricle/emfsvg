@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "nokogiri"
+require "leptris"
 
 RSpec.describe Emfsvg::Svg::ClipPathRegistry do
   describe ".from_document" do
@@ -46,13 +46,13 @@ end
 
 RSpec.describe Emfsvg::Svg::Elements::ClipPath do
   it "exposes rectangular_bounds for a single-rect clip" do
-    node = Nokogiri::XML('<clipPath id="c"><rect x="10" y="20" width="100" height="50"/></clipPath>').root
+    node = Leptris::XML.parse('<clipPath id="c"><rect x="10" y="20" width="100" height="50"/></clipPath>').root
     clip = described_class.from_node(node)
     expect(clip.rectangular_bounds).to eq([10.0, 20.0, 110.0, 70.0])
   end
 
   it "returns nil rectangular_bounds for non-rect clips" do
-    node = Nokogiri::XML('<clipPath id="c"><circle cx="0" cy="0" r="10"/></clipPath>').root
+    node = Leptris::XML.parse('<clipPath id="c"><circle cx="0" cy="0" r="10"/></clipPath>').root
     clip = described_class.from_node(node)
     expect(clip.rectangular_bounds).to be_nil
   end

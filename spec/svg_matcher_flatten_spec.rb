@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "nokogiri"
+require "leptris"
 
 RSpec.describe Emfsvg::SvgMatcher, ".flatten_transform_groups" do
   def parse(svg)
-    doc = Nokogiri::XML(svg, &:noblanks)
-    doc.remove_namespaces!
-    doc
+    Leptris::XML.parse(svg, options: Leptris::XML::ParseOptions.noblanks)
   end
 
   it "unwraps <g transform=M><X/></g> to <X transform=M/>" do
