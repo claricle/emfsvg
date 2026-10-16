@@ -65,7 +65,7 @@ SVG → EMF pipeline (mirror direction, new in 0.2):
 
 ```
 SVG bytes
-   ↓  Nokogiri
+   ↓  leptris
 Emfsvg::Svg::Document / Svg::Element value objects
    ↓
 Emfsvg::Translation::EmfRenderer   walks tree, dispatches via HandlerRegistry
@@ -161,7 +161,7 @@ Emfsvg.from_svg_file(path)
 ## Dependencies
 
 - `emf` (~> 0.1) — EMF binary parser, domain model, and serializer. Source of all wire record classes and `Emf.serialize`.
-- `nokogiri` (~> 1.16) — SVG parser for the SVG→EMF direction.
+- `leptris` (~> 1.9.362) — SVG parser for the SVG→EMF direction.
 - `fontisan` — cmap parsing for glyph-index → Unicode mapping (`GlyphIndexMapper`).
 - `libpng` (~> 1.6) — PNG encode (`PngEncoder`) and decode (`PngDecoder`) for image round-trip.
 - `base64`, `bigdecimal` — stdlib.
