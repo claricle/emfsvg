@@ -71,11 +71,11 @@ RSpec.describe "SVG → EMF → SVG round-trip" do
   end
 
   describe "emfsvg_golden fixtures (regression floor)" do
-    GOLDEN_DIR = Emfsvg::SpecSupport::FixturePath.fixture("emfsvg_golden")
+    ROUND_TRIP_GOLDEN_DIR = Emfsvg::SpecSupport::FixturePath.fixture("emfsvg_golden")
 
     # Sample 5 fixtures to keep spec runtime reasonable. Full
     # comparison lives in scripts/run_round_trip.rb (developer tooling).
-    let(:sample) { Dir.glob(File.join(GOLDEN_DIR, "*.svg")).first(5) }
+    let(:sample) { Dir.glob(File.join(ROUND_TRIP_GOLDEN_DIR, "*.svg")).first(5) }
 
     it "processes sampled fixtures without crashing" do
       sample.each do |path|

@@ -15,12 +15,12 @@ require "spec_helper"
 # catastrophic regressions where round-trips that USED to pass stop
 # passing.
 RSpec.describe "SVG → EMF → SVG round-trip (golden master)" do
-  GOLDEN_DIR = Emfsvg::SpecSupport::FixturePath.fixture("emfsvg_golden")
+  ROUND_TRIP_MASTER_DIR = Emfsvg::SpecSupport::FixturePath.fixture("emfsvg_golden")
   KNOWN_DIVERGENT_PATH = Emfsvg::SpecSupport::FixturePath.fixture(
     "svg_to_emf_known_divergent.txt"
   )
 
-  fixtures = Dir.glob(File.join(GOLDEN_DIR, "*.svg"))
+  fixtures = Dir.glob(File.join(ROUND_TRIP_MASTER_DIR, "*.svg"))
   known_divergent = File.readlines(KNOWN_DIVERGENT_PATH, chomp: true)
                         .reject { |line| line.strip.empty? || line.start_with?("#") }
                         .to_set { |line| line.split("#").first.strip }
