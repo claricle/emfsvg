@@ -18,10 +18,10 @@ module Emfsvg
           with_gdi_state(element, context) do
             context.emit(Emf::Emr::Binary::Records::MoveToEx,
                          i_type: MOVETOEX,
-                         origin: context.point_l(element.x1, element.y1))
+                         origin: context.point_attrs(element.x1, element.y1))
             context.emit(Emf::Emr::Binary::Records::LineTo,
                          i_type: LINETO,
-                         origin: context.point_l(element.x2, element.y2))
+                         origin: context.point_attrs(element.x2, element.y2))
           end
         end
       end

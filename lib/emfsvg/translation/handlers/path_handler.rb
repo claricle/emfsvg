@@ -55,14 +55,14 @@ module Emfsvg
           if first
             context.emit(Emf::Emr::Binary::Records::MoveToEx,
                          i_type: MOVETOEX,
-                         origin: context.point_l(first[0], first[1]))
+                         origin: context.point_attrs(first[0], first[1]))
           end
           emit_poly(Emf::Emr::Binary::Records::PolyBezier, POLYBEZIER, flattened, context)
         end
 
         def emit_poly(record_class, i_type, flattened, context)
-          points = flattened.points.map { |x, y| context.point_l(x, y) }
-          scaled_bounds = context.rect_l(
+          points = flattened.points.map { |x, y| context.point_attrs(x, y) }
+          scaled_bounds = context.rect_attrs(
             flattened.bounds.left, flattened.bounds.top,
             flattened.bounds.right, flattened.bounds.bottom
           )

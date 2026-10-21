@@ -58,18 +58,34 @@ module Emfsvg
       # coords through these so the scaler affects everything) ----
 
       def point_l(x, y)
-        Emf::Binary::Types::PointL.new(x: scale_int(x), y: scale_int(y))
+        Emf::Binary::Types::PointL.new(**point_attrs(x, y))
       end
 
       def rect_l(left, top, right, bottom)
-        Emf::Binary::Types::RectL.new(
-          left: scale_int(left), top: scale_int(top),
-          right: scale_int(right), bottom: scale_int(bottom)
-        )
+        Emf::Binary::Types::RectL.new(**rect_attrs(left, top, right, bottom))
       end
 
       def size_l(cx, cy)
-        Emf::Binary::Types::SizeL.new(cx: scale_int(cx), cy: scale_int(cy))
+        Emf::Binary::Types::SizeL.new(**size_attrs(cx, cy))
+      end
+
+      # Attribute-hash forms of the helpers above. A record field accepts
+      # a Hash and builds its nested value in place, which avoids
+      # constructing a throwaway BinData object per coordinate that the
+      # record would only copy. Handlers use these when emitting.
+      def point_attrs(x, y)
+        { x: scale_int(x), y: scale_int(y) }
+      end
+
+      def rect_attrs(left, top, right, bottom)
+        {
+          left: scale_int(left), top: scale_int(top),
+          right: scale_int(right), bottom: scale_int(bottom)
+        }
+      end
+
+      def size_attrs(cx, cy)
+        { cx: scale_int(cx), cy: scale_int(cy) }
       end
 
       # Convert a Matrix to its wire form, scaling the translation

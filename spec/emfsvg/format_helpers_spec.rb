@@ -62,6 +62,27 @@ RSpec.describe Emfsvg::FormatHelpers do
     end
   end
 
+  describe ".fmt fast path" do
+    # Values near a 4-decimal midpoint, small magnitudes and signs, where
+    # naive float rounding disagrees with exact half-even rounding.
+    [79_109.58455, -75.41225, 80_042.67505, 66.11065, 0.00005, -0.00005,
+     0.00015, -0.00001, 0.99995, -0.0, 1e8 + 0.00005, 2_000_000.5].each do |value|
+      it "matches exact decimal rounding for #{value}" do
+        expect(described_class.fmt(value))
+          .to eq(described_class.fmt_via_decimal(value))
+      end
+    end
+
+    it "matches exact decimal rounding across random values" do
+      rng = Random.new(7)
+      values = Array.new(5_000) do
+        (rng.rand((-10**9)..(10**9)) / 10_000.0) + [0, 0.00005, 0.00015].sample
+      end
+      expect(values.reject { |v| described_class.fmt(v) == described_class.fmt_via_decimal(v) })
+        .to be_empty
+    end
+  end
+
   describe ".fmt_xy" do
     it "formats a coordinate pair with trailing space" do
       expect(described_class.fmt_xy(1.5, 2.5)).to eq("1.5000,2.5000 ")

@@ -28,7 +28,7 @@ module Emfsvg
       # Construct without appending. Useful for inline inspection in tests.
       def build(wire_class, **attrs)
         wire = wire_class.new(**attrs)
-        wire.n_size = wire.to_binary_s.bytesize
+        wire.n_size = wire.num_bytes
         Emf::Model::Emr::Records::WireAdapter.new(wire: wire)
       end
     end

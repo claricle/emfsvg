@@ -29,7 +29,7 @@ module Emfsvg
           if wrap_with_clip
             context.emit(Emf::Emr::Binary::Records::IntersectClipRect,
                          i_type: INTERSECTCLIPRECT,
-                         rcl_clip: context.rect_l(*clip_bounds))
+                         rcl_clip: context.rect_attrs(*clip_bounds))
           end
           yield
           emit_delete(context, pen_handle) if pen_handle
@@ -64,7 +64,7 @@ module Emfsvg
                        i_type: CREATEPEN,
                        ih_pen: handle,
                        pen_style: stroke.pen_style,
-                       width: context.point_l(stroke.width, 0),
+                       width: context.point_attrs(stroke.width, 0),
                        color: stroke.paint.color.to_emf_wire.to_wire)
           context.emit(Emf::Emr::Binary::Records::SelectObject,
                        i_type: SELECTOBJECT,
