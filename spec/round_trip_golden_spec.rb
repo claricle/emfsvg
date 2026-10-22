@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
+require "support/parity_corpus"
 
 # Round-trip integration spec: SVG → EMF → SVG must reproduce the input
 # SVG byte-for-byte for the supported subset. The EMF→SVG side is
@@ -15,12 +16,13 @@ require "spec_helper"
 # catastrophic regressions where round-trips that USED to pass stop
 # passing.
 RSpec.describe "SVG → EMF → SVG round-trip (golden master)" do
-  master_dir = Emfsvg::SpecSupport::FixturePath.fixture("emfsvg_golden")
+  corpus = Emfsvg::SpecSupport::ParityCorpus.new
+  corpus.verify!
   known_divergent_path = Emfsvg::SpecSupport::FixturePath.fixture(
     "svg_to_emf_known_divergent.txt"
   )
 
-  fixtures = Dir.glob(File.join(master_dir, "*.svg"))
+  fixtures = corpus.fixtures.map { |entry| corpus.artifact_path(entry, "round_trip") }
   known_divergent = File.readlines(known_divergent_path, chomp: true)
                         .reject { |line| line.strip.empty? || line.start_with?("#") }
                         .to_set { |line| line.split("#").first.strip }
