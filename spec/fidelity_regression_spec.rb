@@ -3,7 +3,7 @@
 require "spec_helper"
 require "support/parity_corpus"
 
-# Explicit live audit: bundle exec rspec spec/fidelity_regression_spec.rb --tag live_reference
+# Explicit live audit: EMFSVG_LIVE_REFERENCE=1 bundle exec rspec spec/fidelity_regression_spec.rb
 RSpec.describe "EMF→SVG fidelity vs libemf2svg (regression floor)", :live_reference do
   it "matches the pinned corpus semantically against the configured C reference" do
     Emfsvg::Compat.validate_reference!

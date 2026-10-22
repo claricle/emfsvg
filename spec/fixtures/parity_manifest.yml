@@ -1,0 +1,2262 @@
+---
+schema_version: 1
+baseline:
+  revision: 101356dcf673841fda0693076131bca7a0f34948
+  whole_suite_examples: 1048
+groups:
+  golden: 208
+  round_trip: 209
+  compatibility: 426
+  compatibility_composition:
+    ruby_to_c_golden: 208
+    c_artifact_integrity: 208
+    fixed_sample: 9
+    aggregate_inventory: 1
+provenance:
+  corpus:
+    repository: https://github.com/claricle/emf.git
+    revision: a549346e4c4cacf9da6c86ab451a9f8401fa9672
+    source_directories:
+    - spec/fixtures/emf
+    - spec/fixtures/emf-ea
+    - spec/fixtures/simple
+    corrupt_directory: spec/fixtures/emf-corrupted
+  runtime:
+    status: unqualified
+    source: rubygems
+    version: 0.1.2
+    source_revision:
+    package_sha256:
+  upstream_contracts:
+    model:
+      issue: https://github.com/claricle/emf/issues/15
+      landed_revision:
+    diagnostics:
+      issue:
+      landed_revision:
+    resources:
+      issue:
+      landed_revision:
+  native_library:
+    status: unavailable
+    source_revision:
+    artifact_sha256:
+    abi:
+  production_backend:
+    requested: auto
+    required_selected: native
+  c_reference:
+    status: unverified_historical_artifacts
+    reported_version: 1.8.1
+    source_revision:
+    build_recipe: cmake -S . -B build -DLONLY=ON && cmake --build build
+    wrapper_options:
+      nameSpace:
+      verbose: 0
+      emfplus: 1
+      svgDelimiter: 1
+      imgWidth: 0
+      imgHeight: 0
+    generation_command: bundle exec ruby scripts/regenerate_golden.rb
+    blocker: Exact historical source/build revision is not recorded; artifact hashes
+      prove integrity only, not C provenance.
+fixed_sample:
+- test-000
+- test-001
+- test-002
+- test-003
+- test-004
+- EA-test-file-001
+- EA-test-file-002
+- EA-test-file-003
+- image1
+fixtures:
+- name: test-000
+  source:
+    path: spec/fixtures/emf/test-000.emf
+    sha256: 8308afe932ec53c563f4cb109d69375b9f083e72db85f8e62d6d19618adf2581
+  golden:
+    path: spec/fixtures/golden/test-000.svg
+    sha256: 70c1966f9f7b16581faa614365015e5b804ed77a532c42c1d315c5d10a57eb8a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-000.svg
+    sha256: 70c1966f9f7b16581faa614365015e5b804ed77a532c42c1d315c5d10a57eb8a
+- name: test-001
+  source:
+    path: spec/fixtures/emf/test-001.emf
+    sha256: 96c3b6bacf8850d3b677cae727efb429f67379e1e6a3810edf4db31bd4b233f4
+  golden:
+    path: spec/fixtures/golden/test-001.svg
+    sha256: cfe449216c9344aa3e9ffb5afe87f2c2f077462e621d20eaf87effe4e3fdbd75
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-001.svg
+    sha256: cfe449216c9344aa3e9ffb5afe87f2c2f077462e621d20eaf87effe4e3fdbd75
+- name: test-002
+  source:
+    path: spec/fixtures/emf/test-002.emf
+    sha256: ae419e078584c14a701b0b9f64877973b99af05b73ac3307b41a9ec1e855cabe
+  golden:
+    path: spec/fixtures/golden/test-002.svg
+    sha256: e47bdaf10136a1c35ce8895821c380f42b5ae64fa3cc825eba02ab77061c9dca
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-002.svg
+    sha256: e47bdaf10136a1c35ce8895821c380f42b5ae64fa3cc825eba02ab77061c9dca
+- name: test-003
+  source:
+    path: spec/fixtures/emf/test-003.emf
+    sha256: eaaa7cb96fe3be84e549a5de76e07e0c851ca5d5d57e9b044a49cd643d059884
+  golden:
+    path: spec/fixtures/golden/test-003.svg
+    sha256: c98251d21cb89b32d421ba2fd7b06fb4727ae059b3a33891d7de38d5a2effea3
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-003.svg
+    sha256: c98251d21cb89b32d421ba2fd7b06fb4727ae059b3a33891d7de38d5a2effea3
+- name: test-004
+  source:
+    path: spec/fixtures/emf/test-004.emf
+    sha256: b393af0438c8d29c622ea228b087978f9fe0bb9237fc636c840acc5d474d5477
+  golden:
+    path: spec/fixtures/golden/test-004.svg
+    sha256: 84bab35d72ffc9de0973bc0e1a5f74a42cc1f3d08bc626cf2b4e280f769d338d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-004.svg
+    sha256: 84bab35d72ffc9de0973bc0e1a5f74a42cc1f3d08bc626cf2b4e280f769d338d
+- name: test-005
+  source:
+    path: spec/fixtures/emf/test-005.emf
+    sha256: 19b1f70cbb4a225850741e4bbcc87c401af680a26cf9cf259bab4a3a1d37e694
+  golden:
+    path: spec/fixtures/golden/test-005.svg
+    sha256: ee7ca61270ec1e4c059ed0623cf845589ab0f462b0c6fbaaab8c0b4789f111d0
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-005.svg
+    sha256: ee7ca61270ec1e4c059ed0623cf845589ab0f462b0c6fbaaab8c0b4789f111d0
+- name: test-006
+  source:
+    path: spec/fixtures/emf/test-006.emf
+    sha256: c77ce2de0bd710708174e51e18b3e98e3062eddd53c5badae9fd699cc61511a2
+  golden:
+    path: spec/fixtures/golden/test-006.svg
+    sha256: 07b9a9558de1ceb7a34ae3437d0c35c29d07cb8cbc9c2c68438c7460771e9d7d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-006.svg
+    sha256: 07b9a9558de1ceb7a34ae3437d0c35c29d07cb8cbc9c2c68438c7460771e9d7d
+- name: test-007
+  source:
+    path: spec/fixtures/emf/test-007.emf
+    sha256: 42eaa88b106c4377e6314b3fa2e798a32de6b1fb5f8c8551621a57f2b0b23988
+  golden:
+    path: spec/fixtures/golden/test-007.svg
+    sha256: 16b3b74b1d8fd0d098777164e643e1f8ec9f8718ccb90a75acb104dfc7db7fcd
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-007.svg
+    sha256: 16b3b74b1d8fd0d098777164e643e1f8ec9f8718ccb90a75acb104dfc7db7fcd
+- name: test-008
+  source:
+    path: spec/fixtures/emf/test-008.emf
+    sha256: 9d8eeabd16346932e686a1f1a7dcc4b537916e8726763232d4acade5a62d5133
+  golden:
+    path: spec/fixtures/golden/test-008.svg
+    sha256: defd3a7bb6df66ffb0136002fa557020bdd20c7dd12480362de56ebda1edb298
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-008.svg
+    sha256: defd3a7bb6df66ffb0136002fa557020bdd20c7dd12480362de56ebda1edb298
+- name: test-009
+  source:
+    path: spec/fixtures/emf/test-009.emf
+    sha256: 1cf2a6a7b62cac3cffefebcfd4e8ef15d92443171cce69aabf47fa78834feede
+  golden:
+    path: spec/fixtures/golden/test-009.svg
+    sha256: 631f0c015ad1eba90437089c4dbec51f1ac7eb8e8db69cbc1213ad63be3ef918
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-009.svg
+    sha256: 631f0c015ad1eba90437089c4dbec51f1ac7eb8e8db69cbc1213ad63be3ef918
+- name: test-010
+  source:
+    path: spec/fixtures/emf/test-010.emf
+    sha256: 65c7fcf6d49343fe2776d5c81a2eea6e3d2b7112594ff35dcc6c7a3090d5d8b1
+  golden:
+    path: spec/fixtures/golden/test-010.svg
+    sha256: 40cc26b749258346a264b3762e6a0575143718fd6e1f8295e91f50545802de39
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-010.svg
+    sha256: 40cc26b749258346a264b3762e6a0575143718fd6e1f8295e91f50545802de39
+- name: test-011
+  source:
+    path: spec/fixtures/emf/test-011.emf
+    sha256: 7ca27d92ce3d7a8e17a84cfbbfb88a42e5f708afe5c6e08862de1b24ab4f1d40
+  golden:
+    path: spec/fixtures/golden/test-011.svg
+    sha256: 4e9f33dd03152bc2b14e53f92c38abc98fc7e231022ed9b62a841d63d2ec85ec
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-011.svg
+    sha256: 4e9f33dd03152bc2b14e53f92c38abc98fc7e231022ed9b62a841d63d2ec85ec
+- name: test-012
+  source:
+    path: spec/fixtures/emf/test-012.emf
+    sha256: 21b0e715cf3ba087880ecc6c5019dfd6e34bf5590dfb22b80311f6b9599db90b
+  golden:
+    path: spec/fixtures/golden/test-012.svg
+    sha256: 2d1f7248eccd36478574136090329e39ff1df7897457b2edc15b41e833a072ce
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-012.svg
+    sha256: 2d1f7248eccd36478574136090329e39ff1df7897457b2edc15b41e833a072ce
+- name: test-013
+  source:
+    path: spec/fixtures/emf/test-013.emf
+    sha256: 1b40dec976f5ed7a7b499469da7be956b4643cc0fb98d15e0b397428a94140b6
+  golden:
+    path: spec/fixtures/golden/test-013.svg
+    sha256: df02a46f5d08fcacde0d6ac203bd51e40a86bdc2ccdc8f31911d6679db65e99a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-013.svg
+    sha256: df02a46f5d08fcacde0d6ac203bd51e40a86bdc2ccdc8f31911d6679db65e99a
+- name: test-014
+  source:
+    path: spec/fixtures/emf/test-014.emf
+    sha256: 4d5d1132d7fb4b653df23ccd12bc3897a30023fac822c0fb48e76450248d2349
+  golden:
+    path: spec/fixtures/golden/test-014.svg
+    sha256: 7bb619653697f7682f8edb364101e1eeefb0bbd7f25ec7d70f372a30e9a00d7b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-014.svg
+    sha256: 7bb619653697f7682f8edb364101e1eeefb0bbd7f25ec7d70f372a30e9a00d7b
+- name: test-015
+  source:
+    path: spec/fixtures/emf/test-015.emf
+    sha256: eef056e81748ae9d3a04e28a10225b9591420d8d1a55025d4348c510f4a24193
+  golden:
+    path: spec/fixtures/golden/test-015.svg
+    sha256: f1ca0397b810c38de1cc97092261e949d31a732ed97b80584146d6dd1850f6b4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-015.svg
+    sha256: f1ca0397b810c38de1cc97092261e949d31a732ed97b80584146d6dd1850f6b4
+- name: test-016
+  source:
+    path: spec/fixtures/emf/test-016.emf
+    sha256: df5550eef6698bf342a9aadd914e361be384a600ed7fe233e321883533908e01
+  golden:
+    path: spec/fixtures/golden/test-016.svg
+    sha256: 99c6a93abfae149760713c71d73c96e592122a1fbf71728b7e6551b5a5e71fa8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-016.svg
+    sha256: 99c6a93abfae149760713c71d73c96e592122a1fbf71728b7e6551b5a5e71fa8
+- name: test-017
+  source:
+    path: spec/fixtures/emf/test-017.emf
+    sha256: cd96c82a55f035ef85c261c3c1edbcc46d5d79ba5a034e6c6fcd258474b21549
+  golden:
+    path: spec/fixtures/golden/test-017.svg
+    sha256: 9f8f55b8dc3b12499c8b04ac0acf016ed525cee557778bd1b522c98c588eda9e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-017.svg
+    sha256: 9f8f55b8dc3b12499c8b04ac0acf016ed525cee557778bd1b522c98c588eda9e
+- name: test-018
+  source:
+    path: spec/fixtures/emf/test-018.emf
+    sha256: 423d5e9c84c8514d593e764bdb5306fc7065648c45d93941ff04c2302183bdeb
+  golden:
+    path: spec/fixtures/golden/test-018.svg
+    sha256: '08df1174a8baacc97bfa17656e3c2674e8b35a58ffddf0e4f31d7437818ba0ec'
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-018.svg
+    sha256: '08df1174a8baacc97bfa17656e3c2674e8b35a58ffddf0e4f31d7437818ba0ec'
+- name: test-019
+  source:
+    path: spec/fixtures/emf/test-019.emf
+    sha256: 1db4bbe6734b9038e7860fd08214acce88e780df1b0bbd0ccd79ee4003d2e70f
+  golden:
+    path: spec/fixtures/golden/test-019.svg
+    sha256: 1fb08b8a6d0c5e90bf9220a1ad017ea7127cda54316f5bcdf71c7178c4e88da2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-019.svg
+    sha256: 1fb08b8a6d0c5e90bf9220a1ad017ea7127cda54316f5bcdf71c7178c4e88da2
+- name: test-020
+  source:
+    path: spec/fixtures/emf/test-020.emf
+    sha256: b75893a93c34b2b0e2ae36c83c85aa3d97b3e708c7a93cf1e31dd7b0aa8ca897
+  golden:
+    path: spec/fixtures/golden/test-020.svg
+    sha256: 86396af91fef72bb2fb1f10375739449fb642cd697ab8aeff01bd5fc16e232e5
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-020.svg
+    sha256: 86396af91fef72bb2fb1f10375739449fb642cd697ab8aeff01bd5fc16e232e5
+- name: test-021
+  source:
+    path: spec/fixtures/emf/test-021.emf
+    sha256: fcd7a628c6b40b38e9e2bcc88d332914de29c1b61c80d8388fca2c2a0f164455
+  golden:
+    path: spec/fixtures/golden/test-021.svg
+    sha256: 3497f345a590f232f1547973e254e6c60b3a6484c5a0b4ec0e05c4ff9fdfac46
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-021.svg
+    sha256: 3497f345a590f232f1547973e254e6c60b3a6484c5a0b4ec0e05c4ff9fdfac46
+- name: test-022
+  source:
+    path: spec/fixtures/emf/test-022.emf
+    sha256: 3a0e221f0776d2bd618d8994e58d888eea261120ecc7a7b64d955f1fe296ff69
+  golden:
+    path: spec/fixtures/golden/test-022.svg
+    sha256: a86e842d3bb087b92a8760cfd6e956f6eb0da31e1a7ba7e5971c984a212c80a4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-022.svg
+    sha256: a86e842d3bb087b92a8760cfd6e956f6eb0da31e1a7ba7e5971c984a212c80a4
+- name: test-023
+  source:
+    path: spec/fixtures/emf/test-023.emf
+    sha256: '0808af0dc0b25ba2568155f62d13c1f95eed1d72f8df642d6eb5ed938a9374fb'
+  golden:
+    path: spec/fixtures/golden/test-023.svg
+    sha256: 377006e63de52e809a68b0a9352a6adf28b9ccbcaa971c2c02baab5800a82c4e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-023.svg
+    sha256: 377006e63de52e809a68b0a9352a6adf28b9ccbcaa971c2c02baab5800a82c4e
+- name: test-024
+  source:
+    path: spec/fixtures/emf/test-024.emf
+    sha256: 2e010ceb87694a86a2eca69a620009bc7c9468581fe6c30556ddef02b63b0ffd
+  golden:
+    path: spec/fixtures/golden/test-024.svg
+    sha256: 58476750b7d721df9d7664347b03d30197cb508eae721a60c7163ec5f4169428
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-024.svg
+    sha256: 58476750b7d721df9d7664347b03d30197cb508eae721a60c7163ec5f4169428
+- name: test-025
+  source:
+    path: spec/fixtures/emf/test-025.emf
+    sha256: c1fa93d1bbf34deb643c553098a750fab062d61fe309028618d2b4181cecc71d
+  golden:
+    path: spec/fixtures/golden/test-025.svg
+    sha256: b37680869e2d80dada7874e4a824b9d1f4333fc0416bddc8541de4f07bab52f1
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-025.svg
+    sha256: b37680869e2d80dada7874e4a824b9d1f4333fc0416bddc8541de4f07bab52f1
+- name: test-026
+  source:
+    path: spec/fixtures/emf/test-026.emf
+    sha256: c0d4bb950325cad49f5fe260ca3cab5109c8e55b2377a1642f8497e23f0584e8
+  golden:
+    path: spec/fixtures/golden/test-026.svg
+    sha256: b0bf93d60ec5174abe12af7d8b572dbde926b94e678e0a2f203f77badc147c1b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-026.svg
+    sha256: b0bf93d60ec5174abe12af7d8b572dbde926b94e678e0a2f203f77badc147c1b
+- name: test-027
+  source:
+    path: spec/fixtures/emf/test-027.emf
+    sha256: 8fe307c01224a5c0b81cb5f798cfd9e0884c58e38d045ac8dda320cc03bfdec9
+  golden:
+    path: spec/fixtures/golden/test-027.svg
+    sha256: 9c007e4844950fd1de1d90ce81b4cfac2dd9bdb71a28a6b8d46c8fb4a267c067
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-027.svg
+    sha256: 9c007e4844950fd1de1d90ce81b4cfac2dd9bdb71a28a6b8d46c8fb4a267c067
+- name: test-028
+  source:
+    path: spec/fixtures/emf/test-028.emf
+    sha256: 823f120d9d19505380906657c53d5a929a5b6a20cd852a2ddacd111286592322
+  golden:
+    path: spec/fixtures/golden/test-028.svg
+    sha256: ab98e56dbd6a19e953255adb212c6624474df63ace6a8c4dc345832db85fc599
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-028.svg
+    sha256: ab98e56dbd6a19e953255adb212c6624474df63ace6a8c4dc345832db85fc599
+- name: test-029
+  source:
+    path: spec/fixtures/emf/test-029.emf
+    sha256: f5bb2d263cf11683dde6c2d0a40b055e70a4ee092bd32249c3e04200548cfc88
+  golden:
+    path: spec/fixtures/golden/test-029.svg
+    sha256: d274482414c40a6fd6e87edf140e80905466a3611b7a23a3c9df5db20930aa17
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-029.svg
+    sha256: d274482414c40a6fd6e87edf140e80905466a3611b7a23a3c9df5db20930aa17
+- name: test-030
+  source:
+    path: spec/fixtures/emf/test-030.emf
+    sha256: 4b6db6002bda38b62d44316772f7f588a618c8a1a8f5c0fe8ffc8f279404a36a
+  golden:
+    path: spec/fixtures/golden/test-030.svg
+    sha256: 6c2b0d9446a9df2ff8473839b19c4793efe709405976b5bc46be9fb930446772
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-030.svg
+    sha256: 6c2b0d9446a9df2ff8473839b19c4793efe709405976b5bc46be9fb930446772
+- name: test-031
+  source:
+    path: spec/fixtures/emf/test-031.emf
+    sha256: 6aae9ce8e470261936ffe8ce3923308c1f7172148a15cbc239a891edfd5f8597
+  golden:
+    path: spec/fixtures/golden/test-031.svg
+    sha256: 65fd702080dfc0fd33a703530e4d942f8127cc7ae700e4fa1c092d005b49dbe6
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-031.svg
+    sha256: 0ae4976e7d2a0babe92851a9a43f25d636cf803d21e1ff39ae17c22c3dbf6911
+- name: test-032
+  source:
+    path: spec/fixtures/emf/test-032.emf
+    sha256: 3f69ca8e880a20453935035d2f552bb34277acf9e6220e481ceb45fefdfd4fae
+  golden:
+    path: spec/fixtures/golden/test-032.svg
+    sha256: b3a14c9b91e155abf0dc5cf259a43cb83d33f6ceafa7f36f14839fa56360fd01
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-032.svg
+    sha256: b3a14c9b91e155abf0dc5cf259a43cb83d33f6ceafa7f36f14839fa56360fd01
+- name: test-033
+  source:
+    path: spec/fixtures/emf/test-033.emf
+    sha256: 6393b69b2e6788fd0e7a68e955f5a59305b3ca17dd20f7bc5a7e958dfe05f640
+  golden:
+    path: spec/fixtures/golden/test-033.svg
+    sha256: 4170eb1c72ed4e30e778ce242b942afcb408b8e84a83b9fed66361504c9c87d8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-033.svg
+    sha256: 4170eb1c72ed4e30e778ce242b942afcb408b8e84a83b9fed66361504c9c87d8
+- name: test-034
+  source:
+    path: spec/fixtures/emf/test-034.emf
+    sha256: d870ee45424e42ced82a8503ad890f58e20c6137c6f6bd7a6fdb710bfddce169
+  golden:
+    path: spec/fixtures/golden/test-034.svg
+    sha256: 7b208d7dffa6abf995965bb7a800af71fc5620a1588a8f9b705a9118edadf950
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-034.svg
+    sha256: 7b208d7dffa6abf995965bb7a800af71fc5620a1588a8f9b705a9118edadf950
+- name: test-035
+  source:
+    path: spec/fixtures/emf/test-035.emf
+    sha256: 3a6cb21d4b76a58237f045b43320f11b7d541f88a1191752e0e17741fc841e6d
+  golden:
+    path: spec/fixtures/golden/test-035.svg
+    sha256: 782b477c67073416da77d132c886309550e4d5bc71754e4cd778690e7dec46d5
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-035.svg
+    sha256: 782b477c67073416da77d132c886309550e4d5bc71754e4cd778690e7dec46d5
+- name: test-036
+  source:
+    path: spec/fixtures/emf/test-036.emf
+    sha256: bfe590174d0e0ef6203123adc653d52ea20da3f60bb324c567a4902ca5409fbb
+  golden:
+    path: spec/fixtures/golden/test-036.svg
+    sha256: fb687e5f9abe8fae176a5a9c1caf388053f3d8080349dd1cf50fbccbada8011a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-036.svg
+    sha256: fb687e5f9abe8fae176a5a9c1caf388053f3d8080349dd1cf50fbccbada8011a
+- name: test-037
+  source:
+    path: spec/fixtures/emf/test-037.emf
+    sha256: d2855fc380fc3f791da58a78937af60c77ea437b749702a90652615019a5abdf
+  golden:
+    path: spec/fixtures/golden/test-037.svg
+    sha256: a2f1b23145f9aa9c4df1ba0d4349f12f3d504283d2ba2953023b628272c6233b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-037.svg
+    sha256: a2f1b23145f9aa9c4df1ba0d4349f12f3d504283d2ba2953023b628272c6233b
+- name: test-038
+  source:
+    path: spec/fixtures/emf/test-038.emf
+    sha256: 86bb20c1cb55b712f6d7d5ff2e83a4d146541cb272b383b0f5846d551fe56ebe
+  golden:
+    path: spec/fixtures/golden/test-038.svg
+    sha256: 45860ba659e3e4b6a59e585bc3484a46b17335d29ed1dab95a0a44fd9725555f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-038.svg
+    sha256: 45860ba659e3e4b6a59e585bc3484a46b17335d29ed1dab95a0a44fd9725555f
+- name: test-039
+  source:
+    path: spec/fixtures/emf/test-039.emf
+    sha256: 4f3c1f548dcc9fbe5abc5bfcfa07847a07e3bd12def018cc395a3e84131b8922
+  golden:
+    path: spec/fixtures/golden/test-039.svg
+    sha256: d77be0028cbbae6811a7c6d4caf58c4686a15071451876c1fa09255ecaeb9667
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-039.svg
+    sha256: 28066ec7e913ba4fabd07215e44595e204ab9e9071a66a8ca63945a2dea286a7
+- name: test-040
+  source:
+    path: spec/fixtures/emf/test-040.emf
+    sha256: f0ac37dc73fc28f9fb8b309351b3d2c9557e3b18953269adee9f9e5461aea4d0
+  golden:
+    path: spec/fixtures/golden/test-040.svg
+    sha256: 2a00c894499bf4a4f7fc560591dfc713165ab7760a7211f4e08d8d1c4d8a7c00
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-040.svg
+    sha256: f8a236a3cd8c216d3772078ac9e957868c18fc567b874ee19311615250192739
+- name: test-041
+  source:
+    path: spec/fixtures/emf/test-041.emf
+    sha256: 76228b198d0aa275f5a283044982363dff611b85ef0943d7941432e7541e943f
+  golden:
+    path: spec/fixtures/golden/test-041.svg
+    sha256: 142175db95efdcd376a565bff256fd32aec3d90611b1586d9888c02d929ab1f7
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-041.svg
+    sha256: 142175db95efdcd376a565bff256fd32aec3d90611b1586d9888c02d929ab1f7
+- name: test-042
+  source:
+    path: spec/fixtures/emf/test-042.emf
+    sha256: c82c823625bf5642cb5956b19bd232af367a1545c9aef28b63f2c1be95af6230
+  golden:
+    path: spec/fixtures/golden/test-042.svg
+    sha256: 4b060aa28b85c7919dd82de9d8ffd8eaba346c4b51a9c85a72d6434a879dfd31
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-042.svg
+    sha256: 4b060aa28b85c7919dd82de9d8ffd8eaba346c4b51a9c85a72d6434a879dfd31
+- name: test-043
+  source:
+    path: spec/fixtures/emf/test-043.emf
+    sha256: 80915d9002cfc453aadcd457dd664eb7d32ebaa3899e959e74a49d80570e9d7c
+  golden:
+    path: spec/fixtures/golden/test-043.svg
+    sha256: 5738b68caaee8e6aca4e4f07849f9bd07a867432f8564dea790375bb64b7f66b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-043.svg
+    sha256: 5738b68caaee8e6aca4e4f07849f9bd07a867432f8564dea790375bb64b7f66b
+- name: test-044
+  source:
+    path: spec/fixtures/emf/test-044.emf
+    sha256: badb7af8bcca822d7e7728fefabae20434dd16c12cb309207cbcd017ac661058
+  golden:
+    path: spec/fixtures/golden/test-044.svg
+    sha256: 41b81ff3d7fd48d2635c7e14abfe5ef921ba569b609443e4839b24b05eaa8dfb
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-044.svg
+    sha256: 41b81ff3d7fd48d2635c7e14abfe5ef921ba569b609443e4839b24b05eaa8dfb
+- name: test-045
+  source:
+    path: spec/fixtures/emf/test-045.emf
+    sha256: 99d531bae3eadcda61af0272577a73393cf8acd4c95197792c31d0badbc5ba57
+  golden:
+    path: spec/fixtures/golden/test-045.svg
+    sha256: ef317ae1e7bbced5e34633be2a1805dcf951474f89e1817fa07444087cef708e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-045.svg
+    sha256: ef317ae1e7bbced5e34633be2a1805dcf951474f89e1817fa07444087cef708e
+- name: test-046
+  source:
+    path: spec/fixtures/emf/test-046.emf
+    sha256: 9e6b028878523b7b4d4cba94ea2b66e7e02ebab74271f94d6e2060dc82e43db0
+  golden:
+    path: spec/fixtures/golden/test-046.svg
+    sha256: af1950bc3abe9cdf74c0c0a75564e332b310439dd2a540b3860cc350cc3f788f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-046.svg
+    sha256: af1950bc3abe9cdf74c0c0a75564e332b310439dd2a540b3860cc350cc3f788f
+- name: test-047
+  source:
+    path: spec/fixtures/emf/test-047.emf
+    sha256: 492d39f90da4aeb213fb8fda15b29cd6e2f7c8b007b8d679466ea8f6f868971e
+  golden:
+    path: spec/fixtures/golden/test-047.svg
+    sha256: f7fe2676984205689ff67fe7abcf53c114f1af3aec28085b72e45997bf836d2a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-047.svg
+    sha256: f7fe2676984205689ff67fe7abcf53c114f1af3aec28085b72e45997bf836d2a
+- name: test-048
+  source:
+    path: spec/fixtures/emf/test-048.emf
+    sha256: ec509b3608c34f4f04aa81e8c319923086d6f4e0b32301c1e3a7133d7d662071
+  golden:
+    path: spec/fixtures/golden/test-048.svg
+    sha256: b3ad0bc9a49379c63585a3c3a5c06cb5c112e2eba22dd12c4ad3e3fbe19acd3b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-048.svg
+    sha256: b3ad0bc9a49379c63585a3c3a5c06cb5c112e2eba22dd12c4ad3e3fbe19acd3b
+- name: test-049
+  source:
+    path: spec/fixtures/emf/test-049.emf
+    sha256: edd8d6045cbc8d369426a47aa72ccd7f30afc6083b92fb0f2c4679f47ee61496
+  golden:
+    path: spec/fixtures/golden/test-049.svg
+    sha256: c4ebe410b0e97c9ff289c3af9429b7d3f5950eeded6968e9e2b27828583774be
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-049.svg
+    sha256: c4ebe410b0e97c9ff289c3af9429b7d3f5950eeded6968e9e2b27828583774be
+- name: test-050
+  source:
+    path: spec/fixtures/emf/test-050.emf
+    sha256: 382626837a9f11d6307f9bafc8cf689022f52eaa09df152a510cb1334ada3b64
+  golden:
+    path: spec/fixtures/golden/test-050.svg
+    sha256: 35829129e62a083285a7673c3b871d1663c377cf1d5f951593982e0a91916cd2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-050.svg
+    sha256: 35829129e62a083285a7673c3b871d1663c377cf1d5f951593982e0a91916cd2
+- name: test-051
+  source:
+    path: spec/fixtures/emf/test-051.emf
+    sha256: 8d5ec560965a2943b04c90a1ff9584181c5c2288a1d1cf01bb5d019d11f6cd79
+  golden:
+    path: spec/fixtures/golden/test-051.svg
+    sha256: 00e4abe15545427bcb18efe1fe3da16244ebb3a83f3bde106245e4b78e7aeea1
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-051.svg
+    sha256: 00e4abe15545427bcb18efe1fe3da16244ebb3a83f3bde106245e4b78e7aeea1
+- name: test-052
+  source:
+    path: spec/fixtures/emf/test-052.emf
+    sha256: e409be9817b5424159f006c99b6404dcdff625c8a1e104ac604f8b45c3f485a0
+  golden:
+    path: spec/fixtures/golden/test-052.svg
+    sha256: fd0e53630e61c176cafcd462d20361cef08331a51fafa94e061058d95988727a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-052.svg
+    sha256: fd0e53630e61c176cafcd462d20361cef08331a51fafa94e061058d95988727a
+- name: test-053
+  source:
+    path: spec/fixtures/emf/test-053.emf
+    sha256: cb9ab5a24860e29781d55c46d15ca59d944eb509e24a0ab3a378999a1d3b2084
+  golden:
+    path: spec/fixtures/golden/test-053.svg
+    sha256: 639cb88552fe59c6765f773a0c291a887676762ec564945a79924982a44048e4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-053.svg
+    sha256: 639cb88552fe59c6765f773a0c291a887676762ec564945a79924982a44048e4
+- name: test-054
+  source:
+    path: spec/fixtures/emf/test-054.emf
+    sha256: 882f4429ddf2a8770409391d5319479412aea16790ffe0a6bbf5b787be13d6f4
+  golden:
+    path: spec/fixtures/golden/test-054.svg
+    sha256: 063f0b8459cf32460ea25f46c46a600062687a2e0725715d3ab7fc315adf1e3e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-054.svg
+    sha256: 063f0b8459cf32460ea25f46c46a600062687a2e0725715d3ab7fc315adf1e3e
+- name: test-055
+  source:
+    path: spec/fixtures/emf/test-055.emf
+    sha256: 72e37b833043a09622e3c92368cb27aa6a3a3f147fd6e760e2ea7528df78eb58
+  golden:
+    path: spec/fixtures/golden/test-055.svg
+    sha256: ae3b91eb79a0d900589be3a341e9fb252090f392b2df02bd631bddb0da2f870c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-055.svg
+    sha256: ae3b91eb79a0d900589be3a341e9fb252090f392b2df02bd631bddb0da2f870c
+- name: test-056
+  source:
+    path: spec/fixtures/emf/test-056.emf
+    sha256: c02f93b8dfaebc5cae3b6a4b1e5acd9584ecace5fabf6de2f913525c2dfd1823
+  golden:
+    path: spec/fixtures/golden/test-056.svg
+    sha256: 0a2252284e7c07b427eccc9e78ec29adf382b3dc38ecd92764320411a19ca886
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-056.svg
+    sha256: 0a2252284e7c07b427eccc9e78ec29adf382b3dc38ecd92764320411a19ca886
+- name: test-057
+  source:
+    path: spec/fixtures/emf/test-057.emf
+    sha256: c7f7d6e60ea3c14f7cb0a45632cee61c117d4a65ad023c50d9c870ec73fc2ab0
+  golden:
+    path: spec/fixtures/golden/test-057.svg
+    sha256: 2452581a056bb1e8755baa5f4f9157d5d26c1e3387dbee9b9334636af2541e2f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-057.svg
+    sha256: 2452581a056bb1e8755baa5f4f9157d5d26c1e3387dbee9b9334636af2541e2f
+- name: test-058
+  source:
+    path: spec/fixtures/emf/test-058.emf
+    sha256: cc431d3c80f94eb866f9f1ff7cea132f68c02cc415e78a4d992c587cab0ba4fc
+  golden:
+    path: spec/fixtures/golden/test-058.svg
+    sha256: 5a9b2b52367e2e42f81852df59fef6e4b4e6c8d7b3a29806edcc1b4e298a2b5a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-058.svg
+    sha256: 5a9b2b52367e2e42f81852df59fef6e4b4e6c8d7b3a29806edcc1b4e298a2b5a
+- name: test-059
+  source:
+    path: spec/fixtures/emf/test-059.emf
+    sha256: 52600fd499a4e07d95efdc5f351a75f71786032cd5f4d4ab35c7728c95e28662
+  golden:
+    path: spec/fixtures/golden/test-059.svg
+    sha256: c0fbc5152db009e9c72744846d5895b31005ef02da30fd35ff2a9d3c051a390e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-059.svg
+    sha256: c0fbc5152db009e9c72744846d5895b31005ef02da30fd35ff2a9d3c051a390e
+- name: test-060
+  source:
+    path: spec/fixtures/emf/test-060.emf
+    sha256: c92ad1324e017fc9921ec9398277ad4e08ff6b1366989ce0f3ebf59982e1ef46
+  golden:
+    path: spec/fixtures/golden/test-060.svg
+    sha256: 785ba3f19a1ce9e2ae3b1422c34e6bd9789a9724c27a8bb5fe56175ae46df768
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-060.svg
+    sha256: 785ba3f19a1ce9e2ae3b1422c34e6bd9789a9724c27a8bb5fe56175ae46df768
+- name: test-061
+  source:
+    path: spec/fixtures/emf/test-061.emf
+    sha256: 3c9cb14c5c5622b3e18dd7f4f95135ef7a003fe468a99c1007ddc6a16b6adce9
+  golden:
+    path: spec/fixtures/golden/test-061.svg
+    sha256: 7b3050aa3efc11aa5aef6f2b943946fe5733b9c62739298870d0eb4a15b43d8c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-061.svg
+    sha256: 7b3050aa3efc11aa5aef6f2b943946fe5733b9c62739298870d0eb4a15b43d8c
+- name: test-062
+  source:
+    path: spec/fixtures/emf/test-062.emf
+    sha256: dedd2309c291dec0eb6fd985b52bb28d240c21a1799d5ee8190e9044ad876159
+  golden:
+    path: spec/fixtures/golden/test-062.svg
+    sha256: a86e842d3bb087b92a8760cfd6e956f6eb0da31e1a7ba7e5971c984a212c80a4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-062.svg
+    sha256: a86e842d3bb087b92a8760cfd6e956f6eb0da31e1a7ba7e5971c984a212c80a4
+- name: test-063
+  source:
+    path: spec/fixtures/emf/test-063.emf
+    sha256: f56afe9cb42360c8164bc9498902290c45ebc06bc35b27962743a8354c482f74
+  golden:
+    path: spec/fixtures/golden/test-063.svg
+    sha256: 5412db18547e14bf6f7bec855e0c9fc9aae8e813c642cb2116211ba0be508bf5
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-063.svg
+    sha256: 5412db18547e14bf6f7bec855e0c9fc9aae8e813c642cb2116211ba0be508bf5
+- name: test-064
+  source:
+    path: spec/fixtures/emf/test-064.emf
+    sha256: 066d3f2fb3ddfa913e8ade349f28aaad3b5baa23ed0bd1f16683dd677aac6db4
+  golden:
+    path: spec/fixtures/golden/test-064.svg
+    sha256: 27fa3c37a93eb48a547b3e2929f4bad8e9af88a6791471b177717306a586edf0
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-064.svg
+    sha256: 27fa3c37a93eb48a547b3e2929f4bad8e9af88a6791471b177717306a586edf0
+- name: test-065
+  source:
+    path: spec/fixtures/emf/test-065.emf
+    sha256: 782072e59dbe88893b0e143e28d7ab7e2d1f35effecf7266c07ef79c0a7cc16f
+  golden:
+    path: spec/fixtures/golden/test-065.svg
+    sha256: 19c2182e7681604251b911a0f668c4e8e1bdbca7832d42d524bba469e70a7cf7
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-065.svg
+    sha256: 19c2182e7681604251b911a0f668c4e8e1bdbca7832d42d524bba469e70a7cf7
+- name: test-066
+  source:
+    path: spec/fixtures/emf/test-066.emf
+    sha256: 1e2765c7364e3b9687af981fad0e9486e0f1d2ca72e77b81b06b7dfe63ac0fad
+  golden:
+    path: spec/fixtures/golden/test-066.svg
+    sha256: 5d292948b1e5b04977e291a51ecf816a7d636a45e4b6e4b3ed9fc29c14591dcd
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-066.svg
+    sha256: 5d292948b1e5b04977e291a51ecf816a7d636a45e4b6e4b3ed9fc29c14591dcd
+- name: test-067
+  source:
+    path: spec/fixtures/emf/test-067.emf
+    sha256: b2496f2a542e6178f595ef4efa038acf0ce46a381a3a5c098d61d4cf2ebf058f
+  golden:
+    path: spec/fixtures/golden/test-067.svg
+    sha256: 59d4e22a0a151c07ccf0841a9a8366d12f18eafbea275c6e4516209a5bcaef8a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-067.svg
+    sha256: 59d4e22a0a151c07ccf0841a9a8366d12f18eafbea275c6e4516209a5bcaef8a
+- name: test-068
+  source:
+    path: spec/fixtures/emf/test-068.emf
+    sha256: dae83b65fe950d63ce17d99f4312952e328be87e821647d463f213fff474566f
+  golden:
+    path: spec/fixtures/golden/test-068.svg
+    sha256: c7c2cee5f3ebc8b14bc5f3d74cd1389f8dcaf4ceaf4ee8d1f7296014ac811578
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-068.svg
+    sha256: c7c2cee5f3ebc8b14bc5f3d74cd1389f8dcaf4ceaf4ee8d1f7296014ac811578
+- name: test-069
+  source:
+    path: spec/fixtures/emf/test-069.emf
+    sha256: 717b3a6b2ce57f3f45d812eaacb2cc30491cf76e78e809db7205bf17fe182eab
+  golden:
+    path: spec/fixtures/golden/test-069.svg
+    sha256: 3c9a6c2f44d14347497ab07f18d4c1b776934c5876d39aa3586ec93c64ecd8fd
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-069.svg
+    sha256: 3c9a6c2f44d14347497ab07f18d4c1b776934c5876d39aa3586ec93c64ecd8fd
+- name: test-070
+  source:
+    path: spec/fixtures/emf/test-070.emf
+    sha256: 15d29cdaa9a8ebd86c6a649dc1cb275b4e655ecb46b0747bc14805639b23869c
+  golden:
+    path: spec/fixtures/golden/test-070.svg
+    sha256: 12f4f06fa5c94f5d78221d3d2d10bddf11fbd39506a036fb45a9c59da74b045d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-070.svg
+    sha256: 12f4f06fa5c94f5d78221d3d2d10bddf11fbd39506a036fb45a9c59da74b045d
+- name: test-071
+  source:
+    path: spec/fixtures/emf/test-071.emf
+    sha256: 99bdb224e6db990f3dcd933a30f3619e166afd859864ab4b6659d604f5ede683
+  golden:
+    path: spec/fixtures/golden/test-071.svg
+    sha256: 80732b9634d120e390f91aaa1f1741c9f6c0eced296e227a8c9cb8e02dfa8e2e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-071.svg
+    sha256: 80732b9634d120e390f91aaa1f1741c9f6c0eced296e227a8c9cb8e02dfa8e2e
+- name: test-072
+  source:
+    path: spec/fixtures/emf/test-072.emf
+    sha256: aa2530fc0f00f94f3960ee19d8ca7e5863bb5b18340a25de6d3aa5ba03b90233
+  golden:
+    path: spec/fixtures/golden/test-072.svg
+    sha256: e21a70c3e4c3cfed55bba0c7bbcea38730de17d54a7b9473aad1076e54679667
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-072.svg
+    sha256: e21a70c3e4c3cfed55bba0c7bbcea38730de17d54a7b9473aad1076e54679667
+- name: test-073
+  source:
+    path: spec/fixtures/emf/test-073.emf
+    sha256: 1a17a51b1e3a80d7b8bd7260c472cb67bfb42786aebdc61df93a011174ed9645
+  golden:
+    path: spec/fixtures/golden/test-073.svg
+    sha256: 8aeb63f135644d3bf507cda72db3def7e6cfdc8508e9d5041b6039beff1cb239
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-073.svg
+    sha256: 8aeb63f135644d3bf507cda72db3def7e6cfdc8508e9d5041b6039beff1cb239
+- name: test-074
+  source:
+    path: spec/fixtures/emf/test-074.emf
+    sha256: 16d31bd7cf975ca6bb7abc83b2670ce01381dd8bed69a8da4a73a52f31126c88
+  golden:
+    path: spec/fixtures/golden/test-074.svg
+    sha256: 1963eba2a928ca0e987ef35e774493c468dde2bd504e5becf8e4d57dc3dace9f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-074.svg
+    sha256: 1963eba2a928ca0e987ef35e774493c468dde2bd504e5becf8e4d57dc3dace9f
+- name: test-075
+  source:
+    path: spec/fixtures/emf/test-075.emf
+    sha256: 67ff95e409515b2a2ddf18a659261bfea2fee0fea96c2d32e7c919a3821e7121
+  golden:
+    path: spec/fixtures/golden/test-075.svg
+    sha256: 29f6ec8b76f84dc2335b2eee42c34646151bfe8f3ef992ca3b37b7c6a59c25fa
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-075.svg
+    sha256: 29f6ec8b76f84dc2335b2eee42c34646151bfe8f3ef992ca3b37b7c6a59c25fa
+- name: test-076
+  source:
+    path: spec/fixtures/emf/test-076.emf
+    sha256: ae8341bea6ca157ebe2c86b9706a41b6366097912ff296fbc82951cadf68feb5
+  golden:
+    path: spec/fixtures/golden/test-076.svg
+    sha256: 7c19bb7f723f77da1fd0ad49ad216d8f24556f9b765f65bcca7ec6c75f361e33
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-076.svg
+    sha256: 7c19bb7f723f77da1fd0ad49ad216d8f24556f9b765f65bcca7ec6c75f361e33
+- name: test-077
+  source:
+    path: spec/fixtures/emf/test-077.emf
+    sha256: 984d4a62ab81785a13db4e5eab761f25ac90292d3fe0e581417157001f86e4a7
+  golden:
+    path: spec/fixtures/golden/test-077.svg
+    sha256: f6c5cae9b73365eb425e3d4ff7e71b3a4d4f98704f0879795cbc7bc8c48f5980
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-077.svg
+    sha256: f6c5cae9b73365eb425e3d4ff7e71b3a4d4f98704f0879795cbc7bc8c48f5980
+- name: test-078
+  source:
+    path: spec/fixtures/emf/test-078.emf
+    sha256: 33b95efbc445fd00d1acf43a42fabc671fb44cd2d9f1f883acaf98fa544de0d8
+  golden:
+    path: spec/fixtures/golden/test-078.svg
+    sha256: 3b96c7fe582f24b15a1817fb5825a8b9afc27700d3120532d7a7f37a8534fc6d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-078.svg
+    sha256: 3b96c7fe582f24b15a1817fb5825a8b9afc27700d3120532d7a7f37a8534fc6d
+- name: test-079
+  source:
+    path: spec/fixtures/emf/test-079.emf
+    sha256: 3559c5205b0e09edce48ac0a661cd72481f242274433cfbfd3aee2cf1829cd4c
+  golden:
+    path: spec/fixtures/golden/test-079.svg
+    sha256: a9a146dd55dd31fa653151bfd020bb4f148855ca26347f93ec46c94fac858697
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-079.svg
+    sha256: a9a146dd55dd31fa653151bfd020bb4f148855ca26347f93ec46c94fac858697
+- name: test-080
+  source:
+    path: spec/fixtures/emf/test-080.emf
+    sha256: cdf198d6236cc2cff87cd6e725509297e4692ef0a2ff8bec30a1a4707197be5a
+  golden:
+    path: spec/fixtures/golden/test-080.svg
+    sha256: a03d4223d2a9377622c3afc92e751a96b6a4ab6a666cae5603c6072474d03ec7
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-080.svg
+    sha256: a03d4223d2a9377622c3afc92e751a96b6a4ab6a666cae5603c6072474d03ec7
+- name: test-081
+  source:
+    path: spec/fixtures/emf/test-081.emf
+    sha256: fdde404dba6f3f14820adba53e86fb49ec848eccfcd0fcf86e22cc9e172c036f
+  golden:
+    path: spec/fixtures/golden/test-081.svg
+    sha256: 050be25654862fcf46bd919ee46e9583f8f3fbb7081da357a7ad6edca1471808
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-081.svg
+    sha256: 050be25654862fcf46bd919ee46e9583f8f3fbb7081da357a7ad6edca1471808
+- name: test-082
+  source:
+    path: spec/fixtures/emf/test-082.emf
+    sha256: 7f0dfd0a0f9b5624d444649a12f373beeba14f73ce4d2d6b38afd468460bf593
+  golden:
+    path: spec/fixtures/golden/test-082.svg
+    sha256: 1aef8ecf0a69ebce390975c8d8dff62ebfbdcab5ca87a2fde1172be88da4a99c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-082.svg
+    sha256: 1aef8ecf0a69ebce390975c8d8dff62ebfbdcab5ca87a2fde1172be88da4a99c
+- name: test-083
+  source:
+    path: spec/fixtures/emf/test-083.emf
+    sha256: 445d92b6134d90389da7648a834371cc508e065f1445e690e97faba4c620a311
+  golden:
+    path: spec/fixtures/golden/test-083.svg
+    sha256: 37708d91bd0712ff932ec3a83029c8c5dc03d91f6def73a5737ed66e63b90e1d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-083.svg
+    sha256: 37708d91bd0712ff932ec3a83029c8c5dc03d91f6def73a5737ed66e63b90e1d
+- name: test-084
+  source:
+    path: spec/fixtures/emf/test-084.emf
+    sha256: f964d76a3d3f8381d4711d5fe7f599334c8835b7b4511e134459845983d482ad
+  golden:
+    path: spec/fixtures/golden/test-084.svg
+    sha256: 8ca169dd9ed7d7456623c90e4b4a92f231663cc5f20421d2de191e4527deaf96
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-084.svg
+    sha256: 8ca169dd9ed7d7456623c90e4b4a92f231663cc5f20421d2de191e4527deaf96
+- name: test-085
+  source:
+    path: spec/fixtures/emf/test-085.emf
+    sha256: '0817dda1250bab7871df1f5d4cbe5d4858b5278687b5128ab7bdf6f954678b0d'
+  golden:
+    path: spec/fixtures/golden/test-085.svg
+    sha256: 82649548c0a23d3531def25efa8561fc12c0d03e923f4b820ce3d364a1af1052
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-085.svg
+    sha256: 82649548c0a23d3531def25efa8561fc12c0d03e923f4b820ce3d364a1af1052
+- name: test-086
+  source:
+    path: spec/fixtures/emf/test-086.emf
+    sha256: c2ff04b7fe5755872142614163ac7d85d0ee6f134042978f043a62aa2f06b30c
+  golden:
+    path: spec/fixtures/golden/test-086.svg
+    sha256: f9e8a0fbe23ff0258704b2d181f7c982e244d2b1af9421489aff651f693bdf58
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-086.svg
+    sha256: f9e8a0fbe23ff0258704b2d181f7c982e244d2b1af9421489aff651f693bdf58
+- name: test-087
+  source:
+    path: spec/fixtures/emf/test-087.emf
+    sha256: 6d37bb1b4b0c59add5267d7ca0167620ea6d3676c38b55f27b9fe76956acb7cf
+  golden:
+    path: spec/fixtures/golden/test-087.svg
+    sha256: 59cddb608c434361348f7f63cf9d6eac0da798619516eb69516c548f76de7fc8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-087.svg
+    sha256: 59cddb608c434361348f7f63cf9d6eac0da798619516eb69516c548f76de7fc8
+- name: test-088
+  source:
+    path: spec/fixtures/emf/test-088.emf
+    sha256: aec0aea9d5b80613e5606d805a47c71e5af99b16b2a20f1d5faf8ce21ba4298e
+  golden:
+    path: spec/fixtures/golden/test-088.svg
+    sha256: 95847e3c85ce7de99f919a1888111a7e2c83f40c07a86d2e16e9d40e1a10d5f2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-088.svg
+    sha256: 95847e3c85ce7de99f919a1888111a7e2c83f40c07a86d2e16e9d40e1a10d5f2
+- name: test-089
+  source:
+    path: spec/fixtures/emf/test-089.emf
+    sha256: ab8203cb4936d03e444c2a4b3cf1ebb1c4df7a584719861b29942181e3322f0e
+  golden:
+    path: spec/fixtures/golden/test-089.svg
+    sha256: ace44a505e05cac06fdfbd4e877e1072c126788793311b4e8d8b38388fea4039
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-089.svg
+    sha256: ace44a505e05cac06fdfbd4e877e1072c126788793311b4e8d8b38388fea4039
+- name: test-090
+  source:
+    path: spec/fixtures/emf/test-090.emf
+    sha256: a5a7ad9ed510e7358578f961be3f22da4b27b5b56c9e778f3a0c6175beec68ae
+  golden:
+    path: spec/fixtures/golden/test-090.svg
+    sha256: d1ffab1fc5d41ea270e84ce0953a618c7d22137a9ca5694bcc0aacab3baea3c3
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-090.svg
+    sha256: d1ffab1fc5d41ea270e84ce0953a618c7d22137a9ca5694bcc0aacab3baea3c3
+- name: test-091
+  source:
+    path: spec/fixtures/emf/test-091.emf
+    sha256: 6682eb530093942d06f3619ce8891c80363242ad28a36fbf1cc7b1866de30754
+  golden:
+    path: spec/fixtures/golden/test-091.svg
+    sha256: e9a66eb1b9a0e5b1cb2556085f7048020e53d36951938c50fbf2d4afe0490a4f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-091.svg
+    sha256: e9a66eb1b9a0e5b1cb2556085f7048020e53d36951938c50fbf2d4afe0490a4f
+- name: test-092
+  source:
+    path: spec/fixtures/emf/test-092.emf
+    sha256: d044489cc0451daec66d101b6cee8f59768f58f77a6ca0d0c70c7b391ee9acfa
+  golden:
+    path: spec/fixtures/golden/test-092.svg
+    sha256: 222d736a26e4e27ae3d8a4640af5891c6e9f992b51dc7ea472c7bf8960a49e56
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-092.svg
+    sha256: 222d736a26e4e27ae3d8a4640af5891c6e9f992b51dc7ea472c7bf8960a49e56
+- name: test-093
+  source:
+    path: spec/fixtures/emf/test-093.emf
+    sha256: af9b45b1676da8da6a090af11a9a2263165aadd2a285fb7a8971aa9584c87715
+  golden:
+    path: spec/fixtures/golden/test-093.svg
+    sha256: 59d4e22a0a151c07ccf0841a9a8366d12f18eafbea275c6e4516209a5bcaef8a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-093.svg
+    sha256: 59d4e22a0a151c07ccf0841a9a8366d12f18eafbea275c6e4516209a5bcaef8a
+- name: test-094
+  source:
+    path: spec/fixtures/emf/test-094.emf
+    sha256: 9787b88274436ff437ba046eca65c5a534c1f7925634868cb1a44a657098f0e3
+  golden:
+    path: spec/fixtures/golden/test-094.svg
+    sha256: eacaba9dc9a3a88ab6e22005d08741f580f29415c0cd56dfed0d6ee1b37e5fcd
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-094.svg
+    sha256: eacaba9dc9a3a88ab6e22005d08741f580f29415c0cd56dfed0d6ee1b37e5fcd
+- name: test-095
+  source:
+    path: spec/fixtures/emf/test-095.emf
+    sha256: f1d0872b5e592f2345bf329559f78222aec18f5a8622bc5b310b2093491c8d08
+  golden:
+    path: spec/fixtures/golden/test-095.svg
+    sha256: 8aeb63f135644d3bf507cda72db3def7e6cfdc8508e9d5041b6039beff1cb239
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-095.svg
+    sha256: 8aeb63f135644d3bf507cda72db3def7e6cfdc8508e9d5041b6039beff1cb239
+- name: test-096
+  source:
+    path: spec/fixtures/emf/test-096.emf
+    sha256: cf5d117919ba76f31c1b18d2f70480d38dc0b484d08f1139ca8e2f724306a792
+  golden:
+    path: spec/fixtures/golden/test-096.svg
+    sha256: 35398657a43aef339c44875178ea2b5731a46fe928b703f5fd5bcfd7e8ca6d73
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-096.svg
+    sha256: 35398657a43aef339c44875178ea2b5731a46fe928b703f5fd5bcfd7e8ca6d73
+- name: test-097
+  source:
+    path: spec/fixtures/emf/test-097.emf
+    sha256: c86bc44b59afde942216f0e65330f4f4b62d719db4eb8183233a6ce8c72e6af8
+  golden:
+    path: spec/fixtures/golden/test-097.svg
+    sha256: b22e231f3d3b492058c3b8f165ba3451e86356a151ce827199fe81b335309585
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-097.svg
+    sha256: b22e231f3d3b492058c3b8f165ba3451e86356a151ce827199fe81b335309585
+- name: test-098
+  source:
+    path: spec/fixtures/emf/test-098.emf
+    sha256: 95bfee1b8ecf6919599b623d80203c92fef8905cc5d28da69d195c32d1e7d887
+  golden:
+    path: spec/fixtures/golden/test-098.svg
+    sha256: 92fca01f3bf8beeb3c6b710f71ba674cc9a02322fe3059d5319adb3ae9a28fec
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-098.svg
+    sha256: 92fca01f3bf8beeb3c6b710f71ba674cc9a02322fe3059d5319adb3ae9a28fec
+- name: test-099
+  source:
+    path: spec/fixtures/emf/test-099.emf
+    sha256: 3493ee6cd21c981a1f928f2e588ec292da036e09458c9bc4adddf099e4aa48e8
+  golden:
+    path: spec/fixtures/golden/test-099.svg
+    sha256: 3446ef7150b4304a9bfca877cbe3c662c5d0b16e6aae41592da16e288b841555
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-099.svg
+    sha256: 3446ef7150b4304a9bfca877cbe3c662c5d0b16e6aae41592da16e288b841555
+- name: test-100
+  source:
+    path: spec/fixtures/emf/test-100.emf
+    sha256: 6ae22000e36e477e27ed676e8afc7a6a19872a496e2f1e7f69d6c03e812f0e5f
+  golden:
+    path: spec/fixtures/golden/test-100.svg
+    sha256: e18559dd3c9db8d43d70815c24be9b8dab1753eafa2f9f3104213adb33dae8cc
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-100.svg
+    sha256: e18559dd3c9db8d43d70815c24be9b8dab1753eafa2f9f3104213adb33dae8cc
+- name: test-101
+  source:
+    path: spec/fixtures/emf/test-101.emf
+    sha256: 6a0a3e14f1e7a9fd2c3e1af2682cb0702d15c94a2402a7a1666ea696b1cf105c
+  golden:
+    path: spec/fixtures/golden/test-101.svg
+    sha256: f1d4a2754ac2f21a5714c2d3114a2a74ec70346cf21c8070e88e9bcbf9f841a5
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-101.svg
+    sha256: f1d4a2754ac2f21a5714c2d3114a2a74ec70346cf21c8070e88e9bcbf9f841a5
+- name: test-102
+  source:
+    path: spec/fixtures/emf/test-102.emf
+    sha256: 005cd1c0b9d858a9bdc30ddaecb3b9dda165d3166242d78b9a8c727974aaa71b
+  golden:
+    path: spec/fixtures/golden/test-102.svg
+    sha256: 7fd02e493b46fb9aaa2d8895f1fd838fac0e86d73e51cb7cd5e35c3dedf2c841
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-102.svg
+    sha256: 7fd02e493b46fb9aaa2d8895f1fd838fac0e86d73e51cb7cd5e35c3dedf2c841
+- name: test-103
+  source:
+    path: spec/fixtures/emf/test-103.emf
+    sha256: 5c48729e4d2b1c4a3cc4e381ef5637da4bdd6f328a006f3a21aea6d1641c9a3b
+  golden:
+    path: spec/fixtures/golden/test-103.svg
+    sha256: f7d5356d550d1865e2607d35d96c12e84e5024d1b46b813f306e52a87594b232
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-103.svg
+    sha256: f7d5356d550d1865e2607d35d96c12e84e5024d1b46b813f306e52a87594b232
+- name: test-104
+  source:
+    path: spec/fixtures/emf/test-104.emf
+    sha256: c6fed75b910c2c1a78838abc14d9b149866394238cde373194e237de28151e70
+  golden:
+    path: spec/fixtures/golden/test-104.svg
+    sha256: 150b55d7ef8b9abd050e8f40c806e466790df0aa43b57e581ef78b9f6affe173
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-104.svg
+    sha256: 150b55d7ef8b9abd050e8f40c806e466790df0aa43b57e581ef78b9f6affe173
+- name: test-105
+  source:
+    path: spec/fixtures/emf/test-105.emf
+    sha256: 69f792fa07775b229715b036fdcbd1272bacce4dc6857005e5072ca253d72aac
+  golden:
+    path: spec/fixtures/golden/test-105.svg
+    sha256: e060ecd7053fb82f16983bd0e04317be2ad66079eb24ad5e3c7da5c457615ce8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-105.svg
+    sha256: e060ecd7053fb82f16983bd0e04317be2ad66079eb24ad5e3c7da5c457615ce8
+- name: test-106
+  source:
+    path: spec/fixtures/emf/test-106.emf
+    sha256: 2e8fd8a60defe1ced1c81640cb5ecb07f942a56c4c8658485f71565a8adca861
+  golden:
+    path: spec/fixtures/golden/test-106.svg
+    sha256: d077940e1cfa83ecb63d940f2766e70fe03bb440e432c4c13227dfc062ab2350
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-106.svg
+    sha256: d077940e1cfa83ecb63d940f2766e70fe03bb440e432c4c13227dfc062ab2350
+- name: test-107
+  source:
+    path: spec/fixtures/emf/test-107.emf
+    sha256: ea29c184ae751e8bb2f95f65eeda3a9f37f64f79fc2a97114f502eca3ca20037
+  golden:
+    path: spec/fixtures/golden/test-107.svg
+    sha256: 0aaad67119f86dff4affd73a77e0cf2086d2066183aaff9649c23db231233ea2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-107.svg
+    sha256: 0aaad67119f86dff4affd73a77e0cf2086d2066183aaff9649c23db231233ea2
+- name: test-108
+  source:
+    path: spec/fixtures/emf/test-108.emf
+    sha256: 9bcce68e823f31ede97f62c6cbc4d099dff293415a94de3434070cea4deae1e7
+  golden:
+    path: spec/fixtures/golden/test-108.svg
+    sha256: fb0e7f4634f0e67af921c0dafe107b990a1a4fa6c984dbdf32a74bc10ba5a6f1
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-108.svg
+    sha256: fb0e7f4634f0e67af921c0dafe107b990a1a4fa6c984dbdf32a74bc10ba5a6f1
+- name: test-109
+  source:
+    path: spec/fixtures/emf/test-109.emf
+    sha256: 4d11e40acb88ac2886858486473e13cf9943fb443a77d715b342527adf956b25
+  golden:
+    path: spec/fixtures/golden/test-109.svg
+    sha256: ceacef2b6ba6d62387312cfd51774e12507ed9ae1c50f254ac69358dce6550c6
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-109.svg
+    sha256: 4e0c8eb9c8055887598af55854db636cdcf562d42ad82439642a84ec4f488f7b
+- name: test-110
+  source:
+    path: spec/fixtures/emf/test-110.emf
+    sha256: 8b966af09c6c9953b5ed90d4fb1bef26d6416808b00413559131af711974d955
+  golden:
+    path: spec/fixtures/golden/test-110.svg
+    sha256: 35398657a43aef339c44875178ea2b5731a46fe928b703f5fd5bcfd7e8ca6d73
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-110.svg
+    sha256: 35398657a43aef339c44875178ea2b5731a46fe928b703f5fd5bcfd7e8ca6d73
+- name: test-111
+  source:
+    path: spec/fixtures/emf/test-111.emf
+    sha256: 4abcb9e68a954056c991abbf321a084640011a0a934f7bc21f2ac7f36d4f9baf
+  golden:
+    path: spec/fixtures/golden/test-111.svg
+    sha256: b2c97467c4cf1c0e1166be3bc2d3fb59d55a48df93907fbd514a4ad91aeaf1b9
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-111.svg
+    sha256: b2c97467c4cf1c0e1166be3bc2d3fb59d55a48df93907fbd514a4ad91aeaf1b9
+- name: test-112
+  source:
+    path: spec/fixtures/emf/test-112.emf
+    sha256: 535e854f371d29d0044266a0a8531baa1e34e523956fea3e144ce88f1d0957c7
+  golden:
+    path: spec/fixtures/golden/test-112.svg
+    sha256: 648dc1cabf02fcef3f6988f192c7c2a30840defa3e31a40e81bc0a4f8d71501a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-112.svg
+    sha256: 648dc1cabf02fcef3f6988f192c7c2a30840defa3e31a40e81bc0a4f8d71501a
+- name: test-113
+  source:
+    path: spec/fixtures/emf/test-113.emf
+    sha256: 7d44f451f0b6162056c8d4962f753fdc60d2291a6460266f759ad4b0d36b1087
+  golden:
+    path: spec/fixtures/golden/test-113.svg
+    sha256: 8d0181ba5e8ea3f0774df0a89f65bc333d29ea7f4febe9f02f00133fe7348dc6
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-113.svg
+    sha256: 8d0181ba5e8ea3f0774df0a89f65bc333d29ea7f4febe9f02f00133fe7348dc6
+- name: test-114
+  source:
+    path: spec/fixtures/emf/test-114.emf
+    sha256: 4d0a5f79ddb0d3aebdffbc62828345d591cc3243e6adbe158d336b1e9db38715
+  golden:
+    path: spec/fixtures/golden/test-114.svg
+    sha256: 40ca2e0f882bdda351126c6eadf233c297375597e004db48b7c863ccca54c81f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-114.svg
+    sha256: 40ca2e0f882bdda351126c6eadf233c297375597e004db48b7c863ccca54c81f
+- name: test-115
+  source:
+    path: spec/fixtures/emf/test-115.emf
+    sha256: aeb26a55f77e6cfa9353bed4c0cab033589a9e40dd693d2c551b24453e756718
+  golden:
+    path: spec/fixtures/golden/test-115.svg
+    sha256: 39afaaf3b012a6c80c65fecba86d69bcc0f3f99860126bfaab3da4f45069c59b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-115.svg
+    sha256: 39afaaf3b012a6c80c65fecba86d69bcc0f3f99860126bfaab3da4f45069c59b
+- name: test-116
+  source:
+    path: spec/fixtures/emf/test-116.emf
+    sha256: f5355322f6dca6f69445bddfc63b9afcd4c35d45e44524dff2b799cce6021f01
+  golden:
+    path: spec/fixtures/golden/test-116.svg
+    sha256: aa6d77e3b0245e3fc374bc0ea4b55afde0a4152ecae54dacc6a1d270b7412d0a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-116.svg
+    sha256: aa6d77e3b0245e3fc374bc0ea4b55afde0a4152ecae54dacc6a1d270b7412d0a
+- name: test-117
+  source:
+    path: spec/fixtures/emf/test-117.emf
+    sha256: 3a50c2ec8f804fca4ed4f672a1651f1be15de73e7793295af8a795ecff416d04
+  golden:
+    path: spec/fixtures/golden/test-117.svg
+    sha256: 4f773e1dc208d53449a2ef3cf3c9a6a26e80c5deff594f2a55b5325776a80d1c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-117.svg
+    sha256: 4f773e1dc208d53449a2ef3cf3c9a6a26e80c5deff594f2a55b5325776a80d1c
+- name: test-118
+  source:
+    path: spec/fixtures/emf/test-118.emf
+    sha256: 430bf3335161ce404e6ad294c33ab6c568000544179d5e77de3b4fde39e52512
+  golden:
+    path: spec/fixtures/golden/test-118.svg
+    sha256: 0e7de3cdd3687fe96f620cdc550a390443ba7d6dc54e63116775445227927171
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-118.svg
+    sha256: 41abe56ff3255ddf1a57107eaeadff4abb18821e5eddeb3ebfb18e4bfc3447f2
+- name: test-119
+  source:
+    path: spec/fixtures/emf/test-119.emf
+    sha256: a38fd322f1293771b8381e14404fe1c5c08220070354dc898ec69bd56dba6afe
+  golden:
+    path: spec/fixtures/golden/test-119.svg
+    sha256: da350587ba9ac2dbdcde52c168b380ec1a7741c4e654db7156bd0976c5c14774
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-119.svg
+    sha256: da350587ba9ac2dbdcde52c168b380ec1a7741c4e654db7156bd0976c5c14774
+- name: test-120
+  source:
+    path: spec/fixtures/emf/test-120.emf
+    sha256: 2baf6b86c2ef1fc34eefdfc34cf840ec180ee89a5009b3c4126cbb6235421edc
+  golden:
+    path: spec/fixtures/golden/test-120.svg
+    sha256: 6910c7590f81a045bf5c4bf94aa3c56c14a3c3e26adc0432aa21ce8b7006445f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-120.svg
+    sha256: 6910c7590f81a045bf5c4bf94aa3c56c14a3c3e26adc0432aa21ce8b7006445f
+- name: test-121
+  source:
+    path: spec/fixtures/emf/test-121.emf
+    sha256: 1ff17841b9d8d56d1ed3338ad08930edbaa00021933b4075c87a778ddcf712f2
+  golden:
+    path: spec/fixtures/golden/test-121.svg
+    sha256: 82ed39abc4b8ae3d1a5416c5b8583463250ea395f50655a3327260d750b46893
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-121.svg
+    sha256: 82ed39abc4b8ae3d1a5416c5b8583463250ea395f50655a3327260d750b46893
+- name: test-122
+  source:
+    path: spec/fixtures/emf/test-122.emf
+    sha256: 006b550616c59a6e726a43595dd452a9d9eedee0f5550dd976ec08d1bce44057
+  golden:
+    path: spec/fixtures/golden/test-122.svg
+    sha256: ca9af58b6225fd6791932aea7688476b4160781b772f7bc0906656ca23d60fae
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-122.svg
+    sha256: ca9af58b6225fd6791932aea7688476b4160781b772f7bc0906656ca23d60fae
+- name: test-123
+  source:
+    path: spec/fixtures/emf/test-123.emf
+    sha256: 83c0d7211f4d753d2b26b1cdc58fadd9f76ec8553435ad702f8ae7936c558172
+  golden:
+    path: spec/fixtures/golden/test-123.svg
+    sha256: 0f660d1c0e81aff049597b37c83b077be62e55e74c2594678fae5b01769d029c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-123.svg
+    sha256: 0f660d1c0e81aff049597b37c83b077be62e55e74c2594678fae5b01769d029c
+- name: test-124
+  source:
+    path: spec/fixtures/emf/test-124.emf
+    sha256: 6808bd01cce9facd0a32f828bfb41ea67be222aa6891497bdd67933d2d802e3b
+  golden:
+    path: spec/fixtures/golden/test-124.svg
+    sha256: d468c1a11f5f3c11014e15f4e44c3de2d356eff28d57ef30b52d93fef96ceeea
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-124.svg
+    sha256: d468c1a11f5f3c11014e15f4e44c3de2d356eff28d57ef30b52d93fef96ceeea
+- name: test-125
+  source:
+    path: spec/fixtures/emf/test-125.emf
+    sha256: 23503facb82b39c83059ee94b664ee2a31912dde88d7406b4569c54e494668b3
+  golden:
+    path: spec/fixtures/golden/test-125.svg
+    sha256: 48e83e293bc260c4173a6608170487562d2b9036d889db5dbb19a241a4f7b3a2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-125.svg
+    sha256: 48e83e293bc260c4173a6608170487562d2b9036d889db5dbb19a241a4f7b3a2
+- name: test-126
+  source:
+    path: spec/fixtures/emf/test-126.emf
+    sha256: 9ad79c37d00ee77164f09602c70cba16ff9c17a059795fd4708681c811d6d5b3
+  golden:
+    path: spec/fixtures/golden/test-126.svg
+    sha256: 9556593a6f152e09d9d2997808eb64130c6a21d4be9b019a1eb5a5bae2338862
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-126.svg
+    sha256: 9556593a6f152e09d9d2997808eb64130c6a21d4be9b019a1eb5a5bae2338862
+- name: test-127
+  source:
+    path: spec/fixtures/emf/test-127.emf
+    sha256: 79c2c465c41b396ed456b75b168ef2c6f51146c51b3141800a5ebe00e6327334
+  golden:
+    path: spec/fixtures/golden/test-127.svg
+    sha256: 7e496d57282f63a3dce70a50add667f0df87d67857cdfc6a5d1636e92d31dfe4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-127.svg
+    sha256: 7e496d57282f63a3dce70a50add667f0df87d67857cdfc6a5d1636e92d31dfe4
+- name: test-128
+  source:
+    path: spec/fixtures/emf/test-128.emf
+    sha256: bca5c20d984b7bbbaddc3c0ab04e3c430f67e56094fab970ca8d4b59dd04ff5b
+  golden:
+    path: spec/fixtures/golden/test-128.svg
+    sha256: 80a4b9caad03a2aa6c919fbd5c78eefe21f815106510cc5bcffeebf139215438
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-128.svg
+    sha256: 80a4b9caad03a2aa6c919fbd5c78eefe21f815106510cc5bcffeebf139215438
+- name: test-129
+  source:
+    path: spec/fixtures/emf/test-129.emf
+    sha256: d6915ebd4d1015794f49722948809ede3bbf2a82a774718de4d8eb6b3ae95f32
+  golden:
+    path: spec/fixtures/golden/test-129.svg
+    sha256: 232f3d6039254042df571fbf69ba1dec138ebf8704bfdfea9ff474a97d0a85c8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-129.svg
+    sha256: 232f3d6039254042df571fbf69ba1dec138ebf8704bfdfea9ff474a97d0a85c8
+- name: test-130
+  source:
+    path: spec/fixtures/emf/test-130.emf
+    sha256: 7e82f3827fc5f74654c00b8474ed7fa2e9a7bfa0cab14690b7b6174eb683affe
+  golden:
+    path: spec/fixtures/golden/test-130.svg
+    sha256: e5ed4642c9afb20432049117643cf85b1eb632b9ddfc7b0012b05a30a5aa77c6
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-130.svg
+    sha256: e5ed4642c9afb20432049117643cf85b1eb632b9ddfc7b0012b05a30a5aa77c6
+- name: test-131
+  source:
+    path: spec/fixtures/emf/test-131.emf
+    sha256: 5b70f11fe861b1213ddbee64cebaf7199c2086f63898ef6aef9cd46eb47d7bff
+  golden:
+    path: spec/fixtures/golden/test-131.svg
+    sha256: 4e8a7ff7bcd8ab2ebc7b22dc0ca0052a2f31201f5dfeb164340422e88ed9b63d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-131.svg
+    sha256: 4e8a7ff7bcd8ab2ebc7b22dc0ca0052a2f31201f5dfeb164340422e88ed9b63d
+- name: test-132
+  source:
+    path: spec/fixtures/emf/test-132.emf
+    sha256: 337e81faa0f757972bf7557b1739d12c96ab78be3dd57f19c0f9b75a07d1219c
+  golden:
+    path: spec/fixtures/golden/test-132.svg
+    sha256: d4d7ef40030dedb49cac6415a7fbd27f070968edeae2cee3e430cd77525a7a9d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-132.svg
+    sha256: d4d7ef40030dedb49cac6415a7fbd27f070968edeae2cee3e430cd77525a7a9d
+- name: test-133
+  source:
+    path: spec/fixtures/emf/test-133.emf
+    sha256: 01be235b1a897d6d54e03c3e36cd3d767d7ae8fda18a81221d908225f5aaab9e
+  golden:
+    path: spec/fixtures/golden/test-133.svg
+    sha256: da176f03600d996e967a3554851e3d785777bf16395d40209d1b4a1158c00f2d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-133.svg
+    sha256: da176f03600d996e967a3554851e3d785777bf16395d40209d1b4a1158c00f2d
+- name: test-134
+  source:
+    path: spec/fixtures/emf/test-134.emf
+    sha256: b974672f223ccd00fb65e33afa2f7e4bc36147cc7f32693b42752afea25060af
+  golden:
+    path: spec/fixtures/golden/test-134.svg
+    sha256: c12ef88bbd3b311f9445fd7e891b17711a2c4d7fa072b8583cf667ffb4262d20
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-134.svg
+    sha256: c12ef88bbd3b311f9445fd7e891b17711a2c4d7fa072b8583cf667ffb4262d20
+- name: test-135
+  source:
+    path: spec/fixtures/emf/test-135.emf
+    sha256: a498e2f59f9c9177cfc3eeeef51132d25cd07b9eb6ab0ad60f504190c34bee1c
+  golden:
+    path: spec/fixtures/golden/test-135.svg
+    sha256: f3b235ddef1dbe05433da20646f1234855b91dd317a88c57335b2dc46817f536
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-135.svg
+    sha256: f3b235ddef1dbe05433da20646f1234855b91dd317a88c57335b2dc46817f536
+- name: test-136
+  source:
+    path: spec/fixtures/emf/test-136.emf
+    sha256: a9274ce971addd8067348fde82d5e3691f5d937d8819da804c0727d3119cd5ec
+  golden:
+    path: spec/fixtures/golden/test-136.svg
+    sha256: 3cebb70980283a4c28db91e96454d0f02989278e06189f8ebbdf8643f411a391
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-136.svg
+    sha256: 3cebb70980283a4c28db91e96454d0f02989278e06189f8ebbdf8643f411a391
+- name: test-137
+  source:
+    path: spec/fixtures/emf/test-137.emf
+    sha256: c42ad03e982569dc17dd7b6b69c8cfe81dc8ad89881723ae7bea21e2885b00b1
+  golden:
+    path: spec/fixtures/golden/test-137.svg
+    sha256: f682e2df426ac60848eb30d8ebca93a7bedff1d05cf1c6384c025a60b444d01c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-137.svg
+    sha256: f682e2df426ac60848eb30d8ebca93a7bedff1d05cf1c6384c025a60b444d01c
+- name: test-138
+  source:
+    path: spec/fixtures/emf/test-138.emf
+    sha256: 901017a12b56c96ccfa33fd117bfcf704776248cf548d1845d0e0ebab672e46d
+  golden:
+    path: spec/fixtures/golden/test-138.svg
+    sha256: f48466adbae8d45125a7c5226e3ade15a1f6cdda62f540752d4930e26fbbd57d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-138.svg
+    sha256: d59a51b3989450d1cdd4e4e9d5905b5dc6da5382c2a9fff6d1627848b0dad757
+- name: test-139
+  source:
+    path: spec/fixtures/emf/test-139.emf
+    sha256: b8267e1a967cc86f042a8ae7cf754898ab0aa6ff60ab82a66d220b551bc9e857
+  golden:
+    path: spec/fixtures/golden/test-139.svg
+    sha256: 5de083e3b7fbf5a88655c6bf2f97c624f4903aa10741cb1b5ed76b590089d131
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-139.svg
+    sha256: 5de083e3b7fbf5a88655c6bf2f97c624f4903aa10741cb1b5ed76b590089d131
+- name: test-140
+  source:
+    path: spec/fixtures/emf/test-140.emf
+    sha256: 285c53cacf73df21aaf893e1077b1c0379e72752f8b1e96498c39d1857211ac5
+  golden:
+    path: spec/fixtures/golden/test-140.svg
+    sha256: ba4600db8c189c1ff8ef52cc8da199bfe7f4b6b39b2f5a14e68f5a6ec5f3b8c3
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-140.svg
+    sha256: ba4600db8c189c1ff8ef52cc8da199bfe7f4b6b39b2f5a14e68f5a6ec5f3b8c3
+- name: test-141
+  source:
+    path: spec/fixtures/emf/test-141.emf
+    sha256: 162ea17ebce57229ce7ff03c568fc1a775e1c1551d156917d62730f51bda4a76
+  golden:
+    path: spec/fixtures/golden/test-141.svg
+    sha256: a5e2c52e11e0906e3ffc601df7f144774b43b3f6cd2a67435af461088022df5b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-141.svg
+    sha256: a5e2c52e11e0906e3ffc601df7f144774b43b3f6cd2a67435af461088022df5b
+- name: test-142
+  source:
+    path: spec/fixtures/emf/test-142.emf
+    sha256: 698c5181a818125c232caa04be0cbfa6f1730cd3f017c99a52e48bdcc0fcaded
+  golden:
+    path: spec/fixtures/golden/test-142.svg
+    sha256: c592ebae60b6be5c2ac31de4d5613a0bc5e514394a4c9ba8c6cf6b1adef2387d
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-142.svg
+    sha256: c592ebae60b6be5c2ac31de4d5613a0bc5e514394a4c9ba8c6cf6b1adef2387d
+- name: test-143
+  source:
+    path: spec/fixtures/emf/test-143.emf
+    sha256: '09e6db876fe1c22d25d703a85aabc4716b4475be4a83e19231f37f02e5d83202'
+  golden:
+    path: spec/fixtures/golden/test-143.svg
+    sha256: 26851d7aa6bcaa308f174b289e9cab5ece6001fe42b66b3a844faf99ceb24a9b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-143.svg
+    sha256: 26851d7aa6bcaa308f174b289e9cab5ece6001fe42b66b3a844faf99ceb24a9b
+- name: test-144
+  source:
+    path: spec/fixtures/emf/test-144.emf
+    sha256: b951d3a63473deef35c9914bacd829e4ee0d510d5f809a19760b050702f2a76f
+  golden:
+    path: spec/fixtures/golden/test-144.svg
+    sha256: 829d5e507a52d27c6fbe0440b5da281a45e22808f553ca32c52b874319545ca4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-144.svg
+    sha256: 829d5e507a52d27c6fbe0440b5da281a45e22808f553ca32c52b874319545ca4
+- name: test-145
+  source:
+    path: spec/fixtures/emf/test-145.emf
+    sha256: 713c5c0ecdec4c9fda18aeae7bac97b991840dc9e5e40140f48152fd0dbfa563
+  golden:
+    path: spec/fixtures/golden/test-145.svg
+    sha256: 01c2049cc7e63fa5d48c28e77ae3e415b5ef0678babc4bade6b0ba9b27f3f530
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-145.svg
+    sha256: 01c2049cc7e63fa5d48c28e77ae3e415b5ef0678babc4bade6b0ba9b27f3f530
+- name: test-146
+  source:
+    path: spec/fixtures/emf/test-146.emf
+    sha256: 1d61a0170f2feff84b952ce4b158ec8a0695e83e4fb1b4a3200f789af3090b6e
+  golden:
+    path: spec/fixtures/golden/test-146.svg
+    sha256: f5f55194b91a7276f4862123ea16d7f876615de5b75dcf10e6d89ace01e1a41c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-146.svg
+    sha256: f5f55194b91a7276f4862123ea16d7f876615de5b75dcf10e6d89ace01e1a41c
+- name: test-147
+  source:
+    path: spec/fixtures/emf/test-147.emf
+    sha256: 31adfe95e3c68577653964a86c1ac1eb6f4155668ea246eff6c1498e376d0ae5
+  golden:
+    path: spec/fixtures/golden/test-147.svg
+    sha256: 4128c9fd30e8d5a3da4dbfb1102b75550b204fdba8d77f73e385d6dd00092877
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-147.svg
+    sha256: 4128c9fd30e8d5a3da4dbfb1102b75550b204fdba8d77f73e385d6dd00092877
+- name: test-148
+  source:
+    path: spec/fixtures/emf/test-148.emf
+    sha256: cc66a96c58081a98a0893d22e2fd3fd9c04bf5e699a4533d6b5d62914d42aab3
+  golden:
+    path: spec/fixtures/golden/test-148.svg
+    sha256: 1ba36a866c384becfff915c8f06dd2dd44e97e54e502c9b5216ee5cc507c2e5a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-148.svg
+    sha256: 1ba36a866c384becfff915c8f06dd2dd44e97e54e502c9b5216ee5cc507c2e5a
+- name: test-149
+  source:
+    path: spec/fixtures/emf/test-149.emf
+    sha256: b23504618d42346075b0d1b8dfac493b618bddeccb1cdf3bc646f85fcbcc2f6b
+  golden:
+    path: spec/fixtures/golden/test-149.svg
+    sha256: d49069cefb3a1ab90e4254d7a9a2896f8aa9107a61dbc82d855f3a1ed5e7c5d9
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-149.svg
+    sha256: b6513a8fe60c84e85bed0e47cf45225b1d8ae34a50249a66829f76bc7ab3c593
+- name: test-150
+  source:
+    path: spec/fixtures/emf/test-150.emf
+    sha256: d39599429b98eeece221c3430d4ae604083c2acc6906afa73d77ef2b8f399753
+  golden:
+    path: spec/fixtures/golden/test-150.svg
+    sha256: 76dd4c79944e238cab6a1d613201baedf18ce80e304bdaf4ebca770e1fcbbad8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-150.svg
+    sha256: 76dd4c79944e238cab6a1d613201baedf18ce80e304bdaf4ebca770e1fcbbad8
+- name: test-152
+  source:
+    path: spec/fixtures/emf/test-152.emf
+    sha256: 856fccc9e8ade11076fdf013e64dac1e4ee0550c12d6109633df245c04addc52
+  golden:
+    path: spec/fixtures/golden/test-152.svg
+    sha256: 4f0b6bb06337678d5e7b863fdb5a2d2bdbba416f4ca8c8124078bb54f10565ab
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-152.svg
+    sha256: 4f0b6bb06337678d5e7b863fdb5a2d2bdbba416f4ca8c8124078bb54f10565ab
+- name: test-153
+  source:
+    path: spec/fixtures/emf/test-153.emf
+    sha256: a082fa2ba3518b18d49f9322d9e0d12e1b8565badb301c3d1901745975f5127d
+  golden:
+    path: spec/fixtures/golden/test-153.svg
+    sha256: feb5aa7a78e8ac486fab703089e5e8df4d326a65d6d618558c19af28981b1b44
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-153.svg
+    sha256: feb5aa7a78e8ac486fab703089e5e8df4d326a65d6d618558c19af28981b1b44
+- name: test-154
+  source:
+    path: spec/fixtures/emf/test-154.emf
+    sha256: cfebc69e5ecd63ac87b76d54a42c5a1057e1b4e855c0cf6836348872dc7ee1f5
+  golden:
+    path: spec/fixtures/golden/test-154.svg
+    sha256: 8dbe2c51bfcda74a14210ec46759fdc0d161b1f38512dee5e76f4e957185c1f9
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-154.svg
+    sha256: 8dbe2c51bfcda74a14210ec46759fdc0d161b1f38512dee5e76f4e957185c1f9
+- name: test-155
+  source:
+    path: spec/fixtures/emf/test-155.emf
+    sha256: c5053ffab23f1e7577af193b5a1a4d9d3d26a332da2bf1390ae3534a104f0855
+  golden:
+    path: spec/fixtures/golden/test-155.svg
+    sha256: 13564effc4d39cbb4149e9fec29ff635e1ccd71a9fc14f91163e8deaec9c8cca
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-155.svg
+    sha256: dbe6f5e1e40878db9ab4967c0efc9347fd2a9f270a527de4a9e695b457667913
+- name: test-156
+  source:
+    path: spec/fixtures/emf/test-156.emf
+    sha256: f817c6ce3466fb39c496cba8e5cfd95789c417f4afac722aa4be299b2b313b0c
+  golden:
+    path: spec/fixtures/golden/test-156.svg
+    sha256: 37295787472090fab93981c7007092dbc19499e9caec6c339f8186b2daedc506
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-156.svg
+    sha256: 37295787472090fab93981c7007092dbc19499e9caec6c339f8186b2daedc506
+- name: test-157
+  source:
+    path: spec/fixtures/emf/test-157.emf
+    sha256: 5f9e8f92e5b5ffa0da69740009513640ab952263de11bf4663bd5e17f176ee0f
+  golden:
+    path: spec/fixtures/golden/test-157.svg
+    sha256: 374f62ffc503fc9005710792eaaf31a59d1a6ac33d662d1c9a1834691699ad6f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-157.svg
+    sha256: 374f62ffc503fc9005710792eaaf31a59d1a6ac33d662d1c9a1834691699ad6f
+- name: test-158
+  source:
+    path: spec/fixtures/emf/test-158.emf
+    sha256: 30b1ccf881d9b496bafdcdcc6fe1e8cedc5c9c44c2de191569292db40ea23464
+  golden:
+    path: spec/fixtures/golden/test-158.svg
+    sha256: 4c5582d775f5a47d7af2d89e2433ff2908d2f95bc9f17dc689096102381a32c1
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-158.svg
+    sha256: 4c5582d775f5a47d7af2d89e2433ff2908d2f95bc9f17dc689096102381a32c1
+- name: test-159
+  source:
+    path: spec/fixtures/emf/test-159.emf
+    sha256: 98be7f54eab4f86f9e3ab48a178fc6e200f0c5cf57dc85b8829060830b908521
+  golden:
+    path: spec/fixtures/golden/test-159.svg
+    sha256: ce9cca2ceb4d0df948975ff2f3db03977cd98d12a4ea2f110f4a02e35e022778
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-159.svg
+    sha256: ce9cca2ceb4d0df948975ff2f3db03977cd98d12a4ea2f110f4a02e35e022778
+- name: test-160
+  source:
+    path: spec/fixtures/emf/test-160.emf
+    sha256: bab47a345fd531adb3ecddb3e98e0744cd677295379f54864c19d13342f50aa1
+  golden:
+    path: spec/fixtures/golden/test-160.svg
+    sha256: 855bbe3d0d7cf109575fab233d2b7f0337a78d73780bb3d7807be5678c4e5914
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-160.svg
+    sha256: 855bbe3d0d7cf109575fab233d2b7f0337a78d73780bb3d7807be5678c4e5914
+- name: test-161
+  source:
+    path: spec/fixtures/emf/test-161.emf
+    sha256: 02665f0c0ca5e510d6ae6a54c59b87d14200fadc30c736910b427d863a0811f9
+  golden:
+    path: spec/fixtures/golden/test-161.svg
+    sha256: 92efee731ff9c4c57fc8ba9e04d30cff5becdae9e1eb991f47d6da31f67291b3
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-161.svg
+    sha256: 92efee731ff9c4c57fc8ba9e04d30cff5becdae9e1eb991f47d6da31f67291b3
+- name: test-162
+  source:
+    path: spec/fixtures/emf/test-162.emf
+    sha256: 85473a155a882e5b8a73f5f6b01d07fafa8f57cac2abb9c051be5f4ac2251c32
+  golden:
+    path: spec/fixtures/golden/test-162.svg
+    sha256: c7816df52222bc2770fe775d380f9a0aff824ad3e7416faaee714fc50229fd79
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-162.svg
+    sha256: c7816df52222bc2770fe775d380f9a0aff824ad3e7416faaee714fc50229fd79
+- name: test-163
+  source:
+    path: spec/fixtures/emf/test-163.emf
+    sha256: cedacf615644016260df61cac8f82f6e8e5b992bb85146e33d967778050be406
+  golden:
+    path: spec/fixtures/golden/test-163.svg
+    sha256: b2d909f722f1c1cf6c0af7041d2bc0a001d6dd56b58f3511f6812b0226d46117
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-163.svg
+    sha256: b2d909f722f1c1cf6c0af7041d2bc0a001d6dd56b58f3511f6812b0226d46117
+- name: test-164
+  source:
+    path: spec/fixtures/emf/test-164.emf
+    sha256: 36b95400bf7b18d33ee56ede051c494cd9e6f68deab9a2c394bc342fe2728469
+  golden:
+    path: spec/fixtures/golden/test-164.svg
+    sha256: 3e5e254399669047c84318f0838732d6bef4450d43c4c2bc9cbc7c1ffb4c06d9
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-164.svg
+    sha256: 2dfc4f1947ca317da9119c782b6fb2d3654afd31a62b8a24cf0a0e563fb6f765
+- name: test-165
+  source:
+    path: spec/fixtures/emf/test-165.emf
+    sha256: 1dbe30bddbe3125c13a1bfa8e3062c7267f61699b6d7db5bd8fe374901876950
+  golden:
+    path: spec/fixtures/golden/test-165.svg
+    sha256: 7300c552c75c187d0a8761e371d3cd44d6292459266b65cc6115d0b02fe1d6d8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-165.svg
+    sha256: 2cf551ac3d72f055b8afb56de0cd2b3353c684b973b197be7c23da8e3e6e1567
+- name: test-166
+  source:
+    path: spec/fixtures/emf/test-166.emf
+    sha256: e52b6f27747bc67cf30baec94c11d9d0bed53e600acb6ea673cd70e50294cfae
+  golden:
+    path: spec/fixtures/golden/test-166.svg
+    sha256: 8adfb0060e721eca36bf77b0705d9d5c2127f63f9e9e213c95059b16747a92e5
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-166.svg
+    sha256: 8adfb0060e721eca36bf77b0705d9d5c2127f63f9e9e213c95059b16747a92e5
+- name: test-167
+  source:
+    path: spec/fixtures/emf/test-167.emf
+    sha256: d93d9527450e57aec9025f8bd38e05c608e2451faedfcca83f152515d0e6e8a1
+  golden:
+    path: spec/fixtures/golden/test-167.svg
+    sha256: 312969e94716379424895365ec791d515a1ee208f3f8dbfe6d3dacbecd292188
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-167.svg
+    sha256: 312969e94716379424895365ec791d515a1ee208f3f8dbfe6d3dacbecd292188
+- name: test-168
+  source:
+    path: spec/fixtures/emf/test-168.emf
+    sha256: 1445ec204b51751ae603f86d97e3ae1f09504e2cc24728db8e035dde6fb56929
+  golden:
+    path: spec/fixtures/golden/test-168.svg
+    sha256: def783ff0ef4c8c310819563665814a77783ba995224e590896ad6353f5e1f46
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-168.svg
+    sha256: def783ff0ef4c8c310819563665814a77783ba995224e590896ad6353f5e1f46
+- name: test-169
+  source:
+    path: spec/fixtures/emf/test-169.emf
+    sha256: 7aeb1872110dab2a1e9c99820fa5848be1e78fa19bd23c94a877f33265a5b8a5
+  golden:
+    path: spec/fixtures/golden/test-169.svg
+    sha256: 473f29d1fcbe0b72428e7434647317c8b5cbcd4aa80869f5eeb587b9faa72216
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-169.svg
+    sha256: 473f29d1fcbe0b72428e7434647317c8b5cbcd4aa80869f5eeb587b9faa72216
+- name: test-170
+  source:
+    path: spec/fixtures/emf/test-170.emf
+    sha256: '09a53a1dd6ecc2ff00bd0f8967e2c8f8409af02442163d8817af0ad150840ec0'
+  golden:
+    path: spec/fixtures/golden/test-170.svg
+    sha256: e2ba704787cf20d1c5aba7131fcd3fde7c51012366428728380a607b9b216916
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-170.svg
+    sha256: e2ba704787cf20d1c5aba7131fcd3fde7c51012366428728380a607b9b216916
+- name: test-171
+  source:
+    path: spec/fixtures/emf/test-171.emf
+    sha256: df0ac2f75c0e141510df00cfc1205b33d9ddf6be87598b4e67c6413a8583211a
+  golden:
+    path: spec/fixtures/golden/test-171.svg
+    sha256: 90f646537b889f959bdb639c027fa35a32522acfff106531dbd89aea2e3c8698
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-171.svg
+    sha256: 90f646537b889f959bdb639c027fa35a32522acfff106531dbd89aea2e3c8698
+- name: test-172
+  source:
+    path: spec/fixtures/emf/test-172.emf
+    sha256: c9bb3eb16cb431513db409fc5c717e48f15121af5aa3294db22fa0b75ba8fd25
+  golden:
+    path: spec/fixtures/golden/test-172.svg
+    sha256: 67581ffaa97b0cb94ff8aa0567d68e7c7ea3b61d5b08991fd68f8358c5a1f61f
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-172.svg
+    sha256: 67581ffaa97b0cb94ff8aa0567d68e7c7ea3b61d5b08991fd68f8358c5a1f61f
+- name: test-173
+  source:
+    path: spec/fixtures/emf/test-173.emf
+    sha256: aa6470a981e75da538e2df966fa0e03e55fa36ee5de2393084425971ca8aabab
+  golden:
+    path: spec/fixtures/golden/test-173.svg
+    sha256: a52a333f28e53352ec32b56552edac559be2857055dbdb8de521bc355904fd76
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-173.svg
+    sha256: a52a333f28e53352ec32b56552edac559be2857055dbdb8de521bc355904fd76
+- name: test-174
+  source:
+    path: spec/fixtures/emf/test-174.emf
+    sha256: ade5d2c3b23effa352d6cc7a8ac1a45d4b54c496d21d8074214c293740651f34
+  golden:
+    path: spec/fixtures/golden/test-174.svg
+    sha256: 9111033fa1821201ee6c642da0a5c73bb11f2ca093e539a63d0e795382c36d5c
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-174.svg
+    sha256: 8dc332d9d506e2e1a8609de94d15215815467f6a66d402ea3d513af679fe1481
+- name: test-175
+  source:
+    path: spec/fixtures/emf/test-175.emf
+    sha256: fc32d027f2ddcf45634047023341715b5ee3ffe8e1fd200a84078386d5660898
+  golden:
+    path: spec/fixtures/golden/test-175.svg
+    sha256: 92a596ee8322151fb9b33e34da36590c252da0fed422dfa58b5a7bef1c356e50
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-175.svg
+    sha256: 92a596ee8322151fb9b33e34da36590c252da0fed422dfa58b5a7bef1c356e50
+- name: test-176
+  source:
+    path: spec/fixtures/emf/test-176.emf
+    sha256: c73e79b7cf3212f0700c7b6f1352799f3c5fb336aa31138b3a1b88478f5a183d
+  golden:
+    path: spec/fixtures/golden/test-176.svg
+    sha256: 506dc3255e6b365ef8eca4d2cb1ecdedc9ef8887bf8fa1679dce898b5f874e65
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-176.svg
+    sha256: 506dc3255e6b365ef8eca4d2cb1ecdedc9ef8887bf8fa1679dce898b5f874e65
+- name: test-177
+  source:
+    path: spec/fixtures/emf/test-177.emf
+    sha256: d6327391702e4e5a26c96b2efdc3ece86f949984bb7f46343f920650c7735669
+  golden:
+    path: spec/fixtures/golden/test-177.svg
+    sha256: 66d7eb1e5746c9e4ad5ea48079400a3190522ca237452fa317aa96ad67acdc41
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-177.svg
+    sha256: 66d7eb1e5746c9e4ad5ea48079400a3190522ca237452fa317aa96ad67acdc41
+- name: test-178
+  source:
+    path: spec/fixtures/emf/test-178.emf
+    sha256: f6d603344821023f3394931197f6c2067cf18d0d05d0ac3ae8e9b72eb4e219a8
+  golden:
+    path: spec/fixtures/golden/test-178.svg
+    sha256: c8af017c20110933350352fa5351c79f8a0ee6ab55a4e9ec594979c3b13dd013
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-178.svg
+    sha256: c8af017c20110933350352fa5351c79f8a0ee6ab55a4e9ec594979c3b13dd013
+- name: test-179
+  source:
+    path: spec/fixtures/emf/test-179.emf
+    sha256: 0e7a761ee215adbf4024992e87b93039eec7e174234c0c6d0925aed090074d49
+  golden:
+    path: spec/fixtures/golden/test-179.svg
+    sha256: 52bc356a9ec5daed376c33d93882b5b14e3bf6ee7bb055ad5a8bdc6a9e44a5c4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-179.svg
+    sha256: 52bc356a9ec5daed376c33d93882b5b14e3bf6ee7bb055ad5a8bdc6a9e44a5c4
+- name: test-180
+  source:
+    path: spec/fixtures/emf/test-180.emf
+    sha256: 1052457d57672b084e87debeac0e9dfc40cc52f2c38743bae53b56f4ed0f1491
+  golden:
+    path: spec/fixtures/golden/test-180.svg
+    sha256: c95137049934c1bd17e155dec629cb572d4dc6eae620b213c9e2c76dc0b13262
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-180.svg
+    sha256: c95137049934c1bd17e155dec629cb572d4dc6eae620b213c9e2c76dc0b13262
+- name: test-181
+  source:
+    path: spec/fixtures/emf/test-181.emf
+    sha256: 4996cc33bfd49db01006b180a6fea83bf1f196022f53b3d32e197933e1212cb5
+  golden:
+    path: spec/fixtures/golden/test-181.svg
+    sha256: 3027c0d389870d1e692a3b612cade986dce4aed65d815361913174aebbd5581a
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-181.svg
+    sha256: 83d6f004aed78208ba67fc66085f5bc3bf82047c80097375ac06a33b399c4d89
+- name: test-182
+  source:
+    path: spec/fixtures/emf/test-182.emf
+    sha256: ec21e3d00418466fa7cb351c7bc1fa025eb9a65b9970f008ec98166c7a65ea30
+  golden:
+    path: spec/fixtures/golden/test-182.svg
+    sha256: a8f6622a29dd6cbc5577c0884a147b48a54e91e96858a88d457843e62b4c44af
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-182.svg
+    sha256: 7eec5d590775a3d41954659c26778a121f144e85f9ae4cd36781d1181335342e
+- name: test-183
+  source:
+    path: spec/fixtures/emf/test-183.emf
+    sha256: 90476c03c382aedb20453f95ccc0468da89d8a1a74fe96a59060345395951624
+  golden:
+    path: spec/fixtures/golden/test-183.svg
+    sha256: d7d2dd818fa259351f5aaa3499d95630ff02d9183865c1f05731e065ac48ee1b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-183.svg
+    sha256: 5997d3e0752845761a9840f715af8767e97584d0cd8bd19cd9280b254867db82
+- name: test-184
+  source:
+    path: spec/fixtures/emf/test-184.emf
+    sha256: 61cf5265e7815261b33a62452c905bba8a9524b732c684fcf7afd645d2c5eaa0
+  golden:
+    path: spec/fixtures/golden/test-184.svg
+    sha256: 8125b36cd37e0de856cca48b311e392a64e33a3441e4296cdd33bf9d9e971c86
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-184.svg
+    sha256: 8125b36cd37e0de856cca48b311e392a64e33a3441e4296cdd33bf9d9e971c86
+- name: test-185
+  source:
+    path: spec/fixtures/emf/test-185.emf
+    sha256: 8ad170d3ea79a177e45ae853ef9f60acf4cf7ee9646f87eafb33d706c08c9d50
+  golden:
+    path: spec/fixtures/golden/test-185.svg
+    sha256: 5e35fc264904fea3804ed3b2e5b270b65a41e4db3676c59eff852db7ba704ff2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-185.svg
+    sha256: 69718450bfc6c576ec27fe9413f985785627750d613be41cf348f9ba07a2ffce
+- name: test-186
+  source:
+    path: spec/fixtures/emf/test-186.emf
+    sha256: 61cc308273d2cbccf41b4042bae24e08abc891b001f905463fb61f6c4ad2bbf7
+  golden:
+    path: spec/fixtures/golden/test-186.svg
+    sha256: 5651600da7b9a7982db791ad578a98a622e8b5675fec032b5a71b3aa21eb66d8
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/test-186.svg
+    sha256: 5651600da7b9a7982db791ad578a98a622e8b5675fec032b5a71b3aa21eb66d8
+- name: EA-test-file-001
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-001.emf
+    sha256: 2e777df95a2d730ce597c8240b3f2f522edd66f1c08eba767b4a66529148de25
+  golden:
+    path: spec/fixtures/golden/EA-test-file-001.svg
+    sha256: a6c95d65cf95ecba3867319ef60d1405a8b9205afe1d6be0d04eb6374e46b03b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-001.svg
+    sha256: a6c95d65cf95ecba3867319ef60d1405a8b9205afe1d6be0d04eb6374e46b03b
+- name: EA-test-file-002
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-002.emf
+    sha256: 2dbbbcbd83bc556c31210cace11a3fc08c159ddcc963ed08e59e905058d8e1a0
+  golden:
+    path: spec/fixtures/golden/EA-test-file-002.svg
+    sha256: c1182db73788906c449d4f6d86f1f5ca8b1b892acb8e8b25d3e75ef39e1b5a76
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-002.svg
+    sha256: c1182db73788906c449d4f6d86f1f5ca8b1b892acb8e8b25d3e75ef39e1b5a76
+- name: EA-test-file-003
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-003.emf
+    sha256: '03409bd53aa49b4d6c5f30894ab73a9ff384b9e5c54768909563aece2bb888c7'
+  golden:
+    path: spec/fixtures/golden/EA-test-file-003.svg
+    sha256: d6a94c635dd35537feeca59abe4ecb97c16f71729cea8b622205ce77e6dc97ba
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-003.svg
+    sha256: d6a94c635dd35537feeca59abe4ecb97c16f71729cea8b622205ce77e6dc97ba
+- name: EA-test-file-004
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-004.emf
+    sha256: 9a85ac16eb4e7b3f3aaa0052dc279c541de153cb0a7002f9a6b5363280459a45
+  golden:
+    path: spec/fixtures/golden/EA-test-file-004.svg
+    sha256: fece851d8d62f977ca882757991c955b25a89d5910e4ed019af771cf18df13cf
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-004.svg
+    sha256: e1b07dbf9fa4e1473f1b6302de9748e3d249b79f44637108ddd9ddf05363947e
+- name: EA-test-file-005
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-005.emf
+    sha256: 5c4b8e924a75739ddd8b6dc414284aec12263a9e342b5329cbfccd837170e703
+  golden:
+    path: spec/fixtures/golden/EA-test-file-005.svg
+    sha256: 6d8623be4119f76fe788caa53632106d32cbdae188d6ebbde8e9a6f7be8d4f16
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-005.svg
+    sha256: 6d8623be4119f76fe788caa53632106d32cbdae188d6ebbde8e9a6f7be8d4f16
+- name: EA-test-file-006
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-006.emf
+    sha256: 0e94cfc2c956e8f2017a160d5c2d7f91d5656bca8c2c982495338cbcda1ef7e3
+  golden:
+    path: spec/fixtures/golden/EA-test-file-006.svg
+    sha256: e9fd4384ca623331ac020353dc0ec291ec10b940e2eb6542edea44263202cb30
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-006.svg
+    sha256: e9fd4384ca623331ac020353dc0ec291ec10b940e2eb6542edea44263202cb30
+- name: EA-test-file-007
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-007.emf
+    sha256: 00a6ad4863b5ee018e44d6c2db341c76771ca15ef0e6194a258a3aa60ee178a4
+  golden:
+    path: spec/fixtures/golden/EA-test-file-007.svg
+    sha256: 71fc697b26d954aa38eb78671a9f589141576fc148bb6e0c1b7677c04aa7828b
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-007.svg
+    sha256: 71fc697b26d954aa38eb78671a9f589141576fc148bb6e0c1b7677c04aa7828b
+- name: EA-test-file-008
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-008.emf
+    sha256: eea72c60acc110343a8c454d4ab294e705c7714ff9b95d690fdab0673894f402
+  golden:
+    path: spec/fixtures/golden/EA-test-file-008.svg
+    sha256: 5ed0cfd2d757c01d71c70d4caae570a1a83ae087561b0b36cc08991d9e0b9b84
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-008.svg
+    sha256: 5ed0cfd2d757c01d71c70d4caae570a1a83ae087561b0b36cc08991d9e0b9b84
+- name: EA-test-file-009
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-009.emf
+    sha256: ce45949426e4343b73e6370f2d658e848efc50a6400c4088271a82e31f57435b
+  golden:
+    path: spec/fixtures/golden/EA-test-file-009.svg
+    sha256: cb0f2d4961ec28d04f336fdd545bce324be5bfc81a4ae6dfc9602492b0c0e706
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-009.svg
+    sha256: cb0f2d4961ec28d04f336fdd545bce324be5bfc81a4ae6dfc9602492b0c0e706
+- name: EA-test-file-010
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-010.emf
+    sha256: 4b68b26491fcbd23fcc0aadc0fb5c1e3bb6f7b9975aa26545269d1e9fb5f5284
+  golden:
+    path: spec/fixtures/golden/EA-test-file-010.svg
+    sha256: 18fb49b1d6516ab17060dc7519ae97556ba91d9ee68d514d93a76a8056c6fd68
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-010.svg
+    sha256: 18fb49b1d6516ab17060dc7519ae97556ba91d9ee68d514d93a76a8056c6fd68
+- name: EA-test-file-011
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-011.emf
+    sha256: a9d676c9668de0577728a30226d6d93728a3e3115217425087522adbf84922d3
+  golden:
+    path: spec/fixtures/golden/EA-test-file-011.svg
+    sha256: 3f5cbc4691f94b928776f9f4146e64e0fd83909364b31ab925d6e0d732162ea9
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-011.svg
+    sha256: 3f5cbc4691f94b928776f9f4146e64e0fd83909364b31ab925d6e0d732162ea9
+- name: EA-test-file-012
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-012.emf
+    sha256: 0a265d4537adeb552be63aec0db6f1ff49ec4504456f1c41ac07afaa36689690
+  golden:
+    path: spec/fixtures/golden/EA-test-file-012.svg
+    sha256: 64fd5e245fece1cc8f02d0bfe5ed1e6bab1cbdd212781c0908180d70a2d8a165
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-012.svg
+    sha256: 64fd5e245fece1cc8f02d0bfe5ed1e6bab1cbdd212781c0908180d70a2d8a165
+- name: EA-test-file-013
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-013.emf
+    sha256: 0fc308c4e525579441c6f6fde24f043269e1ffdd833c1261318b7048a525fe93
+  golden:
+    path: spec/fixtures/golden/EA-test-file-013.svg
+    sha256: d26ee11ec6b30c1cdfaeb84702f66400e14a8744c8cf13e5afc03f718bf3e680
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-013.svg
+    sha256: d26ee11ec6b30c1cdfaeb84702f66400e14a8744c8cf13e5afc03f718bf3e680
+- name: EA-test-file-014
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-014.emf
+    sha256: 0e1e5d1ee8c838009a13f47010186296962399b1959ac21b3d73093f91f2d0e8
+  golden:
+    path: spec/fixtures/golden/EA-test-file-014.svg
+    sha256: 51c4ccebdb12078da7232ff189140490446fb370e755eb541c36bb4de70e76b2
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-014.svg
+    sha256: 51c4ccebdb12078da7232ff189140490446fb370e755eb541c36bb4de70e76b2
+- name: EA-test-file-015
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-015.emf
+    sha256: 1bfc92093acf60c11339bdb69e7c975d7b8ba9ea182ecb0e6a2909655ee269c2
+  golden:
+    path: spec/fixtures/golden/EA-test-file-015.svg
+    sha256: b5fc4ed6478964b2c0ced35d809ed79d1e51258c82a233ddea32f9022479eca9
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-015.svg
+    sha256: b5fc4ed6478964b2c0ced35d809ed79d1e51258c82a233ddea32f9022479eca9
+- name: EA-test-file-020
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-020.emf
+    sha256: 64f44502f49ad9bc40cc9bb3061b0e7697cbd8f382ec1dbc92a2dcc5db53bdc0
+  golden:
+    path: spec/fixtures/golden/EA-test-file-020.svg
+    sha256: 2884a0704c041c725f2db0b7d888e1d751f339a129d085cc79164a1c4b6a74e1
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-020.svg
+    sha256: 2884a0704c041c725f2db0b7d888e1d751f339a129d085cc79164a1c4b6a74e1
+- name: EA-test-file-030
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-030.emf
+    sha256: f295ae06a796a2f35132d7416e08d59673fada5bcfee34e92abecb772c23c03e
+  golden:
+    path: spec/fixtures/golden/EA-test-file-030.svg
+    sha256: c3b9c139831112bdc616d0e564bf23a3c5fe7f34bc3c6b00baf9c831fe9eea78
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-030.svg
+    sha256: c3b9c139831112bdc616d0e564bf23a3c5fe7f34bc3c6b00baf9c831fe9eea78
+- name: EA-test-file-031
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-031.emf
+    sha256: 82ec63131ef40b6b066c9c20118502b46dec2f0f3c88d5ed647b4b9a3baf3831
+  golden:
+    path: spec/fixtures/golden/EA-test-file-031.svg
+    sha256: 57f295c577c7a8728713a81854a50ea38941199ffaac078001853df1bdb5eaa4
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-031.svg
+    sha256: 57f295c577c7a8728713a81854a50ea38941199ffaac078001853df1bdb5eaa4
+- name: EA-test-file-032
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-032.emf
+    sha256: 6c64655fac3b4489f66a2d44153647857ef30470a98605b47fc153ad35cde641
+  golden:
+    path: spec/fixtures/golden/EA-test-file-032.svg
+    sha256: 5581622c1230a861a12a6918b891c3457898100c34d6edb9c04dd7829c6ea9fe
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-032.svg
+    sha256: 5581622c1230a861a12a6918b891c3457898100c34d6edb9c04dd7829c6ea9fe
+- name: EA-test-file-101
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-101.emf
+    sha256: e7f19b1ca2d88ebf5e9d1195d43023cd60fce45882d706cabb9e60c8c0d6aec1
+  golden:
+    path: spec/fixtures/golden/EA-test-file-101.svg
+    sha256: 13dae3635ce40aae6b31f81d7d098e95c99666e0bd8b47196e19e5c6ae068f23
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-101.svg
+    sha256: 13dae3635ce40aae6b31f81d7d098e95c99666e0bd8b47196e19e5c6ae068f23
+- name: EA-test-file-102
+  source:
+    path: spec/fixtures/emf-ea/EA-test-file-102.emf
+    sha256: 505ad9e2dd85262708998e823cf310d602743eb88d91c9b380227dfbe6c13eb8
+  golden:
+    path: spec/fixtures/golden/EA-test-file-102.svg
+    sha256: e491a2d4912c8372e879e8e78a4d08489a5993619dff1754ccf296883c6ddf0e
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/EA-test-file-102.svg
+    sha256: e491a2d4912c8372e879e8e78a4d08489a5993619dff1754ccf296883c6ddf0e
+- name: image1
+  source:
+    path: spec/fixtures/simple/image1.emf
+    sha256: 64f44502f49ad9bc40cc9bb3061b0e7697cbd8f382ec1dbc92a2dcc5db53bdc0
+  golden:
+    path: spec/fixtures/golden/image1.svg
+    sha256: 2884a0704c041c725f2db0b7d888e1d751f339a129d085cc79164a1c4b6a74e1
+  round_trip:
+    path: spec/fixtures/emfsvg_golden/image1.svg
+    sha256: 2884a0704c041c725f2db0b7d888e1d751f339a129d085cc79164a1c4b6a74e1
+corrupted:
+- name: bad_corrupted_2014-12-02-215338
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf
+    sha256: 88a0066eaa5b30b96137f69312963891154efc13ab0922b7073532aadc7b673a
+  expected_outcome:
+- name: bad_corrupted_2014-12-02-215339
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+    sha256: 4817e49ba45ad8009926e3c8831fca360731b7cee8524db892db34e1190fc884
+  expected_outcome:
+- name: bad_corrupted_2014-12-02-215358
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+    sha256: b84b4c73527374fa3520da01b394edf4be1dfc87d10e2d1f8a41d9353e3919b4
+  expected_outcome:
+- name: bad_corrupted_2014-12-02-215400
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+    sha256: 1595c39c22bb9ab0855d99d74da04644d057a20dd7dcd391c1c616ef8bfa846a
+  expected_outcome:
+- name: bad_corrupted_2014-12-02-215425
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+    sha256: cd22c1eff37105c233c145de4806cb0a960b66986b3e9975e56e68f58bea0433
+  expected_outcome:
+- name: bad_corrupted_2014-12-02-215428
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+    sha256: fb2171310a7537165be53ee73a32050c925343bdca7e338ba1fa3337c994cf98
+  expected_outcome:
+- name: bad_corrupted_2014-12-07-140817
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
+    sha256: a13446c89e802378dc3fe4dc78ab500090aa70b861544ecb7d1e50be72dbfaff
+  expected_outcome:
+- name: bad_corrupted_2014-12-07-160856
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf
+    sha256: 63897c62eb3d534d1e2b0848aae6cef65812199076f3e2a6c40173f34bee31ca
+  expected_outcome:
+- name: bad_corrupted_2014-12-07-163010
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
+    sha256: c3ad5a70c9e4a4c8ac1641c711be752a7237d031fa056171c640c997b57d358c
+  expected_outcome:
+- name: bad_corrupted_2014-12-07-235709
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf
+    sha256: c96400d49fa0255a077d839b5c90f845a80e3e7a234ffdc25706d13ebd253d78
+  expected_outcome:
+- name: bad_corrupted_2014-12-09-002112
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf
+    sha256: 8271bd3008d65eb540602a2cb2df018882c40efc58abfcc80692e6a8f8b3610b
+  expected_outcome:
+- name: bad_corrupted_2014-12-13-105759
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
+    sha256: d49e10c7247e364f2f2d87d105c3c34dcc972f15b15ba64ca172538ee96c5e8d
+  expected_outcome:
+- name: bad_corrupted_2014-12-13-132605
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf
+    sha256: c4c979dd4701688e0f4fda68d0b9b4acd1b553c47b2e0dd0177256329107bca8
+  expected_outcome:
+- name: bad_corrupted_2014-12-13-133727
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf
+    sha256: c78af3ebed5e88bb83e48e89351a2d47c02da6012bde273c3342e13fda1f63be
+  expected_outcome:
+- name: bad_corrupted_2014-12-14-080539
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
+    sha256: 9120352cdaba9cb96cba369d7c57d5f0bba1c36613fff6446105d609ccf9e2d5
+  expected_outcome:
+- name: bad_corrupted_2016-02-02-210039
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf
+    sha256: 16c021181a16e43210c49a4e9ff727fcfbb6f1ab1c272947ea49c61740ae8698
+  expected_outcome:
+- name: bad_corrupted_2016-02-02-220639
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
+    sha256: 6f7af06abc1198554f1b1f0417ef856e427702dd1631496374f4ca7fed074921
+  expected_outcome:
+- name: bad_corrupted_2016-02-02-225639
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf
+    sha256: 9b9070408fe776db984f19bea1a3f86997a53c1176a2eb1cf8626067d54d15ff
+  expected_outcome:
+- name: bad_corrupted_2017-02-11-230400
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf
+    sha256: 0337d4a5c054e6a98e29218dcecfd3e330610556620b05a31d1d451e55041ee4
+  expected_outcome:
+- name: bad_corrupted_2017-02-12-010400
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf
+    sha256: 0f025b558bab835a0484d1ee88ef22b8f84223fdff0e68fd27e8de3c4438c175
+  expected_outcome:
+- name: bad_corrupted_2017-05-12-074000
+  source:
+    path: spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf
+    sha256: 53533b29375da44ee3861b76eada7a68978778db13a31357b685b1736fffc780
+  expected_outcome:
+inventories:
+  round_trip_sha256: 235dabfa68b8eab5e94086c2257170e0d7b598a7154535f1433d0a0f4689d21c
+  aggregate_sha256: 433e5e08aa367361cb79eb5c3b713d61f534414d958797426449e81f5f5e37fb

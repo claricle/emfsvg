@@ -45,3 +45,21 @@ Start card 01 by adding the per-basename source/C-golden/round-trip manifest wit
 - The proposed downstream `spec/fixtures/resource_limits/emfsvg-v1.yml`, generated from pinned inputs with separate RSS, virtual-address-space, and wall-time evidence and explicit outer caps.
 - Bounded, sequential resource calibration below the machine guard, followed by per-file corrupted-case isolation with Linux `RLIMIT_AS`, independent parent-enforced RSS/time ceilings, and explicitly non-authoritative macOS address-space evidence.
 - Post-PR-#24 evidence that all 1,048 baseline examples plus new contract coverage pass, with consistent compatibility documentation.
+
+## Terminal B implementation checkpoint (2026-10-22)
+
+Card 01 is in progress: the per-file manifest pins corpus revision
+`a549346e4c4cacf9da6c86ab451a9f8401fa9672`, all 229 source hashes and
+416 artifact hashes; shared resolvers validate inventory before comparison
+collection and require explicit C paths. Golden/round-trip/compatibility
+collection retains 208/209/426 examples. A companion corpus-integrity CI job
+runs inventory/setup checks; it is not the final native model-parity gate.
+
+C historical source SHA remains unknown. Runtime, native artifact and ABI,
+verified #15 revision, diagnostic/resource issue URLs and landed revisions
+remain unqualified. The metadata readiness command intentionally fails.
+No upstream runtime pin was guessed; cards 02–05 and strict oracle replacement
+remain gated. Atomic reference promotion and broader legacy tooling path
+cleanup remain open. No corrupted-input calibration or fixture regeneration
+was attempted. See the shared finalization evidence file for exact commits,
+checks and publication outcome.
