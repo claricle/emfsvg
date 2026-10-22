@@ -6,7 +6,7 @@
 # categorised by failure mode (text, geometry, path d, structural).
 #
 # Usage:
-#   bundle exec ruby scripts/run_emf_svg_compare.rb [limit]
+#   bundle exec ruby scripts/run_emf_svg_compare.rb [limit] [tolerance]
 #
 # Requires explicit EMF_FIXTURE_ROOT, EMF2SVG_REF_PATH and EMF2SVG_REF_LIB_DIR.
 # See spec/fixtures/README.adoc for the pinned corpus and reference setup.
@@ -38,17 +38,17 @@ def categorise(reason)
 end
 
 begin
+  limit = ARGV.first && Integer(ARGV.first, 10)
+  raise ArgumentError, "limit must be positive" if limit && !limit.positive?
+
+  tolerance = Float(ARGV[1] || 1.0)
+  raise ArgumentError, "tolerance must be finite and nonnegative" unless tolerance.finite? && tolerance >= 0
+
   Emfsvg::Compat.validate_reference!
   all_emfs = Emfsvg::SpecSupport::ParityCorpus.new.source_paths
-rescue StandardError => e
-  warn e.message
-  exit 1
+rescue Emfsvg::Compat::SetupError, Emfsvg::SpecSupport::ParityCorpus::SetupError, ArgumentError => e
+  abort e.message
 end
-
-limit = ARGV.first && Integer(ARGV.first, 10)
-raise ArgumentError, "limit must be positive" if limit && !limit.positive?
-
-tolerance = (ARGV[1] || 1.0).to_f
 fixtures = limit ? all_emfs.first(limit) : all_emfs
 abort "Pinned corpus contains no fixtures; check EMF_FIXTURE_ROOT" if fixtures.empty?
 
