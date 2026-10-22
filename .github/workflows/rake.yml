@@ -49,4 +49,6 @@ jobs:
       - name: Check inventory and setup contracts
         env:
           EMF_FIXTURE_ROOT: ${{ github.workspace }}/parity-corpus
-        run: bundle exec rspec spec/parity_manifest_spec.rb spec/parity_provenance_spec.rb spec/compat_reference_setup_spec.rb
+        run: >-
+          bundle exec rspec spec/parity_manifest_spec.rb spec/parity_corpus_spec.rb
+          spec/parity_provenance_spec.rb spec/compat_reference_setup_spec.rb
