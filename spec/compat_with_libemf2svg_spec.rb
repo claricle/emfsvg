@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
+require "support/parity_corpus"
 # Emfsvg::Compat is loaded by spec_helper via spec/support/emfsvg_compat.rb
 
 # Comparison spec against libemf2svg (the C reference implementation).
@@ -11,13 +12,12 @@ require "spec_helper"
 # all 246 record handlers in libemf2svg.
 #
 # The spec auto-skips if libemf2svg's binary is not available.
-# To enable: build libemf2svg at ../libemf2svg/ (cmake + make), then
-# set EMF2SVG_REF_PATH and EMF2SVG_REF_LIB_DIR env vars if non-default.
+# To enable, explicitly set EMF2SVG_REF_PATH and EMF2SVG_REF_LIB_DIR.
+# See spec/fixtures/README.adoc for reference setup.
 
 # Fixture paths resolved at file load (top-level constants, not in block).
-EMF_PATHS = (Dir.glob("../emf/spec/fixtures/emf/*.emf") +
-             Dir.glob("../emf/spec/fixtures/emf-ea/*.emf") +
-             Dir.glob("../emf/spec/fixtures/simple/*.emf")).freeze
+EMF_COMPAT_CORPUS = Emfsvg::SpecSupport::ParityCorpus.new
+EMF_PATHS = EMF_COMPAT_CORPUS.source_paths.freeze
 
 # Element types emfsvg is allowed to emit. Includes <line> which
 # libemf2svg doesn't use (it unifies to <path>) — stylistic difference.
@@ -27,8 +27,8 @@ VALID_SVG_DRAWING_ELEMENTS = %w[svg g path rect ellipse line polyline polygon
 RSpec.describe "emfsvg vs libemf2svg reference" do
   before do
     unless Emfsvg::Compat.ref_binary_available?
-      skip "libemf2svg reference binary not found. Build libemf2svg at " \
-           "../libemf2svg/ to enable this spec, or set EMF2SVG_REF_PATH."
+      skip "libemf2svg reference is unavailable. Set EMF2SVG_REF_PATH and " \
+           "EMF2SVG_REF_LIB_DIR; see spec/fixtures/README.adoc."
     end
   end
 
@@ -54,11 +54,10 @@ RSpec.describe "emfsvg vs libemf2svg reference" do
   end
 
   describe "structural comparison" do
-    # Sample 10 fixtures to keep spec runtime reasonable.
+    # Use the fixed historical sample from the manifest.
     # Full comparison is in scripts/run_compat_check.rb (developer tooling).
-    sample = Dir.glob("../emf/spec/fixtures/emf/*.emf").first(5) +
-             Dir.glob("../emf/spec/fixtures/emf-ea/*.emf").first(3) +
-             Dir.glob("../emf/spec/fixtures/simple/*.emf").first(2)
+    paths_by_name = EMF_PATHS.to_h { |path| [File.basename(path, ".emf"), path] }
+    sample = EMF_COMPAT_CORPUS.manifest.fetch("fixed_sample").map { |name| paths_by_name.fetch(name) }
 
     sample.each do |path|
       it "#{File.basename(path)} emfsvg emits only valid SVG drawing elements" do
@@ -78,7 +77,7 @@ RSpec.describe "emfsvg vs libemf2svg reference" do
       # ~13% on the simple fixture (which is EMF+-heavy). 10% is a
       # conservative floor that catches catastrophic regressions without
       # being noisy. Tighten as handlers are added.
-      results = Emfsvg::Compat.compare_glob("../emf/spec/fixtures/simple/*.emf")
+      results = Emfsvg::Compat.compare_glob(File.join(EMF_COMPAT_CORPUS.root, "spec/fixtures/simple/*.emf"))
       total_ref = results.sum(&:ref_bytes)
       total_out = results.sum(&:emfsvg_bytes)
       ratio = total_ref.zero? ? 0 : total_out.to_f / total_ref
