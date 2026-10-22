@@ -65,7 +65,7 @@ module Emfsvg
                        ih_pen: handle,
                        pen_style: stroke.pen_style,
                        width: context.point_attrs(stroke.width, 0),
-                       color: stroke.paint.color.to_emf_wire.to_wire)
+                       color: stroke.paint.color.wire_attrs)
           context.emit(Emf::Emr::Binary::Records::SelectObject,
                        i_type: SELECTOBJECT,
                        ih_object: handle)
@@ -78,7 +78,7 @@ module Emfsvg
                        i_type: CREATEBRUSHINDIRECT,
                        ih_brush: handle,
                        brush_style: paint.style,
-                       color: paint.color.to_emf_wire.to_wire,
+                       color: paint.color.wire_attrs,
                        brush_hatch: 0)
           context.emit(Emf::Emr::Binary::Records::SelectObject,
                        i_type: SELECTOBJECT,

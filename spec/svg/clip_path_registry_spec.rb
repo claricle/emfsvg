@@ -27,6 +27,25 @@ RSpec.describe Emfsvg::Svg::ClipPathRegistry do
       expect(registry.lookup("not-a-url")).to be_nil
     end
 
+    it "resolves a reference that was a miss before its clip was registered" do
+      registry = described_class.new
+      expect(registry.lookup("url(#late)")).to be_nil
+
+      clip = Emfsvg::Svg::Elements::ClipPath.new(id: "late", children: [])
+      registry.register(clip)
+
+      expect(registry.lookup("url(#late)")).to be(clip)
+    end
+
+    it "resolves repeated references to the same clip" do
+      registry = described_class.new
+      clip = Emfsvg::Svg::Elements::ClipPath.new(id: "c", children: [])
+      registry.register(clip)
+
+      2.times { expect(registry.lookup("url(#c)")).to be(clip) }
+      expect(registry.lookup("url( #c )")).to be(clip)
+    end
+
     it "finds clipPaths nested inside groups" do
       svg = <<~SVG
         <svg>
@@ -49,6 +68,20 @@ RSpec.describe Emfsvg::Svg::Elements::ClipPath do
     node = Leptris::XML.parse('<clipPath id="c"><rect x="10" y="20" width="100" height="50"/></clipPath>').root
     clip = described_class.from_node(node)
     expect(clip.rectangular_bounds).to eq([10.0, 20.0, 110.0, 70.0])
+  end
+
+  it "returns the same bounds on every request" do
+    node = Leptris::XML.parse('<clipPath id="c"><rect x="10" y="20" width="100" height="50"/></clipPath>').root
+    clip = described_class.from_node(node)
+    first = clip.clip_bounds
+    expect(clip.clip_bounds).to eq([10.0, 20.0, 110.0, 70.0])
+    expect(clip.clip_bounds).to be(first)
+  end
+
+  it "keeps a nil result for non-rect clips" do
+    node = Leptris::XML.parse('<clipPath id="c"><circle cx="0" cy="0" r="10"/></clipPath>').root
+    clip = described_class.from_node(node)
+    2.times { expect(clip.clip_bounds).to be_nil }
   end
 
   it "returns nil rectangular_bounds for non-rect clips" do

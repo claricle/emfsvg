@@ -114,9 +114,11 @@ module Emfsvg
 
     def dup
       other = DeviceContext.allocate
-      other.pen = pen.dup
-      other.brush = brush.dup
-      other.font = font.dup
+      # Pen, Brush, Font, Matrix and the brush origin are never mutated in
+      # place (handlers replace them), so snapshots share them.
+      other.pen = pen
+      other.brush = brush
+      other.font = font
       other.text_color = text_color
       other.bk_color = bk_color
       other.bk_mode = bk_mode
@@ -125,7 +127,7 @@ module Emfsvg
       other.stretch_mode = stretch_mode
       other.miter_limit = miter_limit
       other.world_transform = world_transform
-      other.brush_origin = brush_origin.dup
+      other.brush_origin = brush_origin
       other.icm_mode = icm_mode
       other.layout = layout
       other.mapper_flags = mapper_flags

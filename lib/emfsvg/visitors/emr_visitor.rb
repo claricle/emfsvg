@@ -177,12 +177,12 @@ module Emfsvg
 
       # The Emf wire-record-adapter calls this. Dispatch by wire class.
       def visit_emr_wire_record(adapter)
-        wire = adapter.wire
-        method_name = HANDLERS[wire.class]
+        klass = RecordAccess.wire_class(adapter)
+        method_name = HANDLERS[klass]
         if method_name
-          send(method_name, wire)
+          send(method_name, RecordAccess.fields(adapter, klass))
         elsif @options.verbose
-          warn "emfsvg: no handler for #{wire.class.name&.split('::')&.last}"
+          warn "emfsvg: no handler for #{klass.name&.split('::')&.last}"
         end
       rescue StandardError => e
         raise unless @options.verbose
@@ -243,6 +243,15 @@ module Emfsvg
         FormatHelpers.fmt_xy(x, y)
       end
 
+      # Record fields come back from the parser as BinData primitives, or as
+      # plain numbers from a value view. Device context state is compared
+      # against integer constants on every drawn point, and each such
+      # comparison on a BinData value goes through BinData::Base#==. Unwrap
+      # once when the state is set instead.
+      def int(value)
+        value.is_a?(Numeric) ? value : value.snapshot
+      end
+
       # C integer division truncates toward zero; Ruby's Integer#/ floors.
       # For negative operands the results differ (e.g. -333/2: C=-166,
       # Ruby=-167). This helper replicates C's truncation semantics.
@@ -263,11 +272,11 @@ module Emfsvg
       end
 
       def visit_set_bk_mode(wire)
-        @dc.bk_mode = wire.bk_mode
+        @dc.bk_mode = int(wire.bk_mode)
       end
 
       def visit_set_map_mode(wire)
-        @dc.map_mode = wire.map_mode
+        @dc.map_mode = int(wire.map_mode)
       end
 
       def visit_set_rop2(wire)
@@ -275,15 +284,15 @@ module Emfsvg
       end
 
       def visit_set_poly_fill_mode(wire)
-        @dc.poly_fill_mode = wire.poly_fill_mode
+        @dc.poly_fill_mode = int(wire.poly_fill_mode)
       end
 
       def visit_set_text_align(wire)
-        @dc.text_align = wire.text_align_mode
+        @dc.text_align = int(wire.text_align_mode)
       end
 
       def visit_set_stretch_blt_mode(wire)
-        @dc.stretch_mode = wire.stretch_mode
+        @dc.stretch_mode = int(wire.stretch_mode)
       end
 
       def visit_save_dc(_wire)
@@ -325,7 +334,7 @@ module Emfsvg
       }.freeze
 
       def visit_select_object(wire)
-        ih = wire.ih_object
+        ih = int(wire.ih_object)
 
         # Stock object?
         if ih.anybits?(STOCK_OBJECT_FLAG)
@@ -369,48 +378,48 @@ module Emfsvg
       end
 
       def visit_delete_object(wire)
-        @object_table.delete(wire.ih_object)
+        @object_table.delete(int(wire.ih_object))
       end
 
       def visit_create_pen(wire)
         pen = Pen.new(
-          style: wire.pen_style,
-          width: wire.width.x,
+          style: int(wire.pen_style),
+          width: int(wire.width.x),
           color: Emf::Model::Geometry::Color.from_wire(wire.color)
         )
-        @object_table.store(wire.ih_pen, :pen, pen)
+        @object_table.store(int(wire.ih_pen), :pen, pen)
       end
 
       def visit_create_brush_indirect(wire)
         brush = Brush.new(
-          style: wire.brush_style,
+          style: int(wire.brush_style),
           color: Emf::Model::Geometry::Color.from_wire(wire.color),
-          hatch: wire.brush_hatch
+          hatch: int(wire.brush_hatch)
         )
-        @object_table.store(wire.ih_brush, :brush, brush)
+        @object_table.store(int(wire.ih_brush), :brush, brush)
       end
 
       def visit_set_window_org_ex(wire)
-        @dc.window_org = [wire.origin.x, wire.origin.y]
+        @dc.window_org = [int(wire.origin.x), int(wire.origin.y)]
       end
 
       def visit_set_window_ext_ex(wire)
-        @dc.window_ext = [wire.extent.cx, wire.extent.cy]
+        @dc.window_ext = [int(wire.extent.cx), int(wire.extent.cy)]
         @dc.window_ext_set = true
       end
 
       def visit_set_viewport_org_ex(wire)
-        @dc.viewport_org = [wire.origin.x, wire.origin.y]
+        @dc.viewport_org = [int(wire.origin.x), int(wire.origin.y)]
       end
 
       def visit_set_viewport_ext_ex(wire)
-        @dc.viewport_ext = [wire.extent.cx, wire.extent.cy]
+        @dc.viewport_ext = [int(wire.extent.cx), int(wire.extent.cy)]
         @dc.viewport_ext_set = true
       end
 
       def visit_move_to_ex(wire)
-        @current_x = wire.origin.x
-        @current_y = wire.origin.y
+        @current_x = int(wire.origin.x)
+        @current_y = int(wire.origin.y)
         return unless @in_path
 
         # In path: emit `M X,Y ` directly to the open d-string.
@@ -422,9 +431,9 @@ module Emfsvg
         if @in_path
           # In path: emit `L X,Y ` to the open d-string, no wrapping.
           @builder.raw("L ")
-          @builder.raw(fmt_xy(cal_x(wire.origin.x), cal_y(wire.origin.y)))
-          @current_x = wire.origin.x
-          @current_y = wire.origin.y
+          @builder.raw(fmt_xy(cal_x(int(wire.origin.x)), cal_y(int(wire.origin.y))))
+          @current_x = int(wire.origin.x)
+          @current_y = int(wire.origin.y)
           return
         end
 
@@ -432,10 +441,10 @@ module Emfsvg
         # C's startPathDraw creates U_POINT (int32) from cur_x/cur_y,
         # truncating any fractional part before point_cal. We must match.
         d = "M #{fmt(cal_x(@current_x.to_i))},#{fmt(cal_y(@current_y.to_i))} "
-        d << "L #{fmt(cal_x(wire.origin.x))},#{fmt(cal_y(wire.origin.y))} "
+        d << "L #{fmt(cal_x(int(wire.origin.x)))},#{fmt(cal_y(int(wire.origin.y)))} "
         emit_path_element(d, closed: false, leading_fill_space: true)
-        @current_x = wire.origin.x
-        @current_y = wire.origin.y
+        @current_x = int(wire.origin.x)
+        @current_y = int(wire.origin.y)
       end
 
       def visit_rectangle(wire)
@@ -535,8 +544,8 @@ module Emfsvg
             @builder.raw("L ")
             @builder.raw(point_str(p))
           end
-          @current_x = points.last.x
-          @current_y = points.last.y
+          @current_x = int(points.last.x)
+          @current_y = int(points.last.y)
           return
         end
 
@@ -547,8 +556,8 @@ module Emfsvg
           d << point_str(p)
         end
         emit_path_element(d, closed: false, leading_fill_space: true)
-        @current_x = points.last.x
-        @current_y = points.last.y
+        @current_x = int(points.last.x)
+        @current_y = int(points.last.y)
       end
 
       def visit_poly_bezier(wire)
@@ -587,8 +596,8 @@ module Emfsvg
           end
           emit_bezier_points(points, starting_point: starting_point)
           if points.last
-            @current_x = points.last.x
-            @current_y = points.last.y
+            @current_x = int(points.last.x)
+            @current_y = int(points.last.y)
           end
           return
         end
@@ -602,8 +611,8 @@ module Emfsvg
         emit_path_element(d, closed: false, leading_fill_space: true)
         return unless points.last
 
-        @current_x = points.last.x
-        @current_y = points.last.y
+        @current_x = int(points.last.x)
+        @current_y = int(points.last.y)
       end
 
       # Emit "C p1 p2 p3 C p4 p5 p6 ..." matching cubic_bezier*_draw's
@@ -783,7 +792,7 @@ module Emfsvg
       def visit_create_font_indirect_w(wire)
         body = wire.body.to_s
         font = parse_logfont(body, utf16: true)
-        @object_table.store(wire.ih_object, :font, font)
+        @object_table.store(int(wire.ih_object), :font, font)
       end
 
       # Parse a LOGFONT struct from body bytes (MS-WMF 2.2.13).
@@ -1105,7 +1114,7 @@ module Emfsvg
         brush = Brush.new(style: Brush::MONOPATTERN,
                           color: @dc.brush.color,
                           image_id: image_id)
-        @object_table.store(wire.ih_brush, :brush, brush)
+        @object_table.store(int(wire.ih_brush), :brush, brush)
       end
 
       # Emit <defs><image id="img-N" .../><pattern id="img-N-ref"
@@ -1173,9 +1182,9 @@ module Emfsvg
             width: width,
             color: Emf::Model::Geometry::Color.new(red: r, green: g, blue: b)
           )
-          @object_table.store(wire.ih_pen, :pen, pen)
+          @object_table.store(int(wire.ih_pen), :pen, pen)
         else
-          @object_table.store(wire.ih_pen, :pen, Pen.new)
+          @object_table.store(int(wire.ih_pen), :pen, Pen.new)
         end
       end
 
@@ -1373,14 +1382,20 @@ module Emfsvg
           region.path_d
         elsif region.bounds
           b = region.bounds
-          pts = [[b.left, b.top], [b.right, b.top],
-                 [b.right, b.bottom], [b.left, b.bottom], [b.left, b.top]]
+          x_left = cal_x(b.left)
+          x_right = cal_x(b.right)
+          y_top = cal_y(b.top)
+          y_bottom = cal_y(b.bottom)
           d = +"M "
-          d << fmt_xy(cal_x(pts.first[0]), cal_y(pts.first[1]))
-          pts[1..].each do |x, y|
-            d << "L "
-            d << fmt_xy(cal_x(x), cal_y(y))
-          end
+          FormatHelpers.append_xy(d, x_left, y_top)
+          d << "L "
+          FormatHelpers.append_xy(d, x_right, y_top)
+          d << "L "
+          FormatHelpers.append_xy(d, x_right, y_bottom)
+          d << "L "
+          FormatHelpers.append_xy(d, x_left, y_bottom)
+          d << "L "
+          FormatHelpers.append_xy(d, x_left, y_top)
           d << "Z "
           d
         else
@@ -1473,8 +1488,8 @@ module Emfsvg
         text = ext_text_content(wire, utf16: utf16)
 
         # libemf2svg emits the <text> element even when the string is empty.
-        x = cal_x(wire.ptl_reference.x)
-        y = cal_y(wire.ptl_reference.y)
+        x = cal_x(int(wire.ptl_reference.x))
+        y = cal_y(int(wire.ptl_reference.y))
 
         font = @dc.font
         font_height = scale_dim_x(font.height.to_i).abs
@@ -1707,8 +1722,8 @@ module Emfsvg
         # the new current position for subsequent drawing records.
         return unless last_pt
 
-        @current_x = last_pt.x
-        @current_y = last_pt.y
+        @current_x = int(last_pt.x)
+        @current_y = int(last_pt.y)
       end
 
       def emit_poly_draw(points, types, _point_size:)
@@ -1727,15 +1742,15 @@ module Emfsvg
           i += 1
           case t & 0x07
           when pt_moveto
-            d << "M #{fmt(cal_x(pt.x))} #{fmt(cal_y(pt.y))} "
+            d << "M #{fmt(cal_x(int(pt.x)))} #{fmt(cal_y(int(pt.y)))} "
           when pt_lineto
-            d << "L #{fmt(cal_x(pt.x))} #{fmt(cal_y(pt.y))} "
+            d << "L #{fmt(cal_x(int(pt.x)))} #{fmt(cal_y(int(pt.y)))} "
           when pt_bezierto
             bezier_buf << pt
             if bezier_buf.size == 3
-              d << "C #{fmt(cal_x(bezier_buf[0].x))} #{fmt(cal_y(bezier_buf[0].y))} "
-              d << "#{fmt(cal_x(bezier_buf[1].x))} #{fmt(cal_y(bezier_buf[1].y))} "
-              d << "#{fmt(cal_x(bezier_buf[2].x))} #{fmt(cal_y(bezier_buf[2].y))} "
+              d << "C #{fmt(cal_x(int(bezier_buf[0].x)))} #{fmt(cal_y(int(bezier_buf[0].y)))} "
+              d << "#{fmt(cal_x(int(bezier_buf[1].x)))} #{fmt(cal_y(int(bezier_buf[1].y)))} "
+              d << "#{fmt(cal_x(int(bezier_buf[2].x)))} #{fmt(cal_y(int(bezier_buf[2].y)))} "
               bezier_buf.clear
             end
           end
@@ -1858,8 +1873,8 @@ module Emfsvg
           # Mirror libemf2svg's point*_draw which updates cur_x,cur_y on
           # every emitted point — the LAST point becomes the new current
           # position, used by subsequent PolyBezier/LineTo/etc.
-          @current_x = points.last.x
-          @current_y = points.last.y
+          @current_x = int(points.last.x)
+          @current_y = int(points.last.y)
           return
         end
 
@@ -1870,8 +1885,8 @@ module Emfsvg
           d << point_str(p)
         end
         emit_path_element(d, closed: closed)
-        @current_x = points.last.x
-        @current_y = points.last.y
+        @current_x = int(points.last.x)
+        @current_y = int(points.last.y)
       end
 
       # Emits a <path> element matching libemf2svg's exact byte layout:
@@ -1926,12 +1941,21 @@ module Emfsvg
 
       # Format a single point as libemf2svg's point_draw would: "X,Y "
       def point_str(point)
-        fmt_xy(cal_x(point.x), cal_y(point.y))
+        fmt_xy(cal_x(int(point.x)), cal_y(int(point.y)))
       end
 
       # libemf2svg prints colors as `#RRGGBB` always (drops alpha/reserved).
+      # The text depends only on the three channels, so each distinct colour
+      # is formatted once and the frozen string is shared.
       def rgb_hex(color)
-        format("#%02X%02X%02X", color.red, color.green, color.blue)
+        red = color.red
+        green = color.green
+        blue = color.blue
+        return format("#%02X%02X%02X", red, green, blue) unless (red | green | blue).nobits?(-256)
+
+        @rgb_hex_cache ||= {}
+        @rgb_hex_cache[(red << 16) | (green << 8) | blue] ||=
+          format("#%02X%02X%02X", red, green, blue).freeze
       end
 
       # Mirror libemf2svg's clipset_draw: emits " clip-path=\"url(#clip-N)\" "
