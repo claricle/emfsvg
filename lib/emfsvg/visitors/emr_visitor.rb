@@ -1423,7 +1423,7 @@ module Emfsvg
           decoded = raw.pack("C*").force_encoding("UTF-16LE").encode("UTF-8",
                                                                      undef: :replace,
                                                                      replace: "?")
-          if (nul = decoded.index(" "))
+          if (nul = decoded.index("\0"))
             decoded = decoded[0, nul]
           end
           decoded.empty? ? nil : decoded
