@@ -42,7 +42,7 @@ module Emfsvg
 
     # Parse from bytes then render.
     def from_bytes(bytes, **options)
-      to_svg(Emf.parse(bytes), **options)
+      to_svg(parse_metafile(bytes), **options)
     end
 
     # Parse from a file path then render.
@@ -64,6 +64,14 @@ module Emfsvg
     # Parse SVG from a file path and translate to EMF bytes.
     def from_svg_file(path)
       from_svg(File.read(path))
+    end
+
+    private
+
+    def parse_metafile(bytes)
+      Emf.parse(bytes)
+    rescue Emf::FormatError, Emf::ParseError => e
+      raise ParseError, e.message, cause: e
     end
   end
 end
