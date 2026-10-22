@@ -31,6 +31,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bigdecimal"
   spec.add_dependency "emf", "~> 0.1"
   spec.add_dependency "fontisan"
-  spec.add_dependency "libpng", "~> 1.6"
   spec.add_dependency "leptris", ">= 1.9.365.1"
+  spec.add_dependency "libpng", "~> 1.6"
 end

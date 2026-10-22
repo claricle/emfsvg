@@ -17,7 +17,7 @@ module Emfsvg
 
     # Format a single float as "%.4f" with C printf semantics.
     def fmt(n)
-      bd = BigDecimal("%.20f" % n.to_f)
+      bd = BigDecimal(format("%.20f", n.to_f))
       format("%.4f", bd.round(4, half: :even).to_f)
     end
 

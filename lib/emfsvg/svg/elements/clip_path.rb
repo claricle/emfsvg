@@ -67,15 +67,16 @@ module Emfsvg
         end
 
         def bounding_box_of(elements)
-          xs, ys = [], []
+          xs = []
+          ys = []
           elements.each do |e|
             case e
             when Elements::Rect
-              xs << e.x << e.x + e.width
-              ys << e.y << e.y + e.height
+              xs << e.x << (e.x + e.width)
+              ys << e.y << (e.y + e.height)
             when Elements::Ellipse
-              xs << e.cx - e.rx << e.cx + e.rx
-              ys << e.cy - e.ry << e.cy + e.ry
+              xs << (e.cx - e.rx) << (e.cx + e.rx)
+              ys << (e.cy - e.ry) << (e.cy + e.ry)
             when Elements::Path
               points = PathFlattenerForClip.new.flatten(e.commands)
               next unless points
@@ -101,10 +102,7 @@ module Emfsvg
             current = [0.0, 0.0]
             commands.each do |cmd|
               case cmd.letter
-              when "M"
-                current = cmd.args
-                points << current.dup
-              when "L"
+              when "M", "L"
                 current = cmd.args
                 points << current.dup
               when "H"

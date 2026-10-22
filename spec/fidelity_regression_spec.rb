@@ -12,21 +12,21 @@ require "tmpdir"
 #
 # Auto-skips if libemf2svg's binary is not available.
 RSpec.describe "EMF→SVG fidelity vs libemf2svg (regression floor)" do
-  REF_BINARY = "/Users/mulgogi/src/claricle/libemf2svg/emf2svg_ref"
-  REF_LIB_DIR = "/Users/mulgogi/src/claricle/libemf2svg/build"
-  EMF_GLOBS = %w[
+  let(:ref_binary) { "/Users/mulgogi/src/claricle/libemf2svg/emf2svg_ref" }
+  let(:ref_lib_dir) { "/Users/mulgogi/src/claricle/libemf2svg/build" }
+  emf_globs = %w[
     ../emf/spec/fixtures/emf/*.emf
     ../emf/spec/fixtures/emf-ea/*.emf
   ].freeze
 
   def ref_available?
-    File.executable?(REF_BINARY)
+    File.executable?(ref_binary)
   end
 
   def generate_reference(emf_path)
     output_path = File.join(Dir.mktmpdir, "#{File.basename(emf_path, '.emf')}.svg")
-    env = { "DYLD_LIBRARY_PATH" => REF_LIB_DIR }
-    _, _, status = Open3.capture3(env, REF_BINARY, emf_path, output_path)
+    env = { "DYLD_LIBRARY_PATH" => ref_lib_dir }
+    _, _, status = Open3.capture3(env, ref_binary, emf_path, output_path)
     return nil unless status.success?
 
     File.binread(output_path)
@@ -37,10 +37,10 @@ RSpec.describe "EMF→SVG fidelity vs libemf2svg (regression floor)" do
   # Collect a representative sample (first 5 from each glob) to keep
   # spec runtime reasonable. Full 208-fixture scan lives in
   # scripts/run_emf_svg_compare.rb.
-  before { skip "libemf2svg not available at #{REF_BINARY}" unless ref_available? }
+  before { skip "libemf2svg not available at #{ref_binary}" unless ref_available? }
 
   base_dir = File.expand_path(File.join(__dir__, ".."))
-  fixtures = EMF_GLOBS.flat_map do |g|
+  fixtures = emf_globs.flat_map do |g|
     Dir.glob(File.expand_path(g, base_dir)).first(5)
   end.sort
 

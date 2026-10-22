@@ -87,8 +87,9 @@ module Emfsvg
       end
 
       def to_s
-        format("%-40s ref=%8d out=%7d (%5.1f%%) elements_overlap=%.1f",
-               fixture, ref_bytes, emfsvg_bytes, byte_ratio, element_overlap * 100)
+        format("%<fixture>-40s ref=%<ref>8d out=%<out>7d (%<ratio>5.1f%%) elements_overlap=%<overlap>.1f",
+               fixture: fixture, ref: ref_bytes, out: emfsvg_bytes, ratio: byte_ratio,
+               overlap: element_overlap * 100)
       end
     end
 
@@ -125,8 +126,9 @@ module Emfsvg
       total_out = results.sum(&:emfsvg_bytes)
       ratio = total_ref.zero? ? 0 : (total_out.to_f / total_ref * 100).round(1)
       avg_overlap = results.sum(&:element_overlap) / results.size
-      format("fixtures=%d  total_ref=%d  total_out=%d  byte_ratio=%.1f%%  avg_element_overlap=%.1f%%",
-             results.size, total_ref, total_out, ratio, avg_overlap * 100)
+      format("fixtures=%<count>d  total_ref=%<ref>d  total_out=%<out>d  " \
+             "byte_ratio=%<ratio>.1f%%  avg_element_overlap=%<overlap>.1f%%",
+             count: results.size, ref: total_ref, out: total_out, ratio: ratio, overlap: avg_overlap * 100)
     end
   end
 end

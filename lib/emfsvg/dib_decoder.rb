@@ -91,6 +91,16 @@ module Emfsvg
         safe_getbyte(bytes, offset) | (bytes.getbyte(offset + 1) << 8)
       end
 
+      def read_palette(bytes, pal_start, pal_entries)
+        (0...pal_entries).map do |i|
+          b = safe_getbyte(bytes, pal_start + (i * 4))
+          g = safe_getbyte(bytes, pal_start + (i * 4) + 1)
+          r = safe_getbyte(bytes, pal_start + (i * 4) + 2)
+          a = safe_getbyte(bytes, pal_start + (i * 4) + 3)
+          [r, g, b, a]
+        end
+      end
+
       def decode_bi_rgb(bytes, header, bits_offset, mono_palette = nil)
         width = header[:width]
         height = header[:height].abs
@@ -102,13 +112,7 @@ module Emfsvg
         # For 1-bpp MONOCHROME brushes libemf2svg overrides the palette with
         # the device context's text/bk colors. Caller can supply that via
         # mono_palette; otherwise read the palette from the BMI.
-        palette = mono_palette || (0...pal_entries).map do |i|
-          b = safe_getbyte(bytes, pal_start + (i * 4))
-          g = safe_getbyte(bytes, pal_start + (i * 4) + 1)
-          r = safe_getbyte(bytes, pal_start + (i * 4) + 2)
-          a = safe_getbyte(bytes, pal_start + (i * 4) + 3)
-          [r, g, b, a]
-        end
+        palette = mono_palette || read_palette(bytes, pal_start, pal_entries)
 
         # When the caller supplies bits_offset (== cb_bmi from the EMF
         # record), use it — the BMI may contain trailing padding between
@@ -173,7 +177,7 @@ module Emfsvg
         return nominal if nominal.zero?
 
         area = header[:width].abs * header[:height].abs
-        nominal > area ? area : nominal
+        [nominal, area].min
       end
 
       def decode_rgb24_row(bytes, row_start, width, pixels, out_start)

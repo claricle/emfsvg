@@ -12,26 +12,32 @@ module Emfsvg
         ELEMENT_NAME = "text"
         Element.register("text", self)
 
-        attr_reader :x, :y, :content, :font_family, :font_size, :font_weight,
-                    :font_style, :text_anchor, :fill, :stroke, :clip_path,
-                    :transform_matrix
+        # The font attributes of a <text> element.
+        Font = Struct.new(:family, :point_size, :weight, :style, keyword_init: true)
 
-        def initialize(x:, y:, content:, font_family:, font_size:, font_weight:,
-                       font_style:, text_anchor:, fill:, stroke:, clip_path: nil,
+        attr_reader :x, :y, :content, :font, :text_anchor, :fill, :stroke,
+                    :clip_path, :transform_matrix
+
+        def initialize(x:, y:, content:, font:, text_anchor:, fill:, stroke:, clip_path: nil,
                        transform_matrix: Emf::Model::Geometry::Matrix.identity)
           @x = x
           @y = y
           @content = content
-          @font_family = font_family
-          @font_size = font_size
-          @font_weight = font_weight
-          @font_style = font_style
+          @font = font
           @text_anchor = text_anchor
           @fill = fill
           @stroke = stroke
           @clip_path = clip_path
           @transform_matrix = transform_matrix
         end
+
+        def font_family = font.family
+
+        def font_size = font.point_size
+
+        def font_weight = font.weight
+
+        def font_style = font.style
 
         def transformed?
           !transform_matrix.identity?
@@ -42,10 +48,12 @@ module Emfsvg
             x: AttributeParser.float(node["x"]),
             y: AttributeParser.float(node["y"]),
             content: node.text,
-            font_family: node["font-family"],
-            font_size: AttributeParser.float(node["font-size"], default: 12.0),
-            font_weight: parse_weight(node["font-weight"]),
-            font_style: node["font-style"],
+            font: Font.new(
+              family: node["font-family"],
+              point_size: AttributeParser.float(node["font-size"], default: 12.0),
+              weight: parse_weight(node["font-weight"]),
+              style: node["font-style"]
+            ),
             text_anchor: node["text-anchor"] || "start",
             transform_matrix: Svg::TransformParser.parse(node["transform"]),
             **Stylable.parse_style(node)

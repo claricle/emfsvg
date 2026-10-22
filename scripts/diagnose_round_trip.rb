@@ -13,7 +13,7 @@ require "support/svg_matcher"
 
 GOLDEN_DIR = File.expand_path("../spec/fixtures/emfsvg_golden", __dir__)
 
-all = Dir.glob(File.join(GOLDEN_DIR, "*.svg")).sort
+all = Dir.glob(File.join(GOLDEN_DIR, "*.svg"))
 fixtures = ARGV.first&.to_i ? all.first(ARGV.first.to_i) : all
 
 fixtures.each do |path|

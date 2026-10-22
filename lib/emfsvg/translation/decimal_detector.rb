@@ -27,10 +27,10 @@ module Emfsvg
         return false unless element
 
         element_attrs = decimal_attrs_for(element)
-        return true if element_attrs.any? { |attr| has_decimal?(element.send(attr)) }
+        return true if element_attrs.any? { |attr| decimal?(element.send(attr)) }
 
         path = path_commands(element)
-        return true if path && path.any? { |cmd| cmd.args.any? { |a| a.is_a?(Float) && a != a.to_i } }
+        return true if path&.any? { |cmd| cmd.args.any? { |a| a.is_a?(Float) && a != a.to_i } }
 
         element.children.any? { |c| any_decimal?(c) }
       end
@@ -42,7 +42,7 @@ module Emfsvg
         return true if element_attrs.any? { |attr| unsafe_value?(element.send(attr), scaler) }
 
         path = path_commands(element)
-        return true if path && path.any? { |cmd| cmd.args.any? { |a| scaler.unsafe?(a) } }
+        return true if path&.any? { |cmd| cmd.args.any? { |a| scaler.unsafe?(a) } }
 
         element.children.any? { |c| any_unsafe?(c, scaler) }
       end
@@ -71,18 +71,21 @@ module Emfsvg
 
       # `value` may be: Float, Integer, Array of [x,y] pairs, Array of
       # PathData::Command, or nil.
-      def has_decimal?(value)
+      def decimal?(value)
         return false if value.nil?
 
         case value
         when Float then !value.finite? || (value != value.to_i)
-        when Integer then false
         when Array
-          value.any? { |v| pair_or_command?(v) ? has_decimal?(v) : v.is_a?(Float) && v != v.to_i }
+          value.any? { |v| pair_or_command?(v) ? decimal?(v) : v.is_a?(Float) && v != v.to_i }
         when String then value.match?(/\.\d/)
         else false
         end
       end
+
+      # Former name, kept so existing callers keep working.
+      alias has_decimal? decimal?
+      module_function :has_decimal?
 
       def pair_or_command?(value)
         value.is_a?(Array) || value.is_a?(Svg::PathData::Command)
@@ -93,7 +96,6 @@ module Emfsvg
 
         case value
         when Float then scaler.unsafe?(value)
-        when Integer then false
         when Array then value.any? { |v| unsafe_value?(v, scaler) }
         when String then extract_floats(value).any? { |f| scaler.unsafe?(f) }
         else false

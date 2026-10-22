@@ -52,7 +52,7 @@ end
 
 def categorise(reason)
   case reason
-  when /text content|text \"/ then "text content"
+  when /text content|text "/ then "text content"
   when /@d\b|"d"/ then "path d"
   when /@transform|"transform"/ then "transform attr"
   when /@clip-path|"clip-path"/ then "clip-path attr"
@@ -92,8 +92,6 @@ errors = 0
 fail_categories = Hash.new(0)
 
 fixtures.each do |emf_path|
-  name = File.basename(emf_path)
-
   emfsvg_svg = begin
     Emfsvg.from_file(emf_path)
   rescue StandardError => e
@@ -118,12 +116,9 @@ fixtures.each do |emf_path|
   end
 
   comparison = Emfsvg::SvgMatcher.compare(emfsvg_svg, ref_svg, tolerance: tolerance)
-  if comparison.equal
-    lossy_pass += 1
-  else
-    category = categorise(comparison.reason || "")
-    fail_categories[category] += 1
-  end
+  next lossy_pass += 1 if comparison.equal
+
+  fail_categories[categorise(comparison.reason || "")] += 1
 end
 
 puts "EMF→SVG fidelity vs libemf2svg (tolerance=#{tolerance})"

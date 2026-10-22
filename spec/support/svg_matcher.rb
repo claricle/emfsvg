@@ -141,9 +141,9 @@ module Emfsvg
     # Render a Matrix as the SVG `matrix(a b c d e f)` form (canonical
     # representation for comparison).
     def format_matrix(matrix)
-      format("matrix(%.4f %.4f %.4f %.4f %.4f %.4f)",
-             matrix.m11, matrix.m12, matrix.m21, matrix.m22,
-             matrix.dx, matrix.dy)
+      format("matrix(%<a>.4f %<b>.4f %<c>.4f %<d>.4f %<e>.4f %<f>.4f)",
+             a: matrix.m11, b: matrix.m12, c: matrix.m21, d: matrix.m22,
+             e: matrix.dx, f: matrix.dy)
     end
 
     # Encapsulated comparator with tolerance state.
@@ -167,9 +167,7 @@ module Emfsvg
       end
 
       def compare_def_set(a_kids, b_kids, path)
-        unless a_kids.size == b_kids.size
-          return fail_at(path, "child count #{a_kids.size} vs #{b_kids.size}")
-        end
+        return fail_at(path, "child count #{a_kids.size} vs #{b_kids.size}") unless a_kids.size == b_kids.size
 
         b_pool = b_kids.to_a
         a_kids.each do |x|
@@ -222,9 +220,7 @@ module Emfsvg
         a_kids = a.element_children
         b_kids = b.element_children
 
-        unless a_kids.size == b_kids.size
-          return fail_at(path, "child count #{a_kids.size} vs #{b_kids.size}")
-        end
+        return fail_at(path, "child count #{a_kids.size} vs #{b_kids.size}") unless a_kids.size == b_kids.size
 
         a_kids.zip(b_kids).each_with_index do |(x, y), i|
           label = "#{a.name}>#{x.name}[#{i}]"
@@ -240,11 +236,11 @@ module Emfsvg
         id ? "[##{id.value}]" : ""
       end
 
-      def compare_value(va, vb, path)
-        return ok if va == vb
+      def compare_value(val_a, val_b, path)
+        return ok if val_a == val_b
 
-        ca = canonicalise(va)
-        cb = canonicalise(vb)
+        ca = canonicalise(val_a)
+        cb = canonicalise(val_b)
         return ok if ca == cb
 
         nums_a = extract_numbers(ca)
@@ -255,7 +251,7 @@ module Emfsvg
           return ok if non_num_a == non_num_b && numbers_match?(nums_a, nums_b)
         end
 
-        fail_at(path, "#{va[0, 60].inspect} vs #{vb[0, 60].inspect}")
+        fail_at(path, "#{val_a[0, 60].inspect} vs #{val_b[0, 60].inspect}")
       end
 
       def canonicalise(value)

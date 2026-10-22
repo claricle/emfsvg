@@ -95,7 +95,6 @@ module Emfsvg
         Emf::Emr::Binary::Records::DrawEscape => :visit_draw_escape,
         Emf::Emr::Binary::Records::ExtEscape => :visit_ext_escape,
         Emf::Emr::Binary::Records::NamedEscape => :visit_named_escape,
-        Emf::Emr::Binary::Records::SmallTextOut => :visit_small_text_out,
         Emf::Emr::Binary::Records::SetLinkedUfis => :visit_set_linked_ufis,
         Emf::Emr::Binary::Records::ForceUfiMapping => :visit_force_ufi_mapping,
         Emf::Emr::Binary::Records::ColorCorrectPalette => :visit_color_correct_palette,
@@ -129,9 +128,16 @@ module Emfsvg
         Emf::Emr::Binary::Records::PaintRgn => :visit_paint_rgn
       }.freeze
 
+      # Output-space mapping shared by every record: the bounds-to-image
+      # scale, the reference origin and the device pixels per millimetre.
+      Frame = Struct.new(:scaling, :ref_x, :ref_y, :px_per_mm, keyword_init: true) do
+        def initialize(scaling: 1.0, ref_x: 0.0, ref_y: 0.0, px_per_mm: 1.0)
+          super
+        end
+      end
+
       def initialize(builder, dc, object_table, transform_stack, bounds, fix_y, options,
-                     scaling: 1.0, ref_x: 0.0, ref_y: 0.0, px_per_mm: 1.0,
-                     path_actions: {}, path_transforms: {})
+                     frame: Frame.new, path_actions: {}, path_transforms: {})
         @builder = builder
         @dc = dc
         @object_table = object_table
@@ -139,10 +145,10 @@ module Emfsvg
         @bounds = bounds
         @fix_y = fix_y
         @options = options
-        @scaling = scaling
-        @ref_x = ref_x
-        @ref_y = ref_y
-        @px_per_mm = px_per_mm
+        @scaling = frame.scaling
+        @ref_x = frame.ref_x
+        @ref_y = frame.ref_y
+        @px_per_mm = frame.px_per_mm
         @path_actions = path_actions
         @path_transforms = path_transforms
         @current_x = 0
@@ -322,7 +328,7 @@ module Emfsvg
         ih = wire.ih_object
 
         # Stock object?
-        if (ih & STOCK_OBJECT_FLAG).positive?
+        if ih.anybits?(STOCK_OBJECT_FLAG)
           index = ih & 0x7FFFFFFF
           apply_stock_object(index)
           return
@@ -473,7 +479,8 @@ module Emfsvg
         end
         rx = scale_dim_x(wire.szl_corner.cx.to_i)
         ry = scale_dim_x(wire.szl_corner.cy.to_i)
-        geom = "x=\"#{fmt(lt_x)}\" y=\"#{fmt(lt_y)}\" width=\"#{fmt(dim_x)}\" height=\"#{fmt(dim_y)}\" rx=\"#{fmt(rx)}\" ry=\"#{fmt(ry)}\""
+        geom = "x=\"#{fmt(lt_x)}\" y=\"#{fmt(lt_y)}\" width=\"#{fmt(dim_x)}\" height=\"#{fmt(dim_y)}\" " \
+               "rx=\"#{fmt(rx)}\" ry=\"#{fmt(ry)}\""
         emit_shape_element("rect", geom)
       end
 
@@ -748,16 +755,16 @@ module Emfsvg
         pt = entry[key]
         return unless pt
 
-        if pt.mode.nil? || pt.mode.zero?
-          @dc.world_transform = pt.matrix
-        else
-          @dc.world_transform = case pt.mode
+        @dc.world_transform = if pt.mode.nil? || pt.mode.zero?
+                                pt.matrix
+                              else
+                                case pt.mode
                                 when 1 then Emf::Model::Geometry::Matrix.identity
                                 when 2 then multiply_matrix(pt.matrix, @dc.world_transform)
                                 when 3 then multiply_matrix(@dc.world_transform, pt.matrix)
                                 else pt.matrix
                                 end
-        end
+                              end
         emit_transform_group(@dc.world_transform)
       end
 
@@ -828,8 +835,8 @@ module Emfsvg
         # Per MS-EMF 2.3.5.37: ETO_NO_RECT (0x100) UNSET means a U_RECTL
         # (16 bytes) precedes the text. ETO_SMALL_CHARS (0x200) selects
         # 8-bit per char instead of 16-bit.
-        text_offset = (fu & 0x100).zero? ? 16 : 0
-        small_chars = (fu & 0x200).positive? # ETO_SMALL_CHARS = 0x200
+        text_offset = fu.nobits?(0x100) ? 16 : 0
+        small_chars = fu.anybits?(0x200) # ETO_SMALL_CHARS = 0x200
         c_chars = wire.c_chars.to_i
         bytes_per_char = small_chars ? 1 : 2
         text_bytes = body[text_offset, c_chars * bytes_per_char]
@@ -1416,7 +1423,7 @@ module Emfsvg
           decoded = raw.pack("C*").force_encoding("UTF-16LE").encode("UTF-8",
                                                                      undef: :replace,
                                                                      replace: "?")
-          if (nul = decoded.index(" "))
+          if (nul = decoded.index("\0"))
             decoded = decoded[0, nul]
           end
           decoded.empty? ? nil : decoded
@@ -1435,35 +1442,35 @@ module Emfsvg
 
         (0...bytes.size).step(2).each do |i|
           code = bytes[i] | (bytes[i + 1] << 8)
-          return false if code >= 0xD800 && code <= 0xDFFF
+          return false if code.between?(0xD800, 0xDFFF)
         end
         true
       end
 
-      def emit_ext_text(wire, utf16:)
+      # Decodes the string carried by an EXTTEXTOUT record; "" when the
+      # record holds no (in-range) string bytes.
+      def ext_text_content(wire, utf16:)
         record_bytes = wire.to_binary_s
         off_string = wire.off_string
         n_chars = wire.n_chars
-        f_options = wire.f_options.to_i
+        return "" unless off_string&.positive? && off_string < record_bytes.bytesize
 
-        text = if off_string && off_string.positive? && off_string < record_bytes.bytesize
-                 string_bytes = record_bytes[off_string, utf16 ? n_chars * 2 : n_chars]
-                 if string_bytes && !string_bytes.empty?
-                   if (f_options & GlyphIndexMapper::ETO_GLYPH_INDEX).positive?
-                     decode_glyph_indices(string_bytes, n_chars)
-                   elsif utf16
-                     string_bytes.force_encoding("UTF-16LE")
-                                 .encode("UTF-8", undef: :replace, replace: "?")
-                   else
-                     cleaned = string_bytes.bytes.map { |b| b > 0x7F ? 0x20 : b }
-                     cleaned.pack("C*").force_encoding("UTF-8")
-                   end
-                 else
-                   ""
-                 end
-               else
-                 ""
-               end
+        string_bytes = record_bytes[off_string, utf16 ? n_chars * 2 : n_chars]
+        return "" if string_bytes.nil? || string_bytes.empty?
+
+        if wire.f_options.to_i.anybits?(GlyphIndexMapper::ETO_GLYPH_INDEX)
+          decode_glyph_indices(string_bytes, n_chars)
+        elsif utf16
+          string_bytes.force_encoding("UTF-16LE")
+                      .encode("UTF-8", undef: :replace, replace: "?")
+        else
+          cleaned = string_bytes.bytes.map { |b| b > 0x7F ? 0x20 : b }
+          cleaned.pack("C*").force_encoding("UTF-8")
+        end
+      end
+
+      def emit_ext_text(wire, utf16:)
+        text = ext_text_content(wire, utf16: utf16)
 
         # libemf2svg emits the <text> element even when the string is empty.
         x = cal_x(wire.ptl_reference.x)
@@ -1490,13 +1497,14 @@ module Emfsvg
         @builder.raw("font-family=\"#{font.face_name}\" ") if font.face_name
         @builder.raw("fill=\"#{rgb_hex(@dc.text_color)}\" ")
 
-        orientation = sf_y > 0 ? -1 : 1
+        orientation = sf_y.positive? ? -1 : 1
         if font.escapement != 0
           # C's integer division truncates toward zero; Ruby's Integer#/ floors.
           # Use float division + truncate to match C exactly for negative values.
           rotation = (orientation.to_f * font.escapement / 10).truncate
           adj_y = y + (font_height * 0.9)
-          @builder.raw("transform=\"rotate(#{rotation}, #{fmt(x)}, #{fmt(adj_y)}) translate(0, #{fmt(font_height * 0.9)})\" ")
+          @builder.raw("transform=\"rotate(#{rotation}, #{fmt(x)}, #{fmt(adj_y)}) " \
+                       "translate(0, #{fmt(font_height * 0.9)})\" ")
         end
 
         @builder.raw("font-style=\"italic\" ") if font.italic
@@ -1517,9 +1525,9 @@ module Emfsvg
         # libemf2svg checks both U_TA_CENTER (0x06) AND U_TA_CENTER2 (0x04)
         # for "middle" anchor. Mask 0x06 doesn't include 0x04, so handle
         # both explicitly to match C.
-        anchor = if (align & 0x06) == 0x06 || (align & 0x04) == 0x04
+        anchor = if align.allbits?(0x06) || align.allbits?(0x04)
                    "middle"
-                 elsif (align & 0x02) == 0x02
+                 elsif align.allbits?(0x02)
                    "end"
                  else
                    "start"
@@ -1528,7 +1536,7 @@ module Emfsvg
 
         # Vertical position: TA_BOTTOM (0x08) or TA_BASELINE (0x18) use Org.y;
         # otherwise add font_height * 0.9.
-        y_pos = if (align & 0x18) == 0x18 || (align & 0x18) == 0x08
+        y_pos = if align.allbits?(0x18) || (align & 0x18) == 0x08
                   y
                 else
                   y + (font_height * 0.9)
@@ -1600,15 +1608,15 @@ module Emfsvg
       # floors. For negative sums (e.g. (-161 + -172) / 2), C gives -166
       # but Ruby gives -167 — a 1-pixel offset. We must replicate C's
       # truncation by converting to float and truncating.
-      def int_el_rad(pt, rect)
+      def int_el_rad(point, rect)
         center_x = c_int_div(rect.right + rect.left, 2)
         center_y = c_int_div(rect.bottom + rect.top, 2)
         radii_x = c_int_div(rect.right - rect.left, 2)
         radii_y = c_int_div(rect.bottom - rect.top, 2)
         return [center_x, center_y] if radii_x.zero? || radii_y.zero?
 
-        pt_no_x = pt.x.to_f - center_x
-        pt_no_y = pt.y.to_f - center_y
+        pt_no_x = point.x.to_f - center_x
+        pt_no_y = point.y.to_f - center_y
 
         if pt_no_x.zero?
           return [center_x, ((pt_no_y.negative? ? -1 : 1) * radii_y) + center_y]
@@ -1697,10 +1705,10 @@ module Emfsvg
         end
         # Mirror libemf2svg's point*_draw: the final emitted point becomes
         # the new current position for subsequent drawing records.
-        if last_pt
-          @current_x = last_pt.x
-          @current_y = last_pt.y
-        end
+        return unless last_pt
+
+        @current_x = last_pt.x
+        @current_y = last_pt.y
       end
 
       def emit_poly_draw(points, types, _point_size:)
@@ -1753,7 +1761,8 @@ module Emfsvg
         # libemf2svg's U_EMRSTRETCHDIBITS_draw uses point_cal for both size
         # (cDest) and position (Dest). Match that exactly so window/viewport
         # origins are applied to the dimensions too.
-        geom = "width=\"#{fmt(cal_x(width))}\" height=\"#{fmt(cal_y(height))}\" x=\"#{fmt(cal_x(x))}\" y=\"#{fmt(cal_y(y))}\""
+        geom = "width=\"#{fmt(cal_x(width))}\" height=\"#{fmt(cal_y(height))}\" " \
+               "x=\"#{fmt(cal_x(x))}\" y=\"#{fmt(cal_y(y))}\""
         @builder.raw("<image ")
         @builder.raw(geom)
         @builder.raw(" ")
@@ -1916,8 +1925,8 @@ module Emfsvg
       end
 
       # Format a single point as libemf2svg's point_draw would: "X,Y "
-      def point_str(p)
-        fmt_xy(cal_x(p.x), cal_y(p.y))
+      def point_str(point)
+        fmt_xy(cal_x(point.x), cal_y(point.y))
       end
 
       # libemf2svg prints colors as `#RRGGBB` always (drops alpha/reserved).
@@ -1959,19 +1968,16 @@ module Emfsvg
         when Brush::SOLID
           @builder.raw(fill_rule)
           @builder.raw(fill_color_attr(brush))
-          @last_fill_set = true
         when Brush::NULL
           @builder.raw("fill=\"none\" ")
-          @last_fill_set = true
         when Brush::MONOPATTERN
           @builder.raw("fill=\"#img-#{brush.image_id}-ref\" ")
-          @last_fill_set = true
         else
           # BS_HATCHED, BS_PATTERN, etc. — C's default branch emits ONLY the
           # fill attr (fill_rule is computed but discarded).
           @builder.raw(fill_color_attr(brush))
-          @last_fill_set = true
         end
+        @last_fill_set = true
       end
 
       def fill_color_attr(brush)
@@ -2016,7 +2022,8 @@ module Emfsvg
         when Pen::DASHDOT
           @builder.raw("stroke-dasharray=\"#{fmt(dash_len)},#{fmt(dash_len)},#{fmt(dot_len)},#{fmt(dash_len)}\" ")
         when Pen::DASHDOTDOT
-          @builder.raw("stroke-dasharray=\"#{fmt(dash_len)},#{fmt(dash_len)},#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dash_len)}\" ")
+          @builder.raw("stroke-dasharray=\"#{fmt(dash_len)},#{fmt(dash_len)},#{fmt(dot_len)}," \
+                       "#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dash_len)}\" ")
         end
 
         # Line cap (bits 8-11)
@@ -2115,7 +2122,8 @@ module Emfsvg
         when Pen::DASHDOT
           attrs["stroke-dasharray"] = "#{fmt(dash_len)},#{fmt(dash_len)},#{fmt(dot_len)},#{fmt(dash_len)}"
         when Pen::DASHDOTDOT
-          attrs["stroke-dasharray"] = "#{fmt(dash_len)},#{fmt(dash_len)},#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dash_len)}"
+          attrs["stroke-dasharray"] =
+            "#{fmt(dash_len)},#{fmt(dash_len)},#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dot_len)},#{fmt(dash_len)}"
         end
 
         # Line cap (bits 8-11)
@@ -2204,7 +2212,8 @@ module Emfsvg
         end
         dx_scaled = matrix.dx * sf_x * @scaling
         dy_scaled = matrix.dy * sf_y * @scaling
-        @builder.rawln("<g transform=\"matrix(#{fmt(matrix.m11)} #{fmt(matrix.m12)} #{fmt(matrix.m21)} #{fmt(matrix.m22)} #{fmt(dx_scaled)} #{fmt(dy_scaled)})\">")
+        @builder.rawln("<g transform=\"matrix(#{fmt(matrix.m11)} #{fmt(matrix.m12)} #{fmt(matrix.m21)} " \
+                       "#{fmt(matrix.m22)} #{fmt(dx_scaled)} #{fmt(dy_scaled)})\">")
         @open_groups += 1
       end
 
