@@ -52,8 +52,9 @@ module Emfsvg
       @coordinate_state = CoordinateState.new
     end
 
-    attr_accessor :pen, :brush, :font, :text_color, :bk_color, :bk_mode, :poly_fill_mode, :text_align, :stretch_mode, :miter_limit,
-                  :world_transform, :brush_origin, :icm_mode, :layout, :mapper_flags, :arc_direction, :clip_region, :clip_id, :coordinate_state
+    attr_accessor :pen, :brush, :font, :text_color, :bk_color, :bk_mode, :poly_fill_mode, :text_align,
+                  :stretch_mode, :miter_limit, :world_transform, :brush_origin, :icm_mode, :layout,
+                  :mapper_flags, :arc_direction, :clip_region, :clip_id, :coordinate_state
 
     def map_mode
       coordinate_state.map_mode

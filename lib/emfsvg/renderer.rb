@@ -46,6 +46,15 @@ module Emfsvg
       result
     end
 
+    # Records that set pathDrawn=true in libemf2svg's U_emf_onerec_analyse
+    # pre-pass. Used to distinguish wtBefore from wtAfter.
+    DRAWING_PATH_RECORDS = %w[
+      PolyBezier Polygon Polyline PolyBezierTo PolylineTo PolyPolyline PolyPolygon
+      SetWindowExtEx LineTo ArcTo PolyDraw
+      PolyBezier16 Polygon16 Polyline16 PolyBezierTo16 PolylineTo16
+      PolyPolyline16 PolyPolygon16 PolyDraw16
+    ].freeze
+
     private
 
     attr_reader :scaling, :ref_x, :ref_y, :fix_broken_y, :px_per_mm, :img_width, :img_height
@@ -136,8 +145,8 @@ module Emfsvg
       visitor = Visitors::EmrVisitor.new(
         @builder, @dc, @object_table, @transform_stack,
         @metafile.header.bounds, @fix_broken_y, @options,
-        scaling: @scaling, ref_x: @ref_x, ref_y: @ref_y,
-        px_per_mm: @px_per_mm,
+        frame: Visitors::EmrVisitor::Frame.new(scaling: @scaling, ref_x: @ref_x, ref_y: @ref_y,
+                                               px_per_mm: @px_per_mm),
         path_actions: path_actions,
         path_transforms: path_transforms
       )
@@ -229,14 +238,5 @@ module Emfsvg
       end
       action
     end
-
-    # Records that set pathDrawn=true in libemf2svg's U_emf_onerec_analyse
-    # pre-pass. Used to distinguish wtBefore from wtAfter.
-    DRAWING_PATH_RECORDS = %w[
-      PolyBezier Polygon Polyline PolyBezierTo PolylineTo PolyPolyline PolyPolygon
-      SetWindowExtEx LineTo ArcTo PolyDraw
-      PolyBezier16 Polygon16 Polyline16 PolyBezierTo16 PolylineTo16
-      PolyPolyline16 PolyPolygon16 PolyDraw16
-    ].freeze
   end
 end

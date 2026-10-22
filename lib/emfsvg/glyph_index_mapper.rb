@@ -40,9 +40,7 @@ module Emfsvg
       codepoints = glyph_ids.map { |gid| reverse_map[gid] || 0 }
       utf8 = codepoints.pack("U*")
 
-      if charset == HEBREW_CHARSET || charset == ARABIC_CHARSET
-        utf8 = utf8.reverse
-      end
+      utf8 = utf8.reverse if [HEBREW_CHARSET, ARABIC_CHARSET].include?(charset)
 
       null_pos = utf8.index("\x00")
       utf8 = utf8[0, null_pos] if null_pos
@@ -67,12 +65,13 @@ module Emfsvg
       end
     end
 
-    def find_font_path(font_family, weight, italic)
+    def find_font_path(font_family, _weight, _italic)
       return nil if font_family.nil? || font_family.empty?
 
       # Build fontconfig pattern matching libemf2svg's get_fontpath.
       pattern = font_family.dup
-      stdout, _ = Open3.capture2("fc-match", "-f", "%{file}\n", pattern)
+      # fc-match's own template syntax; %% keeps the literal percent sign.
+      stdout, = Open3.capture2("fc-match", "-f", format("%%{file}\n"), pattern)
       path = stdout.strip
       path.empty? ? nil : path
     end
@@ -85,7 +84,7 @@ module Emfsvg
       num_tables = bytes[4, 2].unpack1("n").to_i
       cmap_offset = cmap_length = nil
       (0...num_tables).each do |i|
-        off = 12 + i * 16
+        off = 12 + (i * 16)
         tag = bytes[off, 4]
         next unless tag == "cmap"
 

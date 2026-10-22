@@ -13,8 +13,8 @@ RSpec.describe Emfsvg::SvgMatcher do
   end
 
   it "reports not equal for different element types" do
-    a = '<svg><rect/></svg>'
-    b = '<svg><ellipse/></svg>'
+    a = "<svg><rect/></svg>"
+    b = "<svg><ellipse/></svg>"
     expect(cmp(a, b).equal).to be false
   end
 
