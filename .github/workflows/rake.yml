@@ -14,3 +14,39 @@ on:
 jobs:
   rake:
     uses: metanorma/ci/.github/workflows/generic-rake.yml@main
+
+  corpus-integrity:
+    name: Parity inventory preflight (not native qualification)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+      - name: Read pinned corpus revision
+        id: corpus
+        shell: bash
+        run: |
+          ruby -ryaml -e '
+            revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
+            abort "Expected a full lowercase corpus SHA" unless /\A[0-9a-f]{40}\z/.match?(revision)
+            File.open(ENV.fetch("GITHUB_OUTPUT"), "a") { |file| file.puts "revision=#{revision}" }
+          '
+      - name: Materialize pinned corpus
+        uses: actions/checkout@v4
+        with:
+          repository: claricle/emf
+          ref: ${{ steps.corpus.outputs.revision }}
+          path: parity-corpus
+      - name: Verify corpus checkout
+        shell: bash
+        env:
+          CORPUS_REVISION: ${{ steps.corpus.outputs.revision }}
+        run: test "$(git -C "$GITHUB_WORKSPACE/parity-corpus" rev-parse HEAD)" = "$CORPUS_REVISION"
+      # This checks inventory and setup behavior only. Full native-qualified
+      # parity remains blocked by runtime, native, and upstream contract metadata.
+      - name: Check inventory and setup contracts
+        env:
+          EMF_FIXTURE_ROOT: ${{ github.workspace }}/parity-corpus
+        run: bundle exec rspec spec/parity_manifest_spec.rb spec/parity_provenance_spec.rb spec/compat_reference_setup_spec.rb
