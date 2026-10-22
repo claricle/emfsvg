@@ -53,9 +53,9 @@ module Emfsvg
           off_bmi = STRETCHDIBITS_FIXED_SIZE
           off_bits = off_bmi + bmi_size
 
-          bounds = context.rect_l(element.x, element.y,
-                                  element.x + element.width,
-                                  element.y + element.height)
+          bounds = context.rect_attrs(element.x, element.y,
+                                      element.x + element.width,
+                                      element.y + element.height)
           x_dest = context.scaler.to_int(element.x)
           y_dest = context.scaler.to_int(element.y)
           cx_dest = context.scaler.to_int(element.width)

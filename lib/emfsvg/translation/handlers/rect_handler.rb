@@ -24,12 +24,12 @@ module Emfsvg
         private
 
         def emit_rect(element, context)
-          box = context.rect_l(element.x, element.y,
-                               element.x + element.width,
-                               element.y + element.height)
+          box = context.rect_attrs(element.x, element.y,
+                                   element.x + element.width,
+                                   element.y + element.height)
 
           if element.rounded?
-            corner = context.size_l(element.rx * 2, element.ry * 2)
+            corner = context.size_attrs(element.rx * 2, element.ry * 2)
             context.emit(Emf::Emr::Binary::Records::RoundRect,
                          i_type: ROUNDRECT, rcl_box: box, szl_corner: corner)
           else
