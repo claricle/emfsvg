@@ -34,7 +34,8 @@ module Emfsvg
           if File.basename($PROGRAM_NAME) == "fc-list"
             puts fonts.values
           else
-            pattern = ARGV.find { |argument| argument.start_with?("Arial", "David") }
+            pattern = ARGV.map { |argument| argument.delete('"') }
+                          .find { |argument| argument.start_with?("Arial", "David") }
             prefix = pattern&.start_with?("Arial") ? "arial" : "verdana"
             style = pattern&.include?("weight=bold") ? "bold" : "regular"
             puts fonts.fetch("\#{prefix}_\#{style}")
