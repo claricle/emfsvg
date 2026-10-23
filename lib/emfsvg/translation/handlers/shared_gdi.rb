@@ -86,11 +86,12 @@ module Emfsvg
 
         def emit_create_pen(context, stroke)
           handle = context.allocate_handle
+          width = stroke.cosmetic_pixel_width? ? { x: 1, y: 0 } : context.point_attrs(stroke.width, 0)
           context.emit(Emf::Emr::Binary::Records::CreatePen,
                        i_type: CREATEPEN,
                        ih_pen: handle,
                        pen_style: stroke.pen_style,
-                       width: context.point_attrs(stroke.width, 0),
+                       width: width,
                        color: stroke.paint.color.to_emf_wire.to_wire)
           context.emit(Emf::Emr::Binary::Records::SelectObject,
                        i_type: SELECTOBJECT,

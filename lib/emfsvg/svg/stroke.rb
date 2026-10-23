@@ -50,6 +50,11 @@ module Emfsvg
 
       PS_GEOMETRIC = 0x00010000
 
+      # Cosmetic widths are device pixels, independent of logical coordinates.
+      def cosmetic_pixel_width?
+        raw_width == "1px" && !paint.null? && !null_pen_sentinel?
+      end
+
       # Pen style bitmask (full 32 bits). Includes:
       #   * dash style (bits 0-7)
       #   * end-cap (bits 8-11)
