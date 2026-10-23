@@ -78,10 +78,10 @@ EMFSVG_LIVE_REFERENCE=1 bundle exec rspec spec/fidelity_regression_spec.rb
 bundle exec ruby scripts/run_emf_svg_compare.rb
 ----
 
-The fidelity audit is excluded unless `EMFSVG_LIVE_REFERENCE=1`. Existing
-compatibility assertions still depend on live C tooling and may skip; their
-replacement with the planned hermetic byte/digest oracles is pending card 03.
-Exact collection counts are not proof of byte parity.
+The fidelity audit is excluded unless `EMFSVG_LIVE_REFERENCE=1`. Ordinary
+compatibility assertions use committed artifacts and do not invoke C. They fail
+until the manifest records verified C provenance. Exact collection counts are
+not proof of byte parity.
 
 == How the golden set was obtained
 
@@ -167,6 +167,20 @@ git diff spec/fixtures/
 git commit spec/fixtures/
 ----
 
+== Bounded subprocess checks
+
+`spec/support/bounded_conversion.rb` requires explicit wall-time, RSS,
+address-space and termination-grace limits. It runs one command in a child
+process group and attributes failures to the supplied basename. Linux uses
+child-only `RLIMIT_AS` and distinct `/proc` RSS/address-space measurements;
+macOS supports RSS/time checks and rejects authoritative address-space claims.
+An unavailable sampler fails before conversion.
+
+Benign-child checks exercise process cleanup independently of the corpus.
+The corrupted-corpus contract and calibrated Linux baseline still require
+upstream diagnostic/resource contracts and native qualification; this helper
+does not establish those guarantees.
+
 == Runtime package inspection
 
 Build and inspect the actual runtime archive separately from the corpus checks:
@@ -200,11 +214,16 @@ produce a different golden set; do not silently change them.
 == Current comparison gates
 
 `spec/golden_spec.rb` collects 208 byte comparisons against `golden/`.
-`spec/round_trip_golden_spec.rb` collects 209 historical examples, including
-known-divergence bookkeeping and the regression floor.
-`spec/compat_with_libemf2svg_spec.rb` collects 426 historical structural/live-C
-checks. Corpus routing is pinned, while replacing the latter two groups with
-strict planned byte/digest oracles remains dependency-gated.
+`spec/round_trip_golden_spec.rb` collects 208 exact byte comparisons against
+`emfsvg_golden/` plus one sorted artifact inventory assertion.
+`spec/compat_with_libemf2svg_spec.rb` collects 208 Ruby-to-C byte comparisons,
+208 artifact digest/provenance assertions, nine fixed byte/structure comparisons,
+and one sorted source/reference/generated-output digest assertion. These checks
+have no known-divergence exemptions or comparison skips.
+
+The strict contracts currently expose failures: the `image1` round trip differs
+from its committed artifact, and historical C provenance is unverified. The full
+208-input conversion batch has not been qualified.
 
 Regeneration validates setup before staging and rolls back ordinary promotion
 failures. Verified reference provenance remains required before reference updates.

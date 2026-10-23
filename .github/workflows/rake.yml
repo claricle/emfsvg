@@ -54,7 +54,8 @@ jobs:
           spec/parity_provenance_spec.rb spec/compat_reference_setup_spec.rb
           spec/parity_tooling_setup_spec.rb spec/runtime_package_spec.rb
           spec/runtime_dependency_spec.rb spec/model_projection_spec.rb
-          spec/runtime_isolation_spec.rb
+          spec/runtime_isolation_spec.rb spec/parity_comparison_spec.rb
+          spec/bounded_conversion_spec.rb
       - name: Verify runtime gem contents and dependencies
         run: |
           bundle exec gem build emfsvg.gemspec --output "$RUNNER_TEMP/emfsvg.gem"
