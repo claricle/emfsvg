@@ -15,8 +15,21 @@ module Emfsvg
   module FormatHelpers
     module_function
 
+    # Digit strings shared by every formatted number. Filled on first use so
+    # a render only pays for the digit groups it actually emits.
+    INTEGER_DIGITS = Hash.new { |cache, key| cache[key] = key.to_s.freeze }
+    FRACTION_DIGITS = Hash.new { |cache, key| cache[key] = format("%04d", key).freeze }
+    INTEGER_CACHE_LIMIT = 10_000
+    private_constant :INTEGER_DIGITS, :FRACTION_DIGITS, :INTEGER_CACHE_LIMIT
+
     # Format a single float as "%.4f" with C printf semantics.
     def fmt(n)
+      append(+"", n)
+    end
+
+    # Append the "%.4f" text of +n+ to +buffer+ and return the buffer.
+    # Byte-identical to +fmt+; skips the intermediate string per number.
+    def append(buffer, n)
       f = n.to_f
       scaled = f.abs * 10_000.0
       # Fast path: when the scaled value is clearly away from a rounding
@@ -28,12 +41,15 @@ module Emfsvg
         frac = scaled - floor
         if (frac - 0.5).abs > 1e-6
           units = frac > 0.5 ? floor + 1 : floor
-          sign = f.negative? ? "-" : ""
-          return format("%<sign>s%<int>d.%<dec>04d", sign: sign, int: units / 10_000, dec: units % 10_000)
+          whole = units / 10_000
+          buffer << "-" if f.negative?
+          buffer << (whole < INTEGER_CACHE_LIMIT ? INTEGER_DIGITS[whole] : whole.to_s)
+          buffer << "." << FRACTION_DIGITS[units % 10_000]
+          return buffer
         end
       end
 
-      fmt_via_decimal(f)
+      buffer << fmt_via_decimal(f)
     end
 
     def fmt_via_decimal(value)
@@ -44,7 +60,15 @@ module Emfsvg
     # Format a coordinate pair as "X,Y " (trailing space, matching
     # libemf2svg's point_draw output).
     def fmt_xy(x, y)
-      "#{fmt(x)},#{fmt(y)} "
+      append_xy(+"", x, y)
+    end
+
+    # Append "X,Y " to +buffer+ and return the buffer.
+    def append_xy(buffer, x, y)
+      append(buffer, x)
+      buffer << ","
+      append(buffer, y)
+      buffer << " "
     end
   end
 end

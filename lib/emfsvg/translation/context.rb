@@ -39,8 +39,11 @@ module Emfsvg
         handle
       end
 
-      def emit(wire_class, **attrs)
-        @emitter.emit(wire_class, **attrs)
+      # Takes the record's attributes as one Hash (callers still write
+      # them as keywords) and passes that same Hash on, so forwarding adds
+      # no Hash per hop.
+      def emit(wire_class, attrs)
+        @emitter.emit(wire_class, attrs)
       end
 
       def records

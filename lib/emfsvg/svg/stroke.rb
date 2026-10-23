@@ -54,6 +54,10 @@ module Emfsvg
       #     emfsvg's EMF→SVG renderer uses the actual pen.width
       #     instead of hardcoding 1.
       def pen_style
+        @pen_style ||= compute_pen_style
+      end
+
+      def compute_pen_style
         base = if paint.null? || null_pen_sentinel?
                  5 # PS_NULL
                else
@@ -62,6 +66,7 @@ module Emfsvg
         type_bit = width > 1.0 && !paint.null? ? PS_GEOMETRIC : 0
         base | type_bit | END_CAP_BITS.fetch(line_cap, 0x0000) | LINE_JOIN_BITS.fetch(line_join, 0x0000)
       end
+      private :compute_pen_style
 
       def self.parse(stroke:, width:, dash_array:, line_cap:, line_join:)
         new(
@@ -100,7 +105,7 @@ module Emfsvg
         return nil if value.nil? || value.strip == "none" || value.strip.empty?
 
         parts = value.split(/[\s,]+/).map(&:to_f)
-        parts.empty? ? nil : parts
+        parts.empty? ? nil : parts.freeze
       end
     end
   end
