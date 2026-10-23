@@ -68,6 +68,7 @@ RSpec.describe Emfsvg::SpecSupport::BoundedConversion do
   it "rejects an invalid sampler before executing work" do
     expect { bounded_run("exit", sampler: false) }
       .to raise_error(described_class::PreconditionError, /sampler must be callable/)
+    allow(RbConfig::CONFIG).to receive(:fetch).with("host_os").and_return("darwin")
     sampler = ->(_pid) { raise described_class::PreconditionError, "sampler unavailable" }
     expect { bounded_run("exit", sampler: sampler) }
       .to raise_error(described_class::PreconditionError, /sampler unavailable/)
@@ -82,11 +83,25 @@ RSpec.describe Emfsvg::SpecSupport::BoundedConversion do
   end
 
   it "fails the precondition when the real RSS sampler is unavailable" do
-    skip "Real RSS sampler is available" if bounded_sampler_available?
+    allow(RbConfig::CONFIG).to receive(:fetch).with("host_os").and_return("darwin")
+    allow(Open3).to receive(:capture3).with("/bin/ps", "-o", "rss=", "-p", Process.pid.to_s)
+                                      .and_raise(Errno::ENOENT)
+    Dir.mktmpdir("bounded-no-sampler-") do |directory|
+      marker = File.join(directory, "executed")
+      expect { bounded_run("File.write(#{marker.inspect}, 'bad')") }
+        .to raise_error(described_class::PreconditionError, /benign\.emf: memory sampler unavailable/)
+      expect(File.exist?(marker)).to be(false)
+    end
+  end
 
-    expect do
-      bounded_run("exit")
-    end.to raise_error(described_class::PreconditionError, /benign\.emf: .*sampler|benign\.emf: ps RSS/)
+  it "rejects an unsupported host before executing work" do
+    allow(RbConfig::CONFIG).to receive(:fetch).with("host_os").and_return("mingw32")
+    Dir.mktmpdir("bounded-unsupported-host-") do |directory|
+      marker = File.join(directory, "executed")
+      expect { bounded_run("File.write(#{marker.inspect}, 'bad')") }
+        .to raise_error(described_class::PreconditionError, /benign\.emf: unsupported operating system/)
+      expect(File.exist?(marker)).to be(false)
+    end
   end
 
   context "with a working real RSS sampler" do
