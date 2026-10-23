@@ -70,6 +70,7 @@ class ParityProvenance
       "provenance.c_reference.status" => "verified",
       "provenance.c_reference.reported_version" => /\A\S.*\z/,
       "provenance.c_reference.source_revision" => REVISION,
+      "provenance.c_reference.binary_sha256" => SHA256,
       "provenance.c_reference.build_recipe" => /\A\S.*\z/,
       "provenance.c_reference.generation_command" => /\A\S.*\z/,
       "provenance.c_reference.wrapper_options.nameSpace" => nil,

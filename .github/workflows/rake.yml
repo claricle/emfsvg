@@ -14,6 +14,20 @@ on:
 jobs:
   rake:
     uses: metanorma/ci/.github/workflows/generic-rake.yml@main
+    with:
+      after-setup-ruby: |
+        corpus_revision="$(ruby -ryaml -e '
+          revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
+          abort "Expected a full lowercase corpus SHA" unless /\A[0-9a-f]{40}\z/.match?(revision)
+          puts revision
+        ')"
+        corpus_root="$(ruby -e 'puts File.expand_path("emfsvg-parity-corpus", ENV.fetch("RUNNER_TEMP"))')"
+        git init "$corpus_root"
+        git -C "$corpus_root" remote add origin https://github.com/claricle/emf.git
+        git -C "$corpus_root" fetch --depth 1 origin "$corpus_revision"
+        git -C "$corpus_root" checkout --detach FETCH_HEAD
+        test "$(git -C "$corpus_root" rev-parse HEAD)" = "$corpus_revision"
+        printf 'EMF_FIXTURE_ROOT=%s\n' "$corpus_root" >> "$GITHUB_ENV"
 
   corpus-integrity:
     name: Parity inventory preflight (not native qualification)

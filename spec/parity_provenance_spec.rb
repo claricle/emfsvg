@@ -21,7 +21,9 @@ RSpec.describe ParityProvenance do
       provenance.fetch("native_library").merge!(
         "status" => "qualified", "source_revision" => "d" * 40, "artifact_sha256" => "e" * 64, "abi" => "emf-1"
       )
-      provenance.fetch("c_reference").merge!("status" => "verified", "source_revision" => "f" * 40)
+      provenance.fetch("c_reference").merge!(
+        "status" => "verified", "source_revision" => "f" * 40, "binary_sha256" => "a" * 64
+      )
     end
   end
   let(:directory) { Dir.mktmpdir("parity-provenance") }
@@ -93,6 +95,18 @@ RSpec.describe ParityProvenance do
     File.write(path, YAML.dump(metadata))
 
     expect(described_class.new(path).errors.join).to include("wrapper_options.nameSpace")
+  end
+
+  it "rejects absent or malformed C binary checksums before declaring metadata ready" do
+    [nil, "", "a" * 63, "A" * 64, "g" * 64].each do |checksum|
+      metadata.fetch("provenance").fetch("c_reference")["binary_sha256"] = checksum
+      File.write(path, YAML.dump(metadata))
+
+      output, errors, status = Open3.capture3(RbConfig.ruby, script, path)
+      expect(status.exitstatus).to eq(1), "accepted checksum #{checksum.inspect}"
+      expect(output).to be_empty
+      expect(errors).to include("c_reference.binary_sha256")
+    end
   end
 
   it "reports unsafe YAML as a setup failure" do
