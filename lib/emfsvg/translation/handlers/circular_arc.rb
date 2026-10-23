@@ -1,0 +1,89 @@
+# frozen_string_literal: true
+
+module Emfsvg
+  module Translation
+    module Handlers
+      # Recover only circles whose integer radial points reproduce the source.
+      # Native Arc draws no connecting line and does not update the current point.
+      class CircularArc
+        include Emf::Emr::Binary::TypeCodes
+
+        def self.from_commands(commands)
+          return unless commands.map(&:letter) == %w[M M A]
+
+          prefix, start, args = commands.map(&:args)
+          radius, ry, rotation, large, sweep, x, y = args
+          return unless radius.positive? && radius == ry && radius == radius.round
+          return unless rotation.zero? && large == sweep && [0, 1].include?(sweep)
+
+          finish = [x, y]
+          center = circle_center(start, finish, radius)
+          return unless center
+
+          radials = [start, finish].map { |point| point.zip(center).map { |value, origin| (value - origin).round } }
+          return unless [start, finish].zip(radials).all? do |point, radial|
+            projects_to?(point, radial, center, radius)
+          end
+
+          new(prefix, finish, center, radius, radials, sweep)
+        end
+
+        def self.circle_center(start, finish, radius)
+          x, y = finish
+          dx, dy = finish.zip(start).map { |a, b| a - b }
+          distance = Math.hypot(dx, dy)
+          return unless distance.positive? && distance <= 2 * radius
+
+          height = Math.sqrt([(radius**2) - ((distance**2) / 4), 0].max)
+          center = [((start[0] + x) / 2) + ((dy * height) / distance),
+                    ((start[1] + y) / 2) - ((dx * height) / distance)]
+          center.map(&:round) if center.all? { |value| (value - value.round).abs < 0.001 }
+        end
+        private_class_method :circle_center
+
+        def self.projects_to?(point, radial, center, radius)
+          length = Math.hypot(*radial)
+          length.positive? && point.zip(center, radial).all? do |value, origin, delta|
+            format("%.4f", value) == format("%.4f", origin + ((radius * delta) / length))
+          end
+        end
+        private_class_method :projects_to?
+
+        def initialize(prefix, finish, center, radius, radials, sweep)
+          @prefix = prefix
+          @finish = finish
+          @center = center
+          @radius = radius
+          @radials = radials
+          @sweep = sweep
+        end
+
+        def safe_for?(context)
+          x, y = @center
+          [x - @radius, y - @radius, x + @radius, y + @radius].all? do |value|
+            (-(2**31)..((2**31) - 1)).cover?((value * context.scaler.factor).round)
+          end
+        end
+
+        def emit(context)
+          records = Emf::Emr::Binary::Records
+          move(context, @prefix)
+          context.emit(records::SetArcDirection, i_type: SETARCDIRECTION, arc_direction: @sweep.zero? ? 1 : 2)
+          x, y = @center
+          points = @radials.map { |radial| radial.zip(@center).map { |delta, origin| delta + origin } }
+          context.emit(records::Arc, i_type: ARC,
+                                     rcl_box: context.rect_attrs(x - @radius, y - @radius, x + @radius, y + @radius),
+                                     ptl_start: context.point_attrs(*points[0]),
+                                     ptl_end: context.point_attrs(*points[1]))
+          move(context, @finish)
+        end
+
+        private
+
+        def move(context, point)
+          context.emit(Emf::Emr::Binary::Records::MoveToEx, i_type: MOVETOEX, origin: context.point_attrs(*point))
+        end
+      end
+    end
+  end
+end

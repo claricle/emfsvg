@@ -33,6 +33,7 @@ module Emfsvg
         end
 
         def self.canonical_path_record_kind(node, source_tag)
+          return :arc if canonical_arc?(node, source_tag)
           return :bitblt if canonical_bitblt?(node, source_tag)
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
 
@@ -61,6 +62,20 @@ module Emfsvg
         def self.canonical_polyline?(node, source_tag)
           number = "-?\\d+\\.\\d{4}"
           return false unless node["d"]&.match?(/\AM #{number},#{number} L #{number},#{number} \z/)
+
+          canonical_stroked_path?(node, source_tag)
+        end
+        private_class_method :canonical_polyline?
+
+        def self.canonical_arc?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          arc = /\AM #{number},#{number} M #{number},#{number} A #{number},#{number} 0 ([01]) \1 #{number},#{number} \z/
+          node["d"]&.match?(arc) && canonical_stroked_path?(node, source_tag, arc: true)
+        end
+        private_class_method :canonical_arc?
+
+        def self.canonical_stroked_path?(node, source_tag, arc: false)
+          number = "-?\\d+\\.\\d{4}"
           return false unless node["stroke"]&.match?(/\A#[0-9A-Fa-f]{6}\z/)
           return false unless node["stroke-width"]&.match?(/\A(?:#{number}|1px)\z/)
           return false unless %w[round square butt].include?(node["stroke-linecap"])
@@ -77,10 +92,11 @@ module Emfsvg
           expected << %(stroke-dasharray="#{node['stroke-dasharray']}" ) if node["stroke-dasharray"]
           expected << %( stroke-linecap="#{node['stroke-linecap']}"  stroke-linejoin="#{node['stroke-linejoin']}" )
           expected << %( stroke-miterlimit="#{node['stroke-miterlimit']}" ) if node["stroke-miterlimit"]
+          expected << " " if arc
           expected << %(fill="none" />)
           source_tag == expected
         end
-        private_class_method :canonical_polyline?
+        private_class_method :canonical_stroked_path?
 
         # PolyPolygon's C renderer has a distinctive fill-first start tag and
         # retains a trailing space after Z. Preserve that record only for the

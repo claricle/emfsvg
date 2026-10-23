@@ -8,8 +8,8 @@ module Emfsvg
       # Translate <path d="..."> to EMF drawing records.
       #
       # v1 strategy: flatten to absolute, fully-resolved points. Bezier
-      # control points are preserved as cubic Beziers; arcs/quads remain
-      # unsupported. Separate figures retain their closure and order.
+      # control points and canonical circular arcs are preserved; other
+      # arcs and quads remain unsupported. Separate figures retain their closure and order.
       class PathHandler
         include SharedGdi
         include Emf::Emr::Binary::TypeCodes
@@ -22,6 +22,12 @@ module Emfsvg
           return if element.commands.empty?
 
           with_gdi_state(element, context) do
+            arc = CircularArc.from_commands(element.commands) if element.path_record_kind == :arc
+            if arc&.safe_for?(context)
+              arc.emit(context)
+              next
+            end
+
             flattened = PathFlattener.flatten(element.commands)
             if element.path_record_kind == :bitblt
               emit_bitblt(flattened.first, context)
