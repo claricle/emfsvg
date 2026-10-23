@@ -51,7 +51,7 @@ module Emfsvg
         def clip_scope_signature(element, context, clip_bounds)
           return unless clip_bounds && complete_draw_state?(element)
 
-          [:complete_draw, context.rect_attrs(*clip_bounds)]
+          [:complete_draw, context.rect_attrs(*clip_bounds), context.canonical_empty_clip_scope?(element)]
         end
 
         def complete_draw_state?(element)

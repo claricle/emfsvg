@@ -141,7 +141,18 @@ module Emfsvg
         true
       end
 
+      # Complete draws save the previously empty clip and restore it. Only the
+      # renderer's canonical rectangle provenance permits preserving subsequent
+      # unused definitions; ordinary clip mutations remain conservative.
+      def canonical_empty_clip_scope?(element)
+        return false unless @unused_clip_safe && !@carried_clip && !@active_selected_clip
+
+        clip = @clip_path_registry&.lookup(element.clip_path)
+        !!clip&.unused_rectangle_bounds
+      end
+
       def remember_clip_scope(signature, restore)
+        @unused_clip_safe = true if signature && signature[2]
         @clip_scope_tail = [signature, records.size - 1, restore] if signature
       end
 
