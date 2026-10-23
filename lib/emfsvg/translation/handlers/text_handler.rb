@@ -45,7 +45,7 @@ module Emfsvg
                          i_type: INTERSECTCLIPRECT,
                          rcl_clip: context.rect_attrs(*clip_bounds))
           end
-          emit_text(element, context, reuse: !wrap_with_clip && !transformed)
+          emit_mapped_text(element, context, reuse: !wrap_with_clip && !transformed)
           return unless wrap_with_clip || transformed
 
           restore = emit_restore_dc(context)
@@ -53,6 +53,27 @@ module Emfsvg
         end
 
         private
+
+        def emit_mapped_text(element, context, reuse:)
+          rotation = element.canonical_text_rotation
+          @text_scaler = context.scaler
+          if rotation&.native_height && context.scaler.scaled?
+            finer = Scaler::Fixed.new(1_000_000)
+            values = [element.x, rotation.native_y, rotation.native_height,
+                      element.x + (element.content.length * element.font_size * 0.6), element.y - element.font_size]
+            @text_scaler = finer unless values.any? { |value| finer.unsafe?(value) }
+          end
+          return emit_text(element, context, reuse: reuse) if @text_scaler.equal?(context.scaler)
+
+          emit_save_dc(context)
+          context.emit(Emf::Emr::Binary::Records::SetWindowExtEx,
+                       i_type: SETWINDOWEXTEX, extent: { cx: @text_scaler.factor, cy: @text_scaler.factor })
+          emit_text(element, context, reuse: false)
+          # Both renderers keep mapping extents outside the saved drawing state.
+          context.emit(Emf::Emr::Binary::Records::SetWindowExtEx,
+                       i_type: SETWINDOWEXTEX, extent: { cx: context.scaler.factor, cy: context.scaler.factor })
+          emit_restore_dc(context)
+        end
 
         def emit_text(element, context, reuse:)
           # Packed LOGFONT includes rotation, weight, size, family and italic;
@@ -120,7 +141,9 @@ module Emfsvg
                        i_graphics_mode: 2, # GM_COMPATIBLE
                        ex_scale: 1.0,
                        ey_scale: 1.0,
-                       ptl_reference: context.point_attrs(element.x, reference_y(element)),
+                       ptl_reference: {
+                         x: @text_scaler.to_int(element.x), y: @text_scaler.to_int(reference_y(element))
+                       },
                        n_chars: n_chars,
                        off_string: off_string,
                        f_options: 0,
@@ -130,18 +153,25 @@ module Emfsvg
         end
 
         def reference_y(element)
-          return element.y unless element.canonical_text_rotation&.vertical_alignment == :top
+          rotation = element.canonical_text_rotation
+          return rotation.native_y if rotation&.native_y && @text_scaler.scaled? && @text_scaler.factor == 1_000_000
+          return element.y unless rotation&.vertical_alignment == :top
 
           element.y - (element.font_size * 0.9)
         end
 
         # Pack a LOGFONT struct (92 bytes) per MS-WMF 2.2.13.
-        def build_logfont(element, context)
+        def build_logfont(element, _context)
           face_utf16 = (element.font_family || "").encode("UTF-16LE")
           face_padded = face_utf16.ljust(64, "\x00".encode("UTF-16LE"))
           face_bytes = face_padded.bytes.pack("C*")[0, 64]
 
-          scaled_height = context.scaler.to_int(element.font_size)
+          height = if @text_scaler.scaled? && @text_scaler.factor == 1_000_000
+                     element.canonical_text_rotation&.native_height || element.font_size
+                   else
+                     element.font_size
+                   end
+          scaled_height = @text_scaler.to_int(height)
           [
             scaled_height, # lfHeight (scaled)
             0, # lfWidth
@@ -159,12 +189,10 @@ module Emfsvg
           ].pack("l<l<l<l<l<CCCCCCCC") + face_bytes
         end
 
-        def text_bounds(element, context)
+        def text_bounds(element, _context)
           width = element.content.length * element.font_size * 0.6
-          context.rect_attrs(
-            element.x, element.y - element.font_size,
-            element.x + width, element.y
-          )
+          { left: @text_scaler.to_int(element.x), top: @text_scaler.to_int(element.y - element.font_size),
+            right: @text_scaler.to_int(element.x + width), bottom: @text_scaler.to_int(element.y) }
         end
       end
     end

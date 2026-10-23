@@ -13,7 +13,7 @@ module Emfsvg
         Element.register("text", self)
 
         # Recovered LOGFONT rotation and vertical alignment, separate from SVG affine transforms.
-        Rotation = Struct.new(:angle, :vertical_alignment, :escapement, keyword_init: true)
+        Rotation = Struct.new(:angle, :vertical_alignment, :escapement, :native_height, :native_y, keyword_init: true)
 
         # The font attributes of a <text> element.
         Font = Struct.new(:family, :point_size, :weight, :style, :rotation, keyword_init: true)
@@ -103,7 +103,34 @@ module Emfsvg
                       end
           return unless alignment
 
-          Rotation.new(angle: angle, vertical_alignment: alignment, escapement: angle.zero? ? 1 : -angle * 10)
+          native_height, native_y = recover_baseline(height, y, pivot, offset) if alignment == :baseline
+          Rotation.new(angle: angle, vertical_alignment: alignment, escapement: angle.zero? ? 1 : -angle * 10,
+                       native_height: native_height, native_y: native_y)
+        end
+
+        # A four-decimal native grid cannot always reproduce independently rounded
+        # height, baseline and pivot. Choose an interior point of all four source
+        # intervals; the handler uses a finer native mapping only for this case.
+        def self.recover_baseline(height, y, pivot, offset)
+          return if format("%.4f", y.to_f + (height.to_f * 0.9)) == format("%.4f", pivot)
+
+          half = Rational(1, 20_000)
+          ratio = Rational(9, 10)
+          low = [height - half, (offset - half) / ratio, (pivot - y - (2 * half)) / ratio].max
+          high = [height + half, (offset + half) / ratio, (pivot - y + (2 * half)) / ratio].min
+          return unless low < high
+
+          native_height = ((low + high) / 2 * 1_000_000).round / 1_000_000.0
+          low_y = [y - half, pivot - half - (native_height.to_r * ratio)].max
+          high_y = [y + half, pivot + half - (native_height.to_r * ratio)].min
+          return unless low_y < high_y
+
+          native_y = ((low_y + high_y) / 2 * 1_000_000).round / 1_000_000.0
+          actual = [native_height, native_y, native_height * 0.9, native_y + (native_height * 0.9)]
+          expected = [height, y, offset, pivot]
+          return unless actual.map { |value| format("%.4f", value) } == expected.map { |value| format("%.4f", value) }
+
+          [native_height, native_y]
         end
 
         def self.parse_weight(value)
