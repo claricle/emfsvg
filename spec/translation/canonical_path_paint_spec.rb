@@ -6,11 +6,7 @@ require "leptris"
 RSpec.describe "canonical open path paint provenance" do
   let(:source_lines) { File.readlines("spec/fixtures/emfsvg_golden/test-039.svg") }
 
-  def convert(path)
-    svg = %(<svg xmlns="http://www.w3.org/2000/svg" width="14030" height="9920">#{path}</svg>)
-    bytes = Emfsvg.from_svg(svg)
-    [Emf.parse(bytes).records.map(&:wire), Emfsvg.from_bytes(bytes)]
-  end
+  include Emfsvg::SpecSupport::CanonicalPathConversion
 
   [18, 19, 20, 21, 22, 23, 24].each do |line|
     it "preserves implicit fill closure and a single initial move on source line #{line}" do
