@@ -51,12 +51,33 @@ module Emfsvg
         def self.canonical_path_record_kind(node, source_tag)
           arc_kind = canonical_arc_kind(node, source_tag)
           return arc_kind if arc_kind
+          return :end_path if canonical_pending_path?(node, source_tag)
+          return :fill_path if canonical_filled_curve?(node, source_tag)
           return :bitblt if canonical_bitblt?(node, source_tag)
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
 
           nil
         end
         private_class_method :canonical_path_record_kind
+
+        # EndPath without a painting record has this exact invisible spelling.
+        # Its geometry remains available to a following SelectClipPath.
+        def self.canonical_pending_path?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          node["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ \z/) &&
+            source_tag == %(<path d="#{node['d']}" fill="none" stroke="none" />)
+        end
+        private_class_method :canonical_pending_path?
+
+        # A pure cubic FillPath omits PolyBezier's extra current-position move.
+        def self.canonical_filled_curve?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          curve = " C #{number},#{number} #{number},#{number} #{number},#{number}"
+          node["d"]&.match?(/\AM #{number},#{number}(?:#{curve})+ \z/) &&
+            node["fill"]&.match?(/\A#[0-9A-F]{6}\z/) &&
+            source_tag == %(<path d="#{node['d']}"  fill="#{node['fill']}" stroke="none" />)
+        end
+        private_class_method :canonical_filled_curve?
 
         # Zero-source BitBlt emits a style-first rectangle without a trailing
         # space after Z. Only that exact spelling carries record provenance.

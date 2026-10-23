@@ -14,6 +14,7 @@ module Emfsvg
 
           element.children.each do |child|
             next unless child.is_a?(Svg::Elements::ClipPath)
+            next if context.preserve_selected_clip(child)
             next if registry.referenced?(child.id)
             next unless child.unused_rectangle_bounds
 

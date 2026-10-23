@@ -9,21 +9,38 @@ module Emfsvg
         ELEMENT_NAME = "clipPath"
         Element.register("clipPath", self)
 
-        attr_reader :id, :children, :unused_rectangle_bounds
+        attr_reader :id, :children, :unused_rectangle_bounds, :selected_path_data
 
-        def initialize(id:, children:, unused_rectangle_bounds: nil)
+        def initialize(id:, children:, unused_rectangle_bounds: nil, selected_path_data: nil)
           @id = id
           @children = children
           @unused_rectangle_bounds = unused_rectangle_bounds
+          @selected_path_data = selected_path_data
         end
 
         def self.from_node(node, &source_tag)
           new(
             id: node["id"],
+            selected_path_data: canonical_selected_path(node, &source_tag),
             unused_rectangle_bounds: canonical_unused_rectangle(node, &source_tag),
             children: node.element_children.map { |c| Element.from_node(c, &source_tag) }
           )
         end
+
+        def self.canonical_selected_path(node)
+          return unless node["id"]&.match?(/\Aclip-\d+\z/) && node.attribute_nodes.size == 1
+          return unless node.element_children.size == 1 && block_given?
+
+          path = node.element_children.first
+          return unless path.name == "path" && path.attribute_nodes.map(&:name) == ["d"]
+
+          number = "-?\\d+\\.\\d{4}"
+          return unless path["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ Z\z/)
+          return unless yield(path) == %(<path d="#{path['d']}" />)
+
+          path["d"].delete_suffix("Z")
+        end
+        private_class_method :canonical_selected_path
 
         # Only the renderer's exact rectangle spelling supports preservation of
         # an otherwise inert resource via IntersectClipRect followed by reset.

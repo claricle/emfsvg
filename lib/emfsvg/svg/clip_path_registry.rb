@@ -15,6 +15,7 @@ module Emfsvg
         @resolved = {}
         @exports = {}
         @imports = {}
+        @selected = {}
       end
 
       def register(clip_path)
@@ -44,6 +45,7 @@ module Emfsvg
         registry = new
         collect_clip_paths(document.root_element, registry)
         registry.plan_sibling_clips(document.root_element)
+        registry.plan_selected_clips(document.root_element)
         registry
       end
 
@@ -61,6 +63,20 @@ module Emfsvg
 
       def imported_clip(group)
         @imports[group]
+      end
+
+      def selected_clip(group)
+        @selected[group]
+      end
+
+      # A pending native path and its definition must agree exactly, and every
+      # remaining child must reference it. RestoreDC then bounds its lifetime.
+      def plan_selected_clips(group)
+        return unless group
+
+        group.children.each { |child| plan_selected_clips(child) }
+        clip = selected_group_clip(group)
+        @selected[group] = clip if clip
       end
 
       # A canonical identity group containing only a definition can carry its
@@ -82,6 +98,39 @@ module Emfsvg
       end
 
       private
+
+      def selected_group_clip(group)
+        return unless group.is_a?(Elements::Group) && group.canonical_matrix? && group.transform_matrix.identity?
+
+        unused, path, defs, *draws = group.children
+        return unless unused_clip_definitions?(unused)
+        return unless path.is_a?(Elements::Path) && path.path_record_kind == :end_path && !path.clip_path
+        return unless defs.is_a?(Elements::Defs) && defs.children.size == 1 && !draws.empty?
+
+        clip = defs.children.first
+        return unless clip.is_a?(Elements::ClipPath) && clip.selected_path_data
+        return unless matching_clip_path?(path, clip)
+        return unless exclusive_clip_draws?(draws, clip)
+
+        clip
+      end
+
+      def exclusive_clip_draws?(draws, clip)
+        @references[clip.id] == draws.size && draws.all? do |draw|
+          draw.is_a?(Elements::Path) && lookup(draw.clip_path).equal?(clip)
+        end
+      end
+
+      def unused_clip_definitions?(defs)
+        defs.is_a?(Elements::Defs) && !defs.children.empty? && defs.children.all? do |child|
+          child.is_a?(Elements::ClipPath) && child.unused_rectangle_bounds && !referenced?(child.id)
+        end
+      end
+
+      def matching_clip_path?(path, clip)
+        commands = Svg::PathData::Parser.parse(clip.selected_path_data)
+        path.commands.map { |cmd| [cmd.letter, cmd.args] } == commands.map { |cmd| [cmd.letter, cmd.args] }
+      end
 
       def sibling_clip(source, target)
         return unless source.is_a?(Elements::Group) && source.canonical_matrix? && source.transform_matrix.identity?

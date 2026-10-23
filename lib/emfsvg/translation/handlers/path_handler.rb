@@ -35,6 +35,11 @@ module Emfsvg
               emit_bitblt(flattened.first, context)
               next
             end
+            if %i[end_path fill_path].include?(element.path_record_kind)
+              emit_figures(flattened, context, stroke_null: element.stroke.paint.null?, unfilled: element.fill.null?,
+                                               pending: element.path_record_kind == :end_path)
+              next
+            end
             emit_subpaths(flattened, context,
                           unfilled: element.fill.null?, stroke_null: element.stroke.paint.null?,
                           line_record_kind: element.line_record_kind,
@@ -107,12 +112,14 @@ module Emfsvg
                        a_poly_counts: subpaths.map { |path| path.points.size }, aptl: points)
         end
 
-        def emit_figures(subpaths, context, stroke_null:, unfilled:)
+        def emit_figures(subpaths, context, stroke_null:, unfilled:, pending: false)
           context.emit(Emf::Emr::Binary::Records::BeginPath, i_type: BEGINPATH)
           subpaths.each do |path|
             path.segments.each { |letter, points| emit_segment(letter, points, path, context) }
           end
           context.emit(Emf::Emr::Binary::Records::EndPath, i_type: ENDPATH)
+          return if pending
+
           action, i_type = if stroke_null && !unfilled
                              [Emf::Emr::Binary::Records::FillPath, FILLPATH]
                            elsif unfilled && !stroke_null
