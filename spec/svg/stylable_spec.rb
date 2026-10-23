@@ -40,8 +40,8 @@ RSpec.describe Emfsvg::Svg::Elements::Stylable do
   end
 
   it "includes miter limits in the shared paint identity" do
-    low = Nokogiri::XML('<path stroke="#000000" stroke-width="2" stroke-miterlimit="3"/>').root
-    high = Nokogiri::XML('<path stroke="#000000" stroke-width="2" stroke-miterlimit="8"/>').root
+    low = { "stroke" => "#000000", "stroke-width" => "2", "stroke-miterlimit" => "3" }
+    high = { "stroke" => "#000000", "stroke-width" => "2", "stroke-miterlimit" => "8" }
     strokes = [low, high].map { |element| described_class.parse_style(element)[:stroke] }
 
     expect(strokes.map(&:miter_limit)).to eq([3.0, 8.0])
@@ -49,8 +49,8 @@ RSpec.describe Emfsvg::Svg::Elements::Stylable do
   end
 
   it "retains fill-dependent cosmetic stroke parsing in the cache" do
-    filled = Nokogiri::XML('<path fill="#FFFFFF" stroke="#000000" stroke-width="1px"/>').root
-    empty = Nokogiri::XML('<path fill="none" stroke="#000000" stroke-width="1px"/>').root
+    filled = { "fill" => "#FFFFFF", "stroke" => "#000000", "stroke-width" => "1px" }
+    empty = { "fill" => "none", "stroke" => "#000000", "stroke-width" => "1px" }
     first = described_class.parse_style(filled)
     second = described_class.parse_style(empty)
 
@@ -58,5 +58,4 @@ RSpec.describe Emfsvg::Svg::Elements::Stylable do
     expect(first[:fill].null?).to be(false)
     expect(second[:fill].null?).to be(true)
   end
-
 end
