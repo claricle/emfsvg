@@ -22,7 +22,9 @@ module Emfsvg
           return if element.commands.empty?
 
           with_gdi_state(element, context) do
-            arc = CircularArc.from_commands(element.commands) if element.path_record_kind == :arc
+            if %i[arc chord pie].include?(element.path_record_kind)
+              arc = CircularArc.from_commands(element.commands, kind: element.path_record_kind)
+            end
             if arc&.safe_for?(context)
               arc.emit(context)
               next

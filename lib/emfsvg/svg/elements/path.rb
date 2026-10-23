@@ -33,7 +33,8 @@ module Emfsvg
         end
 
         def self.canonical_path_record_kind(node, source_tag)
-          return :arc if canonical_arc?(node, source_tag)
+          arc_kind = canonical_arc_kind(node, source_tag)
+          return arc_kind if arc_kind
           return :bitblt if canonical_bitblt?(node, source_tag)
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
 
@@ -67,20 +68,32 @@ module Emfsvg
         end
         private_class_method :canonical_polyline?
 
-        def self.canonical_arc?(node, source_tag)
+        def self.canonical_arc_kind(node, source_tag)
           number = "-?\\d+\\.\\d{4}"
-          arc = /\AM #{number},#{number} M #{number},#{number} A #{number},#{number} 0 ([01]) \1 #{number},#{number} \z/
-          node["d"]&.match?(arc) && canonical_stroked_path?(node, source_tag, arc: true)
-        end
-        private_class_method :canonical_arc?
+          arc = /
+            \AM[ ]#{number},#{number}[ ]M[ ]#{number},#{number}
+            [ ]A[ ]#{number},#{number}[ ]0[ ](?<sweep>[01])[ ]\k<sweep>[ ]#{number},#{number}
+            [ ](?<closure>(?:L[ ]#{number},#{number}[ ])?Z[ ])?\z
+          /x
+          match = arc.match(node["d"].to_s)
+          return unless match
 
-        def self.canonical_stroked_path?(node, source_tag, arc: false)
+          kind = if match[:closure]
+                   match[:closure].start_with?("L") ? :pie : :chord
+                 else
+                   :arc
+                 end
+          kind if canonical_stroked_path?(node, source_tag, arc: true, closed: kind != :arc)
+        end
+        private_class_method :canonical_arc_kind
+
+        def self.canonical_stroked_path?(node, source_tag, arc: false, closed: false)
           number = "-?\\d+\\.\\d{4}"
           return false unless node["stroke"]&.match?(/\A#[0-9A-Fa-f]{6}\z/)
           return false unless node["stroke-width"]&.match?(/\A(?:#{number}|1px)\z/)
           return false unless %w[round square butt].include?(node["stroke-linecap"])
           return false unless %w[round bevel miter].include?(node["stroke-linejoin"])
-          return false unless node["fill"] == "none"
+          return false unless closed ? node["fill"]&.match?(/\A#[0-9A-Fa-f]{6}\z/) : node["fill"] == "none"
 
           expected = +"<path "
           if node["clip-path"]
@@ -93,7 +106,9 @@ module Emfsvg
           expected << %( stroke-linecap="#{node['stroke-linecap']}"  stroke-linejoin="#{node['stroke-linejoin']}" )
           expected << %( stroke-miterlimit="#{node['stroke-miterlimit']}" ) if node["stroke-miterlimit"]
           expected << " " if arc
-          expected << %(fill="none" />)
+          expected << %(fill="#{node['fill']}")
+          expected << " " if closed
+          expected << " />"
           source_tag == expected
         end
         private_class_method :canonical_stroked_path?
