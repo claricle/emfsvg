@@ -67,7 +67,13 @@ module Emfsvg
           return false unless %w[round bevel miter].include?(node["stroke-linejoin"])
           return false unless node["fill"] == "none"
 
-          expected = %(<path d="#{node['d']}" stroke="#{node['stroke']}" stroke-width="#{node['stroke-width']}" )
+          expected = +"<path "
+          if node["clip-path"]
+            return false unless node["clip-path"].match?(/\Aurl\(#clip-\d+\)\z/)
+
+            expected << %( clip-path="#{node['clip-path']}" )
+          end
+          expected << %(d="#{node['d']}" stroke="#{node['stroke']}" stroke-width="#{node['stroke-width']}" )
           expected << %(stroke-dasharray="#{node['stroke-dasharray']}" ) if node["stroke-dasharray"]
           expected << %( stroke-linecap="#{node['stroke-linecap']}"  stroke-linejoin="#{node['stroke-linejoin']}" )
           expected << %( stroke-miterlimit="#{node['stroke-miterlimit']}" ) if node["stroke-miterlimit"]
