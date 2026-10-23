@@ -68,7 +68,9 @@ module Emfsvg
         # Its geometry remains available to a following SelectClipPath.
         def self.canonical_pending_path?(node, source_tag)
           number = "-?\\d+\\.\\d{4}"
-          node["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ \z/) &&
+          point = "#{number},#{number}"
+          segment = "(?: L #{point}| C #{point} #{point} #{point})"
+          node["d"]&.match?(/\AM #{point}(?:#{segment})+ \z/) &&
             source_tag == %(<path d="#{node['d']}" fill="none" stroke="none" />)
         end
         private_class_method :canonical_pending_path?
