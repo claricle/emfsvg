@@ -99,7 +99,7 @@ module Emfsvg
       def validate_expected_exception!(expected, klass)
         failure = expected["exception"]
         fields = expected_exception_fields(klass)
-        unless failure.is_a?(Hash) && failure.keys.sort == fields && failure["class"] == klass &&
+        unless exact_string_keys?(failure, fields) && failure["class"] == klass &&
                failure["message"].is_a?(String)
           raise Rejected, "invalid expected exception"
         end
@@ -120,19 +120,23 @@ module Emfsvg
       end
 
       def valid_message_cause?(cause)
-        cause.is_a?(Hash) && cause.keys.sort == %w[class message] &&
+        exact_string_keys?(cause, %w[class message]) &&
           cause["class"].is_a?(String) && cause["message"].is_a?(String)
       end
 
       def valid_resource_cause?(cause)
         fields = %w[actual class limit message resource]
-        cause.is_a?(Hash) && cause.keys.sort == fields && cause["class"] == "Emf::ResourceLimitError" &&
+        exact_string_keys?(cause, fields) && cause["class"] == "Emf::ResourceLimitError" &&
           cause["message"].is_a?(String) && cause["resource"].is_a?(String) &&
           cause["limit"].is_a?(Integer) && cause["actual"].is_a?(Integer) && cause["actual"] > cause["limit"]
       end
 
+      def exact_string_keys?(value, fields)
+        value.is_a?(Hash) && value.keys.all?(String) && value.keys.sort == fields
+      end
+
       def reject_unexpected_expected_fields!(expected, fields)
-        return if expected.keys.sort == fields
+        return if exact_string_keys?(expected, fields)
 
         raise Rejected, "invalid expected outcome fields"
       end

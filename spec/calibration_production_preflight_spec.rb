@@ -64,4 +64,26 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
       outcomes.each { |outcome| expect { build_adapter_for_outcome(directory, outcome) }.not_to raise_error }
     end
   end
+
+  it "rejects mixed-key outcome, exception, and cause hashes without leaking sort errors" do
+    outcomes = [
+      { "kind" => "svg", "warnings" => [], "svg_sha256" => svg_digest, 1 => "unexpected" },
+      { "kind" => "unreadable", "warnings" => [],
+        "exception" => {
+          "class" => "Emfsvg::ParseError", "message" => "invalid input", "cause" => nil, 1 => "unexpected"
+        } },
+      { "kind" => "unreadable", "warnings" => [],
+        "exception" => { "class" => "Emfsvg::ParseError", "message" => "invalid input",
+                         "cause" => { "class" => "Error", "message" => "wrapped", 1 => "unexpected" } } }
+    ]
+
+    Dir.mktmpdir do |directory|
+      adapter = build_adapter_for_outcome(directory, { "kind" => "svg", "warnings" => [], "svg_sha256" => svg_digest })
+      outcomes.each do |outcome|
+        expect do
+          adapter.send(:validate_expected_outcome!, outcome)
+        end.to raise_error(Emfsvg::ResourceCalibration::Rejected)
+      end
+    end
+  end
 end
