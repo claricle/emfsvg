@@ -10,10 +10,10 @@ require_relative "../scripts/check_parity_provenance"
 RSpec.describe ParityProvenance do
   let(:manifest) { YAML.safe_load_file(described_class::DEFAULT_MANIFEST) }
   let(:metadata) do
-    manifest.tap do |data|
+    YAML.safe_load_file(described_class::DEFAULT_MANIFEST).tap do |data|
       provenance = data.fetch("provenance")
       provenance.fetch("runtime").merge!(
-        "status" => "qualified", "source_revision" => "a" * 40, "package_sha256" => "b" * 64
+        "status" => "qualified", "source" => "rubygems", "source_revision" => "a" * 40, "package_sha256" => "b" * 64
       )
       provenance.fetch("upstream_contracts").each_value do |contract|
         contract.merge!("issue" => "https://github.com/claricle/emf/issues/15", "landed_revision" => "c" * 40)
@@ -110,13 +110,38 @@ RSpec.describe ParityProvenance do
     expect(errors).to include("could not be read")
   end
 
-  it "fails closed for the recorded historical provenance gaps" do
+  it "records the temporary Git integration selected by the lockfile without qualifying a release" do
+    runtime = manifest.fetch("provenance").fetch("runtime")
+    locked = Bundler.locked_gems.specs.find { |spec| spec.name == "emf" }
+
+    expect(locked.source).to be_a(Bundler::Source::Git)
+    expect(runtime).to include(
+      "status" => "unqualified", "source" => "git", "repository" => locked.source.uri,
+      "version" => locked.version.to_s, "source_revision" => locked.source.revision,
+      "package_sha256" => nil
+    )
+    expect(runtime.fetch("blocker")).to include("no released package has been qualified")
+  end
+
+  it "records the landed model contract while preserving absent diagnostics and resource contracts" do
+    contracts = manifest.fetch("provenance").fetch("upstream_contracts")
+
+    expect(contracts.fetch("model")).to eq(
+      "issue" => "https://github.com/claricle/emf/issues/15",
+      "landed_revision" => "318b2d86c4025b5913c595c5055477124199daf9"
+    )
+    expect(contracts.fetch("diagnostics")).to eq("issue" => nil, "landed_revision" => nil)
+    expect(contracts.fetch("resources")).to eq("issue" => nil, "landed_revision" => nil)
+  end
+
+  it "fails closed for the remaining release, contract, native, and historical C provenance gaps" do
     errors = described_class.new.errors.join("\n")
     expect(errors).to include(
-      "runtime.status", "runtime.source_revision", "runtime.package_sha256",
-      "model.landed_revision", "diagnostics.issue", "resources.issue",
+      "runtime.status", "runtime.source: expected \"rubygems\"", "runtime.package_sha256",
+      "diagnostics.issue", "resources.issue",
       "native_library.status", "native_library.artifact_sha256", "native_library.abi",
       "c_reference.status", "c_reference.source_revision"
     )
+    expect(errors).not_to include("runtime.source_revision", "model.landed_revision")
   end
 end
