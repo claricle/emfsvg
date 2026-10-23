@@ -86,6 +86,127 @@ is unsupported and authoritative mode is refused. Linux `/proc` metrics and
 child `RLIMIT_AS` are implemented but unverified on a Linux host. There is no
 calibrated corpus baseline or corrupted-corpus resource acceptance result.
 
+== Conversion resource guards
+
+`Emfsvg.from_bytes` checks the input byte count against
+`Emf::Emr::Parser::MAX_INPUT_BYTES` before parsing. `Emfsvg.from_file` checks
+file size before reading and checks the resulting bytes again. Inputs exactly
+at the ceiling remain accepted. Missing files retain their filesystem error.
+
+The SVG builder checks each append against
+`Emfsvg::Renderer::MAX_OUTPUT_BYTES` (500 MiB), including newlines and tags. It
+checks the expanded size of escaped text and attributes before allocating the
+escaped copy. Exceeding either byte ceiling raises `Emfsvg::ResourceLimitError`,
+a subclass of `Emfsvg::Error`, with `resource` (`:input_bytes` or `:output_bytes`),
+`limit`, and `actual` readers. These local checks do not wrap an upstream failure,
+so they have no original exception cause. They do not set process RSS or virtual
+address-space ceilings.
+
+The renderer rejects nonfinite header coordinates and nonpositive or nonfinite
+header/output dimensions with `Emfsvg::RenderError` before creating its builder.
+These checks and the output ceiling provide focused allocation protection;
+they do not bound every intermediate renderer allocation. The observed corrupted
+case 14 renderer RSS failure remains unresolved. No passing result for all 21
+corrupted inputs or calibrated baseline is claimed.
+
+Unreadable input currently raises `Emfsvg::ParseError` with its original upstream
+format/parse exception as `cause`; unexpected backend failures propagate. The
+remaining corrupted-input acceptance contract must distinguish recoverable
+malformed records (SVG plus the exact structured skipped-record warnings) from
+unreadable containers (typed parse failure with its cause and no partial SVG).
+It must also establish typed upstream resource failures with their metadata and
+causes. Qualification of those outcomes across Ruby, native, and auto actually
+selecting native remains blocked on released upstream diagnostics/resources and
+the public conformance adapter. Warning fields and native-selection reporting
+must follow those landed interfaces rather than an inferred contract.
+
+== Resource calibration command
+
+`scripts/calibrate_resource_limits.rb` prepares generation and verification of a
+versioned resource baseline. It currently refuses before corpus execution:
+upstream https://github.com/claricle/emf/issues/65[emf #65] and
+https://github.com/claricle/emf/issues/66[emf #66] have no pinned landed revisions,
+the released runtime/package and native artifact are unqualified, and the public
+calibration adapter is unavailable. Filling manifest fields alone cannot qualify
+the loaded implementation. There is no generated corpus baseline.
+
+The adapter must verify the exact manifest-selected corpus, independently loaded
+released runtime and package digest, native artifact/ABI, and public conversion
+outcomes. Ruby, native, and native-selected auto production conformance is a
+prerequisite; environment variables alone do not prove the selected backend.
+The existing command reuses `scripts/check_parity_provenance.rb` metadata checks
+and requires the two exact upstream issue identities. Its executable sampling,
+schema, derivation, drift, and atomic-write behavior has focused synthetic tests.
+The missing adapter must be implemented against the actual released public
+interfaces before these commands can perform corpus calibration.
+
+The following is the intended invocation once those gates are satisfied. Set all
+three outer caps explicitly for the host; there are no default caps. Values must
+be finite and positive, and remain below the host's own safety limits. The output
+directory must already exist.
+
+[source,bash]
+----
+bundle exec ruby scripts/calibrate_resource_limits.rb generate \
+  --manifest spec/fixtures/parity_manifest.yml \
+  --fixture-root "$EMF_FIXTURE_ROOT" \
+  --outer-rss-cap-mib "$EMFSVG_CALIBRATION_RSS_CAP_MIB" \
+  --outer-as-cap-mib "$EMFSVG_CALIBRATION_AS_CAP_MIB" \
+  --timeout-seconds "$EMFSVG_CALIBRATION_TIMEOUT_SECONDS" \
+  --output spec/fixtures/resource_limits/emfsvg-v1.yml
+
+bundle exec ruby scripts/calibrate_resource_limits.rb check \
+  --manifest spec/fixtures/parity_manifest.yml \
+  --fixture-root "$EMF_FIXTURE_ROOT" \
+  --outer-rss-cap-mib "$EMFSVG_CALIBRATION_RSS_CAP_MIB" \
+  --outer-as-cap-mib "$EMFSVG_CALIBRATION_AS_CAP_MIB" \
+  --timeout-seconds "$EMFSVG_CALIBRATION_TIMEOUT_SECONDS" \
+  --baseline spec/fixtures/resource_limits/emfsvg-v1.yml
+----
+
+Each selected input has three sequential fresh-child repetitions through
+`spec/support/bounded_conversion.rb`. Authoritative calibration requires Linux,
+`/proc` RSS/virtual-size measurements, child `RLIMIT_AS`, and parent monotonic-time
+and RSS watchdogs with process-group cleanup. The recorded TERM grace is 0.2
+seconds. RSS and address space are distinct measurements; `RLIMIT_AS` limits
+virtual address space. macOS has diagnostic RSS/time support but cannot produce
+an authoritative baseline because address-space enforcement is unavailable.
+Unsupported platforms and unavailable enforcement fail closed. Linux enforcement
+still needs real-host qualification; its implementation is not that evidence.
+
+Schema version 1 records `provenance`, `inputs`, `outer_caps`, `grace_seconds`,
+`repetitions`, `samples`, and `derived_limits`. Provenance pins the manifest digest,
+`emfsvg` revision, released runtime version/package/source, native artifact/source/
+ABI, actual native selection, OS/architecture/Ruby, and enforcement mechanisms.
+Each input records its name, SHA-256 and expected outcome. Each sample records
+case/repetition, input/output bytes, warnings, exception, elapsed seconds, peak RSS
+and address space in KiB, exit status, signal, safety verdict, and mechanism.
+Missing fields, changed coverage/order, unsafe outcomes, or input/provenance drift
+reject the run.
+
+`generate` derives global ceilings from the maxima of all stored samples: wall
+seconds are rounded up from four times elapsed time; RSS MiB from twice peak RSS
+plus 64 MiB; address-space MiB from twice peak address space plus 128 MiB. A
+derived ceiling reaching an explicit outer cap rejects generation. Valid output
+is written to a temporary file in the destination directory, flushed and synced,
+then renamed over the destination; validation or serialization failure preserves
+the prior baseline.
+
+`check` validates the stored schema, sample completeness and stored derivations
+before running children under the stored derived ceilings. Fresh inputs,
+provenance, repetition count, mechanisms and conversion outcomes must match.
+Fresh elapsed/RSS/address-space values may vary, must stay within those stored
+ceilings, and are reported as observed samples. Checking neither compares timings
+byte for byte nor changes the baseline, adds tolerance, or recalibrates it.
+
+To add a corrupted-input regression, pin its corpus revision and bytes, give it an
+explicit recoverable/unreadable/resource outcome and exact warning expectation,
+and exercise the public conversion through the bounded helper. Do not remove an
+input, weaken warning assertions, or widen a resource budget to make a failure
+pass. Cases requiring unavailable upstream diagnostics or native conformance
+remain explicit blockers. A replacement resource baseline requires a fresh,
+qualified generation run and review of its provenance and raw samples.
+
 == Explicit live C diagnostics
 
 `Emfsvg::Compat` in `spec/support/emfsvg_compat.rb` is the sole live C resolver.
