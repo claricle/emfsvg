@@ -4,24 +4,21 @@ require "spec_helper"
 require "tmpdir"
 
 RSpec.describe Emfsvg::Compat do
-  let(:script_body) do
-    <<~SH
-      printf '%s' "$2" > "$1"
-      printf '<svg/>' > "$2"
-    SH
-  end
-  let(:binary) { File.join(@reference_directory, "reference") }
+  include Emfsvg::SpecSupport::CompatReferenceFixture
+
+  let(:reference_mode) { "success" }
+  let(:binary) { File.join(@reference_directory, windows_reference? ? "reference.cmd" : "reference") }
   let(:input_path) { File.join(@reference_directory, "input.emf") }
   let(:output_path) { File.join(@reference_directory, "saved.svg") }
 
   around do |example|
     previous = ENV.to_h.slice("EMF2SVG_REF_PATH", "EMF2SVG_REF_LIB_DIR")
-    Dir.mktmpdir("emfsvg-reference-spec-") do |directory|
+    Dir.mktmpdir("emfsvg reference spec ") do |directory|
       @reference_directory = directory
       ENV["EMF2SVG_REF_PATH"] = binary
       ENV["EMF2SVG_REF_LIB_DIR"] = directory
-      File.write(binary, "#!/bin/sh\n#{script_body}")
-      File.chmod(0o755, binary)
+      File.write(binary, compat_reference_wrapper(reference_mode))
+      File.chmod(0o755, binary) unless windows_reference?
       example.run
     end
   ensure
@@ -39,7 +36,11 @@ RSpec.describe Emfsvg::Compat do
   end
 
   it "rejects a non-executable reference file" do
-    File.chmod(0o644, binary)
+    non_executable = File.join(@reference_directory, "reference.txt")
+    File.write(non_executable, "not executable")
+    File.chmod(0o644, non_executable)
+    ENV["EMF2SVG_REF_PATH"] = non_executable
+    expect(File.executable?(non_executable)).to be(false)
 
     expect { described_class.validate_reference! }
       .to raise_error(described_class::SetupError, /EMF2SVG_REF_PATH/)
@@ -79,14 +80,7 @@ RSpec.describe Emfsvg::Compat do
   end
 
   context "when the reference conversion fails" do
-    let(:script_body) do
-      <<~SH
-        printf '%s' "$2" > "$1"
-        printf 'partial' > "$2"
-        printf 'invalid EMF' >&2
-        exit 7
-      SH
-    end
+    let(:reference_mode) { "failure" }
 
     it "reports the failure and cleans temporary output without replacing existing output" do
       File.write(output_path, "existing reference")
@@ -99,7 +93,7 @@ RSpec.describe Emfsvg::Compat do
   end
 
   context "when the reference writes no output" do
-    let(:script_body) { "printf '%s' \"$2\" > \"$1\"\n" }
+    let(:reference_mode) { "missing" }
 
     it "reports the missing output and cleans its temporary directory" do
       expect { described_class.generate_reference(input_path) }
@@ -109,7 +103,7 @@ RSpec.describe Emfsvg::Compat do
   end
 
   context "when the reference writes an empty output" do
-    let(:script_body) { "printf '%s' \"$2\" > \"$1\"\n: > \"$2\"\n" }
+    let(:reference_mode) { "empty" }
 
     it "rejects the empty SVG and cleans its temporary directory" do
       expect { described_class.generate_reference(input_path) }
