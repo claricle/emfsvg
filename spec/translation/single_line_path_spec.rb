@@ -71,11 +71,12 @@ RSpec.describe "single-line SVG paths" do
     end
   end
 
-  it "keeps multi-segment open paths as Polyline records" do
+  it "keeps canonical multi-segment open paths as PolylineTo records" do
     multi_line_svg = svg.sub("L 100.0000,0.0000 ", "L 100.0000,0.0000 L 100.0000,50.0000 ")
     records = Emf.parse(Emfsvg.from_svg(multi_line_svg)).records.map(&:wire)
 
-    expect(records.grep(Emf::Emr::Binary::Records::Polyline).size).to eq(1)
+    expect(records.grep(Emf::Emr::Binary::Records::PolylineTo).size).to eq(1)
+    expect(records.grep(Emf::Emr::Binary::Records::Polyline)).to be_empty
     expect(records.grep(Emf::Emr::Binary::Records::LineTo)).to be_empty
   end
 end
