@@ -95,9 +95,9 @@ fresh full audit is required before reporting a new aggregate.
 Fresh-process tests cover a real supported conversion, malformed-byte parse
 error, and an upstream input-byte resource refusal without loading the reference
 helper or executing the configured C sentinel. The refusal preserves the upstream
-resource metadata and cause and produces no SVG. On the tested macOS host,
-loaded-library inspection was denied and
-remains explicitly pending. Native backend isolation is therefore unqualified.
+resource metadata and cause and produces no SVG. All six isolation examples pass on the tested macOS host with loaded-library
+inspection permitted. The earlier restricted run could not inspect loaded libraries.
+This host evidence does not qualify released native packages or other platforms.
 
 The bounded subprocess helper (`c4960c6`) has benign-child macOS evidence for
 RSS/time enforcement and process-group cleanup. macOS address-space enforcement
@@ -176,6 +176,14 @@ auto observation uses the pinned upstream private selector and explicitly does
 not establish a public backend contract. Startup stderr remains visible and
 causes rejection. This core does not bypass prerequisite checks; released-package
 and public-contract qualification are required before corpus calibration.
+
+`spec/corrupted_resilience_spec.rb` prepares the corpus caller behind that same
+prerequisite gate. It requires exact manifest source paths, hashes and reviewed
+outcomes for every corrupt input, checks the stored baseline ceilings, and
+verifies that the baseline and forbidden-reference sentinel remain unchanged.
+Its synthetic mechanics tests do not qualify the corpus. The real corpus example
+reports the missing qualification explicitly; it cannot turn unresolved manifest
+outcomes into observed expectations or generate a baseline.
 
 The following is the intended invocation once those gates are satisfied. Set all
 three outer caps explicitly for the host; there are no default caps. Values must

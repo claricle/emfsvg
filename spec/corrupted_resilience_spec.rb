@@ -50,8 +50,8 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
       Emfsvg::ResourceCalibration::Baseline.write!(@baseline, document)
     end
 
-    def run_caller
-      caller.run(manifest: @manifest, fixture_root: @directory, baseline: @baseline)
+    let(:run_caller) do
+      -> { caller.run(manifest: @manifest, fixture_root: @directory, baseline: @baseline) }
     end
 
     it "checks all selected cases in order, three times, using stored ceilings and an intact sentinel" do
@@ -68,7 +68,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
           calibration_report
         end.ordered.exactly(3).times
       end
-      expect(run_caller.fetch("samples").size).to eq(6)
+      expect(run_caller.call.fetch("samples").size).to eq(6)
       expect(File.binread(@baseline)).to eq(before)
     end
 
@@ -76,7 +76,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
       allow(qualification).to receive(:verify!).and_raise(Emfsvg::ResourceCalibration::Rejected, "unqualified")
       File.delete(@baseline)
       expect(runner).not_to receive(:run)
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, "unqualified")
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, "unqualified")
     end
 
     it "rejects missing, duplicate, or altered corrupt selection before child execution" do
@@ -85,7 +85,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
        [inputs.first.merge("sha256" => "3" * 64), inputs.last], [changed, inputs.last]].each do |bad|
         allow(adapter).to receive(:inputs).and_return(bad)
         expect(runner).not_to receive(:run)
-        expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /selection drift/)
+        expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /selection drift/)
       end
     end
 
@@ -97,7 +97,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
        resource].each do |bad|
         allow(adapter).to receive(:inputs).and_return([inputs.first.merge("expected_outcome" => bad), inputs.last])
         expect(runner).not_to receive(:run)
-        expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /incomplete expected outcome/)
+        expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /incomplete expected outcome/)
       end
     end
 
@@ -106,22 +106,23 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
       manifest.fetch("corrupted").first["expected_outcome"] = nil
       File.write(@manifest, YAML.dump(manifest))
       expect(runner).not_to receive(:run)
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /incomplete pinned input/)
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /incomplete pinned input/)
     end
 
     it "rejects a fresh measurement above the stored ceiling" do
       allow(runner).to receive(:run).and_return(calibration_report.merge(elapsed_seconds: 4))
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /exceeds stored ceiling/)
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /exceeds stored ceiling/)
     end
 
     it "rejects a breached child with its corrupt basename" do
       allow(runner).to receive(:run).and_return(calibration_report.merge(success: false, breach: :rss))
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /unsafe child outcome for one.emf/)
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected,
+                                                /unsafe child outcome for one.emf/)
     end
 
     it "propagates strict adapter rejection instead of translating backend errors" do
       allow(adapter).to receive(:validate_report!).and_raise(Emfsvg::ResourceCalibration::Rejected, "warning mismatch")
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, "warning mismatch")
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, "warning mismatch")
     end
 
     it "rejects baseline modification during a check" do
@@ -129,7 +130,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
         File.binwrite(@baseline, "unexpected baseline mutation")
         calibration_report
       end
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /modified baseline/)
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /modified baseline/)
     end
 
     it "rejects a child that invokes the forbidden reference sentinel" do
@@ -137,7 +138,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
         system(options.fetch(:command).fetch(3), out: File::NULL, err: File::NULL)
         calibration_report
       end
-      expect { run_caller }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /sentinel.*invoked/)
+      expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /sentinel.*invoked/)
     end
   end
 end
