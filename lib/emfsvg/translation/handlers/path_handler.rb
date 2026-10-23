@@ -37,6 +37,7 @@ module Emfsvg
               next
             end
             next emit_current_curve(flattened, context) if element.path_record_kind == :polybezier_to
+            next emit_current_polyline(flattened.first, context) if element.line_record_kind == :polyline_to
 
             if %i[end_path fill_path stroke_path stroke_and_fill_path].include?(element.path_record_kind)
               emit_figures(flattened, context, stroke_null: element.stroke.paint.null?, unfilled: element.fill.null?,
@@ -170,6 +171,13 @@ module Emfsvg
 
         def emit_polygon(flattened, context)
           emit_poly(Emf::Emr::Binary::Records::Polygon, POLYGON, flattened, context)
+        end
+
+        def emit_current_polyline(path, context)
+          context.emit(Emf::Emr::Binary::Records::MoveToEx, i_type: MOVETOEX,
+                                                            origin: context.point_attrs(*path.points.first))
+          line = PathFlattener::Result.new(points: path.points.drop(1), bounds: path.bounds)
+          emit_poly(Emf::Emr::Binary::Records::PolylineTo, POLYLINETO, line, context)
         end
 
         def emit_polyline(flattened, context)

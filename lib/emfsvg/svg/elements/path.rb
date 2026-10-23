@@ -32,7 +32,7 @@ module Emfsvg
           style[:fill] = Svg::Paint.from_fill(node["style"].delete_prefix("fill:")) if path_record_kind == :bitblt
           new(
             commands: Svg::PathData::Parser.parse(node["d"]),
-            line_record_kind: source_tag && (brush_fallback || canonical_polyline?(node, source_tag)) ? :polyline : nil,
+            line_record_kind: brush_fallback ? :polyline : canonical_line_record_kind(node, source_tag),
             path_record_kind: path_record_kind,
             **style
           )
@@ -129,6 +129,19 @@ module Emfsvg
             source_tag == %(<path style="#{node['style']}" d="#{node['d']}" />)
         end
         private_class_method :canonical_bitblt?
+
+        # PolylineTo starts at the current position and adds an extra space
+        # before fill. A single line shares that spelling with LineTo.
+        def self.canonical_line_record_kind(node, source_tag)
+          return unless source_tag
+          return :polyline if canonical_polyline?(node, source_tag)
+
+          number = "-?\\d+\\.\\d{4}"
+          return unless node["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number}){2,} \z/)
+
+          :polyline_to if canonical_stroked_path?(node, source_tag, fill_gap: true)
+        end
+        private_class_method :canonical_line_record_kind
 
         # Only the exact legacy renderer spelling provides record provenance.
         # Ordinary SVG paths keep the existing translation strategy.
