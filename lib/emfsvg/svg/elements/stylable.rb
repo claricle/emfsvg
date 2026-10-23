@@ -26,18 +26,21 @@ module Emfsvg
         def parse_style(node)
           fill, stroke = paints(
             node["fill"], node["stroke"], node["stroke-width"],
-            node["stroke-dasharray"], node["stroke-linecap"], node["stroke-linejoin"]
+            node["stroke-dasharray"], node["stroke-linecap"], node["stroke-linejoin"],
+            node["stroke-miterlimit"]
           )
           { fill: fill, stroke: stroke, clip_path: node["clip-path"] }
         end
 
-        def paints(fill, stroke, width, dash_array, line_cap, line_join)
-          key = [fill, stroke, width, dash_array, line_cap, line_join]
+        def paints(fill, stroke, width, dash_array, line_cap, line_join, miter_limit = nil)
+          key = [fill, stroke, width, dash_array, line_cap, line_join, miter_limit]
           @paint_cache.fetch(key) do
+            fill_paint = Svg::Paint.from_fill(fill)
             pair = [
-              Svg::Paint.from_fill(fill),
+              fill_paint,
               Svg::Stroke.parse(stroke: stroke, width: width, dash_array: dash_array,
-                                line_cap: line_cap, line_join: line_join)
+                                line_cap: line_cap, line_join: line_join,
+                                miter_limit: miter_limit, fill: fill_paint)
             ].freeze
             remember(key.freeze, pair)
           end

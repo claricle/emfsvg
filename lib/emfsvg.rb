@@ -8,6 +8,7 @@ module Emfsvg
   autoload :FormatError, "emfsvg/error"
   autoload :ParseError, "emfsvg/error"
   autoload :RenderError, "emfsvg/error"
+  autoload :ResourceLimitError, "emfsvg/error"
   autoload :Renderer, "emfsvg/renderer"
   autoload :DeviceContext, "emfsvg/device_context"
   autoload :ObjectTable, "emfsvg/object_table"
@@ -26,6 +27,8 @@ module Emfsvg
   autoload :Translation, "emfsvg/translation"
   autoload :RecordAccess, "emfsvg/record_access"
 
+  const_get(:Error)
+
   class << self
     # Render an Emf::Model::Metafile to an SVG string.
     #
@@ -38,16 +41,22 @@ module Emfsvg
     #               (default: false — EMF+ is structured-parsed by emf but
     #               not yet rendered)
     def to_svg(metafile, **options)
-      Renderer.call(metafile, Options.new(**options))
+      svg = Renderer.call(metafile, Options.new(**options))
+      warn_skipped_records(metafile)
+      svg
+    rescue Emf::Error => e
+      reraise_upstream_error(e)
     end
 
     # Parse from bytes then render.
     def from_bytes(bytes, **options)
-      to_svg(Emf.parse(bytes), **options)
+      check_input_size!(bytes.bytesize)
+      to_svg(parse_metafile(bytes), **options)
     end
 
     # Parse from a file path then render.
     def from_file(path, **options)
+      check_input_size!(File.size(path))
       from_bytes(File.binread(path), **options)
     end
 
@@ -65,6 +74,42 @@ module Emfsvg
     # Parse SVG from a file path and translate to EMF bytes.
     def from_svg_file(path)
       from_svg(File.read(path))
+    end
+
+    private
+
+    def warn_skipped_records(metafile)
+      return unless metafile.respond_to?(:diagnostics)
+
+      skipped = metafile.diagnostics.select { |diagnostic| diagnostic.disposition == :skipped }
+      return if skipped.empty?
+
+      entries = skipped.sort_by(&:record_index).map do |diagnostic|
+        "index=#{diagnostic.record_index},type=#{diagnostic.record_type}," \
+          "code=#{diagnostic.record_code},offset=#{diagnostic.byte_offset}"
+      end
+      Kernel.warn("emfsvg: skipped EMF records: #{entries.join(';')}")
+    end
+
+    def reraise_upstream_error(error)
+      raise error unless defined?(Emf::ResourceLimitError) && error.is_a?(Emf::ResourceLimitError)
+
+      raise ResourceLimitError.new(resource: error.resource, limit: error.limit, actual: error.actual), cause: error
+    end
+
+    def check_input_size!(actual)
+      limit = Emf::Emr::Parser::MAX_INPUT_BYTES
+      return if actual <= limit
+
+      raise ResourceLimitError.new(resource: :input_bytes, limit: limit, actual: actual)
+    end
+
+    def parse_metafile(bytes)
+      Emf.parse(bytes)
+    rescue Emf::FormatError, Emf::ParseError => e
+      raise ParseError, e.message, cause: e
+    rescue Emf::Error => e
+      reraise_upstream_error(e)
     end
   end
 end

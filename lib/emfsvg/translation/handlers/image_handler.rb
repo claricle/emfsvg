@@ -32,7 +32,9 @@ module Emfsvg
           dib = build_dib(element)
           return unless dib
 
-          emit_stretch_dibits(element, dib, context)
+          with_gdi_state(element, context) do
+            emit_stretch_dibits(element, dib, context)
+          end
         end
 
         private

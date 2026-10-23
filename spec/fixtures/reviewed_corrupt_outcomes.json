@@ -1,0 +1,627 @@
+{
+  "bad_corrupted_2014-12-02-215338": {
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf",
+      "sha256": "88a0066eaa5b30b96137f69312963891154efc13ab0922b7073532aadc7b673a"
+    },
+    "reviewed": true,
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 lib/emf/emr/parser.rb:67-82 and lib/emf/native/header_errors.rb:11-19: header nSize=59296 exceeds total input length1444, yielding exact FormatError message 'truncated EMF header (claimed 59296, got 1444)'."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:parse_metafile and spec/model_projection_spec.rb: public Emf::FormatError is wrapped as Emfsvg::ParseError preserving exact message and cause. Input spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf SHA256 88a0066eaa5b30b96137f69312963891154efc13ab0922b7073532aadc7b673a."
+      }
+    ],
+    "expected_outcome": {
+      "kind": "unreadable",
+      "warnings": [],
+      "exception": {
+        "class": "Emfsvg::ParseError",
+        "message": "truncated EMF header (claimed 59296, got 1444)",
+        "cause": {
+          "class": "Emf::FormatError",
+          "message": "truncated EMF header (claimed 59296, got 1444)"
+        }
+      }
+    }
+  },
+  "bad_corrupted_2014-12-02-215339": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf",
+      "sha256": "4817e49ba45ad8009926e3c8831fca360731b7cee8524db892db34e1190fc884"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf SHA256 4817e49ba45ad8009926e3c8831fca360731b7cee8524db892db34e1190fc884: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 144416; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-02-215358": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf",
+      "sha256": "b84b4c73527374fa3520da01b394edf4be1dfc87d10e2d1f8a41d9353e3919b4"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf SHA256 b84b4c73527374fa3520da01b394edf4be1dfc87d10e2d1f8a41d9353e3919b4: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 53120; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-02-215400": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf",
+      "sha256": "1595c39c22bb9ab0855d99d74da04644d057a20dd7dcd391c1c616ef8bfa846a"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf SHA256 1595c39c22bb9ab0855d99d74da04644d057a20dd7dcd391c1c616ef8bfa846a: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 912; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-02-215425": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf",
+      "sha256": "cd22c1eff37105c233c145de4806cb0a960b66986b3e9975e56e68f58bea0433"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf SHA256 cd22c1eff37105c233c145de4806cb0a960b66986b3e9975e56e68f58bea0433: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 1880; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-02-215428": {
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf",
+      "sha256": "fb2171310a7537165be53ee73a32050c925343bdca7e338ba1fa3337c994cf98"
+    },
+    "reviewed": true,
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 lib/emf/detector.rb:12-26 and lib/emf/native.rb:28-33: first uint32=0x00000073 is not EMR_HEADER type1; public native adapter invokes Detector before FFI, yielding exact FormatError message 'unrecognised format (first uint32=0x00000073)'."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:parse_metafile and spec/model_projection_spec.rb: public Emf::FormatError is wrapped as Emfsvg::ParseError preserving exact message and cause. Input spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf SHA256 fb2171310a7537165be53ee73a32050c925343bdca7e338ba1fa3337c994cf98."
+      }
+    ],
+    "expected_outcome": {
+      "kind": "unreadable",
+      "warnings": [],
+      "exception": {
+        "class": "Emfsvg::ParseError",
+        "message": "unrecognised format (first uint32=0x00000073)",
+        "cause": {
+          "class": "Emf::FormatError",
+          "message": "unrecognised format (first uint32=0x00000073)"
+        }
+      }
+    }
+  },
+  "bad_corrupted_2014-12-07-140817": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf",
+      "sha256": "a13446c89e802378dc3fe4dc78ab500090aa70b861544ecb7d1e50be72dbfaff"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf SHA256 a13446c89e802378dc3fe4dc78ab500090aa70b861544ecb7d1e50be72dbfaff: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 11112; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-07-160856": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf",
+      "sha256": "63897c62eb3d534d1e2b0848aae6cef65812199076f3e2a6c40173f34bee31ca"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf SHA256 63897c62eb3d534d1e2b0848aae6cef65812199076f3e2a6c40173f34bee31ca: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 144416; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-07-163010": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf",
+      "sha256": "c3ad5a70c9e4a4c8ac1641c711be752a7237d031fa056171c640c997b57d358c"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf SHA256 c3ad5a70c9e4a4c8ac1641c711be752a7237d031fa056171c640c997b57d358c: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 201616; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-07-235709": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf",
+      "sha256": "c96400d49fa0255a077d839b5c90f845a80e3e7a234ffdc25706d13ebd253d78"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf SHA256 c96400d49fa0255a077d839b5c90f845a80e3e7a234ffdc25706d13ebd253d78: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 106632; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-09-002112": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf",
+      "sha256": "8271bd3008d65eb540602a2cb2df018882c40efc58abfcc80692e6a8f8b3610b"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf SHA256 8271bd3008d65eb540602a2cb2df018882c40efc58abfcc80692e6a8f8b3610b: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 1512544; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-13-105759": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf",
+      "sha256": "d49e10c7247e364f2f2d87d105c3c34dcc972f15b15ba64ca172538ee96c5e8d"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf SHA256 d49e10c7247e364f2f2d87d105c3c34dcc972f15b15ba64ca172538ee96c5e8d: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 144416; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-13-132605": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf",
+      "sha256": "c4c979dd4701688e0f4fda68d0b9b4acd1b553c47b2e0dd0177256329107bca8"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": [
+        "emfsvg: skipped EMF records: index=38,type=UNKNOWN(0x113CCD70),code=289197424,offset=4195\n"
+      ]
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf SHA256 c4c979dd4701688e0f4fda68d0b9b4acd1b553c47b2e0dd0177256329107bca8: independent sequential little-endian record walk beginning after declared EMR_HEADER; first invalid record index=38, offset=4195, uint32 type=289197424, claimed nSize=2041956497, available bytes=90865; nSize exceeds remaining bytes, yielding exactly one skipped record before framing stops."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-13-133727": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf",
+      "sha256": "c78af3ebed5e88bb83e48e89351a2d47c02da6012bde273c3342e13fda1f63be"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf SHA256 c78af3ebed5e88bb83e48e89351a2d47c02da6012bde273c3342e13fda1f63be: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 154032; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2014-12-14-080539": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf",
+      "sha256": "9120352cdaba9cb96cba369d7c57d5f0bba1c36613fff6446105d609ccf9e2d5"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf SHA256 9120352cdaba9cb96cba369d7c57d5f0bba1c36613fff6446105d609ccf9e2d5: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 2552; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2016-02-02-210039": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf",
+      "sha256": "16c021181a16e43210c49a4e9ff727fcfbb6f1ab1c272947ea49c61740ae8698"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 lib/emf/conformance/rules/emf_text.rb:34-35,94-101 and lib/emf/emr/binary/records/ext_text_out_w.rb:45-47: damaged text permits recovery; lib/emf/emr/parser.rb:287-319 and lib/emf/native/diagnostic_contract.rb:15-35: complete frames do not create skipped diagnostics."
+      },
+      {
+        "kind": "reference",
+        "reference": "emfsvg@fbeb79483bac6d21117b6ac655ec2b31c835bbbf lib/emfsvg/visitors/emr_visitor.rb:decode_raw_utf16le and spec/invalid_text_encoding_spec.rb: malformed UTF16 is recovered with existing replacement while valid and non-BMP text remain preserved; lib/emfsvg.rb:warn_skipped_records warns only skipped framing."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf SHA256 16c021181a16e43210c49a4e9ff727fcfbb6f1ab1c272947ea49c61740ae8698: sequential boundary walk from header108 to EOF type14 offset75224 size20 ends at input length75244;4361 post-header records. Unpaired low surrogate at byte1832 inside post-header record43 type84 offset1756 size228. No invalid frame or trailing defect, so warnings=[]."
+      }
+    ]
+  },
+  "bad_corrupted_2016-02-02-220639": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf",
+      "sha256": "6f7af06abc1198554f1b1f0417ef856e427702dd1631496374f4ca7fed074921"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": [
+        "emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120\n"
+      ]
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf SHA256 6f7af06abc1198554f1b1f0417ef856e427702dd1631496374f4ca7fed074921: independent sequential little-endian record walk beginning after declared EMR_HEADER; first invalid record index=531, offset=29120, uint32 type=4294967295, claimed nSize=419430399, available bytes=114750; nSize exceeds remaining bytes, yielding exactly one skipped record before framing stops."
+      }
+    ]
+  },
+  "bad_corrupted_2016-02-02-225639": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf",
+      "sha256": "9b9070408fe776db984f19bea1a3f86997a53c1176a2eb1cf8626067d54d15ff"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": [
+        "emfsvg: skipped EMF records: index=604,type=UNKNOWN(0x55FF0000),code=1442775040,offset=63752\n"
+      ]
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf SHA256 9b9070408fe776db984f19bea1a3f86997a53c1176a2eb1cf8626067d54d15ff: independent sequential little-endian record walk beginning after declared EMR_HEADER; first invalid record index=604, offset=63752, uint32 type=1442775040, claimed nSize=2863267840, available bytes=80095; nSize exceeds remaining bytes, yielding exactly one skipped record before framing stops."
+      }
+    ]
+  },
+  "bad_corrupted_2017-02-11-230400": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf",
+      "sha256": "0337d4a5c054e6a98e29218dcecfd3e330610556620b05a31d1d451e55041ee4"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": [
+        "emfsvg: skipped EMF records: index=30,type=UNKNOWN(0x00200020),code=2097184,offset=2776\n"
+      ]
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf SHA256 0337d4a5c054e6a98e29218dcecfd3e330610556620b05a31d1d451e55041ee4: independent sequential little-endian record walk beginning after declared EMR_HEADER; first invalid record index=30, offset=2776, uint32 type=2097184, claimed nSize=4587520, available bytes=190688; nSize exceeds remaining bytes, yielding exactly one skipped record before framing stops."
+      }
+    ]
+  },
+  "bad_corrupted_2017-02-12-010400": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf",
+      "sha256": "0f025b558bab835a0484d1ee88ef22b8f84223fdff0e68fd27e8de3c4438c175"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf SHA256 0f025b558bab835a0484d1ee88ef22b8f84223fdff0e68fd27e8de3c4438c175: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 82452; no framing-derived skipped diagnostic."
+      }
+    ]
+  },
+  "bad_corrupted_2017-05-12-074000": {
+    "reviewed": true,
+    "source": {
+      "path": "spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf",
+      "sha256": "53533b29375da44ee3861b76eada7a68978778db13a31357b685b1736fffc780"
+    },
+    "expected_outcome": {
+      "kind": "svg",
+      "warnings": []
+    },
+    "evidence": [
+      {
+        "kind": "requirement",
+        "reference": "TODO.model-driven-projection/04-project-corrupted-corpus.md: Work and Done when: recoverable inputs require valid bounded SVG and exact skipped-only warning lines; unreadable inputs require Emfsvg::ParseError with original cause and no partial SVG."
+      },
+      {
+        "kind": "reference",
+        "reference": "emf@99a8c21256cbe902e243cc0bcac65b282ec52bf4 emf-rs/crates/emf-core/src/parse.rs:18-23,43-109 (framing damage stops with diagnostics; invalid supported payloads stay Raw); lib/emf/emr/parser.rb:26-49,287-319; lib/emf/native/diagnostic_contract.rb:15-35 (public indexes exclude header)."
+      },
+      {
+        "kind": "reference",
+        "reference": "lib/emfsvg.rb:warn_skipped_records and spec/public_consumer_contract_spec.rb: only disposition skipped is warned, sorted by public record index; Raw and preserved_raw stay silent. scripts/support/calibration_conversion_child.rb: warnings captured using String#lines, retaining final newline."
+      },
+      {
+        "kind": "reference",
+        "reference": "spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf SHA256 53533b29375da44ee3861b76eada7a68978778db13a31357b685b1736fffc780: independent sequential little-endian record walk beginning after declared EMR_HEADER; all walked record frames have nSize>=8 and fit available bytes; valid complete EOF ends at byte 13944; no framing-derived skipped diagnostic."
+      }
+    ]
+  }
+}

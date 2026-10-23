@@ -6,49 +6,17 @@
 # categorised by failure mode (text, geometry, path d, structural).
 #
 # Usage:
-#   bundle exec ruby scripts/run_emf_svg_compare.rb [limit]
+#   bundle exec ruby scripts/run_emf_svg_compare.rb [limit] [tolerance]
 #
-# Requires libemf2svg's `emf2svg_ref` binary at:
-#   /Users/mulgogi/src/claricle/libemf2svg/emf2svg_ref
-# (or set EMF2SVG_REF_PATH env var).
+# Requires explicit EMF_FIXTURE_ROOT, EMF2SVG_REF_PATH and EMF2SVG_REF_LIB_DIR.
+# See spec/fixtures/README.adoc for the pinned corpus and reference setup.
 
 $LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
 $LOAD_PATH.unshift(File.expand_path("../spec", __dir__))
 require "emfsvg"
 require "support/svg_matcher"
-require "open3"
-require "tmpdir"
-
-REF_BINARY_DEFAULT = "/Users/mulgogi/src/claricle/libemf2svg/emf2svg_ref"
-REF_LIB_DIR_DEFAULT = "/Users/mulgogi/src/claricle/libemf2svg/build"
-EMF_GLOBS = %w[
-  ../emf/spec/fixtures/emf/*.emf
-  ../emf/spec/fixtures/emf-ea/*.emf
-  ../emf/spec/fixtures/simple/*.emf
-].freeze
-
-def ref_binary_path
-  ENV.fetch("EMF2SVG_REF_PATH", REF_BINARY_DEFAULT)
-end
-
-def ref_lib_dir
-  ENV.fetch("EMF2SVG_REF_LIB_DIR", REF_LIB_DIR_DEFAULT)
-end
-
-def ref_available?
-  File.executable?(ref_binary_path)
-end
-
-def generate_reference(emf_path)
-  output_path = File.join(Dir.mktmpdir, "#{File.basename(emf_path, '.emf')}.svg")
-  env = { "DYLD_LIBRARY_PATH" => ref_lib_dir }
-  _, _, status = Open3.capture3(env, ref_binary_path, emf_path, output_path)
-  return nil unless status.success?
-
-  File.binread(output_path)
-ensure
-  File.delete(output_path) if output_path && File.exist?(output_path)
-end
+require "support/emfsvg_compat"
+require "support/parity_corpus"
 
 def categorise(reason)
   case reason
@@ -69,20 +37,20 @@ def categorise(reason)
   end
 end
 
-base_dir = File.expand_path(File.join(__dir__, ".."))
-all_emfs = EMF_GLOBS.flat_map do |g|
-  Dir.glob(File.expand_path(g, base_dir))
-end.sort.uniq
+begin
+  limit = ARGV.first && Integer(ARGV.first, 10)
+  raise ArgumentError, "limit must be positive" if limit && !limit.positive?
 
-limit = ARGV.first&.to_i
-tolerance = (ARGV[1] || 1.0).to_f
-fixtures = limit ? all_emfs.first(limit) : all_emfs
+  tolerance = Float(ARGV[1] || 1.0)
+  raise ArgumentError, "tolerance must be finite and nonnegative" unless tolerance.finite? && tolerance >= 0
 
-unless ref_available?
-  warn "libemf2svg reference binary not found at #{ref_binary_path}."
-  warn "Build it first: see spec/fixtures/README.adoc"
-  exit 1
+  Emfsvg::Compat.validate_reference!
+  all_emfs = Emfsvg::SpecSupport::ParityCorpus.new.source_paths
+rescue Emfsvg::Compat::SetupError, Emfsvg::SpecSupport::ParityCorpus::SetupError, ArgumentError => e
+  abort e.message
 end
+fixtures = limit ? all_emfs.first(limit) : all_emfs
+abort "Pinned corpus contains no fixtures; check EMF_FIXTURE_ROOT" if fixtures.empty?
 
 emfsvg_ok = 0
 ref_ok = 0
@@ -97,15 +65,15 @@ fixtures.each do |emf_path|
   rescue StandardError => e
     errors += 1
     fail_categories["emfsvg-error: #{e.class}"] += 1
+    warn "#{emf_path}: #{e.class}: #{e.message}"
     next
   end
   emfsvg_ok += 1
 
-  ref_svg = generate_reference(emf_path)
-  unless ref_svg
-    errors += 1
-    fail_categories["ref-error"] += 1
-    next
+  ref_svg = begin
+    Emfsvg::Compat.generate_reference(emf_path)
+  rescue Emfsvg::Compat::ConversionError => e
+    abort e.message
   end
   ref_ok += 1
 
@@ -133,3 +101,5 @@ puts "Pass rate:                #{(lossy_pass.to_f / fixtures.size * 100).round(
 puts "=" * 70
 puts "Failure categories:"
 fail_categories.sort_by { |_, c| -c }.each { |cat, count| puts "  #{cat.ljust(40)} #{count}" }
+
+exit 1 if errors.positive?

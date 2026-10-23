@@ -38,3 +38,54 @@ RSpec.describe Emfsvg::Translation::Handlers::TextHandler do
     expect(context.records).to be_empty
   end
 end
+
+RSpec.describe "SVG text record alignment" do
+  ["abc", "abcd", "«FeatureType»", "Veglenke"].each do |text|
+    it "preserves #{text.inspect} through EMF parsing and SVG rendering" do
+      svg = <<~SVG
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50">
+          <text x="1" y="20" font-family="Calibri" font-size="10">#{text}</text>
+        </svg>
+      SVG
+      bytes = Emfsvg.from_svg(svg)
+      parsed = Emf.parse(bytes)
+
+      expect(parsed.errors).to be_empty
+      record = parsed.records.map(&:wire).find { |wire| wire.is_a?(Emf::Emr::Binary::Records::ExtTextOutW) }
+      expect(record).not_to be_nil
+      expect(record.n_chars).to eq(text.length)
+      expect(record.off_dx % 4).to eq(0)
+      expect(record.n_size % 4).to eq(0)
+      expect(record.n_size).to eq(record.to_binary_s.bytesize)
+      expect(record.n_size).to eq(record.off_dx + (4 * text.length))
+      expect(record.trailing.byteslice(0, text.length * 2)).to eq(text.encode("UTF-16LE").b)
+      expect(Emfsvg.from_bytes(bytes)).to include("<![CDATA[#{text}]]>")
+    end
+  end
+end
+
+RSpec.describe "SVG text font weight preservation" do
+  { nil => 0, "normal" => 400, "bold" => 700, "400" => 400, "700" => 700 }.each do |weight, expected_weight|
+    it "preserves #{weight ? "explicit #{weight}" : 'omitted default'} font weight through EMF" do
+      attribute = weight ? %( font-weight="#{weight}") : ""
+      svg = <<~SVG
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50">
+          <text x="1" y="20" font-family="Calibri" font-size="10"#{attribute}>text</text>
+        </svg>
+      SVG
+      bytes = Emfsvg.from_svg(svg)
+      parsed = Emf.parse(bytes)
+      expect(parsed.errors).to be_empty
+      font = parsed.records.map(&:wire).find { |wire| wire.is_a?(Emf::Emr::Binary::Records::CreateFontIndirectW) }
+      expect(font.body.to_binary_s.unpack1("l<", offset: 16)).to eq(expected_weight)
+
+      output = Emfsvg.from_bytes(bytes)
+      expect(output).to include("<![CDATA[text]]>")
+      if weight
+        expect(output).to include(%(font-weight="#{expected_weight}"))
+      else
+        expect(output).not_to include("font-weight=")
+      end
+    end
+  end
+end

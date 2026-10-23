@@ -25,31 +25,70 @@ module Emfsvg
         end
 
         def translate(element, context)
-          return if element.content.nil? || element.content.empty?
+          return if element.content.nil?
+          return if element.content.empty? && !element.empty_cdata_content && !element.font_size.zero?
 
           clip_bounds = clip_bounds_for(element, context)
           wrap_with_clip = !clip_bounds.nil?
           transformed = element.transformed?
 
-          emit_save_dc(context) if wrap_with_clip || transformed
+          signature = clip_scope_signature(element, context, clip_bounds)
+          reuse_clip = context.reuse_clip_scope?(signature)
+          emit_save_dc(context) if (wrap_with_clip || transformed) && !reuse_clip
           if transformed
             context.emit(Emf::Emr::Binary::Records::SetWorldTransform,
                          i_type: SETWORLDTRANSFORM,
                          xform: context.xform_wire_from(element.transform_matrix))
           end
-          if wrap_with_clip
+          if wrap_with_clip && !reuse_clip
             context.emit(Emf::Emr::Binary::Records::IntersectClipRect,
                          i_type: INTERSECTCLIPRECT,
                          rcl_clip: context.rect_attrs(*clip_bounds))
           end
-          font_handle = emit_create_font(element, context)
-          emit_set_text_color(element, context)
-          emit_ext_text_out_w(element, context)
-          emit_delete(context, font_handle)
-          emit_restore_dc(context) if wrap_with_clip || transformed
+          emit_mapped_text(element, context, reuse: !wrap_with_clip && !transformed)
+          return unless wrap_with_clip || transformed
+
+          restore = emit_restore_dc(context)
+          context.remember_clip_scope(signature, restore)
         end
 
         private
+
+        def emit_mapped_text(element, context, reuse:)
+          rotation = element.canonical_text_rotation
+          @text_scaler = context.scaler
+          if rotation&.native_height && context.scaler.scaled?
+            finer = Scaler::Fixed.new(1_000_000)
+            values = [element.x, rotation.native_y, rotation.native_height,
+                      element.x + (element.content.length * element.font_size * 0.6), element.y - element.font_size]
+            @text_scaler = finer unless values.any? { |value| finer.unsafe?(value) }
+          end
+          return emit_text(element, context, reuse: reuse) if @text_scaler.equal?(context.scaler)
+
+          emit_save_dc(context)
+          context.emit(Emf::Emr::Binary::Records::SetWindowExtEx,
+                       i_type: SETWINDOWEXTEX, extent: { cx: @text_scaler.factor, cy: @text_scaler.factor })
+          emit_text(element, context, reuse: false)
+          # Both renderers keep mapping extents outside the saved drawing state.
+          context.emit(Emf::Emr::Binary::Records::SetWindowExtEx,
+                       i_type: SETWINDOWEXTEX, extent: { cx: context.scaler.factor, cy: context.scaler.factor })
+          emit_restore_dc(context)
+        end
+
+        def emit_text(element, context, reuse:)
+          # Packed LOGFONT includes rotation, weight, size, family and italic;
+          # positions and content may vary without changing selected GDI state.
+          signature = [build_logfont(element, context), element.fill.color.wire_attrs, text_align(element)] if reuse
+          font_handle = context.reuse_text_state(signature)
+          unless font_handle
+            font_handle = emit_create_font(element, context)
+            emit_set_text_color(element, context)
+            emit_set_text_align(element, context)
+          end
+          emit_ext_text_out_w(element, context)
+          deletion = emit_delete(context, font_handle)
+          context.remember_text_state(signature, font_handle, deletion)
+        end
 
         def emit_create_font(element, context)
           handle = context.allocate_handle
@@ -71,46 +110,72 @@ module Emfsvg
                        color: color)
         end
 
+        def text_align(element)
+          vertical = element.canonical_text_rotation&.vertical_alignment == :top ? 0 : 0x18
+          horizontal = case element.text_anchor
+                       when "middle" then 0x06
+                       when "end" then 0x02
+                       else 0
+                       end
+          vertical | horizontal
+        end
+
+        def emit_set_text_align(element, context)
+          context.emit(Emf::Emr::Binary::Records::SetTextAlign,
+                       i_type: SETTEXTALIGN,
+                       text_align_mode: text_align(element))
+        end
+
         def emit_ext_text_out_w(element, context)
           text_utf16 = element.content.encode("UTF-16LE").force_encoding("ASCII-8BIT")
           n_chars = element.content.length
           off_string = EXTTEXTOUTW_FIXED_SIZE
-          off_dx = off_string + (n_chars * 2)
+          # The Dx array starts on a DWORD boundary, including after odd-length text.
+          off_dx = (off_string + text_utf16.bytesize + 3) & ~3
           dx_bytes = ("\x00" * 4) * n_chars # zero Dx — natural advance
 
           bounds = text_bounds(element, context)
-          # emfsvg's EMF→SVG renderer adds (lfHeight * 0.9) to the
-          # stored y when text-align is TA_TOP (default). Reverse
-          # that adjustment using the SAME scaled lfHeight that
-          # emfsvg will read back so the round-trip y matches.
-          stored_font_height = context.scaler.to_int(element.font_size)
-          adjusted_y = element.y - (stored_font_height * 0.9 / context.scaler.factor)
           context.emit(Emf::Emr::Binary::Records::ExtTextOutW,
                        i_type: EXTTEXTOUTW,
                        rcl_bounds: bounds,
                        i_graphics_mode: 2, # GM_COMPATIBLE
                        ex_scale: 1.0,
                        ey_scale: 1.0,
-                       ptl_reference: context.point_attrs(element.x, adjusted_y),
+                       ptl_reference: {
+                         x: @text_scaler.to_int(element.x), y: @text_scaler.to_int(reference_y(element))
+                       },
                        n_chars: n_chars,
                        off_string: off_string,
                        f_options: 0,
                        rcl: context.rect_attrs(0, 0, 0, 0),
                        off_dx: off_dx,
-                       trailing: text_utf16 + dx_bytes)
+                       trailing: text_utf16.ljust(off_dx - off_string, "\x00") + dx_bytes)
+        end
+
+        def reference_y(element)
+          rotation = element.canonical_text_rotation
+          return rotation.native_y if rotation&.native_y && @text_scaler.scaled? && @text_scaler.factor == 1_000_000
+          return element.y unless rotation&.vertical_alignment == :top
+
+          element.y - (element.font_size * 0.9)
         end
 
         # Pack a LOGFONT struct (92 bytes) per MS-WMF 2.2.13.
-        def build_logfont(element, context)
+        def build_logfont(element, _context)
           face_utf16 = (element.font_family || "").encode("UTF-16LE")
           face_padded = face_utf16.ljust(64, "\x00".encode("UTF-16LE"))
           face_bytes = face_padded.bytes.pack("C*")[0, 64]
 
-          scaled_height = context.scaler.to_int(element.font_size)
+          height = if @text_scaler.scaled? && @text_scaler.factor == 1_000_000
+                     element.canonical_text_rotation&.native_height || element.font_size
+                   else
+                     element.font_size
+                   end
+          scaled_height = @text_scaler.to_int(height)
           [
             scaled_height, # lfHeight (scaled)
-            0,                                # lfWidth
-            0,                                # lfEscapement
+            0, # lfWidth
+            element.canonical_text_rotation&.escapement || (-element.font.rotation.to_i * 10), # tenths of a degree
             0,                                # lfOrientation
             element.font_weight.to_i,         # lfWeight
             element.italic? ? 1 : 0,          # lfItalic
@@ -124,12 +189,10 @@ module Emfsvg
           ].pack("l<l<l<l<l<CCCCCCCC") + face_bytes
         end
 
-        def text_bounds(element, context)
+        def text_bounds(element, _context)
           width = element.content.length * element.font_size * 0.6
-          context.rect_attrs(
-            element.x, element.y - element.font_size,
-            element.x + width, element.y
-          )
+          { left: @text_scaler.to_int(element.x), top: @text_scaler.to_int(element.y - element.font_size),
+            right: @text_scaler.to_int(element.x + width), bottom: @text_scaler.to_int(element.y) }
         end
       end
     end

@@ -14,3 +14,105 @@ on:
 jobs:
   rake:
     uses: metanorma/ci/.github/workflows/generic-rake.yml@main
+    with:
+      after-setup-ruby: |
+        if [[ "$RUNNER_OS" == "Linux" ]]; then
+          sudo apt-get update
+          sudo apt-get install -y fontconfig p7zip-full
+        elif [[ "$RUNNER_OS" == "macOS" ]]; then
+          brew install fontconfig sevenzip
+        elif [[ "$RUNNER_OS" == "Windows" ]]; then
+          mingw_prefix="${MINGW_PREFIX:?RubyInstaller MSYS2 environment is required}"
+          case "$mingw_prefix" in
+            /ucrt64) fontconfig_package=mingw-w64-ucrt-x86_64-fontconfig ;;
+            /mingw64) fontconfig_package=mingw-w64-x86_64-fontconfig ;;
+            *) printf 'Unsupported RubyInstaller MINGW_PREFIX: %s\n' "$mingw_prefix" >&2; exit 1 ;;
+          esac
+          pacman -S --noconfirm --needed "$fontconfig_package"
+          fontconfig_bin_windows="$(cygpath -w "$mingw_prefix/bin")"
+          fontconfig_bin_unix="$(cygpath -u "$fontconfig_bin_windows")"
+          export PATH="$fontconfig_bin_unix:$PATH"
+          printf '%s\n' "$fontconfig_bin_windows" >> "$GITHUB_PATH"
+          sevenzip_directory="$(cygpath -u 'C:\Program Files\7-Zip')"
+          if [[ ! -f "$sevenzip_directory/7z.exe" ]]; then
+            choco install 7zip --yes --no-progress
+          fi
+          export PATH="$sevenzip_directory:$PATH"
+        fi
+        corpus_revision="$(ruby -ryaml -e '
+          revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
+          abort "Expected a full lowercase corpus SHA" unless /\A[0-9a-f]{40}\z/.match?(revision)
+          puts revision
+        ')"
+        corpus_root="$(ruby -e 'puts File.expand_path("emfsvg-parity-corpus", ENV.fetch("RUNNER_TEMP"))')"
+        git init "$corpus_root"
+        git -C "$corpus_root" remote add origin https://github.com/claricle/emf.git
+        git -C "$corpus_root" fetch --depth 1 origin "$corpus_revision"
+        git -C "$corpus_root" checkout --detach FETCH_HEAD
+        test "$(git -C "$corpus_root" rev-parse HEAD)" = "$corpus_revision"
+        printf 'EMF_FIXTURE_ROOT=%s\n' "$corpus_root" >> "$GITHUB_ENV"
+        # Provision locally from hash-pinned intact installers; never cache/upload extracted fonts.
+        # Ruby vectors are qualified here; the Darwin-pinned C oracle remains a separate gate.
+        bundle exec ruby -rjson -rfileutils -rrbconfig -e '
+          directory = File.expand_path("emfsvg-font-qualification", ENV.fetch("RUNNER_TEMP"))
+          FileUtils.mkdir_p(directory)
+          options = {
+            "staging_directory" => directory,
+            "corpus_root" => ARGV.fetch(0),
+            "output_directory" => File.join(directory, "qualified"),
+            "contract_path" => File.join(directory, "contract.json")
+          }
+          options_path = File.join(directory, "options.json")
+          File.write(options_path, JSON.generate(options))
+          abort "Portable font provisioning failed" unless system(RbConfig.ruby, "scripts/provision_qualification_fonts.rb", options_path)
+          abort "Ruby font qualification failed" unless system(RbConfig.ruby, "scripts/qualify_fonts.rb", options.fetch("contract_path"), "--ruby-only")
+          File.open(ENV.fetch("GITHUB_ENV"), "a") do |file|
+            file.puts "FONTCONFIG_FILE=#{File.join(options.fetch("output_directory"), "fonts.conf")}"
+            file.puts "FONTCONFIG_PATH=#{options.fetch("output_directory")}"
+          end
+        ' "$corpus_root"
+
+  corpus-integrity:
+    name: Parity inventory preflight (not native qualification)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+      - name: Read pinned corpus revision
+        id: corpus
+        shell: bash
+        run: |
+          ruby -ryaml -e '
+            revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
+            abort "Expected a full lowercase corpus SHA" unless /\A[0-9a-f]{40}\z/.match?(revision)
+            File.open(ENV.fetch("GITHUB_OUTPUT"), "a") { |file| file.puts "revision=#{revision}" }
+          '
+      - name: Materialize pinned corpus outside the runtime workspace
+        shell: bash
+        env:
+          CORPUS_REVISION: ${{ steps.corpus.outputs.revision }}
+        run: |
+          corpus_root="$RUNNER_TEMP/emfsvg-parity-corpus"
+          git init "$corpus_root"
+          git -C "$corpus_root" remote add origin https://github.com/claricle/emf.git
+          git -C "$corpus_root" fetch --depth 1 origin "$CORPUS_REVISION"
+          git -C "$corpus_root" checkout --detach FETCH_HEAD
+          test "$(git -C "$corpus_root" rev-parse HEAD)" = "$CORPUS_REVISION"
+          printf 'EMF_FIXTURE_ROOT=%s\n' "$corpus_root" >> "$GITHUB_ENV"
+      # This checks inventory and setup behavior only. Full native-qualified
+      # parity remains blocked by runtime, native, and upstream contract metadata.
+      - name: Check inventory and setup contracts
+        run: >-
+          bundle exec rspec spec/parity_manifest_spec.rb spec/parity_corpus_spec.rb
+          spec/parity_provenance_spec.rb spec/compat_reference_setup_spec.rb
+          spec/parity_tooling_setup_spec.rb spec/runtime_package_spec.rb
+          spec/runtime_dependency_spec.rb spec/model_projection_spec.rb
+          spec/runtime_isolation_spec.rb spec/parity_comparison_spec.rb
+          spec/bounded_conversion_spec.rb
+      - name: Verify runtime gem contents and dependencies
+        run: |
+          bundle exec gem build emfsvg.gemspec --output "$RUNNER_TEMP/emfsvg.gem"
+          bundle exec ruby scripts/check_runtime_package.rb "$RUNNER_TEMP/emfsvg.gem"

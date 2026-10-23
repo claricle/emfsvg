@@ -4,9 +4,14 @@ source "https://rubygems.org"
 
 gemspec
 
+# Temporary development integration for the upstream #15 model contract.
+# Replace with a qualified release once a released tag contains this revision.
+gem "emf", git: "https://github.com/claricle/emf.git", ref: "99a8c21256cbe902e243cc0bcac65b282ec52bf4"
+
 gem "rake", "~> 13.0"
 
 group :development do
+  gem "fiddle", "~> 1.1"
   gem "rexml", "~> 3.3"
   gem "rspec", "~> 3.13"
   gem "rspec-collection_matchers"

@@ -9,19 +9,64 @@ module Emfsvg
         ELEMENT_NAME = "clipPath"
         Element.register("clipPath", self)
 
-        attr_reader :id, :children
+        attr_reader :id, :children, :unused_rectangle_bounds, :selected_path_data
 
-        def initialize(id:, children:)
+        def initialize(id:, children:, unused_rectangle_bounds: nil, selected_path_data: nil)
           @id = id
           @children = children
+          @unused_rectangle_bounds = unused_rectangle_bounds
+          @selected_path_data = selected_path_data
         end
 
-        def self.from_node(node)
+        def self.from_node(node, &source_tag)
           new(
             id: node["id"],
-            children: node.element_children.map { |c| Element.from_node(c) }
+            selected_path_data: canonical_selected_path(node, &source_tag),
+            unused_rectangle_bounds: canonical_unused_rectangle(node, &source_tag),
+            children: node.element_children.map { |c| Element.from_node(c, &source_tag) }
           )
         end
+
+        def self.canonical_selected_path(node)
+          return unless node["id"]&.match?(/\Aclip-\d+\z/) && node.attribute_nodes.size == 1
+          return unless node.element_children.size == 1 && block_given?
+
+          path = node.element_children.first
+          return unless path.name == "path" && path.attribute_nodes.map(&:name) == ["d"]
+
+          number = "-?\\d+\\.\\d{4}"
+          point = "#{number},#{number}"
+          segment = "(?: L #{point}| C #{point} #{point} #{point})"
+          contour = "M #{point}(?: L #{point})+ Z "
+          return unless path["d"]&.match?(/\A(?:M #{point}(?:#{segment})+ |(?:#{contour}){2,})Z\z/)
+          return unless yield(path) == %(<path d="#{path['d']}" />)
+
+          path["d"].delete_suffix("Z")
+        end
+        private_class_method :canonical_selected_path
+
+        # Only the renderer's exact rectangle spelling supports preservation of
+        # an otherwise inert resource via IntersectClipRect followed by reset.
+        def self.canonical_unused_rectangle(node)
+          return unless node["id"]&.match?(/\Aclip-\d+\z/) && node.attribute_nodes.size == 1
+          return unless node.element_children.size == 1 && block_given?
+
+          path = node.element_children.first
+          return unless path.name == "path" && path.attribute_nodes.map(&:name) == ["d"]
+
+          number = "(-?\\d+\\.\\d{4})"
+          lines = " L #{number},#{number}" * 4
+          pattern = "\\AM #{number},#{number}#{lines} Z Z\\z"
+          match = path["d"]&.match(Regexp.new(pattern))
+          return unless match && yield(path) == %(<path d="#{path['d']}" />)
+
+          left, top, right, top2, right2, bottom, left2, bottom2, left3, top3 = match.captures.map(&:to_f)
+          return unless [left, top, right, bottom, left, top] == [left2, top2, right2, bottom2, left3, top3]
+          return unless left <= right && top <= bottom
+
+          [left, top, right, bottom]
+        end
+        private_class_method :canonical_unused_rectangle
 
         # Bounds [left, top, right, bottom] of the clip region for
         # IntersectClipRect emission. Handles three forms:
@@ -29,8 +74,8 @@ module Emfsvg
         # 1. Single <rect> child — use rect bounds directly.
         # 2. Single <path> child whose d-string traces a rectangle
         #    (4 unique corners + close) — extract corner bounds.
-        # 3. Anything else — use the union bounding box of all child
-        #    geometry (lossy: curves flattened to bounds).
+        # Compound paths cannot use IntersectClipRect. Other single contours
+        # and multiple children retain the existing bounds fallback.
         #
         # Every shape that references the clip asks for these bounds, so
         # they are computed once and the (frozen) result is reused.
@@ -67,12 +112,25 @@ module Emfsvg
         # path: M X1,Y1 L X2,Y1 L X2,Y2 L X1,Y2 L X1,Y1 Z Z. Detect
         # that shape and recover (X1, Y1, X2, Y2).
         def path_rect_bounds(path)
+          return unless path.commands.one? { |command| command.letter == "M" }
+
           points = PathFlattenerForClip.new.flatten(path.commands)
-          return nil unless points && points.size >= 4
+          return unless points && points.size >= 4
 
           xs = points.map(&:first)
           ys = points.map(&:last)
-          [xs.min, ys.min, xs.max, ys.max]
+          bounds = [xs.min, ys.min, xs.max, ys.max]
+          # Preserve the established single-contour fallback outside the
+          # four-corner case. Multiple contours must never collapse to bounds.
+          return bounds unless points.uniq.size == 4
+          return unless path.commands.map(&:letter).join.match?(/\AM[LHV]{3,4}Z+\z/)
+
+          points.pop if points.last == points.first
+          return unless points.size == 4
+          return unless (points + [points.first]).each_cons(2).all? { |a, b| (a.first == b.first) ^ (a.last == b.last) }
+          return unless xs.uniq.size == 2 && ys.uniq.size == 2
+
+          bounds
         end
 
         def bounding_box_of(elements)

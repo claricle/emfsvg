@@ -29,7 +29,8 @@ module Emfsvg
                                    element.y + element.height)
 
           if element.rounded?
-            corner = context.size_attrs(element.rx * 2, element.ry * 2)
+            # The pinned C renderer emits szlCorner directly as SVG rx/ry.
+            corner = context.size_attrs(element.rx, element.ry)
             context.emit(Emf::Emr::Binary::Records::RoundRect,
                          i_type: ROUNDRECT, rcl_box: box, szl_corner: corner)
           else

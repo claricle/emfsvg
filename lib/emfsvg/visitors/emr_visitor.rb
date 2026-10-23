@@ -184,6 +184,8 @@ module Emfsvg
         elsif @options.verbose
           warn "emfsvg: no handler for #{klass.name&.split('::')&.last}"
         end
+      rescue ParseError
+        raise
       rescue StandardError => e
         raise unless @options.verbose
 
@@ -778,9 +780,11 @@ module Emfsvg
       end
 
       def visit_set_miter_limit(wire)
-        # MS-EMF spec: iMiterLimit is a uint32 (miter length ratio). The emf
-        # wire parses it as IEEE float, so convert bits back to uint32.
-        @dc.miter_limit = [wire.miter_limit.to_f].pack("f").unpack1("V")
+        limit = wire.miter_limit.to_f
+        # libemf2svg-produced EMFs store this field as the integer payload's
+        # float bit pattern, while native SetMiterLimit records store a float.
+        limit = [limit].pack("f").unpack1("L<") if limit.abs < 1.1754943508222875e-38
+        @dc.miter_limit = limit
       end
 
       def visit_comment(_wire); end
@@ -812,8 +816,8 @@ module Emfsvg
 
         height = body.unpack1("l<")
         _width = body.unpack("l<", offset: 4)[0]
-        # libemf2svg reduces lfEscapement modulo 3600 (so 3600 → 0, no rotation).
-        escapement = body.unpack("l<", offset: 8)[0] % 3600
+        # C remainder preserves the dividend sign (so -2700 stays -2700).
+        escapement = body.unpack("l<", offset: 8)[0].remainder(3600)
         weight = body.unpack("l<", offset: 16)[0]
         italic = body.getbyte(20) != 0
         underline = body.getbyte(21) != 0
@@ -868,7 +872,7 @@ module Emfsvg
         if small_chars
           bytes.force_encoding("CP1252").encode("UTF-8", undef: :replace, replace: "?")
         else
-          bytes.force_encoding("UTF-16LE").encode("UTF-8", undef: :replace, replace: "?")
+          decode_utf16_text(bytes)
         end
       end
 
@@ -1476,12 +1480,15 @@ module Emfsvg
         if wire.f_options.to_i.anybits?(GlyphIndexMapper::ETO_GLYPH_INDEX)
           decode_glyph_indices(string_bytes, n_chars)
         elsif utf16
-          string_bytes.force_encoding("UTF-16LE")
-                      .encode("UTF-8", undef: :replace, replace: "?")
+          decode_utf16_text(string_bytes)
         else
           cleaned = string_bytes.bytes.map { |b| b > 0x7F ? 0x20 : b }
           cleaned.pack("C*").force_encoding("UTF-8")
         end
+      end
+
+      def decode_utf16_text(string_bytes)
+        string_bytes.force_encoding("UTF-16LE").encode("UTF-8", invalid: :replace, undef: :replace, replace: "?")
       end
 
       def emit_ext_text(wire, utf16:)

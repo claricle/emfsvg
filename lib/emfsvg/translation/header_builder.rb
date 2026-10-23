@@ -42,12 +42,32 @@ module Emfsvg
       end
 
       def bounds_for(document)
+        return legacy_bounds_for(document) if legacy_header?(document)
+
         min_x, min_y, w, h = document.bounds
         Emf::Model::Geometry::Rect.new(
           left: min_x.to_i,
           top: min_y.to_i,
           right: (min_x + w).to_i,
           bottom: (min_y + h).to_i
+        )
+      end
+
+      # Legacy broken-Y header: the original signed bounds are not
+      # recoverable, so emit the canonical equivalent [-1, -1, w-2, h-2],
+      # which renders back to the same header and viewport. Only for
+      # integral dimensions greater than 2; anything else keeps the
+      # ordinary path.
+      def legacy_header?(document)
+        document.view_box.nil? &&
+          document.legacy_broken_y_header? &&
+          [document.width, document.height].all? { |d| (d % 1).zero? && d > 2 }
+      end
+
+      def legacy_bounds_for(document)
+        Emf::Model::Geometry::Rect.new(
+          left: -1, top: -1,
+          right: document.width.to_i - 2, bottom: document.height.to_i - 2
         )
       end
 
