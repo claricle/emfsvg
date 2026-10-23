@@ -15,7 +15,7 @@ Missing roots, unexpected or missing files, and changed bytes fail setup.
 There are no developer-machine or sibling-checkout defaults.
 
 The runtime is independent of that corpus checkout. Development temporarily
-pins `emf` to Git revision `5c2c019138bab6f3c67f7602e8b410ba5a67c429`.
+pins `emf` to Git revision `eb6902dd29c1d2ce6b1c6038a8695605e0f7cab5`.
 A containing released package, native backend selection, and upstream resource
 and diagnostic contracts remain qualification requirements. A valid corpus
 inventory does not establish runtime qualification.
@@ -115,9 +115,11 @@ header/output dimensions with `Emfsvg::RenderError` before creating its builder.
 These checks and the output ceiling provide focused allocation protection;
 they do not bound every intermediate renderer allocation. Sparse GDI object
 handles no longer allocate an array through the numeric handle value. The frozen
-21-input corrupted-corpus observation after that fix stayed within its resource
-budgets, but encountered one malformed UTF-16 exception. That exception is now
-classified as a parse error; the integrated corpus qualification and calibrated
+21-input corrupted-corpus observation at `c88ffe1` completed with 18 SVG outputs
+and three typed parse errors, no unexpected exceptions or resource breaches, and
+646 protected files unchanged. Peak RSS was 105440 KiB and maximum elapsed time
+was 1.396689 seconds under supplied 30-second/512-MiB ceilings. This observation
+used the earlier runtime pin; cross-backend qualification and a calibrated
 baseline remain pending.
 
 Unreadable input currently raises `Emfsvg::ParseError` with its original upstream
