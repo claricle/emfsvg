@@ -13,13 +13,14 @@ RSpec.describe Emfsvg::Translation::Handlers::RectHandler do
     )
   end
 
-  it "emits CreatePen + SelectObject + CreateBrushIndirect + SelectObject + Rectangle + Deletes" do
+  it "sets miter state and emits pen, brush, rectangle and object cleanup" do
     element = rect_node("x" => "10", "y" => "20", "width" => "100", "height" => "50",
                         "fill" => "#FF0000", "stroke" => "#0000FF")
     described_class.call(element, context)
 
     wire_classes = context.records.map { |r| r.wire.class }
     expect(wire_classes).to eq([
+                                 Emf::Emr::Binary::Records::SetMiterLimit,
                                  Emf::Emr::Binary::Records::CreatePen,
                                  Emf::Emr::Binary::Records::SelectObject,
                                  Emf::Emr::Binary::Records::CreateBrushIndirect,
