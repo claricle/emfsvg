@@ -15,7 +15,7 @@ Missing roots, unexpected or missing files, and changed bytes fail setup.
 There are no developer-machine or sibling-checkout defaults.
 
 The runtime is independent of that corpus checkout. Development temporarily
-pins `emf` to Git revision `095d77b78f74302da3bbb550a7b7469738ebb0fb`.
+pins `emf` to Git revision `99a8c21256cbe902e243cc0bcac65b282ec52bf4`.
 A containing released package, native backend selection, and upstream resource
 and diagnostic contracts remain qualification requirements. A valid corpus
 inventory does not establish runtime qualification.

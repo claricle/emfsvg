@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/claricle/emf.git
-  revision: 095d77b78f74302da3bbb550a7b7469738ebb0fb
-  ref: 095d77b78f74302da3bbb550a7b7469738ebb0fb
+  revision: 99a8c21256cbe902e243cc0bcac65b282ec52bf4
+  ref: 99a8c21256cbe902e243cc0bcac65b282ec52bf4
   specs:
     emf (0.1.2)
       bindata (~> 2.4)
