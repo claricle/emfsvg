@@ -205,6 +205,48 @@ These temporary paths describe the qualification session, not required fixture
 locations. Binary identity is specific to this build environment; rebuilds
 must record their own identities and repeat qualification before promotion.
 
+=== Glyph-index font inputs
+
+The C source and binary pin alone do not make glyph-index text portable.
+Accepted inputs `test-183` and `test-185` contain `ETO_GLYPH_INDEX` text:
+the resulting Unicode depends on the selected font's glyph ordering.
+Both the C reference and Ruby mapper resolve fonts through Fontconfig.
+
+A subsequent measurement on the qualification host resolved Arial to
+Arial Regular version 5.01.2x, and David to Verdana Regular version 5.01x.
+These identities were measured after the accepted-corpus audit; that audit
+did not record opened font files or Fontconfig configuration. They are
+current reproduction inputs, not recovered historical font provenance.
+
+[cols="1,3,3",options="header"]
+|===
+|Requested family / resolved font |Font-file SHA-256 |`cmap` table SHA-256
+|Arial / `Arial.ttf`
+|`525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9`
+|`25d42edf9c04a22dc3543218b1be7036bc20f95cd6b17084c2405afa3487d293`
+|David / `Verdana.ttf`
+|`0da8c12f3e15d95585434d2cf294b3113a3e3fc84bf9ba9d64f2ef834ef4bd98`
+|`ed767e155b998c28259572f6356890b673249be77c972b67a6d1aea0f769c9b2`
+|===
+
+The measured mapping uses weight 400, italic 0 and charset 177.
+Arial glyph IDs `[675, 674, 673, 672]` map to `אבגד` after RTL reversal.
+David glyph arrays `[167, 159, 166, 179]`, `[154, 227, 155]`,
+`[163, 140, 155]` and `[15]` map respectively to `“ƒΩ≈`, the empty
+string, the empty string and `,`. These are protected reference outputs;
+installing a font named David does not establish equivalent glyph mappings.
+
+The measured font files are supplied with the host operating system.
+No cross-platform redistribution permission or compatible redistributable
+package has been established, and no font files are included in this repository
+or the runtime gem. Cross-platform byte qualification remains blocked until
+compatible font inputs can be supplied under their applicable licenses.
+A future qualified setup must pin its font package, individual files and
+Fontconfig configuration, explicitly reproduce the David-to-Verdana fallback,
+and verify these mapping vectors and both C outputs against the protected
+artifacts. Ordinary CI retains its strict comparisons while this input is
+unqualified; a different fallback or changed golden is not a passing result.
+
 === Generate the reference set
 
 [source,bash]
