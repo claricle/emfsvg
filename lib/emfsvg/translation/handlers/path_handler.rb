@@ -36,7 +36,9 @@ module Emfsvg
               emit_bitblt(flattened.first, context)
               next
             end
-            if %i[end_path fill_path stroke_path].include?(element.path_record_kind)
+            next emit_current_curve(flattened, context) if element.path_record_kind == :polybezier_to
+
+            if %i[end_path fill_path stroke_path stroke_and_fill_path].include?(element.path_record_kind)
               emit_figures(flattened, context, stroke_null: element.stroke.paint.null?, unfilled: element.fill.null?,
                                                pending: element.path_record_kind == :end_path)
               next
@@ -111,6 +113,19 @@ module Emfsvg
                        rcl_bounds: combined_bounds(subpaths, context),
                        n_polys: subpaths.size, c_ptl_total: points.size,
                        a_poly_counts: subpaths.map { |path| path.points.size }, aptl: points)
+        end
+
+        def emit_current_curve(subpaths, context)
+          subpaths.each do |path|
+            context.emit(Emf::Emr::Binary::Records::MoveToEx, i_type: MOVETOEX,
+                                                              origin: context.point_attrs(*path.points.first))
+            emit_polybezier_to(path, context)
+          end
+        end
+
+        def emit_polybezier_to(path, context)
+          curve = PathFlattener::Result.new(points: path.points.drop(1), bounds: path.bounds)
+          emit_poly(Emf::Emr::Binary::Records::PolyBezierTo, POLYBEZIERTO, curve, context)
         end
 
         def emit_figures(subpaths, context, stroke_null:, unfilled:, pending: false)

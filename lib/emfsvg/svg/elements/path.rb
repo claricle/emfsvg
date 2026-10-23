@@ -55,6 +55,8 @@ module Emfsvg
           return :fill_path if canonical_filled_curve?(node, source_tag)
           return :bitblt if canonical_bitblt?(node, source_tag)
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
+          return :stroke_and_fill_path if canonical_open_painted_path?(node, source_tag)
+          return :polybezier_to if canonical_stroked_curve?(node, source_tag)
           return :stroke_path if canonical_orphan_or_empty_path?(node, source_tag)
 
           nil
@@ -79,6 +81,26 @@ module Emfsvg
             source_tag == %(<path d="#{node['d']}"  fill="#{node['fill']}" stroke="none" />)
         end
         private_class_method :canonical_filled_curve?
+
+        # Path painting implicitly closes only the fill, retaining open strokes.
+        # Fill-first output distinguishes it from unfilled Polyline/PolyBezier.
+        def self.canonical_open_painted_path?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          point = "#{number},#{number}"
+          segment = "(?: L #{point}| C #{point} #{point} #{point})"
+          node["d"]&.match?(/\AM #{point}(?:#{segment})+ \z/) && canonical_fill_first_style?(node, source_tag)
+        end
+        private_class_method :canonical_open_painted_path?
+
+        # PolyBezier includes a separate current-position move in its output;
+        # PolyBezierTo emits only its existing current position.
+        def self.canonical_stroked_curve?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          point = "#{number},#{number}"
+          node["d"]&.match?(/\AM #{point}(?: C #{point} #{point} #{point})+ \z/) &&
+            canonical_stroked_path?(node, source_tag, fill_gap: true)
+        end
+        private_class_method :canonical_stroked_curve?
 
         # A stroked EMF path can start with LineTo or contain no figures at
         # all. Only the renderer's exact spelling carries that provenance.
@@ -132,11 +154,11 @@ module Emfsvg
                  else
                    :arc
                  end
-          kind if canonical_stroked_path?(node, source_tag, arc: true, closed: kind != :arc)
+          kind if canonical_stroked_path?(node, source_tag, fill_gap: true, closed: kind != :arc)
         end
         private_class_method :canonical_arc_kind
 
-        def self.canonical_stroked_path?(node, source_tag, arc: false, closed: false)
+        def self.canonical_stroked_path?(node, source_tag, fill_gap: false, closed: false)
           number = "-?\\d+\\.\\d{4}"
           return false unless node["stroke"]&.match?(/\A#[0-9A-Fa-f]{6}\z/)
           return false unless node["stroke-width"]&.match?(/\A(?:#{number}|1px)\z/)
@@ -154,7 +176,7 @@ module Emfsvg
           expected << %(stroke-dasharray="#{node['stroke-dasharray']}" ) if node["stroke-dasharray"]
           expected << %( stroke-linecap="#{node['stroke-linecap']}"  stroke-linejoin="#{node['stroke-linejoin']}" )
           expected << %( stroke-miterlimit="#{node['stroke-miterlimit']}" ) if node["stroke-miterlimit"]
-          expected << " " if arc
+          expected << " " if fill_gap
           expected << %(fill="#{node['fill']}")
           expected << " " if closed
           expected << " />"
@@ -168,7 +190,13 @@ module Emfsvg
         # Polygon as before.
         def self.canonical_poly_polygon?(node, source_tag)
           number = "-?\\d+\\.\\d{4}"
-          return false unless node["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ Z \z/)
+          node["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ Z \z/) &&
+            canonical_fill_first_style?(node, source_tag)
+        end
+        private_class_method :canonical_poly_polygon?
+
+        def self.canonical_fill_first_style?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
           return false unless node["fill"]&.match?(/\A#[0-9A-F]{6}\z/)
           return false unless node["stroke"]&.match?(/\A#[0-9A-F]{6}\z/)
           return false unless node["stroke-width"]&.match?(/\A(?:#{number}|1px)\z/)
@@ -187,7 +215,7 @@ module Emfsvg
           expected << "/>"
           source_tag == expected
         end
-        private_class_method :canonical_poly_polygon?
+        private_class_method :canonical_fill_first_style?
       end
     end
   end
