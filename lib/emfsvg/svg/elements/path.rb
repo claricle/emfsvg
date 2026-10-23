@@ -55,6 +55,7 @@ module Emfsvg
           return :fill_path if canonical_filled_curve?(node, source_tag)
           return :bitblt if canonical_bitblt?(node, source_tag)
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
+          return :stroke_path if canonical_orphan_or_empty_path?(node, source_tag)
 
           nil
         end
@@ -78,6 +79,17 @@ module Emfsvg
             source_tag == %(<path d="#{node['d']}"  fill="#{node['fill']}" stroke="none" />)
         end
         private_class_method :canonical_filled_curve?
+
+        # A stroked EMF path can start with LineTo or contain no figures at
+        # all. Only the renderer's exact spelling carries that provenance.
+        def self.canonical_orphan_or_empty_path?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          data = node["d"]
+          return false unless data == "" || data&.match?(/\AL #{number},#{number}(?: [ML] #{number},#{number})* \z/)
+
+          canonical_stroked_path?(node, source_tag)
+        end
+        private_class_method :canonical_orphan_or_empty_path?
 
         # Zero-source BitBlt emits a style-first rectangle without a trailing
         # space after Z. Only that exact spelling carries record provenance.

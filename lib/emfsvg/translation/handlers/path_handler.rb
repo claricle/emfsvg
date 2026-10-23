@@ -19,7 +19,7 @@ module Emfsvg
         end
 
         def translate(element, context)
-          return if element.commands.empty?
+          return if element.commands.empty? && element.path_record_kind != :stroke_path
 
           with_gdi_state(element, context) do
             if %i[arc chord pie].include?(element.path_record_kind)
@@ -30,12 +30,13 @@ module Emfsvg
               next
             end
 
-            flattened = PathFlattener.flatten(element.commands)
+            flattened = PathFlattener.flatten(element.commands,
+                                              preserve_initial_line: element.path_record_kind == :stroke_path)
             if element.path_record_kind == :bitblt
               emit_bitblt(flattened.first, context)
               next
             end
-            if %i[end_path fill_path].include?(element.path_record_kind)
+            if %i[end_path fill_path stroke_path].include?(element.path_record_kind)
               emit_figures(flattened, context, stroke_null: element.stroke.paint.null?, unfilled: element.fill.null?,
                                                pending: element.path_record_kind == :end_path)
               next
@@ -145,6 +146,8 @@ module Emfsvg
         end
 
         def combined_bounds(subpaths, context)
+          return context.rect_attrs(0, 0, 0, 0) if subpaths.empty?
+
           bounds = subpaths.map(&:bounds)
           context.rect_attrs(bounds.map(&:left).min, bounds.map(&:top).min,
                              bounds.map(&:right).max, bounds.map(&:bottom).max)

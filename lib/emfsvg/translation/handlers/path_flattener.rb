@@ -8,11 +8,11 @@ module Emfsvg
       class PathFlattener
         Result = Struct.new(:shape_kind, :points, :bounds, :segments, keyword_init: true)
 
-        def self.flatten(commands)
-          new.flatten(commands)
+        def self.flatten(commands, preserve_initial_line: false)
+          new.flatten(commands, preserve_initial_line: preserve_initial_line)
         end
 
-        def flatten(commands)
+        def flatten(commands, preserve_initial_line: false)
           pen = PenState.new
           subpaths = []
           segments = []
@@ -22,7 +22,9 @@ module Emfsvg
               subpaths << build_result(segments)
               segments = []
             end
-            segments << ["M", [pen.current.dup]] if segments.empty? && letter != "M"
+            if segments.empty? && letter != "M" && !(preserve_initial_line && subpaths.empty? && letter == "L")
+              segments << ["M", [pen.current.dup]]
+            end
             points = resolve_command(pen, command)
             segments << [letter, points] if points
             next unless letter == "Z"
