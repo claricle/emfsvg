@@ -8,7 +8,7 @@ require "support/parity_corpus"
 # the known provenance of those artifacts. Any drift fails.
 #
 # To update the golden set after an intentional change:
-#   bundle exec ruby scripts/regenerate_golden.rb
+#   bundle exec ruby scripts/regenerate_golden.rb --write
 #   git diff spec/fixtures/golden/   # review
 #   git commit spec/fixtures/golden/
 
@@ -36,7 +36,7 @@ RSpec.describe "emfsvg golden master" do
         expected: #{expected.bytesize} bytes
         actual:   #{actual.bytesize} bytes
         first diff at byte offset: #{diff_offset}
-      To update the golden: bundle exec ruby scripts/regenerate_golden.rb
+      To update the golden: bundle exec ruby scripts/regenerate_golden.rb --write
     MSG
   end
 end

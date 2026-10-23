@@ -53,6 +53,12 @@ Run `bundle exec ruby scripts/check_parity_provenance.rb` to list unresolved
 metadata. This currently exits nonzero; it does not verify actual backend
 selection, loaded package identity, or native behavior.
 
+Development currently uses the temporary Git runtime pin
+`5c2c019138bab6f3c67f7602e8b410ba5a67c429`, separate from the corpus revision.
+`spec/runtime_dependency_spec.rb` verifies the lockfile, loaded Git checkout,
+and entry point independently. This is integration evidence; a containing
+qualified released package is still required.
+
 The companion `corpus-integrity` CI job checks the pinned inventory and setup
 contracts. The complete native-selected `model-parity` job remains pending
 verified upstream contracts, native artifacts, and a containing released `emf`
@@ -135,13 +141,23 @@ cc -I inc -L build -lemf2svg emf2svg_ref.c -o emf2svg_ref
 
 [source,bash]
 ----
-bundle exec ruby scripts/regenerate_golden.rb
+bundle exec ruby scripts/regenerate_golden.rb --check
+# Intentional promotion after the reference provenance is verified:
+bundle exec ruby scripts/regenerate_golden.rb --write
 ----
 
-`scripts/regenerate_golden.rb` validates the pinned external corpus and explicit C tooling, then writes both:
+`scripts/regenerate_golden.rb` validates the pinned external corpus and explicit C tooling, then stages both:
 
 * `spec/fixtures/golden/<name>.svg` from libemf2svg
 * `spec/fixtures/emfsvg_golden/<name>.svg` from the current emfsvg
+
+`--check` reports differences without changing committed files. `--write` requires
+the manifest's `c_reference.status` to be `verified`, a full `source_revision`,
+a `build_recipe`, and `binary_sha256` matching the explicit reference executable.
+The unresolved historical reference cannot be promoted as verified provenance.
+Promotion updates both artifact sets and their manifest digests together, using
+a cooperative writer lock and rollback on ordinary failures. This does not
+provide an atomic snapshot to concurrent readers or crash recovery.
 
 === Review and commit
 
@@ -150,6 +166,21 @@ bundle exec ruby scripts/regenerate_golden.rb
 git diff spec/fixtures/
 git commit spec/fixtures/
 ----
+
+== Runtime package inspection
+
+Build and inspect the actual runtime archive separately from the corpus checks:
+
+[source,bash]
+----
+bundle exec gem build emfsvg.gemspec --output /tmp/emfsvg.gem
+bundle exec ruby scripts/check_runtime_package.rb /tmp/emfsvg.gem
+----
+
+The checker verifies the archive and complete file inventory, rejects reference
+helpers and corpus files, and walks the installed runtime dependency graph. Its
+JSON report records the archive checksum, packaged paths and resolved dependency
+versions. This does not qualify parser provenance or native backend selection.
 
 == Reproducibility
 
@@ -175,8 +206,8 @@ known-divergence bookkeeping and the regression floor.
 checks. Corpus routing is pinned, while replacing the latter two groups with
 strict planned byte/digest oracles remains dependency-gated.
 
-Regeneration validates setup before writing. Complete atomic regeneration
-and manifest/provenance promotion remain required before reference updates.
+Regeneration validates setup before staging and rolls back ordinary promotion
+failures. Verified reference provenance remains required before reference updates.
 Do not treat the historical generation command as an approved provenance pin.
 
 == License
