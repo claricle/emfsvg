@@ -10,15 +10,17 @@ module Emfsvg
         module_function
 
         def parse_style(node)
+          fill = Svg::Paint.from_fill(node["fill"])
           {
-            fill: Svg::Paint.from_fill(node["fill"]),
+            fill: fill,
             stroke: Svg::Stroke.parse(
               stroke: node["stroke"],
               width: node["stroke-width"],
               dash_array: node["stroke-dasharray"],
               line_cap: node["stroke-linecap"],
               line_join: node["stroke-linejoin"],
-              miter_limit: node["stroke-miterlimit"]
+              miter_limit: node["stroke-miterlimit"],
+              fill: fill
             ),
             clip_path: node["clip-path"]
           }

@@ -23,11 +23,12 @@ module Emfsvg
       NULL_PEN_WIDTH_SENTINEL = "1px"
 
       attr_reader :paint, :width, :dash_array, :line_cap, :line_join, :miter_limit, :raw_width,
-                  :line_cap_explicit, :line_join_explicit
+                  :line_cap_explicit, :line_join_explicit, :null_pen_fallback
 
       def initialize(paint:, width: 1.0, dash_array: nil, line_cap: "round",
                      line_join: "round", miter_limit: 10.0, raw_width: nil,
-                     line_cap_explicit: false, line_join_explicit: false)
+                     line_cap_explicit: false, line_join_explicit: false,
+                     null_pen_fallback: true)
         @paint = paint
         @width = width.to_f
         @dash_array = dash_array
@@ -37,10 +38,12 @@ module Emfsvg
         @raw_width = raw_width
         @line_cap_explicit = line_cap_explicit
         @line_join_explicit = line_join_explicit
+        @null_pen_fallback = null_pen_fallback
       end
 
       def null_pen_sentinel?
         raw_width == NULL_PEN_WIDTH_SENTINEL &&
+          null_pen_fallback &&
           !line_cap_explicit &&
           !line_join_explicit
       end
@@ -63,7 +66,7 @@ module Emfsvg
         base | type_bit | END_CAP_BITS.fetch(line_cap, 0x0000) | LINE_JOIN_BITS.fetch(line_join, 0x0000)
       end
 
-      def self.parse(stroke:, width:, dash_array:, line_cap:, line_join:, miter_limit: nil)
+      def self.parse(stroke:, width:, dash_array:, line_cap:, line_join:, miter_limit: nil, fill: nil)
         new(
           paint: Paint.from_stroke(stroke),
           width: parse_width(width),
@@ -73,7 +76,8 @@ module Emfsvg
           miter_limit: parse_miter_limit(miter_limit),
           raw_width: width,
           line_cap_explicit: !line_cap.nil?,
-          line_join_explicit: !line_join.nil?
+          line_join_explicit: !line_join.nil?,
+          null_pen_fallback: fill.nil? || !fill.null?
         )
       end
 
