@@ -6,7 +6,7 @@ gemspec
 
 # Temporary development integration for the upstream #15 model contract.
 # Replace with a qualified release once a released tag contains this revision.
-gem "emf", git: "https://github.com/claricle/emf.git", ref: "3499dad89fd308ff190231769e2c2b67739f16d0"
+gem "emf", git: "https://github.com/claricle/emf.git", ref: "6ed27136394d13d7e065c93d0a802439d4586df4"
 
 gem "rake", "~> 13.0"
 

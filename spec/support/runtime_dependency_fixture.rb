@@ -8,7 +8,7 @@ require "json"
 module Emfsvg
   module SpecSupport
     module RuntimeDependencyFixture
-      RUNTIME_REVISION = "3499dad89fd308ff190231769e2c2b67739f16d0"
+      RUNTIME_REVISION = "6ed27136394d13d7e065c93d0a802439d4586df4"
       RUNTIME_REMOTE = "https://github.com/claricle/emf.git"
       LOCKFILE = File.expand_path("../../Gemfile.lock", __dir__)
 
