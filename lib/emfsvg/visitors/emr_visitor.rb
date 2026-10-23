@@ -1488,9 +1488,7 @@ module Emfsvg
       end
 
       def decode_utf16_text(string_bytes)
-        string_bytes.force_encoding("UTF-16LE").encode("UTF-8", undef: :replace, replace: "?")
-      rescue Encoding::InvalidByteSequenceError => e
-        raise ParseError, e.message, cause: e
+        string_bytes.force_encoding("UTF-16LE").encode("UTF-8", invalid: :replace, undef: :replace, replace: "?")
       end
 
       def emit_ext_text(wire, utf16:)
