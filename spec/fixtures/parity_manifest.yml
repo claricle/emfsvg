@@ -2263,3 +2263,6 @@ corrupted:
 inventories:
   round_trip_sha256: 235dabfa68b8eab5e94086c2257170e0d7b598a7154535f1433d0a0f4689d21c
   aggregate_sha256: 433e5e08aa367361cb79eb5c3b713d61f534414d958797426449e81f5f5e37fb
+  # Generated output must equal the committed C golden in these sorted rows.
+  compatibility_columns: [source, golden, generated]
+  compatibility_sha256: c657b826704b2325f9fc4e5e1a893b9b0f6147a9d32c6461a047fd9d4880d1ac
