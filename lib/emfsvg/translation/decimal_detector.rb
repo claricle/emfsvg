@@ -26,6 +26,8 @@ module Emfsvg
       def any_decimal?(element)
         return false unless element
 
+        return true if explicit_cosmetic_pixel_stroke?(element)
+
         element_attrs = decimal_attrs_for(element)
         return true if element_attrs.any? { |attr| decimal?(element.send(attr)) }
 
@@ -45,6 +47,16 @@ module Emfsvg
         return true if path&.any? { |cmd| cmd.args.any? { |a| scaler.unsafe?(a) } }
 
         element.children.any? { |c| any_unsafe?(c, scaler) }
+      end
+
+      # The EMF renderer preserves a cosmetic 1px width only when the
+      # translator uses a map scale. Explicit cap/join attributes
+      # distinguish real pens from the renderer's NULL-pen fallback.
+      def explicit_cosmetic_pixel_stroke?(element)
+        stroke = element.stroke if element.respond_to?(:stroke)
+        stroke && stroke.raw_width == "1px" &&
+          (stroke.line_cap_explicit || stroke.line_join_explicit) &&
+          !stroke.paint.null?
       end
 
       # Coordinate-bearing attributes per element class. Returns [] for

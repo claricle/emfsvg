@@ -40,4 +40,48 @@ RSpec.describe "cosmetic pen round-trip parity" do
 
     expect(stroke.pen_style & Emfsvg::Svg::Stroke::PS_GEOMETRIC).to eq(0)
   end
+
+  it "preserves explicit cosmetic pixels without changing geometry or text" do
+    svg = <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <path d="M0 0 L10 10" fill="none" stroke="#FF0000" stroke-width="1px"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1" y="12" font-size="8">A</text>
+      </svg>
+    SVG
+
+    output = Emfsvg.from_bytes(Emfsvg.from_svg(svg))
+
+    expect(output).to include('stroke-width="1px"')
+    expect(output).to include('d="M 0.0000,0.0000 L 10.0000,10.0000 "')
+    expect(output).to include('font-size="8.0000"')
+    expect(output).to include('width="20.0000" height="20.0000"')
+  end
+
+  it "keeps identity scaling for ordinary unitless strokes" do
+    svg = <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <path d="M0 0 L10 10" fill="none" stroke="#FF0000" stroke-width="1"/>
+      </svg>
+    SVG
+
+    output = Emfsvg.from_bytes(Emfsvg.from_svg(svg))
+
+    expect(output).to include('stroke-width="1.0000"')
+    expect(output).not_to include('stroke-width="1px"')
+  end
+
+  it "falls back to identity when cosmetic scaling would overflow" do
+    svg = <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" width="300020" height="20">
+        <path d="M300000 0 L300010 10" fill="none" stroke="#FF0000" stroke-width="1px"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    SVG
+
+    output = Emfsvg.from_bytes(Emfsvg.from_svg(svg))
+
+    expect(output).to include("M 300000.0000,0.0000 L 300010.0000,10.0000")
+    expect(output).to include('stroke-width="1.0000"')
+  end
 end

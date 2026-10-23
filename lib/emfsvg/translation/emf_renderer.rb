@@ -71,7 +71,8 @@ module Emfsvg
 
       private
 
-      # Preserve decimal coordinates when every scaled value fits an int32.
+      # Preserve decimal coordinates and explicit cosmetic 1px pens when
+      # every scaled coordinate fits an int32.
       def pick_scaler
         fixed = Scaler::Fixed.new
         if DecimalDetector.needs_scaling?(@document) && DecimalDetector.safe_for_fixed_scale?(@document, fixed)
