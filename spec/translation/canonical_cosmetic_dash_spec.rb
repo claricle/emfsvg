@@ -11,15 +11,23 @@ RSpec.describe "canonical cosmetic dash recovery" do
   [[0, 5, 1], [1, 6, 2], [2, 7, 3], [3, 8, 4]].each do |index, width, style|
     2.times do |fixed_index|
       fixed = fixed_index == 1
-      it "recovers cosmetic style #{style} with #{fixed ? 'fixed' : 'identity'} scaling" do
+      it "recovers cosmetic style #{style} with #{fixed ? 'fixed' : 'identity'} scaling", :aggregate_failures do
         path = source_paths.fetch(index)
-        pens, output = dash_conversion(path, fixed: fixed)
+        pens, output, records = dash_conversion(path, fixed: fixed)
 
-        expect(pens.first.width.x.to_i).to eq(width * (fixed ? 10_000 : 1))
+        expect(pens.first.width.x.to_i).to eq(width)
         expect(pens.first.pen_style.to_i).to eq(style)
+        polyline = records.grep(Emf::Emr::Binary::Records::Polyline).first
+        expect(polyline.aptl.first.x.to_i).to eq((300 + (index * 100)) * (fixed ? 10_000 : 1))
         expect(output).to include(path) unless fixed
         if fixed
-          following = Leptris::XML.parse(output).xpath("//*[local-name()='path']").last
+          paths = Leptris::XML.parse(output).xpath("//*[local-name()='path']")
+          source = Leptris::XML.parse(path).root
+          attributes = %w[d stroke stroke-dasharray stroke-linecap stroke-linejoin fill]
+          expect(attributes.map { |attribute| paths.first[attribute] })
+            .to eq(attributes.map { |attribute| source[attribute] })
+          expect(paths.first["stroke-width"]).to eq("1px")
+          following = paths.last
           expect(pens.last.width.x.to_i).to eq(1)
           expect(pens.last.pen_style.to_i).to eq(0)
           expect([following["d"], following["stroke"], following["stroke-width"]])
@@ -78,5 +86,14 @@ RSpec.describe "canonical cosmetic dash recovery" do
     expect(pens.first.width.x.to_i).to eq(5)
     expect(pens.first.pen_style.to_i).to eq(0x10001)
     expect(output).to include(path)
+  end
+
+  it "keeps fixed-scale noncanonical and geometric pen widths scaled" do
+    ordinary = source_paths.first.sub("  stroke-linecap", " stroke-linecap")
+    geometric = source_paths.first.sub('stroke-width="1.0000"', 'stroke-width="5.0000"')
+    pens, = dash_conversion(ordinary + geometric, fixed: true)
+
+    expect(pens.map { |pen| [pen.width.x.to_i, pen.pen_style.to_i] })
+      .to eq([[10_000, 0x10001], [50_000, 0x10001], [1, 0]])
   end
 end

@@ -89,7 +89,8 @@ module Emfsvg
         def emit_create_pen(context, stroke)
           handle = context.allocate_handle
           width = if stroke.canonical_cosmetic_dash
-                    context.point_attrs(stroke.canonical_cosmetic_dash[0], 0)
+                    # Cosmetic dash lengths use stored width without coordinate mapping.
+                    { x: stroke.canonical_cosmetic_dash[0], y: 0 }
                   elsif stroke.cosmetic_pixel_width?
                     { x: 1, y: 0 }
                   else

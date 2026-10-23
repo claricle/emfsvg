@@ -9,7 +9,8 @@ module Emfsvg
         bytes = Emfsvg.from_svg(svg)
         parsed = Emf.parse(bytes)
         expect(parsed.errors).to be_empty
-        [parsed.records.map(&:wire).grep(Emf::Emr::Binary::Records::CreatePen), Emfsvg.from_bytes(bytes)]
+        records = parsed.records.map(&:wire)
+        [records.grep(Emf::Emr::Binary::Records::CreatePen), Emfsvg.from_bytes(bytes), records]
       end
     end
   end
