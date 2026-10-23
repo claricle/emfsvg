@@ -11,10 +11,20 @@ module Emfsvg
 
       def initialize
         @clip_paths = {}
+        @references = {}
       end
 
       def register(clip_path)
         @clip_paths[clip_path.id] = clip_path
+      end
+
+      def referenced?(id)
+        @references.key?(id)
+      end
+
+      def reference(clip_path_attr)
+        match = clip_path_attr&.match(URL_RE)
+        @references[match[1]] = true if match
       end
 
       def lookup(clip_path_attr)
@@ -36,6 +46,7 @@ module Emfsvg
         return unless element
 
         registry.register(element) if element.is_a?(Elements::ClipPath)
+        registry.reference(element.clip_path) if element.respond_to?(:clip_path)
         element.children.each { |c| collect_clip_paths(c, registry) }
       end
     end

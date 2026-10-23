@@ -9,19 +9,44 @@ module Emfsvg
         ELEMENT_NAME = "clipPath"
         Element.register("clipPath", self)
 
-        attr_reader :id, :children
+        attr_reader :id, :children, :unused_rectangle_bounds
 
-        def initialize(id:, children:)
+        def initialize(id:, children:, unused_rectangle_bounds: nil)
           @id = id
           @children = children
+          @unused_rectangle_bounds = unused_rectangle_bounds
         end
 
         def self.from_node(node, &source_tag)
           new(
             id: node["id"],
+            unused_rectangle_bounds: canonical_unused_rectangle(node, &source_tag),
             children: node.element_children.map { |c| Element.from_node(c, &source_tag) }
           )
         end
+
+        # Only the renderer's exact rectangle spelling supports preservation of
+        # an otherwise inert resource via IntersectClipRect followed by reset.
+        def self.canonical_unused_rectangle(node)
+          return unless node["id"]&.match?(/\Aclip-\d+\z/) && node.attribute_nodes.size == 1
+          return unless node.element_children.size == 1 && block_given?
+
+          path = node.element_children.first
+          return unless path.name == "path" && path.attribute_nodes.map(&:name) == ["d"]
+
+          number = "(-?\\d+\\.\\d{4})"
+          lines = " L #{number},#{number}" * 4
+          pattern = "\\AM #{number},#{number}#{lines} Z Z\\z"
+          match = path["d"]&.match(Regexp.new(pattern))
+          return unless match && yield(path) == %(<path d="#{path['d']}" />)
+
+          left, top, right, top2, right2, bottom, left2, bottom2, left3, top3 = match.captures.map(&:to_f)
+          return unless [left, top, right, bottom, left, top] == [left2, top2, right2, bottom2, left3, top3]
+          return unless left <= right && top <= bottom
+
+          [left, top, right, bottom]
+        end
+        private_class_method :canonical_unused_rectangle
 
         # Bounds [left, top, right, bottom] of the clip region for
         # IntersectClipRect emission. Handles three forms:

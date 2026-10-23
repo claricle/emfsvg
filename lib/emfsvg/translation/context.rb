@@ -29,6 +29,7 @@ module Emfsvg
         @clip_path_registry = clip_path_registry
         @scaler = scaler
         @next_handle = 1
+        @unused_clip_safe = true
       end
 
       # Allocate the next 1-indexed GDI object handle. Always increments
@@ -44,8 +45,29 @@ module Emfsvg
         @next_handle
       end
 
+      CLIP_MUTATIONS = %i[INTERSECTCLIPRECT EXCLUDECLIPRECT EXTSELECTCLIPRGN
+                          OFFSETCLIPRGN SELECTCLIPPATH SETMETARGN].map do |name|
+        Emf::Emr::Binary::TypeCodes.const_get(name)
+      end.freeze
+
       def emit(wire_class, **attrs)
+        # Once an ordinary clip operation occurs, conservatively stop emitting
+        # unused resources. RestoreDC need not be modeled to prove a reset safe.
+        @unused_clip_safe = false if CLIP_MUTATIONS.include?(attrs[:i_type])
         @emitter.emit(wire_class, **attrs)
+      end
+
+      def emit_unused_clip_rectangle(bounds)
+        return unless @unused_clip_safe
+
+        # These paired operations leave the known-empty clip unchanged and
+        # introduce no SaveDC snapshot into either native or reference stacks.
+        @emitter.emit(Emf::Emr::Binary::Records::IntersectClipRect,
+                      i_type: Emf::Emr::Binary::TypeCodes::INTERSECTCLIPRECT,
+                      rcl_clip: rect_attrs(*bounds))
+        @emitter.emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
+                      i_type: Emf::Emr::Binary::TypeCodes::EXTSELECTCLIPRGN,
+                      cb_rgn_data: 0, dw_mode: 5)
       end
 
       def records
