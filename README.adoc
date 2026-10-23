@@ -6,13 +6,17 @@ wrapper around the GPLv2 `libemf2svg` C library.
 
 == Status
 
-* **EMF → SVG**: 208/208 fixtures (100%) semantically match libemf2svg.
-  Verified with the lossy `SvgMatcher` at 0.1px tolerance.
-  79/208 are byte-identical to libemf2svg's output.
-* **SVG → EMF**: functional for shapes, transforms, clips, text, and
-  images. Synthetic SVGs round-trip byte-equal through
-  `SVG → EMF → SVG`. The lossy matcher and golden-master tooling
-  are in place for iterative fidelity improvement.
+Both conversion directions are implemented. Compatibility is enforced by strict
+byte comparisons against the pinned corpus and committed SVG artifacts; the
+lossy matcher is a separate diagnostic tool, not the parity acceptance gate.
+
+Current integration uses a temporary `emf` Git pin. The strict checks expose
+known failures, including the `image1` round trip and unverified historical C
+provenance. The full corpus, corrupted-input resource behavior, native backend,
+and a containing released `emf` package remain unqualified. See
+link:docs/compatibility_matrix.adoc[the compatibility matrix] for contracts and
+current evidence, and link:spec/fixtures/README.adoc[fixture setup] before running
+corpus-dependent checks.
 
 == Synopsis
 
@@ -46,7 +50,7 @@ Options (convert):
 [cols="1,4"]
 |===
 | EMF → SVG | `Emf::Model::Metafile` → `Emfsvg::Renderer` → `Emfsvg::Visitors::EmrVisitor` → `Emfsvg::SvgBuilder`
-| SVG → EMF | SVG bytes → Nokogiri → `Emfsvg::Svg::Document` → `Emfsvg::Translation::EmfRenderer` → `Emf::Model::Metafile` → `Emf.serialize`
+| SVG → EMF | SVG bytes → leptris → `Emfsvg::Svg::Document` → `Emfsvg::Translation::EmfRenderer` → `Emf::Model::Metafile` → `Emf.serialize`
 |===
 
 Both directions share:
@@ -104,25 +108,54 @@ Requires Ruby >= 3.1.
   git clone https://github.com/claricle/emfsvg
   cd emfsvg
   bundle install
-  bundle exec rspec
+
+The checkout's `Gemfile` temporarily pins `emf` to
+`5c2c019138bab6f3c67f7602e8b410ba5a67c429` for model integration. This is
+separate from the external fixture corpus revision and does not establish
+compatibility with a released `emf` package.
+
+Follow link:spec/fixtures/README.adoc[the explicit corpus setup] to materialize
+`EMF_FIXTURE_ROOT` at the manifest's exact revision. Missing roots, changed
+inventories, or changed fixture bytes fail setup; there is no sibling-checkout
+or developer-machine fallback.
+
+  bundle exec rspec spec/parity_manifest_spec.rb spec/parity_corpus_spec.rb
+  bundle exec rspec spec/golden_spec.rb spec/round_trip_golden_spec.rb spec/compat_with_libemf2svg_spec.rb --dry-run
   bundle exec rubocop
+
+Dry-run verifies collection, not parity. The strict comparison groups currently
+have known failures; the complete suite is not a passing qualification gate.
+Ordinary compatibility specs use committed artifacts without invoking C.
+
+Live C tools require both `EMF2SVG_REF_PATH` (an executable wrapper) and
+`EMF2SVG_REF_LIB_DIR` (its library directory), resolved only by the spec support
+`Emfsvg::Compat` helper. Neither has a machine-specific default. The live fidelity
+spec is opt-in with `EMFSVG_LIVE_REFERENCE=1`; see the fixture setup for commands
+and the unresolved historical reference provenance.
 
 === Developer scripts
 
 [cols="1,3"]
 |===
-| `scripts/run_emf_svg_compare.rb [limit] [tolerance]` | EMF→SVG fidelity vs libemf2svg (208 fixtures, 100% pass at 0.1px)
-| `scripts/run_round_trip.rb [limit] [tolerance]` | SVG→EMF→SVG round-trip scan
+| `scripts/run_emf_svg_compare.rb [limit] [tolerance]` | Lossy EMF→SVG diagnostic against the explicitly configured live C reference
+| `scripts/run_round_trip.rb [limit] [tolerance]` | Lossy SVG→EMF→SVG scan of the verified artifact inventory
 | `scripts/diff_fixture.rb <fixture.svg>` | Element-by-element diff between input and round-trip output
 | `scripts/diagnose_round_trip.rb [limit]` | Per-fixture failure reasons for round-trip scan
-| `scripts/regenerate_golden.rb` | Regenerate libemf2svg + emfsvg golden baselines
-| `scripts/run_compat_check.rb` | Legacy compat matrix vs libemf2svg
+| `scripts/regenerate_golden.rb --check` | Stage both baseline sets and report drift without changing committed artifacts
+| `scripts/regenerate_golden.rb --write` | Promote both sets and manifest digests after verified C provenance checks
+| `scripts/run_compat_check.rb` | Diagnostic matrix against the explicitly configured live C reference
 |===
+
+Regeneration requires the verified corpus and explicit C setup. `--write` also
+requires a verified reference status, exact source revision, build recipe, and
+matching executable checksum in the manifest. Review artifact and manifest
+diffs before committing. See link:spec/fixtures/README.adoc[the regeneration
+procedure] for promotion safeguards and limits.
 
 == Dependencies
 
 * `emf` (~> 0.1) — EMF binary parser, domain model, and serializer
-* `nokogiri` (~> 1.16) — SVG parser
+* `leptris` (>= 1.9.365.1) — SVG parser
 * `fontisan` — cmap parsing for glyph-index text
 * `libpng` (~> 1.6) — PNG encode/decode for image round-trip
 * `base64`, `bigdecimal` — stdlib

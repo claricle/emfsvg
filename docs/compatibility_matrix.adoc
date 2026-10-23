@@ -1,132 +1,143 @@
 = Compatibility with libemf2svg
 
-`emfsvg` is a clean-room rewrite that handles a subset of EMF records.
-This document tracks the gap against `libemf2svg` (the GPLv2 C library
-we replace).
+`emfsvg` converts EMF and SVG using the `emf` domain model. The parity
+acceptance contract is exact bytes against committed artifacts. Lossy SVG
+comparisons remain useful diagnostics, but cannot establish byte parity.
 
-== How to measure
+== Reproduce the checks
 
-Run the compat check after building `libemf2svg`:
+Follow link:../spec/fixtures/README.adoc[fixture setup] to materialize the
+external corpus and set `EMF_FIXTURE_ROOT`. The manifest pins corpus revision
+`a549346e4c4cacf9da6c86ab451a9f8401fa9672`, 208 accepted EMF inputs,
+21 corrupted inputs, and 416 SVG artifacts. The shared resolver validates the
+revision, exact inventories, and hashes before comparisons are collected.
+Missing roots, unexpected or missing files, and changed bytes fail setup.
+There are no developer-machine or sibling-checkout defaults.
 
-    cd ../libemf2svg
-    cmake -S . -B build -DLONLY=ON
-    make -C build
-    cc -I inc -L build -lemf2svg emf2svg_ref.c -o emf2svg_ref
+The runtime is independent of that corpus checkout. Development temporarily
+pins `emf` to Git revision `5c2c019138bab6f3c67f7602e8b410ba5a67c429`.
+A containing released package, native backend selection, and upstream resource
+and diagnostic contracts remain qualification requirements. A valid corpus
+inventory does not establish runtime qualification.
 
-    cd ../emfsvg
-    bundle exec ruby scripts/run_compat_check.rb
+[source,bash]
+----
+bundle exec rspec spec/parity_manifest_spec.rb spec/parity_corpus_spec.rb
+bundle exec rspec spec/golden_spec.rb spec/round_trip_golden_spec.rb spec/compat_with_libemf2svg_spec.rb --dry-run
+----
 
-This walks every EMF fixture, generates both SVG outputs, and prints
-a per-fixture + aggregate comparison.
+Collection verifies the contract's size, not its outcome. Once setup is valid,
+run a selected real comparison, for example:
 
-== What "compatibility" means here
+[source,bash]
+----
+bundle exec rspec spec/round_trip_golden_spec.rb --example image1
+bundle exec rspec spec/compat_with_libemf2svg_spec.rb --example image1
+----
 
-We do NOT assert byte-identical output. libemf2svg:
+== Strict comparison contracts
 
-* emits different whitespace and attribute ordering,
-* wraps primitives in `<g transform="translate(...)">` shells,
-* includes a SVG DTD doctype,
-* renders text via embedded `<text>` elements with iconv'd strings,
-* decodes DIB bitmaps to base64 PNG.
+[cols="1,1,4",options="header"]
+|===
+| Spec | Examples | Assertions
+| `spec/golden_spec.rb` | 208
+| Every accepted EMF renders byte-equal to its committed `golden/` C artifact.
+| `spec/round_trip_golden_spec.rb` | 209
+| Every `emfsvg_golden/` artifact survives SVG → EMF → SVG byte-equal (208), plus the exact sorted artifact inventory (1).
+| `spec/compat_with_libemf2svg_spec.rb` | 426
+| Ruby-to-C artifact byte equality (208), artifact digest and verified C provenance (208), fixed-sample byte equality and valid SVG elements (9), and the sorted source/reference/generated-output inventory digest (1).
+|===
 
-Reproducing all of that exactly is not the goal. The goal is
-**visual and structural equivalence** for the records `emfsvg`
-handles, plus a documented superset gap for the records it doesn't.
+These comparisons use committed artifacts without invoking live C. The strict
+209/426 groups have no known-divergence exemptions, semantic tolerance, or
+missing-reference skips. The historical divergence list does not waive their
+byte-equality assertions. Source and artifact inventories are checked even when
+only one example is selected.
 
-== Current state (as of 2026-07-24)
+== Current evidence and remaining qualification
 
-Aggregate across all 208 fixtures in `spec/fixtures/`:
+At the strict-contract implementation (`24bf401`), the 209- and 426-example
+groups collected with no pending examples. A selected real `image1` run executed
+four examples with two failures:
+
+* The round trip differed at byte offset 958: expected 39,849 bytes, actual
+  31,074 bytes.
+* The C artifact provenance assertion failed because the historical reference
+  is unverified and its exact source revision is missing.
+
+The selected direct Ruby-to-C `image1` byte comparison and fixed-sample
+`image1` byte/structure check passed. This does not establish a full-corpus
+pass: the complete 208-input conversion batch and generated-output aggregate
+have not been qualified. No current 100% fidelity claim is supported.
+
+Committed hashes establish artifact integrity. They do not recover the missing
+historical C source/build provenance. `scripts/check_parity_provenance.rb`
+reports unresolved qualification metadata and currently exits nonzero.
+
+Fresh-process tests cover a real supported conversion and malformed-byte parse
+error without loading the reference helper or executing the configured C
+sentinel. On the tested macOS host, loaded-library inspection was denied and
+remains explicitly pending. Native backend isolation is therefore unqualified.
+
+The bounded subprocess helper (`c4960c6`) has benign-child macOS evidence for
+RSS/time enforcement and process-group cleanup. macOS address-space enforcement
+is unsupported and authoritative mode is refused. Linux `/proc` metrics and
+child `RLIMIT_AS` are implemented but unverified on a Linux host. There is no
+calibrated corpus baseline or corrupted-corpus resource acceptance result.
+
+== Explicit live C diagnostics
+
+`Emfsvg::Compat` in `spec/support/emfsvg_compat.rb` is the sole live C resolver.
+Set both variables explicitly; the wrapper and library directory must exist:
+
+[source,bash]
+----
+export EMF2SVG_REF_PATH=/absolute/path/to/emf2svg_ref
+export EMF2SVG_REF_LIB_DIR=/absolute/path/to/library-directory
+bundle exec ruby scripts/run_compat_check.rb
+bundle exec ruby scripts/run_emf_svg_compare.rb
+EMFSVG_LIVE_REFERENCE=1 bundle exec rspec spec/fidelity_regression_spec.rb
+----
+
+These tools require the verified corpus as well. Missing setup and failed C
+conversions fail with an error. The fidelity spec is excluded unless explicitly
+enabled with `EMFSVG_LIVE_REFERENCE=1`. Diagnostic byte ratios, element overlap,
+and lossy matcher results are separate from the strict acceptance contracts.
+
+== Guarded baseline regeneration
+
+[source,bash]
+----
+bundle exec ruby scripts/regenerate_golden.rb --check
+# Only after verifying reference provenance and intentionally accepting drift:
+bundle exec ruby scripts/regenerate_golden.rb --write
+----
+
+Both modes validate the corpus and explicit C tooling and stage both baseline
+sets. `--check` reports differences without changing committed artifacts.
+`--write` requires verified C status, an exact source revision, a build recipe,
+and an executable checksum matching the configured wrapper. It updates both
+artifact sets and manifest digests with a cooperative writer lock and rollback
+on ordinary failures. Concurrent-reader atomicity and crash recovery are not
+provided. Review the entire fixture diff before committing; see
+link:../spec/fixtures/README.adoc[the full procedure].
+
+== Historical measurements
+
+The following measurements were reported on 2026-07-24 for an earlier renderer.
+They have not been rerun against the current runtime pin or strict contracts and
+must not be used as current compatibility or performance acceptance evidence.
 
 [cols="1,4"]
 |===
-| Total fixtures       | 208
-| libemf2svg output    | ~59 MB
-| emfsvg output        | ~25 MB
-| Byte ratio           | 43.2%
-| Avg element overlap  | ~50%
+| Total fixtures | 208
+| libemf2svg output | ~59 MB
+| emfsvg output | ~25 MB
+| Byte ratio | 43.2%
+| Average element overlap | ~50%
 |===
 
-The ratio varies wildly per fixture:
-
-* **0-5%**: fixtures dominated by records `emfsvg` doesn't render yet
-  (text, bitmaps, EMF+ drawing records, region operations).
-* **20-50%**: typical mixed-content fixtures.
-* **60-80%**: fixtures whose records `emfsvg` does handle.
-
-== Records emfsvg handles (visit_* methods in EmrVisitor)
-
-* Primitives: Rectangle, Ellipse, RoundRect, LineTo, MoveToEx,
-  Polygon/Polyline + 16-bit variants
-* Paths: BeginPath/EndPath/CloseFigure/FillPath/StrokePath/
-  StrokeAndFillPath/AbortPath
-* State: SetTextColor, SetBkColor, SetBkMode, SetMapMode, SetRop2,
-  SetPolyFillMode, SetTextAlign, SetStretchBltMode
-* Transforms: SetWorldTransform, ModifyWorldTransform
-* Objects: CreatePen, CreateBrushIndirect, SelectObject, DeleteObject,
-  SaveDc, RestoreDc
-* Misc: SetMiterLimit, SetWindow/Viewport Org/Ext
-
-== Records emfsvg does NOT handle yet
-
-* Text: ExtTextOutA/W, PolyTextOutA/W (needs UTF-16 + glyph handling)
-* Bitmaps: BitBlt, StretchBlt, StretchDIBits, AlphaBlend, TransparentBlt,
-  MaskBlt, PlgBlt (needs DIB decoding)
-* Arc family: Arc, ArcTo, Chord, Pie (parametric path reconstruction)
-* Beziers: PolyBezier, PolyBezierTo + 16-bit variants
-* Clipping: IntersectClipRect, ExtSelectClipRgn, SelectClipPath
-* PolyPolygon / PolyPolyline (multi-subpath)
-* Region ops: FillRgn, FrameRgn, InvertRgn, PaintRgn
-* Gradients: GradientFill
-* EMF+ drawing records types (separate format; emf parses them but
-  emfsvg does not yet render them)
-
-== Spec coverage
-
-`spec/compat_with_libemf2svg_spec.rb` auto-skips if `libemf2svg`'s
-binary is not available. It:
-
-1. For every fixture: asserts both emfsvg and libemf2svg produce
-   well-formed XML.
-2. For a sample: asserts emfsvg emits only element types that also
-   appear in libemf2svg's output (no foreign tags).
-3. Regression floor: emfsvg's total byte output for the simple
-   fixtures is >= 30% of libemf2svg's. Tighten as handlers are added.
-
-== Path forward
-
-Each new record handler in `EmrVisitor` should:
-
-1. Be added to the `HANDLERS` hash.
-2. Add a per-record spec in `spec/per_record/`.
-3. Move the corresponding fixture from the "0-5%" bucket to a higher
-   bucket in the compat matrix.
-4. Optionally bump the regression floor in the compat spec.
-
-The compat matrix is regenerated by CI on every PR (when the libemf2svg
-binary is available) so regressions are caught immediately.
-
-== SVG → EMF direction
-
-The reverse direction (new in 0.2.0) is exercised by a round-trip
-test: `SVG → EMF → SVG` must reproduce the input SVG byte-for-byte
-for every fixture in `spec/fixtures/emfsvg_golden/`. Because the
-EMF→SVG side is locked to libemf2svg byte-exact parity, this
-transitively pins the SVG→EMF direction without needing a separate
-C reference.
-
-Run the round-trip matrix:
-
-    bundle exec ruby scripts/run_round_trip.rb
-
-Phase 8 status (2026-07-26):
-
-* Handlers in place for: rect, ellipse, circle, line, polyline,
-  polygon, path, group (with transform), text (basic), image (PNG).
-* Round-trip byte-equality on the full 208-fixture golden set is
-  partial — fixtures using glyph-index text, EMF+ records, pattern
-  brushes, and complex filters are divergent by design.
-* The `spec/round_trip_golden_spec.rb` regression floor catches
-  catastrophic regressions where round-trips that USED to pass stop
-  passing.
-* `spec/fixtures/svg_to_emf_known_divergent.txt` lists fixtures
-  explicitly excluded with a reason.
+These output-size and structural measurements do not measure rendering time,
+memory limits, visual equality, or byte equality. Earlier partial round-trip
+results and semantic-match percentages likewise do not establish the strict
+contracts above.
