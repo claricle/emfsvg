@@ -5,23 +5,13 @@ require_relative "../scripts/support/calibration_production_adapter"
 
 RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
   include Emfsvg::SpecSupport::CalibrationProductionFixture
+  include Emfsvg::SpecSupport::CalibrationProductionPreflightFixture
 
   let(:svg_digest) { "a" * 64 }
   let(:resource_exception) do
     { "class" => "Emfsvg::ResourceLimitError", "message" => "limit exceeded", "resource" => "input_bytes",
       "limit" => 10, "actual" => 11, "cause" => nil }
   end
-  let(:adapter_for_outcome) do
-    lambda do |directory, outcome|
-      FileUtils.mkdir_p(directory)
-      File.write(File.join(directory, "emf.rb"), "runtime")
-      library_path = File.join(directory, "native.dylib")
-      File.write(library_path, "native")
-      input = production_input(directory, "input.emf", "fixture", outcome)
-      production_adapter(directory, [input], library: library_path)
-    end
-  end
-
   it "rejects malformed pinned outcomes during construction" do
     valid_svg = { "kind" => "svg", "warnings" => [], "svg_sha256" => svg_digest }
     valid_unreadable = { "kind" => "unreadable", "warnings" => [],
@@ -50,7 +40,7 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
     Dir.mktmpdir do |directory|
       malformed.each do |outcome, error|
         expect do
-          adapter_for_outcome.call(directory, outcome)
+          build_adapter_for_outcome(directory, outcome)
         end.to raise_error(Emfsvg::ResourceCalibration::Rejected, error)
       end
     end
@@ -71,7 +61,7 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
     ]
 
     Dir.mktmpdir do |directory|
-      outcomes.each { |outcome| expect { adapter_for_outcome.call(directory, outcome) }.not_to raise_error }
+      outcomes.each { |outcome| expect { build_adapter_for_outcome(directory, outcome) }.not_to raise_error }
     end
   end
 end
