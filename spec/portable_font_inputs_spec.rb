@@ -42,6 +42,16 @@ RSpec.describe PortableFontInputs do
     expect(contract.fetch("fonts").values.map { |font| font.fetch("license_provenance") }).to all(include("EULA"))
   end
 
+  it "provisions fonts without a C reference and omits it from the contract" do
+    options.delete("c_reference")
+
+    contract = provisioner.provision
+
+    expect(JSON.parse(File.read(options.fetch("contract_path")))).to eq(contract)
+    expect(contract).not_to have_key("c_reference")
+    expect(contract.fetch("fonts").keys).to eq(%w[arial_regular arial_bold verdana_regular verdana_bold])
+  end
+
   it "rejects an installer checksum before invoking extraction and removes partial staging" do
     allow(extractor).to receive(:call)
     bad = described_class.new(options, downloader: ->(_url, path) { File.write(path, "wrong") }, extractor: extractor)
@@ -96,6 +106,11 @@ RSpec.describe PortableFontInputs do
   it "rejects missing reference files" do
     options.fetch("c_reference")["library"] = File.join(@directory, "missing")
     expect { provisioner.provision }.to raise_error(/Missing reference library/)
+  end
+
+  it "rejects relative supplied reference paths" do
+    options.fetch("c_reference")["binary"] = "relative"
+    expect { provisioner.provision }.to raise_error(/absolute path for c_reference.binary/)
   end
 
   it "rejects missing corpus directories" do

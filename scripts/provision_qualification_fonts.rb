@@ -2,7 +2,7 @@
 
 # Usage: bundle exec ruby scripts/provision_qualification_fonts.rb OPTIONS.json
 # Required absolute paths: staging_directory (existing), corpus_root (existing),
-# output_directory, contract_path (new), c_reference: {binary:, library:} (existing).
+# output_directory, contract_path (new); optional c_reference: {binary:, library:} (existing).
 # Optional installers_directory reuses locally downloaded, hash-pinned EXEs.
 # Requires 7z/7zz on PATH. Accept the installers' accompanying Microsoft corefonts
 # EULA before use: https://corefonts.sourceforge.net/eula.htm. No fonts are bundled.

@@ -61,9 +61,11 @@ class PortableFontInputs
       path = absolute_path(@options.fetch(key), key)
       raise "Missing directory for #{key}: #{path}" unless File.directory?(path)
     end
-    %w[binary library].each do |key|
-      path = absolute_path(@options.fetch("c_reference").fetch(key), "c_reference.#{key}")
-      raise "Missing reference #{key}: #{path}" unless File.file?(path)
+    if @options.key?("c_reference")
+      %w[binary library].each do |key|
+        path = absolute_path(@options.fetch("c_reference").fetch(key), "c_reference.#{key}")
+        raise "Missing reference #{key}: #{path}" unless File.file?(path)
+      end
     end
     absolute_path(@options.fetch("output_directory"), "output_directory")
     path = absolute_path(@options.fetch("contract_path"), "contract_path")
