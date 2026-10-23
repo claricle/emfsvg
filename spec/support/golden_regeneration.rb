@@ -14,6 +14,21 @@ module Emfsvg
 
       KINDS = { "golden" => "golden", "round_trip" => "emfsvg_golden" }.freeze
 
+      # Keep this inode stable across promotions and process exits. Removing the
+      # file would let a new writer lock a different inode while a waiter holds it.
+      class FixtureLock
+        def self.synchronize(parent)
+          path = File.join(File.realpath(parent), ".golden-regeneration.lock")
+          File.open(path, File::RDWR | File::CREAT, 0o600) do |lock|
+            unless lock.flock(File::LOCK_EX | File::LOCK_NB)
+              raise Error, "Another golden regeneration holds the fixture directory lock"
+            end
+
+            yield
+          end
+        end
+      end
+
       # Renames are individually atomic. Cooperating writers must hold the same
       # directory lock; readers must not run during promotion. A process/host crash
       # can require manual recovery from the retained transaction directory.
@@ -59,14 +74,7 @@ module Emfsvg
         verify_committed_inventory!
         verify_reference_provenance! unless check
         parent = File.join(@project_root, "spec/fixtures")
-        File.open(parent) do |lock|
-          unless lock.flock(File::LOCK_EX | File::LOCK_NB)
-            raise Error,
-                  "Another golden regeneration holds the fixture directory lock"
-          end
-
-          run_locked(parent, check)
-        end
+        FixtureLock.synchronize(parent) { run_locked(parent, check) }
       end
 
       private

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
+require "timeout"
 
 RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
   include Emfsvg::SpecSupport::GoldenRegenerationFixture
@@ -19,9 +20,9 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
   end
 
   it "fails check with actionable differences and preserves every baseline byte" do
-    with_regeneration(changed: true) do |runner, project, manifest, output, _corpus|
+    with_regeneration(changed: true) do |_runner, project, manifest, output, corpus|
       before = regeneration_snapshot(project, manifest)
-      expect(regeneration_check_exit(runner, output)).to eq(1)
+      expect(regeneration_check_exit(corpus, project, manifest, output)).to eq(1)
       expect(regeneration_snapshot(project, manifest)).to eq(before)
       difference = JSON.parse(output.string).fetch("differences").first
       expect(difference).to include("group" => "golden", "basename" => "test-000")
@@ -38,6 +39,7 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
         runner.run
       end.to raise_error(described_class::Error,
                          /golden conversion failed for test-001.*synthetic conversion failed/)
+      expect { runner.run(check: true) }.to raise_error(described_class::Error, /synthetic conversion failed/)
       expect(regeneration_snapshot(project, manifest)).to eq(before)
       expect(Dir.glob(File.join(project, "spec/fixtures/.golden-regeneration-*"))).to be_empty
     end
@@ -92,6 +94,27 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
       corpus.manifest.fetch("provenance").fetch("c_reference")["build_recipe"] = " \n\t"
       before = regeneration_snapshot(project, manifest)
       expect { runner.run }.to raise_error(described_class::Error, /verified c_reference provenance/)
+      expect(regeneration_snapshot(project, manifest)).to eq(before)
+    end
+  end
+
+  it "rejects a competing process and releases its regular-file lock after an error" do
+    with_regeneration do |runner, project, manifest, _output, _corpus|
+      before = regeneration_snapshot(project, manifest)
+      parent = File.join(project, "spec/fixtures")
+      command = regeneration_process("lock", parent)
+      Open3.popen3({ "TMPDIR" => File.dirname(project) }, *command) do |input, output, error, process|
+        begin
+          expect(Timeout.timeout(10) { output.gets }).to eq("locked\n")
+          expect { runner.run(check: true) }.to raise_error(described_class::Error, /Another golden regeneration/)
+        ensure
+          input.close
+        end
+        expect(process.value.exitstatus).to eq(1)
+        expect(error.read).to include("synthetic lock failure")
+      end
+      expect(runner.run(check: true)).to be(true)
+      expect(runner.run(check: true)).to be(true)
       expect(regeneration_snapshot(project, manifest)).to eq(before)
     end
   end
