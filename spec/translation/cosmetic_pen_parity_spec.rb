@@ -71,7 +71,7 @@ RSpec.describe "cosmetic pen round-trip parity" do
     expect(output).not_to include('stroke-width="1px"')
   end
 
-  it "falls back to identity when cosmetic scaling would overflow" do
+  it "preserves cosmetic pixels for narrow geometry at a large origin" do
     svg = <<~SVG
       <svg xmlns="http://www.w3.org/2000/svg" width="300020" height="20">
         <path d="M300000 0 L300010 10" fill="none" stroke="#FF0000" stroke-width="1px"
@@ -82,6 +82,20 @@ RSpec.describe "cosmetic pen round-trip parity" do
     output = Emfsvg.from_bytes(Emfsvg.from_svg(svg))
 
     expect(output).to include("M 300000.0000,0.0000 L 300010.0000,10.0000")
+    expect(output).to include('stroke-width="1px"')
+  end
+
+  it "falls back to identity when the geometry span would overflow cosmetic scaling" do
+    svg = <<~SVG
+      <svg xmlns="http://www.w3.org/2000/svg" width="600020" height="20">
+        <path d="M0 0 L600000 10" fill="none" stroke="#FF0000" stroke-width="1px"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    SVG
+
+    output = Emfsvg.from_bytes(Emfsvg.from_svg(svg))
+
+    expect(output).to include("M 0.0000,0.0000 L 600000.0000,10.0000")
     expect(output).to include('stroke-width="1.0000"')
   end
 end
