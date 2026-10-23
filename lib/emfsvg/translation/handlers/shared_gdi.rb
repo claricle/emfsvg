@@ -70,7 +70,9 @@ module Emfsvg
           # Exact built-ins opt in: custom handlers may depend on inherited
           # state. Shapes install pen/brush/miter and absolute geometry;
           # untransformed text installs font/color/alignment and its position.
+          # Images use explicit DIB data and destination geometry.
           return !element.transformed? if instance_of?(TextHandler)
+          return true if instance_of?(ImageHandler)
 
           [PathHandler, RectHandler, EllipseHandler, LineHandler,
            PolylineHandler, PolygonHandler].include?(self.class) && element.stroke && element.fill
