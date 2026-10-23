@@ -61,7 +61,8 @@ module Emfsvg
         end
 
         def self.parse_weight(value)
-          return 400 if value.nil? || value == "normal"
+          return 0 if value.nil?
+          return 400 if value == "normal"
 
           value == "bold" ? 700 : value.to_i
         end
