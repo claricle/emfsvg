@@ -24,6 +24,7 @@ module Emfsvg
   autoload :DibEncoder, "emfsvg/dib_encoder"
   autoload :Svg, "emfsvg/svg"
   autoload :Translation, "emfsvg/translation"
+  autoload :RecordAccess, "emfsvg/record_access"
 
   class << self
     # Render an Emf::Model::Metafile to an SVG string.

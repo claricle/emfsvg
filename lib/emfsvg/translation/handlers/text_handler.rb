@@ -72,7 +72,7 @@ module Emfsvg
         end
 
         def emit_set_text_color(element, context)
-          color = element.fill.color.to_emf_wire.to_wire
+          color = element.fill.color.wire_attrs
           context.emit(Emf::Emr::Binary::Records::SetTextColor,
                        i_type: SETTEXTCOLOR,
                        color: color)

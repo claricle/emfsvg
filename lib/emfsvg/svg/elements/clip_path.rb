@@ -56,7 +56,23 @@ module Emfsvg
         #    (4 unique corners + close) — extract corner bounds.
         # 3. Anything else — use the union bounding box of all child
         #    geometry (lossy: curves flattened to bounds).
+        #
+        # Every shape that references the clip asks for these bounds, so
+        # they are computed once and the (frozen) result is reused.
         def clip_bounds
+          return @clip_bounds if defined?(@clip_bounds)
+
+          @clip_bounds = compute_clip_bounds&.freeze
+        end
+
+        # Alias retained for backward compatibility with shared_gdi.rb.
+        def rectangular_bounds
+          clip_bounds
+        end
+
+        private
+
+        def compute_clip_bounds
           return nil if children.empty?
 
           if children.size == 1
@@ -67,13 +83,6 @@ module Emfsvg
 
           bounding_box_of(children)
         end
-
-        # Alias retained for backward compatibility with shared_gdi.rb.
-        def rectangular_bounds
-          clip_bounds
-        end
-
-        private
 
         def rect_bounds(rect)
           [rect.x, rect.y, rect.x + rect.width, rect.y + rect.height]

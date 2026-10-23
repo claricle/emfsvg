@@ -19,17 +19,20 @@ module Emfsvg
 
       attr_reader :records
 
-      def emit(wire_class, **attrs)
-        record = build(wire_class, **attrs)
+      def emit(wire_class, attrs)
+        record = build(wire_class, attrs)
         @records << record
         record
       end
 
       # Construct without appending. Useful for inline inspection in tests.
-      def build(wire_class, **attrs)
+      def build(wire_class, attrs)
+        adapter = Emf::Model::Emr::Records::WireAdapter
+        return adapter.build(wire_class, **attrs) if adapter.respond_to?(:build)
+
         wire = wire_class.new(**attrs)
         wire.n_size = wire.num_bytes
-        Emf::Model::Emr::Records::WireAdapter.new(wire: wire)
+        adapter.new(wire: wire)
       end
     end
   end

@@ -11,20 +11,19 @@ module Emfsvg
     class HandlerRegistry
       def initialize
         @handlers = {}
+        @resolved = {}
       end
 
       def register(element_class, handler)
+        @resolved.clear
         @handlers[element_class] = handler
       end
 
+      # Elements of one class share a handler, so each class is resolved
+      # (walking its ancestry) once, until the next registration.
       def handler_for(element)
         klass = element.class
-        while klass
-          return @handlers[klass] if @handlers.key?(klass)
-
-          klass = klass.superclass
-        end
-        nil
+        @resolved.fetch(klass) { @resolved[klass] = resolve(klass) }
       end
 
       def translate(element, context)
@@ -32,6 +31,17 @@ module Emfsvg
         return unless handler
 
         handler.call(element, context)
+      end
+
+      private
+
+      def resolve(klass)
+        while klass
+          return @handlers[klass] if @handlers.key?(klass)
+
+          klass = klass.superclass
+        end
+        nil
       end
     end
   end

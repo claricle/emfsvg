@@ -19,6 +19,17 @@ RSpec.describe Emfsvg::DeviceContext do
     expect(dc.text_color).to eq(Emf::Model::Geometry::Color.white)
     expect(other.text_color).to eq(Emf::Model::Geometry::Color.black)
   end
+
+  it "dup shares the immutable pen, brush and font and keeps selection independent" do
+    dc = described_class.new
+    other = dc.dup
+    expect(other.pen).to equal(dc.pen)
+    expect(other.brush).to equal(dc.brush)
+    expect(other.font).to equal(dc.font)
+
+    other.pen = Emfsvg::Pen.new(style: Emfsvg::Pen::DASH)
+    expect(dc.pen.style).to eq(Emfsvg::Pen::SOLID)
+  end
 end
 
 RSpec.describe Emfsvg::Pen do
@@ -46,6 +57,13 @@ RSpec.describe Emfsvg::ObjectTable do
     pen = Emfsvg::Pen.new
     table.store(3, :pen, pen)
     expect(table.lookup(3).object).to be(pen)
+  end
+
+  it "leaves earlier slots empty when a later index is stored first" do
+    table = described_class.new
+    table.store(3, :brush, Emfsvg::Brush.new)
+    expect([table.lookup(1), table.lookup(2)]).to eq([nil, nil])
+    expect(table.size).to eq(1)
   end
 
   it "removes entries on delete" do

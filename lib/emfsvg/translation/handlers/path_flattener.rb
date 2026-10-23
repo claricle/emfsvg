@@ -70,9 +70,15 @@ module Emfsvg
         def bounds_for(points)
           return Bounds.new(left: 0, top: 0, right: 0, bottom: 0) if points.empty?
 
-          xs = points.map { |x, _| x }
-          ys = points.map { |_, y| y }
-          Bounds.new(left: xs.min, top: ys.min, right: xs.max, bottom: ys.max)
+          left = right = points[0][0]
+          top = bottom = points[0][1]
+          points.each do |x, y|
+            left = x if x < left
+            right = x if x > right
+            top = y if y < top
+            bottom = y if y > bottom
+          end
+          Bounds.new(left: left, top: top, right: right, bottom: bottom)
         end
       end
 
