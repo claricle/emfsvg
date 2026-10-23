@@ -9,6 +9,8 @@ require "tmpdir"
 
 # Downloads intact licensed installers; never installs fonts system-wide or runs EXEs.
 class PortableFontInputs
+  DOWNLOAD_ATTEMPTS = 3
+  TRANSIENT_DOWNLOAD_ERRORS = [Net::OpenTimeout, Net::ReadTimeout, Net::WriteTimeout].freeze
   INSTALLERS = {
     "arial32.exe" => "85297a4d146e9c87ac6f74822734bdee5f4b2a722d7eaa584b7f2cbf76f478f6",
     "verdan32.exe" => "c1cb61255e363166794e47664e2f21af8e3a26cb6346eb8d2ae2fa85dd5aad96"
@@ -97,9 +99,21 @@ class PortableFontInputs
   def provision_installers(directory)
     INSTALLERS.to_h do |name, sha|
       path = File.join(@options.fetch("installers_directory", directory), name)
-      @downloader.call("#{SUPPLIER}#{name}", path) unless @options.key?("installers_directory")
+      download_installer("#{SUPPLIER}#{name}", path) unless @options.key?("installers_directory")
       verify_hash(path, sha)
       [name, path]
+    end
+  end
+
+  def download_installer(url, path)
+    attempts = 0
+    begin
+      @downloader.call(url, path)
+    rescue *TRANSIENT_DOWNLOAD_ERRORS
+      attempts += 1
+      retry if attempts < DOWNLOAD_ATTEMPTS
+
+      raise
     end
   end
 

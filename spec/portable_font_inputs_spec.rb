@@ -52,19 +52,68 @@ RSpec.describe PortableFontInputs do
     expect(contract.fetch("fonts").keys).to eq(%w[arial_regular arial_bold verdana_regular verdana_bold])
   end
 
+  it "retries a transient transport timeout and completes provisioning" do
+    attempts = 0
+    retrying_downloader = lambda do |_url, path|
+      attempts += 1
+      raise Net::OpenTimeout, "temporary connection timeout" if attempts == 1
+
+      File.binwrite(path, "installer")
+    end
+    retrying = described_class.new(options, downloader: retrying_downloader, extractor: extractor)
+
+    contract = retrying.provision
+
+    expect(attempts).to eq(3)
+    expect(contract.fetch("fonts").keys).to eq(%w[arial_regular arial_bold verdana_regular verdana_bold])
+    expect(File).to exist(options.fetch("contract_path"))
+  end
+
+  it "stops after three transient timeouts and removes partial staging" do
+    attempts = 0
+    timeout_downloader = lambda do |_url, path|
+      attempts += 1
+      File.binwrite(path, "partial installer")
+      raise Net::OpenTimeout, "connection timeout"
+    end
+    retrying = described_class.new(
+      options,
+      downloader: timeout_downloader,
+      extractor: extractor
+    )
+
+    expect { retrying.provision }.to raise_error(Net::OpenTimeout, "connection timeout")
+    expect(attempts).to eq(3)
+    expect(Dir.glob(File.join(@directory, "corefonts-*"))).to be_empty
+    expect(File).not_to exist(options.fetch("contract_path"))
+  end
+
   it "rejects an installer checksum before invoking extraction and removes partial staging" do
     allow(extractor).to receive(:call)
-    bad = described_class.new(options, downloader: ->(_url, path) { File.write(path, "wrong") }, extractor: extractor)
+    attempts = 0
+    bad_downloader = lambda do |_url, path|
+      attempts += 1
+      File.write(path, "wrong")
+    end
+    bad = described_class.new(options, downloader: bad_downloader, extractor: extractor)
     expect { bad.provision }.to raise_error(/SHA256 mismatch/)
+    expect(attempts).to eq(1)
     expect(extractor).not_to have_received(:call)
     expect(Dir.glob(File.join(@directory, "corefonts-*"))).to be_empty
     expect(File.exist?(options.fetch("contract_path"))).to be(false)
   end
 
   it "reports download failures without publishing a contract" do
-    bad = described_class.new(options, downloader: ->(*) { raise IOError, "network unavailable" }, extractor: extractor)
+    attempts = 0
+    failure_downloader = lambda do |*|
+      attempts += 1
+      raise IOError, "network unavailable"
+    end
+    bad = described_class.new(options, downloader: failure_downloader, extractor: extractor)
     expect { bad.provision }.to raise_error(IOError, "network unavailable")
+    expect(attempts).to eq(1)
     expect(File.exist?(options.fetch("contract_path"))).to be(false)
+    expect(Dir.glob(File.join(@directory, "corefonts-*"))).to be_empty
   end
 
   it "rejects a missing extraction tool before downloading" do
