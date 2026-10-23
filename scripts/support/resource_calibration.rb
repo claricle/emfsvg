@@ -10,11 +10,9 @@ module Emfsvg
   module ResourceCalibration
     class Rejected < StandardError; end
 
-    # No adapter is supplied until the released upstream public contracts can
-    # prove warnings, typed failures and actual native selection. Metadata alone
-    # cannot establish those facts, even if all manifest fields are populated.
+    # Metadata readiness precedes artifact and public conversion qualification.
     class Prerequisites
-      def self.verify!(manifest, _fixture_root)
+      def self.verify!(manifest, fixture_root, **options)
         errors = ParityProvenance.new(manifest).errors
         data = YAML.safe_load_file(manifest)
         raise Rejected, "manifest must be a mapping" unless data.is_a?(Hash)
@@ -24,11 +22,13 @@ module Emfsvg
           expected = "https://github.com/claricle/emf/issues/#{number}"
           errors << "#{name}: expected upstream issue #{expected}" unless issue == expected
         end
-        errors << "Public calibration contract unavailable: exact corpus selection, " \
-                  "loaded released runtime/package verification, and ruby/native/native-selected-auto " \
-                  "production conformance must be implemented against landed upstream interfaces."
-        raise Rejected, errors.join("\n")
-      rescue TypeError, NoMethodError => e
+        raise Rejected, "Public calibration contract unavailable: #{errors.join("\n")}" unless errors.empty?
+
+        require_relative "calibration_qualification"
+        Qualification.new(manifest: manifest, fixture_root: fixture_root, **options).verify!
+      rescue SystemCallError => e
+        raise Rejected, "Public calibration contract unavailable: #{e.message}"
+      rescue TypeError, NoMethodError, Psych::Exception => e
         raise Rejected, "malformed prerequisite metadata: #{e.message}"
       end
     end
