@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
+require "emfsvg/device_context"
 
 RSpec.describe Emfsvg::ObjectTable do
   subject(:table) { described_class.new }
