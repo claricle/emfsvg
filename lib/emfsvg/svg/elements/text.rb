@@ -12,15 +12,18 @@ module Emfsvg
         ELEMENT_NAME = "text"
         Element.register("text", self)
 
+        # Recovered LOGFONT rotation and vertical alignment, separate from SVG affine transforms.
+        Rotation = Struct.new(:angle, :vertical_alignment, :escapement, keyword_init: true)
+
         # The font attributes of a <text> element.
         Font = Struct.new(:family, :point_size, :weight, :style, :rotation, keyword_init: true)
 
         attr_reader :x, :y, :content, :font, :text_anchor, :fill, :stroke,
-                    :clip_path, :transform_matrix, :empty_cdata_content
+                    :clip_path, :transform_matrix, :empty_cdata_content, :canonical_text_rotation
 
         def initialize(x:, y:, content:, font:, text_anchor:, fill:, stroke:, clip_path: nil,
                        transform_matrix: Emf::Model::Geometry::Matrix.identity,
-                       empty_cdata_content: false)
+                       empty_cdata_content: false, canonical_text_rotation: nil)
           @x = x
           @y = y
           @content = content
@@ -31,6 +34,7 @@ module Emfsvg
           @clip_path = clip_path
           @transform_matrix = transform_matrix
           @empty_cdata_content = empty_cdata_content
+          @canonical_text_rotation = canonical_text_rotation
         end
 
         def font_family = font.family
@@ -59,33 +63,47 @@ module Emfsvg
               point_size: AttributeParser.float(node["font-size"], default: 12.0),
               weight: parse_weight(node["font-weight"]),
               style: node["font-style"],
-              rotation: rotation
+              rotation: rotation&.angle
             ),
             text_anchor: node["text-anchor"] || "start",
+            canonical_text_rotation: rotation,
             transform_matrix: Svg::TransformParser.parse(rotation ? nil : node["transform"]),
             **Stylable.parse_style(node)
           )
         end
 
-        # The canonical font rotation includes a baseline translation. Keep it
-        # distinct from an arbitrary SVG matrix so translation does not apply twice.
+        # Canonical LOGFONT output independently rounds size, pivot and offset.
+        # Intersect their four-decimal source intervals instead of inferring an
+        # arbitrary affine transform. TA_TOP prints the pivot as the displayed y.
         def self.canonical_rotation(node)
           return if node["dx"] || node["dy"]
 
-          transform = node["transform"]
-          match = transform&.match(/\Arotate\((-[1-9]\d*), /)
+          decimal = "(-?\\d+\\.\\d{4})"
+          pattern = /\Arotate\((0|-[1-9]\d*), #{decimal}, #{decimal}\) translate\(0, #{decimal}\)\z/
+          match = node["transform"]&.match(pattern)
           return unless match
 
           angle = match[1].to_i
-          return unless angle.between?(-359, -1)
+          return unless angle.between?(-359, 0)
 
-          x = AttributeParser.float(node["x"])
-          y = AttributeParser.float(node["y"])
-          height = AttributeParser.float(node["font-size"], default: 12.0)
-          offset = height * 0.9
-          canonical = format("rotate(%<angle>d, %<x>.4f, %<y>.4f) translate(0, %<offset>.4f)",
-                             angle: angle, x: x, y: y + offset, offset: offset)
-          angle if transform == canonical
+          x, pivot, offset = match.captures.drop(1).map(&:to_r)
+          return unless x == AttributeParser.float(node["x"]).to_s.to_r
+
+          y = AttributeParser.float(node["y"]).to_s.to_r
+          height = AttributeParser.float(node["font-size"], default: 12.0).to_s.to_r
+          half_unit = Rational(1, 20_000)
+          low = [(height - half_unit) * Rational(9, 10), offset - half_unit].max
+          high = [(height + half_unit) * Rational(9, 10), offset + half_unit].min
+          return unless low < high
+
+          alignment = if pivot == y
+                        height.zero? ? :baseline : :top
+                      elsif [low, pivot - y - (2 * half_unit)].max < [high, pivot - y + (2 * half_unit)].min
+                        :baseline
+                      end
+          return unless alignment
+
+          Rotation.new(angle: angle, vertical_alignment: alignment, escapement: angle.zero? ? 1 : -angle * 10)
         end
 
         def self.parse_weight(value)

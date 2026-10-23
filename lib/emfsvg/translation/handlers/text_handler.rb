@@ -90,11 +90,13 @@ module Emfsvg
         end
 
         def text_align(element)
-          case element.text_anchor
-          when "middle" then 0x1E # TA_CENTER | TA_BASELINE
-          when "end" then 0x1A # TA_RIGHT | TA_BASELINE
-          else 0x18 # TA_LEFT | TA_BASELINE
-          end
+          vertical = element.canonical_text_rotation&.vertical_alignment == :top ? 0 : 0x18
+          horizontal = case element.text_anchor
+                       when "middle" then 0x06
+                       when "end" then 0x02
+                       else 0
+                       end
+          vertical | horizontal
         end
 
         def emit_set_text_align(element, context)
@@ -118,13 +120,19 @@ module Emfsvg
                        i_graphics_mode: 2, # GM_COMPATIBLE
                        ex_scale: 1.0,
                        ey_scale: 1.0,
-                       ptl_reference: context.point_attrs(element.x, element.y),
+                       ptl_reference: context.point_attrs(element.x, reference_y(element)),
                        n_chars: n_chars,
                        off_string: off_string,
                        f_options: 0,
                        rcl: context.rect_attrs(0, 0, 0, 0),
                        off_dx: off_dx,
                        trailing: text_utf16.ljust(off_dx - off_string, "\x00") + dx_bytes)
+        end
+
+        def reference_y(element)
+          return element.y unless element.canonical_text_rotation&.vertical_alignment == :top
+
+          element.y - (element.font_size * 0.9)
         end
 
         # Pack a LOGFONT struct (92 bytes) per MS-WMF 2.2.13.
@@ -137,7 +145,7 @@ module Emfsvg
           [
             scaled_height, # lfHeight (scaled)
             0, # lfWidth
-            -element.font.rotation.to_i * 10, # lfEscapement (tenths of a degree)
+            element.canonical_text_rotation&.escapement || (-element.font.rotation.to_i * 10), # tenths of a degree
             0,                                # lfOrientation
             element.font_weight.to_i,         # lfWeight
             element.italic? ? 1 : 0,          # lfItalic
