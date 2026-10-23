@@ -53,7 +53,7 @@ module Emfsvg
           arc_kind = canonical_arc_kind(node, source_tag)
           return arc_kind if arc_kind
           return :end_path if canonical_pending_path?(node, source_tag)
-          return :fill_path if canonical_filled_curve?(node, source_tag)
+          return :fill_path if canonical_filled_curve?(node, source_tag) || canonical_filled_contours?(node, source_tag)
           return :bitblt if canonical_bitblt?(node, source_tag)
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
           return :stroke_and_fill_path if canonical_open_painted_path?(node, source_tag)
@@ -84,6 +84,19 @@ module Emfsvg
             source_tag == %(<path d="#{node['d']}"  fill="#{node['fill']}" stroke="none" />)
         end
         private_class_method :canonical_filled_curve?
+
+        # FillPath retains every closed contour and has a fill-first tag with
+        # no pen attributes. Polygon's NULL-pen brush fallback draws an outline.
+        def self.canonical_filled_contours?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          point = "#{number},#{number}"
+          segment = "(?: L #{point}| C #{point} #{point} #{point})"
+          contour = "M #{point}(?:#{segment})+ Z "
+          node["d"]&.match?(/\A(?:#{contour})+\z/) &&
+            node["fill"]&.match?(/\A#[0-9A-F]{6}\z/) &&
+            source_tag == %(<path d="#{node['d']}"  fill="#{node['fill']}" stroke="none" />)
+        end
+        private_class_method :canonical_filled_contours?
 
         # Path painting implicitly closes only the fill, retaining open strokes.
         # Fill-first output distinguishes it from unfilled Polyline/PolyBezier.
