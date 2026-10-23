@@ -116,7 +116,7 @@ module Emfsvg
       end
 
       # A definition immediately following its exact pending native path can
-      # select that path. Exclusive adjacent image uses bound its lifetime;
+      # select that path. Exclusive adjacent image or path uses bound its lifetime;
       # an unused selection is reset before any later drawing.
       def plan_pending_clips(parent, header)
         return unless parent
@@ -132,7 +132,7 @@ module Emfsvg
           next unless clip.is_a?(Elements::ClipPath) && matching_pending_clip?(path, clip)
 
           if referenced?(clip.id)
-            plan_pending_image_interval(parent.children.drop(index + 2), defs, clip)
+            plan_pending_draw_interval(parent.children.drop(index + 2), defs, clip)
           else
             @unused_selected[clip] = true
           end
@@ -181,9 +181,12 @@ module Emfsvg
 
       private
 
-      def plan_pending_image_interval(children, defs, clip)
+      def plan_pending_draw_interval(children, defs, clip)
         draws = children.take_while do |draw|
-          draw.instance_of?(Elements::Image) && lookup(draw.clip_path).equal?(clip)
+          supported = draw.instance_of?(Elements::Image) ||
+                      (draw.instance_of?(Elements::Path) && draw.stroke && draw.fill &&
+                        draw.path_record_kind != :end_path)
+          supported && lookup(draw.clip_path).equal?(clip)
         end
         return if draws.empty? || @references[clip.id] != draws.size
 

@@ -71,7 +71,8 @@ module Emfsvg
           number = "-?\\d+\\.\\d{4}"
           point = "#{number},#{number}"
           segment = "(?: L #{point}| C #{point} #{point} #{point})"
-          node["d"]&.match?(/\AM #{point}(?:#{segment})+ \z/) &&
+          contour = "M #{point}(?: L #{point})+ Z "
+          node["d"]&.match?(/\A(?:M #{point}(?:#{segment})+ |(?:#{contour}){2,})\z/) &&
             source_tag == %(<path d="#{node['d']}" fill="none" stroke="none" />)
         end
         private_class_method :canonical_pending_path?

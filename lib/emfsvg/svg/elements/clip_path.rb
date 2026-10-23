@@ -37,7 +37,8 @@ module Emfsvg
           number = "-?\\d+\\.\\d{4}"
           point = "#{number},#{number}"
           segment = "(?: L #{point}| C #{point} #{point} #{point})"
-          return unless path["d"]&.match?(/\AM #{point}(?:#{segment})+ Z\z/)
+          contour = "M #{point}(?: L #{point})+ Z "
+          return unless path["d"]&.match?(/\A(?:M #{point}(?:#{segment})+ |(?:#{contour}){2,})Z\z/)
           return unless yield(path) == %(<path d="#{path['d']}" />)
 
           path["d"].delete_suffix("Z")
@@ -73,8 +74,8 @@ module Emfsvg
         # 1. Single <rect> child — use rect bounds directly.
         # 2. Single <path> child whose d-string traces a rectangle
         #    (4 unique corners + close) — extract corner bounds.
-        # 3. Anything else — use the union bounding box of all child
-        #    geometry (lossy: curves flattened to bounds).
+        # Compound paths cannot use IntersectClipRect. Other single contours
+        # and multiple children retain the existing bounds fallback.
         #
         # Every shape that references the clip asks for these bounds, so
         # they are computed once and the (frozen) result is reused.
@@ -111,12 +112,25 @@ module Emfsvg
         # path: M X1,Y1 L X2,Y1 L X2,Y2 L X1,Y2 L X1,Y1 Z Z. Detect
         # that shape and recover (X1, Y1, X2, Y2).
         def path_rect_bounds(path)
+          return unless path.commands.one? { |command| command.letter == "M" }
+
           points = PathFlattenerForClip.new.flatten(path.commands)
-          return nil unless points && points.size >= 4
+          return unless points && points.size >= 4
 
           xs = points.map(&:first)
           ys = points.map(&:last)
-          [xs.min, ys.min, xs.max, ys.max]
+          bounds = [xs.min, ys.min, xs.max, ys.max]
+          # Preserve the established single-contour fallback outside the
+          # four-corner case. Multiple contours must never collapse to bounds.
+          return bounds unless points.uniq.size == 4
+          return unless path.commands.map(&:letter).join.match?(/\AM[LHV]{3,4}Z+\z/)
+
+          points.pop if points.last == points.first
+          return unless points.size == 4
+          return unless (points + [points.first]).each_cons(2).all? { |a, b| (a.first == b.first) ^ (a.last == b.last) }
+          return unless xs.uniq.size == 2 && ys.uniq.size == 2
+
+          bounds
         end
 
         def bounding_box_of(elements)

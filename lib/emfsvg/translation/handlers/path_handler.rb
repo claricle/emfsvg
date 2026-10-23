@@ -131,8 +131,12 @@ module Emfsvg
 
         def emit_figures(subpaths, context, stroke_null:, unfilled:, pending: false)
           context.emit(Emf::Emr::Binary::Records::BeginPath, i_type: BEGINPATH)
-          subpaths.each do |path|
-            path.segments.each { |letter, points| emit_segment(letter, points, path, context) }
+          if pending && subpaths.size > 1 && subpaths.all? { |path| path.shape_kind == :polygon }
+            emit_multi(subpaths, true, context)
+          else
+            subpaths.each do |path|
+              path.segments.each { |letter, points| emit_segment(letter, points, path, context) }
+            end
           end
           context.emit(Emf::Emr::Binary::Records::EndPath, i_type: ENDPATH)
           return if pending
