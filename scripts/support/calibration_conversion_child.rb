@@ -6,7 +6,7 @@ require "stringio"
 
 module Emfsvg
   module ResourceCalibration
-    # Developer-only observation, not release or backend-contract qualification.
+    # Public backend observation; release qualification remains a separate gate.
     class ConversionChild
       def self.exception(error)
         return nil unless error
@@ -19,11 +19,7 @@ module Emfsvg
       end
 
       def self.selection
-        # This is the pinned upstream PRIVATE selector. It observes selection
-        # before/after conversion; it is not a public API or conformance proof.
-        selected = Emf::Backend.send(:selected)
-        { "selected" => selected.is_a?(Module) ? selected.name : selected.class.name,
-          "method" => "Emf::Backend.send(:selected)", "public_contract" => false }
+        { "selected" => Emf.backend.to_s, "method" => "Emf.backend", "public_contract" => true }
       end
 
       def self.call(request)

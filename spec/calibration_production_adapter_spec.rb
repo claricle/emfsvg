@@ -20,8 +20,10 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
       adapter = production_adapter(directory, [input])
       report = production_report(adapter, input)
       observation = JSON.parse(report.fetch(:stdout))
-      expect(observation.fetch("selection_before")).to include("selected" => "Emf::Native::Adapter",
-                                                               "public_contract" => false)
+      %w[selection_before selection_after].each do |phase|
+        expect(observation.fetch(phase)).to eq("selected" => "native", "method" => "Emf.backend",
+                                               "public_contract" => true)
+      end
       expect(adapter.validate_report!(input, report)).to eq(
         "input_bytes" => bytes.bytesize, "output_bytes" => Emfsvg.from_bytes(bytes).bytesize,
         "warnings" => [], "exception" => nil
@@ -102,14 +104,13 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
     end
   end
 
-  it "rejects warning, SVG, runtime, backend fallback, partial output and unexpected backend error reports" do
+  it "rejects warning, SVG, runtime, partial output and unexpected backend error reports" do
     Dir.mktmpdir do |directory|
       input = production_input(directory, "valid.emf", bytes, production_svg_outcome(bytes))
       adapter = production_adapter(directory, [input])
       report = production_report(adapter, input)
       value = JSON.parse(report.fetch(:stdout))
       changes = [{ "warnings" => ["unexpected\n"] }, { "svg" => "<svg/>" }, { "runtime" => {} },
-                 { "selection_after" => { "selected" => "Emf::Backend::Ruby" } },
                  { "exception" => { "class" => "Emf::Native::Unavailable", "message" => "backend failed" } }]
       changes.each do |change|
         invalid = report.merge(stdout: JSON.generate(value.merge(change)))
@@ -121,6 +122,34 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
     end
   end
 
+  it "requires the public native observation before and after conversion" do
+    Dir.mktmpdir do |directory|
+      input = production_input(directory, "valid.emf", bytes, production_svg_outcome(bytes))
+      adapter = production_adapter(directory, [input])
+      report = production_report(adapter, input)
+      value = JSON.parse(report.fetch(:stdout))
+      invalid_selections = [
+        { "selected" => "ruby", "method" => "Emf.backend", "public_contract" => true },
+        { "selected" => "Emf::Native::Adapter", "method" => "Emf::Backend.send(:selected)",
+          "public_contract" => false },
+        { "selected" => "Emf::Native::Adapter", "method" => "Emf::Backend.send(:selected)", "public_contract" => true },
+        { "selected" => "native", "method" => "Emf::Backend.send(:selected)", "public_contract" => true },
+        { "selected" => "native", "method" => "Emf.backend", "public_contract" => false },
+        { "selected" => "native", "public_contract" => true }
+      ]
+      aggregate_failures do
+        %w[selection_before selection_after].each do |phase|
+          invalid_selections.each do |selection|
+            invalid = report.merge(stdout: JSON.generate(value.merge(phase => selection)))
+            expect { adapter.validate_report!(input, invalid) }.to raise_error(
+              Emfsvg::ResourceCalibration::Rejected, /native-selected auto observation failed/
+            ), "accepted #{phase}: #{selection.inspect}"
+          end
+        end
+      end
+    end
+  end
+
   it "rejects a real auto fallback with an unloadable pinned artifact" do
     Dir.mktmpdir do |directory|
       input = production_input(directory, "valid.emf", bytes, production_svg_outcome(bytes))
@@ -128,7 +157,11 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
       File.write(artifact, "not a native library")
       adapter = production_adapter(directory, [input], library: artifact)
       report = production_report(adapter, input)
-      expect(JSON.parse(report.fetch(:stdout)).dig("selection_after", "selected")).to eq("Emf::Backend::Ruby")
+      observation = JSON.parse(report.fetch(:stdout))
+      %w[selection_before selection_after].each do |phase|
+        expect(observation.fetch(phase)).to eq("selected" => "ruby", "method" => "Emf.backend",
+                                               "public_contract" => true)
+      end
       expect { adapter.validate_report!(input, report) }.to raise_error(
         Emfsvg::ResourceCalibration::Rejected, /native-selected auto observation failed/
       )
@@ -151,8 +184,10 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
       end
     end
   end
+end
 
-  it "keeps the real prerequisite gate rejecting even though an adapter core exists" do
+RSpec.describe Emfsvg::ResourceCalibration::Prerequisites do
+  it "keeps the real prerequisite gate rejecting even though a public backend observation exists" do
     manifest = File.expand_path("fixtures/parity_manifest.yml", __dir__)
     expect do
       Emfsvg::ResourceCalibration::Prerequisites.verify!(manifest, "unused")

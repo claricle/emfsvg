@@ -166,11 +166,10 @@ module Emfsvg
                                                                                                      "artifact_sha256")
         raise Rejected, "child input/runtime/artifact drift" unless valid
 
-        expected = { "selected" => "Emf::Native::Adapter", "method" => "Emf::Backend.send(:selected)",
-                     "public_contract" => false }
+        expected = { "selected" => "native", "method" => "Emf.backend", "public_contract" => true }
         return if value.fetch("selection_before") == expected && value.fetch("selection_after") == expected
 
-        raise Rejected, "native-selected auto observation failed (private selector; not qualification)"
+        raise Rejected, "native-selected auto observation failed (public Emf.backend)"
       end
 
       def validate_outcome!(expected, value)

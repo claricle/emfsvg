@@ -15,7 +15,7 @@ Missing roots, unexpected or missing files, and changed bytes fail setup.
 There are no developer-machine or sibling-checkout defaults.
 
 The runtime is independent of that corpus checkout. Development temporarily
-pins `emf` to Git revision `dd20737351335560d1d2f117bcf722da355e846d`.
+pins `emf` to Git revision `095d77b78f74302da3bbb550a7b7469738ebb0fb`.
 A containing released package, native backend selection, and upstream resource
 and diagnostic contracts remain qualification requirements. A valid corpus
 inventory does not establish runtime qualification.
@@ -171,11 +171,14 @@ and requires the two exact upstream issue identities. Its executable sampling,
 schema, derivation, drift, and atomic-write behavior has focused synthetic tests.
 A production adapter core now exercises public conversion in a fresh process,
 checks exact SVG bytes and warnings, preserves typed exceptions and causes,
-and rejects input/runtime/artifact drift or backend fallback. Its native-selected
-auto observation uses the pinned upstream private selector and explicitly does
-not establish a public backend contract. Startup stderr remains visible and
-causes rejection. This core does not bypass prerequisite checks; released-package
-and public-contract qualification are required before corpus calibration.
+and rejects input/runtime/artifact drift or backend fallback. It observes the
+selected backend through the public `Emf.backend` API, which reports `:ruby` or
+`:native`; the calibration child records that value before and after conversion
+and rejects Ruby fallback when native execution is required. Startup stderr
+remains visible and causes rejection. The public backend observation establishes
+source-level selection only; qualification of the supported released package,
+source SHA, and native ABI remains a separate prerequisite. This core does not
+bypass those checks, which are required before corpus calibration.
 
 `spec/corrupted_resilience_spec.rb` prepares the corpus caller behind that same
 prerequisite gate. It requires exact manifest source paths, hashes and reviewed
