@@ -16,6 +16,7 @@ module Emfsvg
         @exports = {}
         @imports = {}
         @selected = {}
+        @unused_selected = {}
         @interval_starts = {}
         @interval_ends = {}
       end
@@ -50,6 +51,7 @@ module Emfsvg
         registry.plan_selected_clips(document.root_element)
         registry.plan_clip_intervals(document.header_translate_group)
         registry.plan_text_clip_intervals(document.root_element)
+        registry.plan_pending_clips(document.root_element, document.header_translate_group)
         registry
       end
 
@@ -109,6 +111,34 @@ module Emfsvg
         @interval_ends[element]
       end
 
+      def unused_selected_clip?(clip)
+        @unused_selected.key?(clip)
+      end
+
+      # A definition immediately following its exact pending native path can
+      # select that path. Exclusive adjacent image uses bound its lifetime;
+      # an unused selection is reset before any later drawing.
+      def plan_pending_clips(parent, header)
+        return unless parent
+
+        parent.children.each { |child| plan_pending_clips(child, header) }
+        return unless parent.equal?(header) ||
+                      (parent.is_a?(Elements::Group) && parent.canonical_matrix? && parent.transform_matrix.identity?)
+
+        parent.children.each_cons(2).with_index do |(path, defs), index|
+          next unless defs.is_a?(Elements::Defs) && defs.children.size == 1
+
+          clip = defs.children.first
+          next unless clip.is_a?(Elements::ClipPath) && matching_pending_clip?(path, clip)
+
+          if referenced?(clip.id)
+            plan_pending_image_interval(parent.children.drop(index + 2), defs, clip)
+          else
+            @unused_selected[clip] = true
+          end
+        end
+      end
+
       # A canonical rectangle may surround nested clips and then be reused.
       # Only flat, fully explicit built-in drawings participate. Unused defs
       # and text transformed under a different clip remain boundaries.
@@ -150,6 +180,16 @@ module Emfsvg
       end
 
       private
+
+      def plan_pending_image_interval(children, defs, clip)
+        draws = children.take_while do |draw|
+          draw.instance_of?(Elements::Image) && lookup(draw.clip_path).equal?(clip)
+        end
+        return if draws.empty? || @references[clip.id] != draws.size
+
+        @interval_starts[defs] = clip
+        @interval_ends[draws.last] = clip
+      end
 
       # Crossing ranges cannot form native scopes. A nested range contains
       # only its own clip, so its final RestoreDC returns to the outer scope

@@ -35,7 +35,9 @@ module Emfsvg
           return unless path.name == "path" && path.attribute_nodes.map(&:name) == ["d"]
 
           number = "-?\\d+\\.\\d{4}"
-          return unless path["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ Z\z/)
+          point = "#{number},#{number}"
+          segment = "(?: L #{point}| C #{point} #{point} #{point})"
+          return unless path["d"]&.match?(/\AM #{point}(?:#{segment})+ Z\z/)
           return unless yield(path) == %(<path d="#{path['d']}" />)
 
           path["d"].delete_suffix("Z")

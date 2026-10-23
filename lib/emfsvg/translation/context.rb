@@ -70,6 +70,18 @@ module Emfsvg
                       cb_rgn_data: 0, dw_mode: 5)
       end
 
+      def preserve_unused_selected_clip(clip)
+        return unless @unused_clip_safe && @handler_registry.equal?(EmfRenderer::DEFAULT_REGISTRY)
+        return unless @clip_path_registry&.unused_selected_clip?(clip)
+
+        @emitter.emit(Emf::Emr::Binary::Records::SelectClipPath,
+                      i_type: Emf::Emr::Binary::TypeCodes::SELECTCLIPPATH, region_mode: 5)
+        @emitter.emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
+                      i_type: Emf::Emr::Binary::TypeCodes::EXTSELECTCLIPRGN,
+                      cb_rgn_data: 0, dw_mode: 5)
+        true
+      end
+
       # Registry proves an exclusive drawing tail in a saved identity group.
       # Its RestoreDC returns to the known-empty clip, so these selections do
       # not disable preservation of later unused definitions.
