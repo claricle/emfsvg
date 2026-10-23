@@ -49,6 +49,8 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
       before = regeneration_snapshot(project, manifest)
       expect { runner.run }.to raise_error(Emfsvg::SpecSupport::ParityCorpus::SetupError, /unexpected.svg/)
       expect(regeneration_snapshot(project, manifest)).to eq(before)
+      expect { runner.run(check: true) }.to raise_error(Emfsvg::SpecSupport::ParityCorpus::SetupError, /unexpected.svg/)
+      expect(regeneration_snapshot(project, manifest)).to eq(before)
       expect(corpus.fixtures.size).to eq(208)
     end
   end
@@ -79,6 +81,15 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
   it "refuses promotion with unverified historical C provenance" do
     with_regeneration do |runner, project, manifest, _output, corpus|
       corpus.manifest.fetch("provenance").fetch("c_reference")["status"] = "unverified_historical_artifacts"
+      before = regeneration_snapshot(project, manifest)
+      expect { runner.run }.to raise_error(described_class::Error, /verified c_reference provenance/)
+      expect(regeneration_snapshot(project, manifest)).to eq(before)
+    end
+  end
+
+  it "refuses promotion with a whitespace-only C build recipe" do
+    with_regeneration do |runner, project, manifest, _output, corpus|
+      corpus.manifest.fetch("provenance").fetch("c_reference")["build_recipe"] = " \n\t"
       before = regeneration_snapshot(project, manifest)
       expect { runner.run }.to raise_error(described_class::Error, /verified c_reference provenance/)
       expect(regeneration_snapshot(project, manifest)).to eq(before)

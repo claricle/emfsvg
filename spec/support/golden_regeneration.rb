@@ -78,7 +78,7 @@ module Emfsvg
         binary = ENV.fetch("EMF2SVG_REF_PATH", nil)
         valid = provenance["status"] == "verified" && /\A[0-9a-f]{40}\z/.match?(revision.to_s) &&
                 /\A[0-9a-f]{64}\z/.match?(binary_digest.to_s) && binary && File.file?(binary) &&
-                Digest::SHA256.file(binary).hexdigest == binary_digest && !provenance["build_recipe"].to_s.empty?
+                Digest::SHA256.file(binary).hexdigest == binary_digest && !provenance["build_recipe"].to_s.strip.empty?
         return if valid
 
         raise Error, "Promotion requires verified c_reference provenance: source_revision, build_recipe and " \
