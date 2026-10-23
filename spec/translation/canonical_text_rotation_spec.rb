@@ -50,7 +50,7 @@ RSpec.describe "canonical text rotation provenance" do
     )
   end
 
-  it "preserves the positive 270 degree test-001 transform on the general affine path" do
+  it "preserves the positive 270 degree test-001 canonical transform" do
     bytes = Emfsvg.from_svg(<<~SVG)
       <svg width="800" height="600">
         <text x="17.9564" y="293.9910" font-size="11.9910"
@@ -60,8 +60,32 @@ RSpec.describe "canonical text rotation provenance" do
     expect(Emf.parse(bytes).errors).to be_empty
     text = Leptris::XML.parse(Emfsvg.from_bytes(bytes)).at_xpath("//*[local-name()='text']")
     expect([text["x"], text["y"], text["font-size"], text["transform"], text.text])
-      .to eq(["17.9564", "293.9910", "11.9910", nil, "positive"])
-    expect(text.parent["transform"]).to eq("matrix(-0.0000 -1.0000 1.0000 -0.0000 -276.0346 322.7393)")
+      .to eq(["17.9564", "293.9910", "11.9910",
+              "rotate(270, 17.9564, 304.7829) translate(0, 10.7919)", "positive"])
+    expect(Emf.parse(bytes).records.map(&:wire).grep(Emf::Emr::Binary::Records::SetWorldTransform)).to be_empty
+  end
+
+  [[-2700, 270], [4500, -90], [-4500, 90]].product([1, -1]).each do |(escapement, positive_y_angle), viewport_sign|
+    it "preserves signed escapement #{escapement} with viewport sign #{viewport_sign}" do
+      bytes = Emfsvg.from_svg(<<~SVG)
+        <svg width="100" height="100"><text x="20.1234" y="30.5678" font-size="10">signed</text></svg>
+      SVG
+      cursor = 0
+      while cursor < bytes.bytesize
+        type, size = bytes.byteslice(cursor, 8).unpack("L<L<")
+        bytes[cursor + 20, 4] = [escapement].pack("l<") if type == 82
+        if type == 11
+          height = bytes.byteslice(cursor + 12, 4).unpack1("l<")
+          bytes[cursor + 12, 4] = [height.abs * viewport_sign].pack("l<")
+        end
+        cursor += size
+      end
+      expect(Emf.parse(bytes).errors).to be_empty
+      text = Leptris::XML.parse(Emfsvg.from_bytes(bytes)).at_xpath("//*[local-name()='text']")
+      angle = viewport_sign * positive_y_angle
+      pivot = viewport_sign.positive? ? "39.5678" : "-21.5678"
+      expect(text["transform"]).to eq("rotate(#{angle}, 20.1234, #{pivot}) translate(0, 9.0000)")
+    end
   end
 
   [

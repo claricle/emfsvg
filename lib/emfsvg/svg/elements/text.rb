@@ -79,12 +79,12 @@ module Emfsvg
           return if node["dx"] || node["dy"]
 
           decimal = "(-?\\d+\\.\\d{4})"
-          pattern = /\Arotate\((0|-[1-9]\d*), #{decimal}, #{decimal}\) translate\(0, #{decimal}\)\z/
+          pattern = /\Arotate\((0|-?[1-9]\d*), #{decimal}, #{decimal}\) translate\(0, #{decimal}\)\z/
           match = node["transform"]&.match(pattern)
           return unless match
 
           angle = match[1].to_i
-          return unless angle.between?(-359, 0)
+          return unless angle.between?(-359, 359)
 
           x, pivot, offset = match.captures.drop(1).map(&:to_r)
           return unless x == AttributeParser.float(node["x"]).to_s.to_r

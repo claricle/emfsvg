@@ -814,8 +814,8 @@ module Emfsvg
 
         height = body.unpack1("l<")
         _width = body.unpack("l<", offset: 4)[0]
-        # libemf2svg reduces lfEscapement modulo 3600 (so 3600 → 0, no rotation).
-        escapement = body.unpack("l<", offset: 8)[0] % 3600
+        # C remainder preserves the dividend sign (so -2700 stays -2700).
+        escapement = body.unpack("l<", offset: 8)[0].remainder(3600)
         weight = body.unpack("l<", offset: 16)[0]
         italic = body.getbyte(20) != 0
         underline = body.getbyte(21) != 0
