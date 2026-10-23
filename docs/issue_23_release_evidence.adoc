@@ -1,0 +1,93 @@
+= Issue 23 release evidence handoff
+
+This is an incomplete evidence handoff, not a release or platform qualification.
+It records what the current manifest and bounded observations establish, and
+what remains to be demonstrated before a release claim is supportable.
+
+== Pinned inputs and current manifest state
+
+The parity manifest pins baseline revision
+`101356dcf673841fda0693076131bca7a0f34948` and corpus revision
+`a549346e4c4cacf9da6c86ab451a9f8401fa9672`. The corpus contract contains 208
+accepted inputs, 21 corrupted inputs, 209 round-trip examples, and 426
+compatibility examples. The current manifest records 208 accepted C golden
+outputs as byte-equal for the deliberate reference pin; its historical source
+builder identity remains unrecovered.
+
+The manifest runtime remains `unqualified`: it is a temporary Git integration
+of `emf` 0.1.2 at source revision
+`99a8c21256cbe902e243cc0bcac65b282ec52bf4`, with no package SHA. The manifest
+states that no released tag contains the required model contract and no
+released package has been qualified. The model contract issue #15 is pinned to
+`318b2d86c4025b5913c595c5055477124199daf9`; the diagnostics (#65) and resources
+(#66) landed revisions are blank. The required native library is unavailable;
+its source revision, artifact SHA-256, and ABI fields are blank. Production
+selection requires `auto` to select `native`.
+
+The manifest's reference is a verified deliberate current pin, not recovered
+historical provenance: libemf2svg 1.8.1 source revision
+`ca88c51f2f86e4a885b6aa5280ce3e7419cb73e5`, binary SHA-256
+`c86fb0175d912468246d82bedaefb86e241f52120d51cfc3120a6d15949cf96d`.
+
+== Package check versus release qualification
+
+At checkout `330ff69`, a local version 0.1.3 gem was built successfully as
+`/private/tmp/emfsvg-issue23-330ff69.gem` and passed
+`bundle exec ruby scripts/check_runtime_package.rb`.
+`/private/tmp/emfsvg-issue23-package-check.json` records package SHA-256
+`449f000d9a8a84ef74104f2156028d5daa1c1553072062d4d35e75f03d999995` and the
+files and runtime dependencies found in that archive. This verifies packaging
+and the repository's package-content check for that checkout. It is not a
+released Rubygems artifact, does not fill the manifest's released package
+identity, and does not establish qualification against the released runtime.
+
+== Reviewed corrupt expectations and one bounded runtime observation
+
+The reviewed ledger is an expectation set, not an observation. It contains 21
+reviewed source identities and expected outcomes: 19 recoverable SVG outcomes
+and two unreadable outcomes. These expected outcomes must not be reported as
+runtime matches by themselves.
+
+A separate bounded Darwin observation at checkout `5ae58e8` did match all 21
+reviewed outcomes with native selected in `auto`. Its runtime source revision
+was `99a8c21256cbe902e243cc0bcac65b282ec52bf4`; native artifact SHA-256 was
+`130743aee8802e68a31edd745ad131f7cb1fd7d5bb9e00ec75a1fa63f4ffcf0e`. The
+machine-readable observation is
+`/private/tmp/emfsvg-reviewed21-5ae58e8-audit.json`, SHA-256
+`35f7607fb295e725791fd146881fa1ec8079d141ca04c0b115059c43b2cc6a09`. It
+records 21 matched cases, no unresolved cases or mismatches, and 646 protected
+files unchanged. This is bounded host evidence only: Darwin address-space
+enforcement was unsupported, and the observation is not a Linux resource
+baseline, released-package proof, or cross-platform qualification.
+
+== Remaining comparison and qualification evidence
+
+The latest full-suite evidence available here is from Ubuntu at checkout
+`fbeb794`: each Ruby 3.3 and Ruby 3.4 run reported 1,725 examples, 8 failures,
+and 12 pending. Seven failures are known round-trip mismatches for
+`test-039.svg`, `test-040.svg`, `test-156.svg`, `test-157.svg`,
+`test-158.svg`, `test-159.svg`, and `EA-test-file-004.svg`. The eighth was the
+stale expectation that missing corrupt-outcome digests must be rejected; that
+expectation was corrected at `509428102d1c8145c58f6e23257a471762961516`.
+This is not a full-suite result for the current head; a final-head full-suite
+run remains outstanding.
+
+A historical audit at `23fd052` recorded 201 exact results, seven mismatches,
+and no errors. That audit predates the current head and is not final-head proof.
+The 426-example compatibility group has not been completed as a current
+comparison result. Production qualification of all three backends (Ruby,
+native, and `auto` actually selecting native) remains outstanding, as does a
+Linux resource baseline and platform qualification on Linux, Windows, and
+Darwin.
+
+Release readiness also requires an exact released `.gem` supplied as
+`EMF_RELEASE_PACKAGE`, the actual shared library as `EMF_NATIVE_LIBRARY`, and
+matching `EMF_NATIVE_PROVENANCE` JSON containing `artifact_sha256`,
+`source_revision`, and `abi`. The gate validates those artifacts and the
+installed locked runtime before bounded public conformance; arbitrary metadata
+alone cannot satisfy it. The current manifest lacks the released package and
+native provenance identities, and issues #65 and #66 lack pinned landed
+revisions. Therefore the manifest remains unqualified and the production gate
+is expected to reject the current real inputs. Do not describe the package
+check, reviewed expectations, or Darwin observation as full parity, release
+proof, or portable qualification.
