@@ -61,7 +61,7 @@ module Emfsvg
         emit_eof
         header = HeaderBuilder.build(@document,
                                      n_records: @context.records.size + 1,
-                                     n_handles: @context.object_table.size + 1)
+                                     n_handles: @context.handle_table_size)
         Emf::Model::Metafile.new(
           format: :emf,
           header: header,
