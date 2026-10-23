@@ -5,6 +5,7 @@ require "rbconfig"
 require "stringio"
 require "tmpdir"
 require_relative "../../scripts/support/calibration_production_adapter"
+require_relative "../../scripts/support/corrupt_outcome_contract"
 
 module Emfsvg
   module SpecSupport
@@ -34,7 +35,8 @@ module Emfsvg
 
       def run(manifest:, fixture_root:, baseline:)
         adapter = @qualification.verify!(manifest, fixture_root)
-        validate_inventory!(YAML.safe_load_file(manifest), adapter.inputs)
+        validate_inventory!(YAML.safe_load_file(manifest), adapter.inputs,
+                            File.join(File.dirname(manifest), "reviewed_corrupt_outcomes.json"))
         stored = Calibration::Baseline.validate!(YAML.safe_load_file(baseline))
         baseline_digest = Digest::SHA256.file(baseline).hexdigest
         with_sentinel do |runner|
@@ -49,14 +51,20 @@ module Emfsvg
 
       private
 
-      def validate_inventory!(manifest, inputs)
+      def validate_inventory!(manifest, inputs, ledger_path)
         corrupt = manifest.fetch("corrupted")
         raise Calibration::Rejected, "no declared corrupted inputs" unless corrupt.is_a?(Array) && !corrupt.empty?
 
+        outcomes = reviewed_outcomes(manifest, ledger_path)
         declared = corrupt.map do |entry|
+          expected = outcomes ? outcomes.fetch(entry.fetch("name")) : entry.fetch("expected_outcome")
+          if outcomes && entry["expected_outcome"] && entry["expected_outcome"] != expected
+            raise Calibration::Rejected, "manifest and reviewed corrupt outcome drift"
+          end
+
           input = { "name" => entry.fetch("source").fetch("path"),
                     "sha256" => entry.fetch("source").fetch("sha256"),
-                    "expected_outcome" => entry.fetch("expected_outcome") }
+                    "expected_outcome" => expected }
           Calibration::Baseline.validate_input!(input)
           input
         end
@@ -73,6 +81,22 @@ module Emfsvg
         end
       rescue KeyError, TypeError, NoMethodError => e
         raise Calibration::Rejected, "incomplete corrupt inventory: #{e.message}"
+      end
+
+      def reviewed_outcomes(manifest, ledger_path)
+        return unless File.exist?(ledger_path)
+
+        ledger = JSON.parse(File.read(ledger_path))
+        report = CorruptOutcomeContract.new(manifest: manifest, ledger: ledger).report
+        unless report.fetch("cases").all? { |entry| entry.fetch("status") == "contracted" }
+          raise Calibration::Rejected, "unresolved or mismatched reviewed corrupt outcomes"
+        end
+
+        report.fetch("cases").to_h do |entry|
+          [entry.fetch("name"), entry.fetch("expected_outcome")]
+        end
+      rescue JSON::ParserError, CorruptOutcomeContract::Rejected => e
+        raise Calibration::Rejected, "invalid reviewed corrupt outcomes: #{e.message}"
       end
 
       def validate_outcome!(outcome)

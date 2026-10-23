@@ -123,6 +123,49 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
       end
     end
 
+    context "with independently reviewed outcomes beside the manifest" do
+      let(:ledger_path) { File.join(@directory, "reviewed_corrupt_outcomes.json") }
+      let(:ledger) do
+        YAML.safe_load_file(@manifest).fetch("corrupted").to_h do |entry|
+          [entry.fetch("name"), { "reviewed" => true, "source" => entry.fetch("source"),
+                                  "expected_outcome" => outcome,
+                                  "evidence" => [{ "kind" => "requirement", "reference" => "synthetic contract" },
+                                                 { "kind" => "reference", "reference" => "synthetic source proof" }] }]
+        end
+      end
+
+      before { File.write(ledger_path, JSON.generate(ledger)) }
+
+      it "uses reviewed expectations without rewriting the pinned manifest" do
+        manifest = YAML.safe_load_file(@manifest)
+        manifest.fetch("corrupted").each { |entry| entry["expected_outcome"] = nil }
+        File.write(@manifest, YAML.dump(manifest))
+        before = File.binread(@manifest)
+        expect(run_caller.call.fetch("samples").size).to eq(6)
+        expect(File.binread(@manifest)).to eq(before)
+      end
+
+      it "rejects source identity drift and incomplete ledgers before child execution" do
+        altered = JSON.parse(JSON.generate(ledger))
+        altered.values.first.fetch("source")["sha256"] = "f" * 64
+        [altered, ledger.reject { |name, _| name == ledger.keys.first }].each do |bad|
+          File.write(ledger_path, JSON.generate(bad))
+          expect(runner).not_to receive(:run)
+          expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /reviewed corrupt outcomes/)
+        end
+      end
+
+      it "rejects invalid JSON and manifest disagreement without falling back" do
+        changed = YAML.safe_load_file(@manifest)
+        changed.fetch("corrupted").first["expected_outcome"] = outcome.merge("warnings" => ["changed\n"])
+        File.write(@manifest, YAML.dump(changed))
+        expect(runner).not_to receive(:run)
+        expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /outcome drift/)
+        File.write(ledger_path, "{")
+        expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /invalid reviewed/)
+      end
+    end
+
     it "rejects unresolved manifest outcomes before child execution" do
       manifest = YAML.safe_load_file(@manifest)
       manifest.fetch("corrupted").first["expected_outcome"] = nil
