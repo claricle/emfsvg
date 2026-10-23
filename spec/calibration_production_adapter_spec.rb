@@ -186,6 +186,86 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
   end
 end
 
+RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter, "synthetic SVG report contract" do
+  include Emfsvg::SpecSupport::CalibrationProductionFixture
+
+  around do |example|
+    Dir.mktmpdir("emfsvg-svg-contract-") do |directory|
+      @directory = directory
+      example.run
+    end
+  end
+
+  let(:svg) { '<svg xmlns="http://www.w3.org/2000/svg"><path d="M0 0"/></svg>' }
+  let(:warnings) { ["first warning\n", "second warning\n"] }
+  let(:outcome) { { "kind" => "svg", "warnings" => warnings } }
+  let(:input) { production_input(@directory, "corrupt.emf", "synthetic corrupt bytes", outcome) }
+  let(:library) { File.join(@directory, input.fetch("name")) }
+  let(:adapter) { production_adapter(@directory, [input], library: library) }
+  let(:observation) do
+    entrypoint = $LOADED_FEATURES.find { |path| path.end_with?("/emf.rb") }
+    selection = { "selected" => "native", "method" => "Emf.backend", "public_contract" => true }
+    { "schema_version" => 1, "input_sha256" => input.fetch("sha256"), "input_bytes" => File.size(library),
+      "runtime" => { "entrypoint" => entrypoint, "sha256" => Digest::SHA256.file(entrypoint).hexdigest,
+                     "version" => Emf::VERSION },
+      "backend" => "auto", "native_sha256" => Digest::SHA256.file(library).hexdigest,
+      "selection_before" => selection, "selection_after" => selection,
+      "svg" => svg, "output_bytes" => svg.bytesize, "warnings" => warnings, "exception" => nil }
+  end
+  let(:report) { { stdout: JSON.generate(observation), stderr: "" } }
+
+  it "accepts valid SVG and exact ordered warnings without a historical SVG digest" do
+    expect(adapter.validate_report!(input, report)).to eq(
+      "input_bytes" => File.size(library), "output_bytes" => svg.bytesize,
+      "warnings" => warnings, "exception" => nil
+    )
+  end
+
+  it "still rejects malformed SVG, incorrect root namespaces, byte counts, exceptions and reordered warnings" do
+    expect(adapter.validate_report!(input, report).fetch("exception")).to be_nil
+    invalid_svgs = ['<svg xmlns="http://www.w3.org/2000/svg">', "<svg/>",
+                    '<other xmlns="http://www.w3.org/2000/svg"/>']
+    changes = invalid_svgs.map { |invalid| { "svg" => invalid, "output_bytes" => invalid.bytesize } }
+    changes += [{ "output_bytes" => svg.bytesize + 1 }, { "exception" => { "class" => "RuntimeError" } },
+                { "warnings" => warnings.reverse }, { "warnings" => warnings.map(&:chomp) },
+                { "input_sha256" => "0" * 64 }, { "runtime" => {} }, { "selection_after" => {} }]
+    changes.each do |change|
+      invalid = report.merge(stdout: JSON.generate(observation.merge(change)))
+      expect { adapter.validate_report!(input, invalid) }.to raise_error(Emfsvg::ResourceCalibration::Rejected)
+    end
+  end
+
+  it "rejects supplied invalid digests and unknown outcome fields during initialization" do
+    [nil, 1, "", "A" * 64, "a" * 63, "a" * 65, "g" * 64].each do |digest|
+      invalid = input.merge("expected_outcome" => outcome.merge("svg_sha256" => digest))
+      expect { production_adapter(@directory, [invalid], library: library) }.to raise_error(
+        Emfsvg::ResourceCalibration::Rejected, /invalid expected SVG digest/
+      )
+    end
+    invalid = input.merge("expected_outcome" => outcome.merge("unexpected" => true))
+    expect { production_adapter(@directory, [invalid], library: library) }.to raise_error(
+      Emfsvg::ResourceCalibration::Rejected, /invalid expected outcome fields/
+    )
+    expect { adapter.validate_report!(invalid, report) }.to raise_error(
+      Emfsvg::ResourceCalibration::Rejected, /unselected input/
+    )
+  end
+
+  context "with a supplied SVG digest" do
+    let(:outcome) { super().merge("svg_sha256" => Digest::SHA256.hexdigest(svg)) }
+
+    it "accepts matching bytes and rejects different valid SVG bytes" do
+      expect(adapter.validate_report!(input, report).fetch("output_bytes")).to eq(svg.bytesize)
+      changed = '<svg xmlns="http://www.w3.org/2000/svg"/>'
+      invalid = report.merge(stdout: JSON.generate(observation.merge("svg" => changed,
+                                                                     "output_bytes" => changed.bytesize)))
+      expect { adapter.validate_report!(input, invalid) }.to raise_error(
+        Emfsvg::ResourceCalibration::Rejected, /SVG byte mismatch/
+      )
+    end
+  end
+end
+
 RSpec.describe Emfsvg::ResourceCalibration::Prerequisites do
   it "keeps the real prerequisite gate rejecting even though a public backend observation exists" do
     manifest = File.expand_path("fixtures/parity_manifest.yml", __dir__)

@@ -83,7 +83,9 @@ module Emfsvg
         case outcome["kind"]
         when "svg"
           digest = outcome["svg_sha256"]
-          valid = digest.is_a?(String) && ParityProvenance::SHA256.match?(digest)
+          fields = outcome.key?("svg_sha256") ? %w[kind svg_sha256 warnings] : %w[kind warnings]
+          valid = outcome.keys.sort == fields &&
+                  (!outcome.key?("svg_sha256") || (digest.is_a?(String) && ParityProvenance::SHA256.match?(digest)))
         when "unreadable", "resource"
           valid = valid_failure?(outcome)
         else

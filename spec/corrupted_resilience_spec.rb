@@ -93,12 +93,33 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
     it "rejects incomplete expected outcomes before child execution" do
       resource = { "kind" => "resource", "warnings" => [],
                    "exception" => { "class" => "Emfsvg::ResourceLimitError", "message" => "bounded", "cause" => nil } }
-      [nil, {}, { "kind" => "svg", "warnings" => [] },
+      [nil, {}, { "kind" => "svg", "warnings" => [], "svg_sha256" => nil },
+       { "kind" => "svg", "warnings" => [], "svg_sha256" => "A" * 64 },
+       { "kind" => "svg", "warnings" => [], "svg_sha256" => "a" * 63 },
+       { "kind" => "svg", "warnings" => [], "unexpected" => true },
        { "kind" => "unreadable", "warnings" => [], "exception" => { "class" => "Emfsvg::ParseError" } },
        resource].each do |bad|
         allow(adapter).to receive(:inputs).and_return([inputs.first.merge("expected_outcome" => bad), inputs.last])
         expect(runner).not_to receive(:run)
         expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /incomplete expected outcome/)
+      end
+    end
+
+    context "with no historical SVG digest" do
+      let(:outcome) { { "kind" => "svg", "warnings" => ["first warning\n", "second warning\n"] } }
+
+      it "checks every bounded sample and preserves the baseline with exact warning contracts" do
+        before = File.binread(@baseline)
+        expect(run_caller.call.fetch("samples").size).to eq(6)
+        expect(File.binread(@baseline)).to eq(before)
+      end
+
+      it "rejects warning order drift before starting children" do
+        reordered = outcome.merge("warnings" => outcome.fetch("warnings").reverse)
+        changed = inputs.first.merge("expected_outcome" => reordered)
+        allow(adapter).to receive(:inputs).and_return([changed, inputs.last])
+        expect(runner).not_to receive(:run)
+        expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /selection drift/)
       end
     end
 

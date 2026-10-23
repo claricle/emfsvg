@@ -81,9 +81,15 @@ module Emfsvg
 
         case expected["kind"]
         when "svg"
-          reject_unexpected_expected_fields!(expected, %w[kind svg_sha256 warnings])
-          digest = expected["svg_sha256"]
-          raise Rejected, "invalid expected SVG digest" unless digest.is_a?(String) && digest.match?(/\A[0-9a-f]{64}\z/)
+          fields = expected.key?("svg_sha256") ? %w[kind svg_sha256 warnings] : %w[kind warnings]
+          reject_unexpected_expected_fields!(expected, fields)
+          if expected.key?("svg_sha256")
+            digest = expected["svg_sha256"]
+            unless digest.is_a?(String) && digest.match?(/\A[0-9a-f]{64}\z/)
+              raise Rejected,
+                    "invalid expected SVG digest"
+            end
+          end
         when "unreadable"
           reject_unexpected_expected_fields!(expected, %w[exception kind warnings])
           validate_expected_exception!(expected, "Emfsvg::ParseError")
@@ -185,7 +191,7 @@ module Emfsvg
       def validate_svg!(expected, value)
         svg = value.fetch("svg")
         unless svg.is_a?(String) && value.fetch("exception").nil? && value.fetch("output_bytes") == svg.bytesize &&
-               Digest::SHA256.hexdigest(svg) == expected.fetch("svg_sha256")
+               (!expected.key?("svg_sha256") || Digest::SHA256.hexdigest(svg) == expected.fetch("svg_sha256"))
           raise Rejected, "SVG byte mismatch or unexpected exception"
         end
 
