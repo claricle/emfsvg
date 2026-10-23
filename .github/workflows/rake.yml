@@ -54,7 +54,7 @@ jobs:
         # Provision locally from hash-pinned intact installers; never cache/upload extracted fonts.
         # Ruby vectors are qualified here; the Darwin-pinned C oracle remains a separate gate.
         bundle exec ruby -rjson -rfileutils -rrbconfig -e '
-          directory = File.join(ENV.fetch("RUNNER_TEMP"), "emfsvg-font-qualification")
+          directory = File.expand_path("emfsvg-font-qualification", ENV.fetch("RUNNER_TEMP"))
           FileUtils.mkdir_p(directory)
           options = {
             "staging_directory" => directory,
