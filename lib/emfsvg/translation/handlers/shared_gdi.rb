@@ -14,8 +14,8 @@ module Emfsvg
       # to EMF records and is what the round-trip test exercises.
       #
       # If the element has a rectangular clip-path, the entire draw is
-      # wrapped in SaveDC + IntersectClipRect + RestoreDC so the clip
-      # is scoped to this element only.
+      # wrapped in SaveDC + IntersectClipRect + RestoreDC. Adjacent built-in
+      # paths with identical complete styles can share that single scope.
       module SharedGdi
         include Emf::Emr::Binary::TypeCodes
 
@@ -23,10 +23,12 @@ module Emfsvg
           clip_bounds = clip_bounds_for(element, context)
           wrap_with_clip = !clip_bounds.nil?
 
-          emit_save_dc(context) if wrap_with_clip
+          signature = clip_scope_signature(element, context, clip_bounds)
+          reuse_clip = context.reuse_clip_scope?(signature)
+          emit_save_dc(context) if wrap_with_clip && !reuse_clip
           pen_handle = emit_create_pen(context, element.stroke) if element.stroke
           brush_handle = emit_create_brush(context, element.fill) if element.fill
-          if wrap_with_clip
+          if wrap_with_clip && !reuse_clip
             context.emit(Emf::Emr::Binary::Records::IntersectClipRect,
                          i_type: INTERSECTCLIPRECT,
                          rcl_clip: context.rect_attrs(*clip_bounds))
@@ -34,7 +36,22 @@ module Emfsvg
           yield
           emit_delete(context, pen_handle) if pen_handle
           emit_delete(context, brush_handle) if brush_handle
-          emit_restore_dc(context) if wrap_with_clip
+          return unless wrap_with_clip
+
+          restore = emit_restore_dc(context)
+          context.remember_clip_scope(signature, restore)
+        end
+
+        def clip_scope_signature(element, context, clip_bounds)
+          # Only this built-in handler installs complete geometry without
+          # changing any other persistent GDI state. Custom handlers opt out.
+          return unless instance_of?(PathHandler) && clip_bounds && element.stroke && element.fill
+
+          stroke = element.stroke
+          fill = element.fill
+          [self.class, context.rect_attrs(*clip_bounds),
+           stroke.pen_style, context.point_attrs(stroke.width, 0), stroke.paint.color.to_emf_wire.to_wire,
+           fill.style, fill.color.to_emf_wire.to_wire, 0]
         end
 
         def clip_bounds_for(element, context)

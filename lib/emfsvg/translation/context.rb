@@ -47,6 +47,24 @@ module Emfsvg
         @emitter.records
       end
 
+      # Reuse only the exact tail restore from an identical clipped draw.
+      # Keeping one outer SaveDC/RestoreDC pair also preserves native EMF
+      # popping semantics; nested saves cannot be coalesced this way.
+      def reuse_clip_scope?(signature)
+        previous = @clip_scope_tail
+        @clip_scope_tail = nil
+        return false unless signature && previous
+        return false unless previous[0] == signature && previous[1] == records.size - 1
+        return false unless records.last.equal?(previous[2])
+
+        records.pop
+        true
+      end
+
+      def remember_clip_scope(signature, restore)
+        @clip_scope_tail = [signature, records.size - 1, restore] if signature
+      end
+
       # Dispatch an element through the registry. Container handlers
       # (e.g. GroupHandler) call this to recurse into their children.
       def dispatch(element)
