@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/claricle/emf.git
-  revision: 56c5ec1aae9fb7682b0a05a3e493d1997839e0c4
-  ref: 56c5ec1aae9fb7682b0a05a3e493d1997839e0c4
+  revision: 3499dad89fd308ff190231769e2c2b67739f16d0
+  ref: 3499dad89fd308ff190231769e2c2b67739f16d0
   specs:
     emf (0.1.2)
       bindata (~> 2.4)
@@ -46,6 +46,7 @@ GEM
     ffi (1.17.4-x86_64-darwin)
     ffi (1.17.4-x86_64-linux-gnu)
     ffi (1.17.4-x86_64-linux-musl)
+    fiddle (1.1.8)
     fontisan (0.4.46)
       base64
       bindata (~> 2.5)
@@ -205,6 +206,7 @@ PLATFORMS
 DEPENDENCIES
   emf!
   emfsvg!
+  fiddle (~> 1.1)
   leptris (>= 1.9.365.1)
   rake (~> 13.0)
   rexml (~> 3.3)
@@ -232,6 +234,7 @@ CHECKSUMS
   ffi (1.17.4-x86_64-darwin) sha256=aa70390523cf3235096cf64962b709b4cfbd5c082a2cb2ae714eb0fe2ccda496
   ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
   ffi (1.17.4-x86_64-linux-musl) sha256=3fdf9888483de005f8ef8d1cf2d3b20d86626af206cbf780f6a6a12439a9c49e
+  fiddle (1.1.8) sha256=7fa8ee3627271497f3add5503acdbc3f40b32f610fc1cf49634f083ef3f32eee
   fontisan (0.4.46) sha256=a505597dac9bbdea9a4f6f6afe6cb849dc1c85afb0f67f8771dae7c01e11e20f
   json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0

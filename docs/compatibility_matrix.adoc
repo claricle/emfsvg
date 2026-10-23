@@ -15,7 +15,7 @@ Missing roots, unexpected or missing files, and changed bytes fail setup.
 There are no developer-machine or sibling-checkout defaults.
 
 The runtime is independent of that corpus checkout. Development temporarily
-pins `emf` to Git revision `56c5ec1aae9fb7682b0a05a3e493d1997839e0c4`.
+pins `emf` to Git revision `3499dad89fd308ff190231769e2c2b67739f16d0`.
 A containing released package, native backend selection, and upstream resource
 and diagnostic contracts remain qualification requirements. A valid corpus
 inventory does not establish runtime qualification.
@@ -159,7 +159,7 @@ versioned resource baseline. It currently refuses before corpus execution:
 upstream https://github.com/claricle/emf/issues/65[emf #65] and
 https://github.com/claricle/emf/issues/66[emf #66] have no pinned landed revisions,
 the released runtime/package and native artifact are unqualified, and the public
-calibration adapter is unavailable. Filling manifest fields alone cannot qualify
+calibration adapter is not yet qualified. Filling manifest fields alone cannot qualify
 the loaded implementation. There is no generated corpus baseline.
 
 The adapter must verify the exact manifest-selected corpus, independently loaded
@@ -169,8 +169,13 @@ prerequisite; environment variables alone do not prove the selected backend.
 The existing command reuses `scripts/check_parity_provenance.rb` metadata checks
 and requires the two exact upstream issue identities. Its executable sampling,
 schema, derivation, drift, and atomic-write behavior has focused synthetic tests.
-The missing adapter must be implemented against the actual released public
-interfaces before these commands can perform corpus calibration.
+A production adapter core now exercises public conversion in a fresh process,
+checks exact SVG bytes and warnings, preserves typed exceptions and causes,
+and rejects input/runtime/artifact drift or backend fallback. Its native-selected
+auto observation uses the pinned upstream private selector and explicitly does
+not establish a public backend contract. Startup stderr remains visible and
+causes rejection. This core does not bypass prerequisite checks; released-package
+and public-contract qualification are required before corpus calibration.
 
 The following is the intended invocation once those gates are satisfied. Set all
 three outer caps explicitly for the host; there are no default caps. Values must
