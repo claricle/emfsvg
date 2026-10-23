@@ -183,6 +183,9 @@ module Emfsvg
       end
 
       def interval_definitions?(defs)
+        # Creating an unselected canonical brush does not change the active clip.
+        return true if defs.unused_pattern
+
         defs.children.all? do |clip|
           clip.is_a?(Elements::ClipPath) && clip.unused_rectangle_bounds && referenced?(clip.id)
         end
