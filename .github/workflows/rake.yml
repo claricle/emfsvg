@@ -16,7 +16,12 @@ jobs:
     uses: metanorma/ci/.github/workflows/generic-rake.yml@main
     with:
       after-setup-ruby: |
-        if [[ "$RUNNER_OS" == "Windows" ]]; then
+        if [[ "$RUNNER_OS" == "Linux" ]]; then
+          sudo apt-get update
+          sudo apt-get install -y fontconfig p7zip-full
+        elif [[ "$RUNNER_OS" == "macOS" ]]; then
+          brew install fontconfig sevenzip
+        elif [[ "$RUNNER_OS" == "Windows" ]]; then
           mingw_prefix="${MINGW_PREFIX:?RubyInstaller MSYS2 environment is required}"
           case "$mingw_prefix" in
             /ucrt64) fontconfig_package=mingw-w64-ucrt-x86_64-fontconfig ;;
@@ -28,11 +33,11 @@ jobs:
           fontconfig_bin_unix="$(cygpath -u "$fontconfig_bin_windows")"
           export PATH="$fontconfig_bin_unix:$PATH"
           printf '%s\n' "$fontconfig_bin_windows" >> "$GITHUB_PATH"
-          ruby -ropen3 -e '
-            stdout, status = Open3.capture2("fc-match", "-f", "%{file}\n", "Arial")
-            font_path = stdout.lines.first&.strip
-            abort "fc-match could not resolve Arial to an installed font file" unless status.success? && font_path && File.file?(font_path)
-          '
+          sevenzip_directory="$(cygpath -u 'C:\Program Files\7-Zip')"
+          if [[ ! -f "$sevenzip_directory/7z.exe" ]]; then
+            choco install 7zip --yes --no-progress
+          fi
+          export PATH="$sevenzip_directory:$PATH"
         fi
         corpus_revision="$(ruby -ryaml -e '
           revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
@@ -46,6 +51,26 @@ jobs:
         git -C "$corpus_root" checkout --detach FETCH_HEAD
         test "$(git -C "$corpus_root" rev-parse HEAD)" = "$corpus_revision"
         printf 'EMF_FIXTURE_ROOT=%s\n' "$corpus_root" >> "$GITHUB_ENV"
+        # Provision locally from hash-pinned intact installers; never cache/upload extracted fonts.
+        # Ruby vectors are qualified here; the Darwin-pinned C oracle remains a separate gate.
+        bundle exec ruby -rjson -rfileutils -rrbconfig -e '
+          directory = File.join(ENV.fetch("RUNNER_TEMP"), "emfsvg-font-qualification")
+          FileUtils.mkdir_p(directory)
+          options = {
+            "staging_directory" => directory,
+            "corpus_root" => ARGV.fetch(0),
+            "output_directory" => File.join(directory, "qualified"),
+            "contract_path" => File.join(directory, "contract.json")
+          }
+          options_path = File.join(directory, "options.json")
+          File.write(options_path, JSON.generate(options))
+          abort "Portable font provisioning failed" unless system(RbConfig.ruby, "scripts/provision_qualification_fonts.rb", options_path)
+          abort "Ruby font qualification failed" unless system(RbConfig.ruby, "scripts/qualify_fonts.rb", options.fetch("contract_path"), "--ruby-only")
+          File.open(ENV.fetch("GITHUB_ENV"), "a") do |file|
+            file.puts "FONTCONFIG_FILE=#{File.join(options.fetch("output_directory"), "fonts.conf")}"
+            file.puts "FONTCONFIG_PATH=#{options.fetch("output_directory")}"
+          end
+        ' "$corpus_root"
 
   corpus-integrity:
     name: Parity inventory preflight (not native qualification)
