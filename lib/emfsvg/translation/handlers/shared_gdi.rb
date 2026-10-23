@@ -32,7 +32,8 @@ module Emfsvg
                          miter_limit: element.stroke.miter_limit)
           end
           pen_handle = emit_create_pen(context, element.stroke) if element.stroke
-          brush_handle = emit_create_brush(context, element.fill) if element.fill
+          brush = element.stroke&.fallback_brush || element.fill
+          brush_handle = emit_create_brush(context, brush) if brush
           if wrap_with_clip && !reuse_clip
             context.emit(Emf::Emr::Binary::Records::IntersectClipRect,
                          i_type: INTERSECTCLIPRECT,

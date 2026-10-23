@@ -23,12 +23,12 @@ module Emfsvg
       NULL_PEN_WIDTH_SENTINEL = "1px"
 
       attr_reader :paint, :width, :dash_array, :line_cap, :line_join, :miter_limit, :raw_width,
-                  :line_cap_explicit, :line_join_explicit, :null_pen_fallback
+                  :line_cap_explicit, :line_join_explicit, :null_pen_fallback, :fallback_brush
 
       def initialize(paint:, width: 1.0, dash_array: nil, line_cap: "round",
                      line_join: "round", miter_limit: 10.0, raw_width: nil,
                      line_cap_explicit: false, line_join_explicit: false,
-                     null_pen_fallback: true)
+                     null_pen_fallback: true, fallback_brush: nil)
         @paint = paint
         @width = width.to_f
         @dash_array = dash_array
@@ -39,6 +39,7 @@ module Emfsvg
         @line_cap_explicit = line_cap_explicit
         @line_join_explicit = line_join_explicit
         @null_pen_fallback = null_pen_fallback
+        @fallback_brush = fallback_brush
       end
 
       def null_pen_sentinel?

@@ -23,14 +23,30 @@ module Emfsvg
           source_tag = yield(node) if block_given?
           style = Stylable.parse_style(node)
           path_record_kind = canonical_path_record_kind(node, source_tag) if source_tag
+          brush_fallback = source_tag && canonical_brush_fallback?(node, source_tag)
+          if brush_fallback
+            paint = style[:stroke].paint
+            style[:stroke] = Svg::Stroke.new(paint: paint, raw_width: "1px", fallback_brush: paint)
+          end
           style[:fill] = Svg::Paint.from_fill(node["style"].delete_prefix("fill:")) if path_record_kind == :bitblt
           new(
             commands: Svg::PathData::Parser.parse(node["d"]),
-            line_record_kind: source_tag && canonical_polyline?(node, source_tag) ? :polyline : nil,
+            line_record_kind: source_tag && (brush_fallback || canonical_polyline?(node, source_tag)) ? :polyline : nil,
             path_record_kind: path_record_kind,
             **style
           )
         end
+
+        # A NULL pen uses its solid brush to draw open Polyline strokes. The
+        # renderer writes fill=none even though that independent brush is set.
+        def self.canonical_brush_fallback?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          return false unless node["d"]&.match?(/\AM #{number},#{number}(?: L #{number},#{number})+ \z/)
+          return false unless node["stroke"]&.match?(/\A#[0-9A-F]{6}\z/)
+
+          source_tag == %(<path d="#{node['d']}" stroke-width="1px" stroke="#{node['stroke']}" fill="none" />)
+        end
+        private_class_method :canonical_brush_fallback?
 
         def self.canonical_path_record_kind(node, source_tag)
           arc_kind = canonical_arc_kind(node, source_tag)
