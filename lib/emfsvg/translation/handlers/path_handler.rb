@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "emf"
+require_relative "../local_origin"
 
 module Emfsvg
   module Translation
@@ -22,36 +23,42 @@ module Emfsvg
           return if element.commands.empty? && element.path_record_kind != :stroke_path
 
           with_gdi_state(element, context) do
-            if %i[arc chord pie].include?(element.path_record_kind)
-              arc = CircularArc.from_commands(element.commands, kind: element.path_record_kind)
+            context.with_local_origin(LocalOrigin.for_path(element, context.scaler)) do
+              translate_geometry(element, context)
             end
-            if arc&.safe_for?(context)
-              arc.emit(context)
-              next
-            end
-
-            flattened = PathFlattener.flatten(element.commands,
-                                              preserve_initial_line: element.path_record_kind == :stroke_path)
-            if element.path_record_kind == :bitblt
-              emit_bitblt(flattened.first, context)
-              next
-            end
-            next emit_current_curve(flattened, context) if element.path_record_kind == :polybezier_to
-            next emit_current_polyline(flattened.first, context) if element.line_record_kind == :polyline_to
-
-            if %i[end_path fill_path stroke_path stroke_and_fill_path].include?(element.path_record_kind)
-              emit_figures(flattened, context, stroke_null: element.stroke.paint.null?, unfilled: element.fill.null?,
-                                               pending: element.path_record_kind == :end_path)
-              next
-            end
-            emit_subpaths(flattened, context,
-                          unfilled: element.fill.null?, stroke_null: element.stroke.paint.null?,
-                          line_record_kind: element.line_record_kind,
-                          path_record_kind: element.path_record_kind)
           end
         end
 
         private
+
+        def translate_geometry(element, context)
+          if %i[arc chord pie].include?(element.path_record_kind)
+            arc = CircularArc.from_commands(element.commands, kind: element.path_record_kind)
+          end
+          if arc&.safe_for?(context)
+            arc.emit(context)
+            return
+          end
+
+          flattened = PathFlattener.flatten(element.commands,
+                                            preserve_initial_line: element.path_record_kind == :stroke_path)
+          if element.path_record_kind == :bitblt
+            emit_bitblt(flattened.first, context)
+            return
+          end
+          return emit_current_curve(flattened, context) if element.path_record_kind == :polybezier_to
+          return emit_current_polyline(flattened.first, context) if element.line_record_kind == :polyline_to
+
+          if %i[end_path fill_path stroke_path stroke_and_fill_path].include?(element.path_record_kind)
+            emit_figures(flattened, context, stroke_null: element.stroke.paint.null?, unfilled: element.fill.null?,
+                                             pending: element.path_record_kind == :end_path)
+            return
+          end
+          emit_subpaths(flattened, context,
+                        unfilled: element.fill.null?, stroke_null: element.stroke.paint.null?,
+                        line_record_kind: element.line_record_kind,
+                        path_record_kind: element.path_record_kind)
+        end
 
         def emit_bitblt(path, context)
           left, top = path.points.first

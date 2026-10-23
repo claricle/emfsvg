@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "local_origin"
+
 module Emfsvg
   module Translation
     # Walks an Svg::Document tree to decide whether any coordinate
@@ -39,6 +41,8 @@ module Emfsvg
 
       def any_unsafe?(element, scaler)
         return false unless element
+
+        return false if LocalOrigin.for_path(element, scaler)
 
         element_attrs = decimal_attrs_for(element)
         return true if element_attrs.any? { |attr| unsafe_value?(element.send(attr), scaler) }

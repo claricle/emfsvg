@@ -19,6 +19,7 @@ module Emfsvg
         @unused_selected = {}
         @interval_starts = {}
         @interval_ends = {}
+        @interval_groups = {}
       end
 
       def register(clip_path)
@@ -103,6 +104,10 @@ module Emfsvg
         end
       end
 
+      def interval_group?(element)
+        @interval_groups.key?(element)
+      end
+
       def interval_start(element)
         @interval_starts[element]
       end
@@ -145,6 +150,10 @@ module Emfsvg
       def plan_clip_intervals(parent)
         return unless parent
 
+        parent.children.grep(Elements::Group).each do |group|
+          plan_clip_intervals(group) if group.canonical_matrix?
+        end
+
         children = parent.children
         positions = children.each_index.group_by { |index| lookup(children[index].clip_path) }
         occupied = []
@@ -158,6 +167,7 @@ module Emfsvg
           @interval_starts[children[range.begin]] = clip
           @interval_ends[children[range.end]] = clip
           occupied << range
+          @interval_groups[parent] = true
         end
       end
 

@@ -30,6 +30,7 @@ module Emfsvg
         @scaler = scaler
         @next_handle = 1
         @unused_clip_safe = true
+        @local_origin = [0, 0]
       end
 
       # Allocate the next 1-indexed GDI object handle. Always increments
@@ -190,6 +191,7 @@ module Emfsvg
       end
 
       def with_clip_interval(element)
+        empty_group = empty_interval_group?(element)
         clip = @clip_path_registry&.interval_start(element) if @handler_registry.equal?(EmfRenderer::DEFAULT_REGISTRY)
         if clip && (@unused_clip_safe || @interval_clip) && !@carried_clip && !@active_selected_clip
           @clip_scope_tail = nil
@@ -204,6 +206,9 @@ module Emfsvg
         end
         yield
         finish_clip_interval if @interval_clip && @clip_path_registry.interval_end(element).equal?(@interval_clip)
+        # A nested interval leaves snapshots in reference readers. The group's
+        # native RestoreDC returns to its proven empty entry clip.
+        reset_empty_clip if empty_group && empty_clip?
       end
 
       def finish_clip_interval
@@ -214,11 +219,24 @@ module Emfsvg
         @active_selected_clip = nil if @active_selected_clip.equal?(@interval_clip)
         @interval_clip, @unused_clip_safe = @interval_stack.pop
         unless @interval_clip
-          emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
-               i_type: Emf::Emr::Binary::TypeCodes::EXTSELECTCLIPRGN, cb_rgn_data: 0, dw_mode: 5)
+          reset_empty_clip
           @unused_clip_safe = true
         end
         @clip_scope_tail = nil
+      end
+
+      def empty_interval_group?(element)
+        @handler_registry.equal?(EmfRenderer::DEFAULT_REGISTRY) &&
+          @clip_path_registry&.interval_group?(element) && empty_clip?
+      end
+
+      def empty_clip?
+        @unused_clip_safe && !@interval_clip && !@carried_clip && !@active_selected_clip
+      end
+
+      def reset_empty_clip
+        emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
+             i_type: Emf::Emr::Binary::TypeCodes::EXTSELECTCLIPRGN, cb_rgn_data: 0, dw_mode: 5)
       end
 
       # Dispatch an element through the registry. Container handlers
@@ -243,18 +261,45 @@ module Emfsvg
         Emf::Binary::Types::SizeL.new(**size_attrs(cx, cy))
       end
 
+      # Viewport origins use device units, while the line's coordinates retain
+      # the fixed logical scale. Explicit reset also supports readers whose
+      # mapping origins are not part of their saved device context.
+      def with_local_origin(origin)
+        return yield unless origin
+
+        previous = @local_origin
+        emit(Emf::Emr::Binary::Records::SaveDc, i_type: Emf::Emr::Binary::TypeCodes::SAVEDC)
+        emit_viewport_origin(origin)
+        @local_origin = origin
+        begin
+          yield
+        ensure
+          @local_origin = previous
+          emit_viewport_origin(previous)
+          emit(Emf::Emr::Binary::Records::RestoreDc,
+               i_type: Emf::Emr::Binary::TypeCodes::RESTOREDC, saved_dc: -1)
+        end
+      end
+
+      def emit_viewport_origin(origin)
+        emit(Emf::Emr::Binary::Records::SetViewportOrgEx,
+             i_type: Emf::Emr::Binary::TypeCodes::SETVIEWPORTORGEX,
+             origin: { x: origin[0], y: origin[1] })
+      end
+      private :emit_viewport_origin
+
       # Attribute-hash forms of the helpers above. A record field accepts
       # a Hash and builds its nested value in place, which avoids
       # constructing a throwaway BinData object per coordinate that the
       # record would only copy. Handlers use these when emitting.
       def point_attrs(x, y)
-        { x: scale_int(x), y: scale_int(y) }
+        { x: scale_int(x - @local_origin[0]), y: scale_int(y - @local_origin[1]) }
       end
 
       def rect_attrs(left, top, right, bottom)
         {
-          left: scale_int(left), top: scale_int(top),
-          right: scale_int(right), bottom: scale_int(bottom)
+          left: scale_int(left - @local_origin[0]), top: scale_int(top - @local_origin[1]),
+          right: scale_int(right - @local_origin[0]), bottom: scale_int(bottom - @local_origin[1])
         }
       end
 
