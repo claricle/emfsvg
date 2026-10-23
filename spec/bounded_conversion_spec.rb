@@ -6,51 +6,6 @@ require "socket"
 RSpec.describe Emfsvg::SpecSupport::BoundedConversion do
   include Emfsvg::SpecSupport::BoundedConversionFixture
 
-  def wait_for_zombie(pid)
-    deadline = Process.clock_gettime(Process::CLOCK_MONOTONIC) + 1
-    loop do
-      state, = Open3.capture3("/bin/ps", "-o", "stat=", "-p", pid.to_s)
-      return if state.strip.start_with?("Z")
-      raise "child did not exit" if Process.clock_gettime(Process::CLOCK_MONOTONIC) >= deadline
-    end
-  end
-
-  def with_exiting_sampler(exit_on_retry:)
-    Dir.mktmpdir("bounded-sampler-") do |directory|
-      path = File.join(directory, "child.sock")
-      server = UNIXServer.new(path)
-      child = { samples: 0 }
-      connection = nil
-      sampler = lambda do |pid|
-        if pid != Process.pid
-          child[:pid] = pid
-          child[:samples] += 1
-          if child[:samples] > 1
-            connection ||= server.accept.tap(&:gets)
-            if exit_on_retry && child[:samples] == 3
-              connection.puts("exit")
-              wait_for_zombie(pid)
-            end
-            raise described_class::PreconditionError, "missing VmRSS for PID #{pid}"
-          end
-        end
-        rss, = Open3.capture3("/bin/ps", "-o", "rss=", "-p", pid.to_s)
-        { rss_kib: Integer(rss.strip) }
-      end
-      program = <<~RUBY
-        require "socket"
-        socket = UNIXSocket.new(#{path.inspect})
-        socket.puts("ready")
-        socket.gets
-        puts "converted"
-      RUBY
-      yield program, sampler, child
-    ensure
-      connection&.close
-      server&.close
-    end
-  end
-
   it "requires explicit finite positive limits before executing work" do
     Dir.mktmpdir("bounded-precondition-") do |directory|
       marker = File.join(directory, "executed")
@@ -62,6 +17,10 @@ RSpec.describe Emfsvg::SpecSupport::BoundedConversion do
 
   shared_examples "an enforcement failure diagnosis" do |breach, limits|
     it "preserves the originating #{breach} breach when process-group enforcement is denied" do
+      unless %w[linux darwin].any? { |platform| RbConfig::CONFIG.fetch("host_os").include?(platform) }
+        skip "process-group enforcement unavailable on this operating system"
+      end
+
       child_pid = nil
       denied = false
       allow(Process).to receive(:kill).and_wrap_original do |original, signal, pid|
