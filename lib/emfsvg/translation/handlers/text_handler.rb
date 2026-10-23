@@ -75,7 +75,8 @@ module Emfsvg
           text_utf16 = element.content.encode("UTF-16LE").force_encoding("ASCII-8BIT")
           n_chars = element.content.length
           off_string = EXTTEXTOUTW_FIXED_SIZE
-          off_dx = off_string + (n_chars * 2)
+          # The Dx array starts on a DWORD boundary, including after odd-length text.
+          off_dx = (off_string + text_utf16.bytesize + 3) & ~3
           dx_bytes = ("\x00" * 4) * n_chars # zero Dx — natural advance
 
           bounds = text_bounds(element, context)
@@ -97,7 +98,7 @@ module Emfsvg
                        f_options: 0,
                        rcl: context.rect_attrs(0, 0, 0, 0),
                        off_dx: off_dx,
-                       trailing: text_utf16 + dx_bytes)
+                       trailing: text_utf16.ljust(off_dx - off_string, "\x00") + dx_bytes)
         end
 
         # Pack a LOGFONT struct (92 bytes) per MS-WMF 2.2.13.
