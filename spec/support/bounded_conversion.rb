@@ -7,7 +7,14 @@ require "tempfile"
 module Emfsvg
   module SpecSupport
     class BoundedConversion
-      class PreconditionError < StandardError; end
+      class PreconditionError < StandardError
+        attr_reader :report
+
+        def initialize(message = nil, report: nil)
+          super(message)
+          @report = report
+        end
+      end
 
       SAMPLE_INTERVAL = 0.01
       LINUX_FIELDS = { rss_kib: "VmRSS", rss_peak_kib: "VmHWM", as_kib: "VmSize", as_peak_kib: "VmPeak" }.freeze
@@ -66,17 +73,17 @@ module Emfsvg
         record(sample(@pid))
         writer.write("g")
         writer.close
-        breach = watch
-        terminate_group if breach
+        @breach = watch
+        terminate_group if @breach
         # A successful leader must not leave descendants running either.
         if group_alive?
-          breach ||= :descendants
+          @breach ||= :descendants
           terminate_group
         end
         @finished = true
         output.rewind
         error.rewind
-        report(breach).merge(stdout: output.read, stderr: error.read)
+        report(@breach).merge(stdout: output.read, stderr: error.read)
       ensure
         reader&.close unless reader&.closed?
         writer&.close unless writer&.closed?
@@ -171,10 +178,12 @@ module Emfsvg
       end
 
       def report(breach)
-        { basename: @basename, breach: breach, status: @status.signaled? ? :signaled : :exited,
-          exitstatus: @status.exitstatus, signal: @status.termsig,
-          success: @status.success? == true && breach.nil?, elapsed_seconds: monotonic - @started,
-          metrics: @metrics, limits: @limits,
+        status = @status&.signaled? ? :signaled : :exited
+        status = :unknown unless @status
+        { basename: @basename, breach: breach, status: status,
+          exitstatus: @status&.exitstatus, signal: @status&.termsig,
+          success: @status&.success? == true && breach.nil?, elapsed_seconds: monotonic - @started,
+          metrics: @metrics.dup, limits: @limits.dup,
           mechanism: { rss: @linux ? "/proc/status" : "ps RSS", time: "monotonic parent watchdog",
                        address_space: @linux ? "child RLIMIT_AS" : "unsupported" } }
       end
@@ -188,7 +197,8 @@ module Emfsvg
       end
 
       def fail_precondition(message)
-        raise PreconditionError, "#{@basename}: #{message}"
+        diagnosis = report(@breach) if @started
+        raise PreconditionError.new("#{@basename}: #{message}", report: diagnosis)
       end
     end
   end

@@ -60,6 +60,43 @@ RSpec.describe Emfsvg::SpecSupport::BoundedConversion do
     end
   end
 
+  shared_examples "an enforcement failure diagnosis" do |breach, limits|
+    it "preserves the originating #{breach} breach when process-group enforcement is denied" do
+      child_pid = nil
+      denied = false
+      allow(Process).to receive(:kill).and_wrap_original do |original, signal, pid|
+        if signal == "TERM"
+          denied = true
+          raise Errno::EPERM, "controlled group denial"
+        end
+        original.call(signal, pid)
+      end
+      sampler = lambda do |pid|
+        child_pid = pid unless pid == Process.pid
+        { rss_kib: 2048 }
+      end
+
+      expect { bounded_run("sleep 30", sampler: sampler, **limits) }
+        .to raise_error(described_class::PreconditionError, /process-group enforcement unavailable/) { |error|
+          expect(error.report).to include(basename: "benign.emf", breach: breach, success: false,
+                                          status: :unknown, exitstatus: nil, signal: nil)
+          expect(error.report.fetch(:metrics)).to include(rss_kib: 2048)
+          expect(error.report.fetch(:limits)).to include(as_cap_mib: 512, grace_seconds: 0.1, **limits)
+          expect(error.report.fetch(:elapsed_seconds)).to be_positive
+          expect(error.report.fetch(:mechanism)).to include(time: "monotonic parent watchdog")
+        }
+      expect(denied).to be(true)
+      reap_bounded_child(child_pid)
+      expect { Process.kill(0, child_pid) }.to raise_error(Errno::ESRCH)
+      expect { Process.waitpid(child_pid, Process::WNOHANG) }.to raise_error(Errno::ECHILD)
+    ensure
+      reap_bounded_child(child_pid)
+    end
+  end
+
+  include_examples "an enforcement failure diagnosis", :rss, { rss_cap_mib: 1 }
+  include_examples "an enforcement failure diagnosis", :timeout, { timeout_seconds: 0.03 }
+
   it "rejects missing required limits" do
     expect { described_class.run(command: [RbConfig.ruby], basename: "missing.emf") }
       .to raise_error(ArgumentError, /missing keywords/)

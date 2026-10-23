@@ -11,6 +11,16 @@ module Emfsvg
                               authoritative: false, **overrides)
       end
 
+      def reap_bounded_child(pid)
+        return unless pid
+        return if Process.waitpid(pid, Process::WNOHANG)
+
+        Process.kill("KILL", pid)
+        Process.waitpid(pid)
+      rescue Errno::ESRCH, Errno::ECHILD
+        nil
+      end
+
       def bounded_sampler_available?
         return true if RbConfig::CONFIG.fetch("host_os").include?("linux")
 
