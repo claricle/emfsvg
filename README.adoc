@@ -10,10 +10,11 @@ Both conversion directions are implemented. Compatibility is enforced by strict
 byte comparisons against the pinned corpus and committed SVG artifacts; the
 lossy matcher is a separate diagnostic tool, not the parity acceptance gate.
 
-Current integration uses a temporary `emf` Git pin. The strict checks expose
-known failures, including the `image1` round trip and unverified historical C
-provenance. The full corpus, corrupted-input resource behavior, native backend,
-and a containing released `emf` package remain unqualified. See
+Current integration uses a temporary `emf` Git pin. The `image1` round trip now
+matches exactly, and a deliberately pinned C build reproduces all 208 committed
+C goldens byte for byte. The original historical builder remains unknown. Full
+Ruby corpus parity, corrupted-input resource behavior, native backend, and a
+containing released `emf` package remain unqualified. See
 link:docs/compatibility_matrix.adoc[the compatibility matrix] for contracts and
 current evidence, and link:spec/fixtures/README.adoc[fixture setup] before running
 corpus-dependent checks.
@@ -131,7 +132,7 @@ Live C tools require both `EMF2SVG_REF_PATH` (an executable wrapper) and
 `EMF2SVG_REF_LIB_DIR` (its library directory), resolved only by the spec support
 `Emfsvg::Compat` helper. Neither has a machine-specific default. The live fidelity
 spec is opt-in with `EMFSVG_LIVE_REFERENCE=1`; see the fixture setup for commands
-and the unresolved historical reference provenance.
+and the verified current reference build recipe.
 
 === Developer scripts
 

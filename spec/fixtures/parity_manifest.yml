@@ -35,10 +35,10 @@ provenance:
       issue: https://github.com/claricle/emf/issues/15
       landed_revision: 318b2d86c4025b5913c595c5055477124199daf9
     diagnostics:
-      issue:
+      issue: https://github.com/claricle/emf/issues/65
       landed_revision:
     resources:
-      issue:
+      issue: https://github.com/claricle/emf/issues/66
       landed_revision:
   native_library:
     status: unavailable
@@ -49,10 +49,17 @@ provenance:
     requested: auto
     required_selected: native
   c_reference:
-    status: unverified_historical_artifacts
+    status: verified
+    qualification: deliberate_current_pin
+    historical_source_recovered: false
+    repository: https://github.com/claricle/libemf2svg.git
     reported_version: 1.8.1
-    source_revision:
-    build_recipe: cmake -S . -B build -DLONLY=ON && cmake --build build
+    source_revision: ca88c51f2f86e4a885b6aa5280ce3e7419cb73e5
+    binary_sha256: c86fb0175d912468246d82bedaefb86e241f52120d51cfc3120a6d15949cf96d
+    library_sha256: 76fd64e3a90b092dfeadc1a9251b68e17699e10f2af67c9e6b8823e5321b8fa3
+    wrapper_source_sha256: 4bd0f555ae001e3284e0e3a4b010c6bc25103819af54dfa0c389f3c00aa41049
+    build_recipe: cmake -S source -B build -DLONLY=ON && cmake --build build --parallel 2 && cc -I source/inc -L build -lemf2svg emf2svg_ref.c -o emf2svg_ref
+    build_details: spec/fixtures/README.adoc
     wrapper_options:
       nameSpace:
       verbose: 0
@@ -60,9 +67,14 @@ provenance:
       svgDelimiter: 1
       imgWidth: 0
       imgHeight: 0
-    generation_command: bundle exec ruby scripts/regenerate_golden.rb
-    blocker: Exact historical source/build revision is not recorded; artifact hashes
-      prove integrity only, not C provenance.
+    generation_command: DYLD_LIBRARY_PATH="$EMF2SVG_REF_LIB_DIR" "$EMF2SVG_REF_PATH" INPUT.emf OUTPUT.svg
+    qualification_evidence:
+      date: '2026-10-23'
+      accepted_outputs_compared: 208
+      byte_equal_outputs: 208
+      committed_artifacts_changed: false
+      report_sha256: 0ce6181ded818dd7dfe297faf6c62427a50a52474dfd44f11399c95c2a988709
+      scope: Current pinned build reproduces all accepted C golden bytes; original historical builder identity remains unknown.
 fixed_sample:
 - test-000
 - test-001

@@ -56,23 +56,24 @@ only one example is selected.
 
 == Current evidence and remaining qualification
 
-At the strict-contract implementation (`24bf401`), the 209- and 426-example
-groups collected with no pending examples. A selected real `image1` run executed
-four examples with two failures:
+The strict 208/209/426 comparison groups collect without divergence exemptions.
+Text record alignment (`e271b64`) and omitted font weight preservation (`34398cd`)
+restore the `image1` round trip: all 195 text records remain typed, no parse errors
+are reported, and the output matches all 39,849 input bytes.
 
-* The round trip differed at byte offset 958: expected 39,849 bytes, actual
-  31,074 bytes.
-* The C artifact provenance assertion failed because the historical reference
-  is unverified and its exact source revision is missing.
+A deliberately pinned libemf2svg 1.8.1 build at
+`ca88c51f2f86e4a885b6aa5280ce3e7419cb73e5` reproduces all 208 committed C goldens
+byte for byte under bounded sequential execution. The manifest records its
+source, wrapper, binary, library and audit report checksums; the fixture guide
+records its build inputs. This qualifies the current reference pin while leaving
+the identity of the original historical builder unknown. No golden was changed.
 
-The selected direct Ruby-to-C `image1` byte comparison and fixed-sample
-`image1` byte/structure check passed. This does not establish a full-corpus
-pass: the complete 208-input conversion batch and generated-output aggregate
-have not been qualified. No current 100% fidelity claim is supported.
-
-Committed hashes establish artifact integrity. They do not recover the missing
-historical C source/build provenance. `scripts/check_parity_provenance.rb`
-reports unresolved qualification metadata and currently exits nonzero.
+Full Ruby corpus parity and the generated-output aggregate remain unqualified.
+`scripts/check_parity_provenance.rb` still exits nonzero for the unreleased
+runtime, unlanded diagnostic/resource contracts, and missing native artifact.
+The diagnostic and resource prerequisites are tracked separately in
+https://github.com/claricle/emf/issues/65[emf #65] and
+https://github.com/claricle/emf/issues/66[emf #66]. Neither has a landed revision.
 
 Fresh-process tests cover a real supported conversion and malformed-byte parse
 error without loading the reference helper or executing the configured C

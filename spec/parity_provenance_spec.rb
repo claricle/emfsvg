@@ -144,18 +144,21 @@ RSpec.describe ParityProvenance do
       "issue" => "https://github.com/claricle/emf/issues/15",
       "landed_revision" => "318b2d86c4025b5913c595c5055477124199daf9"
     )
-    expect(contracts.fetch("diagnostics")).to eq("issue" => nil, "landed_revision" => nil)
-    expect(contracts.fetch("resources")).to eq("issue" => nil, "landed_revision" => nil)
+    expect(contracts.fetch("diagnostics")).to eq(
+      "issue" => "https://github.com/claricle/emf/issues/65", "landed_revision" => nil
+    )
+    expect(contracts.fetch("resources")).to eq(
+      "issue" => "https://github.com/claricle/emf/issues/66", "landed_revision" => nil
+    )
   end
 
-  it "fails closed for the remaining release, contract, native, and historical C provenance gaps" do
+  it "fails closed for remaining release, contract, and native provenance gaps" do
     errors = described_class.new.errors.join("\n")
     expect(errors).to include(
       "runtime.status", "runtime.source: expected \"rubygems\"", "runtime.package_sha256",
-      "diagnostics.issue", "resources.issue",
-      "native_library.status", "native_library.artifact_sha256", "native_library.abi",
-      "c_reference.status", "c_reference.source_revision"
+      "diagnostics.landed_revision", "resources.landed_revision",
+      "native_library.status", "native_library.artifact_sha256", "native_library.abi"
     )
-    expect(errors).not_to include("runtime.source_revision", "model.landed_revision")
+    expect(errors).not_to include("runtime.source_revision", "model.landed_revision", "c_reference.")
   end
 end
