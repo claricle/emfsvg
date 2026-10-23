@@ -56,6 +56,7 @@ RSpec.describe "Public resource limits" do
 
   it "preserves missing-file errors" do
     Tempfile.create(["resource-limit", ".emf"]) do |file|
+      file.close
       File.unlink(file.path)
       expect { Emfsvg.from_file(file.path) }.to raise_error(Errno::ENOENT)
     end

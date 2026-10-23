@@ -176,6 +176,7 @@ module Emfsvg
           file.write(YAML.dump(JSON.parse(JSON.generate(document))))
           file.flush
           file.fsync
+          file.close
           File.rename(file.path, path)
         end
       end
