@@ -33,6 +33,8 @@ module Emfsvg
           kinds = subpaths.map(&:shape_kind).uniq
           if subpaths.size > 1 && kinds.size == 1 && %i[polygon polyline].include?(kinds.first)
             emit_multi(subpaths, kinds.first == :polygon, context)
+          elsif single_line_path?(subpaths)
+            subpaths.first.segments.each { |letter, points| emit_segment(letter, points, subpaths.first, context) }
           elsif subpaths.size > 1 || kinds == [:path]
             emit_figures(subpaths, context)
           else
@@ -43,6 +45,14 @@ module Emfsvg
             when :polybezier then emit_polybezier(flattened, context)
             end
           end
+        end
+
+        def single_line_path?(subpaths)
+          return false unless subpaths.size == 1
+
+          segments = subpaths.first.segments
+          segments.size == 2 && segments.first.first == "M" &&
+            %w[L H V].include?(segments.last.first)
         end
 
         def emit_multi(subpaths, closed, context)
