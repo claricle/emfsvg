@@ -13,13 +13,11 @@ module Emfsvg
           marker = File.join(project, "conversions.log")
           probe = File.join(project, "conversion_probe.rb")
           File.write(probe, conversion_probe)
-          reference = File.join(project, "reference")
-          File.write(reference, <<~SH)
-            #!/bin/sh
-            printf 'reference\\n' >> "$TOOLING_CONVERSIONS"
-            printf '<svg/>' > "$2"
-          SH
-          File.chmod(0o755, reference)
+          windows = RbConfig::CONFIG.fetch("host_os").match?(/mswin|mingw|cygwin/i)
+          extension = ".cmd" if windows
+          reference = File.join(project, "reference#{extension}")
+          File.write(reference, reference_wrapper(windows))
+          File.chmod(0o755, reference) unless windows
           environment = { "EMF_FIXTURE_ROOT" => root, "EMF2SVG_REF_PATH" => reference,
                           "EMF2SVG_REF_LIB_DIR" => project, "TOOLING_CONVERSIONS" => marker }
           yield root, project, data, environment, probe, marker
@@ -59,6 +57,19 @@ module Emfsvg
           end
           Emfsvg.singleton_class.prepend(ToolingConversionProbe)
         RUBY
+      end
+
+      def reference_wrapper(windows)
+        return <<~CMD if windows
+          @echo off
+          "#{RbConfig.ruby}" -e "File.open(ENV.fetch('TOOLING_CONVERSIONS'), 'a') { |file| file.puts('reference') }; File.binwrite(ARGV.fetch(0), '<svg/>')" "%~2"
+        CMD
+
+        <<~SH
+          #!/bin/sh
+          printf 'reference\\n' >> "$TOOLING_CONVERSIONS"
+          printf '<svg/>' > "$2"
+        SH
       end
 
       def materialize_tooling_conversions(root, project, data)
