@@ -36,6 +36,13 @@ module Emfsvg
         candidate
       end
 
+      # True when the header translate group carries the legacy broken-Y
+      # marker (see Elements::Group::LEGACY_BROKEN_Y_TRANSFORM).
+      def legacy_broken_y_header?
+        group = header_translate_group
+        !group.nil? && group.legacy_broken_y?
+      end
+
       # A matrix equivalent to a pure translate: identity 2×2 portion
       # (modulo floating-point rounding).
       IDENTITY_TOLERANCE = 1e-9
