@@ -49,6 +49,7 @@ module Emfsvg
         registry.plan_sibling_clips(document.root_element)
         registry.plan_selected_clips(document.root_element)
         registry.plan_clip_intervals(document.header_translate_group)
+        registry.plan_text_clip_intervals(document.root_element)
         registry
       end
 
@@ -130,6 +131,24 @@ module Emfsvg
         end
       end
 
+      # Canonical text draws can share a clip across a painted native path,
+      # whose renderer spelling omits the clipping attribute. The exact three
+      # drawing sequence and exclusive references bound this scope.
+      def plan_text_clip_intervals(parent)
+        return unless parent
+
+        parent.children.each { |child| plan_text_clip_intervals(child) }
+        return unless parent.is_a?(Elements::Group) && parent.canonical_matrix?
+
+        parent.children.each_cons(5) do |previous, defs, first, path, last|
+          clip = text_interval_clip(previous, defs, first, path, last)
+          next unless clip
+
+          @interval_starts[defs] = clip
+          @interval_ends[last] = clip
+        end
+      end
+
       private
 
       # Crossing ranges cannot form native scopes. A nested range contains
@@ -167,6 +186,26 @@ module Emfsvg
         defs.children.all? do |clip|
           clip.is_a?(Elements::ClipPath) && clip.unused_rectangle_bounds && referenced?(clip.id)
         end
+      end
+
+      def text_interval_clip(previous, defs, first, path, last)
+        return unless defs.is_a?(Elements::Defs) && defs.children.size == 1
+
+        clip = defs.children.first
+        return unless clip.is_a?(Elements::ClipPath) && @references[clip.id] == 2
+        return unless [first, last].all? do |text|
+          text.instance_of?(Elements::Text) && !text.transformed? && lookup(text.clip_path).equal?(clip)
+        end
+        return unless path.instance_of?(Elements::Path) && !path.clip_path
+        return unless path.path_record_kind == :stroke_and_fill_path
+        return clip if clip.unused_rectangle_bounds
+
+        clip if matching_pending_clip?(previous, clip)
+      end
+
+      def matching_pending_clip?(path, clip)
+        clip.selected_path_data && path.instance_of?(Elements::Path) &&
+          path.path_record_kind == :end_path && !path.clip_path && matching_clip_path?(path, clip)
       end
 
       def selected_group_clip(group)

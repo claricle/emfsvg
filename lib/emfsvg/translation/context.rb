@@ -79,7 +79,7 @@ module Emfsvg
       end
 
       def preserve_selected_clip(clip)
-        return unless clip && @selected_clip.equal?(clip)
+        return unless clip && (@selected_clip.equal?(clip) || (@interval_clip.equal?(clip) && clip.selected_path_data))
 
         @emitter.emit(Emf::Emr::Binary::Records::SelectClipPath,
                       i_type: Emf::Emr::Binary::TypeCodes::SELECTCLIPPATH, region_mode: 5)
@@ -184,9 +184,11 @@ module Emfsvg
           (@interval_stack ||= []) << [@interval_clip, @unused_clip_safe]
           @interval_clip = clip
           emit(Emf::Emr::Binary::Records::SaveDc, i_type: Emf::Emr::Binary::TypeCodes::SAVEDC)
-          emit(Emf::Emr::Binary::Records::IntersectClipRect,
-               i_type: Emf::Emr::Binary::TypeCodes::INTERSECTCLIPRECT,
-               rcl_clip: rect_attrs(*clip.unused_rectangle_bounds))
+          if clip.unused_rectangle_bounds
+            emit(Emf::Emr::Binary::Records::IntersectClipRect,
+                 i_type: Emf::Emr::Binary::TypeCodes::INTERSECTCLIPRECT,
+                 rcl_clip: rect_attrs(*clip.unused_rectangle_bounds))
+          end
         end
         yield
         finish_clip_interval if @interval_clip && @clip_path_registry.interval_end(element).equal?(@interval_clip)
@@ -197,6 +199,7 @@ module Emfsvg
              i_type: Emf::Emr::Binary::TypeCodes::RESTOREDC, saved_dc: -1)
         # Native RestoreDC pops the interval; the reference renderer retains
         # snapshots. Explicitly resetting its clip agrees with native empty state.
+        @active_selected_clip = nil if @active_selected_clip.equal?(@interval_clip)
         @interval_clip, @unused_clip_safe = @interval_stack.pop
         unless @interval_clip
           emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
