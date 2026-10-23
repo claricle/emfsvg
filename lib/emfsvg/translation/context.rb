@@ -39,6 +39,11 @@ module Emfsvg
         handle
       end
 
+      # Includes the reserved zero slot required by the EMF header.
+      def handle_table_size
+        @next_handle
+      end
+
       def emit(wire_class, **attrs)
         @emitter.emit(wire_class, **attrs)
       end
@@ -47,7 +52,7 @@ module Emfsvg
         @emitter.records
       end
 
-      # Reuse only the exact tail restore from an identical clipped draw.
+      # Reuse only the exact tail restore from a compatible complete clipped draw.
       # Keeping one outer SaveDC/RestoreDC pair also preserves native EMF
       # popping semantics; nested saves cannot be coalesced this way.
       def reuse_clip_scope?(signature)

@@ -38,8 +38,8 @@ RSpec.describe "Adjacent identical clipped paths" do
   context "when the pen color changes" do
     let(:second_path) { path.sub("#ff0000", "#0000ff") }
 
-    it "keeps separate clip scopes and colors" do
-      expect(wires.grep(Emf::Emr::Binary::Records::SaveDc).size).to eq(2)
+    it "shares the clip scope and retains both colors" do
+      expect(wires.grep(Emf::Emr::Binary::Records::SaveDc).size).to eq(1)
       expect(output).to include('stroke="#FF0000"', 'stroke="#0000FF"')
     end
   end
@@ -47,8 +47,8 @@ RSpec.describe "Adjacent identical clipped paths" do
   context "when the pen width changes" do
     let(:second_path) { path.sub("<path ", '<path stroke-width="3" ') }
 
-    it "keeps separate clip scopes" do
-      expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(2)
+    it "shares the clip scope and retains the changed style" do
+      expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(1)
       expect(output).to include('stroke-width="3.0000"')
     end
   end
@@ -56,8 +56,8 @@ RSpec.describe "Adjacent identical clipped paths" do
   context "when the brush changes" do
     let(:second_path) { path.sub("#00ff00", "#0000ff") }
 
-    it "keeps separate clip scopes" do
-      expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(2)
+    it "shares the clip scope and retains the changed style" do
+      expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(1)
       expect(output).to include('fill="#00FF00"', 'fill="#0000FF"')
     end
   end
@@ -65,8 +65,8 @@ RSpec.describe "Adjacent identical clipped paths" do
   context "when the pen cap and join change" do
     let(:second_path) { path.sub("<path ", '<path stroke-linecap="square" stroke-linejoin="bevel" ') }
 
-    it "keeps separate scopes for the changed pen style" do
-      expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(2)
+    it "shares the clip scope and retains the changed pen style" do
+      expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(1)
       expect(output).to include('stroke-linecap="square"', 'stroke-linejoin="bevel"')
     end
   end

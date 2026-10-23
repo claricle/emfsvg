@@ -31,13 +31,15 @@ module Emfsvg
           wrap_with_clip = !clip_bounds.nil?
           transformed = element.transformed?
 
-          emit_save_dc(context) if wrap_with_clip || transformed
+          signature = clip_scope_signature(element, context, clip_bounds)
+          reuse_clip = context.reuse_clip_scope?(signature)
+          emit_save_dc(context) if (wrap_with_clip || transformed) && !reuse_clip
           if transformed
             context.emit(Emf::Emr::Binary::Records::SetWorldTransform,
                          i_type: SETWORLDTRANSFORM,
                          xform: context.xform_wire_from(element.transform_matrix))
           end
-          if wrap_with_clip
+          if wrap_with_clip && !reuse_clip
             context.emit(Emf::Emr::Binary::Records::IntersectClipRect,
                          i_type: INTERSECTCLIPRECT,
                          rcl_clip: context.rect_attrs(*clip_bounds))
@@ -47,7 +49,10 @@ module Emfsvg
           emit_set_text_align(element, context)
           emit_ext_text_out_w(element, context)
           emit_delete(context, font_handle)
-          emit_restore_dc(context) if wrap_with_clip || transformed
+          return unless wrap_with_clip || transformed
+
+          restore = emit_restore_dc(context)
+          context.remember_clip_scope(signature, restore)
         end
 
         private

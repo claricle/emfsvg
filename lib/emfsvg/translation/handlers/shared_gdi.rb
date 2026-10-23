@@ -15,7 +15,7 @@ module Emfsvg
       #
       # If the element has a rectangular clip-path, the entire draw is
       # wrapped in SaveDC + IntersectClipRect + RestoreDC. Adjacent built-in
-      # paths with identical complete styles can share that single scope.
+      # drawings that install all state they read can share that single scope.
       module SharedGdi
         include Emf::Emr::Binary::TypeCodes
 
@@ -48,16 +48,19 @@ module Emfsvg
         end
 
         def clip_scope_signature(element, context, clip_bounds)
-          # Only this built-in handler installs complete geometry without
-          # changing any other persistent GDI state. Custom handlers opt out.
-          return unless instance_of?(PathHandler) && clip_bounds && element.stroke && element.fill
+          return unless clip_bounds && complete_draw_state?(element)
 
-          stroke = element.stroke
-          fill = element.fill
-          [self.class, context.rect_attrs(*clip_bounds),
-           stroke.pen_style, context.point_attrs(stroke.width, 0), stroke.paint.color.to_emf_wire.to_wire,
-           stroke.miter_limit,
-           fill.style, fill.color.to_emf_wire.to_wire, 0]
+          [:complete_draw, context.rect_attrs(*clip_bounds)]
+        end
+
+        def complete_draw_state?(element)
+          # Exact built-ins opt in: custom handlers may depend on inherited
+          # state. Shapes install pen/brush/miter and absolute geometry;
+          # untransformed text installs font/color/alignment and its position.
+          return !element.transformed? if instance_of?(TextHandler)
+
+          [PathHandler, RectHandler, EllipseHandler, LineHandler,
+           PolylineHandler, PolygonHandler].include?(self.class) && element.stroke && element.fill
         end
 
         def clip_bounds_for(element, context)
