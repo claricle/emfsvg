@@ -16,6 +16,24 @@ jobs:
     uses: metanorma/ci/.github/workflows/generic-rake.yml@main
     with:
       after-setup-ruby: |
+        if [[ "$RUNNER_OS" == "Windows" ]]; then
+          mingw_prefix="$(ridk exec printenv MINGW_PREFIX)"
+          case "$mingw_prefix" in
+            /ucrt64) fontconfig_package=mingw-w64-ucrt-x86_64-fontconfig ;;
+            /mingw64) fontconfig_package=mingw-w64-x86_64-fontconfig ;;
+            *) printf 'Unsupported RubyInstaller MINGW_PREFIX: %s\n' "$mingw_prefix" >&2; exit 1 ;;
+          esac
+          ridk exec pacman -S --noconfirm --needed "$fontconfig_package"
+          fontconfig_bin_windows="$(ridk exec cygpath -w "$mingw_prefix/bin")"
+          fontconfig_bin_unix="$(cygpath -u "$fontconfig_bin_windows")"
+          export PATH="$fontconfig_bin_unix:$PATH"
+          printf '%s\n' "$fontconfig_bin_windows" >> "$GITHUB_PATH"
+          ruby -ropen3 -e '
+            stdout, status = Open3.capture2("fc-match", "-f", "%{file}\n", "Arial")
+            font_path = stdout.lines.first&.strip
+            abort "fc-match could not resolve Arial to an installed font file" unless status.success? && font_path && File.file?(font_path)
+          '
+        fi
         corpus_revision="$(ruby -ryaml -e '
           revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
           abort "Expected a full lowercase corpus SHA" unless /\A[0-9a-f]{40}\z/.match?(revision)
