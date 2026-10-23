@@ -26,7 +26,7 @@ provenance:
     source: git
     repository: https://github.com/claricle/emf.git
     version: 0.1.2
-    source_revision: 36cb3af9a2c938a8a6506fe2ca8394ddecb0ca4e
+    source_revision: dd20737351335560d1d2f117bcf722da355e846d
     package_sha256:
     blocker: Temporary full-SHA development integration; no released tag contains the
       required model contract, and no released package has been qualified.
