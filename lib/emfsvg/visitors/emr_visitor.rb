@@ -184,6 +184,8 @@ module Emfsvg
         elsif @options.verbose
           warn "emfsvg: no handler for #{klass.name&.split('::')&.last}"
         end
+      rescue ParseError
+        raise
       rescue StandardError => e
         raise unless @options.verbose
 
@@ -870,7 +872,7 @@ module Emfsvg
         if small_chars
           bytes.force_encoding("CP1252").encode("UTF-8", undef: :replace, replace: "?")
         else
-          bytes.force_encoding("UTF-16LE").encode("UTF-8", undef: :replace, replace: "?")
+          decode_utf16_text(bytes)
         end
       end
 
@@ -1478,12 +1480,17 @@ module Emfsvg
         if wire.f_options.to_i.anybits?(GlyphIndexMapper::ETO_GLYPH_INDEX)
           decode_glyph_indices(string_bytes, n_chars)
         elsif utf16
-          string_bytes.force_encoding("UTF-16LE")
-                      .encode("UTF-8", undef: :replace, replace: "?")
+          decode_utf16_text(string_bytes)
         else
           cleaned = string_bytes.bytes.map { |b| b > 0x7F ? 0x20 : b }
           cleaned.pack("C*").force_encoding("UTF-8")
         end
+      end
+
+      def decode_utf16_text(string_bytes)
+        string_bytes.force_encoding("UTF-16LE").encode("UTF-8", undef: :replace, replace: "?")
+      rescue Encoding::InvalidByteSequenceError => e
+        raise ParseError, e.message, cause: e
       end
 
       def emit_ext_text(wire, utf16:)
