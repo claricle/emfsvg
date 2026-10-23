@@ -30,7 +30,7 @@ module Emfsvg
         return true if element_attrs.any? { |attr| decimal?(element.send(attr)) }
 
         path = path_commands(element)
-        return true if path&.any? { |cmd| cmd.args.any? { |a| a.is_a?(Float) && a != a.to_i } }
+        return true if path&.any? { |cmd| decimal?(cmd.args) }
 
         element.children.any? { |c| any_decimal?(c) }
       end
@@ -77,7 +77,8 @@ module Emfsvg
         case value
         when Float then !value.finite? || (value != value.to_i)
         when Array
-          value.any? { |v| pair_or_command?(v) ? decimal?(v) : v.is_a?(Float) && v != v.to_i }
+          value.any? { |v| decimal?(v) }
+        when Svg::PathData::Command then decimal?(value.args)
         when String then value.match?(/\.\d/)
         else false
         end
@@ -95,8 +96,9 @@ module Emfsvg
         return false if value.nil?
 
         case value
-        when Float then scaler.unsafe?(value)
+        when Numeric then scaler.unsafe?(value)
         when Array then value.any? { |v| unsafe_value?(v, scaler) }
+        when Svg::PathData::Command then unsafe_value?(value.args, scaler)
         when String then extract_floats(value).any? { |f| scaler.unsafe?(f) }
         else false
         end
