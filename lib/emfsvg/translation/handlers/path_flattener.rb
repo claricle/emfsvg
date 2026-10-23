@@ -3,15 +3,10 @@
 module Emfsvg
   module Translation
     module Handlers
-      # Flatten a list of Svg::PathData::Command into a single shape
-      # (Polyline/Polygon/PolyBezier) suitable for one EMF record.
-      #
-      # v1 limitations:
-      #   * All commands converted to absolute (relative resolved).
-      #   * Arc/quadratic commands approximated as lines (TODO).
-      #   * Multiple subpaths merged into one (TODO: PolyPolygon).
+      # Resolve supported commands to absolute points without joining figures.
+      # Arc/quadratic commands remain unsupported.
       class PathFlattener
-        Result = Struct.new(:shape_kind, :points, :bounds, keyword_init: true)
+        Result = Struct.new(:shape_kind, :points, :bounds, :segments, keyword_init: true)
 
         def self.flatten(commands)
           new.flatten(commands)
@@ -19,46 +14,52 @@ module Emfsvg
 
         def flatten(commands)
           pen = PenState.new
-          closed = false
-          has_curve = false
-          points = []
-
+          subpaths = []
+          segments = []
           commands.each do |command|
-            case command.letter.upcase
-            when "M"
-              pen.move_to(command, absolute: command.absolute?)
-              points << pen.current.dup
-            when "L"
-              pen.line_to(command, absolute: command.absolute?)
-              points << pen.current.dup
-            when "H"
-              pen.h_line_to(command, absolute: command.absolute?)
-              points << pen.current.dup
-            when "V"
-              pen.v_line_to(command, absolute: command.absolute?)
-              points << pen.current.dup
-            when "C"
-              has_curve = true
-              pen.cubic_to(command, absolute: command.absolute?)
-              points.concat(pen.flush_curve_points)
-            when "Z"
-              closed = true
+            letter = command.letter.upcase
+            if letter == "M" && segments.any?
+              subpaths << build_result(segments)
+              segments = []
             end
-          end
+            segments << ["M", [pen.current.dup]] if segments.empty? && letter != "M"
+            points = resolve_command(pen, command)
+            segments << [letter, points] if points
+            next unless letter == "Z"
 
-          Result.new(
-            shape_kind: shape_kind(closed, has_curve),
-            points: points,
-            bounds: bounds_for(points)
-          )
+            pen.close_to(segments.first.last.first)
+            subpaths << build_result(segments)
+            segments = []
+          end
+          subpaths << build_result(segments) unless segments.empty?
+          subpaths
         end
 
         private
 
-        def shape_kind(closed, has_curve)
-          return :polybezier if has_curve
+        def resolve_command(pen, command)
+          case command.letter.upcase
+          when "M", "L" then pen.line_to(command, absolute: command.absolute?)
+          when "H" then pen.h_line_to(command, absolute: command.absolute?)
+          when "V" then pen.v_line_to(command, absolute: command.absolute?)
+          when "C"
+            pen.cubic_to(command, absolute: command.absolute?)
+            return pen.flush_curve_points
+          when "Z" then return []
+          else return nil
+          end
+          [pen.current.dup]
+        end
 
-          closed ? :polygon : :polyline
+        def build_result(segments)
+          points = segments.flat_map(&:last)
+          letters = segments.map(&:first)
+          kind = if letters.include?("C")
+                   (letters - %w[M C]).empty? ? :polybezier : :path
+                 else
+                   letters.last == "Z" ? :polygon : :polyline
+                 end
+          Result.new(shape_kind: kind, points: points, bounds: bounds_for(points), segments: segments)
         end
 
         # Bounds holds raw decimal values (NOT pre-scaled to int). The
@@ -85,9 +86,8 @@ module Emfsvg
           @pending_curve_points = []
         end
 
-        def move_to(command, absolute:)
-          x, y = command.args
-          @current = absolute ? [x, y] : [@current[0] + x, @current[1] + y]
+        def close_to(point)
+          @current = point.dup
         end
 
         def line_to(command, absolute:)

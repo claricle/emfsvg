@@ -8,9 +8,8 @@ module Emfsvg
       # Translate <path d="..."> to EMF drawing records.
       #
       # v1 strategy: flatten to absolute, fully-resolved points. Bezier
-      # control points are preserved as cubic Beziers; arcs/quads are
-      # approximated (TODO). Emits a single PolyBezier record when
-      # cubics are present, else Polyline / Polygon.
+      # control points are preserved as cubic Beziers; arcs/quads remain
+      # unsupported. Separate figures retain their closure and order.
       class PathHandler
         include SharedGdi
         include Emf::Emr::Binary::TypeCodes
@@ -24,18 +23,65 @@ module Emfsvg
 
           with_gdi_state(element, context) do
             flattened = PathFlattener.flatten(element.commands)
-            emit_path(flattened, element, context)
+            emit_subpaths(flattened, context)
           end
         end
 
         private
 
-        def emit_path(flattened, _element, context)
-          case flattened.shape_kind
-          when :polygon then emit_polygon(flattened, context)
-          when :polyline then emit_polyline(flattened, context)
-          when :polybezier then emit_polybezier(flattened, context)
+        def emit_subpaths(subpaths, context)
+          kinds = subpaths.map(&:shape_kind).uniq
+          if subpaths.size > 1 && kinds.size == 1 && %i[polygon polyline].include?(kinds.first)
+            emit_multi(subpaths, kinds.first == :polygon, context)
+          elsif subpaths.size > 1 || kinds == [:path]
+            emit_figures(subpaths, context)
+          else
+            flattened = subpaths.first
+            case flattened.shape_kind
+            when :polygon then emit_polygon(flattened, context)
+            when :polyline then emit_polyline(flattened, context)
+            when :polybezier then emit_polybezier(flattened, context)
+            end
           end
+        end
+
+        def emit_multi(subpaths, closed, context)
+          points = subpaths.flat_map(&:points).map { |x, y| context.point_attrs(x, y) }
+          context.emit(closed ? Emf::Emr::Binary::Records::PolyPolygon : Emf::Emr::Binary::Records::PolyPolyline,
+                       i_type: closed ? POLYPOLYGON : POLYPOLYLINE,
+                       rcl_bounds: combined_bounds(subpaths, context),
+                       n_polys: subpaths.size, c_ptl_total: points.size,
+                       a_poly_counts: subpaths.map { |path| path.points.size }, aptl: points)
+        end
+
+        def emit_figures(subpaths, context)
+          context.emit(Emf::Emr::Binary::Records::BeginPath, i_type: BEGINPATH)
+          subpaths.each do |path|
+            path.segments.each { |letter, points| emit_segment(letter, points, path, context) }
+          end
+          context.emit(Emf::Emr::Binary::Records::EndPath, i_type: ENDPATH)
+          context.emit(Emf::Emr::Binary::Records::StrokeAndFillPath,
+                       i_type: STROKEANDFILLPATH, rcl_bounds: combined_bounds(subpaths, context))
+        end
+
+        def emit_segment(letter, points, path, context)
+          case letter
+          when "M", "L", "H", "V"
+            context.emit(letter == "M" ? Emf::Emr::Binary::Records::MoveToEx : Emf::Emr::Binary::Records::LineTo,
+                         i_type: letter == "M" ? MOVETOEX : LINETO,
+                         origin: context.point_attrs(*points.first))
+          when "C"
+            curve = PathFlattener::Result.new(points: points, bounds: path.bounds)
+            emit_poly(Emf::Emr::Binary::Records::PolyBezierTo, POLYBEZIERTO, curve, context)
+          when "Z"
+            context.emit(Emf::Emr::Binary::Records::CloseFigure, i_type: CLOSEFIGURE)
+          end
+        end
+
+        def combined_bounds(subpaths, context)
+          bounds = subpaths.map(&:bounds)
+          context.rect_attrs(bounds.map(&:left).min, bounds.map(&:top).min,
+                             bounds.map(&:right).max, bounds.map(&:bottom).max)
         end
 
         def emit_polygon(flattened, context)
