@@ -24,6 +24,19 @@ RSpec.describe "Pinned runtime dependency" do
     end
   end
 
+  it "rejects a shadow entrypoint and reports the loaded and expected paths" do
+    Dir.mktmpdir("shadow-runtime-dependency") do |directory|
+      entrypoint = File.join(directory, "emf.rb")
+      File.write(entrypoint, "# A different entrypoint on the Ruby load path.\n")
+
+      _output, error, status = runtime_dependency_observation(load_path: directory)
+
+      expect(status.success?).to be(false)
+      expect(error).to include("emf entry point was not loaded from the pinned checkout",
+                               entrypoint, File.join(Gem.loaded_specs.fetch("emf").full_gem_path, "lib/emf.rb"))
+    end
+  end
+
   it "fails when the lockfile selects another revision" do
     with_runtime_dependency_lock(revision: "a" * 40) do |lockfile|
       _output, error, status = runtime_dependency_observation(lockfile: lockfile)
