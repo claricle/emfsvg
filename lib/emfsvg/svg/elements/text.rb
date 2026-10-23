@@ -16,10 +16,11 @@ module Emfsvg
         Font = Struct.new(:family, :point_size, :weight, :style, :rotation, keyword_init: true)
 
         attr_reader :x, :y, :content, :font, :text_anchor, :fill, :stroke,
-                    :clip_path, :transform_matrix
+                    :clip_path, :transform_matrix, :empty_cdata_content
 
         def initialize(x:, y:, content:, font:, text_anchor:, fill:, stroke:, clip_path: nil,
-                       transform_matrix: Emf::Model::Geometry::Matrix.identity)
+                       transform_matrix: Emf::Model::Geometry::Matrix.identity,
+                       empty_cdata_content: false)
           @x = x
           @y = y
           @content = content
@@ -29,6 +30,7 @@ module Emfsvg
           @stroke = stroke
           @clip_path = clip_path
           @transform_matrix = transform_matrix
+          @empty_cdata_content = empty_cdata_content
         end
 
         def font_family = font.family
@@ -49,6 +51,9 @@ module Emfsvg
             x: AttributeParser.float(node["x"]),
             y: AttributeParser.float(node["y"]),
             content: node.text,
+            empty_cdata_content: node.children.any? do |child|
+              child.is_a?(Leptris::XML::CDATA) && child.content.empty?
+            end,
             font: Font.new(
               family: node["font-family"],
               point_size: AttributeParser.float(node["font-size"], default: 12.0),
