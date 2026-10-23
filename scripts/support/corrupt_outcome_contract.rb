@@ -71,8 +71,8 @@ module Emfsvg
       if expected.fetch("kind") == "svg"
         svg = observation.fetch("svg")
         valid = svg.is_a?(String) && observation.fetch("exception").nil? &&
-                observation.fetch("output_bytes") == svg.bytesize &&
-                Digest::SHA256.hexdigest(svg) == expected.fetch("svg_sha256")
+                observation.fetch("output_bytes") == svg.bytesize
+        valid &&= svg_digest_matches?(svg, expected)
         raise Rejected, "SVG digest/bytes or exception mismatch" unless valid
 
         validate_svg!(svg)
@@ -95,6 +95,10 @@ module Emfsvg
       raise Rejected, "invalid SVG root"
     rescue REXML::ParseException => e
       raise Rejected, "invalid SVG: #{e.message}"
+    end
+
+    def svg_digest_matches?(svg, expected)
+      !expected.key?("svg_sha256") || Digest::SHA256.hexdigest(svg) == expected.fetch("svg_sha256")
     end
 
     def case_report(input, observations)
@@ -124,7 +128,7 @@ module Emfsvg
       expected = record["expected_outcome"]
       unless expected.is_a?(Hash)
         return missing + ["expected_outcome.kind", "expected_outcome.warnings (exact ordered values)",
-                          "expected_outcome.svg_sha256 (svg) or exception class/message/cause (unreadable/resource)"]
+                          "expected_outcome digest (optional for svg) or failure details"]
       end
 
       missing + outcome_requirements(expected)
@@ -147,17 +151,20 @@ module Emfsvg
       kind = expected["kind"]
       case kind
       when "svg"
-        missing << "expected_outcome.svg_sha256" unless digest?(expected["svg_sha256"])
-        fields = %w[kind svg_sha256 warnings]
+        fields = %w[kind warnings]
+        if expected.key?("svg_sha256")
+          missing << "expected_outcome.svg_sha256 (64 lowercase hex characters)" unless digest?(expected["svg_sha256"])
+          fields << "svg_sha256"
+        end
       when "unreadable", "resource"
         missing.concat(exception_requirements(expected["exception"], kind))
         fields = %w[exception kind warnings]
       else
         missing << "expected_outcome.kind (svg, unreadable or resource)"
-        missing << "expected_outcome.svg_sha256 (svg) or exception class/message/cause (unreadable/resource)"
+        missing << "expected_outcome digest (optional for svg) or failure details"
         return missing
       end
-      missing << "expected_outcome exact fields: #{fields.join(', ')}" unless exact_keys?(expected, fields)
+      missing << "expected_outcome exact fields: #{fields.sort.join(', ')}" unless exact_keys?(expected, fields.sort)
       missing
     end
 

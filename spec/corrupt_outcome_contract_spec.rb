@@ -60,6 +60,22 @@ RSpec.describe Emfsvg::CorruptOutcomeContract do
                                                                                                    "mismatch" => 0)
   end
 
+  it "matches a reviewed SVG outcome without a historical digest" do
+    expected.delete("svg_sha256")
+
+    expect(contract.report.fetch("cases").first.fetch("requirements")).to be_empty
+    expect(contract.validate_observation!("example", observation)).to be(true)
+    expect(contract.report(observations: { "example" => observation }).fetch("counts"))
+      .to include("matched" => 1, "mismatch" => 0)
+  end
+
+  it "rejects an invalid supplied SVG digest" do
+    expected["svg_sha256"] = "A" * 64
+
+    expect(contract.report.fetch("cases").first.fetch("requirements"))
+      .to include("expected_outcome.svg_sha256 (64 lowercase hex characters)")
+  end
+
   it "rejects changed warnings including ordering" do
     expected["warnings"] = %w[first second]
     observation["warnings"] = %w[second first]
@@ -115,7 +131,7 @@ RSpec.describe Emfsvg::CorruptOutcomeContract do
     expected.delete("warnings")
     expected.delete("svg_sha256")
     expect(contract.report.fetch("cases").first.fetch("requirements")).to include(
-      "expected_outcome.warnings (exact ordered strings)", "expected_outcome.svg_sha256"
+      "expected_outcome.warnings (exact ordered strings)"
     )
     record["expected_outcome"] =
       { "kind" => "unreadable", "warnings" => [], "exception" => failure.merge("cause" => nil) }
