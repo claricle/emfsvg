@@ -71,7 +71,7 @@ module Emfsvg
       # Build fontconfig pattern matching libemf2svg's get_fontpath.
       pattern = font_family.dup
       # fc-match's own template syntax; %% keeps the literal percent sign.
-      stdout, = Open3.capture2("fc-match", "-f", format("%%{file}\n"), pattern)
+      stdout, = Open3.capture2("fc-match", "-f", format("%%{file}\\n"), pattern)
       path = stdout.strip
       path.empty? ? nil : path
     end

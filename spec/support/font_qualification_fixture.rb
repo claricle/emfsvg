@@ -66,7 +66,8 @@ module Emfsvg
           File.write("#{path}.bat", "@echo off\r\n\"#{RbConfig.ruby}\" \"#{path}\" %*\r\n") if File::ALT_SEPARATOR
         end
         script = File.expand_path("../../scripts/qualify_fonts.rb", __dir__)
-        stdout, stderr, status = Open3.capture3({ "PATH" => "#{commands}#{File::PATH_SEPARATOR}#{ENV.fetch('PATH')}" },
+        stdout, stderr, status = Open3.capture3({ "PATH" => "#{commands}#{File::PATH_SEPARATOR}#{ENV.fetch('PATH')}",
+                                                  "FONTCONFIG_BATCH_SIMULATION" => "1" },
                                                 RbConfig.ruby, script, contract_path, *options)
         argv_log = File.join(commands, "fc-match-argv.log")
         stderr = "#{stderr}\nfc-match argv: #{File.read(argv_log)}" if !status.success? && File.file?(argv_log)
