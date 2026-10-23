@@ -76,7 +76,7 @@ module Emfsvg
           case element.text_anchor
           when "middle" then 0x1E # TA_CENTER | TA_BASELINE
           when "end" then 0x1A # TA_RIGHT | TA_BASELINE
-          else 0 # TA_LEFT | TA_TOP
+          else 0x18 # TA_LEFT | TA_BASELINE
           end
         end
 
@@ -95,24 +95,13 @@ module Emfsvg
           dx_bytes = ("\x00" * 4) * n_chars # zero Dx — natural advance
 
           bounds = text_bounds(element, context)
-          # Centered/right-aligned SVG text uses its baseline directly.
-          # For the default TA_TOP, emfsvg adds (lfHeight * 0.9) to the
-          # stored y when text-align is TA_TOP (default). Reverse
-          # that adjustment using the SAME scaled lfHeight that
-          # emfsvg will read back so the round-trip y matches.
-          stored_font_height = context.scaler.to_int(element.font_size)
-          adjusted_y = if text_align(element).zero?
-                         element.y - (stored_font_height * 0.9 / context.scaler.factor)
-                       else
-                         element.y
-                       end
           context.emit(Emf::Emr::Binary::Records::ExtTextOutW,
                        i_type: EXTTEXTOUTW,
                        rcl_bounds: bounds,
                        i_graphics_mode: 2, # GM_COMPATIBLE
                        ex_scale: 1.0,
                        ey_scale: 1.0,
-                       ptl_reference: context.point_attrs(element.x, adjusted_y),
+                       ptl_reference: context.point_attrs(element.x, element.y),
                        n_chars: n_chars,
                        off_string: off_string,
                        f_options: 0,

@@ -38,6 +38,26 @@ RSpec.describe "SVG text alignment roundtrip" do
     end
   end
 
+  [nil, "start"].each do |anchor|
+    it "preserves #{anchor || 'omitted'} anchoring without rounding a font-height adjustment" do
+      attribute = anchor ? 'text-anchor="start"' : ""
+      _, texts = roundtrip_texts(<<~SVG)
+        <text x="237" y="12" font-size="13" #{attribute}>0</text>
+        <text x="20" y="30" font-size="10" #{attribute}>control</text>
+      SVG
+
+      expect(texts.map { |text| [text["text-anchor"], text["x"], text["y"], text.text] })
+        .to eq([["start", "237.0000", "12.0000", "0"],
+                ["start", "20.0000", "30.0000", "control"]])
+
+      _, transformed = roundtrip_texts(<<~SVG)
+        <text x="150.25" y="524.75" font-size="13" #{attribute} transform="translate(2, 3)">abc</text>
+      SVG
+      expect(transformed.map { |text| [text["text-anchor"], text["x"], text["y"], text.text] })
+        .to eq([["start", "150.2500", "524.7500", "abc"]])
+    end
+  end
+
   it "resets alignment for explicit and omitted start anchors after centered and end text" do
     parsed, texts = roundtrip_texts(<<~SVG)
       <text x="10" y="20" font-size="10" text-anchor="middle">center</text>
@@ -47,10 +67,10 @@ RSpec.describe "SVG text alignment roundtrip" do
     SVG
 
     align = parsed.records.map(&:wire).grep(Emf::Emr::Binary::Records::SetTextAlign)
-    expect(align.map(&:text_align_mode)).to eq([0x1E, 0, 0x1A, 0])
+    expect(align.map(&:text_align_mode)).to eq([0x1E, 0x18, 0x1A, 0x18])
     expect(texts.map { |text| [text["text-anchor"], text["y"]] })
       .to eq([["middle", "20.0000"], ["start", "30.0000"], ["end", "40.0000"], ["start", "50.0000"]])
     references = parsed.records.map(&:wire).grep(Emf::Emr::Binary::Records::ExtTextOutW)
-    expect(references.map { |text| text.ptl_reference.y }).to eq([20, 21, 40, 41])
+    expect(references.map { |text| text.ptl_reference.y }).to eq([20, 30, 40, 50])
   end
 end
