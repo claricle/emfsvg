@@ -12,13 +12,18 @@ module Emfsvg
       SAMPLE_INTERVAL = 0.01
       LINUX_FIELDS = { rss_kib: "VmRSS", rss_peak_kib: "VmHWM", as_kib: "VmSize", as_peak_kib: "VmPeak" }.freeze
 
-      def self.run(command:, basename:, timeout_seconds:, rss_cap_mib:, as_cap_mib:, grace_seconds:, authoritative:)
+      def self.run(command:, basename:, timeout_seconds:, rss_cap_mib:, as_cap_mib:, grace_seconds:, authoritative:,
+                   sampler: nil)
         new(basename: basename, timeout_seconds: timeout_seconds, rss_cap_mib: rss_cap_mib,
-            as_cap_mib: as_cap_mib, grace_seconds: grace_seconds, authoritative: authoritative).run(command)
+            as_cap_mib: as_cap_mib, grace_seconds: grace_seconds, authoritative: authoritative,
+            sampler: sampler).run(command)
       end
 
-      def initialize(basename:, timeout_seconds:, rss_cap_mib:, as_cap_mib:, grace_seconds:, authoritative:)
+      def initialize(basename:, timeout_seconds:, rss_cap_mib:, as_cap_mib:, grace_seconds:, authoritative:,
+                     sampler: nil)
         @basename = File.basename(basename)
+        fail_precondition("sampler must be callable") unless sampler.nil? || sampler.respond_to?(:call)
+        @sampler = sampler
         @limits = { timeout_seconds: timeout_seconds, rss_cap_mib: rss_cap_mib,
                     as_cap_mib: as_cap_mib, grace_seconds: grace_seconds }
         @limits.each do |name, value|
@@ -78,6 +83,7 @@ module Emfsvg
       end
 
       def watch
+        sampling_failed_at = nil
         loop do
           waited = Process.waitpid2(@pid, Process::WNOHANG)
           if waited
@@ -88,12 +94,21 @@ module Emfsvg
 
           begin
             record(sample(@pid))
+            sampling_failed_at = nil
           rescue PreconditionError
             waited = Process.waitpid2(@pid, Process::WNOHANG)
-            raise unless waited
+            if waited
+              @status = waited.last
+              return nil
+            end
 
-            @status = waited.last
-            return nil
+            # Linux can drop VmRSS before the exiting child becomes waitable.
+            # Allow one sampling interval for exit, then fail closed if still live.
+            sampling_failed_at ||= monotonic
+            raise if monotonic - sampling_failed_at >= SAMPLE_INTERVAL
+
+            sleep SAMPLE_INTERVAL
+            next
           end
           return :rss if @metrics.fetch(:rss_kib) > @limits.fetch(:rss_cap_mib) * 1024
 
@@ -102,6 +117,7 @@ module Emfsvg
       end
 
       def sample(pid)
+        return @sampler.call(pid) if @sampler
         return linux_sample(pid) if @linux
 
         output, error, status = Open3.capture3("/bin/ps", "-o", "rss=", "-p", pid.to_s)
