@@ -44,6 +44,7 @@ module Emfsvg
           end
           font_handle = emit_create_font(element, context)
           emit_set_text_color(element, context)
+          emit_set_text_align(element, context)
           emit_ext_text_out_w(element, context)
           emit_delete(context, font_handle)
           emit_restore_dc(context) if wrap_with_clip || transformed
@@ -71,6 +72,20 @@ module Emfsvg
                        color: color)
         end
 
+        def text_align(element)
+          case element.text_anchor
+          when "middle" then 0x1E # TA_CENTER | TA_BASELINE
+          when "end" then 0x1A # TA_RIGHT | TA_BASELINE
+          else 0 # TA_LEFT | TA_TOP
+          end
+        end
+
+        def emit_set_text_align(element, context)
+          context.emit(Emf::Emr::Binary::Records::SetTextAlign,
+                       i_type: SETTEXTALIGN,
+                       text_align_mode: text_align(element))
+        end
+
         def emit_ext_text_out_w(element, context)
           text_utf16 = element.content.encode("UTF-16LE").force_encoding("ASCII-8BIT")
           n_chars = element.content.length
@@ -80,12 +95,17 @@ module Emfsvg
           dx_bytes = ("\x00" * 4) * n_chars # zero Dx — natural advance
 
           bounds = text_bounds(element, context)
-          # emfsvg's EMF→SVG renderer adds (lfHeight * 0.9) to the
+          # Centered/right-aligned SVG text uses its baseline directly.
+          # For the default TA_TOP, emfsvg adds (lfHeight * 0.9) to the
           # stored y when text-align is TA_TOP (default). Reverse
           # that adjustment using the SAME scaled lfHeight that
           # emfsvg will read back so the round-trip y matches.
           stored_font_height = context.scaler.to_int(element.font_size)
-          adjusted_y = element.y - (stored_font_height * 0.9 / context.scaler.factor)
+          adjusted_y = if text_align(element).zero?
+                         element.y - (stored_font_height * 0.9 / context.scaler.factor)
+                       else
+                         element.y
+                       end
           context.emit(Emf::Emr::Binary::Records::ExtTextOutW,
                        i_type: EXTTEXTOUTW,
                        rcl_bounds: bounds,
