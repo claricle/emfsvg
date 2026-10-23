@@ -140,10 +140,45 @@ RSpec.describe Emfsvg::ResourceCalibration do
     observed.fetch("samples").first["elapsed_seconds"] = 0.75
     expect(described_class::Baseline.check!(baseline, observed)).to eq(observed)
     observed.fetch("samples").first["elapsed_seconds"] = 3.01
-    observed["derived_limits"] = described_class::Limits.derive(observed.fetch("samples"), calibration_caps)
     expect do
       described_class::Baseline.check!(baseline, observed)
     end.to raise_error(described_class::Rejected, /stored ceiling/)
+  end
+
+  it "checks fresh measurements against stored ceilings without recalculating margins" do
+    Dir.mktmpdir do |directory|
+      path = File.join(directory, "baseline.yml")
+      runner = double("bounded runner", run: calibration_report.merge(elapsed_seconds: 20))
+      session = described_class::Session.new(adapter: calibration_adapter, caps: calibration_caps, runner: runner)
+      session.execute(mode: "generate", path: path, output: StringIO.new)
+      before = File.binread(path)
+      allow(runner).to receive(:run).with(hash_including(timeout_seconds: 80))
+                                    .and_return(calibration_report.merge(elapsed_seconds: 30))
+      observed = session.execute(mode: "check", path: path, output: StringIO.new)
+      expect(observed.fetch("samples").map { |sample| sample.fetch("elapsed_seconds") }).to eq([30, 30, 30])
+      expect(observed.fetch("derived_limits").fetch("timeout_seconds")).to eq(80)
+      expect(File.binread(path)).to eq(before)
+      allow(runner).to receive(:run).and_return(calibration_report.merge(elapsed_seconds: 81))
+      expect { session.execute(mode: "check", path: path, output: StringIO.new) }
+        .to raise_error(described_class::Rejected, /stored ceiling/)
+    end
+  end
+
+  it "rejects invalid stored schema and derivations before launching check children" do
+    Dir.mktmpdir do |directory|
+      path = File.join(directory, "baseline.yml")
+      runner = double("bounded runner")
+      expect(runner).not_to receive(:run)
+      document = calibration_document
+      changes = [{ "schema_version" => 2 },
+                 { "derived_limits" => document.fetch("derived_limits").merge("timeout_seconds" => 4) }]
+      changes.each do |change|
+        File.write(path, YAML.dump(JSON.parse(JSON.generate(document.merge(change)))))
+        session = described_class::Session.new(adapter: calibration_adapter, caps: calibration_caps, runner: runner)
+        expect { session.execute(mode: "check", path: path, output: StringIO.new) }
+          .to raise_error(described_class::Rejected)
+      end
+    end
   end
 
   it "executes generate and check through a qualified adapter and enforces stored check ceilings" do

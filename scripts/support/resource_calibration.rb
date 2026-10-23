@@ -49,11 +49,10 @@ module Emfsvg
         caps
       end
 
-      def self.derive(samples, caps)
-        validate!(caps)
+      def self.measurements!(samples)
         raise Rejected, "no calibration samples" if samples.empty?
 
-        raw = samples.map do |sample|
+        samples.map do |sample|
           raise Rejected, "unsafe child outcome" unless sample.fetch("safe") == true
 
           MEASUREMENTS.map do |key|
@@ -63,15 +62,19 @@ module Emfsvg
             value
           end
         end
-        maxima = raw.transpose.map(&:max)
+      rescue KeyError => e
+        raise Rejected, "incomplete measurement: #{e.message}"
+      end
+
+      def self.derive(samples, caps)
+        validate!(caps)
+        maxima = measurements!(samples).transpose.map(&:max)
         derived = { "timeout_seconds" => (maxima[0] * 4).ceil,
                     "rss_cap_mib" => ((maxima[1] * 2 / 1024.0) + 64).ceil,
                     "as_cap_mib" => ((maxima[2] * 2 / 1024.0) + 128).ceil }
         raise Rejected, "derived ceiling reaches an outer cap" if derived.any? { |key, value| value >= caps.fetch(key) }
 
         derived
-      rescue KeyError => e
-        raise Rejected, "incomplete measurement: #{e.message}"
       end
     end
 
@@ -83,7 +86,7 @@ module Emfsvg
       SAMPLE = %w[case repetition input_bytes output_bytes warnings exception elapsed_seconds rss_peak_kib as_peak_kib
                   exitstatus signal safe mechanism].freeze
 
-      def self.validate!(document)
+      def self.validate_observations!(document)
         raise Rejected, "unknown calibration schema" unless document.is_a?(Hash) && document.keys.sort == KEYS.sort &&
                                                             document["schema_version"] == VERSION
 
@@ -97,12 +100,20 @@ module Emfsvg
         raise Rejected, "invalid TERM grace interval" unless grace.is_a?(Numeric) && grace.finite? && grace.positive?
 
         validate_samples!(document)
-        expected = Limits.derive(document.fetch("samples"), document.fetch("outer_caps"))
-        raise Rejected, "derivation drift" unless expected == document.fetch("derived_limits")
+        Limits.validate!(document.fetch("outer_caps"))
+        Limits.measurements!(document.fetch("samples"))
 
         document
       rescue KeyError, TypeError, NoMethodError => e
         raise Rejected, "invalid baseline: #{e.message}"
+      end
+
+      def self.validate!(document)
+        validate_observations!(document)
+        expected = Limits.derive(document.fetch("samples"), document.fetch("outer_caps"))
+        raise Rejected, "derivation drift" unless expected == document.fetch("derived_limits")
+
+        document
       end
 
       def self.validate_provenance!(provenance)
@@ -171,8 +182,9 @@ module Emfsvg
 
       def self.check!(baseline, current)
         validate!(baseline)
-        validate!(current)
-        pinned = KEYS - %w[samples derived_limits]
+        # Fresh measurements use the stored ceilings; only stored samples determine their derivation.
+        validate_observations!(current)
+        pinned = KEYS - %w[samples]
         unless pinned.all? { |key| baseline.fetch(key) == current.fetch(key) }
           raise Rejected, "calibration provenance or input drift"
         end
@@ -205,7 +217,7 @@ module Emfsvg
         @runner = runner
       end
 
-      def collect
+      def collect(stored_limits: nil)
         before = JSON.parse(JSON.generate(@adapter.snapshot))
         inputs = JSON.parse(JSON.generate(@adapter.inputs))
         samples = inputs.flat_map { |input| (1..3).map { |rep| sample(input, rep) } }
@@ -216,8 +228,8 @@ module Emfsvg
 
         document = { "schema_version" => Baseline::VERSION, "provenance" => before, "inputs" => inputs,
                      "outer_caps" => @caps, "grace_seconds" => GRACE_SECONDS, "repetitions" => 3, "samples" => samples,
-                     "derived_limits" => Limits.derive(samples, @caps) }
-        Baseline.validate!(document)
+                     "derived_limits" => stored_limits || Limits.derive(samples, @caps) }
+        stored_limits ? Baseline.validate_observations!(document) : Baseline.validate!(document)
       end
 
       def execute(mode:, path:, output: $stdout)
@@ -226,7 +238,7 @@ module Emfsvg
 
         verify_pinned!(existing) if existing
         @run_caps = existing ? existing.fetch("derived_limits") : @caps
-        document = collect
+        document = collect(stored_limits: existing&.fetch("derived_limits"))
         if mode == "check"
           Baseline.check!(existing, document)
         else
