@@ -10,7 +10,7 @@ require_relative "../../lib/emfsvg/glyph_index_mapper"
 
 # Developer-only qualification: never installed or consulted by the runtime gem.
 class FontQualification
-  FONTCONFIG_FORMAT = format("%%{file}\n").freeze
+  FONTCONFIG_FORMAT = format("%%{file}\\n").freeze
   STYLES = [false, true].freeze
   ROLES = %w[arial_regular arial_bold verdana_regular verdana_bold].freeze
   REQUIRED = {

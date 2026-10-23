@@ -109,6 +109,14 @@ RSpec.describe FontQualification do
       .to eq(@contract.fetch("fonts").values.map { |font| font.fetch("sha256") })
     expect(result.fetch("ruby_vectors").map { |vector| vector.fetch("output") }).to eq(["אבגד", "“ƒΩ≈", "", "", ","])
     expect(JSON.parse(File.read(File.join(@directory, "qualification.json")))).to eq(result)
+    argv = File.readlines(File.join(@directory, "commands", "fc-match-argv.log"), chomp: true).map do |line|
+      JSON.parse(line)
+    end.first(4)
+    format_argument = described_class::FONTCONFIG_FORMAT
+    expect(argv).to eq(
+      [["-f", format_argument, "Arial"], ["-f", format_argument, "Arial:weight=bold"],
+       ["-f", format_argument, "David"], ["-f", format_argument, "David:weight=bold"]]
+    )
   end
 
   it "selects the requested family when a command wrapper appends an argument" do
@@ -125,6 +133,24 @@ RSpec.describe FontQualification do
     expect(stdout.strip).to eq(@contract.fetch("fonts").fetch("arial_regular").fetch("path"))
   end
 
+  it "preserves the resolver family across Windows batch argument forwarding" do
+    fonts = @contract.fetch("fonts").transform_values { |font| font.fetch("path") }
+    resolver = File.join(@directory, "fc-match")
+    File.write(resolver, qualification_resolver(fonts))
+    configuration = File.join(@directory, "fonts.conf")
+    File.write(configuration, "isolated configuration")
+
+    stdout, stderr, status = Open3.capture3(
+      { "FONTCONFIG_FILE" => configuration, "FONTCONFIG_BATCH_SIMULATION" => "1" },
+      RbConfig.ruby, resolver, "-f", described_class::FONTCONFIG_FORMAT, "Arial"
+    )
+
+    expect(status.exitstatus).to eq(0), stderr
+    expect(stdout.strip).to eq(@contract.fetch("fonts").fetch("arial_regular").fetch("path"))
+    expect(JSON.parse(File.read(File.join(@directory, "fc-match-argv.log"))))
+      .to eq(["-f", described_class::FONTCONFIG_FORMAT, "Arial"])
+  end
+
   it "reports unexpected resolver arguments instead of silently choosing Verdana" do
     fonts = @contract.fetch("fonts").transform_values { |font| font.fetch("path") }
     resolver = File.join(@directory, "fc-match")
@@ -137,7 +163,7 @@ RSpec.describe FontQualification do
 
     expect(status.exitstatus).to eq(1)
     expect(stderr).to include('Unexpected fc-match argv: ["-f", "format", "unrecognized-family"]')
-    expect(File.read(File.join(@directory, "fc-match-argv.log"))).to eq('["-f", "format", "unrecognized-family"]')
+    expect(File.read(File.join(@directory, "fc-match-argv.log"))).to eq("[\"-f\",\"format\",\"unrecognized-family\"]\n")
   end
 
   it "keeps the default pinned C hash check and removes stale reports on native failure" do

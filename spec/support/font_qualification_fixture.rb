@@ -34,7 +34,12 @@ module Emfsvg
           if File.basename($PROGRAM_NAME) == "fc-list"
             puts fonts.values
           else
-            File.write(File.join(File.dirname($PROGRAM_NAME), "fc-match-argv.log"), ARGV.inspect)
+            File.open(File.join(File.dirname($PROGRAM_NAME), "fc-match-argv.log"), "a") do |log|
+              log.puts(JSON.generate(ARGV))
+            end
+            if ENV["FONTCONFIG_BATCH_SIMULATION"] == "1" && ARGV[1]&.include?("\n")
+              abort "Fontconfig format contains a literal newline"
+            end
             pattern = ARGV.find { |argument| argument.start_with?("Arial", "David") }
             abort "Unexpected fc-match argv: \#{ARGV.inspect}" unless pattern
 
@@ -51,6 +56,7 @@ module Emfsvg
         File.write(contract_path, JSON.generate(contract))
         commands = File.join(directory, "commands")
         FileUtils.mkdir_p(commands)
+        FileUtils.rm_f(File.join(commands, "fc-match-argv.log"))
         fonts = contract.fetch("fonts").transform_values { |font| font.fetch("path") }
         resolver = qualification_resolver(fonts)
         %w[fc-list fc-match].each do |name|
