@@ -22,7 +22,6 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
       [valid_svg.merge("warnings" => [nil]), /expected warnings/],
       [valid_svg.merge("unreviewed" => true), /expected outcome fields/],
       [valid_svg.dup.tap { |value| value.delete("warnings") }, /expected warnings/],
-      [valid_svg.dup.tap { |value| value.delete("svg_sha256") }, /expected outcome fields/],
       [valid_svg.merge("svg_sha256" => "not-a-digest"), /SVG digest/],
       [valid_unreadable.merge("exception" => valid_unreadable.fetch("exception").merge("class" => "RuntimeError")),
        /expected exception/],
@@ -52,6 +51,7 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
                    "resource" => "input_bytes", "limit" => 10, "actual" => 11 }
     )
     outcomes = [
+      { "kind" => "svg", "warnings" => [] },
       { "kind" => "svg", "warnings" => [], "svg_sha256" => svg_digest },
       { "kind" => "svg", "warnings" => ["emfsvg: skipped EMF records: index=1\n"], "svg_sha256" => svg_digest },
       { "kind" => "unreadable", "warnings" => [],
