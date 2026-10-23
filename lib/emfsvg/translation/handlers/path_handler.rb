@@ -23,6 +23,10 @@ module Emfsvg
 
           with_gdi_state(element, context) do
             flattened = PathFlattener.flatten(element.commands)
+            if element.path_record_kind == :bitblt
+              emit_bitblt(flattened.first, context)
+              next
+            end
             emit_subpaths(flattened, context,
                           unfilled: element.fill.null?, line_record_kind: element.line_record_kind,
                           path_record_kind: element.path_record_kind)
@@ -30,6 +34,18 @@ module Emfsvg
         end
 
         private
+
+        def emit_bitblt(path, context)
+          left, top = path.points.first
+          right, bottom = path.points[2]
+          position = context.point_attrs(left, top)
+          size = context.size_attrs(right - left, bottom - top)
+          context.emit(Emf::Emr::Binary::Records::BitBlt,
+                       i_type: BITBLT, rcl_bounds: context.rect_attrs(left, top, right, bottom),
+                       x_dest: position[:x], y_dest: position[:y],
+                       cx_dest: size[:cx], cy_dest: size[:cy],
+                       dw_rop: 0x00F00021, cb_bits_src: 0)
+        end
 
         def emit_subpaths(subpaths, context, unfilled:, line_record_kind:, path_record_kind:)
           kinds = subpaths.map(&:shape_kind).uniq

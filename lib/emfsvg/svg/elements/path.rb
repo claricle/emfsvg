@@ -21,13 +21,40 @@ module Emfsvg
 
         def self.from_node(node)
           source_tag = yield(node) if block_given?
+          style = Stylable.parse_style(node)
+          path_record_kind = canonical_path_record_kind(node, source_tag) if source_tag
+          style[:fill] = Svg::Paint.from_fill(node["style"].delete_prefix("fill:")) if path_record_kind == :bitblt
           new(
             commands: Svg::PathData::Parser.parse(node["d"]),
             line_record_kind: source_tag && canonical_polyline?(node, source_tag) ? :polyline : nil,
-            path_record_kind: source_tag && canonical_poly_polygon?(node, source_tag) ? :polypolygon : nil,
-            **Stylable.parse_style(node)
+            path_record_kind: path_record_kind,
+            **style
           )
         end
+
+        def self.canonical_path_record_kind(node, source_tag)
+          return :bitblt if canonical_bitblt?(node, source_tag)
+          return :polypolygon if canonical_poly_polygon?(node, source_tag)
+
+          nil
+        end
+        private_class_method :canonical_path_record_kind
+
+        # Zero-source BitBlt emits a style-first rectangle without a trailing
+        # space after Z. Only that exact spelling carries record provenance.
+        def self.canonical_bitblt?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          rectangle = /
+            \AM[ ](?<x>#{number}),(?<y>#{number})
+            [ ]L[ ](?<right>#{number}),\k<y>
+            [ ]L[ ]\k<right>,(?<bottom>#{number})
+            [ ]L[ ]\k<x>,\k<bottom>[ ]Z\z
+          /x
+          node["style"]&.match?(/\Afill:#[0-9a-f]{6}\z/) &&
+            node["d"]&.match?(rectangle) &&
+            source_tag == %(<path style="#{node['style']}" d="#{node['d']}" />)
+        end
+        private_class_method :canonical_bitblt?
 
         # Only the exact legacy renderer spelling provides record provenance.
         # Ordinary SVG paths keep the existing translation strategy.
