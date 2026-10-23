@@ -45,11 +45,7 @@ module Emfsvg
                          i_type: INTERSECTCLIPRECT,
                          rcl_clip: context.rect_attrs(*clip_bounds))
           end
-          font_handle = emit_create_font(element, context)
-          emit_set_text_color(element, context)
-          emit_set_text_align(element, context)
-          emit_ext_text_out_w(element, context)
-          emit_delete(context, font_handle)
+          emit_text(element, context, reuse: !wrap_with_clip && !transformed)
           return unless wrap_with_clip || transformed
 
           restore = emit_restore_dc(context)
@@ -57,6 +53,21 @@ module Emfsvg
         end
 
         private
+
+        def emit_text(element, context, reuse:)
+          # Packed LOGFONT includes rotation, weight, size, family and italic;
+          # positions and content may vary without changing selected GDI state.
+          signature = [build_logfont(element, context), element.fill.color.wire_attrs, text_align(element)] if reuse
+          font_handle = context.reuse_text_state(signature)
+          unless font_handle
+            font_handle = emit_create_font(element, context)
+            emit_set_text_color(element, context)
+            emit_set_text_align(element, context)
+          end
+          emit_ext_text_out_w(element, context)
+          deletion = emit_delete(context, font_handle)
+          context.remember_text_state(signature, font_handle, deletion)
+        end
 
         def emit_create_font(element, context)
           handle = context.allocate_handle

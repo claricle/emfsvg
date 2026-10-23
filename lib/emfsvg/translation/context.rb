@@ -156,6 +156,23 @@ module Emfsvg
         @clip_scope_tail = [signature, records.size - 1, restore] if signature
       end
 
+      # Move only an adjacent identical text run's terminal deletion. Any
+      # intervening record, including a group boundary, ends the font lifetime.
+      def reuse_text_state(signature)
+        previous = @text_state_tail
+        @text_state_tail = nil
+        return unless signature && previous
+        return unless previous[0] == signature && previous[1] == records.size - 1
+        return unless records.last.equal?(previous[2])
+
+        records.pop
+        previous[3]
+      end
+
+      def remember_text_state(signature, handle, deletion)
+        @text_state_tail = [signature, records.size - 1, deletion, handle] if signature
+      end
+
       # Dispatch an element through the registry. Container handlers
       # (e.g. GroupHandler) call this to recurse into their children.
       def dispatch(element)
