@@ -108,8 +108,7 @@ module Emfsvg
         Dir.mktmpdir("emfsvg-corrupt-reference-") do |directory|
           marker = File.join(directory, "called")
           sentinel = File.join(directory, "forbidden-reference")
-          File.write(sentinel, "#!/bin/sh\nprintf called > '#{marker}'\nexit 97\n")
-          File.chmod(0o755, sentinel)
+          File.write(sentinel, "File.write(#{marker.inspect}, \"called\")\n")
           digest = Digest::SHA256.file(sentinel).hexdigest
           begin
             yield SentinelRunner.new(@runner, sentinel, marker)

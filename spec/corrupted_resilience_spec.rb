@@ -63,7 +63,8 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
                                                             authoritative: true)) do |options|
           command = options.fetch(:command)
           sentinel = command.fetch(3)
-          expect(File.executable?(sentinel)).to be(true)
+          expect(File.file?(sentinel)).to be(true)
+          expect(File.read(sentinel)).to include("called")
           expect(command.last).to eq("synthetic-child")
           calibration_report
         end.ordered.exactly(3).times
@@ -135,7 +136,7 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
 
     it "rejects a child that invokes the forbidden reference sentinel" do
       allow(runner).to receive(:run) do |options|
-        system(options.fetch(:command).fetch(3), out: File::NULL, err: File::NULL)
+        system(RbConfig.ruby, options.fetch(:command).fetch(3), out: File::NULL, err: File::NULL)
         calibration_report
       end
       expect { run_caller.call }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /sentinel.*invoked/)
