@@ -77,6 +77,21 @@ RSpec.describe Emfsvg::Visitors::EmrVisitor do
   end
 
   describe "object table" do
+    it "stores a corrupt high pen handle without allocating intervening slots" do
+      # bad_corrupted_2014-12-13-133727.emf, raw record 6152 (CREATEPEN).
+      wire = Struct.new(:ih_pen, :pen_style, :width, :color)
+                   .new(u32(0x8900_0001), u32(0), point.new(s32(17), s32(0)),
+                        Struct.new(:red, :green, :blue, :reserved).new(255, 0, 0, 0))
+
+      visitor.visit_create_pen(wire)
+
+      table = visitor.instance_variable_get(:@object_table)
+      expect(table.size).to eq(1)
+      expect(table.lookup(0x8900_0001).object.width).to eq(17)
+      visitor.visit_delete_object(Struct.new(:ih_object).new(u32(0x8900_0001)))
+      expect(table.size).to eq(0)
+    end
+
     it "stores pen and brush fields as plain Integers" do
       pen_wire = Struct.new(:ih_pen, :pen_style, :width, :color)
                        .new(u32(2), u32(0), point.new(s32(3), s32(0)),
