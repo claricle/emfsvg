@@ -173,11 +173,44 @@ module Emfsvg
         @text_state_tail = [signature, records.size - 1, deletion, handle] if signature
       end
 
+      def interval_clip?(clip)
+        clip && @interval_clip.equal?(clip)
+      end
+
+      def with_clip_interval(element)
+        clip = @clip_path_registry&.interval_start(element) if @handler_registry.equal?(EmfRenderer::DEFAULT_REGISTRY)
+        if clip && (@unused_clip_safe || @interval_clip) && !@carried_clip && !@active_selected_clip
+          @clip_scope_tail = nil
+          (@interval_stack ||= []) << [@interval_clip, @unused_clip_safe]
+          @interval_clip = clip
+          emit(Emf::Emr::Binary::Records::SaveDc, i_type: Emf::Emr::Binary::TypeCodes::SAVEDC)
+          emit(Emf::Emr::Binary::Records::IntersectClipRect,
+               i_type: Emf::Emr::Binary::TypeCodes::INTERSECTCLIPRECT,
+               rcl_clip: rect_attrs(*clip.unused_rectangle_bounds))
+        end
+        yield
+        finish_clip_interval if @interval_clip && @clip_path_registry.interval_end(element).equal?(@interval_clip)
+      end
+
+      def finish_clip_interval
+        emit(Emf::Emr::Binary::Records::RestoreDc,
+             i_type: Emf::Emr::Binary::TypeCodes::RESTOREDC, saved_dc: -1)
+        # Native RestoreDC pops the interval; the reference renderer retains
+        # snapshots. Explicitly resetting its clip agrees with native empty state.
+        @interval_clip, @unused_clip_safe = @interval_stack.pop
+        unless @interval_clip
+          emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
+               i_type: Emf::Emr::Binary::TypeCodes::EXTSELECTCLIPRGN, cb_rgn_data: 0, dw_mode: 5)
+          @unused_clip_safe = true
+        end
+        @clip_scope_tail = nil
+      end
+
       # Dispatch an element through the registry. Container handlers
       # (e.g. GroupHandler) call this to recurse into their children.
       def dispatch(element)
         handler = @handler_registry.handler_for(element)
-        handler&.call(element, self)
+        with_clip_interval(element) { handler&.call(element, self) }
       end
 
       # ---- Coordinate-scaled wire helpers (DRY: handlers route all

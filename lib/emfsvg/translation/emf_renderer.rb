@@ -115,7 +115,7 @@ module Emfsvg
         handler = @registry.handler_for(element)
         return descend(element) unless handler
 
-        handler.call(element, @context)
+        @context.with_clip_interval(element) { handler.call(element, @context) }
         descend(element) if descend_after_handler?(handler)
       end
 

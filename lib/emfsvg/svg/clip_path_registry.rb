@@ -16,6 +16,8 @@ module Emfsvg
         @exports = {}
         @imports = {}
         @selected = {}
+        @interval_starts = {}
+        @interval_ends = {}
       end
 
       def register(clip_path)
@@ -46,6 +48,7 @@ module Emfsvg
         collect_clip_paths(document.root_element, registry)
         registry.plan_sibling_clips(document.root_element)
         registry.plan_selected_clips(document.root_element)
+        registry.plan_clip_intervals(document.header_translate_group)
         registry
       end
 
@@ -97,7 +100,74 @@ module Emfsvg
         end
       end
 
+      def interval_start(element)
+        @interval_starts[element]
+      end
+
+      def interval_end(element)
+        @interval_ends[element]
+      end
+
+      # A canonical rectangle may surround nested clips and then be reused.
+      # Only flat, fully explicit built-in drawings participate. Unused defs
+      # and text transformed under a different clip remain boundaries.
+      def plan_clip_intervals(parent)
+        return unless parent
+
+        children = parent.children
+        positions = children.each_index.group_by { |index| lookup(children[index].clip_path) }
+        occupied = []
+        candidates = positions.reject { |clip, indices| !clip || indices.size < 2 }
+        candidates.sort_by { |_, indices| -(indices.last - indices.first) }.each do |clip, indices|
+          range = indices.first..indices.last
+          next unless compatible_interval?(range, occupied, children, clip)
+          next unless clip.unused_rectangle_bounds
+          next unless children[range].all? { |child| interval_child?(child, clip) }
+
+          @interval_starts[children[range.begin]] = clip
+          @interval_ends[children[range.end]] = clip
+          occupied << range
+        end
+      end
+
       private
+
+      # Crossing ranges cannot form native scopes. A nested range contains
+      # only its own clip, so its final RestoreDC returns to the outer scope
+      # even for renderers which retain restored snapshots.
+      def compatible_interval?(range, occupied, children, clip)
+        return false if occupied.any? do |prior|
+          prior.cover?(range.begin) != prior.cover?(range.end)
+        end
+
+        parents = occupied.count { |prior| prior.cover?(range.begin) && prior.cover?(range.end) }
+        uniform = children[range].all? { |child| child.is_a?(Elements::Defs) || lookup(child.clip_path).equal?(clip) }
+        return !uniform if parents.zero?
+
+        parents == 1 && uniform
+      end
+
+      def interval_child?(child, outer)
+        return interval_definitions?(child) if child.is_a?(Elements::Defs)
+
+        classes = [Elements::Path, Elements::Rect, Elements::Ellipse, Elements::Line,
+                   Elements::Polyline, Elements::Polygon, Elements::Text, Elements::Image]
+        return false unless classes.include?(child.class)
+        return false if child.is_a?(Elements::Text) && child.transformed? && !lookup(child.clip_path).equal?(outer)
+        return true if child.is_a?(Elements::Path) && !child.clip_path && child.stroke&.null_pen_fallback
+
+        bounds = lookup(child.clip_path)&.unused_rectangle_bounds
+        return false unless bounds
+
+        left, top, right, bottom = outer.unused_rectangle_bounds
+        bounds[0] >= left && bounds[1] >= top && bounds[2] <= right && bounds[3] <= bottom
+      end
+
+      def interval_definitions?(defs)
+        defs.children.all? do |clip|
+          clip.is_a?(Elements::ClipPath) && clip.unused_rectangle_bounds && referenced?(clip.id)
+        end
+      end
 
       def selected_group_clip(group)
         return unless group.is_a?(Elements::Group) && group.canonical_matrix? && group.transform_matrix.identity?
