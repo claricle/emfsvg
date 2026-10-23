@@ -25,7 +25,8 @@ module Emfsvg
         end
 
         def translate(element, context)
-          return if element.content.nil? || element.content.empty?
+          return if element.content.nil?
+          return if element.content.empty? && !element.font_size.zero?
 
           clip_bounds = clip_bounds_for(element, context)
           wrap_with_clip = !clip_bounds.nil?
