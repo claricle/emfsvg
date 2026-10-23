@@ -8,6 +8,7 @@ module Emfsvg
   autoload :FormatError, "emfsvg/error"
   autoload :ParseError, "emfsvg/error"
   autoload :RenderError, "emfsvg/error"
+  autoload :ResourceLimitError, "emfsvg/error"
   autoload :Renderer, "emfsvg/renderer"
   autoload :DeviceContext, "emfsvg/device_context"
   autoload :ObjectTable, "emfsvg/object_table"
@@ -26,6 +27,8 @@ module Emfsvg
   autoload :Translation, "emfsvg/translation"
   autoload :RecordAccess, "emfsvg/record_access"
 
+  const_get(:Error)
+
   class << self
     # Render an Emf::Model::Metafile to an SVG string.
     #
@@ -43,11 +46,13 @@ module Emfsvg
 
     # Parse from bytes then render.
     def from_bytes(bytes, **options)
+      check_input_size!(bytes.bytesize)
       to_svg(parse_metafile(bytes), **options)
     end
 
     # Parse from a file path then render.
     def from_file(path, **options)
+      check_input_size!(File.size(path))
       from_bytes(File.binread(path), **options)
     end
 
@@ -68,6 +73,13 @@ module Emfsvg
     end
 
     private
+
+    def check_input_size!(actual)
+      limit = Emf::Emr::Parser::MAX_INPUT_BYTES
+      return if actual <= limit
+
+      raise ResourceLimitError.new(resource: :input_bytes, limit: limit, actual: actual)
+    end
 
     def parse_metafile(bytes)
       Emf.parse(bytes)

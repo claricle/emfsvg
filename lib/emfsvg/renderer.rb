@@ -47,12 +47,12 @@ module Emfsvg
     def initialize(metafile, options)
       @metafile = metafile
       @options = options
+      compute_header_params
       @builder = SvgBuilder.new
       @dc = DeviceContext.new
       @object_table = ObjectTable.new
       @transform_stack = TransformStack.new
       BsdRand.reset
-      compute_header_params
     end
 
     def call
@@ -62,10 +62,7 @@ module Emfsvg
           visit_records
         end
       end
-      result = @builder.to_s
-      raise RenderError, "SVG output exceeds #{MAX_OUTPUT_BYTES} bytes" if result.bytesize > MAX_OUTPUT_BYTES
-
-      result
+      @builder.to_s
     end
 
     private
@@ -74,8 +71,34 @@ module Emfsvg
 
     def compute_header_params
       b = @metafile.header.bounds
-      @fix_broken_y = (b.top * b.bottom).negative?
+      validate_header_dimensions!(b)
+      @fix_broken_y = (b.top.negative? && b.bottom.positive?) || (b.top.positive? && b.bottom.negative?)
 
+      compute_output_dimensions(b)
+
+      bounds_width = (b.right - b.left).abs
+      @scaling = bounds_width.zero? ? 1.0 : @img_width / bounds_width.to_f
+      @ref_x = b.left.to_f
+      @ref_y = b.top.to_f
+
+      dev = @metafile.header.device_pixels
+      mm = @metafile.header.device_mm
+      @px_per_mm = mm.cx.zero? ? 1.0 : dev.cx.to_f / mm.cx
+
+      @open_groups = 0
+    end
+
+    def validate_header_dimensions!(b)
+      [b.left, b.top, b.right, b.bottom].each do |coordinate|
+        raise RenderError, "Header coordinates must be finite" unless coordinate.to_f.finite?
+      end
+      validate_dimension!((b.right - b.left).abs.to_f, "Header width")
+      validate_dimension!((b.bottom - b.top).abs.to_f, "Header height")
+      validate_dimension!(@options.width.to_f, "Output width") if @options.width
+      validate_dimension!(@options.height.to_f, "Output height") if @options.height
+    end
+
+    def compute_output_dimensions(b)
       ratio_xy = (b.right - b.left).to_f / (b.bottom - b.top)
 
       if @options.width && @options.height
@@ -98,16 +121,14 @@ module Emfsvg
         @img_height = (b.bottom - b.top).abs.to_f
       end
 
-      bounds_width = (b.right - b.left).abs
-      @scaling = bounds_width.zero? ? 1.0 : @img_width / bounds_width.to_f
-      @ref_x = b.left.to_f
-      @ref_y = b.top.to_f
+      validate_dimension!(@img_width, "Output width")
+      validate_dimension!(@img_height, "Output height")
+    end
 
-      dev = @metafile.header.device_pixels
-      mm = @metafile.header.device_mm
-      @px_per_mm = mm.cx.zero? ? 1.0 : dev.cx.to_f / mm.cx
+    def validate_dimension!(value, label)
+      return if value.finite? && value.positive?
 
-      @open_groups = 0
+      raise RenderError, "#{label} must be finite and positive"
     end
 
     def emit_xml_declaration
