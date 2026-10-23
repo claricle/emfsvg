@@ -23,7 +23,10 @@ module Emfsvg
         raise Rejected, "production calibration requires auto" unless backend == "auto"
         raise Rejected, "no pinned inputs" if @inputs.empty?
 
-        @inputs.each { |input| Baseline.validate_input!(input) }
+        @inputs.each do |input|
+          Baseline.validate_input!(input)
+          validate_expected_outcome!(input.fetch("expected_outcome"))
+        end
         names = @inputs.map { |input| input.fetch("name") }
         raise Rejected, "duplicate input names" unless names.uniq.size == @inputs.size
       end
@@ -70,6 +73,69 @@ module Emfsvg
       end
 
       private
+
+      def validate_expected_outcome!(expected)
+        unless expected["warnings"].is_a?(Array) && expected["warnings"].all?(String)
+          raise Rejected, "invalid expected warnings"
+        end
+
+        case expected["kind"]
+        when "svg"
+          reject_unexpected_expected_fields!(expected, %w[kind svg_sha256 warnings])
+          digest = expected["svg_sha256"]
+          raise Rejected, "invalid expected SVG digest" unless digest.is_a?(String) && digest.match?(/\A[0-9a-f]{64}\z/)
+        when "unreadable"
+          reject_unexpected_expected_fields!(expected, %w[exception kind warnings])
+          validate_expected_exception!(expected, "Emfsvg::ParseError")
+        when "resource"
+          reject_unexpected_expected_fields!(expected, %w[exception kind warnings])
+          validate_expected_exception!(expected, "Emfsvg::ResourceLimitError")
+          validate_resource!(expected.fetch("exception"))
+        else
+          raise Rejected, "unknown expected outcome"
+        end
+      end
+
+      def validate_expected_exception!(expected, klass)
+        failure = expected["exception"]
+        fields = expected_exception_fields(klass)
+        unless failure.is_a?(Hash) && failure.keys.sort == fields && failure["class"] == klass &&
+               failure["message"].is_a?(String)
+          raise Rejected, "invalid expected exception"
+        end
+
+        validate_expected_exception_cause!(failure["cause"])
+      end
+
+      def expected_exception_fields(klass)
+        return %w[actual cause class limit message resource] if klass == "Emfsvg::ResourceLimitError"
+
+        %w[cause class message]
+      end
+
+      def validate_expected_exception_cause!(cause)
+        return if cause.nil? || valid_message_cause?(cause) || valid_resource_cause?(cause)
+
+        raise Rejected, "invalid expected exception cause"
+      end
+
+      def valid_message_cause?(cause)
+        cause.is_a?(Hash) && cause.keys.sort == %w[class message] &&
+          cause["class"].is_a?(String) && cause["message"].is_a?(String)
+      end
+
+      def valid_resource_cause?(cause)
+        fields = %w[actual class limit message resource]
+        cause.is_a?(Hash) && cause.keys.sort == fields && cause["class"] == "Emf::ResourceLimitError" &&
+          cause["message"].is_a?(String) && cause["resource"].is_a?(String) &&
+          cause["limit"].is_a?(Integer) && cause["actual"].is_a?(Integer) && cause["actual"] > cause["limit"]
+      end
+
+      def reject_unexpected_expected_fields!(expected, fields)
+        return if expected.keys.sort == fields
+
+        raise Rejected, "invalid expected outcome fields"
+      end
 
       def input_path(input)
         path = File.realpath(File.join(@root, input.fetch("name")))
