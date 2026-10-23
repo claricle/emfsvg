@@ -26,7 +26,7 @@ module Emfsvg
 
         def emit_poly(points, element, context)
           bounds = bounding_box(points, context)
-          wire_points = points.map { |x, y| context.point_l(x, y) }
+          wire_points = points.map { |x, y| context.point_attrs(x, y) }
           record_class = if element.is_a?(Svg::Elements::Polygon)
                            Emf::Emr::Binary::Records::Polygon
                          else
@@ -43,7 +43,7 @@ module Emfsvg
         def bounding_box(points, context)
           xs = points.map { |x, _| x }
           ys = points.map { |_, y| y }
-          context.rect_l(xs.min, ys.min, xs.max, ys.max)
+          context.rect_attrs(xs.min, ys.min, xs.max, ys.max)
         end
       end
     end

@@ -40,7 +40,7 @@ module Emfsvg
           if wrap_with_clip
             context.emit(Emf::Emr::Binary::Records::IntersectClipRect,
                          i_type: INTERSECTCLIPRECT,
-                         rcl_clip: context.rect_l(*clip_bounds))
+                         rcl_clip: context.rect_attrs(*clip_bounds))
           end
           font_handle = emit_create_font(element, context)
           emit_set_text_color(element, context)
@@ -91,11 +91,11 @@ module Emfsvg
                        i_graphics_mode: 2, # GM_COMPATIBLE
                        ex_scale: 1.0,
                        ey_scale: 1.0,
-                       ptl_reference: context.point_l(element.x, adjusted_y),
+                       ptl_reference: context.point_attrs(element.x, adjusted_y),
                        n_chars: n_chars,
                        off_string: off_string,
                        f_options: 0,
-                       rcl: context.rect_l(0, 0, 0, 0),
+                       rcl: context.rect_attrs(0, 0, 0, 0),
                        off_dx: off_dx,
                        trailing: text_utf16 + dx_bytes)
         end
@@ -126,7 +126,7 @@ module Emfsvg
 
         def text_bounds(element, context)
           width = element.content.length * element.font_size * 0.6
-          context.rect_l(
+          context.rect_attrs(
             element.x, element.y - element.font_size,
             element.x + width, element.y
           )

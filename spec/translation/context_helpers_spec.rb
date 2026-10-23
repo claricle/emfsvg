@@ -36,6 +36,27 @@ RSpec.describe Emfsvg::Translation::Context do
     end
   end
 
+  describe "attribute-hash helpers" do
+    it "return the same scaled values as the wire-object helpers" do
+      scaled = described_class.new(handler_registry: registry,
+                                   scaler: Emfsvg::Translation::Scaler::Fixed.new)
+      expect(scaled.point_attrs(1.5, 2.5)).to eq(x: 15_000, y: 25_000)
+      expect(scaled.rect_attrs(0, 1, 10.5, 5.25))
+        .to eq(left: 0, top: 10_000, right: 105_000, bottom: 52_500)
+      expect(scaled.size_attrs(80, 40)).to eq(cx: 800_000, cy: 400_000)
+    end
+
+    it "serialize identically when used as record fields" do
+      klass = Emf::Emr::Binary::Records::Polygon
+      common = { i_type: 3, cptl: 2 }
+      from_objects = klass.new(**common, rcl_bounds: context.rect_l(0, 0, 9, 9),
+                                         aptl: [context.point_l(1, 2), context.point_l(3, 4)])
+      from_hashes = klass.new(**common, rcl_bounds: context.rect_attrs(0, 0, 9, 9),
+                                        aptl: [context.point_attrs(1, 2), context.point_attrs(3, 4)])
+      expect(from_hashes.to_binary_s).to eq(from_objects.to_binary_s)
+    end
+  end
+
   describe "#xform_wire_from" do
     it "returns the matrix wire form unchanged for Identity scaler" do
       matrix = Emf::Model::Geometry::Matrix.identity

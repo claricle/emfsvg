@@ -171,6 +171,7 @@ module Emfsvg
     # SetWorldTransform (just assign) or 1/2/3 for ModifyWorldTransform
     # (MWT_IDENTITY/LEFTMULTIPLY/RIGHTMULTIPLY).
     def build_path_analysis(records)
+      names = record_names(records)
       actions = {}
       transforms = {}
       in_path = false
@@ -179,10 +180,9 @@ module Emfsvg
       wt_before = nil
       wt_after = nil
       records.each_with_index do |r, i|
-        name = r.wire.class.name.split("::").last
-        case name
+        case names[i]
         when "BeginPath"
-          actions[i] = find_path_action(records, i)
+          actions[i] = find_path_action(names, i)
           cur_begin = i
           wt_before = nil
           wt_after = nil
@@ -217,11 +217,19 @@ module Emfsvg
       PathTransform.new(matrix: matrix, mode: mode)
     end
 
-    def find_path_action(records, start)
+    # Unqualified wire class name per record, computed once per class.
+    def record_names(records)
+      cache = {}
+      records.map do |r|
+        klass = r.wire.class
+        cache[klass] ||= klass.name.split("::").last
+      end
+    end
+
+    def find_path_action(names, start)
       action = :end
-      ((start + 1)...records.size).each do |j|
-        name = records[j].wire.class.name.split("::").last
-        case name
+      ((start + 1)...names.size).each do |j|
+        case names[j]
         when "EndPath"
           next
         when "FillPath"

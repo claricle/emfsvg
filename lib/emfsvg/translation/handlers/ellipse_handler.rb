@@ -16,8 +16,8 @@ module Emfsvg
 
         def translate(element, context)
           with_gdi_state(element, context) do
-            box = context.rect_l(element.cx - element.rx, element.cy - element.ry,
-                                 element.cx + element.rx, element.cy + element.ry)
+            box = context.rect_attrs(element.cx - element.rx, element.cy - element.ry,
+                                     element.cx + element.rx, element.cy + element.ry)
             context.emit(Emf::Emr::Binary::Records::Ellipse,
                          i_type: ELLIPSE, rcl_box: box)
           end
