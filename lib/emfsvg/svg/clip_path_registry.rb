@@ -184,6 +184,10 @@ module Emfsvg
           clip = text_interval_clip(previous, defs, first, path, last)
           next unless clip
 
+          # The general rectangle planner may already start this same interval
+          # at its first text. Move that start to the definition instead of
+          # opening two native scopes with only one shared end.
+          @interval_starts.delete(first) if @interval_starts[first].equal?(clip)
           @interval_starts[defs] = clip
           @interval_ends[last] = clip
         end
