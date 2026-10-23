@@ -62,7 +62,10 @@ RSpec.describe "SVG stroke miter limits" do
       expected_limits = source.scan(/stroke-miterlimit="([^"]+)"/).flatten
       bytes = Emfsvg.from_svg(source)
       records = Emf.parse(bytes).records.map(&:wire)
-      actual_limits = records.grep(Emf::Emr::Binary::Records::SetMiterLimit).map(&:miter_limit)
+      actual_limits = records.grep(Emf::Emr::Binary::Records::SetMiterLimit).map do |record|
+        limit = record.miter_limit.to_f
+        limit.abs < 1.1754943508222875e-38 ? record.to_binary_s.byteslice(8, 4).unpack1("V") : limit
+      end
 
       expect(expected_limits.size).to eq(120)
       explicit_limits = expected_limits.map(&:to_f)

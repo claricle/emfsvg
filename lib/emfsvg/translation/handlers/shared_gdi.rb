@@ -29,7 +29,7 @@ module Emfsvg
           if element.stroke && !element.stroke.paint.null?
             context.emit(Emf::Emr::Binary::Records::SetMiterLimit,
                          i_type: SETMITERLIMIT,
-                         miter_limit: element.stroke.miter_limit)
+                         miter_limit: serialized_miter_limit(element))
           end
           pen_handle = emit_create_pen(context, element.stroke) if element.stroke
           brush = element.stroke&.fallback_brush || element.fill
@@ -46,6 +46,18 @@ module Emfsvg
 
           restore = emit_restore_dc(context)
           context.remember_clip_scope(signature, restore)
+        end
+
+        def serialized_miter_limit(element)
+          limit = element.stroke.miter_limit
+          return limit unless element.is_a?(Svg::Elements::Path) && element.line_record_kind == :polyline_to
+          return limit unless limit.between?(1, 0x7FFFFF) && limit == limit.to_i
+
+          # Legacy PolylineTo provenance uses libuemf's integer wire contract.
+          # The dependency exposes a float field; subnormal bits preserve the
+          # integer payload, which our reader also recognizes. Other limits
+          # retain floats rather than truncating or exceeding that reader range.
+          [limit.to_i].pack("V").unpack1("e")
         end
 
         def clip_scope_signature(element, context, clip_bounds)
