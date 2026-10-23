@@ -15,7 +15,7 @@ Missing roots, unexpected or missing files, and changed bytes fail setup.
 There are no developer-machine or sibling-checkout defaults.
 
 The runtime is independent of that corpus checkout. Development temporarily
-pins `emf` to Git revision `eb6902dd29c1d2ce6b1c6038a8695605e0f7cab5`.
+pins `emf` to Git revision `56c5ec1aae9fb7682b0a05a3e493d1997839e0c4`.
 A containing released package, native backend selection, and upstream resource
 and diagnostic contracts remain qualification requirements. A valid corpus
 inventory does not establish runtime qualification.
@@ -74,6 +74,23 @@ runtime, unlanded diagnostic/resource contracts, and missing native artifact.
 The diagnostic and resource prerequisites are tracked separately in
 https://github.com/claricle/emf/issues/65[emf #65] and
 https://github.com/claricle/emf/issues/66[emf #66]. Neither has a landed revision.
+
+The temporary runtime pin exposes the delivered diagnostic and typed-resource
+interfaces. The shared conversion boundary emits one physical-record-ordered
+warning for skipped diagnostics, remains silent for preserved `Raw` records,
+and maps only upstream resource refusals to `Emfsvg::ResourceLimitError` with
+unchanged metadata and cause. Focused consumer checks pass under Ruby, native,
+and native-selected auto with the exact-source native artifact. This development
+integration does not establish complete upstream resource parity or release
+qualification.
+
+Fixture 109 now individually preserves its source through production SVG → EMF
+→ Ruby SVG and pinned C conversion: all three SVGs contain 433141 identical
+bytes (SHA-256 `4e0c8eb9c8055887598af55854db636cdcf562d42ad82439642a84ec4f488f7b`).
+Scoped integer origins preserve independent overflowing lines, and canonical
+nested clip intervals end before successor draws. Fixture 150 also has an
+individual exact proof. The earlier full roundtrip audit remains 199/208; a
+fresh full audit is required before reporting a new aggregate.
 
 Fresh-process tests cover a real supported conversion and malformed-byte parse
 error without loading the reference helper or executing the configured C
