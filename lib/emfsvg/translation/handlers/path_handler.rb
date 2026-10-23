@@ -23,13 +23,15 @@ module Emfsvg
 
           with_gdi_state(element, context) do
             flattened = PathFlattener.flatten(element.commands)
-            emit_subpaths(flattened, context, unfilled: element.fill.null?, line_record_kind: element.line_record_kind)
+            emit_subpaths(flattened, context,
+                          unfilled: element.fill.null?, line_record_kind: element.line_record_kind,
+                          path_record_kind: element.path_record_kind)
           end
         end
 
         private
 
-        def emit_subpaths(subpaths, context, unfilled:, line_record_kind:)
+        def emit_subpaths(subpaths, context, unfilled:, line_record_kind:, path_record_kind:)
           kinds = subpaths.map(&:shape_kind).uniq
           if unfilled && prefixed_polybezier?(subpaths)
             first = subpaths.first.points.first
@@ -38,6 +40,8 @@ module Emfsvg
             emit_poly(Emf::Emr::Binary::Records::PolyBezier, POLYBEZIER, subpaths.last, context)
           elsif subpaths.size > 1 && kinds.size == 1 && %i[polygon polyline].include?(kinds.first)
             emit_multi(subpaths, kinds.first == :polygon, context)
+          elsif canonical_poly_polygon?(subpaths, path_record_kind, kinds)
+            emit_multi(subpaths, true, context)
           elsif line_record_kind != :polyline && single_line_path?(subpaths)
             subpaths.first.segments.each { |letter, points| emit_segment(letter, points, subpaths.first, context) }
           elsif subpaths.size > 1 || kinds == [:path]
@@ -63,6 +67,10 @@ module Emfsvg
           segments = subpaths.first.segments
           segments.size == 2 && segments.first.first == "M" &&
             %w[L H V].include?(segments.last.first)
+        end
+
+        def canonical_poly_polygon?(subpaths, path_record_kind, kinds)
+          path_record_kind == :polypolygon && subpaths.size == 1 && kinds == [:polygon]
         end
 
         def emit_multi(subpaths, closed, context)
