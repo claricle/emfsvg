@@ -42,6 +42,7 @@ GEM
     ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-aarch64-linux-musl)
     ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x64-mingw-ucrt)
     ffi (1.17.4-x86_64-darwin)
     ffi (1.17.4-x86_64-linux-gnu)
     ffi (1.17.4-x86_64-linux-musl)
@@ -61,6 +62,8 @@ GEM
       ffi (~> 1.15)
     leptris (1.9.380.2-arm64-darwin)
       ffi (~> 1.15)
+    leptris (1.9.380.2-x64-mingw-ucrt)
+      ffi (~> 1.15)
     leptris (1.9.380.2-x86_64-darwin)
       ffi (~> 1.15)
     leptris (1.9.380.2-x86_64-linux)
@@ -72,6 +75,8 @@ GEM
     libpng (1.6.58.6-aarch64-linux-musl)
       ffi (~> 1.0)
     libpng (1.6.58.6-arm64-darwin)
+      ffi (~> 1.0)
+    libpng (1.6.58.6-x64-mingw-ucrt)
       ffi (~> 1.0)
     libpng (1.6.58.6-x86_64-darwin)
       ffi (~> 1.0)
@@ -101,6 +106,8 @@ GEM
     nokogiri (1.19.4-aarch64-linux-musl)
       racc (~> 1.4)
     nokogiri (1.19.4-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.19.4-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-darwin)
       racc (~> 1.4)
@@ -175,6 +182,8 @@ GEM
       ffi (~> 1.15)
     yeptris (0.6.36.0-arm64-darwin)
       ffi (~> 1.15)
+    yeptris (0.6.36.0-x64-mingw-ucrt)
+      ffi (~> 1.15)
     yeptris (0.6.36.0-x86_64-darwin)
       ffi (~> 1.15)
     yeptris (0.6.36.0-x86_64-linux)
@@ -187,6 +196,7 @@ PLATFORMS
   aarch64-linux-gnu
   aarch64-linux-musl
   arm64-darwin
+  x64-mingw-ucrt
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
@@ -218,6 +228,7 @@ CHECKSUMS
   ffi (1.17.4-aarch64-linux-gnu) sha256=b208f06f91ffd8f5e1193da3cae3d2ccfc27fc36fba577baf698d26d91c080df
   ffi (1.17.4-aarch64-linux-musl) sha256=9286b7a615f2676245283aef0a0a3b475ae3aae2bb5448baace630bb77b91f39
   ffi (1.17.4-arm64-darwin) sha256=19071aaf1419251b0a46852abf960e77330a3b334d13a4ab51d58b31a937001b
+  ffi (1.17.4-x64-mingw-ucrt) sha256=f6ff9618cfccc494138bddade27aa06c74c6c7bc367a1ea1103d80c2fcb9ed35
   ffi (1.17.4-x86_64-darwin) sha256=aa70390523cf3235096cf64962b709b4cfbd5c082a2cb2ae714eb0fe2ccda496
   ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
   ffi (1.17.4-x86_64-linux-musl) sha256=3fdf9888483de005f8ef8d1cf2d3b20d86626af206cbf780f6a6a12439a9c49e
@@ -227,12 +238,14 @@ CHECKSUMS
   leptris (1.9.380.2-aarch64-linux) sha256=63065f9b6a54b1a52eea5040439f946b4f1712729d277ed62eddea96526e2188
   leptris (1.9.380.2-aarch64-linux-musl) sha256=6fed41560b33cec5edfacc205c2211c4110b0c48bf7c772baa3acd49efcbd2cc
   leptris (1.9.380.2-arm64-darwin) sha256=d94d55a2865744dec2d2b5ab3661de77400d3ca48fb36573c8dc58c3cd92c68f
+  leptris (1.9.380.2-x64-mingw-ucrt) sha256=7439cb09b2d0d9d88f3bb68ed832d0429a0e5019be4214d0342027c656538919
   leptris (1.9.380.2-x86_64-darwin) sha256=e68a4c82bebcc5a5383eb76e0280be97c3b7edbf6f1eabf02e817ac057b49cfa
   leptris (1.9.380.2-x86_64-linux) sha256=5b84a6ddc9bc297426bd36c15f4d0d878081954f3ab317a89cfb9fe36e8bd696
   leptris (1.9.380.2-x86_64-linux-musl) sha256=abff7493153f8fd2516c056006866bb7fd680ab4fb1b83e89d92eca127a82cdb
   libpng (1.6.58.6-aarch64-linux) sha256=57d4a32abae936cd3b0bafdf4a7ce701973a638e07ca9d80e044d4da9465b4da
   libpng (1.6.58.6-aarch64-linux-musl) sha256=d9153b68aaa0e47126aade3a617ba6663fbcfbcf584c4fc7d6e86707b13e5664
   libpng (1.6.58.6-arm64-darwin) sha256=7bb72fe9dae352bd755f423f34501c4c1824e074fc789ba21614c1ed55fc2d08
+  libpng (1.6.58.6-x64-mingw-ucrt) sha256=ebf6139dbaa07c9b376dbd85fdd65a6fedd93471181312c5cac458f213bde1e6
   libpng (1.6.58.6-x86_64-darwin) sha256=cf937ef4031f0c39901121baaf186eccc6334cf3359cde36b99e0465e735ee5a
   libpng (1.6.58.6-x86_64-linux) sha256=50e98e877fae3d7901b1f71906fb4223a4fb3d11413c601561abf0bcbda54b0d
   libpng (1.6.58.6-x86_64-linux-musl) sha256=e386a3f0b3342e864f2636c706dd6034f61e1f3af091a4ca5c0aaae66b38acfc
@@ -245,6 +258,7 @@ CHECKSUMS
   nokogiri (1.19.4-aarch64-linux-gnu) sha256=1269fb644a6de405057a53dd5c762b1209b43ca7424f839454d3dbc677c31a8f
   nokogiri (1.19.4-aarch64-linux-musl) sha256=35c65b9ce72b3bb03207bdbe7067915019dc18c1b9b59139684bd6690fdd01af
   nokogiri (1.19.4-arm64-darwin) sha256=a46db9853286e6597b36ebc6953817d15acf3a299583eb3f89fdc6f91dd63527
+  nokogiri (1.19.4-x64-mingw-ucrt) sha256=051da97b8eccfdb5444fed40246a35e10d7298b9efe759b4cd25455ea04c587e
   nokogiri (1.19.4-x86_64-darwin) sha256=7fd17057d3e1f00e9954a74b3cd76595d3d4a5ef233b7ed9599047c204f70551
   nokogiri (1.19.4-x86_64-linux-gnu) sha256=379fae440b28915e3f19d752ce2dcf8465ed2b2fbefd2a7ca0dd497bc981a06a
   nokogiri (1.19.4-x86_64-linux-musl) sha256=17dfb7c1fa194ae02fbf7c51a7afc8d278045ab3fdacfd86f91d02d7b274470b
@@ -279,6 +293,7 @@ CHECKSUMS
   yeptris (0.6.36.0-aarch64-linux) sha256=68d48f9cb4deab432175a3d336740dad58c14f2072bdf368d71122a435375828
   yeptris (0.6.36.0-aarch64-linux-musl) sha256=5d074f3b3eb08cfd54d88bfbebfdc3c899fd8b882baf797759aded7794c3eac9
   yeptris (0.6.36.0-arm64-darwin) sha256=70381795c9a8bb9d0264409a3d376fc67b61bb2057d0781517621297dccc8f40
+  yeptris (0.6.36.0-x64-mingw-ucrt) sha256=24a6cab2ac83ebb7d9f40a6281a7683fa837c9e260e99e413865fd49fa2068e1
   yeptris (0.6.36.0-x86_64-darwin) sha256=dbc291383605b54b4755b43434cf0e69e5ec222d068a581ad9a7558aa7d7e64a
   yeptris (0.6.36.0-x86_64-linux) sha256=5d88fa3cf4d69eec2411a6e724c39fbc3d2f4dc303e8462f260a0054248b6b6f
   yeptris (0.6.36.0-x86_64-linux-musl) sha256=42cf7e2bcf74c5f141c42a253e94f76ffaf4d673ddd96c544ec12974d21953e4
