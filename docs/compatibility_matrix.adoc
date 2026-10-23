@@ -113,9 +113,12 @@ and the observed `actual` count (limit plus one). Exactly the ceiling is accepte
 The renderer rejects nonfinite header coordinates and nonpositive or nonfinite
 header/output dimensions with `Emfsvg::RenderError` before creating its builder.
 These checks and the output ceiling provide focused allocation protection;
-they do not bound every intermediate renderer allocation. The observed corrupted
-case 14 renderer RSS failure remains unresolved. No passing result for all 21
-corrupted inputs or calibrated baseline is claimed.
+they do not bound every intermediate renderer allocation. Sparse GDI object
+handles no longer allocate an array through the numeric handle value. The frozen
+21-input corrupted-corpus observation after that fix stayed within its resource
+budgets, but encountered one malformed UTF-16 exception. That exception is now
+classified as a parse error; the integrated corpus qualification and calibrated
+baseline remain pending.
 
 Unreadable input currently raises `Emfsvg::ParseError` with its original upstream
 format/parse exception as `cause`; unexpected backend failures propagate. The
