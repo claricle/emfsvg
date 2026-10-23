@@ -102,6 +102,14 @@ a subclass of `Emfsvg::Error`, with `resource` (`:input_bytes` or `:output_bytes
 so they have no original exception cause. They do not set process RSS or virtual
 address-space ceilings.
 
+Before path analysis, the renderer limits accepted models to
+`Emfsvg::Renderer::MAX_RECORDS` (1,000,000) enumerated records. This is an
+`emfsvg` safety policy, independent of upstream parser limits. It also applies to
+caller-provided models and lazy enumerables: collection stops at the first
+excess record, without trusting the header's declared count, and raises
+`Emfsvg::ResourceLimitError` with `resource: :records`, the configured `limit`,
+and the observed `actual` count (limit plus one). Exactly the ceiling is accepted.
+
 The renderer rejects nonfinite header coordinates and nonpositive or nonfinite
 header/output dimensions with `Emfsvg::RenderError` before creating its builder.
 These checks and the output ceiling provide focused allocation protection;

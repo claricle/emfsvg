@@ -17,6 +17,8 @@ module Emfsvg
   #   7. </svg>
   class Renderer
     MAX_OUTPUT_BYTES = 500 * 1024 * 1024
+    # Downstream collection policy, independent of parser input/array limits.
+    MAX_RECORDS = 1_000_000
 
     # Records that set pathDrawn=true in libemf2svg's U_emf_onerec_analyse
     # pre-pass. Used to distinguish wtBefore from wtAfter.
@@ -174,7 +176,7 @@ module Emfsvg
     end
 
     def visit_records
-      records = @metafile.to_a
+      records = bounded_records
       path_actions, path_transforms = build_path_analysis(records)
       visitor = Visitors::EmrVisitor.new(
         @builder, @dc, @object_table, @transform_stack,
@@ -190,6 +192,17 @@ module Emfsvg
       end
       visitor.flush_open_groups
       @open_groups = visitor.open_group_count
+    end
+
+    def bounded_records
+      records = []
+      @metafile.each do |record|
+        records << record
+        next unless records.length > MAX_RECORDS
+
+        raise ResourceLimitError.new(resource: :records, limit: MAX_RECORDS, actual: records.length)
+      end
+      records
     end
 
     # Pre-scan records to build two maps keyed by BeginPath record index:
