@@ -22,6 +22,7 @@ module Emfsvg
         def self.from_node(node)
           source_tag = yield(node) if block_given?
           style = Stylable.parse_style(node)
+          style[:stroke] = style[:stroke].with_canonical_cosmetic_dash(source_tag) if source_tag
           path_record_kind = canonical_path_record_kind(node, source_tag) if source_tag
           brush_fallback = source_tag && canonical_brush_fallback?(node, source_tag)
           if brush_fallback

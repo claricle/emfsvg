@@ -88,7 +88,13 @@ module Emfsvg
 
         def emit_create_pen(context, stroke)
           handle = context.allocate_handle
-          width = stroke.cosmetic_pixel_width? ? { x: 1, y: 0 } : context.point_attrs(stroke.width, 0)
+          width = if stroke.canonical_cosmetic_dash
+                    context.point_attrs(stroke.canonical_cosmetic_dash[0], 0)
+                  elsif stroke.cosmetic_pixel_width?
+                    { x: 1, y: 0 }
+                  else
+                    context.point_attrs(stroke.width, 0)
+                  end
           context.emit(Emf::Emr::Binary::Records::CreatePen,
                        i_type: CREATEPEN,
                        ih_pen: handle,

@@ -21,9 +21,13 @@ module Emfsvg
       END_CAP_BITS = { "butt" => 0x0200, "round" => 0x0000, "square" => 0x0100 }.freeze
       LINE_JOIN_BITS = { "miter" => 0x2000, "round" => 0x0000, "bevel" => 0x1000 }.freeze
       NULL_PEN_WIDTH_SENTINEL = "1px"
+      COSMETIC_DASH_PATTERNS = {
+        1 => [5, 5], 2 => [1, 1], 3 => [5, 5, 1, 5], 4 => [5, 5, 1, 1, 1, 5]
+      }.freeze
+      private_constant :COSMETIC_DASH_PATTERNS
 
       attr_reader :paint, :width, :dash_array, :line_cap, :line_join, :miter_limit, :raw_width,
-                  :line_cap_explicit, :line_join_explicit, :null_pen_fallback, :fallback_brush
+                  :line_cap_explicit, :line_join_explicit, :null_pen_fallback, :fallback_brush, :canonical_cosmetic_dash
 
       def initialize(paint:, width: 1.0, dash_array: nil, line_cap: "round",
                      line_join: "round", miter_limit: 10.0, raw_width: nil,
@@ -49,6 +53,38 @@ module Emfsvg
           !line_join_explicit
       end
 
+      # Recover only the exact unfilled Polyline spelling emitted for these
+      # legacy cosmetic pens. Ordinary SVG shares the parsed paint cache.
+      def with_canonical_cosmetic_dash(source_tag)
+        return self unless raw_width == "1.0000" && !paint.null? && dash_array
+
+        number = "-?\\d+\\.\\d{4}"
+        point = "#{number},#{number}"
+        data = source_tag&.[](/\A<path d="(M #{point}(?: L #{point})+ )"/, 1)
+        color = source_tag&.[](/ stroke="(#[0-9A-F]{6})"/, 1)
+        return self unless data && color
+
+        lengths = dash_array.map { |length| format("%.4f", length) }.join(",")
+        expected = %(<path d="#{data}" stroke="#{color}" stroke-width="1.0000" )
+        expected << %(stroke-dasharray="#{lengths}"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />)
+        return self unless source_tag == expected
+
+        COSMETIC_DASH_PATTERNS.each do |style, pattern|
+          stored_width = dash_array.first / pattern.first
+          next unless stored_width >= 1 && stored_width == stored_width.to_i
+          next unless dash_array == pattern.map { |length| length * stored_width }
+
+          return dup.tap { |copy| copy.canonical_cosmetic_dash = [stored_width, style].freeze }
+        end
+        self
+      end
+
+      protected
+
+      attr_writer :canonical_cosmetic_dash
+
+      public
+
       PS_GEOMETRIC = 0x00010000
 
       # Cosmetic widths are device pixels, independent of logical coordinates.
@@ -63,6 +99,8 @@ module Emfsvg
       #   * pen type GEOMETRIC (bit 16) — set when width > 1 or an
       #     explicit unitless width of 1 must survive SVG round trips.
       def pen_style
+        return canonical_cosmetic_dash[1] if canonical_cosmetic_dash
+
         @pen_style ||= compute_pen_style
       end
 
