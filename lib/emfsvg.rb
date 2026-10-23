@@ -41,7 +41,11 @@ module Emfsvg
     #               (default: false — EMF+ is structured-parsed by emf but
     #               not yet rendered)
     def to_svg(metafile, **options)
-      Renderer.call(metafile, Options.new(**options))
+      svg = Renderer.call(metafile, Options.new(**options))
+      warn_skipped_records(metafile)
+      svg
+    rescue Emf::Error => e
+      reraise_upstream_error(e)
     end
 
     # Parse from bytes then render.
@@ -74,6 +78,25 @@ module Emfsvg
 
     private
 
+    def warn_skipped_records(metafile)
+      return unless metafile.respond_to?(:diagnostics)
+
+      skipped = metafile.diagnostics.select { |diagnostic| diagnostic.disposition == :skipped }
+      return if skipped.empty?
+
+      entries = skipped.sort_by(&:record_index).map do |diagnostic|
+        "index=#{diagnostic.record_index},type=#{diagnostic.record_type}," \
+          "code=#{diagnostic.record_code},offset=#{diagnostic.byte_offset}"
+      end
+      Kernel.warn("emfsvg: skipped EMF records: #{entries.join(';')}")
+    end
+
+    def reraise_upstream_error(error)
+      raise error unless defined?(Emf::ResourceLimitError) && error.is_a?(Emf::ResourceLimitError)
+
+      raise ResourceLimitError.new(resource: error.resource, limit: error.limit, actual: error.actual), cause: error
+    end
+
     def check_input_size!(actual)
       limit = Emf::Emr::Parser::MAX_INPUT_BYTES
       return if actual <= limit
@@ -85,6 +108,8 @@ module Emfsvg
       Emf.parse(bytes)
     rescue Emf::FormatError, Emf::ParseError => e
       raise ParseError, e.message, cause: e
+    rescue Emf::Error => e
+      reraise_upstream_error(e)
     end
   end
 end
