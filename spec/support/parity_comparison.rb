@@ -45,6 +45,9 @@ module Emfsvg
         unless /\A[0-9a-f]{40}\z/.match?(provenance.fetch("source_revision").to_s)
           errors << "source_revision must be a full commit SHA"
         end
+        unless /\A[0-9a-f]{64}\z/.match?(provenance.fetch("binary_sha256", nil).to_s)
+          errors << "binary_sha256 must be a full lowercase SHA-256 digest"
+        end
         %w[reported_version build_recipe generation_command].each do |field|
           errors << "#{field} must be recorded" if provenance.fetch(field).to_s.strip.empty?
         end

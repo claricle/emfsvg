@@ -2,9 +2,19 @@
 
 require "spec_helper"
 require "support/parity_comparison"
+require "rbconfig"
 require "yaml"
 
 RSpec.describe Emfsvg::SpecSupport::ParityComparison do
+  let(:complete_provenance) do
+    manifest = YAML.safe_load_file(File.expand_path("fixtures/parity_manifest.yml", __dir__))
+    # Synthetic metadata control using the checksum of a real executable.
+    manifest.fetch("provenance").fetch("c_reference").merge(
+      "status" => "verified", "source_revision" => manifest.fetch("baseline").fetch("revision"),
+      "binary_sha256" => Digest::SHA256.file(RbConfig.ruby).hexdigest
+    )
+  end
+
   it "reports a suffix-only byte difference with bounded context and generated digest" do
     expected = "a" * 200
     actual = "#{expected}x"
@@ -47,5 +57,23 @@ RSpec.describe Emfsvg::SpecSupport::ParityComparison do
     errors = described_class.c_provenance_errors(provenance)
     expect(errors).to include('status must be verified (got "unverified_historical_artifacts")',
                               "source_revision must be a full commit SHA")
+  end
+
+  it "accepts complete synthetic metadata with an actual executable checksum" do
+    expect(described_class.c_provenance_errors(complete_provenance)).to be_empty
+  end
+
+  it "rejects otherwise complete metadata without a binary checksum" do
+    provenance = complete_provenance.except("binary_sha256")
+    expect(described_class.c_provenance_errors(provenance))
+      .to eq(["binary_sha256 must be a full lowercase SHA-256 digest"])
+  end
+
+  [nil, "", "a" * 63, "a" * 65, "A" * 64, "g" * 64, "#{'a' * 64}\n"].each do |checksum|
+    it "rejects otherwise complete metadata with malformed checksum #{checksum.inspect}" do
+      provenance = complete_provenance.merge("binary_sha256" => checksum)
+      expect(described_class.c_provenance_errors(provenance))
+        .to eq(["binary_sha256 must be a full lowercase SHA-256 digest"])
+    end
   end
 end
