@@ -71,6 +71,7 @@ module Emfsvg
 
           clip = context.clip_path_registry.lookup(attr)
           return nil unless clip
+          return nil if context.carried_clip?(clip)
 
           clip.clip_bounds
         end

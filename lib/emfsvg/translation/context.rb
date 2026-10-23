@@ -70,6 +70,30 @@ module Emfsvg
                       cb_rgn_data: 0, dw_mode: 5)
       end
 
+      def carried_clip?(clip)
+        clip && @carried_clip.equal?(clip)
+      end
+
+      def carry_clip_from(group)
+        clip = @clip_path_registry&.exported_clip(group)
+        return unless clip && @unused_clip_safe
+
+        @carried_clip = clip
+        @emitter.emit(Emf::Emr::Binary::Records::IntersectClipRect,
+                      i_type: Emf::Emr::Binary::TypeCodes::INTERSECTCLIPRECT,
+                      rcl_clip: rect_attrs(*clip.unused_rectangle_bounds))
+      end
+
+      def finish_carried_clip(group)
+        clip = @clip_path_registry&.imported_clip(group)
+        return unless carried_clip?(clip)
+
+        @emitter.emit(Emf::Emr::Binary::Records::ExtSelectClipRgn,
+                      i_type: Emf::Emr::Binary::TypeCodes::EXTSELECTCLIPRGN,
+                      cb_rgn_data: 0, dw_mode: 5)
+        @carried_clip = nil
+      end
+
       def records
         @emitter.records
       end

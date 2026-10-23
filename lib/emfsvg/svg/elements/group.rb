@@ -18,15 +18,20 @@ module Emfsvg
         attr_reader :children, :transform_matrix
 
         def initialize(children:, transform_matrix: Emf::Model::Geometry::Matrix.identity,
-                       legacy_broken_y: false)
+                       legacy_broken_y: false, canonical_matrix: false)
           @children = children
           @transform_matrix = transform_matrix
           @legacy_broken_y = legacy_broken_y
+          @canonical_matrix = canonical_matrix
         end
 
         # True when the source transform was exactly the legacy literal.
         def legacy_broken_y?
           @legacy_broken_y
+        end
+
+        def canonical_matrix?
+          @canonical_matrix
         end
 
         def transformed?
@@ -37,8 +42,17 @@ module Emfsvg
           children = node.element_children.map { |c| Element.from_node(c, &source_tag) }
           new(children: children,
               transform_matrix: Svg::TransformParser.parse(node["transform"]),
-              legacy_broken_y: node["transform"] == LEGACY_BROKEN_Y_TRANSFORM)
+              legacy_broken_y: node["transform"] == LEGACY_BROKEN_Y_TRANSFORM,
+              canonical_matrix: canonical_matrix_node?(node))
         end
+
+        def self.canonical_matrix_node?(node)
+          return false unless node.attribute_nodes.map(&:name) == ["transform"]
+
+          number = "-?\\d+\\.\\d{4}"
+          node["transform"]&.match?(Regexp.new("\\Amatrix\\(#{number}(?: #{number}){5}\\)\\z"))
+        end
+        private_class_method :canonical_matrix_node?
       end
     end
   end

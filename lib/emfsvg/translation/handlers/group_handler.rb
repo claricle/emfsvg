@@ -25,6 +25,11 @@ module Emfsvg
           element.children.each { |child| context.dispatch(child) }
           context.emit(Emf::Emr::Binary::Records::RestoreDc,
                        i_type: RESTOREDC, saved_dc: -1)
+          context.finish_carried_clip(element)
+          # RestoreDC changes native state; the next SetWorldTransform closes
+          # the SVG group. Emit here to retain the source definition's group
+          # while letting the following sibling inherit its native clip.
+          context.carry_clip_from(element)
         end
 
         private
