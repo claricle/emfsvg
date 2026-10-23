@@ -33,8 +33,8 @@ module Emfsvg
           !transform_matrix.identity?
         end
 
-        def self.from_node(node)
-          children = node.element_children.map { |c| Element.from_node(c) }
+        def self.from_node(node, &source_tag)
+          children = node.element_children.map { |c| Element.from_node(c, &source_tag) }
           new(children: children,
               transform_matrix: Svg::TransformParser.parse(node["transform"]),
               legacy_broken_y: node["transform"] == LEGACY_BROKEN_Y_TRANSFORM)

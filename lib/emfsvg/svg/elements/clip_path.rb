@@ -16,10 +16,10 @@ module Emfsvg
           @children = children
         end
 
-        def self.from_node(node)
+        def self.from_node(node, &source_tag)
           new(
             id: node["id"],
-            children: node.element_children.map { |c| Element.from_node(c) }
+            children: node.element_children.map { |c| Element.from_node(c, &source_tag) }
           )
         end
 

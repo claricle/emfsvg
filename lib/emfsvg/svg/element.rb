@@ -38,12 +38,12 @@ module Emfsvg
           @registry[element_name] = subclass
         end
 
-        def from_node(node)
+        def from_node(node, &source_tag)
           subclass = @registry[node.name]
-          return subclass.from_node(node) if subclass
+          return subclass.from_node(node, &source_tag) if subclass
 
           OpenElement.new(name: node.name, children: node.element_children.map do |c|
-            from_node(c)
+            from_node(c, &source_tag)
           end)
         end
       end

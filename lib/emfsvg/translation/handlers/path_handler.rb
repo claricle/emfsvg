@@ -23,17 +23,22 @@ module Emfsvg
 
           with_gdi_state(element, context) do
             flattened = PathFlattener.flatten(element.commands)
-            emit_subpaths(flattened, context)
+            emit_subpaths(flattened, context, unfilled: element.fill.null?, line_record_kind: element.line_record_kind)
           end
         end
 
         private
 
-        def emit_subpaths(subpaths, context)
+        def emit_subpaths(subpaths, context, unfilled:, line_record_kind:)
           kinds = subpaths.map(&:shape_kind).uniq
-          if subpaths.size > 1 && kinds.size == 1 && %i[polygon polyline].include?(kinds.first)
+          if unfilled && prefixed_polybezier?(subpaths)
+            first = subpaths.first.points.first
+            context.emit(Emf::Emr::Binary::Records::MoveToEx, i_type: MOVETOEX,
+                                                              origin: context.point_attrs(*first))
+            emit_poly(Emf::Emr::Binary::Records::PolyBezier, POLYBEZIER, subpaths.last, context)
+          elsif subpaths.size > 1 && kinds.size == 1 && %i[polygon polyline].include?(kinds.first)
             emit_multi(subpaths, kinds.first == :polygon, context)
-          elsif single_line_path?(subpaths)
+          elsif line_record_kind != :polyline && single_line_path?(subpaths)
             subpaths.first.segments.each { |letter, points| emit_segment(letter, points, subpaths.first, context) }
           elsif subpaths.size > 1 || kinds == [:path]
             emit_figures(subpaths, context)
@@ -45,6 +50,11 @@ module Emfsvg
             when :polybezier then emit_polybezier(flattened, context)
             end
           end
+        end
+
+        def prefixed_polybezier?(subpaths)
+          subpaths.size == 2 && subpaths.first.segments.map(&:first) == ["M"] &&
+            subpaths.last.shape_kind == :polybezier
         end
 
         def single_line_path?(subpaths)
