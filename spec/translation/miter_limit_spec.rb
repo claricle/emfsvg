@@ -33,6 +33,29 @@ RSpec.describe "SVG stroke miter limits" do
     expect(Emfsvg.from_bytes(bytes)).to include('stroke-miterlimit="10.0000"')
   end
 
+  it "decodes subnormal miter wire values as integer payloads" do
+    bytes = Emfsvg.from_svg(svg)
+    record = Emf.parse(bytes).records.map(&:wire).grep(Emf::Emr::Binary::Records::SetMiterLimit).first
+    record_bytes = record.to_binary_s
+    offset = bytes.index(record_bytes)
+
+    expect(record.miter_limit).to eq(5.0)
+    expect(offset).not_to be_nil
+    bytes[offset + 8, 4] = [5].pack("V")
+
+    decoded_record = Emf.parse(bytes).records.map(&:wire).grep(Emf::Emr::Binary::Records::SetMiterLimit).first
+    expect(decoded_record.miter_limit).to be < 1.0e-38
+    expect(Emfsvg.from_bytes(bytes)).to include('stroke-miterlimit="5.0000"')
+  end
+
+  it "preserves an explicit unitless width of one and keeps the omitted-width default" do
+    explicit = Emfsvg.from_svg(svg.sub(' stroke-miterlimit="5"', ' stroke-miterlimit="5" stroke-width="1.0000"'))
+    default = Emfsvg.from_svg(svg)
+
+    expect(Emfsvg.from_bytes(explicit)).to include('stroke-width="1.0000"')
+    expect(Emfsvg.from_bytes(default)).to include('stroke-width="1.0000"')
+  end
+
   %w[test-039.svg test-040.svg].each do |filename|
     it "preserves every explicit miter limit in #{filename}" do
       source = File.read(File.join("spec/fixtures/emfsvg_golden", filename))

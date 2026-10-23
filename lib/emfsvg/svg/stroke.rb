@@ -51,16 +51,15 @@ module Emfsvg
       #   * dash style (bits 0-7)
       #   * end-cap (bits 8-11)
       #   * line-join (bits 12-15)
-      #   * pen type GEOMETRIC (bit 16) — set when width > 1, so
-      #     emfsvg's EMF→SVG renderer uses the actual pen.width
-      #     instead of hardcoding 1.
+      #   * pen type GEOMETRIC (bit 16) — set when width > 1 or an
+      #     explicit unitless width of 1 must survive SVG round trips.
       def pen_style
         base = if paint.null? || null_pen_sentinel?
                  5 # PS_NULL
                else
                  dash_style
                end
-        type_bit = width > 1.0 && !paint.null? ? PS_GEOMETRIC : 0
+        type_bit = (width > 1.0 || explicit_unitless_one_width?) && !paint.null? ? PS_GEOMETRIC : 0
         base | type_bit | END_CAP_BITS.fetch(line_cap, 0x0000) | LINE_JOIN_BITS.fetch(line_join, 0x0000)
       end
 
@@ -104,6 +103,10 @@ module Emfsvg
         return 0 if first.zero?
 
         first < (width * 2) ? 2 : 1 # PS_DOT=2, PS_DASH=1
+      end
+
+      def explicit_unitless_one_width?
+        raw_width.to_s.match?(/\A\s*1(?:\.0+)?\s*\z/)
       end
 
       def self.parse_dash_array(value)

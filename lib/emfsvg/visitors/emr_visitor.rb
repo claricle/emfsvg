@@ -769,7 +769,11 @@ module Emfsvg
       end
 
       def visit_set_miter_limit(wire)
-        @dc.miter_limit = wire.miter_limit.to_f
+        limit = wire.miter_limit.to_f
+        # libemf2svg-produced EMFs store this field as the integer payload's
+        # float bit pattern, while native SetMiterLimit records store a float.
+        limit = [limit].pack("f").unpack1("L<") if limit.abs < 1.1754943508222875e-38
+        @dc.miter_limit = limit
       end
 
       def visit_comment(_wire); end

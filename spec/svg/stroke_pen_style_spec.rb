@@ -12,9 +12,25 @@ RSpec.describe Emfsvg::Svg::Stroke do
       expect(stroke.pen_style & 0x000F0000).to eq(0x00010000)
     end
 
-    it "does NOT include PS_GEOMETRIC when width is 1" do
+    it "includes PS_GEOMETRIC when an explicit unitless width is 1" do
       stroke = described_class.parse(
-        stroke: "#000000", width: "1", dash_array: nil,
+        stroke: "#000000", width: "1.0000", dash_array: nil,
+        line_cap: "round", line_join: "round"
+      )
+      expect(stroke.pen_style & 0x000F0000).to eq(0x00010000)
+    end
+
+    it "keeps the default width cosmetic when no width was supplied" do
+      stroke = described_class.parse(
+        stroke: "#000000", width: nil, dash_array: nil,
+        line_cap: "round", line_join: "round"
+      )
+      expect(stroke.pen_style & 0x000F0000).to eq(0)
+    end
+
+    it "keeps an explicit pixel width cosmetic" do
+      stroke = described_class.parse(
+        stroke: "#000000", width: "1px", dash_array: nil,
         line_cap: "round", line_join: "round"
       )
       expect(stroke.pen_style & 0x000F0000).to eq(0)
