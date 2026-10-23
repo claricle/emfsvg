@@ -112,7 +112,10 @@ module Emfsvg
         # height, baseline and pivot. Choose an interior point of all four source
         # intervals; the handler uses a finer native mapping only for this case.
         def self.recover_baseline(height, y, pivot, offset)
-          return if format("%.4f", y.to_f + (height.to_f * 0.9)) == format("%.4f", pivot)
+          # Match the mapped IEEE-754 values and C rounding used by the renderer.
+          mapped_height = (height * 10_000).round * 0.0001
+          mapped_y = (y * 10_000).round * 0.0001
+          return if FormatHelpers.fmt(mapped_y + (mapped_height * 0.9)) == FormatHelpers.fmt(pivot)
 
           half = Rational(1, 20_000)
           ratio = Rational(9, 10)
@@ -127,8 +130,8 @@ module Emfsvg
 
           native_y = ((low_y + high_y) / 2 * 1_000_000).round / 1_000_000.0
           actual = [native_height, native_y, native_height * 0.9, native_y + (native_height * 0.9)]
-          expected = [height, y, offset, pivot]
-          return unless actual.map { |value| format("%.4f", value) } == expected.map { |value| format("%.4f", value) }
+          expected = [height, y, offset, pivot].map { |value| FormatHelpers.fmt(value) }
+          return unless actual.map { |value| FormatHelpers.fmt(value) } == expected
 
           [native_height, native_y]
         end

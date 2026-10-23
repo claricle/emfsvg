@@ -6,7 +6,8 @@ require "leptris"
 RSpec.describe "Canonical independently rounded text pivots" do
   [
     ["17.9564", "372.0833", "11.9910", "382.8753", "10.7919"],
-    ["132.3494", "199.7150", "12.8399", "211.2708", "11.5559"]
+    ["132.3494", "199.7150", "12.8399", "211.2708", "11.5559"],
+    ["16.3590", "238.3281", "13.9615", "250.8934", "12.5654"]
   ].each do |x, y, height, pivot, offset|
     it "preserves pivot #{pivot} and the following ordinary text" do
       transform = "rotate(270, #{x}, #{pivot}) translate(0, #{offset})"
