@@ -153,6 +153,56 @@ matching executable checksum in the manifest. Review artifact and manifest
 diffs before committing. See link:spec/fixtures/README.adoc[the regeneration
 procedure] for promotion safeguards and limits.
 
+== Resource calibration qualification
+
+The resource-calibration command is gated by production qualification. The
+repository carries a reviewed ledger for 21 corrupted inputs in
+`spec/fixtures/reviewed_corrupt_outcomes.json`. Those independently reviewed
+expectations define the outcome kind, exact ordered warnings, and exception
+details where applicable; an SVG digest is an optional additional constraint.
+A reviewed expectation is not a runtime observation. A ledger entry counted as
+`contracted` means its review requirements are complete, while `matched` means
+an actual observation also passed the contract. The qualification gate runs the
+public conversion for the pinned 9 valid controls and all 21 corrupted inputs
+through Ruby, native, and auto-selected-native backends before resource
+calibration can proceed.
+
+Qualification requires explicit artifact paths through `EMF_RELEASE_PACKAGE`
+(the exact released `emf` `.gem` whose SHA-256 and version match the manifest),
+`EMF_NATIVE_LIBRARY` (the native artifact matching its manifest SHA-256), and
+`EMF_NATIVE_PROVENANCE` (JSON whose `artifact_sha256`, `source_revision`, and
+`abi` exactly match the native-library provenance in the manifest). The gate
+also checks the installed runtime against the release archive, native selection,
+input identities, and evidence for drift. Missing, mismatched, or incomplete
+metadata and artifacts fail closed before samples run.
+
+After the release and native artifacts and the manifest are qualified, run the
+verification mode with explicit host safety caps:
+
+[source,bash]
+----
+EMF_RELEASE_PACKAGE=/absolute/path/emf-version.gem \
+EMF_NATIVE_LIBRARY=/absolute/path/libemf.so \
+EMF_NATIVE_PROVENANCE=/absolute/path/native-provenance.json \
+bundle exec ruby scripts/calibrate_resource_limits.rb check \
+  --manifest spec/fixtures/parity_manifest.yml \
+  --fixture-root "$EMF_FIXTURE_ROOT" \
+  --outer-rss-cap-mib "$EMFSVG_CALIBRATION_RSS_CAP_MIB" \
+  --outer-as-cap-mib "$EMFSVG_CALIBRATION_AS_CAP_MIB" \
+  --timeout-seconds "$EMFSVG_CALIBRATION_TIMEOUT_SECONDS" \
+  --baseline spec/fixtures/resource_limits/emfsvg-v1.yml
+----
+
+This checkout is not qualified: its manifest marks the runtime unqualified,
+identifies development revision `99a8c21256cbe902e243cc0bcac65b282ec52bf4`
+without a released package digest, marks the native artifact unavailable, and
+has not pinned the diagnostics and resources contract revisions. The command
+therefore refuses with the current evidence. A reviewed ledger, passing
+synthetic tests, or a current-source run does not establish released-package,
+native-artifact, whole-corpus parity, or platform qualification. See
+link:docs/compatibility_matrix.adoc[the compatibility matrix] for detailed
+contracts and remaining evidence.
+
 == Dependencies
 
 * `emf` (~> 0.1) — EMF binary parser, domain model, and serializer
