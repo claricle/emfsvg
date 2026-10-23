@@ -111,6 +111,20 @@ RSpec.describe FontQualification do
     expect(JSON.parse(File.read(File.join(@directory, "qualification.json")))).to eq(result)
   end
 
+  it "selects the requested family when a command wrapper appends an argument" do
+    fonts = @contract.fetch("fonts").transform_values { |font| font.fetch("path") }
+    resolver = File.join(@directory, "fc-match")
+    File.write(resolver, qualification_resolver(fonts))
+    configuration = File.join(@directory, "fonts.conf")
+    File.write(configuration, "isolated configuration")
+
+    stdout, stderr, status = Open3.capture3({ "FONTCONFIG_FILE" => configuration }, RbConfig.ruby, resolver,
+                                            "-f", "format", "Arial", "")
+
+    expect(status.exitstatus).to eq(0), stderr
+    expect(stdout.strip).to eq(@contract.fetch("fonts").fetch("arial_regular").fetch("path"))
+  end
+
   it "keeps the default pinned C hash check and removes stale reports on native failure" do
     native = File.join(@directory, "unqualified-reference")
     File.write(native, "a different native binary")

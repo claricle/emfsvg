@@ -25,14 +25,8 @@ module Emfsvg
         { "fonts" => fonts }
       end
 
-      def qualification_cli(contract, directory, *options)
-        contract["output_directory"] = directory
-        contract_path = File.join(directory, "contract.json")
-        File.write(contract_path, JSON.generate(contract))
-        commands = File.join(directory, "commands")
-        FileUtils.mkdir_p(commands)
-        fonts = contract.fetch("fonts").transform_values { |font| font.fetch("path") }
-        resolver = <<~RUBY
+      def qualification_resolver(fonts)
+        <<~RUBY
           #!#{RbConfig.ruby}
           require "json"
           fonts = JSON.parse(#{JSON.generate(fonts).inspect})
@@ -40,11 +34,22 @@ module Emfsvg
           if File.basename($PROGRAM_NAME) == "fc-list"
             puts fonts.values
           else
-            prefix = ARGV.last.start_with?("Arial") ? "arial" : "verdana"
-            style = ARGV.last.include?("weight=bold") ? "bold" : "regular"
+            pattern = ARGV.find { |argument| argument.start_with?("Arial", "David") }
+            prefix = pattern&.start_with?("Arial") ? "arial" : "verdana"
+            style = pattern&.include?("weight=bold") ? "bold" : "regular"
             puts fonts.fetch("\#{prefix}_\#{style}")
           end
         RUBY
+      end
+
+      def qualification_cli(contract, directory, *options)
+        contract["output_directory"] = directory
+        contract_path = File.join(directory, "contract.json")
+        File.write(contract_path, JSON.generate(contract))
+        commands = File.join(directory, "commands")
+        FileUtils.mkdir_p(commands)
+        fonts = contract.fetch("fonts").transform_values { |font| font.fetch("path") }
+        resolver = qualification_resolver(fonts)
         %w[fc-list fc-match].each do |name|
           path = File.join(commands, name)
           File.write(path, resolver)
