@@ -26,8 +26,9 @@ class FontQualification
     ["David", [15], ","]
   ].freeze
 
-  def initialize(contract)
+  def initialize(contract, ruby_only: false)
     @contract = contract
+    @ruby_only = ruby_only
     @fonts = contract.fetch("fonts")
     ROLES.each do |role|
       font = @fonts.fetch(role)
@@ -65,13 +66,19 @@ class FontQualification
     raise "FONTCONFIG_FILE is required" unless File.file?(ENV.fetch("FONTCONFIG_FILE"))
 
     {
-      "scope" => "glyph vectors only; not full corpus or redistribution qualification",
+      "mode" => @ruby_only ? "ruby_only" : "full",
+      "scope" => "#{@ruby_only ? 'Ruby' : 'Ruby and pinned C'} glyph vectors only; " \
+                 "not full corpus or redistribution qualification",
       "platform" => RUBY_PLATFORM,
       "ruby_version" => RUBY_VERSION,
       "fontconfig_sha256" => Digest::SHA256.file(ENV.fetch("FONTCONFIG_FILE")).hexdigest,
       "fonts" => attest_fonts,
       "ruby_vectors" => ruby_vectors,
-      "c_reference" => native_vectors
+      "c_reference" => if @ruby_only
+                         { "status" => "not_run", "reason" => "Ruby-only mode does not qualify C" }
+                       else
+                         native_vectors
+                       end
     }
   end
 

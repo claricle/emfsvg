@@ -96,4 +96,66 @@ RSpec.describe FontQualification do
     expect(stderr).to include("File checksum mismatch")
     expect(File.exist?(report)).to be(false)
   end
+
+  it "qualifies all four fonts and five Ruby vectors in a fresh child without C inputs" do
+    stdout, stderr, status = qualification_cli(@contract, @directory, "--ruby-only")
+    expect(status.exitstatus).to eq(0), stderr
+    result = JSON.parse(stdout)
+    expect(result.fetch("mode")).to eq("ruby_only")
+    expect(result.fetch("scope")).to start_with("Ruby glyph vectors only")
+    expect(result.fetch("c_reference")).to include("status" => "not_run")
+    expect(result.fetch("fonts").map { |font| font.fetch("role") }).to eq(described_class::ROLES)
+    expect(result.fetch("fonts").map { |font| font.fetch("sha256") })
+      .to eq(@contract.fetch("fonts").values.map { |font| font.fetch("sha256") })
+    expect(result.fetch("ruby_vectors").map { |vector| vector.fetch("output") }).to eq(["אבגד", "“ƒΩ≈", "", "", ","])
+    expect(JSON.parse(File.read(File.join(@directory, "qualification.json")))).to eq(result)
+  end
+
+  it "keeps the default pinned C hash check and removes stale reports on native failure" do
+    native = File.join(@directory, "unqualified-reference")
+    File.write(native, "a different native binary")
+    @contract["c_reference"] = { "binary" => native, "library" => native }
+    report = File.join(@directory, "qualification.json")
+    File.write(report, "previous success")
+    _stdout, stderr, status = qualification_cli(@contract, @directory)
+    expect(status.exitstatus).to eq(1)
+    expect(stderr).to include("File checksum mismatch for #{native}")
+    expect(File.exist?(report)).to be(false)
+  end
+
+  it "removes a stale Ruby-only report when cmap validation fails" do
+    report = File.join(@directory, "qualification.json")
+    File.write(report, "previous success")
+    @contract.fetch("fonts").fetch("verdana_bold")["cmap_sha256"] = "0" * 64
+    _stdout, stderr, status = qualification_cli(@contract, @directory, "--ruby-only")
+    expect(status.exitstatus).to eq(1)
+    expect(stderr).to include("cmap checksum mismatch for verdana_bold")
+    expect(File.exist?(report)).to be(false)
+  end
+
+  it "runs the native vectors in the default report mode" do
+    configuration = File.join(@directory, "fonts.conf")
+    File.write(configuration, qualifier.configuration(File.join(@directory, "cache")))
+    allow(ENV).to receive(:fetch).with("FONTCONFIG_FILE").and_return(configuration)
+    allow(qualifier).to receive_messages(attest_fonts: [], ruby_vectors: [])
+    expect(qualifier).to receive(:native_vectors).and_return({ "fixtures" => [183, 185] })
+    result = qualifier.probe
+    expect(result.fetch("mode")).to eq("full")
+    expect(result.fetch("scope")).to start_with("Ruby and pinned C glyph vectors only")
+    expect(result.fetch("c_reference")).to eq("fixtures" => [183, 185])
+  end
+
+  it "rejects unknown CLI options" do
+    _stdout, stderr, status = qualification_cli(@contract, @directory, "--ruby-onyl")
+    expect(status.exitstatus).to eq(1)
+    expect(stderr).to include("invalid option: --ruby-onyl")
+    expect(File.exist?(File.join(@directory, "qualification.json"))).to be(false)
+  end
+
+  it "rejects extra CLI arguments" do
+    _stdout, stderr, status = qualification_cli(@contract, @directory, "unexpected")
+    expect(status.exitstatus).to eq(1)
+    expect(stderr).to include("Expected one contract path")
+    expect(File.exist?(File.join(@directory, "qualification.json"))).to be(false)
+  end
 end
