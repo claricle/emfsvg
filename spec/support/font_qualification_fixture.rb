@@ -34,9 +34,11 @@ module Emfsvg
           if File.basename($PROGRAM_NAME) == "fc-list"
             puts fonts.values
           else
-            pattern = ARGV.map { |argument| argument.delete('"') }
-                          .find { |argument| argument.start_with?("Arial", "David") }
-            prefix = pattern&.start_with?("Arial") ? "arial" : "verdana"
+            File.write(File.join(File.dirname($PROGRAM_NAME), "fc-match-argv.log"), ARGV.inspect)
+            pattern = ARGV.find { |argument| argument.start_with?("Arial", "David") }
+            abort "Unexpected fc-match argv: \#{ARGV.inspect}" unless pattern
+
+            prefix = pattern.start_with?("Arial") ? "arial" : "verdana"
             style = pattern&.include?("weight=bold") ? "bold" : "regular"
             puts fonts.fetch("\#{prefix}_\#{style}")
           end
@@ -58,8 +60,11 @@ module Emfsvg
           File.write("#{path}.bat", "@echo off\r\n\"#{RbConfig.ruby}\" \"#{path}\" %*\r\n") if File::ALT_SEPARATOR
         end
         script = File.expand_path("../../scripts/qualify_fonts.rb", __dir__)
-        Open3.capture3({ "PATH" => "#{commands}#{File::PATH_SEPARATOR}#{ENV.fetch('PATH')}" },
-                       RbConfig.ruby, script, contract_path, *options)
+        stdout, stderr, status = Open3.capture3({ "PATH" => "#{commands}#{File::PATH_SEPARATOR}#{ENV.fetch('PATH')}" },
+                                                RbConfig.ruby, script, contract_path, *options)
+        argv_log = File.join(commands, "fc-match-argv.log")
+        stderr = "#{stderr}\nfc-match argv: #{File.read(argv_log)}" if !status.success? && File.file?(argv_log)
+        [stdout, stderr, status]
       end
     end
   end
