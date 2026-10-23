@@ -28,7 +28,8 @@ module Emfsvg
               next
             end
             emit_subpaths(flattened, context,
-                          unfilled: element.fill.null?, line_record_kind: element.line_record_kind,
+                          unfilled: element.fill.null?, stroke_null: element.stroke.paint.null?,
+                          line_record_kind: element.line_record_kind,
                           path_record_kind: element.path_record_kind)
           end
         end
@@ -47,7 +48,7 @@ module Emfsvg
                        dw_rop: 0x00F00021, cb_bits_src: 0)
         end
 
-        def emit_subpaths(subpaths, context, unfilled:, line_record_kind:, path_record_kind:)
+        def emit_subpaths(subpaths, context, unfilled:, stroke_null:, line_record_kind:, path_record_kind:)
           kinds = subpaths.map(&:shape_kind).uniq
           if unfilled && prefixed_polybezier?(subpaths)
             first = subpaths.first.points.first
@@ -61,7 +62,7 @@ module Emfsvg
           elsif line_record_kind != :polyline && single_line_path?(subpaths)
             subpaths.first.segments.each { |letter, points| emit_segment(letter, points, subpaths.first, context) }
           elsif subpaths.size > 1 || kinds == [:path]
-            emit_figures(subpaths, context)
+            emit_figures(subpaths, context, stroke_null: stroke_null, unfilled: unfilled)
           else
             flattened = subpaths.first
             case flattened.shape_kind
@@ -98,14 +99,20 @@ module Emfsvg
                        a_poly_counts: subpaths.map { |path| path.points.size }, aptl: points)
         end
 
-        def emit_figures(subpaths, context)
+        def emit_figures(subpaths, context, stroke_null:, unfilled:)
           context.emit(Emf::Emr::Binary::Records::BeginPath, i_type: BEGINPATH)
           subpaths.each do |path|
             path.segments.each { |letter, points| emit_segment(letter, points, path, context) }
           end
           context.emit(Emf::Emr::Binary::Records::EndPath, i_type: ENDPATH)
-          context.emit(Emf::Emr::Binary::Records::StrokeAndFillPath,
-                       i_type: STROKEANDFILLPATH, rcl_bounds: combined_bounds(subpaths, context))
+          action, i_type = if stroke_null && !unfilled
+                             [Emf::Emr::Binary::Records::FillPath, FILLPATH]
+                           elsif unfilled && !stroke_null
+                             [Emf::Emr::Binary::Records::StrokePath, STROKEPATH]
+                           else
+                             [Emf::Emr::Binary::Records::StrokeAndFillPath, STROKEANDFILLPATH]
+                           end
+          context.emit(action, i_type: i_type, rcl_bounds: combined_bounds(subpaths, context))
         end
 
         def emit_segment(letter, points, path, context)

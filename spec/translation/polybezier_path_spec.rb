@@ -44,7 +44,8 @@ RSpec.describe "SVG PolyBezier path preservation" do
       records, _, paths = roundtrip_path(data)
 
       expect(records.grep(Emf::Emr::Binary::Records::PolyBezier)).to be_empty
-      expect(records.grep(Emf::Emr::Binary::Records::StrokeAndFillPath).size).to eq(1)
+      expect(records.grep(Emf::Emr::Binary::Records::StrokePath).size).to eq(1)
+      expect(records.grep(Emf::Emr::Binary::Records::StrokeAndFillPath)).to be_empty
       expect(paths.size).to eq(1)
       expect(paths.first["d"]).to include("C ")
       expect(paths.first["d"].include?("Z")).to eq(data.end_with?("Z"))
