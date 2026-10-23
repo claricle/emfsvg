@@ -13,7 +13,7 @@ module Emfsvg
         Element.register("text", self)
 
         # The font attributes of a <text> element.
-        Font = Struct.new(:family, :point_size, :weight, :style, keyword_init: true)
+        Font = Struct.new(:family, :point_size, :weight, :style, :rotation, keyword_init: true)
 
         attr_reader :x, :y, :content, :font, :text_anchor, :fill, :stroke,
                     :clip_path, :transform_matrix
@@ -44,6 +44,7 @@ module Emfsvg
         end
 
         def self.from_node(node)
+          rotation = canonical_rotation(node)
           new(
             x: AttributeParser.float(node["x"]),
             y: AttributeParser.float(node["y"]),
@@ -52,12 +53,34 @@ module Emfsvg
               family: node["font-family"],
               point_size: AttributeParser.float(node["font-size"], default: 12.0),
               weight: parse_weight(node["font-weight"]),
-              style: node["font-style"]
+              style: node["font-style"],
+              rotation: rotation
             ),
             text_anchor: node["text-anchor"] || "start",
-            transform_matrix: Svg::TransformParser.parse(node["transform"]),
+            transform_matrix: Svg::TransformParser.parse(rotation ? nil : node["transform"]),
             **Stylable.parse_style(node)
           )
+        end
+
+        # The canonical font rotation includes a baseline translation. Keep it
+        # distinct from an arbitrary SVG matrix so translation does not apply twice.
+        def self.canonical_rotation(node)
+          return if node["dx"] || node["dy"]
+
+          transform = node["transform"]
+          match = transform&.match(/\Arotate\((-[1-9]\d*), /)
+          return unless match
+
+          angle = match[1].to_i
+          return unless angle.between?(-359, -1)
+
+          x = AttributeParser.float(node["x"])
+          y = AttributeParser.float(node["y"])
+          height = AttributeParser.float(node["font-size"], default: 12.0)
+          offset = height * 0.9
+          canonical = format("rotate(%<angle>d, %<x>.4f, %<y>.4f) translate(0, %<offset>.4f)",
+                             angle: angle, x: x, y: y + offset, offset: offset)
+          angle if transform == canonical
         end
 
         def self.parse_weight(value)

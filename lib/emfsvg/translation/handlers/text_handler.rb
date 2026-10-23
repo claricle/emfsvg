@@ -119,8 +119,8 @@ module Emfsvg
           scaled_height = context.scaler.to_int(element.font_size)
           [
             scaled_height, # lfHeight (scaled)
-            0,                                # lfWidth
-            0,                                # lfEscapement
+            0, # lfWidth
+            -element.font.rotation.to_i * 10, # lfEscapement (tenths of a degree)
             0,                                # lfOrientation
             element.font_weight.to_i,         # lfWeight
             element.italic? ? 1 : 0,          # lfItalic
