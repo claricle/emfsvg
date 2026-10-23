@@ -92,9 +92,11 @@ nested clip intervals end before successor draws. Fixture 150 also has an
 individual exact proof. The earlier full roundtrip audit remains 199/208; a
 fresh full audit is required before reporting a new aggregate.
 
-Fresh-process tests cover a real supported conversion and malformed-byte parse
-error without loading the reference helper or executing the configured C
-sentinel. On the tested macOS host, loaded-library inspection was denied and
+Fresh-process tests cover a real supported conversion, malformed-byte parse
+error, and an upstream input-byte resource refusal without loading the reference
+helper or executing the configured C sentinel. The refusal preserves the upstream
+resource metadata and cause and produces no SVG. On the tested macOS host,
+loaded-library inspection was denied and
 remains explicitly pending. Native backend isolation is therefore unqualified.
 
 The bounded subprocess helper (`c4960c6`) has benign-child macOS evidence for
