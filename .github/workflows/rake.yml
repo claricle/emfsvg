@@ -17,14 +17,14 @@ jobs:
     with:
       after-setup-ruby: |
         if [[ "$RUNNER_OS" == "Windows" ]]; then
-          mingw_prefix="$(ridk exec printenv MINGW_PREFIX)"
+          mingw_prefix="${MINGW_PREFIX:?RubyInstaller MSYS2 environment is required}"
           case "$mingw_prefix" in
             /ucrt64) fontconfig_package=mingw-w64-ucrt-x86_64-fontconfig ;;
             /mingw64) fontconfig_package=mingw-w64-x86_64-fontconfig ;;
             *) printf 'Unsupported RubyInstaller MINGW_PREFIX: %s\n' "$mingw_prefix" >&2; exit 1 ;;
           esac
-          ridk exec pacman -S --noconfirm --needed "$fontconfig_package"
-          fontconfig_bin_windows="$(ridk exec cygpath -w "$mingw_prefix/bin")"
+          pacman -S --noconfirm --needed "$fontconfig_package"
+          fontconfig_bin_windows="$(cygpath -w "$mingw_prefix/bin")"
           fontconfig_bin_unix="$(cygpath -u "$fontconfig_bin_windows")"
           export PATH="$fontconfig_bin_unix:$PATH"
           printf '%s\n' "$fontconfig_bin_windows" >> "$GITHUB_PATH"
