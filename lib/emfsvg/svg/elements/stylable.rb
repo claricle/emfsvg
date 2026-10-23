@@ -17,7 +17,8 @@ module Emfsvg
               width: node["stroke-width"],
               dash_array: node["stroke-dasharray"],
               line_cap: node["stroke-linecap"],
-              line_join: node["stroke-linejoin"]
+              line_join: node["stroke-linejoin"],
+              miter_limit: node["stroke-miterlimit"]
             ),
             clip_path: node["clip-path"]
           }

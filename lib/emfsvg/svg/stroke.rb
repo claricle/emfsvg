@@ -3,7 +3,7 @@
 module Emfsvg
   module Svg
     # Parsed SVG stroke style: color, width, dash pattern, line cap,
-    # line join. Maps directly to the EMF LOGPEN / EXTLOGPEN32 fields.
+    # line join, and miter limit.
     #
     # Pen style bits (per MS-WMF 2.1.1.8 / emr_visitor.rb mirror):
     #
@@ -22,17 +22,18 @@ module Emfsvg
       LINE_JOIN_BITS = { "miter" => 0x2000, "round" => 0x0000, "bevel" => 0x1000 }.freeze
       NULL_PEN_WIDTH_SENTINEL = "1px"
 
-      attr_reader :paint, :width, :dash_array, :line_cap, :line_join, :raw_width,
+      attr_reader :paint, :width, :dash_array, :line_cap, :line_join, :miter_limit, :raw_width,
                   :line_cap_explicit, :line_join_explicit
 
       def initialize(paint:, width: 1.0, dash_array: nil, line_cap: "round",
-                     line_join: "round", raw_width: nil,
+                     line_join: "round", miter_limit: 10.0, raw_width: nil,
                      line_cap_explicit: false, line_join_explicit: false)
         @paint = paint
         @width = width.to_f
         @dash_array = dash_array
         @line_cap = line_cap
         @line_join = line_join
+        @miter_limit = miter_limit.to_f
         @raw_width = raw_width
         @line_cap_explicit = line_cap_explicit
         @line_join_explicit = line_join_explicit
@@ -63,17 +64,26 @@ module Emfsvg
         base | type_bit | END_CAP_BITS.fetch(line_cap, 0x0000) | LINE_JOIN_BITS.fetch(line_join, 0x0000)
       end
 
-      def self.parse(stroke:, width:, dash_array:, line_cap:, line_join:)
+      def self.parse(stroke:, width:, dash_array:, line_cap:, line_join:, miter_limit: nil)
         new(
           paint: Paint.from_stroke(stroke),
           width: parse_width(width),
           dash_array: parse_dash_array(dash_array),
           line_cap: line_cap || "round",
           line_join: line_join || "round",
+          miter_limit: parse_miter_limit(miter_limit),
           raw_width: width,
           line_cap_explicit: !line_cap.nil?,
           line_join_explicit: !line_join.nil?
         )
+      end
+
+      def self.parse_miter_limit(value)
+        return 10.0 if value.nil? || value.strip.empty?
+
+        Float(value)
+      rescue ArgumentError
+        10.0
       end
 
       def self.parse_width(value)

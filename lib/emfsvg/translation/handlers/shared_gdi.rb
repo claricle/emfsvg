@@ -26,6 +26,11 @@ module Emfsvg
           signature = clip_scope_signature(element, context, clip_bounds)
           reuse_clip = context.reuse_clip_scope?(signature)
           emit_save_dc(context) if wrap_with_clip && !reuse_clip
+          if element.stroke && !element.stroke.paint.null?
+            context.emit(Emf::Emr::Binary::Records::SetMiterLimit,
+                         i_type: SETMITERLIMIT,
+                         miter_limit: element.stroke.miter_limit)
+          end
           pen_handle = emit_create_pen(context, element.stroke) if element.stroke
           brush_handle = emit_create_brush(context, element.fill) if element.fill
           if wrap_with_clip && !reuse_clip
@@ -51,6 +56,7 @@ module Emfsvg
           fill = element.fill
           [self.class, context.rect_attrs(*clip_bounds),
            stroke.pen_style, context.point_attrs(stroke.width, 0), stroke.paint.color.to_emf_wire.to_wire,
+           stroke.miter_limit,
            fill.style, fill.color.to_emf_wire.to_wire, 0]
         end
 
