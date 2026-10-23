@@ -58,6 +58,7 @@ module Emfsvg
           return :polypolygon if canonical_poly_polygon?(node, source_tag)
           return :stroke_and_fill_path if canonical_open_painted_path?(node, source_tag)
           return :polybezier_to if canonical_stroked_curve?(node, source_tag)
+          return :stroke_path if canonical_cubic_figure?(node, source_tag)
           return :stroke_path if canonical_orphan_or_empty_path?(node, source_tag)
 
           nil
@@ -117,6 +118,18 @@ module Emfsvg
             canonical_stroked_path?(node, source_tag, fill_gap: true)
         end
         private_class_method :canonical_stroked_curve?
+
+        # StrokePath figures have one initial move and the ordinary fill gap.
+        # Cubics distinguish these from Polyline; PolyBezier has an extra move.
+        def self.canonical_cubic_figure?(node, source_tag)
+          number = "-?\\d+\\.\\d{4}"
+          point = "#{number},#{number}"
+          segment = "(?: L #{point}| C #{point} #{point} #{point})"
+          node["d"]&.include?(" C ") &&
+            node["d"].match?(/\AM #{point}(?:#{segment})+(?: Z)? \z/) &&
+            canonical_stroked_path?(node, source_tag)
+        end
+        private_class_method :canonical_cubic_figure?
 
         # A stroked EMF path can start with LineTo or contain no figures at
         # all. Only the renderer's exact spelling carries that provenance.
