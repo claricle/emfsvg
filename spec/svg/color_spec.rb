@@ -55,4 +55,19 @@ RSpec.describe Emfsvg::Svg::Color do
       expect(described_class::NULL).to eq(described_class::NULL)
     end
   end
+
+  describe "#wire_attrs" do
+    ["#FF8800", "#000", "white", "none"].each do |value|
+      it "builds the same ColorRef bytes as #to_emf_wire.to_wire for #{value}" do
+        color = described_class.parse(value)
+        from_attrs = Emf::Binary::Types::ColorRef.new(**color.wire_attrs)
+
+        expect(from_attrs.to_binary_s).to eq(color.to_emf_wire.to_wire.to_binary_s)
+      end
+    end
+
+    it "keeps the colour's channels" do
+      expect(described_class.parse("#102030").wire_attrs).to eq(red: 16, green: 32, blue: 48, reserved: 255)
+    end
+  end
 end

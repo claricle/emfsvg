@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "strscan"
+
 module Emfsvg
   module Svg
     # Namespace for the SVG path-data parser. Pure parser, no EMF
@@ -14,6 +16,20 @@ module Emfsvg
         "Q" => 4, "T" => 2, "A" => 7, "Z" => 0
       }.freeze
 
+      # ARG_COUNTS keyed by the letter as written, so the parser does not
+      # upcase a fresh String per token to look it up.
+      LETTER_ARG_COUNTS = ARG_COUNTS.each_with_object({}) do |(letter, count), counts|
+        counts[letter] = count
+        counts[letter.downcase] = count
+      end.freeze
+
+      # Frozen command-letter Strings keyed by the Symbol the Scanner
+      # emits, shared by every Command rather than allocated per token.
+      LETTERS = LETTER_ARG_COUNTS.keys.to_h { |letter| [letter.to_sym, letter.freeze] }.freeze
+
+      # Shared by every zero-argument command (Z/z).
+      NO_ARGS = [].freeze
+
       # Stateful parser walks the string once, emitting Commands as
       # enough args accumulate for the current letter. Implicit repeats:
       # subsequent arg groups after M/m are treated as L/l.
@@ -26,24 +42,24 @@ module Emfsvg
           commands = []
           scanner = Scanner.new(string)
           current_letter = nil
-          args = []
+          args = nil
 
           while (token = scanner.next_token)
             case token
             when Symbol # command letter
               flush_command(commands, current_letter, args) if current_letter && args.any?
-              current_letter = token.to_s
+              current_letter = LETTERS.fetch(token) { token.to_s }
               args = []
               # Zero-arg commands (Z/z) emit immediately.
-              if ARG_COUNTS.fetch(current_letter.upcase, 1).zero?
-                emit_command(commands, current_letter, [])
+              if LETTER_ARG_COUNTS.fetch(current_letter, 1).zero?
+                emit_command(commands, current_letter, NO_ARGS)
                 current_letter = nil
               end
             when Numeric
               raise FormatError, "path data begins with a number: #{string.inspect}" if current_letter.nil?
 
               args << token
-              if args.size == ARG_COUNTS.fetch(current_letter.upcase)
+              if args.size == (LETTER_ARG_COUNTS[current_letter] || ARG_COUNTS.fetch(current_letter.upcase))
                 emit_command(commands, current_letter, args)
                 args = []
                 current_letter = implicit_repeat_letter(current_letter)
@@ -56,9 +72,9 @@ module Emfsvg
         end
 
         def emit_command(commands, letter, args)
-          raise FormatError, "unknown path command: #{letter}" unless ARG_COUNTS.key?(letter.upcase)
+          raise FormatError, "unknown path command: #{letter}" unless LETTER_ARG_COUNTS.key?(letter)
 
-          commands << Command.new(letter: letter, args: args.dup)
+          commands << Command.new(letter: letter, args: args)
         end
 
         def flush_command(_commands, letter, args)
@@ -86,48 +102,43 @@ module Emfsvg
       # as Symbols (e.g. :M, :z) and numbers as Floats.
       class Scanner
         NUMBER_RE = /[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/
+        SEPARATORS_RE = /[ \t\n\r,]+/
+
+        # The Symbol for each command-letter byte, so a letter is read
+        # without allocating a String for it.
+        LETTER_SYMBOLS = (("A".."Z").to_a + ("a".."z").to_a).to_h { |letter| [letter.ord, letter.to_sym] }.freeze
+        private_constant :LETTER_SYMBOLS
 
         def initialize(string)
           @string = string
-          @pos = 0
+          @scanner = StringScanner.new(string)
         end
 
         def next_token
-          skip_separators
-          return nil if @pos >= @string.length
+          @scanner.skip(SEPARATORS_RE)
+          return nil if @scanner.eos?
 
-          char = @string[@pos]
-          if command_letter?(char)
-            @pos += 1
-            char.to_sym
-          else
-            read_number
-          end
+          letter = LETTER_SYMBOLS[@string.getbyte(@scanner.pos)]
+          return read_number unless letter
+
+          @scanner.pos += 1
+          letter
         end
 
         private
 
-        def skip_separators
-          @pos += 1 while @pos < @string.length && separator?(@string[@pos])
-        end
-
-        def separator?(char)
-          case char
-          when " ", "\t", "\n", "\r", "," then true
-          else false
-          end
-        end
-
-        def command_letter?(char)
-          ("A".."Z").cover?(char) || ("a".."z").cover?(char)
-        end
-
+        # A number is normally right at the cursor. Anything else is
+        # skipped up to the next number, as the scan has always done.
         def read_number
-          match = @string.match(NUMBER_RE, @pos)
-          raise FormatError, "expected number at position #{@pos} in path data" unless match
+          number = @scanner.scan(NUMBER_RE)
+          return number.to_f if number
 
-          @pos = match.end(0)
-          match.to_s.to_f
+          position = @scanner.charpos
+          unless @scanner.skip_until(NUMBER_RE)
+            raise FormatError, "expected number at position #{position} in path data"
+          end
+
+          @scanner.matched.to_f
         end
       end
     end

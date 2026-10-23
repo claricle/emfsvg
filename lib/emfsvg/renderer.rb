@@ -18,6 +18,28 @@ module Emfsvg
   class Renderer
     MAX_OUTPUT_BYTES = 500 * 1024 * 1024
 
+    # Records that set pathDrawn=true in libemf2svg's U_emf_onerec_analyse
+    # pre-pass. Used to distinguish wtBefore from wtAfter.
+    DRAWING_PATH_RECORDS = %w[
+      PolyBezier Polygon Polyline PolyBezierTo PolylineTo PolyPolyline PolyPolygon
+      SetWindowExtEx LineTo ArcTo PolyDraw
+      PolyBezier16 Polygon16 Polyline16 PolyBezierTo16 PolylineTo16
+      PolyPolyline16 PolyPolygon16 PolyDraw16
+    ].freeze
+
+    # Unqualified wire class name => the role a record plays in build_path_analysis.
+    PATH_RECORD_KINDS = {
+      "BeginPath" => :begin_path,
+      "EndPath" => :end_path,
+      "AbortPath" => :abort_path,
+      "FillPath" => :fill_path,
+      "StrokePath" => :stroke_path,
+      "StrokeAndFillPath" => :stroke_and_fill_path,
+      "SetWorldTransform" => :set_world_transform,
+      "ModifyWorldTransform" => :modify_world_transform,
+      **DRAWING_PATH_RECORDS.to_h { |name| [name, :drawing] }
+    }.freeze
+
     def self.call(metafile, options)
       new(metafile, options).call
     end
@@ -45,15 +67,6 @@ module Emfsvg
 
       result
     end
-
-    # Records that set pathDrawn=true in libemf2svg's U_emf_onerec_analyse
-    # pre-pass. Used to distinguish wtBefore from wtAfter.
-    DRAWING_PATH_RECORDS = %w[
-      PolyBezier Polygon Polyline PolyBezierTo PolylineTo PolyPolyline PolyPolygon
-      SetWindowExtEx LineTo ArcTo PolyDraw
-      PolyBezier16 Polygon16 Polyline16 PolyBezierTo16 PolylineTo16
-      PolyPolyline16 PolyPolygon16 PolyDraw16
-    ].freeze
 
     private
 
@@ -171,8 +184,8 @@ module Emfsvg
     # SetWorldTransform (just assign) or 1/2/3 for ModifyWorldTransform
     # (MWT_IDENTITY/LEFTMULTIPLY/RIGHTMULTIPLY).
     def build_path_analysis(records)
-      names = record_names(records)
-      actions = {}
+      kinds = record_kinds(records)
+      actions = path_actions_for(kinds)
       transforms = {}
       in_path = false
       path_drawn = false
@@ -180,30 +193,30 @@ module Emfsvg
       wt_before = nil
       wt_after = nil
       records.each_with_index do |r, i|
-        case names[i]
-        when "BeginPath"
-          actions[i] = find_path_action(names, i)
+        case kinds[i]
+        when :begin_path
           cur_begin = i
           wt_before = nil
           wt_after = nil
           in_path = true
           path_drawn = false
-        when "EndPath", "AbortPath"
+        when :end_path, :abort_path
           transforms[cur_begin] = { wt_before: wt_before, wt_after: wt_after } if cur_begin
           in_path = false
           path_drawn = false
           cur_begin = nil
-        when "SetWorldTransform"
+        when :set_world_transform
           next unless in_path
 
-          pt = path_transform_for(r.wire, 0)
+          pt = path_transform_for(path_fields(r), 0)
           path_drawn ? (wt_before = pt) : (wt_after = pt)
-        when "ModifyWorldTransform"
+        when :modify_world_transform
           next unless in_path
 
-          pt = path_transform_for(r.wire, r.wire.modify_mode)
+          fields = path_fields(r)
+          pt = path_transform_for(fields, fields.modify_mode)
           path_drawn ? (wt_before = pt) : (wt_after = pt)
-        when *DRAWING_PATH_RECORDS
+        when :drawing
           path_drawn = true if in_path
         end
       end
@@ -212,39 +225,43 @@ module Emfsvg
 
     PathTransform = Struct.new(:matrix, :mode, keyword_init: true)
 
+    def path_fields(record)
+      RecordAccess.fields(record, RecordAccess.wire_class(record))
+    end
+
     def path_transform_for(wire, mode)
       matrix = Emf::Model::Geometry::Matrix.from_wire(wire.xform)
       PathTransform.new(matrix: matrix, mode: mode)
     end
 
-    # Unqualified wire class name per record, computed once per class.
-    def record_names(records)
+    # Path-analysis kind per record (see PATH_RECORD_KINDS; nil when the
+    # record is irrelevant to the analysis), computed once per wire class.
+    def record_kinds(records)
       cache = {}
       records.map do |r|
-        klass = r.wire.class
-        cache[klass] ||= klass.name.split("::").last
+        klass = RecordAccess.wire_class(r)
+        cache.fetch(klass) { cache[klass] = PATH_RECORD_KINDS[klass.name.split("::").last] }
       end
     end
 
-    def find_path_action(names, start)
-      action = :end
-      ((start + 1)...names.size).each do |j|
-        case names[j]
-        when "EndPath"
-          next
-        when "FillPath"
-          return :fill
-        when "StrokePath"
-          return :stroke
-        when "StrokeAndFillPath"
-          return :stroke_fill
-        when "AbortPath"
-          return :abort
-        when "BeginPath"
-          return :end
+    # Resolve each BeginPath's action in one backward pass. The action is set
+    # by the first Fill/Stroke/StrokeAndFill/AbortPath after the BeginPath;
+    # another BeginPath first, or none at all, leaves it :end.
+    def path_actions_for(kinds)
+      actions = {}
+      following = :end
+      (kinds.size - 1).downto(0) do |i|
+        case kinds[i]
+        when :begin_path
+          actions[i] = following
+          following = :end
+        when :fill_path then following = :fill
+        when :stroke_path then following = :stroke
+        when :stroke_and_fill_path then following = :stroke_fill
+        when :abort_path then following = :abort
         end
       end
-      action
+      actions
     end
   end
 end

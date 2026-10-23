@@ -24,7 +24,6 @@ module Emfsvg
     end
 
     def store(index, type, object)
-      ensure_capacity(index)
       @entries[index - 1] = Entry.new(type: type, object: object)
     end
 
@@ -38,14 +37,6 @@ module Emfsvg
 
     def size
       @entries.compact.size
-    end
-
-    private
-
-    def ensure_capacity(index)
-      return if @entries.size >= index
-
-      @entries.fill(nil, @entries.size...index)
     end
   end
 end

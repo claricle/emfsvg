@@ -50,11 +50,11 @@ module Emfsvg
         Emf::Emr::Binary::TypeCodes.const_get(name)
       end.freeze
 
-      def emit(wire_class, **attrs)
+      def emit(wire_class, attrs)
         # Once an ordinary clip operation occurs, conservatively stop emitting
         # unused resources. RestoreDC need not be modeled to prove a reset safe.
         @unused_clip_safe = false if CLIP_MUTATIONS.include?(attrs[:i_type])
-        @emitter.emit(wire_class, **attrs)
+        @emitter.emit(wire_class, attrs)
       end
 
       def emit_unused_clip_rectangle(bounds)

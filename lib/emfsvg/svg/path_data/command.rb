@@ -7,7 +7,7 @@ module Emfsvg
       # `letter` preserves case (absolute uppercase vs relative lowercase).
       Command = Struct.new(:letter, :args, keyword_init: true) do
         def absolute?
-          letter == letter.upcase
+          ARG_COUNTS.key?(letter) || (!LETTER_ARG_COUNTS.key?(letter) && letter == letter.upcase)
         end
       end
     end

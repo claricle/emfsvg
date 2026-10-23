@@ -12,9 +12,11 @@ module Emfsvg
       def initialize
         @clip_paths = {}
         @references = {}
+        @resolved = {}
       end
 
       def register(clip_path)
+        @resolved.clear
         @clip_paths[clip_path.id] = clip_path
       end
 
@@ -27,13 +29,13 @@ module Emfsvg
         @references[match[1]] = true if match
       end
 
+      # Shapes reference the same few clips over and over, so each
+      # distinct attribute value is resolved once (until the next
+      # registration).
       def lookup(clip_path_attr)
         return nil if clip_path_attr.nil?
 
-        match = clip_path_attr.match(URL_RE)
-        return nil unless match
-
-        @clip_paths[match[1]]
+        @resolved.fetch(clip_path_attr) { @resolved[clip_path_attr] = resolve(clip_path_attr) }
       end
 
       def self.from_document(document)
@@ -48,6 +50,13 @@ module Emfsvg
         registry.register(element) if element.is_a?(Elements::ClipPath)
         registry.reference(element.clip_path) if element.respond_to?(:clip_path)
         element.children.each { |c| collect_clip_paths(c, registry) }
+      end
+
+      private
+
+      def resolve(clip_path_attr)
+        match = clip_path_attr.match(URL_RE)
+        match && @clip_paths[match[1]]
       end
     end
   end

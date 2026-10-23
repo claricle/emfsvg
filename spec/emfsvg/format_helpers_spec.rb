@@ -97,4 +97,27 @@ RSpec.describe Emfsvg::FormatHelpers do
       expect(described_class.fmt_xy(-1.0, -2.0)).to eq("-1.0000,-2.0000 ")
     end
   end
+
+  describe ".append" do
+    it "appends the fmt text to the buffer and returns the buffer" do
+      buffer = +"x="
+      expect(described_class.append(buffer, -12.34567)).to equal(buffer)
+      expect(buffer).to eq("x=-12.3457")
+    end
+
+    it "matches fmt for ties, zero, negatives and large values" do
+      values = [0, -0.0, 0.00005, -0.00005, 459.04375, 99_999.99995, 123_456.5, 1e9, 2.5e12, -7, 3]
+      values.each do |value|
+        expect(described_class.append(+"", value)).to eq(described_class.fmt(value))
+      end
+    end
+  end
+
+  describe ".append_xy" do
+    it "appends the same text fmt_xy returns" do
+      buffer = +"M "
+      described_class.append_xy(buffer, 1.5, -2.25)
+      expect(buffer).to eq("M #{described_class.fmt_xy(1.5, -2.25)}")
+    end
+  end
 end
