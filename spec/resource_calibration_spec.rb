@@ -27,6 +27,20 @@ RSpec.describe Emfsvg::ResourceCalibration do
                                         runner: runner).collect.fetch("samples").size).to eq(6)
   end
 
+  it "records the bounded runner mechanism with the same string keys as pinned provenance" do
+    report = calibration_report.merge(mechanism: calibration_report.fetch(:mechanism).transform_keys(&:to_sym))
+    runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(report)
+    document = described_class::Session.new(adapter: calibration_adapter, caps: calibration_caps,
+                                            runner: runner).collect
+
+    expect(document.fetch("samples").map { |sample| sample.fetch("mechanism") })
+      .to eq([calibration_provenance.fetch("enforcement")] * 3)
+    expect(described_class::Baseline.validate!(document)).to eq(document)
+    changed = Marshal.load(Marshal.dump(document))
+    changed.fetch("samples").first.fetch("mechanism")["address_space"] = "unsupported"
+    expect { described_class::Baseline.validate!(changed) }.to raise_error(described_class::Rejected, /child outcome/)
+  end
+
   it "rejects missing measurements, unsafe results, and derived ceilings reaching outer caps" do
     sample = calibration_document.fetch("samples").first
     [sample.merge("as_peak_kib" => nil), sample.merge("safe" => false)].each do |invalid|
@@ -115,10 +129,16 @@ RSpec.describe Emfsvg::ResourceCalibration do
     Dir.mktmpdir do |directory|
       path = File.join(directory, "baseline.yml")
       File.write(path, "untouched")
+      manifest = YAML.safe_load_file(calibration_arguments("generate", path).fetch(2))
+      manifest.fetch("provenance").fetch("runtime")["status"] = "unqualified"
+      manifest_path = File.join(directory, "manifest.yml")
+      File.write(manifest_path, YAML.dump(manifest))
       expect(Emfsvg::SpecSupport::BoundedConversion).not_to receive(:run)
       %w[generate check].each do |mode|
         errors = StringIO.new
-        expect(described_class::Command.run(calibration_arguments(mode, path), error_output: errors)).to eq(1)
+        arguments = calibration_arguments(mode, path)
+        arguments[arguments.index("--manifest") + 1] = manifest_path
+        expect(described_class::Command.run(arguments, error_output: errors)).to eq(1)
         expect(errors.string).to include("Public calibration contract unavailable", "unqualified")
       end
       expect(File.read(path)).to eq("untouched")

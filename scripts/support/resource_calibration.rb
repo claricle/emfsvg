@@ -283,7 +283,8 @@ module Emfsvg
           "elapsed_seconds" => report.fetch(:elapsed_seconds),
           "rss_peak_kib" => report.fetch(:metrics).fetch(:rss_peak_kib),
           "as_peak_kib" => report.fetch(:metrics).fetch(:as_peak_kib), "exitstatus" => report.fetch(:exitstatus),
-          "signal" => report.fetch(:signal), "safe" => true, "mechanism" => report.fetch(:mechanism) }
+          "signal" => report.fetch(:signal), "safe" => true,
+          "mechanism" => report.fetch(:mechanism).transform_keys(&:to_s) }
       rescue KeyError => e
         raise Rejected, "incomplete child report: #{e.message}"
       end
