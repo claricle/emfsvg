@@ -56,9 +56,7 @@ RSpec.describe Emfsvg::Translation::Scaler::Fixed do
 end
 
 RSpec.describe "SVG coordinate scaling" do
-  def translated_svg(content)
-    Emfsvg.from_svg(%(<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">#{content}</svg>))
-  end
+  include Emfsvg::SpecSupport::SvgCoordinateScalingHelpers
 
   it "preserves four decimal places through serialized EMF" do
     bytes = translated_svg('<rect x="1.2345" y="2.3456" width="10.1234" height="20.5678"/>')
