@@ -124,17 +124,17 @@ RSpec.describe ParityProvenance do
     expect(errors).to include("could not be read")
   end
 
-  it "records the temporary Git integration selected by the lockfile without qualifying a release" do
+  it "records the exact released package selected by the lockfile" do
     runtime = manifest.fetch("provenance").fetch("runtime")
     locked = Bundler.locked_gems.specs.find { |spec| spec.name == "emf" }
 
-    expect(locked.source).to be_a(Bundler::Source::Git)
+    expect(locked.source).to be_a(Bundler::Source::Rubygems)
     expect(runtime).to include(
-      "status" => "unqualified", "source" => "git", "repository" => locked.source.uri,
-      "version" => locked.version.to_s, "source_revision" => locked.source.revision,
-      "package_sha256" => nil
+      "status" => "qualified", "source" => "rubygems", "version" => locked.version.to_s,
+      "source_revision" => "327c36b49743bcb9799c20123218f0bae965f1de",
+      "package_sha256" => "6b3add05605260d646ec1d732da139eb972016c6fe4547aa60846a2ac2f542fa"
     )
-    expect(runtime.fetch("blocker")).to include("no released package has been qualified")
+    expect(described_class.new.errors).to be_empty
   end
 
   it "records the landed model, diagnostics, and resource contracts" do
@@ -155,7 +155,12 @@ RSpec.describe ParityProvenance do
   end
 
   it "fails closed for remaining release and native provenance gaps" do
-    errors = described_class.new.errors.join("\n")
+    provenance = metadata.fetch("provenance")
+    provenance.fetch("runtime").merge!("status" => "unqualified", "source" => "git", "package_sha256" => nil)
+    provenance.fetch("native_library").merge!("status" => "unqualified", "artifact_sha256" => nil, "abi" => nil)
+    File.write(path, YAML.dump(metadata))
+
+    errors = described_class.new(path).errors.join("\n")
     expect(errors).to include(
       "runtime.status", "runtime.source: expected \"rubygems\"", "runtime.package_sha256",
       "native_library.status", "native_library.artifact_sha256", "native_library.abi"
