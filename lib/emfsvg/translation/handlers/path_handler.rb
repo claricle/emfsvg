@@ -34,6 +34,10 @@ module Emfsvg
         def translate_geometry(element, context)
           if %i[arc chord pie].include?(element.path_record_kind)
             arc = CircularArc.from_commands(element.commands, kind: element.path_record_kind)
+            if element.path_record_kind == :pie
+              arc ||= MappedPie.from_commands(element.commands,
+                                              scaler: context.scaler)
+            end
           end
           if arc&.safe_for?(context)
             arc.emit(context)
