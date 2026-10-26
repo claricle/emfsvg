@@ -69,7 +69,7 @@ module Emfsvg
         verify_runtime!
         verify_native!
         { "scope" => "prerelease-source", "released_runtime_qualified" => false,
-          "manifest_sha256" => @manifest_sha, "emfsvg_revision" => source_revision,
+          "manifest_sha256" => @manifest_sha, **SourceIdentity.snapshot,
           "runtime" => @identity.slice("version", "source_revision", "ruby_tree_sha256"),
           "native_library" => JSON.parse(File.read(@native_provenance_path)),
           "selected_backend" => "native", "enforcement" => @mechanism,

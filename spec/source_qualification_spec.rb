@@ -15,6 +15,7 @@ RSpec.describe Emfsvg::ResourceCalibration::SourceQualification do
     )
     expect(@calls).to all(include(authoritative: true))
     expect(adapter.snapshot).to include("scope" => "prerelease-source", "released_runtime_qualified" => false)
+    expect(adapter.snapshot).to include(Emfsvg::ResourceCalibration::SourceIdentity.snapshot)
     expect { qualify }.to raise_error(Emfsvg::ResourceCalibration::Rejected, /runtime.status.*unqualified/)
   end
 
