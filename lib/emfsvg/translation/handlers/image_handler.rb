@@ -50,7 +50,9 @@ module Emfsvg
           decoded = PngDecoder.decode(png)
           return nil unless decoded
 
-          DibEncoder.encode(decoded.width, decoded.height, decoded.pixels)
+          # BI_PNG keeps the original compression and color format. Expanding
+          # to BGRA and re-encoding would change otherwise untouched payloads.
+          [40, decoded.width, decoded.height, 1, 0, 5, png.bytesize, 0, 0, 0, 0].pack("Vl<l<vvVVVVVV") + png
         end
 
         # JPEG frame dimensions describe the embedded bitmap, independently of

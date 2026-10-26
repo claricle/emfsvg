@@ -39,7 +39,9 @@ RSpec.describe "Clipped embedded images" do
   it "preserves embedded pixels and destination geometry" do
     image = records.grep(Emf::Emr::Binary::Records::StretchDIBits).first
     expect([image.x_dest.to_i, image.y_dest.to_i, image.cx_dest.to_i, image.cy_dest.to_i]).to eq([2, 3, 20, 10])
-    expect(image.trailing.to_s.bytes.last(8)).to eq([0, 0, 255, 255, 0, 255, 0, 255])
+    expect(image.trailing.to_s.byteslice(40, png.bytesize)).to eq(png)
+    rendered = Base64.strict_decode64(output[%r{data:image/png;base64,([^"]+)}, 1])
+    expect(Libpng.decode(rendered, pixel_format: "RGBA").pixels).to eq(pixels)
     expect(output.lines.grep(/<image /).first).to include('width="20.0000" height="10.0000"')
   end
 

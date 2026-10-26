@@ -29,7 +29,7 @@ RSpec.describe "Adjacent clipped embedded images" do
     expect(records.grep(Emf::Emr::Binary::Records::RestoreDc).size).to eq(1)
     expect(images.map { |image| [image.x_dest.to_i, image.y_dest.to_i, image.cx_dest.to_i, image.cy_dest.to_i] })
       .to eq([[2, 3, 20, 10], [12, 13, 5, 6]])
-    expect(images.map { |image| image.trailing.to_s.bytes.last(4) })
-      .to eq([[0, 0, 255, 255], [0, 255, 0, 255]])
+    expect(images.map { |image| Libpng.decode(image.trailing.to_s.byteslice(40..), pixel_format: "RGBA").pixels.bytes })
+      .to eq([[255, 0, 0, 255], [0, 255, 0, 255]])
   end
 end

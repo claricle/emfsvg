@@ -85,6 +85,7 @@ RSpec.describe Emfsvg::Translation::Handlers::ImageHandler do
     record = context.records.find { |r| r.wire.is_a?(Emf::Emr::Binary::Records::StretchDIBits) }
     expect(record).not_to be_nil
     expect(record.wire.cb_bmi_src).to eq(40)
-    expect(record.wire.cb_bits_src).to eq(4)
+    expect(record.wire.cb_bits_src).to eq(png.bytesize)
+    expect(record.wire.trailing.byteslice(16, 4).unpack1("V")).to eq(5) # BI_PNG
   end
 end
