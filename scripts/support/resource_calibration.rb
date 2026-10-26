@@ -81,8 +81,8 @@ module Emfsvg
     class Baseline
       VERSION = 1
       KEYS = %w[schema_version provenance inputs outer_caps grace_seconds repetitions samples derived_limits].freeze
-      PROVENANCE = %w[manifest_sha256 emfsvg_revision runtime native_library selected_backend platform
-                      enforcement].freeze
+      PROVENANCE = %w[manifest_sha256 emfsvg_revision emfsvg_source_sha256 runtime native_library
+                      selected_backend platform enforcement].freeze
       SAMPLE = %w[case repetition input_bytes output_bytes warnings exception elapsed_seconds rss_peak_kib as_peak_kib
                   exitstatus signal safe mechanism].freeze
 
@@ -118,6 +118,7 @@ module Emfsvg
 
       def self.validate_provenance!(provenance)
         { "manifest_sha256" => ParityProvenance::SHA256,
+          "emfsvg_source_sha256" => ParityProvenance::SHA256,
           "emfsvg_revision" => ParityProvenance::REVISION }.each do |key, pattern|
           raise Rejected, "invalid #{key}" unless provenance[key].is_a?(String) && pattern.match?(provenance[key])
         end
@@ -181,12 +182,19 @@ module Emfsvg
         end
       end
 
+      def self.same_implementation?(stored, current)
+        validate_provenance!(stored)
+        validate_provenance!(current)
+        stored.except("emfsvg_revision") == current.except("emfsvg_revision")
+      end
+
       def self.check!(baseline, current)
         validate!(baseline)
         # Fresh measurements use the stored ceilings; only stored samples determine their derivation.
         validate_observations!(current)
-        pinned = KEYS - %w[samples]
-        unless pinned.all? { |key| baseline.fetch(key) == current.fetch(key) }
+        pinned = KEYS - %w[samples provenance]
+        unless same_implementation?(baseline.fetch("provenance"), current.fetch("provenance")) &&
+               pinned.all? { |key| baseline.fetch(key) == current.fetch(key) }
           raise Rejected, "calibration provenance or input drift"
         end
 
@@ -255,7 +263,8 @@ module Emfsvg
 
       def verify_pinned!(baseline)
         unless baseline.fetch("outer_caps") == @caps && baseline.fetch("grace_seconds") == GRACE_SECONDS &&
-               baseline.fetch("provenance") == @adapter.snapshot && baseline.fetch("inputs") == @adapter.inputs
+               Baseline.same_implementation?(baseline.fetch("provenance"), @adapter.snapshot) &&
+               baseline.fetch("inputs") == @adapter.inputs
           raise Rejected, "calibration provenance, input or outer-cap drift before execution"
         end
       end

@@ -6,6 +6,7 @@ require "rbconfig"
 require "rubygems/package"
 require "tmpdir"
 require_relative "calibration_qualification_inventory"
+require_relative "calibration_source_identity"
 require_relative "calibration_production_adapter"
 
 module Emfsvg
@@ -188,7 +189,7 @@ module Emfsvg
 
         verify_runtime!
         verify_native!
-        { "manifest_sha256" => @manifest_sha, "emfsvg_revision" => source_revision,
+        { "manifest_sha256" => @manifest_sha, **SourceIdentity.snapshot,
           "runtime" => @data.dig("provenance", "runtime").slice("version", "package_sha256", "source_revision"),
           "native_library" => @data.dig("provenance", "native_library").slice(
             "artifact_sha256", "source_revision", "abi"
@@ -198,10 +199,6 @@ module Emfsvg
                                             "architecture" => RbConfig::CONFIG.fetch("host_cpu"), "ruby" => RUBY_VERSION
                                           },
           "enforcement" => @mechanism }
-      end
-
-      def source_revision
-        IO.popen(["git", "-C", File.expand_path("../..", __dir__), "rev-parse", "HEAD"], &:read).strip
       end
     end
   end

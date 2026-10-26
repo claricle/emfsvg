@@ -3,12 +3,51 @@
 module Emfsvg
   module SpecSupport
     module ResourceCalibrationFixture
+      Runner = Struct.new(:report) do
+        def run(**_options)
+          report
+        end
+      end
+      Adapter = Struct.new(:snapshot, :inputs, :child_command, :conversion) do
+        def command(_input)
+          child_command
+        end
+
+        def validate_report!(_input, _report)
+          conversion
+        end
+      end
+      Qualification = Struct.new(:adapter) do
+        def verify!(*_arguments, **_options)
+          adapter
+        end
+      end
+
+      def calibration_git(directory, *arguments)
+        output, status = Open3.capture2e("git", "-C", directory, *arguments)
+        raise output unless status.success?
+
+        output.strip
+      end
+
+      def calibration_source_repository(directory)
+        FileUtils.mkdir_p(File.join(directory, "lib"))
+        FileUtils.mkdir_p(File.join(directory, "spec/fixtures"))
+        File.write(File.join(directory, "lib/implementation.rb"), "original implementation")
+        File.write(File.join(directory, "Gemfile.lock"), "pinned dependencies")
+        calibration_git(directory, "init", "-q")
+        calibration_git(directory, "config", "user.email", "fixture@example.test")
+        calibration_git(directory, "config", "user.name", "Fixture")
+        calibration_git(directory, "add", ".")
+        calibration_git(directory, "commit", "-qm", "Initial implementation")
+      end
+
       def calibration_caps
         { "timeout_seconds" => 100, "rss_cap_mib" => 1024, "as_cap_mib" => 2048 }
       end
 
       def calibration_provenance
-        { "manifest_sha256" => "a" * 64, "emfsvg_revision" => "b" * 40,
+        { "manifest_sha256" => "a" * 64, "emfsvg_revision" => "b" * 40, "emfsvg_source_sha256" => "2" * 64,
           "runtime" => { "version" => "1.2.3", "package_sha256" => "c" * 64, "source_revision" => "d" * 40 },
           "native_library" => { "artifact_sha256" => "e" * 64, "source_revision" => "f" * 40, "abi" => "synthetic" },
           "selected_backend" => "native", "platform" => { "os" => "linux", "architecture" => "synthetic",
@@ -28,16 +67,12 @@ module Emfsvg
       end
 
       def calibration_adapter(inputs = [calibration_input])
-        adapter = double("qualified synthetic adapter")
-        allow(adapter).to receive_messages(snapshot: calibration_provenance, inputs: inputs,
-                                           command: ["synthetic-child"],
-                                           validate_report!: { "input_bytes" => 100, "output_bytes" => 150,
-                                                               "warnings" => [], "exception" => nil })
-        adapter
+        Adapter.new(calibration_provenance, inputs, ["synthetic-child"],
+                    { "input_bytes" => 100, "output_bytes" => 150, "warnings" => [], "exception" => nil })
       end
 
       def calibration_document
-        runner = double("bounded runner", run: calibration_report)
+        runner = Runner.new(calibration_report)
         Emfsvg::ResourceCalibration::Session.new(adapter: calibration_adapter, caps: calibration_caps,
                                                  runner: runner).collect
       end

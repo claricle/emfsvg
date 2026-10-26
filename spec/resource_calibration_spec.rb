@@ -14,7 +14,7 @@ RSpec.describe Emfsvg::ResourceCalibration do
   end
 
   it "runs each input three times in sequence through the authoritative bounded runner" do
-    runner = double("bounded runner")
+    runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new
     %w[first.emf second.emf].each do |name|
       3.times do
         expected = hash_including(basename: name, authoritative: true, timeout_seconds: 100,
@@ -39,7 +39,9 @@ RSpec.describe Emfsvg::ResourceCalibration do
 
   it "rejects process failures before accepting any conversion report" do
     adapter = calibration_adapter
-    runner = double("bounded runner", run: calibration_report.merge(success: false, signal: 9))
+    runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(
+      calibration_report.merge(success: false, signal: 9)
+    )
     expect(adapter).not_to receive(:validate_report!)
     expect do
       described_class::Session.new(adapter: adapter, caps: calibration_caps, runner: runner).collect
@@ -50,7 +52,7 @@ RSpec.describe Emfsvg::ResourceCalibration do
     adapter = calibration_adapter
     allow(adapter).to receive(:snapshot).and_return(calibration_provenance,
                                                     calibration_provenance.merge("emfsvg_revision" => "0" * 40))
-    runner = double("bounded runner", run: calibration_report)
+    runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(calibration_report)
     expect do
       described_class::Session.new(adapter: adapter, caps: calibration_caps, runner: runner).collect
     end.to raise_error(described_class::Rejected, /changed/)
@@ -59,7 +61,7 @@ RSpec.describe Emfsvg::ResourceCalibration do
   it "requires conversion-contract validation of warnings and typed errors before recording a sample" do
     adapter = calibration_adapter
     report = calibration_report.merge(stdout: "unexpected warning or parser failure", stderr: "native diagnostics")
-    runner = double("bounded runner", run: report)
+    runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(report)
     expect(adapter).to receive(:validate_report!).with(calibration_input, report)
                                                  .and_raise(described_class::Rejected, "unexpected public outcome")
     expect do
@@ -68,7 +70,7 @@ RSpec.describe Emfsvg::ResourceCalibration do
   end
 
   it "does not treat complete recorded metadata as proof of missing public contracts" do
-    provenance = instance_double(ParityProvenance, errors: [])
+    provenance = Struct.new(:errors).new([])
     allow(ParityProvenance).to receive(:new).and_return(provenance)
     expect do
       described_class::Prerequisites.verify!(ParityProvenance::DEFAULT_MANIFEST, "/unread-corpus")
@@ -148,7 +150,9 @@ RSpec.describe Emfsvg::ResourceCalibration do
   it "checks fresh measurements against stored ceilings without recalculating margins" do
     Dir.mktmpdir do |directory|
       path = File.join(directory, "baseline.yml")
-      runner = double("bounded runner", run: calibration_report.merge(elapsed_seconds: 20))
+      runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(
+        calibration_report.merge(elapsed_seconds: 20)
+      )
       session = described_class::Session.new(adapter: calibration_adapter, caps: calibration_caps, runner: runner)
       session.execute(mode: "generate", path: path, output: StringIO.new)
       before = File.binread(path)
@@ -167,7 +171,7 @@ RSpec.describe Emfsvg::ResourceCalibration do
   it "rejects invalid stored schema and derivations before launching check children" do
     Dir.mktmpdir do |directory|
       path = File.join(directory, "baseline.yml")
-      runner = double("bounded runner")
+      runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new
       expect(runner).not_to receive(:run)
       document = calibration_document
       changes = [{ "schema_version" => 2 },
@@ -184,8 +188,8 @@ RSpec.describe Emfsvg::ResourceCalibration do
   it "executes generate and check through a qualified adapter and enforces stored check ceilings" do
     Dir.mktmpdir do |directory|
       path = File.join(directory, "baseline.yml")
-      qualification = double("synthetic qualification", verify!: calibration_adapter)
-      runner = double("bounded runner", run: calibration_report)
+      qualification = Emfsvg::SpecSupport::ResourceCalibrationFixture::Qualification.new(calibration_adapter)
+      runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(calibration_report)
       output = StringIO.new
       arguments = calibration_arguments("generate", path)
       expect(described_class::Command.run(arguments, qualification: qualification, runner: runner,
@@ -198,6 +202,45 @@ RSpec.describe Emfsvg::ResourceCalibration do
                                                      output: output)).to eq(0)
       expect(File.binread(path)).to eq(before)
       expect(output.string).to include("1 cases, 3 repetitions, zero unsafe outcomes", "Observed samples:")
+    end
+  end
+  it "fails closed on absent or invalid implementation identities" do
+    baseline = calibration_document
+    [nil, "", "a" * 40].each do |identity|
+      document = Marshal.load(Marshal.dump(baseline))
+      document.fetch("provenance")["emfsvg_source_sha256"] = identity
+      expect { described_class::Baseline.check!(baseline, document) }.to raise_error(described_class::Rejected)
+    end
+    baseline.fetch("provenance").delete("emfsvg_source_sha256")
+    expect { described_class::Baseline.validate!(baseline) }.to raise_error(described_class::Rejected)
+  end
+
+  it "rejects every other provenance, input and cap drift before check children" do
+    Dir.mktmpdir do |directory|
+      path = File.join(directory, "baseline.yml")
+      baseline = calibration_document
+      described_class::Baseline.write!(path, baseline)
+      runner = Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(calibration_report)
+      expect(runner).not_to receive(:run)
+      baseline.fetch("provenance").each_key do |key|
+        next if key == "emfsvg_revision"
+
+        adapter = calibration_adapter
+        changed = Marshal.load(Marshal.dump(calibration_provenance))
+        changed[key] = changed[key].is_a?(Hash) ? changed[key].transform_values { "drift" } : "f" * 64
+        adapter.snapshot = changed
+        session = described_class::Session.new(adapter: adapter, caps: calibration_caps, runner: runner)
+        expect { session.execute(mode: "check", path: path, output: StringIO.new) }
+          .to raise_error(described_class::Rejected)
+        expect { described_class::Baseline.check!(baseline, baseline.merge("provenance" => changed)) }
+          .to raise_error(described_class::Rejected)
+      end
+      [calibration_adapter([calibration_input("changed.emf")]), calibration_adapter].each_with_index do |adapter, index|
+        caps = index.zero? ? calibration_caps : calibration_caps.merge("timeout_seconds" => 101)
+        session = described_class::Session.new(adapter: adapter, caps: caps, runner: runner)
+        expect { session.execute(mode: "check", path: path, output: StringIO.new) }
+          .to raise_error(described_class::Rejected, /drift before execution/)
+      end
     end
   end
 end

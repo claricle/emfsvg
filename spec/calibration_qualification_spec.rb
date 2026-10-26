@@ -13,6 +13,7 @@ RSpec.describe Emfsvg::ResourceCalibration::Qualification do
     adapter = qualify
     expect(adapter).to be_a(Emfsvg::ResourceCalibration::ProductionAdapter)
     expect(adapter.inputs.size).to eq(30)
+    expect(adapter.snapshot).to include(Emfsvg::ResourceCalibration::SourceIdentity.snapshot)
     expect(@calls.drop(1).map do |request|
       request.fetch(:command)[-4]
     end.tally).to eq("ruby" => 30, "native" => 30, "auto" => 30)

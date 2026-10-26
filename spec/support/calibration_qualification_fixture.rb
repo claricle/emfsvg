@@ -27,7 +27,7 @@ module Emfsvg
         write_qualification_evidence
         @calls = []
         @mutate_report = nil
-        @runner = double("controlled bounded child runner")
+        @runner = ResourceCalibrationFixture::Runner.new
         allow(@runner).to receive(:run) do |**request|
           @calls << request
           value = controlled_qualification_report(request)
