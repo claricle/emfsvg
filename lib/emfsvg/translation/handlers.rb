@@ -14,6 +14,8 @@ module Emfsvg
       autoload :PolylineHandler, "emfsvg/translation/handlers/polyline_handler"
       autoload :PolygonHandler, "emfsvg/translation/handlers/polygon_handler"
       autoload :PathHandler, "emfsvg/translation/handlers/path_handler"
+      autoload :MappedCircularArc, "emfsvg/translation/handlers/mapped_circular_arc"
+      autoload :MappedArc, "emfsvg/translation/handlers/mapped_arc"
       autoload :MappedPie, "emfsvg/translation/handlers/mapped_pie"
       autoload :CircularArc, "emfsvg/translation/handlers/circular_arc"
       autoload :PathFlattener, "emfsvg/translation/handlers/path_flattener"
