@@ -177,6 +177,9 @@ module Emfsvg
 
       # The Emf wire-record-adapter calls this. Dispatch by wire class.
       def visit_emr_wire_record(adapter)
+        pending_hint = @pending_drawing_hint
+        @pending_drawing_hint = nil
+        @drawing_hint = pending_hint if pending_hint && pending_hint["record"] == DrawingHint.fingerprint(adapter)
         klass = RecordAccess.wire_class(adapter)
         method_name = HANDLERS[klass]
         if method_name
@@ -190,6 +193,8 @@ module Emfsvg
         raise unless @options.verbose
 
         warn "emfsvg: handler #{method_name} raised #{e.class}: #{e.message}"
+      ensure
+        @drawing_hint = nil
       end
 
       def flush_open_groups
@@ -787,7 +792,9 @@ module Emfsvg
         @dc.miter_limit = limit
       end
 
-      def visit_comment(_wire); end
+      def visit_comment(wire)
+        @pending_drawing_hint = DrawingHint.decode(wire)
+      end
 
       def visit_set_pixel_v(_wire)
         # FLAG_IGNORED in libemf2svg — emits nothing.
@@ -1826,6 +1833,8 @@ module Emfsvg
           # chars instead of '=' (the C base64_encode allocates length+3
           # for nulls and the partial-triple bytes default to 0).
           jpeg = result.pixels.to_s
+          return "data:image/jpeg;base64,#{[jpeg].pack('m0')}" if @drawing_hint&.fetch("kind") == "jpeg"
+
           rem = jpeg.bytesize % 3
           jpeg << ("\x00" * ((3 - rem) % 3)) if rem != 0
           "data:image/jpg;base64,#{[jpeg].pack('m0')}"
@@ -1851,6 +1860,13 @@ module Emfsvg
         brush = @dc.brush
         return unless brush.style == Brush::SOLID
 
+        if legacy_rectangle?(wire)
+          values = @drawing_hint.fetch("values")
+          @builder.raw(%(<rect x="#{values[0]}" y="#{values[1]}" width="#{values[2]}" ))
+          @builder.raw(%(height="#{values[3]}" fill="#{values[4]}"/>))
+          return
+        end
+
         style = format("fill:#%02x%02x%02x", brush.color.red, brush.color.green, brush.color.blue)
         size_x = scale_dim_x(wire.cx_dest.to_i)
         size_y = scale_dim_y(wire.cy_dest.to_i)
@@ -1862,6 +1878,15 @@ module Emfsvg
         @builder.raw("L #{fmt(pos_x + size_x)},#{fmt(pos_y + size_y)} ")
         @builder.raw("L #{fmt(pos_x)},#{fmt(pos_y + size_y)} ")
         @builder.raw("Z\" />")
+      end
+
+      def legacy_rectangle?(wire)
+        return false unless @drawing_hint&.fetch("kind") == "rect" && wire.dw_rop.to_i == 0x00F00021
+
+        values = @drawing_hint.fetch("values")
+        geometry = [cal_x(wire.x_dest), cal_y(wire.y_dest),
+                    scale_dim_x(wire.cx_dest.to_i), scale_dim_y(wire.cy_dest.to_i)]
+        values.first(4).map(&:to_f) == geometry && values.last == rgb_hex(@dc.brush.color)
       end
 
       def emit_path_polygon(points, closed:)
@@ -2080,7 +2105,10 @@ module Emfsvg
         w = [width.to_i, 1].max
         tmp_w = scale_dim_x(w)
         if (tmp_w / @scaling) < 1.0
-          @builder.raw("stroke-width=\"1px\" ")
+          legacy = @drawing_hint&.fetch("kind") == "stroke" &&
+                   @drawing_hint.fetch("values").first == rgb_hex(@dc.pen.color) &&
+                   (1..4).cover?(@dc.pen.style & 0xFF)
+          @builder.raw("stroke-width=\"#{legacy ? '1.0000' : '1px'}\" ")
         else
           @builder.raw("stroke-width=\"#{fmt(tmp_w)}\" ")
         end

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "elliptical_arc"
-
 module Emfsvg
   module Translation
     module Handlers

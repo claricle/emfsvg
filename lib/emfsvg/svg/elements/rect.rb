@@ -9,9 +9,10 @@ module Emfsvg
         ELEMENT_NAME = "rect"
         Element.register("rect", self)
 
-        attr_reader :x, :y, :width, :height, :rx, :ry, :fill, :stroke, :clip_path
+        attr_reader :x, :y, :width, :height, :rx, :ry, :fill, :stroke, :clip_path, :serialization_hint
 
-        def initialize(x:, y:, width:, height:, rx:, ry:, fill:, stroke:, clip_path: nil)
+        def initialize(x:, y:, width:, height:, rx:, ry:, fill:, stroke:, clip_path: nil, serialization_hint: nil)
+          @serialization_hint = serialization_hint
           @x = x
           @y = y
           @width = width
@@ -24,7 +25,9 @@ module Emfsvg
         end
 
         def self.from_node(node)
+          source = yield(node) if block_given?
           new(
+            serialization_hint: DrawingHint.rectangle_values(source),
             x: AttributeParser.float(node["x"]),
             y: AttributeParser.float(node["y"]),
             width: AttributeParser.float(node["width"]),

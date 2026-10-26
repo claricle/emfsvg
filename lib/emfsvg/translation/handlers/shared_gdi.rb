@@ -19,7 +19,7 @@ module Emfsvg
       module SharedGdi
         include Emf::Emr::Binary::TypeCodes
 
-        def with_gdi_state(element, context)
+        def with_gdi_state(element, context, &)
           clip_bounds = clip_bounds_for(element, context)
           wrap_with_clip = !clip_bounds.nil?
 
@@ -39,7 +39,7 @@ module Emfsvg
                          i_type: INTERSECTCLIPRECT,
                          rcl_clip: context.rect_attrs(*clip_bounds))
           end
-          yield
+          context.with_drawing_hint(element, &)
           emit_delete(context, pen_handle) if pen_handle
           emit_delete(context, brush_handle) if brush_handle
           return unless wrap_with_clip

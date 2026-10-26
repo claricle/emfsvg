@@ -21,7 +21,7 @@ RSpec.describe "Embedded PNG payload preservation" do
   it "preserves the compressed RGB payload and its destination across conversions" do
     expect(output).to include("data:image/png;base64,#{png_base64}")
     expect(output).to include('width="30.0000" height="40.0000" x="12.0000" y="13.0000"')
-    expect(output).to include('style="fill:#123456"')
+    expect(output).to include('<rect x="50" y="60" width="3" height="4" fill="#123456"/>')
     expect(Emfsvg.from_bytes(Emfsvg.from_svg(output))).to eq(output)
   end
 
@@ -30,7 +30,7 @@ RSpec.describe "Embedded PNG payload preservation" do
 
     it "skips the image and preserves the following shape" do
       expect(output).not_to include("<image ")
-      expect(output).to include('style="fill:#123456"')
+      expect(output).to include('<rect x="50" y="60" width="3" height="4" fill="#123456"/>')
     end
   end
 end

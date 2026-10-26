@@ -16,7 +16,8 @@ RSpec.describe "Filled rectangle translation" do
       [record.x_dest.to_i, record.y_dest.to_i, record.cx_dest.to_i, record.cy_dest.to_i]
     end
     expect(bounds).to eq([[10, 20, 30, 40], [50, 20, 0, 40]])
-    expect(output).to include('style="fill:#ffff00"', 'style="fill:#0000ff"')
+    expect(output).to include('<rect x="10" y="20" width="30" height="40" fill="#FFFF00"/>',
+                              '<rect x="50" y="20" width="0" height="40" fill="#0000FF"/>')
     expect(output).not_to include("stroke-width=")
   end
 

@@ -18,6 +18,7 @@ module Emfsvg
       autoload :MappedArc, "emfsvg/translation/handlers/mapped_arc"
       autoload :MappedPie, "emfsvg/translation/handlers/mapped_pie"
       autoload :CircularArc, "emfsvg/translation/handlers/circular_arc"
+      autoload :EllipticalArc, "emfsvg/translation/handlers/elliptical_arc"
       autoload :PathFlattener, "emfsvg/translation/handlers/path_flattener"
       autoload :GroupHandler, "emfsvg/translation/handlers/group_handler"
       autoload :TextHandler, "emfsvg/translation/handlers/text_handler"

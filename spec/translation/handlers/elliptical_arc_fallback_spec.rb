@@ -8,13 +8,11 @@ RSpec.describe "SVG elliptical arc fallback" do
 
   let(:flattener) { Emfsvg::Translation::Handlers::PathFlattener }
 
-  it "preserves the unsupported test-156 elliptical curve as cubics" do
+  it "preserves an unsupported elliptical curve as cubics" do
     data = "M 5267.9063,3340.8492 A 3504.4800,3984.4800 0 0 0 4932.0937,3340.8492 L 5100,5579.04 Z"
     commands = Emfsvg::Svg::PathData::Parser.parse(data)
-    legacy_segments = PreviousFlattening::Translation::Handlers::PathFlattener.flatten(commands).first.segments
     segments = flattener.flatten(commands).first.segments
 
-    expect(legacy_segments.map(&:first)).not_to include("C")
     expect(segments.map(&:first)).to include("C")
     expect(segments.last.first).to eq("Z")
 

@@ -25,6 +25,7 @@ module Emfsvg
   autoload :DibEncoder, "emfsvg/dib_encoder"
   autoload :Svg, "emfsvg/svg"
   autoload :Translation, "emfsvg/translation"
+  autoload :DrawingHint, "emfsvg/drawing_hint"
   autoload :RecordAccess, "emfsvg/record_access"
 
   const_get(:Error)

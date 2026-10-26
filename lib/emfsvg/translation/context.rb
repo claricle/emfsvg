@@ -56,7 +56,23 @@ module Emfsvg
         # Once an ordinary clip operation occurs, conservatively stop emitting
         # unused resources. RestoreDC need not be modeled to prove a reset safe.
         @unused_clip_safe = false if CLIP_MUTATIONS.include?(attrs[:i_type])
+        if @drawing_hint && DrawingHint::DRAW_TYPES.include?(attrs[:i_type])
+          kind, values = @drawing_hint
+          @drawing_hint = nil
+          record = @emitter.build(wire_class, attrs)
+          data = DrawingHint.encode(record, kind, values)
+          @emitter.emit(Emf::Emr::Binary::Records::Comment,
+                        i_type: Emf::Emr::Binary::TypeCodes::COMMENT,
+                        cb_data: data.bytesize, data: data.ljust((data.bytesize + 3) & ~3, "\x00"))
+        end
         @emitter.emit(wire_class, attrs)
+      end
+
+      def with_drawing_hint(element)
+        @drawing_hint = DrawingHint.for_element(element)
+        yield
+      ensure
+        @drawing_hint = nil
       end
 
       def emit_unused_clip_rectangle(bounds)

@@ -26,15 +26,16 @@ RSpec.describe "Embedded JPEG image roundtrip" do
   end
   let(:bytes) { Emfsvg.from_svg(svg) }
   let(:output) { Emfsvg.from_bytes(bytes) }
-  let(:rendered_jpeg) { Base64.strict_decode64(output[%r{data:image/jpg;base64,([^"]+)}, 1]) }
+  let(:rendered_jpeg) { Base64.strict_decode64(output[/data:#{mime};base64,([^"]+)/, 1]) }
   let(:jpeg_bytes) { Base64.strict_decode64(jpeg_base64) }
 
   it "preserves the JPEG payload and destination alongside the following shape" do
     expect(output.lines.grep(/<image /).size).to eq(1)
     image = Emf.parse(bytes).records.map(&:wire).grep(Emf::Emr::Binary::Records::StretchDIBits).first
     expect([image.cx_src.to_i, image.cy_src.to_i]).to eq([10, 10])
-    expect(rendered_jpeg).to eq(jpeg_bytes + ("\0" * ((3 - (jpeg_bytes.bytesize % 3)) % 3)))
-    expect(output).to include('width="30.0000" height="40.0000" x="12.0000" y="13.0000"', 'style="fill:#123456"')
+    expect(rendered_jpeg).to eq(jpeg_bytes)
+    expect(output).to include('width="30.0000" height="40.0000" x="12.0000" y="13.0000"',
+                              '<rect x="50" y="60" width="3" height="4" fill="#123456"/>')
     expect(Emfsvg.from_bytes(Emfsvg.from_svg(output))).to eq(output)
   end
 
@@ -52,7 +53,7 @@ RSpec.describe "Embedded JPEG image roundtrip" do
 
     it "skips the malformed image and preserves the following shape" do
       expect(output).not_to include("<image ")
-      expect(output).to include('style="fill:#123456"')
+      expect(output).to include('<rect x="50" y="60" width="3" height="4" fill="#123456"/>')
     end
   end
 end

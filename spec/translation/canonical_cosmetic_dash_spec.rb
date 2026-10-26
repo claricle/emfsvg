@@ -28,7 +28,7 @@ RSpec.describe "canonical cosmetic dash recovery" do
           attributes = %w[d stroke stroke-dasharray stroke-linecap stroke-linejoin fill]
           expect(attributes.map { |attribute| paths.first[attribute] })
             .to eq(attributes.map { |attribute| source[attribute] })
-          expect(paths.first["stroke-width"]).to eq("1px")
+          expect(paths.first["stroke-width"]).to eq(source["stroke-width"])
           following = paths.last
           expect(pens.last.width.x.to_i).to eq(1)
           expect(pens.last.pen_style.to_i).to eq(0)

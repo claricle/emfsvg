@@ -34,7 +34,7 @@ module Emfsvg
       # Node serialization normalizes spacing; the original start tag carries
       # the canonical renderer's distinction between Polyline and LineTo.
       def source_tag(string, node)
-        string.match(/\G<path\b(?:[^"'>]|"[^"]*"|'[^']*')*>/m, node.byte_offset)&.to_s
+        string.match(/\G<(?:path|rect)\b(?:[^"'>]|"[^"]*"|'[^']*')*>/m, node.byte_offset)&.to_s
       end
 
       def parse_dimension(value)
