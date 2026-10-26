@@ -155,7 +155,9 @@ RSpec.describe Emfsvg::Translation::Handlers::PathFlattener do
 
   it "flattens exactly as the previous implementation did" do
     random = Random.new(20_261_022)
-    letters = %w[M m L l H h V v C c Z z S Q T A]
+    # Elliptical arcs are now intentionally normalized to cubic/line
+    # segments; keep this legacy comparison focused on unchanged commands.
+    letters = %w[M m L l H h V v C c Z z S Q T]
     300.times do
       commands = Array.new(random.rand(0..12)) { command.call(letters[random.rand(letters.size)], random) }
       expected = PreviousFlattening::Translation::Handlers::PathFlattener.flatten(commands)

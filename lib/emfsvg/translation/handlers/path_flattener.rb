@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
+require_relative "elliptical_arc"
+
 module Emfsvg
   module Translation
     module Handlers
       # Resolve supported commands to absolute points without joining figures.
-      # Arc/quadratic commands remain unsupported.
       class PathFlattener
         Result = Struct.new(:shape_kind, :points, :bounds, :segments, keyword_init: true)
 
@@ -25,6 +26,10 @@ module Emfsvg
             if segments.empty? && letter != "M" && !(preserve_initial_line && subpaths.empty? && letter == "L")
               segments << ["M", [pen.current.dup]]
             end
+            if letter == "A"
+              segments.concat(resolve_arc(pen, command))
+              next
+            end
             points = resolve_command(pen, command)
             segments << [letter, points] if points
             next unless letter == "Z"
@@ -38,6 +43,12 @@ module Emfsvg
         end
 
         private
+
+        def resolve_arc(pen, command)
+          arc_segments = EllipticalArc.to_cubics(pen.current, command.args, absolute: command.absolute?)
+          pen.set_current(command.args.last(2), absolute: command.absolute?)
+          arc_segments.map { |kind, points| [kind == :line ? "L" : "C", points] }
+        end
 
         def resolve_command(pen, command)
           case command.letter.upcase
@@ -96,6 +107,10 @@ module Emfsvg
 
         def close_to(point)
           @current = point.dup
+        end
+
+        def set_current(point, absolute:)
+          @current = absolute ? point.dup : @current.zip(point).map { |origin, delta| origin + delta }
         end
 
         def line_to(command, absolute:)
