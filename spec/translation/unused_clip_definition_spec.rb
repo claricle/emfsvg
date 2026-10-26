@@ -8,6 +8,10 @@ RSpec.describe "Unused canonical clip definitions" do
       'L 8.0000,9.0000 L 1.0000,9.0000 L 1.0000,2.0000 Z Z" /></clipPath></defs>'
   end
   let(:draw) { '<rect x="20" y="21" width="3" height="4" fill="#ff0000"/>' }
+  let(:rendered_draw) do
+    '<path style="fill:#ff0000" d="M 20.0000,21.0000 L 23.0000,21.0000 ' \
+      'L 23.0000,25.0000 L 20.0000,25.0000 Z" />'
+  end
 
   def convert(body)
     bytes = Emfsvg.from_svg(%(<svg width="40" height="40">#{body}</svg>))
@@ -17,10 +21,9 @@ RSpec.describe "Unused canonical clip definitions" do
   it "preserves an unused definition in position and leaves following draws unclipped" do
     output, wires = convert(draw + definition + draw)
     expect(output.scan("<clipPath ").size).to eq(1)
-    expect(output.index("<rect ")).to be < output.index("<defs>")
-    expect(output.rindex("<rect ")).to be > output.index("</defs>")
-    expect(output.lines.grep(/<rect /).size).to eq(2)
-    expect(output.lines.grep(/<rect /)).to all(include('x="20.0000"', 'width="3.0000"'))
+    expect(output.index(rendered_draw)).to be < output.index("<defs>")
+    expect(output.rindex(rendered_draw)).to be > output.index("</defs>")
+    expect(output.scan(rendered_draw).size).to eq(2)
     expect(output).not_to include("clip-path=")
     expect(wires.grep(Emf::Emr::Binary::Records::SaveDc)).to be_empty
     resets = wires.grep(Emf::Emr::Binary::Records::ExtSelectClipRgn)
@@ -43,13 +46,13 @@ RSpec.describe "Unused canonical clip definitions" do
       when Emf::Emr::Binary::Records::ExtSelectClipRgn
         expect([wire.cb_rgn_data.to_i, wire.dw_mode.to_i]).to eq([0, 5])
         clip = nil
-      when Emf::Emr::Binary::Records::Rectangle then draws << clip
+      when Emf::Emr::Binary::Records::BitBlt then draws << clip
       end
     end
     expect(stack).to be_empty
     expect(draws).to eq([nil, nil])
     expect(output.scan("<clipPath ").size).to eq(1)
-    output.lines.grep(/<rect /).each { |line| expect(line).not_to include("clip-path") }
+    output.lines.grep(/<path style=/).each { |line| expect(line).not_to include("clip-path") }
   end
 
   it "does not materialize ordinary unused rectangular resources" do
@@ -71,14 +74,14 @@ RSpec.describe "Unused canonical clip definitions" do
     output, wires = convert(used + clipped + definition + draw)
     expect(output.scan("<clipPath ").size).to eq(1)
     expect(wires.grep(Emf::Emr::Binary::Records::ExtSelectClipRgn)).to be_empty
-    expect(output.lines.grep(/<rect /).last).not_to include("clip-path")
+    expect(output.lines.grep(/<path style=/).last).not_to include("clip-path")
   end
 
   it "preserves consecutive unused definitions without adding save scopes" do
     output, wires = convert(definition + definition.sub("16807", "282475249") + draw)
     expect(output.scan("<clipPath ").size).to eq(2)
     expect(wires.grep(Emf::Emr::Binary::Records::SaveDc)).to be_empty
-    expect(output.lines.grep(/<rect /).last).not_to include("clip-path")
+    expect(output.lines.grep(/<path style=/).last).not_to include("clip-path")
   end
 
   [[:ordinary_id, ->(d) { d.sub("clip-16807", "custom") }],
@@ -88,7 +91,7 @@ RSpec.describe "Unused canonical clip definitions" do
     it "ignores #{name} unused resources" do
       output, = convert(change.call(definition) + draw)
       expect(output).not_to include("<clipPath ")
-      expect(output.lines.grep(/<rect /).last).not_to include("clip-path")
+      expect(output.lines.grep(/<path style=/).last).not_to include("clip-path")
     end
   end
 end

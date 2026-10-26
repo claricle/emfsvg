@@ -42,11 +42,13 @@ RSpec.describe "serialized EMF handle table capacity" do
 
   it "preserves rendered geometry, colors and text" do
     rendered = Leptris::XML.parse(Emfsvg.from_bytes(Emfsvg.from_svg(svg)))
-    rect = rendered.at_xpath("//*[local-name()='rect']")
+    rect = rendered.at_xpath("//*[local-name()='path']")
     ellipse = rendered.at_xpath("//*[local-name()='ellipse']")
     text = rendered.at_xpath("//*[local-name()='text']")
 
-    expect(%w[x y width height fill].map { |key| rect[key] }).to eq(%w[1.0000 2.0000 10.0000 20.0000 #FF0000])
+    expect(rect["d"]).to eq("M 1.0000,2.0000 L 11.0000,2.0000 L 11.0000,22.0000 L 1.0000,22.0000 Z")
+    expect(rect["style"]).to eq("fill:#ff0000")
+    expect(rect["stroke"]).to be_nil
     expect(%w[cx cy rx ry fill].map { |key| ellipse[key] }).to eq(%w[40.0000 40.0000 10.0000 10.0000 #0000FF])
     expect(%w[x y font-size fill].map { |key| text[key] }).to eq(%w[5.0000 70.0000 12.0000 #000000])
     expect(text.text).to eq("Hi")

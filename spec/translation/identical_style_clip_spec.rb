@@ -29,9 +29,11 @@ RSpec.describe "Adjacent identical clipped paths" do
     expect(wires.grep(Emf::Emr::Binary::Records::RestoreDc).map { |wire| wire.saved_dc.to_i }).to eq([-1])
     expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(1)
     expect(output.scan("<clipPath ").size).to eq(1)
-    expect(output.lines.count { |line| line.start_with?("<path ") }).to eq(2)
-    expect(output).to match(%r{<rect [^>]*x="70\.0000"[^>]*fill="#0000FF"[^>]*/>})
-    rect = output.lines.find { |line| line.include?('x="70.0000"') }
+    expect(output.lines.count { |line| line.start_with?("<path ") }).to eq(3)
+    rectangle_path = '<path style="fill:#0000ff" d="M 70.0000,70.0000 L 80.0000,70.0000 ' \
+                     'L 80.0000,80.0000 L 70.0000,80.0000 Z" />'
+    expect(output).to include(rectangle_path)
+    rect = output.lines.find { |line| line.include?(rectangle_path) }
     expect(rect).not_to include("clip-path")
   end
 
@@ -137,8 +139,8 @@ RSpec.describe "Adjacent identical clipped paths" do
 
     it "sets each start position inside the shared scope" do
       expect(wires.grep(Emf::Emr::Binary::Records::IntersectClipRect).size).to eq(1)
-      expect(output).to include("10.0000,10.0000", "30.0000,10.0000")
-      expect(output.lines.count { |line| line.start_with?("<path ") }).to eq(2)
+      expect(output).to include("10.0000,10.0000", "30.0000,10.0000", 'style="fill:#0000ff"')
+      expect(output.lines.count { |line| line.start_with?("<path ") }).to eq(3)
     end
   end
 end

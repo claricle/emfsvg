@@ -11,6 +11,10 @@ RSpec.describe "Unused canonical pattern definitions" do
      '<use id="img-1-ign" xlink:href="#img-1" /></pattern></defs>'].join("\n")
   end
   let(:draw) { '<rect x="20" y="21" width="3" height="4" fill="#ff0000"/>' }
+  let(:rendered_draw) do
+    '<path style="fill:#ff0000" d="M 20.0000,21.0000 L 23.0000,21.0000 ' \
+      'L 23.0000,25.0000 L 20.0000,25.0000 Z" />'
+  end
   let(:body) { draw + definition + draw }
   let(:svg) { %(<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">#{body}</svg>) }
   let(:bytes) { Emfsvg.from_svg(svg) }
@@ -20,8 +24,8 @@ RSpec.describe "Unused canonical pattern definitions" do
 
   it "restores the exact PNG and pattern block in drawing order" do
     expect(output).to include("#{definition}\n")
-    expect(output.index("<rect ")).to be < output.index("<defs>")
-    expect(output.rindex("<rect ")).to be > output.index("</defs>")
+    expect(output.index(rendered_draw)).to be < output.index("<defs>")
+    expect(output.rindex(rendered_draw)).to be > output.index("</defs>")
     expect(brushes.size).to eq(1)
   end
 
@@ -30,8 +34,7 @@ RSpec.describe "Unused canonical pattern definitions" do
     handle = brushes.first.ih_brush.to_i
     selections = wires.grep(Emf::Emr::Binary::Records::SelectObject).map { |wire| wire.ih_object.to_i }
     expect(selections).not_to include(handle)
-    expect(output.lines.grep(/<rect /).size).to eq(2)
-    expect(output.lines.grep(/<rect /)).to all(include('fill="#FF0000"', 'x="20.0000"', 'width="3.0000"'))
+    expect(output.scan(rendered_draw).size).to eq(2)
   end
 
   it "matches the pinned C renderer for freshly emitted wire", :live_reference do
@@ -54,8 +57,8 @@ RSpec.describe "Unused canonical pattern definitions" do
         handle = brushes.first.ih_brush.to_i
         selections = wires.grep(Emf::Emr::Binary::Records::SelectObject).map { |wire| wire.ih_object.to_i }
         expect(selections.count(handle)).to eq(2)
-        expect(output).to include(definition, 'fill="#img-1-ref"', 'fill="#FF0000"')
-        expect(output.lines.grep(/<rect /).size).to eq(3)
+        expect(output).to include(definition, 'fill="#img-1-ref"', 'style="fill:#ff0000"')
+        expect(output.lines.grep(/<(?:rect|path) /).size).to eq(2)
         expect(Emfsvg.from_bytes(Emfsvg.from_svg(output))).to eq(output)
       end
     end
@@ -73,7 +76,7 @@ RSpec.describe "Unused canonical pattern definitions" do
     it "preserves both PNG variants and image numbering without changing draws" do
       expect(brushes.size).to eq(2)
       expect(output).to include(definition, second_definition)
-      expect(output.lines.grep(/<rect /).size).to eq(2)
+      expect(output.scan(rendered_draw).size).to eq(2)
     end
   end
 
@@ -112,7 +115,7 @@ RSpec.describe "Unused canonical pattern definitions" do
       it "preserves ordinary resource behavior and the following draw" do
         expect(brushes).to be_empty
         expect(output).not_to include("<pattern ")
-        expect(output).to include('fill="#FF0000"')
+        expect(output).to include('style="fill:#ff0000"')
       end
     end
   end
