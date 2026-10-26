@@ -181,27 +181,56 @@ RSpec.describe PortableFontInputs do
     expect(File.read(extra)).to eq("preserved")
   end
 
-  it "reports an unsuccessful archive extraction" do
-    status = instance_double(Process::Status, success?: false)
-    allow(Open3).to receive(:capture3).and_return(["", "unsupported archive", status])
-    expect { provisioner.send(:extract, "7zz", "installer.exe", "Arial.TTF", "unused") }
-      .to raise_error(/Extraction failed for Arial.TTF: unsupported archive/)
-  end
+  context "with the discovered archive extractor" do
+    let(:archive_provisioner) { described_class.new(options, downloader: downloader) }
+    let(:tool) { File.join(@directory, "7zz") }
 
-  it "rejects empty archive output without writing a font" do
-    status = instance_double(Process::Status, success?: true)
-    allow(Open3).to receive(:capture3).and_return(["", "", status])
-    destination = File.join(@directory, "Arial.TTF")
-    expect { provisioner.send(:extract, "7zz", "installer.exe", "Arial.TTF", destination) }
-      .to raise_error(/Missing font entry: Arial.TTF/)
-    expect(File.exist?(destination)).to be(false)
-  end
+    before do
+      File.write(tool, "")
+      File.chmod(0o755, tool)
+      allow(ENV).to receive(:fetch).with("PATH", "").and_return(@directory)
+    end
 
-  it "streams only pinned archive entries to controlled paths" do
-    status = instance_double(Process::Status, success?: true)
-    allow(Open3).to receive(:capture3).and_return(["font", "", status])
-    provisioner.send(:extract, "7zz", "installer.exe", "Arial.TTF", File.join(@directory, "Arial.TTF"))
-    expect(Open3).to have_received(:capture3).with("7zz", "e", "-so", "installer.exe", "Arial.TTF", binmode: true)
-    expect(Dir.children(@directory).sort).to eq(["Arial.TTF", "reference"])
+    it "reports an unsuccessful archive extraction" do
+      status = Open3.capture3(RbConfig.ruby, "-e", "exit 1").last
+      allow(Open3).to receive(:capture3).and_return(["", "unsupported archive", status])
+
+      expect { archive_provisioner.provision }
+        .to raise_error(/Extraction failed for Arial.TTF: unsupported archive/)
+      expect(Dir.glob(File.join(@directory, "corefonts-*"))).to be_empty
+      expect(File).not_to exist(options.fetch("contract_path"))
+    end
+
+    it "rejects empty archive output without writing a font" do
+      status = Open3.capture3(RbConfig.ruby, "-e", "exit 0").last
+      allow(Open3).to receive(:capture3).and_return(["", "", status])
+
+      expect { archive_provisioner.provision }.to raise_error(/Missing font entry: Arial.TTF/)
+      expect(Dir.glob(File.join(@directory, "**", "Arial.TTF"))).to be_empty
+      expect(Dir.glob(File.join(@directory, "corefonts-*"))).to be_empty
+      expect(File).not_to exist(options.fetch("contract_path"))
+    end
+
+    it "streams only pinned archive entries to controlled paths" do
+      status = Open3.capture3(RbConfig.ruby, "-e", "exit 0").last
+      allow(Open3).to receive(:capture3).and_return(["font", "", status])
+
+      contract = archive_provisioner.provision
+      fonts = contract.fetch("fonts")
+      directory = File.dirname(fonts.fetch("arial_regular").fetch("path"), 2)
+
+      described_class::FONTS.each do |role, (installer, entry, _sha, _cmap)|
+        expect(Open3).to have_received(:capture3)
+          .with(tool, "e", "-so", File.join(directory, installer), entry, binmode: true).once
+        expect(fonts.fetch(role).fetch("path")).to eq(File.join(directory, "fonts", entry))
+        expect(File.binread(fonts.fetch(role).fetch("path"))).to eq("font")
+      end
+      expect(Open3).to have_received(:capture3).exactly(4).times
+      expect(Dir.children(File.join(directory, "fonts")).sort)
+        .to eq(described_class::FONTS.values.map { |_installer, entry, _sha, _cmap| entry }.sort)
+      expect(Dir.children(directory).sort).to eq(%w[arial32.exe fonts verdan32.exe])
+      expect(Dir.children(@directory).sort).to eq(["7zz", File.basename(directory), "contract.json", "reference"].sort)
+      expect(JSON.parse(File.read(options.fetch("contract_path")))).to eq(contract)
+    end
   end
 end

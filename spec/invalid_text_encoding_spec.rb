@@ -54,14 +54,19 @@ RSpec.describe "Invalid UTF-16 text encoding" do
     include_examples "a recoverable damaged text record"
   end
 
-  it "classifies an odd UTF-16 byte sequence in a supplied wire record" do
+  it "renders an odd UTF-16 byte sequence in a supplied wire record as one replacement character" do
+    builder = Emfsvg::SvgBuilder.new
     visitor = Emfsvg::Visitors::EmrVisitor.new(
-      Emfsvg::SvgBuilder.new, Emfsvg::DeviceContext.new, Emfsvg::ObjectTable.new,
+      builder, Emfsvg::DeviceContext.new, Emfsvg::ObjectTable.new,
       Emfsvg::TransformStack.new, nil, false, Emfsvg::Options.new
     )
-    wire = Struct.new(:off_string, :n_chars, :f_options, :to_binary_s).new(2, 1, 0, "\0\0A")
+    point = Struct.new(:x, :y).new(0, 0)
+    wire = Struct.new(:off_string, :n_chars, :f_options, :to_binary_s, :ptl_reference)
+                 .new(2, 1, 0, "\0\0A", point)
 
-    expect(visitor.send(:ext_text_content, wire, utf16: true)).to eq("?")
+    visitor.visit_ext_text_out_w(wire)
+
+    expect(builder.to_s.scan(/<!\[CDATA\[(.*?)\]\]>/).flatten).to eq(["?"])
   end
 
   context "with valid UTF-16LE text" do
