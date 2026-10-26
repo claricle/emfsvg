@@ -2,8 +2,8 @@
 schema_version: 1
 provenance:
   manifest_sha256: 411a4cffc2589e0600a25ace3ce7770c4197998c1d1a0ecc11d2ce955038a5bb
-  emfsvg_revision: caf7f81f31d3ad26c08596075aefd67caaae0328
-  emfsvg_source_sha256: aa21236d0718b246fed63141c25823c5f533f79d0d8e0ceceeb6a25093e494cf
+  emfsvg_revision: c6435abaf9bbe0f420ec8d52fca477e38f2b7a9e
+  emfsvg_source_sha256: 7075978dd7a21b9db14704f90fa94fa3389c14a019a15d215c84fc904496cd71
   runtime:
     version: 0.2.0
     package_sha256: 6b3add05605260d646ec1d732da139eb972016c6fe4547aa60846a2ac2f542fa
@@ -218,8 +218,8 @@ samples:
   output_bytes: 20510
   warnings: []
   exception:
-  elapsed_seconds: 0.8174219839999921
-  rss_peak_kib: 42952
+  elapsed_seconds: 0.8499213310000187
+  rss_peak_kib: 43020
   as_peak_kib: 628992
   exitstatus: 0
   signal:
@@ -234,8 +234,8 @@ samples:
   output_bytes: 20510
   warnings: []
   exception:
-  elapsed_seconds: 0.809228834999999
-  rss_peak_kib: 43020
+  elapsed_seconds: 0.828887887999997
+  rss_peak_kib: 42944
   as_peak_kib: 628988
   exitstatus: 0
   signal:
@@ -250,9 +250,9 @@ samples:
   output_bytes: 20510
   warnings: []
   exception:
-  elapsed_seconds: 0.818994674999999
-  rss_peak_kib: 42900
-  as_peak_kib: 628992
+  elapsed_seconds: 0.8396900689999995
+  rss_peak_kib: 42948
+  as_peak_kib: 629088
   exitstatus: 0
   signal:
   safe: true
@@ -266,40 +266,8 @@ samples:
   output_bytes: 211503
   warnings: []
   exception:
-  elapsed_seconds: 0.7272968139999989
-  rss_peak_kib: 35192
-  as_peak_kib: 494480
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf/test-001.emf
-  repetition: 2
-  input_bytes: 46916
-  output_bytes: 211503
-  warnings: []
-  exception:
-  elapsed_seconds: 0.7164282879999746
-  rss_peak_kib: 35260
-  as_peak_kib: 494544
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf/test-001.emf
-  repetition: 3
-  input_bytes: 46916
-  output_bytes: 211503
-  warnings: []
-  exception:
-  elapsed_seconds: 0.7468581370000038
-  rss_peak_kib: 35692
+  elapsed_seconds: 0.7578064810000171
+  rss_peak_kib: 35700
   as_peak_kib: 494976
   exitstatus: 0
   signal:
@@ -308,15 +276,47 @@ samples:
     rss: "/proc/status"
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-001.emf
+  repetition: 2
+  input_bytes: 46916
+  output_bytes: 211503
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7448461980000047
+  rss_peak_kib: 35496
+  as_peak_kib: 494976
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-001.emf
+  repetition: 3
+  input_bytes: 46916
+  output_bytes: 211503
+  warnings: []
+  exception:
+  elapsed_seconds: 0.746495517999989
+  rss_peak_kib: 35276
+  as_peak_kib: 494552
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
 - case: spec/fixtures/emf/test-002.emf
   repetition: 1
   input_bytes: 52416
   output_bytes: 253867
   warnings: []
   exception:
-  elapsed_seconds: 0.7259236719999933
-  rss_peak_kib: 36284
-  as_peak_kib: 495728
+  elapsed_seconds: 0.7550262999999973
+  rss_peak_kib: 35632
+  as_peak_kib: 495020
   exitstatus: 0
   signal:
   safe: true
@@ -330,9 +330,9 @@ samples:
   output_bytes: 253867
   warnings: []
   exception:
-  elapsed_seconds: 0.7383012330000156
-  rss_peak_kib: 36268
-  as_peak_kib: 495728
+  elapsed_seconds: 0.7444406989999948
+  rss_peak_kib: 36052
+  as_peak_kib: 495540
   exitstatus: 0
   signal:
   safe: true
@@ -346,9 +346,9 @@ samples:
   output_bytes: 253867
   warnings: []
   exception:
-  elapsed_seconds: 0.7247336220000022
-  rss_peak_kib: 36164
-  as_peak_kib: 495724
+  elapsed_seconds: 0.7242055579999942
+  rss_peak_kib: 35640
+  as_peak_kib: 495024
   exitstatus: 0
   signal:
   safe: true
@@ -362,9 +362,9 @@ samples:
   output_bytes: 254476
   warnings: []
   exception:
-  elapsed_seconds: 0.725244760999999
-  rss_peak_kib: 35488
-  as_peak_kib: 494820
+  elapsed_seconds: 0.7450732329999994
+  rss_peak_kib: 35396
+  as_peak_kib: 494752
   exitstatus: 0
   signal:
   safe: true
@@ -378,9 +378,9 @@ samples:
   output_bytes: 254476
   warnings: []
   exception:
-  elapsed_seconds: 0.7258264480000207
-  rss_peak_kib: 35884
-  as_peak_kib: 495536
+  elapsed_seconds: 0.7351112590000071
+  rss_peak_kib: 36000
+  as_peak_kib: 495544
   exitstatus: 0
   signal:
   safe: true
@@ -394,8 +394,8 @@ samples:
   output_bytes: 254476
   warnings: []
   exception:
-  elapsed_seconds: 0.7251143609999815
-  rss_peak_kib: 36004
+  elapsed_seconds: 0.7454253180000023
+  rss_peak_kib: 36036
   as_peak_kib: 495544
   exitstatus: 0
   signal:
@@ -410,9 +410,9 @@ samples:
   output_bytes: 484248
   warnings: []
   exception:
-  elapsed_seconds: 0.7770968749999838
-  rss_peak_kib: 36124
-  as_peak_kib: 495732
+  elapsed_seconds: 0.8163035219999983
+  rss_peak_kib: 37044
+  as_peak_kib: 496504
   exitstatus: 0
   signal:
   safe: true
@@ -426,9 +426,9 @@ samples:
   output_bytes: 484248
   warnings: []
   exception:
-  elapsed_seconds: 0.7980284840000138
-  rss_peak_kib: 37200
-  as_peak_kib: 496496
+  elapsed_seconds: 0.8384218729999873
+  rss_peak_kib: 36088
+  as_peak_kib: 495736
   exitstatus: 0
   signal:
   safe: true
@@ -442,9 +442,9 @@ samples:
   output_bytes: 484248
   warnings: []
   exception:
-  elapsed_seconds: 0.7693685840000057
-  rss_peak_kib: 37092
-  as_peak_kib: 496500
+  elapsed_seconds: 0.8535730499999943
+  rss_peak_kib: 37184
+  as_peak_kib: 496508
   exitstatus: 0
   signal:
   safe: true
@@ -458,9 +458,9 @@ samples:
   output_bytes: 13792
   warnings: []
   exception:
-  elapsed_seconds: 0.6853128439999807
-  rss_peak_kib: 33620
-  as_peak_kib: 492888
+  elapsed_seconds: 0.7628142860000082
+  rss_peak_kib: 33636
+  as_peak_kib: 492832
   exitstatus: 0
   signal:
   safe: true
@@ -474,9 +474,9 @@ samples:
   output_bytes: 13792
   warnings: []
   exception:
-  elapsed_seconds: 0.6837198050000097
-  rss_peak_kib: 33544
-  as_peak_kib: 492864
+  elapsed_seconds: 0.7491077260000054
+  rss_peak_kib: 33516
+  as_peak_kib: 492828
   exitstatus: 0
   signal:
   safe: true
@@ -490,9 +490,9 @@ samples:
   output_bytes: 13792
   warnings: []
   exception:
-  elapsed_seconds: 0.6961608279999894
-  rss_peak_kib: 33556
-  as_peak_kib: 492956
+  elapsed_seconds: 0.7483573339999907
+  rss_peak_kib: 33576
+  as_peak_kib: 492824
   exitstatus: 0
   signal:
   safe: true
@@ -506,9 +506,9 @@ samples:
   output_bytes: 122588
   warnings: []
   exception:
-  elapsed_seconds: 0.7976059540000051
-  rss_peak_kib: 36428
-  as_peak_kib: 495788
+  elapsed_seconds: 0.8612290810000047
+  rss_peak_kib: 36344
+  as_peak_kib: 495600
   exitstatus: 0
   signal:
   safe: true
@@ -522,9 +522,9 @@ samples:
   output_bytes: 122588
   warnings: []
   exception:
-  elapsed_seconds: 0.7988382670000078
-  rss_peak_kib: 36280
-  as_peak_kib: 495584
+  elapsed_seconds: 0.8699440940000045
+  rss_peak_kib: 36504
+  as_peak_kib: 495784
   exitstatus: 0
   signal:
   safe: true
@@ -538,9 +538,9 @@ samples:
   output_bytes: 122588
   warnings: []
   exception:
-  elapsed_seconds: 0.8089691749999872
-  rss_peak_kib: 36292
-  as_peak_kib: 495624
+  elapsed_seconds: 0.8713776649999829
+  rss_peak_kib: 36336
+  as_peak_kib: 495596
   exitstatus: 0
   signal:
   safe: true
@@ -554,8 +554,40 @@ samples:
   output_bytes: 9132
   warnings: []
   exception:
-  elapsed_seconds: 0.6976979989999847
-  rss_peak_kib: 33380
+  elapsed_seconds: 0.748209916999997
+  rss_peak_kib: 33408
+  as_peak_kib: 492740
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-003.emf
+  repetition: 2
+  input_bytes: 14752
+  output_bytes: 9132
+  warnings: []
+  exception:
+  elapsed_seconds: 0.737712638000005
+  rss_peak_kib: 33436
+  as_peak_kib: 492776
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-003.emf
+  repetition: 3
+  input_bytes: 14752
+  output_bytes: 9132
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7362495380000098
+  rss_peak_kib: 33360
   as_peak_kib: 492696
   exitstatus: 0
   signal:
@@ -564,47 +596,15 @@ samples:
     rss: "/proc/status"
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-ea/EA-test-file-003.emf
-  repetition: 2
-  input_bytes: 14752
-  output_bytes: 9132
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6841862460000243
-  rss_peak_kib: 33372
-  as_peak_kib: 492700
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-ea/EA-test-file-003.emf
-  repetition: 3
-  input_bytes: 14752
-  output_bytes: 9132
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6941752369999961
-  rss_peak_kib: 33552
-  as_peak_kib: 492748
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
 - case: spec/fixtures/simple/image1.emf
   repetition: 1
   input_bytes: 92904
   output_bytes: 39849
   warnings: []
   exception:
-  elapsed_seconds: 0.7662337790000038
-  rss_peak_kib: 36116
-  as_peak_kib: 495412
+  elapsed_seconds: 0.821005853999992
+  rss_peak_kib: 36080
+  as_peak_kib: 495400
   exitstatus: 0
   signal:
   safe: true
@@ -618,8 +618,8 @@ samples:
   output_bytes: 39849
   warnings: []
   exception:
-  elapsed_seconds: 0.7691173510000056
-  rss_peak_kib: 36144
+  elapsed_seconds: 0.819779791000002
+  rss_peak_kib: 36100
   as_peak_kib: 495420
   exitstatus: 0
   signal:
@@ -634,8 +634,8 @@ samples:
   output_bytes: 39849
   warnings: []
   exception:
-  elapsed_seconds: 0.7657782100000077
-  rss_peak_kib: 36176
+  elapsed_seconds: 0.8297007950000079
+  rss_peak_kib: 36048
   as_peak_kib: 495420
   exitstatus: 0
   signal:
@@ -655,9 +655,9 @@ samples:
     cause:
       class: Emf::FormatError
       message: truncated EMF header (claimed 59296, got 1444)
-  elapsed_seconds: 0.6028667299999881
-  rss_peak_kib: 30732
-  as_peak_kib: 490504
+  elapsed_seconds: 0.6461468999999909
+  rss_peak_kib: 31048
+  as_peak_kib: 490500
   exitstatus: 0
   signal:
   safe: true
@@ -676,9 +676,9 @@ samples:
     cause:
       class: Emf::FormatError
       message: truncated EMF header (claimed 59296, got 1444)
-  elapsed_seconds: 0.602278933000008
+  elapsed_seconds: 0.6561480599999925
   rss_peak_kib: 31104
-  as_peak_kib: 490552
+  as_peak_kib: 490504
   exitstatus: 0
   signal:
   safe: true
@@ -697,242 +697,8 @@ samples:
     cause:
       class: Emf::FormatError
       message: truncated EMF header (claimed 59296, got 1444)
-  elapsed_seconds: 0.6123391379999816
-  rss_peak_kib: 31100
-  as_peak_kib: 490496
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
-  repetition: 1
-  input_bytes: 144416
-  output_bytes: 116191
-  warnings: []
-  exception:
-  elapsed_seconds: 0.9101801650000141
-  rss_peak_kib: 42848
-  as_peak_kib: 633864
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
-  repetition: 2
-  input_bytes: 144416
-  output_bytes: 116191
-  warnings: []
-  exception:
-  elapsed_seconds: 0.898842521000006
-  rss_peak_kib: 42940
-  as_peak_kib: 633908
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
-  repetition: 3
-  input_bytes: 144416
-  output_bytes: 116191
-  warnings: []
-  exception:
-  elapsed_seconds: 0.8992294230000084
-  rss_peak_kib: 42792
-  as_peak_kib: 633908
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
-  repetition: 1
-  input_bytes: 53120
-  output_bytes: 198813
-  warnings: []
-  exception:
-  elapsed_seconds: 0.7262425319999863
-  rss_peak_kib: 35184
-  as_peak_kib: 494592
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
-  repetition: 2
-  input_bytes: 53120
-  output_bytes: 198813
-  warnings: []
-  exception:
-  elapsed_seconds: 0.7251729099999977
-  rss_peak_kib: 35364
-  as_peak_kib: 495036
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
-  repetition: 3
-  input_bytes: 53120
-  output_bytes: 198813
-  warnings: []
-  exception:
-  elapsed_seconds: 0.7366288139999995
-  rss_peak_kib: 35192
-  as_peak_kib: 494588
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
-  repetition: 1
-  input_bytes: 912
-  output_bytes: 2452
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6551393149999853
-  rss_peak_kib: 32696
-  as_peak_kib: 492180
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
-  repetition: 2
-  input_bytes: 912
-  output_bytes: 2452
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6534235730000262
-  rss_peak_kib: 32728
-  as_peak_kib: 492184
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
-  repetition: 3
-  input_bytes: 912
-  output_bytes: 2452
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6549060979999979
-  rss_peak_kib: 32688
-  as_peak_kib: 492184
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
-  repetition: 1
-  input_bytes: 1880
-  output_bytes: 5535
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6641291520000152
-  rss_peak_kib: 32820
-  as_peak_kib: 492184
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
-  repetition: 2
-  input_bytes: 1880
-  output_bytes: 5535
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6537865530000033
-  rss_peak_kib: 32820
-  as_peak_kib: 492176
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
-  repetition: 3
-  input_bytes: 1880
-  output_bytes: 5535
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6532595650000133
-  rss_peak_kib: 32820
-  as_peak_kib: 492180
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
-  repetition: 1
-  input_bytes: 1460
-  output_bytes: 0
-  warnings: []
-  exception:
-    class: Emfsvg::ParseError
-    message: unrecognised format (first uint32=0x00000073)
-    cause:
-      class: Emf::FormatError
-      message: unrecognised format (first uint32=0x00000073)
-  elapsed_seconds: 0.6040906739999912
-  rss_peak_kib: 30692
-  as_peak_kib: 490560
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
-  repetition: 2
-  input_bytes: 1460
-  output_bytes: 0
-  warnings: []
-  exception:
-    class: Emfsvg::ParseError
-    message: unrecognised format (first uint32=0x00000073)
-    cause:
-      class: Emf::FormatError
-      message: unrecognised format (first uint32=0x00000073)
-  elapsed_seconds: 0.61338197500001
-  rss_peak_kib: 30748
+  elapsed_seconds: 0.6346020390000149
+  rss_peak_kib: 31096
   as_peak_kib: 490504
   exitstatus: 0
   signal:
@@ -941,6 +707,240 @@ samples:
     rss: "/proc/status"
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  repetition: 1
+  input_bytes: 144416
+  output_bytes: 116191
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9748055690000115
+  rss_peak_kib: 42872
+  as_peak_kib: 633916
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  repetition: 2
+  input_bytes: 144416
+  output_bytes: 116191
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9622962070000085
+  rss_peak_kib: 42560
+  as_peak_kib: 633456
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  repetition: 3
+  input_bytes: 144416
+  output_bytes: 116191
+  warnings: []
+  exception:
+  elapsed_seconds: 0.973017255000002
+  rss_peak_kib: 42852
+  as_peak_kib: 633908
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  repetition: 1
+  input_bytes: 53120
+  output_bytes: 198813
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7765666739999801
+  rss_peak_kib: 35580
+  as_peak_kib: 494972
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  repetition: 2
+  input_bytes: 53120
+  output_bytes: 198813
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7677649409999958
+  rss_peak_kib: 35124
+  as_peak_kib: 494652
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  repetition: 3
+  input_bytes: 53120
+  output_bytes: 198813
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7894976110000016
+  rss_peak_kib: 35596
+  as_peak_kib: 494972
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  repetition: 1
+  input_bytes: 912
+  output_bytes: 2452
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6850026879999973
+  rss_peak_kib: 32748
+  as_peak_kib: 492172
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  repetition: 2
+  input_bytes: 912
+  output_bytes: 2452
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6855356350000079
+  rss_peak_kib: 32668
+  as_peak_kib: 492188
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  repetition: 3
+  input_bytes: 912
+  output_bytes: 2452
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6863830220000011
+  rss_peak_kib: 32764
+  as_peak_kib: 492180
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  repetition: 1
+  input_bytes: 1880
+  output_bytes: 5535
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6634695770000008
+  rss_peak_kib: 32920
+  as_peak_kib: 492152
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  repetition: 2
+  input_bytes: 1880
+  output_bytes: 5535
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6968794329999923
+  rss_peak_kib: 32804
+  as_peak_kib: 492184
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  repetition: 3
+  input_bytes: 1880
+  output_bytes: 5535
+  warnings: []
+  exception:
+  elapsed_seconds: 0.708379567999998
+  rss_peak_kib: 32832
+  as_peak_kib: 492228
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+  repetition: 1
+  input_bytes: 1460
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: unrecognised format (first uint32=0x00000073)
+    cause:
+      class: Emf::FormatError
+      message: unrecognised format (first uint32=0x00000073)
+  elapsed_seconds: 0.6553943240000137
+  rss_peak_kib: 30736
+  as_peak_kib: 490448
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+  repetition: 2
+  input_bytes: 1460
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: unrecognised format (first uint32=0x00000073)
+    cause:
+      class: Emf::FormatError
+      message: unrecognised format (first uint32=0x00000073)
+  elapsed_seconds: 0.644939289000007
+  rss_peak_kib: 30724
+  as_peak_kib: 490492
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
 - case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
   repetition: 3
   input_bytes: 1460
@@ -952,9 +952,9 @@ samples:
     cause:
       class: Emf::FormatError
       message: unrecognised format (first uint32=0x00000073)
-  elapsed_seconds: 0.6018419910000148
-  rss_peak_kib: 30676
-  as_peak_kib: 490496
+  elapsed_seconds: 0.6325515759999973
+  rss_peak_kib: 30684
+  as_peak_kib: 490504
   exitstatus: 0
   signal:
   safe: true
@@ -968,8 +968,24 @@ samples:
   output_bytes: 22210
   warnings: []
   exception:
-  elapsed_seconds: 0.684703197999994
+  elapsed_seconds: 0.694702551000006
   rss_peak_kib: 33176
+  as_peak_kib: 492436
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
+  repetition: 2
+  input_bytes: 11112
+  output_bytes: 22210
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6950972140000147
+  rss_peak_kib: 33252
   as_peak_kib: 492440
   exitstatus: 0
   signal:
@@ -979,30 +995,14 @@ samples:
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
 - case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
-  repetition: 2
-  input_bytes: 11112
-  output_bytes: 22210
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6842554940000127
-  rss_peak_kib: 33168
-  as_peak_kib: 492436
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
   repetition: 3
   input_bytes: 11112
   output_bytes: 22210
   warnings: []
   exception:
-  elapsed_seconds: 0.6953805949999605
-  rss_peak_kib: 33164
-  as_peak_kib: 492436
+  elapsed_seconds: 0.7265816090000214
+  rss_peak_kib: 33136
+  as_peak_kib: 492432
   exitstatus: 0
   signal:
   safe: true
@@ -1016,8 +1016,8 @@ samples:
   output_bytes: 141447
   warnings: []
   exception:
-  elapsed_seconds: 0.9393740460000117
-  rss_peak_kib: 46768
+  elapsed_seconds: 1.0229185880000102
+  rss_peak_kib: 46808
   as_peak_kib: 634756
   exitstatus: 0
   signal:
@@ -1032,9 +1032,9 @@ samples:
   output_bytes: 141447
   warnings: []
   exception:
-  elapsed_seconds: 0.9510509379999803
-  rss_peak_kib: 46640
-  as_peak_kib: 634764
+  elapsed_seconds: 0.9914538870000058
+  rss_peak_kib: 46544
+  as_peak_kib: 634760
   exitstatus: 0
   signal:
   safe: true
@@ -1048,9 +1048,9 @@ samples:
   output_bytes: 141447
   warnings: []
   exception:
-  elapsed_seconds: 0.9505619990000014
-  rss_peak_kib: 46796
-  as_peak_kib: 634768
+  elapsed_seconds: 0.9906699919999937
+  rss_peak_kib: 46592
+  as_peak_kib: 634760
   exitstatus: 0
   signal:
   safe: true
@@ -1064,23 +1064,7 @@ samples:
   output_bytes: 248
   warnings: []
   exception:
-  elapsed_seconds: 0.7969746979999854
-  rss_peak_kib: 35516
-  as_peak_kib: 494964
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
-  repetition: 2
-  input_bytes: 201616
-  output_bytes: 248
-  warnings: []
-  exception:
-  elapsed_seconds: 0.7970543339999949
+  elapsed_seconds: 0.7962773870000035
   rss_peak_kib: 35688
   as_peak_kib: 494980
   exitstatus: 0
@@ -1091,13 +1075,29 @@ samples:
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
 - case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
+  repetition: 2
+  input_bytes: 201616
+  output_bytes: 248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7861243720000175
+  rss_peak_kib: 35528
+  as_peak_kib: 494968
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
   repetition: 3
   input_bytes: 201616
   output_bytes: 248
   warnings: []
   exception:
-  elapsed_seconds: 0.7779698239999675
-  rss_peak_kib: 35520
+  elapsed_seconds: 0.7955275730000153
+  rss_peak_kib: 35496
   as_peak_kib: 494980
   exitstatus: 0
   signal:
@@ -1112,9 +1112,9 @@ samples:
   output_bytes: 540711
   warnings: []
   exception:
-  elapsed_seconds: 0.7989083000000505
-  rss_peak_kib: 37444
-  as_peak_kib: 497892
+  elapsed_seconds: 0.8171426979999978
+  rss_peak_kib: 38160
+  as_peak_kib: 498340
   exitstatus: 0
   signal:
   safe: true
@@ -1128,9 +1128,9 @@ samples:
   output_bytes: 540711
   warnings: []
   exception:
-  elapsed_seconds: 0.7979502460000276
-  rss_peak_kib: 38048
-  as_peak_kib: 498340
+  elapsed_seconds: 0.8161878779999938
+  rss_peak_kib: 37480
+  as_peak_kib: 497888
   exitstatus: 0
   signal:
   safe: true
@@ -1144,8 +1144,8 @@ samples:
   output_bytes: 540711
   warnings: []
   exception:
-  elapsed_seconds: 0.7978113369999846
-  rss_peak_kib: 38120
+  elapsed_seconds: 0.8056313419999981
+  rss_peak_kib: 38068
   as_peak_kib: 498340
   exitstatus: 0
   signal:
@@ -1160,9 +1160,9 @@ samples:
   output_bytes: 3510057
   warnings: []
   exception:
-  elapsed_seconds: 2.1030638980000163
-  rss_peak_kib: 88240
-  as_peak_kib: 659268
+  elapsed_seconds: 2.1060649669999805
+  rss_peak_kib: 88256
+  as_peak_kib: 659260
   exitstatus: 0
   signal:
   safe: true
@@ -1176,9 +1176,9 @@ samples:
   output_bytes: 3510057
   warnings: []
   exception:
-  elapsed_seconds: 2.034942326000021
-  rss_peak_kib: 88272
-  as_peak_kib: 659060
+  elapsed_seconds: 2.0746024670000054
+  rss_peak_kib: 88276
+  as_peak_kib: 658856
   exitstatus: 0
   signal:
   safe: true
@@ -1192,8 +1192,8 @@ samples:
   output_bytes: 3510057
   warnings: []
   exception:
-  elapsed_seconds: 2.0604856730000165
-  rss_peak_kib: 88264
+  elapsed_seconds: 2.0345119639999893
+  rss_peak_kib: 88260
   as_peak_kib: 659060
   exitstatus: 0
   signal:
@@ -1208,9 +1208,9 @@ samples:
   output_bytes: 141139
   warnings: []
   exception:
-  elapsed_seconds: 0.9522444579999956
-  rss_peak_kib: 50612
-  as_peak_kib: 634556
+  elapsed_seconds: 0.9609394930000121
+  rss_peak_kib: 50716
+  as_peak_kib: 634576
   exitstatus: 0
   signal:
   safe: true
@@ -1224,25 +1224,25 @@ samples:
   output_bytes: 141139
   warnings: []
   exception:
-  elapsed_seconds: 0.9400852690000079
+  elapsed_seconds: 0.9936572879999801
+  rss_peak_kib: 50576
+  as_peak_kib: 634560
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
+  repetition: 3
+  input_bytes: 144416
+  output_bytes: 141139
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9911886530000231
   rss_peak_kib: 50620
-  as_peak_kib: 634552
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
-  repetition: 3
-  input_bytes: 144416
-  output_bytes: 141139
-  warnings: []
-  exception:
-  elapsed_seconds: 0.9406355539999822
-  rss_peak_kib: 50712
-  as_peak_kib: 634612
+  as_peak_kib: 634528
   exitstatus: 0
   signal:
   safe: true
@@ -1259,9 +1259,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.6633252379999703
-  rss_peak_kib: 33068
-  as_peak_kib: 492444
+  elapsed_seconds: 0.6538113089999911
+  rss_peak_kib: 33132
+  as_peak_kib: 492480
   exitstatus: 0
   signal:
   safe: true
@@ -1278,9 +1278,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.6649363810000182
-  rss_peak_kib: 33164
-  as_peak_kib: 492456
+  elapsed_seconds: 0.6570676019999837
+  rss_peak_kib: 33252
+  as_peak_kib: 492460
   exitstatus: 0
   signal:
   safe: true
@@ -1297,9 +1297,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.666115249000029
-  rss_peak_kib: 33116
-  as_peak_kib: 492476
+  elapsed_seconds: 0.6979014770000163
+  rss_peak_kib: 33120
+  as_peak_kib: 492468
   exitstatus: 0
   signal:
   safe: true
@@ -1313,9 +1313,9 @@ samples:
   output_bytes: 638656
   warnings: []
   exception:
-  elapsed_seconds: 0.8790015280000034
-  rss_peak_kib: 45420
-  as_peak_kib: 631968
+  elapsed_seconds: 0.9414338720000046
+  rss_peak_kib: 44224
+  as_peak_kib: 631960
   exitstatus: 0
   signal:
   safe: true
@@ -1329,9 +1329,9 @@ samples:
   output_bytes: 638656
   warnings: []
   exception:
-  elapsed_seconds: 0.9005184519999716
-  rss_peak_kib: 45456
-  as_peak_kib: 631520
+  elapsed_seconds: 0.9293628529999864
+  rss_peak_kib: 45424
+  as_peak_kib: 631512
   exitstatus: 0
   signal:
   safe: true
@@ -1345,9 +1345,9 @@ samples:
   output_bytes: 638656
   warnings: []
   exception:
-  elapsed_seconds: 0.8898960360000387
-  rss_peak_kib: 45536
-  as_peak_kib: 631588
+  elapsed_seconds: 0.9305225589999964
+  rss_peak_kib: 45484
+  as_peak_kib: 631516
   exitstatus: 0
   signal:
   safe: true
@@ -1361,9 +1361,9 @@ samples:
   output_bytes: 7901
   warnings: []
   exception:
-  elapsed_seconds: 0.6748134169999958
-  rss_peak_kib: 32776
-  as_peak_kib: 492208
+  elapsed_seconds: 0.6948000780000143
+  rss_peak_kib: 32788
+  as_peak_kib: 492180
   exitstatus: 0
   signal:
   safe: true
@@ -1377,25 +1377,25 @@ samples:
   output_bytes: 7901
   warnings: []
   exception:
-  elapsed_seconds: 0.6642187859999922
-  rss_peak_kib: 32756
-  as_peak_kib: 492184
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
-  repetition: 3
-  input_bytes: 2552
-  output_bytes: 7901
-  warnings: []
-  exception:
-  elapsed_seconds: 0.6539020809999556
-  rss_peak_kib: 32700
+  elapsed_seconds: 0.7052969359999963
+  rss_peak_kib: 32752
   as_peak_kib: 492188
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
+  repetition: 3
+  input_bytes: 2552
+  output_bytes: 7901
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7172634259999882
+  rss_peak_kib: 32720
+  as_peak_kib: 492180
   exitstatus: 0
   signal:
   safe: true
@@ -1409,8 +1409,8 @@ samples:
   output_bytes: 391207
   warnings: []
   exception:
-  elapsed_seconds: 0.7578121070000066
-  rss_peak_kib: 37044
+  elapsed_seconds: 0.8091445990000068
+  rss_peak_kib: 36964
   as_peak_kib: 628980
   exitstatus: 0
   signal:
@@ -1425,9 +1425,9 @@ samples:
   output_bytes: 391207
   warnings: []
   exception:
-  elapsed_seconds: 0.7657229370000209
-  rss_peak_kib: 37772
-  as_peak_kib: 628984
+  elapsed_seconds: 0.8203016149999769
+  rss_peak_kib: 37788
+  as_peak_kib: 628980
   exitstatus: 0
   signal:
   safe: true
@@ -1441,8 +1441,8 @@ samples:
   output_bytes: 391207
   warnings: []
   exception:
-  elapsed_seconds: 0.7667222659999879
-  rss_peak_kib: 37004
+  elapsed_seconds: 0.8209831309999913
+  rss_peak_kib: 36960
   as_peak_kib: 628980
   exitstatus: 0
   signal:
@@ -1460,8 +1460,27 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.7463293110000109
-  rss_peak_kib: 39324
+  elapsed_seconds: 0.7786343559999978
+  rss_peak_kib: 39456
+  as_peak_kib: 631260
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
+  repetition: 2
+  input_bytes: 143870
+  output_bytes: 36087
+  warnings:
+  - 'emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120
+
+    '
+  exception:
+  elapsed_seconds: 0.7868357320000143
+  rss_peak_kib: 39364
   as_peak_kib: 631164
   exitstatus: 0
   signal:
@@ -1471,7 +1490,7 @@ samples:
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
 - case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
-  repetition: 2
+  repetition: 3
   input_bytes: 143870
   output_bytes: 36087
   warnings:
@@ -1479,8 +1498,8 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.7466529099999661
-  rss_peak_kib: 39276
+  elapsed_seconds: 0.7663469889999988
+  rss_peak_kib: 39400
   as_peak_kib: 631172
   exitstatus: 0
   signal:
@@ -1489,25 +1508,6 @@ samples:
     rss: "/proc/status"
     time: monotonic parent watchdog
     address_space: child RLIMIT_AS
-- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
-  repetition: 3
-  input_bytes: 143870
-  output_bytes: 36087
-  warnings:
-  - 'emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120
-
-    '
-  exception:
-  elapsed_seconds: 0.7360256840000261
-  rss_peak_kib: 39424
-  as_peak_kib: 631260
-  exitstatus: 0
-  signal:
-  safe: true
-  mechanism:
-    rss: "/proc/status"
-    time: monotonic parent watchdog
-    address_space: child RLIMIT_AS
 - case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf
   repetition: 1
   input_bytes: 143847
@@ -1517,9 +1517,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.7871963689999575
-  rss_peak_kib: 41812
-  as_peak_kib: 630412
+  elapsed_seconds: 0.7848992419999945
+  rss_peak_kib: 41672
+  as_peak_kib: 630420
   exitstatus: 0
   signal:
   safe: true
@@ -1536,9 +1536,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.7973328830000241
-  rss_peak_kib: 41804
-  as_peak_kib: 630412
+  elapsed_seconds: 0.7964409319999959
+  rss_peak_kib: 39728
+  as_peak_kib: 630980
   exitstatus: 0
   signal:
   safe: true
@@ -1555,9 +1555,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.7880988670000306
-  rss_peak_kib: 41764
-  as_peak_kib: 630404
+  elapsed_seconds: 0.777958472000023
+  rss_peak_kib: 41756
+  as_peak_kib: 630408
   exitstatus: 0
   signal:
   safe: true
@@ -1574,9 +1574,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.6537783800000057
-  rss_peak_kib: 33176
-  as_peak_kib: 492540
+  elapsed_seconds: 0.6435459010000102
+  rss_peak_kib: 33172
+  as_peak_kib: 492512
   exitstatus: 0
   signal:
   safe: true
@@ -1593,8 +1593,8 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.6542884069999673
-  rss_peak_kib: 33168
+  elapsed_seconds: 0.6519072010000002
+  rss_peak_kib: 33188
   as_peak_kib: 492508
   exitstatus: 0
   signal:
@@ -1612,9 +1612,9 @@ samples:
 
     '
   exception:
-  elapsed_seconds: 0.643545998000036
-  rss_peak_kib: 33128
-  as_peak_kib: 492556
+  elapsed_seconds: 0.6439220980000187
+  rss_peak_kib: 33160
+  as_peak_kib: 492548
   exitstatus: 0
   signal:
   safe: true
@@ -1628,9 +1628,9 @@ samples:
   output_bytes: 17093
   warnings: []
   exception:
-  elapsed_seconds: 0.7866169289999903
-  rss_peak_kib: 40416
-  as_peak_kib: 628628
+  elapsed_seconds: 0.7763874190000024
+  rss_peak_kib: 40420
+  as_peak_kib: 628568
   exitstatus: 0
   signal:
   safe: true
@@ -1644,9 +1644,9 @@ samples:
   output_bytes: 17093
   warnings: []
   exception:
-  elapsed_seconds: 0.7973361169999862
-  rss_peak_kib: 40364
-  as_peak_kib: 628576
+  elapsed_seconds: 0.8082097840000131
+  rss_peak_kib: 40380
+  as_peak_kib: 628584
   exitstatus: 0
   signal:
   safe: true
@@ -1660,8 +1660,8 @@ samples:
   output_bytes: 17093
   warnings: []
   exception:
-  elapsed_seconds: 0.8080491249999682
-  rss_peak_kib: 40360
+  elapsed_seconds: 0.8185075410000024
+  rss_peak_kib: 40368
   as_peak_kib: 628584
   exitstatus: 0
   signal:
@@ -1676,9 +1676,9 @@ samples:
   output_bytes: 5797
   warnings: []
   exception:
-  elapsed_seconds: 0.6957270699999754
-  rss_peak_kib: 33588
-  as_peak_kib: 492928
+  elapsed_seconds: 0.7353786440000079
+  rss_peak_kib: 33776
+  as_peak_kib: 492940
   exitstatus: 0
   signal:
   safe: true
@@ -1692,9 +1692,9 @@ samples:
   output_bytes: 5797
   warnings: []
   exception:
-  elapsed_seconds: 0.6857640340000444
-  rss_peak_kib: 33600
-  as_peak_kib: 492940
+  elapsed_seconds: 0.7469194579999794
+  rss_peak_kib: 33620
+  as_peak_kib: 492908
   exitstatus: 0
   signal:
   safe: true
@@ -1708,9 +1708,9 @@ samples:
   output_bytes: 5797
   warnings: []
   exception:
-  elapsed_seconds: 0.6956231059999709
-  rss_peak_kib: 33472
-  as_peak_kib: 492816
+  elapsed_seconds: 0.7573520230000099
+  rss_peak_kib: 33604
+  as_peak_kib: 492932
   exitstatus: 0
   signal:
   safe: true
