@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
+require "fontisan"
 require "rbconfig"
 require_relative "../scripts/support/font_qualification"
 
@@ -47,6 +48,30 @@ RSpec.describe FontQualification do
     expect(result.fetch("cmap_sha256")).to eq(font.fetch("cmap_sha256"))
     expect(result.fetch("required_mappings").fetch(155)).to be_nil
     expect(result.fetch("bytes")).to eq(File.size(font.fetch("path")))
+  end
+
+  it "reads cmap mappings through Fontisan's public API" do
+    font = @contract.fetch("fonts").fetch("verdana_regular")
+    cmap = File.binread(font.fetch("path")).byteslice(28..)
+    mapper = Emfsvg::GlyphIndexMapper.new
+    allow(Emfsvg::GlyphIndexMapper).to receive(:new).and_return(mapper)
+    allow(Fontisan::Tables::Cmap).to receive(:read).and_call_original
+    expect(mapper).not_to receive(:parse_cmap_reverse)
+
+    qualifier.attest_font("verdana_regular", "David", "David", font.fetch("path"))
+
+    expect(Fontisan::Tables::Cmap).to have_received(:read).with(cmap)
+  end
+
+  it "keeps the last codepoint when reversing duplicate glyph mappings" do
+    font = @contract.fetch("fonts").fetch("verdana_regular")
+    mappings = FontQualification::REQUIRED.fetch("David").compact.invert
+    mappings[0x002E] = 15
+    cmap = double(unicode_mappings: mappings)
+    allow(Fontisan::Tables::Cmap).to receive(:read).and_return(cmap)
+
+    expect { qualifier.attest_font("verdana_regular", "David", "David", font.fetch("path")) }
+      .to(raise_error { |error| expect(error.message).to include("15 => 44") })
   end
 
   it "rejects a matching file hash whose required cmap mapping is incompatible" do

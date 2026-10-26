@@ -2,6 +2,7 @@
 
 require "cgi"
 require "digest"
+require "fontisan"
 require "json"
 require "open3"
 require "rexml/document"
@@ -110,9 +111,11 @@ class FontQualification
     cmap_sha = Digest::SHA256.hexdigest(cmap)
     raise "cmap checksum mismatch for #{role}" unless cmap_sha == font.fetch("cmap_sha256")
 
-    mapper = Emfsvg::GlyphIndexMapper.new
-    reverse = mapper.send(:parse_cmap_reverse, path)
-    raise "Cannot parse cmap for #{role}" unless reverse
+    forward = Fontisan::Tables::Cmap.read(cmap).unicode_mappings
+    reverse = forward.each_with_object({}) do |(codepoint, glyph_id), mappings|
+      # Last codepoint wins, matching FreeType's FT_Get_Next_Char behavior.
+      mappings[glyph_id] = codepoint
+    end
 
     mismatches = REQUIRED.fetch(family).reject { |gid, codepoint| reverse[gid] == codepoint }
     raise "Incompatible glyph mappings for #{role}: #{mismatches.inspect}" unless mismatches.empty?
