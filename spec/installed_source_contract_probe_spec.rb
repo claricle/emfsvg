@@ -8,6 +8,13 @@ require_relative "support/installed_resource_probe_fixture"
 RSpec.describe Emfsvg::InstalledSourceContractProbe do
   include InstalledSourceContractFixture
 
+  around do |example|
+    previous = ENV.delete("EMF_NATIVE_LIBRARY")
+    example.run
+  ensure
+    ENV["EMF_NATIVE_LIBRARY"] = previous if previous
+  end
+
   it "rejects a short expected revision before inspecting installed gems" do
     expect do
       described_class.call("/missing", "bad", "/missing/image.emf")

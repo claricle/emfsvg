@@ -71,7 +71,7 @@ RSpec.describe Emfsvg::SpecSupport::BoundedConversion do
   end
 
   it "refuses authoritative macOS address-space evidence" do
-    skip "macOS capability check" unless RbConfig::CONFIG.fetch("host_os").include?("darwin")
+    allow(RbConfig::CONFIG).to receive(:fetch).with("host_os").and_return("darwin")
 
     expect { bounded_run("exit", authoritative: true) }
       .to raise_error(described_class::PreconditionError,
