@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative "local_origin"
-
 module Emfsvg
   module Translation
     # Walks an Svg::Document tree to decide whether any coordinate

@@ -12,5 +12,6 @@ module Emfsvg
     autoload :Handlers, "emfsvg/translation/handlers"
     autoload :Scaler, "emfsvg/translation/scaler"
     autoload :DecimalDetector, "emfsvg/translation/decimal_detector"
+    autoload :LocalOrigin, "emfsvg/translation/local_origin"
   end
 end

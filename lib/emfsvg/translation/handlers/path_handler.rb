@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "emf"
-require_relative "../local_origin"
 
 module Emfsvg
   module Translation
