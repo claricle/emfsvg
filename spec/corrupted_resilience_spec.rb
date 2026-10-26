@@ -6,6 +6,10 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
   include Emfsvg::SpecSupport::ResourceCalibrationFixture
 
   it "checks every declared corrupt input against qualified native Linux limits" do
+    unless described_class.qualification_requested?
+      skip "Corrupt corpus qualification requires explicit released artifacts"
+    end
+
     begin
       Emfsvg::ResourceCalibration::Prerequisites.verify!(ParityProvenance::DEFAULT_MANIFEST,
                                                          ENV.fetch("EMF_FIXTURE_ROOT", ""))
@@ -19,6 +23,15 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
     described_class.new.run(manifest: ParityProvenance::DEFAULT_MANIFEST,
                             fixture_root: ENV.fetch("EMF_FIXTURE_ROOT"),
                             baseline: File.expand_path("fixtures/resource_limits/emfsvg-v1.yml", __dir__))
+  end
+
+  it "keeps an artifact-free generic matrix separate from mandatory released qualification" do
+    expect(described_class.qualification_requested?({})).to be(false)
+    expect(described_class.qualification_requested?({ "EMF_FIXTURE_ROOT" => "corpus" })).to be(false)
+    %w[EMF_RELEASE_PACKAGE EMF_NATIVE_LIBRARY EMF_NATIVE_PROVENANCE QUALIFICATION_MODE].each do |key|
+      expect(described_class.qualification_requested?({ key => "" })).to be(true)
+      expect(described_class.qualification_requested?({ key => "missing" })).to be(true)
+    end
   end
 
   context "with small synthetic caller mechanics (not production qualification)" do

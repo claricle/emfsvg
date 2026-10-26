@@ -28,6 +28,12 @@ module Emfsvg
         end
       end
 
+      def self.qualification_requested?(environment = ENV)
+        %w[EMF_RELEASE_PACKAGE EMF_NATIVE_LIBRARY EMF_NATIVE_PROVENANCE QUALIFICATION_MODE].any? do |key|
+          environment.key?(key)
+        end
+      end
+
       def initialize(qualification: Calibration::Prerequisites, runner: BoundedConversion)
         @qualification = qualification
         @runner = runner
