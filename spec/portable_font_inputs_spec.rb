@@ -183,7 +183,7 @@ RSpec.describe PortableFontInputs do
 
   context "with the discovered archive extractor" do
     let(:archive_provisioner) { described_class.new(options, downloader: downloader) }
-    let(:tool) { File.join(@directory, "7zz") }
+    let(:tool) { File.join(@directory, "7zz.exe") }
 
     before do
       File.write(tool, "")
@@ -229,7 +229,8 @@ RSpec.describe PortableFontInputs do
       expect(Dir.children(File.join(directory, "fonts")).sort)
         .to eq(described_class::FONTS.values.map { |_installer, entry, _sha, _cmap| entry }.sort)
       expect(Dir.children(directory).sort).to eq(%w[arial32.exe fonts verdan32.exe])
-      expect(Dir.children(@directory).sort).to eq(["7zz", File.basename(directory), "contract.json", "reference"].sort)
+      expect(Dir.children(@directory).sort)
+        .to eq(["7zz.exe", File.basename(directory), "contract.json", "reference"].sort)
       expect(JSON.parse(File.read(options.fetch("contract_path")))).to eq(contract)
     end
   end
