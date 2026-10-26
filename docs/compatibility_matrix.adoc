@@ -61,6 +61,15 @@ Text record alignment (`e271b64`) and omitted font weight preservation (`34398cd
 restore the `image1` round trip: all 195 text records remain typed, no parse errors
 are reported, and the output matches all 39,849 input bytes.
 
+The source workflow succeeded for candidate
+`28a46e8e29013bdaad680045946d46e6fbb546d6` (`40329403437`). Separate recorded
+checks at that candidate reported zero differences in the 208 C golden, 209
+round-trip, and 426 compatibility comparison groups; committed fixtures remained
+unchanged. Lint separately reported 256 clean files. These results qualify that
+prerelease source candidate only. They do not establish released package/native
+provenance, a reviewed resource baseline, or the separate whole-suite release
+acceptance gate.
+
 A deliberately pinned libemf2svg 1.8.1 build at
 `ca88c51f2f86e4a885b6aa5280ce3e7419cb73e5` reproduces all 208 committed C goldens
 byte for byte under bounded sequential execution. The manifest records its
@@ -68,12 +77,15 @@ source, wrapper, binary, library and audit report checksums; the fixture guide
 records its build inputs. This qualifies the current reference pin while leaving
 the identity of the original historical builder unknown. No golden was changed.
 
-Full Ruby corpus parity and the generated-output aggregate remain unqualified.
-`scripts/check_parity_provenance.rb` still exits nonzero for the unreleased
-runtime, unlanded diagnostic/resource contracts, and missing native artifact.
-The diagnostic and resource prerequisites are tracked separately in
+The manifest pins the model contract from
+https://github.com/claricle/emf/issues/15[emf #15] at
+`318b2d86c4025b5913c595c5055477124199daf9`, and diagnostics and resources from
 https://github.com/claricle/emf/issues/65[emf #65] and
-https://github.com/claricle/emf/issues/66[emf #66]. Neither has a landed revision.
+https://github.com/claricle/emf/issues/66[emf #66] at
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`. These contracts have landed; the
+remaining manifest blockers are release provenance and production evidence. The
+manifest runtime is still an unqualified temporary Git integration with no
+released package SHA, and the required native library identity is unavailable.
 
 The temporary runtime pin exposes the delivered diagnostic and typed-resource
 interfaces. The shared conversion boundary emits one physical-record-ordered
@@ -89,8 +101,10 @@ Fixture 109 now individually preserves its source through production SVG → EMF
 bytes (SHA-256 `4e0c8eb9c8055887598af55854db636cdcf562d42ad82439642a84ec4f488f7b`).
 Scoped integer origins preserve independent overflowing lines, and canonical
 nested clip intervals end before successor draws. Fixture 150 also has an
-individual exact proof. The earlier full roundtrip audit remains 199/208; a
-fresh full audit is required before reporting a new aggregate.
+individual exact proof. An earlier full roundtrip audit recorded 199/208; the
+later final-candidate exact regeneration comparison reported zero differences
+across all 209 round-trip comparisons, alongside the 208 C golden and 426
+compatibility comparison groups.
 
 Fresh-process tests cover a real supported conversion, malformed-byte parse
 error, and an upstream input-byte resource refusal without loading the reference
@@ -101,9 +115,11 @@ This host evidence does not qualify released native packages or other platforms.
 
 The bounded subprocess helper (`c4960c6`) has benign-child macOS evidence for
 RSS/time enforcement and process-group cleanup. macOS address-space enforcement
-is unsupported and authoritative mode is refused. Linux `/proc` metrics and
-child `RLIMIT_AS` are implemented but unverified on a Linux host. There is no
-calibrated corpus baseline or corrupted-corpus resource acceptance result.
+is unsupported and authoritative mode is refused. Linux source qualification
+observed the bounded inventory on a real Linux host with zero unsafe samples;
+that source-only observation is not the released-runtime calibration baseline.
+There is no reviewed calibrated corpus baseline or released corrupted-corpus
+resource acceptance result.
 
 == Conversion resource guards
 
@@ -147,20 +163,21 @@ remaining corrupted-input acceptance contract must distinguish recoverable
 malformed records (SVG plus the exact structured skipped-record warnings) from
 unreadable containers (typed parse failure with its cause and no partial SVG).
 It must also establish typed upstream resource failures with their metadata and
-causes. Qualification of those outcomes across Ruby, native, and auto actually
-selecting native remains blocked on released upstream diagnostics/resources and
-the public conformance adapter. Warning fields and native-selection reporting
-must follow those landed interfaces rather than an inferred contract.
+causes. The prerelease source qualification exercises these outcomes with the landed
+interfaces, including native-selected auto. Released qualification across Ruby,
+native, and auto actually selecting native still depends on the released package,
+native provenance, reviewed baseline, and public conformance result. Warning
+fields and native-selection reporting follow the pinned landed contracts.
 
 == Resource calibration command
 
 `scripts/calibrate_resource_limits.rb` prepares generation and verification of a
-versioned resource baseline. It currently refuses before corpus execution:
-upstream https://github.com/claricle/emf/issues/65[emf #65] and
-https://github.com/claricle/emf/issues/66[emf #66] have no pinned landed revisions,
-the released runtime/package and native artifact are unqualified, and the public
-calibration adapter is not yet qualified. Filling manifest fields alone cannot qualify
-the loaded implementation. There is no generated corpus baseline.
+versioned resource baseline. The manifest pins the required model, diagnostics,
+and resources contract revisions, but still marks its temporary runtime
+unqualified and its native library unavailable. There is no reviewed generated
+corpus baseline, and source-level adapter behavior does not qualify a released
+package or native artifact. Filling manifest fields alone cannot qualify the
+loaded implementation.
 
 The adapter must verify the exact manifest-selected corpus, independently loaded
 released runtime and package digest, native artifact/ABI, and public conversion
@@ -169,7 +186,7 @@ prerequisite; environment variables alone do not prove the selected backend.
 The existing command reuses `scripts/check_parity_provenance.rb` metadata checks
 and requires the two exact upstream issue identities. Its executable sampling,
 schema, derivation, drift, and atomic-write behavior has focused synthetic tests.
-A production adapter core now exercises public conversion in a fresh process,
+A production adapter core exercises public conversion in a fresh process,
 checks exact SVG bytes and warnings, preserves typed exceptions and causes,
 and rejects input/runtime/artifact drift or backend fallback. It observes the
 selected backend through the public `Emf.backend` API, which reports `:ruby` or
@@ -184,9 +201,12 @@ bypass those checks, which are required before corpus calibration.
 prerequisite gate. It requires exact manifest source paths, hashes and reviewed
 outcomes for every corrupt input, checks the stored baseline ceilings, and
 verifies that the baseline and forbidden-reference sentinel remain unchanged.
-Its synthetic mechanics tests do not qualify the corpus. The real corpus example
-reports the missing qualification explicitly; it cannot turn unresolved manifest
-outcomes into observed expectations or generate a baseline.
+The source qualification observed the pinned inventory of all 21 corrupt inputs
+plus nine fixed valid controls (90 samples over three repetitions) with native
+selected on Linux, with zero unsafe samples. That evidence attests an earlier
+source SHA and is not the versioned baseline schema or released-runtime
+qualification; the real release corpus example still requires the reviewed
+baseline and released provenance.
 
 The following is the intended invocation once those gates are satisfied. Set all
 three outer caps explicitly for the host; there are no default caps. Values must

@@ -16,13 +16,13 @@ builder identity remains unrecovered.
 
 The manifest runtime remains `unqualified`: it is a temporary Git integration
 of `emf` 0.1.2 at source revision
-`99a8c21256cbe902e243cc0bcac65b282ec52bf4`, with no package SHA. The manifest
-states that no released tag contains the required model contract and no
-released package has been qualified. The model contract issue #15 is pinned to
-`318b2d86c4025b5913c595c5055477124199daf9`; the diagnostics (#65) and resources
-(#66) landed revisions are blank. The required native library is unavailable;
-its source revision, artifact SHA-256, and ABI fields are blank. Production
-selection requires `auto` to select `native`.
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`, with no package SHA. The model
+contract issue #15 is pinned to `318b2d86c4025b5913c595c5055477124199daf9`;
+diagnostics (#65) and resources (#66) are pinned to
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`. These upstream contracts have
+landed, but the released runtime package has not been qualified. The required
+native library is unavailable; its source revision, artifact SHA-256, and ABI
+fields are blank. Production selection requires `auto` to select `native`.
 
 The manifest's reference is a verified deliberate current pin, not recovered
 historical provenance: libemf2svg 1.8.1 source revision
@@ -60,6 +60,32 @@ files unchanged. This is bounded host evidence only: Darwin address-space
 enforcement was unsupported, and the observation is not a Linux resource
 baseline, released-package proof, or cross-platform qualification.
 
+== Prerelease source evidence and release workflow
+
+The prerelease source workflow succeeded for candidate
+`28a46e8e29013bdaad680045946d46e6fbb546d6` (run `40329403437`). Separate
+recorded checks at that candidate reported zero differences in the 208 C golden,
+209 round-trip, and 426 compatibility comparison groups; fixtures remained
+unchanged. Lint separately reported 256 clean files. This is source qualification
+evidence, not released-package qualification. The bounded Linux source
+observation covered 90 samples: the pinned 21 corrupt inputs and nine fixed
+valid controls, each repeated three times with native selected. It reported no
+unsafe samples. The machine-readable observation attests source revision
+`98a8e14990e78d5d5e178e7880667d05b325ac10`, so it must not be represented as
+evidence for candidate `28a46e8` or as a calibrated baseline.
+
+The repository now has a fail-closed released Linux qualification workflow
+(`.github/workflows/released-qualification.yml`) for pull requests and manual
+dispatch. It verifies the reviewed released manifest, Rubygems lock, package
+archive, native artifact/provenance, and installed runtime before qualification.
+Manual `generate` mode writes a candidate baseline as an artifact for separate
+review; `check` mode requires a committed reviewed baseline, runs the bounded
+calibration check and full RSpec suite, then enforces the whole-suite and exact
+golden/round-trip/compatibility counts with no failures, pending examples,
+skips, omissions, or duplicates. The workflow and gate implementation exist,
+but no successful released qualification result is recorded here and the current
+manifest still lacks the required released package and native identities.
+
 == Remaining comparison and qualification evidence
 
 The latest full-suite evidence available here is from Ubuntu at checkout
@@ -69,16 +95,18 @@ and 12 pending. Seven failures are known round-trip mismatches for
 `test-158.svg`, `test-159.svg`, and `EA-test-file-004.svg`. The eighth was the
 stale expectation that missing corrupt-outcome digests must be rejected; that
 expectation was corrected at `509428102d1c8145c58f6e23257a471762961516`.
-This is not a full-suite result for the current head; a final-head full-suite
-run remains outstanding.
+This is not a full-suite result for the current head. The later successful
+prerelease source workflow and exact comparison do not replace the required
+released-workflow full-suite result.
 
 A historical audit at `23fd052` recorded 201 exact results, seven mismatches,
 and no errors. That audit predates the current head and is not final-head proof.
-The 426-example compatibility group has not been completed as a current
-comparison result. Production qualification of all three backends (Ruby,
-native, and `auto` actually selecting native) remains outstanding, as does a
-Linux resource baseline and platform qualification on Linux, Windows, and
-Darwin.
+The final-candidate exact regeneration comparison covers the 208/209/426
+comparison groups, but the required whole-suite acceptance (at least the
+manifest's 1,048 baseline examples plus added contracts, all passing with no
+skips or pending) has not been recorded. Released production qualification and
+its Linux resource baseline remain outstanding. The source workflow result does
+not qualify a released runtime or replace release check mode.
 
 Release readiness also requires an exact released `.gem` supplied as
 `EMF_RELEASE_PACKAGE`, the actual shared library as `EMF_NATIVE_LIBRARY`, and
@@ -86,8 +114,7 @@ matching `EMF_NATIVE_PROVENANCE` JSON containing `artifact_sha256`,
 `source_revision`, and `abi`. The gate validates those artifacts and the
 installed locked runtime before bounded public conformance; arbitrary metadata
 alone cannot satisfy it. The current manifest lacks the released package and
-native provenance identities, and issues #65 and #66 lack pinned landed
-revisions. Therefore the manifest remains unqualified and the production gate
-is expected to reject the current real inputs. Do not describe the package
-check, reviewed expectations, or Darwin observation as full parity, release
-proof, or portable qualification.
+native provenance identities. Therefore the manifest remains unqualified and
+the released qualification workflow is expected to reject the current real
+inputs. Do not describe the package check, reviewed expectations, or Darwin
+observation as full parity, release proof, or portable qualification.
