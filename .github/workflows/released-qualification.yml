@@ -1,0 +1,137 @@
+name: Released runtime Linux qualification
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Check reviewed baseline, or collect a candidate for separate review
+        type: choice
+        options: [check, generate]
+        default: check
+
+jobs:
+  released-linux:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      BUNDLE_FROZEN: 'true'
+      EMF_BACKEND: auto
+      QUALIFICATION_MODE: ${{ inputs.mode || 'check' }}
+      MANIFEST: spec/fixtures/parity_manifest.yml
+      BASELINE: spec/fixtures/resource_limits/emfsvg-v1.yml
+      NATIVE_URL: ${{ vars.EMF_RELEASE_NATIVE_URL }}
+      NATIVE_PROVENANCE_URL: ${{ vars.EMF_RELEASE_NATIVE_PROVENANCE_URL }}
+      OUTER_TIMEOUT: ${{ vars.EMF_RELEASE_TIMEOUT_SECONDS }}
+      OUTER_RSS: ${{ vars.EMF_RELEASE_RSS_CAP_MIB }}
+      OUTER_AS: ${{ vars.EMF_RELEASE_AS_CAP_MIB }}
+    steps:
+      - name: Set evidence paths
+        shell: bash
+        run: |
+          evidence="$RUNNER_TEMP/released-qualification"
+          printf 'EVIDENCE=%s\nEMF_RELEASE_PACKAGE=%s/emf.gem\nEMF_NATIVE_LIBRARY=%s/libemf_ffi.so\nEMF_NATIVE_PROVENANCE=%s/native.json\n' \
+            "$evidence" "$evidence" "$evidence" "$evidence" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4.8'
+      - name: Require reviewed released manifest and Rubygems lock
+        shell: bash
+        run: |
+          mkdir -p "$EVIDENCE"
+          ruby scripts/qualify_released_runtime.rb plan "$MANIFEST" Gemfile.lock | tee "$EVIDENCE/plan.json"
+          test -n "$OUTER_TIMEOUT" && test -n "$OUTER_RSS" && test -n "$OUTER_AS"
+          if [ "$QUALIFICATION_MODE" = check ]; then
+            test -f "$BASELINE"
+            sha256sum "$BASELINE" > "$EVIDENCE/reviewed-baseline.sha256"
+          elif [ "$GITHUB_EVENT_NAME" != workflow_dispatch ] || [ "$QUALIFICATION_MODE" != generate ]; then
+            echo 'Candidate generation requires explicit manual dispatch' >&2
+            exit 1
+          fi
+      - name: Download and verify the released package and pinned native evidence
+        shell: bash
+        run: |
+          package_url="$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV.fetch(0))).fetch("package_url")' "$EVIDENCE/plan.json")"
+          curl --fail --location --proto '=https' --proto-redir '=https' "$package_url" --output "$EMF_RELEASE_PACKAGE"
+          ruby scripts/qualify_released_runtime.rb archive "$MANIFEST" "$EMF_RELEASE_PACKAGE" | tee "$EVIDENCE/archive.json"
+          for url in "$NATIVE_URL" "$NATIVE_PROVENANCE_URL"; do
+            case "$url" in https://*) ;; *) echo 'Explicit HTTPS released native evidence URLs required' >&2; exit 1 ;; esac
+          done
+          curl --fail --location --proto '=https' --proto-redir '=https' "$NATIVE_URL" --output "$EMF_NATIVE_LIBRARY"
+          curl --fail --location --proto '=https' --proto-redir '=https' "$NATIVE_PROVENANCE_URL" --output "$EMF_NATIVE_PROVENANCE"
+          printf '%s\n' "$package_url" "$NATIVE_URL" "$NATIVE_PROVENANCE_URL" > "$EVIDENCE/download-urls.txt"
+          mkdir -p vendor/cache
+          package_name="${package_url##*/}"
+          cp "$EMF_RELEASE_PACKAGE" "vendor/cache/$package_name"
+          bundle install
+      - name: Fetch pinned corpus and qualify pinned portable fonts
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fontconfig p7zip-full
+          corpus_revision="$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV.fetch(0))).fetch("corpus_revision")' "$EVIDENCE/plan.json")"
+          corpus_root="$RUNNER_TEMP/released-corpus"
+          git init "$corpus_root"
+          git -C "$corpus_root" remote add origin https://github.com/claricle/emf.git
+          git -C "$corpus_root" fetch --depth 1 origin "$corpus_revision"
+          git -C "$corpus_root" checkout --detach FETCH_HEAD
+          test "$(git -C "$corpus_root" rev-parse HEAD)" = "$corpus_revision"
+          printf 'EMF_FIXTURE_ROOT=%s\n' "$corpus_root" >> "$GITHUB_ENV"
+          EMF_FIXTURE_ROOT="$corpus_root" bundle exec ruby -rjson -rfileutils -rrbconfig -e '
+            directory = File.join(ENV.fetch("RUNNER_TEMP"), "released-fonts")
+            FileUtils.mkdir_p(directory)
+            options = { "staging_directory" => directory, "corpus_root" => ENV.fetch("EMF_FIXTURE_ROOT"),
+                        "output_directory" => File.join(directory, "qualified"),
+                        "contract_path" => File.join(directory, "contract.json") }
+            path = File.join(directory, "options.json")
+            File.write(path, JSON.generate(options))
+            abort "Font provisioning failed" unless system(RbConfig.ruby, "scripts/provision_qualification_fonts.rb", path)
+            abort "Font qualification failed" unless system(RbConfig.ruby, "scripts/qualify_fonts.rb", options.fetch("contract_path"), "--ruby-only")
+            evidence = File.join(ENV.fetch("EVIDENCE"), "fonts")
+            FileUtils.mkdir_p(evidence)
+            FileUtils.cp(options.fetch("contract_path"), evidence)
+            FileUtils.cp(File.join(options.fetch("output_directory"), "qualification.json"), evidence)
+            File.open(ENV.fetch("GITHUB_ENV"), "a") do |file|
+              file.puts "FONTCONFIG_FILE=#{File.join(options.fetch("output_directory"), "fonts.conf")}"
+              file.puts "FONTCONFIG_PATH=#{options.fetch("output_directory")}"
+            end
+          ' 2>&1 | tee "$EVIDENCE/fonts.log"
+      - name: Verify public contracts and collect bounded Linux observations
+        shell: bash
+        run: |
+          if [ "$QUALIFICATION_MODE" = generate ]; then
+            destination=(--output "$EVIDENCE/candidate-emfsvg-v1.yml")
+          else
+            destination=(--baseline "$BASELINE")
+          fi
+          # The CLI verifies archive/installed bytes, ABI, native auto selection and all three backends first.
+          bundle exec ruby scripts/calibrate_resource_limits.rb "$QUALIFICATION_MODE" \
+            --manifest "$MANIFEST" --fixture-root "$EMF_FIXTURE_ROOT" "${destination[@]}" \
+            --timeout-seconds "$OUTER_TIMEOUT" --outer-rss-cap-mib "$OUTER_RSS" --outer-as-cap-mib "$OUTER_AS" \
+            2>&1 | tee "$EVIDENCE/calibration.log"
+      - name: Run full acceptance with the reviewed baseline
+        if: env.QUALIFICATION_MODE == 'check'
+        shell: bash
+        run: |
+          bundle exec rspec --format progress --format json --out "$EVIDENCE/rspec.json" \
+            2>&1 | tee "$EVIDENCE/rspec.log"
+          bundle exec ruby scripts/qualify_released_runtime.rb acceptance "$MANIFEST" "$EVIDENCE/rspec.json" \
+            | tee "$EVIDENCE/acceptance.json"
+      - name: Preserve reviewed fixture bytes
+        if: always()
+        shell: bash
+        run: |
+          if [ -f "$EVIDENCE/reviewed-baseline.sha256" ]; then
+            sha256sum --check "$EVIDENCE/reviewed-baseline.sha256"
+          fi
+          git diff --exit-code -- spec/fixtures Gemfile.lock
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: released-linux-${{ inputs.mode || 'check' }}-evidence
+          path: ${{ runner.temp }}/released-qualification/
+          if-no-files-found: warn
