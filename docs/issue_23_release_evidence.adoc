@@ -14,16 +14,32 @@ compatibility examples. The current manifest records 208 accepted C golden
 outputs as byte-equal for the deliberate reference pin; its historical source
 builder identity remains unrecovered.
 
-The manifest runtime remains `unqualified`: it is a temporary Git integration
-of `emf` 0.1.2 at source revision
-`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`, with no package SHA. The model
-contract issue #15 is pinned to `318b2d86c4025b5913c595c5055477124199daf9`;
-diagnostics (#65) and resources (#66) are pinned to
-`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`. These upstream contracts have
-landed, but the released runtime package has not been qualified. The required
-native library is recorded as unavailable in the manifest; its source revision,
-artifact SHA-256, and ABI fields are blank. Production selection requires
-`auto` to select `native`.
+The accepted published runtime is `emf` 0.2.0 at source revision
+`327c36b49743bcb9799c20123218f0bae965f1de`. The package and bundled native
+library identities for all eight published platforms were independently
+verified against their published bytes; manifest integration is underway.
+This establishes artifact identity, not runtime qualification. The previous
+temporary Git integration was `emf` 0.1.2 at
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`. The model contract issue #15 is
+pinned to `318b2d86c4025b5913c595c5055477124199daf9`; diagnostics (#65) and
+resources (#66) are pinned to the 0.2.0 source revision above. Linux release
+qualification, including the native resource baseline, remains outstanding.
+Production selection requires `auto` to select `native`.
+
+The verified published package/native checksums are:
+
+[cols="1,2,2",options="header"]
+|===
+|Platform |Package SHA-256 |Native library SHA-256
+|`aarch64-linux-gnu` |`c94e82c3ded5bc37817ec4cfbbd7237de5a92f47f8e265383b22943dd0f31a47` |`3470dc02cd9e25950d0957714c85a6720fc28d43cde963ae5000c4a49a843e90`
+|`aarch64-linux-musl` |`ec6b2eaedc2df61f2ff73764a0bcdb587c61902bc03d33f706d7b22d20f11cd9` |`52ea62825cf1ffb42144b1b5fa1bcb9559155faa948347aab50cb898207db13b`
+|`arm64-darwin` |`718f1cf60e3c2facf2fa11061ce8bae073081bca5e08b374a381b167e4ada2fb` |`0e243cd190836ab8809cab5fbee7e38d2454cbb869754f2de01de86f40b04e8d`
+|`x64-mingw-ucrt` |`6a2a1a85585c21ba30eac9d4c2bbef169d69f82690e1f69741f825cb117a54ae` |`e6aef3f0f869ae77278221ded2aa2fe081ea37802644c44264e6b51791e123a8`
+|`x86_64-darwin` |`1c447c202335b91d66ec422646326a27e2a3329bf8d15e4dd5aa9dbe14ca8ad1` |`1a3229464f00e4f0999987abaf7f57f7d5d73e24587087171b8cb3cb630f8d9d`
+|`x86_64-linux-gnu` |`393f7d558034e924379246ca3be9ac7e1293d4cb975ff6992f87256dd7cfb7a7` |`068d51ffed604b277b599b9916ee7c8cd15f61b8004719362efeaa28101cf01e`
+|`x86_64-linux-musl` |`a5bdc61de5f30cc64be14d6b020fdf2d2ace9b953c721b44e7ec999c5fd06d86` |`30c7456e35e6c67d3fee428ab3dccd544c0650b913640862f51b01713b78ecaa`
+|`ruby` |`6b3add05605260d646ec1d732da139eb972016c6fe4547aa60846a2ac2f542fa` |(no native library)
+|===
 
 The manifest's reference is a verified deliberate current pin, not recovered
 historical provenance: libemf2svg 1.8.1 source revision
@@ -97,8 +113,9 @@ review; `check` mode requires a committed reviewed baseline, runs the bounded
 calibration check and full RSpec suite, then enforces the whole-suite and exact
 golden/round-trip/compatibility counts with no failures, pending examples,
 skips, omissions, or duplicates. The workflow and gate implementation exist,
-but no successful released qualification result is recorded here and the current
-manifest still lacks the required released package and native identities.
+but no successful released qualification result is recorded here. Published
+package and native identities are verified and their manifest integration is
+underway; the Linux resource baseline remains outstanding.
 
 == Current source evidence and remaining qualification
 
@@ -129,9 +146,10 @@ The platform matrix at `34117b75` (run `40339553534`) reported a macOS Ruby
 and macOS Ruby 3.3 passed; the remaining Ruby 4.0 jobs had no terminal result
 recorded at this checkpoint. The race was fixed at
 `125e4127484e88d244e17438725290bfa9c96b6c`, where four focused examples passed
-and changed-file lint was clean. Final-head source run `40341853322` and Rake
-run `40341855041` are pending. Final-head platform acceptance is not yet
-established.
+and changed-file lint was clean. Subsequent prerelease source workflow run
+`40357215314` succeeded with 430 examples and zero failures; its 90 bounded
+observations remain prerelease source evidence only. Final-head platform
+acceptance and the full released-runtime baseline remain outstanding.
 
 Released workflow runs `40339551534` and `40341853046` failed at manifest
 preflight and did not qualify the released runtime. The installed-consumer
@@ -155,7 +173,8 @@ Release readiness also requires an exact released `.gem` supplied as
 matching `EMF_NATIVE_PROVENANCE` JSON containing `artifact_sha256`,
 `source_revision`, and `abi`. The gate validates those artifacts and the
 installed locked runtime before bounded public conformance; arbitrary metadata
-alone cannot satisfy it. The current manifest lacks the released package and
-native provenance identities. The manifest remains unqualified. Do not describe
-the package check, reviewed expectations, or Darwin observation as full parity,
-release proof, or portable qualification.
+alone cannot satisfy it. Published package and native identities are verified
+and their manifest integration is underway. Until the full released workflow
+passes, the manifest/runtime remains unqualified. Do not describe the package
+identity check, reviewed expectations, prerelease source run, or Darwin
+observation as full parity, release proof, or portable qualification.

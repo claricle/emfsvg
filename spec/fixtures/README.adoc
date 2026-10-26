@@ -48,24 +48,29 @@ are checked before comparison collection.
 == Provenance readiness
 
 The manifest deliberately distinguishes verified inventory integrity from
-unqualified runtime/native metadata and a verified deliberate current C pin.
+runtime qualification and a verified deliberate current C pin.
 The original historical C source identity remains unknown; current qualification
 establishes reproduction of the accepted reference bytes, not historical recovery.
-Run `bundle exec ruby scripts/check_parity_provenance.rb` to list unresolved
-metadata. This currently exits nonzero; it does not verify actual backend
-selection, loaded package identity, or native behavior.
+The published `emf` 0.2.0 package and bundled native library identities for all
+eight platforms are verified at source revision
+`327c36b49743bcb9799c20123218f0bae965f1de`; manifest integration is underway.
+Artifact identity does not establish runtime behavior. Run
+`bundle exec ruby scripts/check_parity_provenance.rb` to list any remaining
+unresolved metadata; this check does not verify actual backend selection or
+native behavior.
 
-Development currently uses the temporary Git runtime pin
-`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`, which contains the landed model,
-diagnostics, and resources contracts, separate from the corpus revision.
-`spec/runtime_dependency_spec.rb` verifies the lockfile, loaded Git checkout,
-and entry point independently. This is integration evidence; a containing
-qualified released package is still required.
+The earlier development integration used the temporary Git runtime pin
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`; it contains the model, diagnostics,
+and resources contracts, separate from the corpus revision. The published
+package identity is being integrated into the runtime lock and manifest.
+`spec/runtime_dependency_spec.rb` verifies the lockfile, loaded runtime, and
+entry point independently. The released runtime still requires Linux native
+qualification and its resource baseline.
 
 The companion `corpus-integrity` CI job checks the pinned inventory and setup
-contracts. The complete native-selected `model-parity` job remains pending
-verified upstream contracts, native artifacts, and a containing released `emf`
-package. A corpus checkout cannot establish any of those runtime properties.
+contracts. The complete native-selected `model-parity` job remains dependent on
+released runtime qualification. A corpus checkout cannot establish runtime
+behavior.
 
 == Explicit live C audit
 
