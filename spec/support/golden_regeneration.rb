@@ -60,12 +60,13 @@ module Emfsvg
         end
       end
 
-      def initialize(corpus:, project_root:, manifest_path:, reference:, renderer:, output: $stdout)
+      def initialize(corpus:, project_root:, manifest_path:, reference:, renderer:, svg_to_emf:, output: $stdout)
         @corpus = corpus
         @project_root = project_root
         @manifest_path = manifest_path
         @reference = reference
         @renderer = renderer
+        @svg_to_emf = svg_to_emf
         @output = output
       end
 
@@ -106,6 +107,11 @@ module Emfsvg
           report(changes, check)
           return changes.empty? if check
 
+          if changes.any? { |change| change.fetch(:group) == "round_trip" }
+            raise Error, "Frozen round-trip artifacts changed; fix SVG -> EMF -> SVG conversion before promotion. " \
+                         "Replacement baseline seeds require an explicit reviewed policy."
+          end
+
           unless original == baseline_digest
             raise Error,
                   "Committed baseline changed during generation; retry with exclusive access"
@@ -123,10 +129,9 @@ module Emfsvg
       def generate(staging)
         KINDS.each_value { |directory| FileUtils.mkdir_p(File.join(staging, directory)) }
         @corpus.fixtures.each do |entry|
-          source = @corpus.source_path(entry)
-          { "golden" => @reference, "round_trip" => @renderer }.each do |kind, converter|
+          KINDS.each_key do |kind|
             path = candidate_path(staging, entry, kind)
-            bytes = converter.call(source)
+            bytes = generate_artifact(entry, kind)
             unless bytes.is_a?(String) && !bytes.empty?
               raise Error,
                     "#{kind} conversion produced no SVG for #{entry.fetch('name')}"
@@ -137,6 +142,13 @@ module Emfsvg
             raise Error, "#{kind} conversion failed for #{entry.fetch('name')}: #{e.message}"
           end
         end
+      end
+
+      def generate_artifact(entry, kind)
+        return @reference.call(@corpus.source_path(entry)) if kind == "golden"
+
+        frozen_svg = File.binread(@corpus.artifact_path(entry, "round_trip"))
+        @renderer.call(@svg_to_emf.call(frozen_svg))
       end
 
       def verify_committed_inventory!
@@ -185,7 +197,7 @@ module Emfsvg
           mode: check ? "check" : "promote", provenance: @corpus.manifest.fetch("provenance"),
           commands: { regeneration: command,
                       reference: [ENV.fetch("EMF2SVG_REF_PATH", nil), "INPUT.emf", "OUTPUT.svg"],
-                      renderer: "Emfsvg.from_file(INPUT.emf)" },
+                      round_trip: "Emfsvg.from_bytes(Emfsvg.from_svg(File.binread(FROZEN_ROUND_TRIP.svg)))" },
           groups: @corpus.manifest.fetch("groups"),
           changed_basenames: changes.map { |change| change.fetch(:basename) }.uniq.sort,
           differences: changes.first(10), difference_count: changes.length,

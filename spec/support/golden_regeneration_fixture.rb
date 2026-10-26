@@ -11,10 +11,12 @@ module Emfsvg
     module GoldenRegenerationFixture
       include ParityInventoryFixture
 
-      def with_regeneration(fail_name: nil, changed: false)
+      def with_regeneration(fail_name: nil, changed: false, round_trip_changed: false, round_trip_fail_name: nil)
         with_parity_inventory do |root, project, manifest_path, data|
           binary = File.join(File.dirname(project), "reference")
-          File.write(binary, JSON.generate(fail_name: fail_name, changed: changed))
+          File.write(binary, JSON.generate(fail_name: fail_name, changed: changed,
+                                           round_trip_changed: round_trip_changed,
+                                           round_trip_fail_name: round_trip_fail_name))
           data.fetch("provenance")["c_reference"].merge!(
             "status" => "verified", "source_revision" => "a" * 40,
             "binary_sha256" => Digest::SHA256.file(binary).hexdigest
@@ -44,11 +46,23 @@ module Emfsvg
 
           "inventory fixture: spec/fixtures/golden/#{name}.svg\n#{'changed' if configuration.fetch('changed')}"
         end
-        renderer = lambda do |source|
-          "inventory fixture: spec/fixtures/emfsvg_golden/#{File.basename(source, '.emf')}.svg\n"
+        svg_to_emf = lambda do |svg|
+          unless svg.start_with?("inventory fixture: spec/fixtures/emfsvg_golden/")
+            raise GoldenRegeneration::Error, "expected frozen SVG input"
+          end
+          if svg.include?("/#{configuration.fetch('round_trip_fail_name')}.svg")
+            raise GoldenRegeneration::Error, "synthetic SVG conversion failed"
+          end
+
+          "synthetic EMF:#{svg}"
+        end
+        renderer = lambda do |emf|
+          raise GoldenRegeneration::Error, "expected converted EMF bytes" unless emf.start_with?("synthetic EMF:")
+
+          "#{emf.delete_prefix('synthetic EMF:')}#{'round-trip drift' if configuration.fetch('round_trip_changed')}"
         end
         GoldenRegeneration.new(corpus: corpus, project_root: project, manifest_path: manifest_path,
-                               reference: reference, renderer: renderer, output: output)
+                               reference: reference, renderer: renderer, svg_to_emf: svg_to_emf, output: output)
       end
 
       def regeneration_process(*arguments)

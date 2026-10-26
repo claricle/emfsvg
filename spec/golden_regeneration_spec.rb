@@ -32,6 +32,62 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
     end
   end
 
+  it "converts each frozen SVG through EMF while the reference receives the original source" do
+    with_regeneration do |_runner, project, manifest, output, corpus|
+      sources = []
+      svg_inputs = []
+      emf_inputs = []
+      reference = lambda do |source|
+        sources << source
+        File.binread(corpus.artifact_path(corpus.fixtures.fetch(sources.length - 1), "golden"))
+      end
+      svg_to_emf = lambda do |svg|
+        svg_inputs << svg
+        "converted EMF:#{svg}"
+      end
+      renderer = lambda do |emf|
+        emf_inputs << emf
+        emf.delete_prefix("converted EMF:")
+      end
+      runner = described_class.new(corpus: corpus, project_root: project, manifest_path: manifest,
+                                   reference: reference, renderer: renderer, svg_to_emf: svg_to_emf, output: output)
+      before = regeneration_snapshot(project, manifest)
+      expect(runner.run(check: true)).to be(true)
+      expect(sources).to eq(corpus.fixtures.map { |entry| corpus.source_path(entry) })
+      expect(svg_inputs).to eq(corpus.fixtures.map { |entry| File.binread(corpus.artifact_path(entry, "round_trip")) })
+      expect(emf_inputs).to eq(svg_inputs.map { |svg| "converted EMF:#{svg}" })
+      expect(regeneration_snapshot(project, manifest)).to eq(before)
+      expect(JSON.parse(output.string).fetch("commands").fetch("round_trip")).to eq(
+        "Emfsvg.from_bytes(Emfsvg.from_svg(File.binread(FROZEN_ROUND_TRIP.svg)))"
+      )
+    end
+  end
+
+  it "fails check and refuses promotion when the frozen round-trip output drifts" do
+    with_regeneration(round_trip_changed: true) do |runner, project, manifest, output, corpus|
+      before = regeneration_snapshot(project, manifest)
+      expect(regeneration_check_exit(corpus, project, manifest, output)).to eq(1)
+      report = JSON.parse(output.string)
+      expect(report.fetch("difference_count")).to eq(208)
+      expect(report.fetch("differences").first).to include("group" => "round_trip", "basename" => "test-000")
+      expect { runner.run }.to raise_error(described_class::Error, /Frozen round-trip artifacts changed/)
+      expect(regeneration_snapshot(project, manifest)).to eq(before)
+      expect(Dir.glob(File.join(project, "spec/fixtures/.golden-regeneration-*"))).to be_empty
+    end
+  end
+
+  it "preserves every baseline when a later SVG conversion fails" do
+    with_regeneration(round_trip_fail_name: "test-001") do |runner, project, manifest, _output, _corpus|
+      before = regeneration_snapshot(project, manifest)
+      expect { runner.run(check: true) }.to raise_error(
+        described_class::Error, /round_trip conversion failed for test-001.*synthetic SVG conversion failed/
+      )
+      expect { runner.run }.to raise_error(described_class::Error, /synthetic SVG conversion failed/)
+      expect(regeneration_snapshot(project, manifest)).to eq(before)
+      expect(Dir.glob(File.join(project, "spec/fixtures/.golden-regeneration-*"))).to be_empty
+    end
+  end
+
   it "preserves all committed artifacts when a later conversion fails after earlier success" do
     with_regeneration(fail_name: "test-001") do |runner, project, manifest, _output, _corpus|
       before = regeneration_snapshot(project, manifest)
@@ -66,9 +122,13 @@ RSpec.describe Emfsvg::SpecSupport::GoldenRegeneration do
     end
   end
 
-  it "promotes both verified sets and their coherent manifest with review metadata" do
+  it "promotes verified references and their manifest while retaining every frozen round-trip byte" do
     with_regeneration(changed: true) do |runner, project, manifest, output, corpus|
+      frozen_bytes = corpus.fixtures.map { |entry| File.binread(corpus.artifact_path(entry, "round_trip")) }
       expect(runner.run).to be(true)
+      expect(corpus.fixtures.map do |entry|
+        File.binread(corpus.artifact_path(entry, "round_trip"))
+      end).to eq(frozen_bytes)
       updated = Emfsvg::SpecSupport::ParityCorpus.new(root: corpus.root, project_root: project, manifest_path: manifest)
       expect(updated.verify!).to equal(updated)
       expect(File.binread(updated.artifact_path(updated.fixtures.first, "golden"))).to end_with("changed")

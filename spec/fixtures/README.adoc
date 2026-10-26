@@ -259,15 +259,22 @@ bundle exec ruby scripts/regenerate_golden.rb --write
 
 `scripts/regenerate_golden.rb` validates the pinned external corpus and explicit C tooling, then stages both:
 
-* `spec/fixtures/golden/<name>.svg` from libemf2svg
-* `spec/fixtures/emfsvg_golden/<name>.svg` from the current emfsvg
+* `spec/fixtures/golden/<name>.svg` from libemf2svg applied to the original EMF source
+* `spec/fixtures/emfsvg_golden/<name>.svg` from the corresponding frozen
+  `emfsvg_golden` SVG through `Emfsvg.from_svg`, then `Emfsvg.from_bytes`
+  (SVG → EMF → SVG); this artifact is its own byte oracle, never a C parity oracle
 
 `--check` reports differences without changing committed files. `--write` requires
 the manifest's `c_reference.status` to be `verified`, a full `source_revision`,
 a `build_recipe`, and `binary_sha256` matching the explicit reference executable.
 The deliberate current pin above satisfies the C metadata requirement; the
 unknown original historical builder is not asserted as verified.
-Promotion updates both artifact sets and their manifest digests together, using
+`--write` also requires every frozen round-trip artifact to survive that conversion
+byte-for-byte. Round-trip drift fails both check and promotion; it cannot be
+accepted by rewriting the artifact or its digest. This workflow does not define
+how to seed replacement round-trip baselines after intentional conversion changes;
+that requires an explicit reviewed policy. A passing promotion retains the frozen
+round-trip bytes while updating the C references and coherent manifest together, using
 a cooperative writer lock and rollback on ordinary failures. This does not
 provide an atomic snapshot to concurrent readers or crash recovery.
 

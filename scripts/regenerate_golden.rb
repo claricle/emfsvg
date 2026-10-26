@@ -22,7 +22,8 @@ begin
     corpus: Emfsvg::SpecSupport::ParityCorpus.new,
     project_root: Emfsvg::SpecSupport::ParityCorpus::PROJECT_ROOT,
     manifest_path: Emfsvg::SpecSupport::ParityCorpus::MANIFEST_PATH,
-    reference: Emfsvg::Compat.method(:generate_reference), renderer: Emfsvg.method(:from_file)
+    reference: Emfsvg::Compat.method(:generate_reference),
+    svg_to_emf: Emfsvg.method(:from_svg), renderer: Emfsvg.method(:from_bytes)
   )
   exit(regeneration.run(check: ARGV.include?("--check")) ? 0 : 1)
 rescue Emfsvg::Compat::SetupError, Emfsvg::SpecSupport::ParityCorpus::SetupError,
