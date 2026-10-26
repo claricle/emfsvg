@@ -34,6 +34,8 @@ RSpec.describe Emfsvg::SourceQualificationProbe do
 
   before do
     git.call("init", "--quiet")
+    git.call("config", "maintenance.auto", "false")
+    git.call("config", "gc.auto", "0")
     git.call("config", "user.email", "probe@example.test")
     git.call("config", "user.name", "Probe")
     FileUtils.mkdir_p(File.join(root, "lib"))
