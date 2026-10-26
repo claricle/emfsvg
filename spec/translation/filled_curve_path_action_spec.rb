@@ -3,12 +3,9 @@
 require "spec_helper"
 
 RSpec.describe "SVG path draw action selection" do
-  let(:curve) { "M 2,2 C 4,2 4,8 6,8 L 2,8 Z" }
+  include Emfsvg::SpecSupport::FilledCurvePathActionHelpers
 
-  def records_for(path)
-    svg = %(<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">#{path}</svg>)
-    Emf.parse(Emfsvg.from_svg(svg)).records.map(&:wire)
-  end
+  let(:curve) { "M 2,2 C 4,2 4,8 6,8 L 2,8 Z" }
 
   it "fills a C-rendered fill-only closed curve without stroking its outline" do
     source = File.read("spec/fixtures/golden/test-150.svg")

@@ -3,6 +3,8 @@
 require "spec_helper"
 
 RSpec.describe "closed filled SVG paths" do
+  include Emfsvg::SpecSupport::ClosedFilledPathHelpers
+
   let(:path_data) do
     "M 900.0000,1300.0000 L 1200.0000,1500.0000 L 1200.0000,1700.0000 L 900.0000,1500.0000 Z "
   end
@@ -13,10 +15,6 @@ RSpec.describe "closed filled SVG paths" do
       %(stroke="#7FFFC4" stroke-width="50.0000"  stroke-linecap="square" ),
       %( stroke-linejoin="miter"  stroke-miterlimit="8.0000" />)
     ].join
-  end
-
-  def svg_with(path)
-    %(<svg xmlns="http://www.w3.org/2000/svg" width="14030.0000" height="9920.0000">#{path}</svg>)
   end
 
   it "preserves the canonical PolyPolygon record and formatting" do

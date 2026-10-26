@@ -4,17 +4,7 @@ require "spec_helper"
 require "leptris"
 
 RSpec.describe "SVG PolyBezier path preservation" do
-  def roundtrip_path(data, fill: "none")
-    bytes = Emfsvg.from_svg(<<~SVG)
-      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-        <path d="#{data}" fill="#{fill}" stroke="#000000"/>
-      </svg>
-    SVG
-    parsed = Emf.parse(bytes)
-    expect(parsed.errors).to be_empty
-    output = Emfsvg.from_bytes(bytes)
-    [parsed.records.map(&:wire), output, Leptris::XML.parse(output).xpath("//*[local-name()='path']")]
-  end
+  include Emfsvg::SpecSupport::PolybezierPathHelpers
 
   it "preserves the preceding current point and cubic path drawing operation" do
     records, output, paths = roundtrip_path("M 3 4 M 10 20 C 30 40 50 60 70 80 C 50 60 30 40 10 20")

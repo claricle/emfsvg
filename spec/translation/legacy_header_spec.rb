@@ -3,22 +3,10 @@
 require "spec_helper"
 
 RSpec.describe "Legacy broken-Y header provenance" do
-  legacy = "translate(0.0000, 0.00 00)"
-  golden = File.expand_path("../fixtures/emfsvg_golden", __dir__)
+  include Emfsvg::SpecSupport::LegacyHeaderHelpers
 
-  def header_group(inner)
-    %(<g transform="translate(0,0)">#{inner}</g>)
-  end
-
-  def svg(width, height, transform, inner: "")
-    %(<svg xmlns="http://www.w3.org/2000/svg" width="#{width}" height="#{height}">) \
-      "<g transform=\"#{transform}\">#{inner}</g></svg>"
-  end
-
-  def header_bounds(svg_string)
-    h = Emf.parse(Emfsvg.from_svg(svg_string)).header.bounds
-    [h.left, h.top, h.right, h.bottom]
-  end
+  let(:legacy) { "translate(0.0000, 0.00 00)" }
+  let(:golden) { File.expand_path("../fixtures/emfsvg_golden", __dir__) }
 
   %w[test-183 test-184 test-185].each do |name|
     it "#{name} round-trips with every byte equal" do

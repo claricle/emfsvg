@@ -4,19 +4,7 @@ require "spec_helper"
 require "leptris"
 
 RSpec.describe "cosmetic dash round-trip parity" do
-  def ellipse_svg(width:, dash:, coordinate: "10")
-    <<~SVG
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
-        <ellipse cx="#{coordinate}" cy="10" rx="5" ry="4" fill="none"
-                 stroke="#000080" stroke-width="#{width}" stroke-dasharray="#{dash}"
-                 stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    SVG
-  end
-
-  def rendered_ellipse(bytes)
-    Leptris::XML.parse(Emfsvg.from_bytes(bytes)).at_xpath("//*[local-name()='ellipse']")
-  end
+  include Emfsvg::SpecSupport::CosmeticDashParityHelpers
 
   it "keeps dotted cosmetic pixels in device units while scaling geometry" do
     bytes = Emfsvg.from_svg(ellipse_svg(width: "1px", dash: "1,1", coordinate: "10.25"))

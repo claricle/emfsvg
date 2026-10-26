@@ -3,6 +3,8 @@
 require "spec_helper"
 
 RSpec.describe "Unused canonical clip definitions" do
+  include Emfsvg::SpecSupport::UnusedClipDefinitionHelpers
+
   let(:definition) do
     '<defs><clipPath id="clip-16807"><path d="M 1.0000,2.0000 L 8.0000,2.0000 ' \
       'L 8.0000,9.0000 L 1.0000,9.0000 L 1.0000,2.0000 Z Z" /></clipPath></defs>'
@@ -11,11 +13,6 @@ RSpec.describe "Unused canonical clip definitions" do
   let(:rendered_draw) do
     '<path style="fill:#ff0000" d="M 20.0000,21.0000 L 23.0000,21.0000 ' \
       'L 23.0000,25.0000 L 20.0000,25.0000 Z" />'
-  end
-
-  def convert(body)
-    bytes = Emfsvg.from_svg(%(<svg width="40" height="40">#{body}</svg>))
-    [Emfsvg.from_bytes(bytes), Emf.parse(bytes).records.map(&:wire)]
   end
 
   it "preserves an unused definition in position and leaves following draws unclipped" do

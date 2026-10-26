@@ -3,16 +3,7 @@
 require "spec_helper"
 
 RSpec.describe "canonical orphan and empty stroked paths" do
-  def source(path)
-    %(<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">#{path}</svg>)
-  end
-
-  def path(data)
-    [
-      %(<path d="#{data}" stroke="#000000" stroke-width="1.0000" ),
-      %( stroke-linecap="round"  stroke-linejoin="round" fill="none" />)
-    ].join
-  end
+  include Emfsvg::SpecSupport::OrphanPathHelpers
 
   it "preserves an initial LineTo and separate figures through real EMF records" do
     original = path("L 2.0000,3.0000 M 4.0000,5.0000 L 6.0000,7.0000 ")

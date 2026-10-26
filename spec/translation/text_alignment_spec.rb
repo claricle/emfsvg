@@ -4,17 +4,7 @@ require "spec_helper"
 require "leptris"
 
 RSpec.describe "SVG text alignment roundtrip" do
-  def roundtrip_texts(texts)
-    bytes = Emfsvg.from_svg(<<~SVG)
-      <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
-        #{texts}
-      </svg>
-    SVG
-    parsed = Emf.parse(bytes)
-    expect(parsed.errors).to be_empty
-    output = Leptris::XML.parse(Emfsvg.from_bytes(bytes))
-    [parsed, output.xpath("//*[local-name()='text']")]
-  end
+  include Emfsvg::SpecSupport::TextAlignmentHelpers
 
   { "middle" => 0x1E, "end" => 0x1A }.each do |anchor, mode|
     it "preserves #{anchor} anchoring and the SVG baseline at integer font size" do
