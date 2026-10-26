@@ -15,6 +15,7 @@ jobs:
   rake:
     uses: metanorma/ci/.github/workflows/generic-rake.yml@main
     with:
+      cascade: false
       after-setup-ruby: |
         if [[ "$RUNNER_OS" == "Linux" ]]; then
           sudo apt-get update
@@ -71,6 +72,28 @@ jobs:
             file.puts "FONTCONFIG_PATH=#{options.fetch("output_directory")}"
           end
         ' "$corpus_root"
+
+  tests-passed:
+    needs: rake
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Tests passed
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          event-type: tests-passed
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "type": "tests-passed"}'
+      - name: Repository ready for release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          event-type: do-release
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "type": "do-release"}'
 
   corpus-integrity:
     name: Parity inventory preflight (not native qualification)
