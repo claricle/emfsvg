@@ -67,7 +67,7 @@ RSpec.describe FontQualification do
     font = @contract.fetch("fonts").fetch("verdana_regular")
     mappings = FontQualification::REQUIRED.fetch("David").compact.invert
     mappings[0x002E] = 15
-    cmap = double(unicode_mappings: mappings)
+    cmap = Struct.new(:unicode_mappings).new(mappings)
     allow(Fontisan::Tables::Cmap).to receive(:read).and_return(cmap)
 
     expect { qualifier.attest_font("verdana_regular", "David", "David", font.fetch("path")) }
