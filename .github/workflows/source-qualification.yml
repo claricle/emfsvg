@@ -24,6 +24,8 @@ jobs:
           runtime_root="$(bundle show emf)"
           runtime_revision="$(ruby -ryaml -e 'puts YAML.safe_load_file("spec/fixtures/parity_manifest.yml").dig("provenance", "runtime", "source_revision")')"
           test "$(git -C "$runtime_root" rev-parse HEAD)" = "$runtime_revision"
+          # Bundler serializes this file when installing a Git dependency.
+          git -C "$runtime_root" restore --source HEAD -- emf.gemspec
           git -C "$runtime_root" diff --exit-code HEAD
           corpus_revision="$(ruby -ryaml -e 'puts YAML.safe_load_file("spec/fixtures/parity_manifest.yml").dig("provenance", "corpus", "revision")')"
           corpus_root="$RUNNER_TEMP/emfsvg-parity-corpus"

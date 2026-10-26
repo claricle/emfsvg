@@ -137,7 +137,7 @@ RSpec.describe ParityProvenance do
     expect(runtime.fetch("blocker")).to include("no released package has been qualified")
   end
 
-  it "records the landed model contract while preserving absent diagnostics and resource contracts" do
+  it "records the landed model, diagnostics, and resource contracts" do
     contracts = manifest.fetch("provenance").fetch("upstream_contracts")
 
     expect(contracts.fetch("model")).to eq(
@@ -145,20 +145,22 @@ RSpec.describe ParityProvenance do
       "landed_revision" => "318b2d86c4025b5913c595c5055477124199daf9"
     )
     expect(contracts.fetch("diagnostics")).to eq(
-      "issue" => "https://github.com/claricle/emf/issues/65", "landed_revision" => nil
+      "issue" => "https://github.com/claricle/emf/issues/65",
+      "landed_revision" => "e0491ed331dff6c5996dcbd9a269b79ffebbcc38"
     )
     expect(contracts.fetch("resources")).to eq(
-      "issue" => "https://github.com/claricle/emf/issues/66", "landed_revision" => nil
+      "issue" => "https://github.com/claricle/emf/issues/66",
+      "landed_revision" => "e0491ed331dff6c5996dcbd9a269b79ffebbcc38"
     )
   end
 
-  it "fails closed for remaining release, contract, and native provenance gaps" do
+  it "fails closed for remaining release and native provenance gaps" do
     errors = described_class.new.errors.join("\n")
     expect(errors).to include(
       "runtime.status", "runtime.source: expected \"rubygems\"", "runtime.package_sha256",
-      "diagnostics.landed_revision", "resources.landed_revision",
       "native_library.status", "native_library.artifact_sha256", "native_library.abi"
     )
-    expect(errors).not_to include("runtime.source_revision", "model.landed_revision", "c_reference.")
+    expect(errors).not_to include("runtime.source_revision", "model.landed_revision", "c_reference.",
+                                  "diagnostics.landed_revision", "resources.landed_revision")
   end
 end
