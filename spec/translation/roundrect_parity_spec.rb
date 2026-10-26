@@ -19,8 +19,8 @@ RSpec.describe "rounded rectangle parity" do
     expect(Emfsvg.from_bytes(bytes)).to include('rx="5.0000" ry="8.0000"')
   end
 
-  it "preserves ordinary rectangle record selection and geometry" do
-    bytes = Emfsvg.from_svg(svg.sub(' rx="5" ry="8"', ""))
+  it "preserves stroked rectangle record selection and geometry" do
+    bytes = Emfsvg.from_svg(svg.sub(' rx="5" ry="8"', ' stroke="blue"'))
     records = Emf.parse(bytes).records.map(&:wire)
 
     expect(records.grep(Emf::Emr::Binary::Records::RoundRect)).to be_empty
