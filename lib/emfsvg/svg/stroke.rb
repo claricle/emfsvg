@@ -56,7 +56,7 @@ module Emfsvg
       # Recover only the exact unfilled Polyline spelling emitted for these
       # legacy cosmetic pens. Ordinary SVG shares the parsed paint cache.
       def with_canonical_cosmetic_dash(source_tag)
-        return self unless raw_width == "1.0000" && !paint.null? && dash_array
+        return self unless %w[1.0000 1px].include?(raw_width) && !paint.null? && dash_array
 
         number = "-?\\d+\\.\\d{4}"
         point = "#{number},#{number}"
@@ -65,7 +65,7 @@ module Emfsvg
         return self unless data && color
 
         lengths = dash_array.map { |length| format("%.4f", length) }.join(",")
-        expected = %(<path d="#{data}" stroke="#{color}" stroke-width="1.0000" )
+        expected = %(<path d="#{data}" stroke="#{color}" stroke-width="#{raw_width}" )
         expected << %(stroke-dasharray="#{lengths}"  stroke-linecap="round"  stroke-linejoin="round" fill="none" />)
         return self unless source_tag == expected
 

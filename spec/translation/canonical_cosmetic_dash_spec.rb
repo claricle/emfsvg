@@ -8,6 +8,8 @@ RSpec.describe "canonical cosmetic dash recovery" do
 
   let(:source_paths) { File.readlines("spec/fixtures/emfsvg_golden/test-039.svg")[82, 4].map(&:strip) }
 
+  fixture_numbers = %w[039 040]
+
   [[0, 5, 1], [1, 6, 2], [2, 7, 3], [3, 8, 4]].each do |index, width, style|
     2.times do |fixed_index|
       fixed = fixed_index == 1
@@ -33,6 +35,18 @@ RSpec.describe "canonical cosmetic dash recovery" do
           expect([following["d"], following["stroke"], following["stroke-width"]])
             .to eq(["M 1.0000,2.0000 L 3.0000,4.0000 ", "#0000FF", "1px"])
         end
+      end
+    end
+
+    fixture_numbers.each do |fixture_number|
+      it "preserves generated cosmetic style #{style} from test-#{fixture_number} on a second conversion" do
+        path = File.readlines("spec/fixtures/emfsvg_golden/test-#{fixture_number}.svg")[82 + index].strip
+        _first_pens, output, = dash_conversion(path, fixed: true)
+        second_records = Emf.parse(Emfsvg.from_svg(output)).records.map(&:wire)
+        second_pens = second_records.grep(Emf::Emr::Binary::Records::CreatePen)
+
+        expect(second_pens.first.width.x.to_i).to eq(width)
+        expect(second_pens.first.pen_style.to_i).to eq(style)
       end
     end
   end
