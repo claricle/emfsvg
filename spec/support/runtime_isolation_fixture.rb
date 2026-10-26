@@ -45,9 +45,10 @@ module Emfsvg
                       [1, 9, 0x0300, 12, 0, 3, 0].pack("v3VvVv") + [3, 0].pack("Vv")
                     end
             if mode == "resource_limited"
-              limit_owner = Emf::Wmf::Binary
-              limit_owner.send(:remove_const, :MAX_INPUT_BYTES)
-              limit_owner.const_set(:MAX_INPUT_BYTES, bytes.bytesize - 1)
+              Emf::Wmf::Binary.module_eval do
+                remove_const(:MAX_INPUT_BYTES)
+                const_set(:MAX_INPUT_BYTES, bytes.bytesize - 1)
+              end
             end
             value = Emfsvg.from_bytes(bytes)
             { "value_class" => value.class.name, "svg" => value }
@@ -57,7 +58,7 @@ module Emfsvg
               result["metadata"] = [e.resource.to_s, e.limit, e.actual]
               result["cause_class"] = e.cause&.class&.name
               cause = e.cause
-              result["cause_metadata"] = [cause.resource.to_s, cause.limit, cause.actual] if cause.respond_to?(:resource)
+              result["cause_metadata"] = [cause.resource.to_s, cause.limit, cause.actual] if cause.is_a?(Emf::ResourceLimitError)
             end
             result
           end

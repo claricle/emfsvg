@@ -60,8 +60,8 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
     stub_const("Emf::Wmf::Binary::MAX_INPUT_BYTES", wmf.bytesize - 1)
     Dir.mktmpdir do |directory|
       preload = File.join(directory, "test_limit.rb")
-      File.write(preload, "require 'emf'; Emf::Wmf::Binary.send(:remove_const, :MAX_INPUT_BYTES); " \
-                          "Emf::Wmf::Binary.const_set(:MAX_INPUT_BYTES, #{wmf.bytesize - 1})\n")
+      File.write(preload, "require 'emf'; Emf::Wmf::Binary.module_eval { remove_const(:MAX_INPUT_BYTES); " \
+                          "const_set(:MAX_INPUT_BYTES, #{wmf.bytesize - 1}) }\n")
       input = production_input(directory, "resource.wmf", wmf, production_failure_outcome(wmf, "resource"))
       adapter = production_adapter(directory, [input])
       result = adapter.validate_report!(input, production_report(adapter, input, preload: preload))
@@ -75,8 +75,8 @@ RSpec.describe Emfsvg::ResourceCalibration::ProductionAdapter do
     stub_const("Emf::Emr::Parser::MAX_INPUT_BYTES", bytes.bytesize - 1)
     Dir.mktmpdir do |directory|
       preload = File.join(directory, "test_local_limit.rb")
-      File.write(preload, "require 'emf'; Emf::Emr::Parser.send(:remove_const, :MAX_INPUT_BYTES); " \
-                          "Emf::Emr::Parser.const_set(:MAX_INPUT_BYTES, #{bytes.bytesize - 1})\n")
+      File.write(preload, "require 'emf'; Emf::Emr::Parser.module_eval { remove_const(:MAX_INPUT_BYTES); " \
+                          "const_set(:MAX_INPUT_BYTES, #{bytes.bytesize - 1}) }\n")
       input = production_input(directory, "local-resource.emf", bytes, production_failure_outcome(bytes, "resource"))
       adapter = production_adapter(directory, [input])
       report = production_report(adapter, input, preload: preload)
