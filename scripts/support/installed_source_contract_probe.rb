@@ -91,24 +91,32 @@ module Emfsvg
     end
     private_class_method :diagnostic_smoke
 
-    def self.resource_limit_smoke(library_path)
-      limits = Fiddle::Pointer[[48, 1].pack("L2") + [87, 128 * 1024 * 1024, 4 * 1024 * 1024,
-                                                     640 * 1024 * 1024, 64 * 1024 * 1024].pack("Q5")]
-      loader = Emf::Native::Loader.new(library_path)
-      output = Fiddle::Pointer["\0" * 8]
-      resource = "\0" * 88
-      resource[0, 8] = [1, 88].pack("V2")
-      resource[40, 4] = [0x464D4520].pack("V")
-      begin
-        loader.send(:checked, :emf_parse, resource, 88, limits, output)
-        raise "native resource limit was not enforced"
+    # Uses the installed wrapper's error decoder through ordinary inherited calls.
+    module NativeResourceProbe
+      def verify_input_limit
+        limits = Fiddle::Pointer[[48, 1].pack("L2") + [87, 128 * 1024 * 1024, 4 * 1024 * 1024,
+                                                       640 * 1024 * 1024, 64 * 1024 * 1024].pack("Q5")]
+        resource = "\0" * 88
+        resource[0, 8] = [1, 88].pack("V2")
+        resource[40, 4] = [0x464D4520].pack("V")
+        document_with_limits(resource, limits) { raise "native resource limit was not enforced" }
       rescue Emf::ResourceLimitError => e
         valid = [e.resource, e.limit, e.actual] == [:input_bytes, 87, 88]
         raise "native resource metadata mismatch" unless valid
-      ensure
-        handle = output[0, 8].unpack1("J")
-        loader.send(:invoke, :emf_document_free, handle) unless handle.zero?
       end
+
+      def document_with_limits(bytes, limits)
+        output = slot
+        checked(:emf_parse, bytes, bytes.bytesize, limits, output)
+        yield pointer(output)
+      ensure
+        invoke(:emf_document_free, pointer(output)) if output && !pointer(output).zero?
+      end
+    end
+
+    def self.resource_limit_smoke(library_path)
+      loader_class = Class.new(Emf::Native::Loader) { include NativeResourceProbe }
+      loader_class.new(library_path).verify_input_limit
     end
     private_class_method :resource_limit_smoke
   end
