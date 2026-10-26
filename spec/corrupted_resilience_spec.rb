@@ -34,8 +34,8 @@ RSpec.describe Emfsvg::SpecSupport::CorruptedResilienceFixture do
     let(:outcome) { { "kind" => "svg", "warnings" => [], "svg_sha256" => "2" * 64 } }
     let(:inputs) { %w[one.emf two.emf].map { |name| calibration_input(name).merge("expected_outcome" => outcome) } }
     let(:adapter) { calibration_adapter(inputs) }
-    let(:qualification) { double("explicit synthetic qualification", verify!: adapter) }
-    let(:runner) { double("bounded runner", run: calibration_report) }
+    let(:qualification) { Emfsvg::SpecSupport::ResourceCalibrationFixture::Qualification.new(adapter) }
+    let(:runner) { Emfsvg::SpecSupport::ResourceCalibrationFixture::Runner.new(calibration_report) }
     let(:caller) { described_class.new(qualification: qualification, runner: runner) }
 
     before do
