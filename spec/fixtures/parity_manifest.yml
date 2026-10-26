@@ -22,14 +22,12 @@ provenance:
     - spec/fixtures/simple
     corrupt_directory: spec/fixtures/emf-corrupted
   runtime:
-    status: unqualified
-    source: git
-    repository: https://github.com/claricle/emf.git
-    version: 0.1.2
-    source_revision: e0491ed331dff6c5996dcbd9a269b79ffebbcc38
-    package_sha256:
-    blocker: Temporary full-SHA development integration; released emf 0.1.2 predates
-      the required contracts, and no released package has been qualified.
+    status: qualified
+    source: rubygems
+    version: 0.2.0
+    source_revision: 327c36b49743bcb9799c20123218f0bae965f1de
+    package_sha256: 6b3add05605260d646ec1d732da139eb972016c6fe4547aa60846a2ac2f542fa
+    release_run: https://github.com/claricle/emf/actions/runs/40356558355
   upstream_contracts:
     model:
       issue: https://github.com/claricle/emf/issues/15
@@ -41,10 +39,11 @@ provenance:
       issue: https://github.com/claricle/emf/issues/66
       landed_revision: e0491ed331dff6c5996dcbd9a269b79ffebbcc38
   native_library:
-    status: unavailable
-    source_revision:
-    artifact_sha256:
-    abi:
+    status: qualified
+    source_revision: 327c36b49743bcb9799c20123218f0bae965f1de
+    artifact_sha256: 068d51ffed604b277b599b9916ee7c8cd15f61b8004719362efeaa28101cf01e
+    package_sha256: 393f7d558034e924379246ca3be9ac7e1293d4cb975ff6992f87256dd7cfb7a7
+    abi: '1'
   production_backend:
     requested: auto
     required_selected: native

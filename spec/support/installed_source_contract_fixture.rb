@@ -19,7 +19,7 @@ module InstalledSourceContractFixture
         spec.summary = "fixture"
         spec.authors = ["spec"]
         spec.files = []
-        spec.metadata = { "source_revision" => #{metadata_revision.inspect} } if #{!metadata_revision.nil?}
+        spec.metadata = { "emf_revision" => #{metadata_revision.inspect} } if #{!metadata_revision.nil?}
       end
     GEMSPEC
     [home, root]

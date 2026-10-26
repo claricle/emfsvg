@@ -174,7 +174,8 @@ matching `EMF_NATIVE_PROVENANCE` JSON containing `artifact_sha256`,
 `source_revision`, and `abi`. The gate validates those artifacts and the
 installed locked runtime before bounded public conformance; arbitrary metadata
 alone cannot satisfy it. Published package and native identities are verified
-and their manifest integration is underway. Until the full released workflow
-passes, the manifest/runtime remains unqualified. Do not describe the package
+and the manifest pins their exact verified identities. Manifest metadata readiness
+does not establish runtime qualification; the full released Linux workflow and
+reviewed resource baseline remain outstanding. Do not describe the package
 identity check, reviewed expectations, prerelease source run, or Darwin
 observation as full parity, release proof, or portable qualification.

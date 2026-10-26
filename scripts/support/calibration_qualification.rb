@@ -78,10 +78,8 @@ module Emfsvg
           raise Rejected, "released archive name/version mismatch"
         end
 
-        revision = spec.metadata["source_revision"]
-        if revision && revision != expected.fetch("source_revision")
-          raise Rejected, "released archive source revision mismatch"
-        end
+        revision = spec.metadata["emf_revision"]
+        raise Rejected, "released archive source revision mismatch" if revision != expected.fetch("source_revision")
 
         verify_installed_files!(package)
       end

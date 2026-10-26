@@ -4,9 +4,9 @@ source "https://rubygems.org"
 
 gemspec
 
-# Temporary development integration for the upstream model, diagnostics, and
-# resources contracts. Replace with a qualified release once one contains them.
-gem "emf", git: "https://github.com/claricle/emf.git", ref: "e0491ed331dff6c5996dcbd9a269b79ffebbcc38"
+# Pin the reviewed released source package; Linux native qualification verifies
+# its separately published platform archive against the parity manifest.
+gem "emf", "0.2.0", force_ruby_platform: true
 
 gem "rake", "~> 13.0"
 

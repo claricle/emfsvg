@@ -8,7 +8,18 @@ on:
   workflow_dispatch:
 
 jobs:
+  dependency:
+    runs-on: ubuntu-latest
+    outputs:
+      source: ${{ steps.runtime.outputs.source }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: runtime
+        shell: bash
+        run: ruby -ryaml -e 'puts "source=#{YAML.safe_load_file("spec/fixtures/parity_manifest.yml").dig("provenance", "runtime", "source")}"' >> "$GITHUB_OUTPUT"
   linux-source:
+    needs: dependency
+    if: needs.dependency.outputs.source == 'git'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

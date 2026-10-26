@@ -48,7 +48,7 @@ module Emfsvg
       raise "emf gem is outside supplied GEM_HOME" unless root.start_with?("#{expected_root}/")
 
       provenance = JSON.parse(File.read(File.join(root, "lib/emf/native/provenance.json")))
-      metadata_revision = spec.metadata["source_revision"]
+      metadata_revision = spec.metadata["emf_revision"]
       provenance_revision = provenance["source_revision"] || provenance["revision"] || provenance["git_revision"]
       if metadata_revision && provenance_revision && metadata_revision != provenance_revision
         raise "installed emf provenance revision mismatch"

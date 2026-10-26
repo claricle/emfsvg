@@ -25,10 +25,11 @@ module Emfsvg
       spec = locked.first
       valid = locked.one? && spec.source.is_a?(Bundler::Source::Rubygems) &&
               spec.source.remotes.map(&:to_s) == ["https://rubygems.org/"] &&
-              spec.version.to_s == runtime.fetch("version")
+              spec.platform.to_s == "ruby" && spec.version.to_s == runtime.fetch("version")
       raise Rejected, "lock must select the reviewed emf version exclusively from https://rubygems.org/" unless valid
 
       { "package_url" => "https://rubygems.org/downloads/#{spec.full_name}.gem",
+        "native_package_url" => "https://rubygems.org/downloads/emf-#{runtime.fetch('version')}-x86_64-linux-gnu.gem",
         "corpus_revision" => manifest.fetch("provenance").fetch("corpus").fetch("revision") }
     end
 
@@ -38,8 +39,8 @@ module Emfsvg
         Digest::SHA256.file(package_path).hexdigest == runtime.fetch("package_sha256")
 
       spec = Gem::Package.new(package_path).spec
-      valid = spec.name == "emf" && spec.version.to_s == runtime.fetch("version") &&
-              spec.metadata["source_revision"] == runtime.fetch("source_revision")
+      valid = spec.name == "emf" && spec.platform.to_s == "ruby" && spec.version.to_s == runtime.fetch("version") &&
+              spec.metadata["emf_revision"] == runtime.fetch("source_revision")
       raise Rejected, "released archive must attest the exact reviewed name, version and source_revision" unless valid
 
       spec.full_name

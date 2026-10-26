@@ -24,8 +24,10 @@ RSpec.describe Emfsvg::ResourceCalibration::Qualification do
     expect(@manifest.fetch("corrupted").map { |entry| entry["expected_outcome"] }).to all(be_nil)
   end
 
-  it "preserves the real manifest rejection before starting any child" do
-    path = File.expand_path("fixtures/parity_manifest.yml", __dir__)
+  it "rejects an unqualified runtime before starting any child" do
+    @manifest.dig("provenance", "runtime")["status"] = "unqualified"
+    write_qualification_evidence
+    path = @manifest_path
     expect do
       Emfsvg::ResourceCalibration::Prerequisites.verify!(path, @directory, runner: @runner)
     end.to raise_error(Emfsvg::ResourceCalibration::Rejected, /runtime.status.*unqualified/)

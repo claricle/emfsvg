@@ -45,7 +45,7 @@ module Emfsvg
           value.summary = "controlled qualification fixture"
           value.authors = ["Fixture"]
           value.files = ["lib/emf.rb"]
-          value.metadata["source_revision"] = REVISION
+          value.metadata["emf_revision"] = REVISION
         end
         capture = StringIO.new
         previous = $stdout

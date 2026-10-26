@@ -57,7 +57,7 @@ module Emfsvg
           gem.summary = "Synthetic qualification fixture"
           gem.authors = ["Fixture"]
           gem.files = []
-          gem.metadata = source_revision ? { "source_revision" => source_revision } : {}
+          gem.metadata = source_revision ? { "emf_revision" => source_revision } : {}
         end
         path = File.join(@directory, "emf.gem")
         Gem::Package.build(spec, true, false, path)

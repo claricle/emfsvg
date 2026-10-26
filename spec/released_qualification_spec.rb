@@ -21,6 +21,7 @@ RSpec.describe Emfsvg::ReleasedQualification do
   it "derives the exact Rubygems archive and corpus from reviewed inputs" do
     expect(described_class.plan(@manifest_path, @lockfile)).to eq(
       "package_url" => "https://rubygems.org/downloads/emf-9.8.7.gem",
+      "native_package_url" => "https://rubygems.org/downloads/emf-9.8.7-x86_64-linux-gnu.gem",
       "corpus_revision" => @manifest.dig("provenance", "corpus", "revision")
     )
   end
@@ -46,6 +47,12 @@ RSpec.describe Emfsvg::ReleasedQualification do
     write_release_lock
     File.write(@lockfile, File.read(@lockfile).sub("9.8.7", "9.8.8"))
     expect { described_class.plan(@manifest_path, @lockfile) }.to raise_error(described_class::Rejected)
+  end
+
+  it "requires the Ruby source package independently of the native package" do
+    File.write(@lockfile, File.read(@lockfile).sub("emf (9.8.7)", "emf (9.8.7-x86_64-linux-gnu)"))
+    expect { described_class.plan(@manifest_path, @lockfile) }
+      .to raise_error(described_class::Rejected, /lock must select/)
   end
 
   it "requires actual archive bytes and archive source metadata, preserving reviewed inputs on rejection" do

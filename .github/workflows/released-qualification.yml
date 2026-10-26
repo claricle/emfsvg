@@ -23,11 +23,9 @@ jobs:
       QUALIFICATION_MODE: ${{ inputs.mode || 'check' }}
       MANIFEST: spec/fixtures/parity_manifest.yml
       BASELINE: spec/fixtures/resource_limits/emfsvg-v1.yml
-      NATIVE_URL: ${{ vars.EMF_RELEASE_NATIVE_URL }}
-      NATIVE_PROVENANCE_URL: ${{ vars.EMF_RELEASE_NATIVE_PROVENANCE_URL }}
-      OUTER_TIMEOUT: ${{ vars.EMF_RELEASE_TIMEOUT_SECONDS }}
-      OUTER_RSS: ${{ vars.EMF_RELEASE_RSS_CAP_MIB }}
-      OUTER_AS: ${{ vars.EMF_RELEASE_AS_CAP_MIB }}
+      OUTER_TIMEOUT: '30'
+      OUTER_RSS: '512'
+      OUTER_AS: '2048'
     steps:
       - name: Set evidence paths
         shell: bash
@@ -58,16 +56,30 @@ jobs:
           package_url="$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV.fetch(0))).fetch("package_url")' "$EVIDENCE/plan.json")"
           curl --fail --location --proto '=https' --proto-redir '=https' "$package_url" --output "$EMF_RELEASE_PACKAGE"
           ruby scripts/qualify_released_runtime.rb archive "$MANIFEST" "$EMF_RELEASE_PACKAGE" | tee "$EVIDENCE/archive.json"
-          for url in "$NATIVE_URL" "$NATIVE_PROVENANCE_URL"; do
-            case "$url" in https://*) ;; *) echo 'Explicit HTTPS released native evidence URLs required' >&2; exit 1 ;; esac
-          done
-          curl --fail --location --proto '=https' --proto-redir '=https' "$NATIVE_URL" --output "$EMF_NATIVE_LIBRARY"
-          curl --fail --location --proto '=https' --proto-redir '=https' "$NATIVE_PROVENANCE_URL" --output "$EMF_NATIVE_PROVENANCE"
-          printf '%s\n' "$package_url" "$NATIVE_URL" "$NATIVE_PROVENANCE_URL" > "$EVIDENCE/download-urls.txt"
+          native_url="$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV.fetch(0))).fetch("native_package_url")' "$EVIDENCE/plan.json")"
+          curl --fail --location --proto '=https' --proto-redir '=https' "$native_url" --output "$EVIDENCE/native.gem"
+          ruby scripts/qualify_released_runtime.rb native "$MANIFEST" "$EVIDENCE/native.gem" \
+            "$EMF_NATIVE_LIBRARY" "$EMF_NATIVE_PROVENANCE" | tee "$EVIDENCE/native-archive.json"
+          printf '%s\n' "$package_url" "$native_url" > "$EVIDENCE/download-urls.txt"
           mkdir -p vendor/cache
           package_name="${package_url##*/}"
           cp "$EMF_RELEASE_PACKAGE" "vendor/cache/$package_name"
           bundle install
+      - name: Exercise the installed released native package
+        shell: bash
+        run: |
+          installed="$RUNNER_TEMP/emfsvg-installed-release"
+          mkdir -p "$installed"
+          env -u RUBYOPT -u RUBYLIB -u BUNDLE_GEMFILE GEM_HOME="$installed" \
+            gem install "$EVIDENCE/native.gem" --no-document
+          revision="$(ruby -ryaml -e 'puts YAML.safe_load_file(ARGV.fetch(0)).dig("provenance", "runtime", "source_revision")' "$MANIFEST")"
+          native_sha="$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV.fetch(0))).fetch("artifact_sha256")' "$EMF_NATIVE_PROVENANCE")"
+          probe="$GITHUB_WORKSPACE/scripts/support/installed_source_contract_probe.rb"
+          fixture="$GITHUB_WORKSPACE/spec/fixtures/image1.emf"
+          cd "$RUNNER_TEMP"
+          env -u RUBYOPT -u RUBYLIB -u BUNDLE_GEMFILE -u EMF_NATIVE_LIBRARY \
+            GEM_HOME="$installed" EMF_BACKEND=native ruby "$probe" "$installed" "$revision" "$fixture" "$native_sha" \
+            > "$EVIDENCE/installed-contracts.json"
       - name: Fetch pinned corpus and qualify pinned portable fonts
         shell: bash
         run: |
