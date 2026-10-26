@@ -8,16 +8,18 @@ RSpec.describe Emfsvg::ResourceCalibration::QualificationProbe do
   let(:version) { Gem::Version.new("1.2.3") }
   let(:runtime) { Gem.loaded_specs.fetch("emf") }
   let(:root) { runtime.full_gem_path }
-  let(:loaded) { double("loaded released emf", source: source, version: version, full_gem_path: root) }
-  let(:locked) { double("locked released emf", source: source, version: version, name: "emf") }
+  let(:loaded) { Struct.new(:source, :version, :full_gem_path).new(source, version, root) }
+  let(:locked) { Struct.new(:source, :version, :name).new(source, version, "emf") }
   let(:function) { instance_double(Fiddle::Function, call: 1) }
 
   before do
     allow(Bundler).to receive(:read_file).with("fixture.lock").and_return("controlled parsed lock")
-    allow(Bundler::LockfileParser).to receive(:new).with("controlled parsed lock").and_return(double(specs: [locked]))
+    allow(Bundler::LockfileParser).to receive(:new).with("controlled parsed lock").and_return(
+      Struct.new(:specs).new([locked])
+    )
     original = Gem.loaded_specs.dup
     allow(Gem).to receive(:loaded_specs).and_return(original.merge("emf" => loaded))
-    allow(Fiddle).to receive(:dlopen).with("fixture.so").and_return(double("native ABI export", :[] => 42))
+    allow(Fiddle).to receive(:dlopen).with("fixture.so").and_return("emf_abi_version" => 42)
     allow(Fiddle::Function).to receive(:new).with(42, [], Fiddle::TYPE_INT).and_return(function)
   end
 
@@ -42,7 +44,7 @@ RSpec.describe Emfsvg::ResourceCalibration::QualificationProbe do
     allow(locked).to receive(:version).and_return(Gem::Version.new("1.2.4"))
     expect { described_class.call("fixture.lock", "fixture.so") }.to raise_error(/same released Rubygems/)
     allow(locked).to receive(:version).and_return(version)
-    allow(Bundler::LockfileParser).to receive(:new).and_return(double(specs: [locked, locked]))
+    allow(Bundler::LockfileParser).to receive(:new).and_return(Struct.new(:specs).new([locked, locked]))
     expect { described_class.call("fixture.lock", "fixture.so") }.to raise_error(/same released Rubygems/)
   end
 

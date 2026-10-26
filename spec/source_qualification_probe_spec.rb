@@ -10,9 +10,18 @@ RSpec.describe Emfsvg::SourceQualificationProbe do
   let(:revision) { "a" * 40 }
   let(:root) { Dir.mktmpdir("emf-source-probe") }
   let(:source) { Bundler::Source::Git.allocate }
-  let(:loaded) { double("loaded Git emf", source: source, version: Gem::Version.new("0.1.3"), full_gem_path: root) }
-  let(:locked) { double("locked Git emf", name: "emf", source: source) }
-  let(:function) { instance_double(Fiddle::Function, call: 1) }
+  let(:loaded) do
+    Struct.new(:source, :version, :full_gem_path).new(source, Gem::Version.new("0.1.3"), root)
+  end
+  let(:locked) { Struct.new(:name, :source).new("emf", source) }
+  let(:function) do
+    Struct.new(:result, :calls) do
+      def call
+        self.calls += 1
+        result
+      end
+    end.new(1, 0)
+  end
   let(:features) { $LOADED_FEATURES }
   let(:git) do
     lambda do |*arguments|
@@ -33,9 +42,15 @@ RSpec.describe Emfsvg::SourceQualificationProbe do
     git.call("commit", "--quiet", "-m", "fixture")
     allow(source).to receive_messages(uri: described_class::SOURCE_URI, ref: revision, revision: revision)
     allow(Bundler).to receive(:read_file).with("fixture.lock").and_return("lock")
-    allow(Bundler::LockfileParser).to receive(:new).with("lock").and_return(double(specs: [locked]))
+    allow(Bundler::LockfileParser).to receive(:new).with("lock").and_return(Struct.new(:specs).new([locked]))
     allow(Gem).to receive(:loaded_specs).and_return("emf" => loaded)
-    allow(Fiddle).to receive(:dlopen).with("fixture.so").and_return(double("native library", :[] => 42))
+    symbols = {
+      "emf_abi_version" => 42,
+      "emf_error_resource_view" => 43,
+      "emf_document_snapshot_v3" => 44
+    }
+    library = Struct.new(:symbols) { def [](name) = symbols.fetch(name) }.new(symbols)
+    allow(Fiddle).to receive(:dlopen).with("fixture.so").and_return(library)
     allow(Fiddle::Function).to receive(:new).with(42, [], Fiddle::TYPE_INT).and_return(function)
     allow(features).to receive(:find).and_call_original
     allow(features).to receive(:find).with(any_args).and_return(File.join(root, "lib/emf.rb"))
@@ -53,7 +68,7 @@ RSpec.describe Emfsvg::SourceQualificationProbe do
     expect(value.fetch("entrypoint")).to eq(File.realpath(File.join(root, "lib/emf.rb")))
     expect(value.fetch("sha256")).to eq(Digest::SHA256.file(value.fetch("entrypoint")).hexdigest)
     expect(value.fetch("ruby_tree_sha256")).to match(/\A[0-9a-f]{64}\z/)
-    expect(function).to have_received(:call)
+    expect(function.calls).to eq(1)
   end
 
   it "rejects stale lock and loaded revisions before probing native code" do
