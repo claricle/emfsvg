@@ -22,12 +22,19 @@ module Emfsvg
         root = doc.root
         raise ParseError, "not an SVG document: missing root element" unless root
 
+        source = string.b
         Document.new(
           width: parse_dimension(root["width"]),
           height: parse_dimension(root["height"]),
           view_box: parse_view_box(root["viewBox"]),
-          root_element: Element.from_node(root)
+          root_element: Element.from_node(root) { |node| source_tag(source, node) }
         )
+      end
+
+      # Node serialization normalizes spacing; the original start tag carries
+      # the canonical renderer's distinction between Polyline and LineTo.
+      def source_tag(string, node)
+        string.match(/\G<(?:path|rect)\b(?:[^"'>]|"[^"]*"|'[^']*')*>/m, node.byte_offset)&.to_s
       end
 
       def parse_dimension(value)

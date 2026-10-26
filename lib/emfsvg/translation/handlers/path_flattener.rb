@@ -3,77 +3,74 @@
 module Emfsvg
   module Translation
     module Handlers
-      # Flatten a list of Svg::PathData::Command into a single shape
-      # (Polyline/Polygon/PolyBezier) suitable for one EMF record.
-      #
-      # v1 limitations:
-      #   * All commands converted to absolute (relative resolved).
-      #   * Arc/quadratic commands approximated as lines (TODO).
-      #   * Multiple subpaths merged into one (TODO: PolyPolygon).
+      # Resolve supported commands to absolute points without joining figures.
       class PathFlattener
-        Result = Struct.new(:shape_kind, :points, :bounds, keyword_init: true)
+        Result = Struct.new(:shape_kind, :points, :bounds, :segments, keyword_init: true)
 
-        def self.flatten(commands)
-          new.flatten(commands)
+        def self.flatten(commands, preserve_initial_line: false)
+          new.flatten(commands, preserve_initial_line: preserve_initial_line)
         end
 
-        def flatten(commands)
-          @cx = 0.0
-          @cy = 0.0
-          @closed = false
-          @has_curve = false
-          @points = []
-          commands.each { |command| apply(command) }
+        def flatten(commands, preserve_initial_line: false)
+          pen = PenState.new
+          subpaths = []
+          segments = []
+          commands.each do |command|
+            letter = command.letter.upcase
+            if letter == "M" && segments.any?
+              subpaths << build_result(segments)
+              segments = []
+            end
+            if segments.empty? && letter != "M" && !(preserve_initial_line && subpaths.empty? && letter == "L")
+              segments << ["M", [pen.current.dup]]
+            end
+            if letter == "A"
+              segments.concat(resolve_arc(pen, command))
+              next
+            end
+            points = resolve_command(pen, command)
+            segments << [letter, points] if points
+            next unless letter == "Z"
 
-          Result.new(
-            shape_kind: shape_kind(@closed, @has_curve),
-            points: @points,
-            bounds: bounds_for(@points)
-          )
+            pen.close_to(segments.first.last.first)
+            subpaths << build_result(segments)
+            segments = []
+          end
+          subpaths << build_result(segments) unless segments.empty?
+          subpaths
         end
 
         private
 
-        # Single-use per flatten call: @cx/@cy is the current position.
-        # Each command moves it (relative letters add to it) and records
-        # the point(s) it reaches.
-        def apply(command)
-          args = command.args
-          case command.letter
-          when "M", "L" then go_to(args[0], args[1])
-          when "m", "l" then go_to(@cx + args[0], @cy + args[1])
-          when "H" then go_to(args[0], @cy)
-          when "h" then go_to(@cx + args[0], @cy)
-          when "V" then go_to(@cx, args[0])
-          when "v" then go_to(@cx, @cy + args[0])
-          when "C" then curve_to(args[0], args[1], args[2], args[3], args[4], args[5])
-          when "c" then relative_curve_to(args)
-          when "Z", "z" then @closed = true
+        def resolve_arc(pen, command)
+          arc_segments = EllipticalArc.to_cubics(pen.current, command.args, absolute: command.absolute?)
+          pen.set_current(command.args.last(2), absolute: command.absolute?)
+          arc_segments.map { |kind, points| [kind == :line ? "L" : "C", points] }
+        end
+
+        def resolve_command(pen, command)
+          case command.letter.upcase
+          when "M", "L" then pen.line_to(command, absolute: command.absolute?)
+          when "H" then pen.h_line_to(command, absolute: command.absolute?)
+          when "V" then pen.v_line_to(command, absolute: command.absolute?)
+          when "C"
+            pen.cubic_to(command, absolute: command.absolute?)
+            return pen.flush_curve_points
+          when "Z" then return []
+          else return nil
           end
+          [pen.current.dup]
         end
 
-        def go_to(x, y)
-          @cx = x
-          @cy = y
-          @points << [x, y]
-        end
-
-        def relative_curve_to(args)
-          x = @cx
-          y = @cy
-          curve_to(x + args[0], y + args[1], x + args[2], y + args[3], x + args[4], y + args[5])
-        end
-
-        def curve_to(x1, y1, x2, y2, x, y)
-          @has_curve = true
-          @points << [x1, y1] << [x2, y2]
-          go_to(x, y)
-        end
-
-        def shape_kind(closed, has_curve)
-          return :polybezier if has_curve
-
-          closed ? :polygon : :polyline
+        def build_result(segments)
+          points = segments.flat_map(&:last)
+          letters = segments.map(&:first)
+          kind = if letters.include?("C")
+                   (letters - %w[M C]).empty? ? :polybezier : :path
+                 else
+                   letters.last == "Z" ? :polygon : :polyline
+                 end
+          Result.new(shape_kind: kind, points: points, bounds: bounds_for(points), segments: segments)
         end
 
         # Bounds holds raw decimal values (NOT pre-scaled to int). The
@@ -93,6 +90,69 @@ module Emfsvg
             bottom = y if y > bottom
           end
           Bounds.new(left: left, top: top, right: right, bottom: bottom)
+        end
+      end
+
+      # Tracks current position and pending bezier control points while
+      # flattening a path. Single-use per flatten() call.
+      class PenState
+        attr_reader :current, :pending_curve_points
+
+        def initialize
+          @current = [0.0, 0.0]
+          @pending_curve_points = []
+        end
+
+        def close_to(point)
+          @current = point.dup
+        end
+
+        def set_current(point, absolute:)
+          @current = absolute ? point.dup : @current.zip(point).map { |origin, delta| origin + delta }
+        end
+
+        def line_to(command, absolute:)
+          x, y = command.args
+          @current = absolute ? [x, y] : [@current[0] + x, @current[1] + y]
+        end
+
+        def h_line_to(command, absolute:)
+          x, = command.args
+          @current = if absolute
+                       [x, @current[1]]
+                     else
+                       [@current[0] + x, @current[1]]
+                     end
+        end
+
+        def v_line_to(command, absolute:)
+          y, = command.args
+          @current = if absolute
+                       [@current[0], y]
+                     else
+                       [@current[0], @current[1] + y]
+                     end
+        end
+
+        def cubic_to(command, absolute:)
+          x1, y1, x2, y2, x, y = command.args
+          if absolute
+            @pending_curve_points = [[x1, y1], [x2, y2], [x, y]]
+            @current = [x, y]
+          else
+            @pending_curve_points = [
+              [@current[0] + x1, @current[1] + y1],
+              [@current[0] + x2, @current[1] + y2],
+              [@current[0] + x, @current[1] + y]
+            ]
+            @current = @current.zip([x, y]).map { |a, b| a + b }
+          end
+        end
+
+        def flush_curve_points
+          pts = @pending_curve_points
+          @pending_curve_points = []
+          pts
         end
       end
     end

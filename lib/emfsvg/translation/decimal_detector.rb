@@ -26,17 +26,21 @@ module Emfsvg
       def any_decimal?(element)
         return false unless element
 
+        return true if explicit_cosmetic_pixel_stroke?(element)
+
         element_attrs = decimal_attrs_for(element)
         return true if element_attrs.any? { |attr| decimal?(element.send(attr)) }
 
         path = path_commands(element)
-        return true if path&.any? { |cmd| cmd.args.any? { |a| a.is_a?(Float) && a != a.to_i } }
+        return true if path&.any? { |cmd| decimal?(cmd.args) }
 
         element.children.any? { |c| any_decimal?(c) }
       end
 
       def any_unsafe?(element, scaler)
         return false unless element
+
+        return false if LocalOrigin.for_path(element, scaler)
 
         element_attrs = decimal_attrs_for(element)
         return true if element_attrs.any? { |attr| unsafe_value?(element.send(attr), scaler) }
@@ -45,6 +49,16 @@ module Emfsvg
         return true if path&.any? { |cmd| cmd.args.any? { |a| scaler.unsafe?(a) } }
 
         element.children.any? { |c| any_unsafe?(c, scaler) }
+      end
+
+      # The EMF renderer preserves a cosmetic 1px width only when the
+      # translator uses a map scale. Explicit cap/join attributes
+      # distinguish real pens from the renderer's NULL-pen fallback.
+      def explicit_cosmetic_pixel_stroke?(element)
+        stroke = element.stroke if element.respond_to?(:stroke)
+        stroke && stroke.raw_width == "1px" &&
+          (stroke.line_cap_explicit || stroke.line_join_explicit) &&
+          !stroke.paint.null?
       end
 
       # Coordinate-bearing attributes per element class. Returns [] for
@@ -77,7 +91,8 @@ module Emfsvg
         case value
         when Float then !value.finite? || (value != value.to_i)
         when Array
-          value.any? { |v| pair_or_command?(v) ? decimal?(v) : v.is_a?(Float) && v != v.to_i }
+          value.any? { |v| decimal?(v) }
+        when Svg::PathData::Command then decimal?(value.args)
         when String then value.match?(/\.\d/)
         else false
         end
@@ -95,8 +110,9 @@ module Emfsvg
         return false if value.nil?
 
         case value
-        when Float then scaler.unsafe?(value)
+        when Numeric then scaler.unsafe?(value)
         when Array then value.any? { |v| unsafe_value?(v, scaler) }
+        when Svg::PathData::Command then unsafe_value?(value.args, scaler)
         when String then extract_floats(value).any? { |f| scaler.unsafe?(f) }
         else false
         end

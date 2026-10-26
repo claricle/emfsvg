@@ -10,39 +10,61 @@
 # Usage:
 #   Emfsvg::Compat.compare_glob(fixtures_glob)
 #
-# Requires the libemf2svg-conv binary (or our emf2svg_ref wrapper) at
-# Emfsvg::Compat::REF_BINARY_DEFAULT. The spec auto-skips if missing.
+# Live reference generation requires explicit EMF2SVG_REF_PATH and
+# EMF2SVG_REF_LIB_DIR. See spec/fixtures/README.adoc for setup.
 
 require "open3"
-require "fileutils"
 require "tmpdir"
 require "rexml/document"
 
 module Emfsvg
   module Compat
-    REF_BINARY_DEFAULT = "/Users/mulgogi/src/claricle/libemf2svg/emf2svg_ref"
-    REF_LIB_DIR_DEFAULT = "/Users/mulgogi/src/claricle/libemf2svg/build"
+    class SetupError < StandardError; end
+    class ConversionError < StandardError; end
 
     module_function
 
-    def ref_binary_available?
-      path = ENV.fetch("EMF2SVG_REF_PATH", REF_BINARY_DEFAULT)
-      File.executable?(path)
+    def validate_reference!
+      binary = ENV.fetch("EMF2SVG_REF_PATH", nil)
+      lib_dir = ENV.fetch("EMF2SVG_REF_LIB_DIR", nil)
+      unless binary && File.file?(binary) && File.executable?(binary)
+        raise SetupError,
+              "Set EMF2SVG_REF_PATH to the executable pinned C reference wrapper; see spec/fixtures/README.adoc"
+      end
+      unless lib_dir && File.directory?(lib_dir)
+        raise SetupError,
+              "Set EMF2SVG_REF_LIB_DIR to the pinned C reference library directory; see spec/fixtures/README.adoc"
+      end
+
+      [File.expand_path(binary), File.expand_path(lib_dir)]
     end
 
-    # Generate a reference SVG using libemf2svg. Returns the SVG bytes,
-    # or nil if generation failed.
-    def generate_reference(emf_path, output_path = nil)
-      binary = ENV.fetch("EMF2SVG_REF_PATH", REF_BINARY_DEFAULT)
-      lib_dir = ENV.fetch("EMF2SVG_REF_LIB_DIR", REF_LIB_DIR_DEFAULT)
-      env = { "DYLD_LIBRARY_PATH" => lib_dir }
-      output_path ||= "#{Dir.mktmpdir}/#{File.basename(emf_path, '.emf')}.svg"
-      _, _, status = Open3.capture3(env, binary, emf_path, output_path)
-      return nil unless status.success?
+    def ref_binary_available?
+      validate_reference!
+      true
+    rescue SetupError
+      false
+    end
 
-      File.binread(output_path)
-    ensure
-      File.delete(output_path) if output_path && !block_given?
+    # Explicit output paths are retained; internally allocated directories are
+    # removed on both successful generation and failure.
+    def generate_reference(emf_path, output_path = nil)
+      binary, lib_dir = validate_reference!
+      Dir.mktmpdir("emfsvg-reference-") do |directory|
+        temporary_output = File.join(directory, "reference.svg")
+        env = { "DYLD_LIBRARY_PATH" => lib_dir, "LD_LIBRARY_PATH" => lib_dir }
+        _, stderr, status = Open3.capture3(env, binary, emf_path.to_s, temporary_output)
+        raise ConversionError, "C reference failed for #{emf_path} (#{status}): #{stderr.strip}" unless status.success?
+        unless File.file?(temporary_output) && File.size?(temporary_output)
+          raise ConversionError, "C reference produced no SVG for #{emf_path}; check the wrapper and library setup"
+        end
+
+        svg = File.binread(temporary_output)
+        File.binwrite(output_path, svg) if output_path
+        svg
+      end
+    rescue SystemCallError => e
+      raise ConversionError, "C reference could not convert #{emf_path}: #{e.message}"
     end
 
     # Generate emfsvg output. Requires the emfsvg gem to be loaded.
@@ -98,14 +120,7 @@ module Emfsvg
       results = []
       Dir.glob(fixtures_glob).each do |emf|
         ref_svg = generate_reference(emf)
-        next unless ref_svg
-
-        emfsvg_svg = begin
-          generate_emfsvg(emf)
-        rescue StandardError
-          nil
-        end
-        next unless emfsvg_svg
+        emfsvg_svg = generate_emfsvg(emf)
 
         results << Result.new(
           fixture: File.basename(emf),

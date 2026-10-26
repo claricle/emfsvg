@@ -177,6 +177,9 @@ module Emfsvg
 
       # The Emf wire-record-adapter calls this. Dispatch by wire class.
       def visit_emr_wire_record(adapter)
+        pending_hint = @pending_drawing_hint
+        @pending_drawing_hint = nil
+        @drawing_hint = pending_hint if pending_hint && pending_hint["record"] == DrawingHint.fingerprint(adapter)
         klass = RecordAccess.wire_class(adapter)
         method_name = HANDLERS[klass]
         if method_name
@@ -184,10 +187,14 @@ module Emfsvg
         elsif @options.verbose
           warn "emfsvg: no handler for #{klass.name&.split('::')&.last}"
         end
+      rescue ParseError
+        raise
       rescue StandardError => e
         raise unless @options.verbose
 
         warn "emfsvg: handler #{method_name} raised #{e.class}: #{e.message}"
+      ensure
+        @drawing_hint = nil
       end
 
       def flush_open_groups
@@ -778,12 +785,16 @@ module Emfsvg
       end
 
       def visit_set_miter_limit(wire)
-        # MS-EMF spec: iMiterLimit is a uint32 (miter length ratio). The emf
-        # wire parses it as IEEE float, so convert bits back to uint32.
-        @dc.miter_limit = [wire.miter_limit.to_f].pack("f").unpack1("V")
+        limit = wire.miter_limit.to_f
+        # libemf2svg-produced EMFs store this field as the integer payload's
+        # float bit pattern, while native SetMiterLimit records store a float.
+        limit = [limit].pack("f").unpack1("L<") if limit.abs < 1.1754943508222875e-38
+        @dc.miter_limit = limit
       end
 
-      def visit_comment(_wire); end
+      def visit_comment(wire)
+        @pending_drawing_hint = DrawingHint.decode(wire)
+      end
 
       def visit_set_pixel_v(_wire)
         # FLAG_IGNORED in libemf2svg — emits nothing.
@@ -812,8 +823,8 @@ module Emfsvg
 
         height = body.unpack1("l<")
         _width = body.unpack("l<", offset: 4)[0]
-        # libemf2svg reduces lfEscapement modulo 3600 (so 3600 → 0, no rotation).
-        escapement = body.unpack("l<", offset: 8)[0] % 3600
+        # C remainder preserves the dividend sign (so -2700 stays -2700).
+        escapement = body.unpack("l<", offset: 8)[0].remainder(3600)
         weight = body.unpack("l<", offset: 16)[0]
         italic = body.getbyte(20) != 0
         underline = body.getbyte(21) != 0
@@ -868,7 +879,7 @@ module Emfsvg
         if small_chars
           bytes.force_encoding("CP1252").encode("UTF-8", undef: :replace, replace: "?")
         else
-          bytes.force_encoding("UTF-16LE").encode("UTF-8", undef: :replace, replace: "?")
+          decode_utf16_text(bytes)
         end
       end
 
@@ -1476,12 +1487,15 @@ module Emfsvg
         if wire.f_options.to_i.anybits?(GlyphIndexMapper::ETO_GLYPH_INDEX)
           decode_glyph_indices(string_bytes, n_chars)
         elsif utf16
-          string_bytes.force_encoding("UTF-16LE")
-                      .encode("UTF-8", undef: :replace, replace: "?")
+          decode_utf16_text(string_bytes)
         else
           cleaned = string_bytes.bytes.map { |b| b > 0x7F ? 0x20 : b }
           cleaned.pack("C*").force_encoding("UTF-8")
         end
+      end
+
+      def decode_utf16_text(string_bytes)
+        string_bytes.force_encoding("UTF-16LE").encode("UTF-8", invalid: :replace, undef: :replace, replace: "?")
       end
 
       def emit_ext_text(wire, utf16:)
@@ -1819,6 +1833,8 @@ module Emfsvg
           # chars instead of '=' (the C base64_encode allocates length+3
           # for nulls and the partial-triple bytes default to 0).
           jpeg = result.pixels.to_s
+          return "data:image/jpeg;base64,#{[jpeg].pack('m0')}" if @drawing_hint&.fetch("kind") == "jpeg"
+
           rem = jpeg.bytesize % 3
           jpeg << ("\x00" * ((3 - rem) % 3)) if rem != 0
           "data:image/jpg;base64,#{[jpeg].pack('m0')}"
@@ -1844,6 +1860,13 @@ module Emfsvg
         brush = @dc.brush
         return unless brush.style == Brush::SOLID
 
+        if legacy_rectangle?(wire)
+          values = @drawing_hint.fetch("values")
+          @builder.raw(%(<rect x="#{values[0]}" y="#{values[1]}" width="#{values[2]}" ))
+          @builder.raw(%(height="#{values[3]}" fill="#{values[4]}"/>))
+          return
+        end
+
         style = format("fill:#%02x%02x%02x", brush.color.red, brush.color.green, brush.color.blue)
         size_x = scale_dim_x(wire.cx_dest.to_i)
         size_y = scale_dim_y(wire.cy_dest.to_i)
@@ -1855,6 +1878,15 @@ module Emfsvg
         @builder.raw("L #{fmt(pos_x + size_x)},#{fmt(pos_y + size_y)} ")
         @builder.raw("L #{fmt(pos_x)},#{fmt(pos_y + size_y)} ")
         @builder.raw("Z\" />")
+      end
+
+      def legacy_rectangle?(wire)
+        return false unless @drawing_hint&.fetch("kind") == "rect" && wire.dw_rop.to_i == 0x00F00021
+
+        values = @drawing_hint.fetch("values")
+        geometry = [cal_x(wire.x_dest), cal_y(wire.y_dest),
+                    scale_dim_x(wire.cx_dest.to_i), scale_dim_y(wire.cy_dest.to_i)]
+        values.first(4).map(&:to_f) == geometry && values.last == rgb_hex(@dc.brush.color)
       end
 
       def emit_path_polygon(points, closed:)
@@ -2073,7 +2105,10 @@ module Emfsvg
         w = [width.to_i, 1].max
         tmp_w = scale_dim_x(w)
         if (tmp_w / @scaling) < 1.0
-          @builder.raw("stroke-width=\"1px\" ")
+          legacy = @drawing_hint&.fetch("kind") == "stroke" &&
+                   @drawing_hint.fetch("values").first == rgb_hex(@dc.pen.color) &&
+                   (1..4).cover?(@dc.pen.style & 0xFF)
+          @builder.raw("stroke-width=\"#{legacy ? '1.0000' : '1px'}\" ")
         else
           @builder.raw("stroke-width=\"#{fmt(tmp_w)}\" ")
         end

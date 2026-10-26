@@ -15,6 +15,7 @@ RSpec.configure do |config|
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
   config.filter_run_when_matching :focus
+  config.filter_run_excluding live_reference: true unless ENV["EMFSVG_LIVE_REFERENCE"] == "1"
   config.disable_monkey_patching!
   config.warnings = true
 

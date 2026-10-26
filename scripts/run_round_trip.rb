@@ -12,13 +12,14 @@ require "set"
 #
 # Usage:
 #   bundle exec ruby scripts/run_round_trip.rb [limit] [tolerance]
+#
+# Requires EMF_FIXTURE_ROOT; see spec/fixtures/README.adoc for setup.
 
 $LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
 $LOAD_PATH.unshift(File.expand_path("../spec", __dir__))
 require "emfsvg"
 require "support/svg_matcher"
-
-GOLDEN_DIR = File.expand_path("../spec/fixtures/emfsvg_golden", __dir__)
+require "support/parity_corpus"
 
 def round_trip(svg_path)
   svg = File.read(svg_path)
@@ -47,10 +48,20 @@ def categorise(reason)
   end
 end
 
-limit = ARGV.first&.to_i
-tolerance = (ARGV[1] || 0.5).to_f
-all = Dir.glob(File.join(GOLDEN_DIR, "*.svg"))
+begin
+  limit = ARGV.first && Integer(ARGV.first, 10)
+  raise ArgumentError, "limit must be positive" if limit && !limit.positive?
+
+  tolerance = Float(ARGV[1] || 0.5)
+  raise ArgumentError, "tolerance must be finite and nonnegative" unless tolerance.finite? && tolerance >= 0
+
+  corpus = Emfsvg::SpecSupport::ParityCorpus.new.verify!
+  all = corpus.fixtures.map { |entry| corpus.artifact_path(entry, "round_trip") }
+rescue Emfsvg::SpecSupport::ParityCorpus::SetupError, ArgumentError => e
+  abort e.message
+end
 fixtures = limit ? all.first(limit) : all
+abort "Pinned corpus contains no fixtures; check EMF_FIXTURE_ROOT" if fixtures.empty?
 
 byte_equal = 0
 lossy_equal = 0
@@ -93,3 +104,5 @@ puts "Total in golden set:       #{all.size}"
 puts "=" * 70
 puts "Failure categories:"
 fail_categories.sort_by { |_, c| -c }.each { |cat, count| puts "  #{cat.ljust(40)} #{count}" }
+
+exit 1 if errors.positive?

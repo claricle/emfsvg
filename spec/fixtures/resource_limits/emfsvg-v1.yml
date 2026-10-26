@@ -1,0 +1,1724 @@
+---
+schema_version: 1
+provenance:
+  manifest_sha256: 411a4cffc2589e0600a25ace3ce7770c4197998c1d1a0ecc11d2ce955038a5bb
+  emfsvg_revision: b318d5d9c42e39d58de288c51df34b237d3a3c69
+  emfsvg_source_sha256: 6162a72b87f03dd99cf5d796e2c72a96fda93937d07f455507be46e0072590b1
+  runtime:
+    version: 0.2.0
+    package_sha256: 6b3add05605260d646ec1d732da139eb972016c6fe4547aa60846a2ac2f542fa
+    source_revision: 327c36b49743bcb9799c20123218f0bae965f1de
+  native_library:
+    artifact_sha256: '068d51ffed604b277b599b9916ee7c8cd15f61b8004719362efeaa28101cf01e'
+    source_revision: 327c36b49743bcb9799c20123218f0bae965f1de
+    abi: '1'
+  selected_backend: native
+  platform:
+    os: linux
+    architecture: x86_64
+    ruby: 3.4.8
+  enforcement:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+inputs:
+- name: spec/fixtures/emf/test-000.emf
+  sha256: 8308afe932ec53c563f4cb109d69375b9f083e72db85f8e62d6d19618adf2581
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: 70c1966f9f7b16581faa614365015e5b804ed77a532c42c1d315c5d10a57eb8a
+- name: spec/fixtures/emf/test-001.emf
+  sha256: 96c3b6bacf8850d3b677cae727efb429f67379e1e6a3810edf4db31bd4b233f4
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: cfe449216c9344aa3e9ffb5afe87f2c2f077462e621d20eaf87effe4e3fdbd75
+- name: spec/fixtures/emf/test-002.emf
+  sha256: ae419e078584c14a701b0b9f64877973b99af05b73ac3307b41a9ec1e855cabe
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: e47bdaf10136a1c35ce8895821c380f42b5ae64fa3cc825eba02ab77061c9dca
+- name: spec/fixtures/emf/test-003.emf
+  sha256: eaaa7cb96fe3be84e549a5de76e07e0c851ca5d5d57e9b044a49cd643d059884
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: c98251d21cb89b32d421ba2fd7b06fb4727ae059b3a33891d7de38d5a2effea3
+- name: spec/fixtures/emf/test-004.emf
+  sha256: b393af0438c8d29c622ea228b087978f9fe0bb9237fc636c840acc5d474d5477
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: 84bab35d72ffc9de0973bc0e1a5f74a42cc1f3d08bc626cf2b4e280f769d338d
+- name: spec/fixtures/emf-ea/EA-test-file-001.emf
+  sha256: 2e777df95a2d730ce597c8240b3f2f522edd66f1c08eba767b4a66529148de25
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: a6c95d65cf95ecba3867319ef60d1405a8b9205afe1d6be0d04eb6374e46b03b
+- name: spec/fixtures/emf-ea/EA-test-file-002.emf
+  sha256: 2dbbbcbd83bc556c31210cace11a3fc08c159ddcc963ed08e59e905058d8e1a0
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: c1182db73788906c449d4f6d86f1f5ca8b1b892acb8e8b25d3e75ef39e1b5a76
+- name: spec/fixtures/emf-ea/EA-test-file-003.emf
+  sha256: '03409bd53aa49b4d6c5f30894ab73a9ff384b9e5c54768909563aece2bb888c7'
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: d6a94c635dd35537feeca59abe4ecb97c16f71729cea8b622205ce77e6dc97ba
+- name: spec/fixtures/simple/image1.emf
+  sha256: 64f44502f49ad9bc40cc9bb3061b0e7697cbd8f382ec1dbc92a2dcc5db53bdc0
+  expected_outcome:
+    kind: svg
+    warnings: []
+    svg_sha256: 2884a0704c041c725f2db0b7d888e1d751f339a129d085cc79164a1c4b6a74e1
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf
+  sha256: 88a0066eaa5b30b96137f69312963891154efc13ab0922b7073532aadc7b673a
+  expected_outcome:
+    kind: unreadable
+    warnings: []
+    exception:
+      class: Emfsvg::ParseError
+      message: truncated EMF header (claimed 59296, got 1444)
+      cause:
+        class: Emf::FormatError
+        message: truncated EMF header (claimed 59296, got 1444)
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  sha256: 4817e49ba45ad8009926e3c8831fca360731b7cee8524db892db34e1190fc884
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  sha256: b84b4c73527374fa3520da01b394edf4be1dfc87d10e2d1f8a41d9353e3919b4
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  sha256: 1595c39c22bb9ab0855d99d74da04644d057a20dd7dcd391c1c616ef8bfa846a
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  sha256: cd22c1eff37105c233c145de4806cb0a960b66986b3e9975e56e68f58bea0433
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+  sha256: fb2171310a7537165be53ee73a32050c925343bdca7e338ba1fa3337c994cf98
+  expected_outcome:
+    kind: unreadable
+    warnings: []
+    exception:
+      class: Emfsvg::ParseError
+      message: unrecognised format (first uint32=0x00000073)
+      cause:
+        class: Emf::FormatError
+        message: unrecognised format (first uint32=0x00000073)
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
+  sha256: a13446c89e802378dc3fe4dc78ab500090aa70b861544ecb7d1e50be72dbfaff
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf
+  sha256: 63897c62eb3d534d1e2b0848aae6cef65812199076f3e2a6c40173f34bee31ca
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
+  sha256: c3ad5a70c9e4a4c8ac1641c711be752a7237d031fa056171c640c997b57d358c
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf
+  sha256: c96400d49fa0255a077d839b5c90f845a80e3e7a234ffdc25706d13ebd253d78
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf
+  sha256: 8271bd3008d65eb540602a2cb2df018882c40efc58abfcc80692e6a8f8b3610b
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
+  sha256: d49e10c7247e364f2f2d87d105c3c34dcc972f15b15ba64ca172538ee96c5e8d
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf
+  sha256: c4c979dd4701688e0f4fda68d0b9b4acd1b553c47b2e0dd0177256329107bca8
+  expected_outcome:
+    kind: svg
+    warnings:
+    - 'emfsvg: skipped EMF records: index=38,type=UNKNOWN(0x113CCD70),code=289197424,offset=4195
+
+      '
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf
+  sha256: c78af3ebed5e88bb83e48e89351a2d47c02da6012bde273c3342e13fda1f63be
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
+  sha256: 9120352cdaba9cb96cba369d7c57d5f0bba1c36613fff6446105d609ccf9e2d5
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf
+  sha256: 16c021181a16e43210c49a4e9ff727fcfbb6f1ab1c272947ea49c61740ae8698
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
+  sha256: 6f7af06abc1198554f1b1f0417ef856e427702dd1631496374f4ca7fed074921
+  expected_outcome:
+    kind: svg
+    warnings:
+    - 'emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120
+
+      '
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf
+  sha256: 9b9070408fe776db984f19bea1a3f86997a53c1176a2eb1cf8626067d54d15ff
+  expected_outcome:
+    kind: svg
+    warnings:
+    - 'emfsvg: skipped EMF records: index=604,type=UNKNOWN(0x55FF0000),code=1442775040,offset=63752
+
+      '
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf
+  sha256: 0337d4a5c054e6a98e29218dcecfd3e330610556620b05a31d1d451e55041ee4
+  expected_outcome:
+    kind: svg
+    warnings:
+    - 'emfsvg: skipped EMF records: index=30,type=UNKNOWN(0x00200020),code=2097184,offset=2776
+
+      '
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf
+  sha256: 0f025b558bab835a0484d1ee88ef22b8f84223fdff0e68fd27e8de3c4438c175
+  expected_outcome:
+    kind: svg
+    warnings: []
+- name: spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf
+  sha256: 53533b29375da44ee3861b76eada7a68978778db13a31357b685b1736fffc780
+  expected_outcome:
+    kind: svg
+    warnings: []
+outer_caps:
+  timeout_seconds: 30.0
+  rss_cap_mib: 512.0
+  as_cap_mib: 2048.0
+grace_seconds: 0.2
+repetitions: 3
+samples:
+- case: spec/fixtures/emf/test-000.emf
+  repetition: 1
+  input_bytes: 95060
+  output_bytes: 20510
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8301487379999912
+  rss_peak_kib: 43012
+  as_peak_kib: 629080
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-000.emf
+  repetition: 2
+  input_bytes: 95060
+  output_bytes: 20510
+  warnings: []
+  exception:
+  elapsed_seconds: 0.837226563999991
+  rss_peak_kib: 42892
+  as_peak_kib: 629140
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-000.emf
+  repetition: 3
+  input_bytes: 95060
+  output_bytes: 20510
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8281207649999942
+  rss_peak_kib: 42948
+  as_peak_kib: 628992
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-001.emf
+  repetition: 1
+  input_bytes: 46916
+  output_bytes: 211503
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7601864709999973
+  rss_peak_kib: 35156
+  as_peak_kib: 494476
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-001.emf
+  repetition: 2
+  input_bytes: 46916
+  output_bytes: 211503
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7496288309999954
+  rss_peak_kib: 35268
+  as_peak_kib: 494548
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-001.emf
+  repetition: 3
+  input_bytes: 46916
+  output_bytes: 211503
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7586403759999882
+  rss_peak_kib: 35840
+  as_peak_kib: 494976
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-002.emf
+  repetition: 1
+  input_bytes: 52416
+  output_bytes: 253867
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7585762190000196
+  rss_peak_kib: 36184
+  as_peak_kib: 495732
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-002.emf
+  repetition: 2
+  input_bytes: 52416
+  output_bytes: 253867
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7699574780000091
+  rss_peak_kib: 35452
+  as_peak_kib: 494740
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-002.emf
+  repetition: 3
+  input_bytes: 52416
+  output_bytes: 253867
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7671405879999895
+  rss_peak_kib: 36304
+  as_peak_kib: 495728
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-003.emf
+  repetition: 1
+  input_bytes: 52668
+  output_bytes: 254476
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7573753280000233
+  rss_peak_kib: 35416
+  as_peak_kib: 494816
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-003.emf
+  repetition: 2
+  input_bytes: 52668
+  output_bytes: 254476
+  warnings: []
+  exception:
+  elapsed_seconds: 0.757688781000013
+  rss_peak_kib: 35452
+  as_peak_kib: 494744
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-003.emf
+  repetition: 3
+  input_bytes: 52668
+  output_bytes: 254476
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7563691849999827
+  rss_peak_kib: 35592
+  as_peak_kib: 495004
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-004.emf
+  repetition: 1
+  input_bytes: 92840
+  output_bytes: 484248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8117201199999897
+  rss_peak_kib: 36992
+  as_peak_kib: 496500
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-004.emf
+  repetition: 2
+  input_bytes: 92840
+  output_bytes: 484248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8097701169999993
+  rss_peak_kib: 36080
+  as_peak_kib: 495736
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf/test-004.emf
+  repetition: 3
+  input_bytes: 92840
+  output_bytes: 484248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8096264139999789
+  rss_peak_kib: 36992
+  as_peak_kib: 496504
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-001.emf
+  repetition: 1
+  input_bytes: 18884
+  output_bytes: 13792
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7158757180000066
+  rss_peak_kib: 33544
+  as_peak_kib: 492828
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-001.emf
+  repetition: 2
+  input_bytes: 18884
+  output_bytes: 13792
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7154168449999929
+  rss_peak_kib: 33536
+  as_peak_kib: 492828
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-001.emf
+  repetition: 3
+  input_bytes: 18884
+  output_bytes: 13792
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7156091460000198
+  rss_peak_kib: 33600
+  as_peak_kib: 492932
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-002.emf
+  repetition: 1
+  input_bytes: 89048
+  output_bytes: 122588
+  warnings: []
+  exception:
+  elapsed_seconds: 0.831025679000021
+  rss_peak_kib: 36240
+  as_peak_kib: 495532
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-002.emf
+  repetition: 2
+  input_bytes: 89048
+  output_bytes: 122588
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8392059759999881
+  rss_peak_kib: 36340
+  as_peak_kib: 495716
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-002.emf
+  repetition: 3
+  input_bytes: 89048
+  output_bytes: 122588
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8526716389999933
+  rss_peak_kib: 36472
+  as_peak_kib: 495788
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-003.emf
+  repetition: 1
+  input_bytes: 14752
+  output_bytes: 9132
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7305078850000086
+  rss_peak_kib: 33472
+  as_peak_kib: 492820
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-003.emf
+  repetition: 2
+  input_bytes: 14752
+  output_bytes: 9132
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7163846560000025
+  rss_peak_kib: 33436
+  as_peak_kib: 492740
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-ea/EA-test-file-003.emf
+  repetition: 3
+  input_bytes: 14752
+  output_bytes: 9132
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7074824610000121
+  rss_peak_kib: 33436
+  as_peak_kib: 492740
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/simple/image1.emf
+  repetition: 1
+  input_bytes: 92904
+  output_bytes: 39849
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8291197789999956
+  rss_peak_kib: 36220
+  as_peak_kib: 495400
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/simple/image1.emf
+  repetition: 2
+  input_bytes: 92904
+  output_bytes: 39849
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8098836089999963
+  rss_peak_kib: 36176
+  as_peak_kib: 495420
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/simple/image1.emf
+  repetition: 3
+  input_bytes: 92904
+  output_bytes: 39849
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7979516159999775
+  rss_peak_kib: 35992
+  as_peak_kib: 495332
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf
+  repetition: 1
+  input_bytes: 1444
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: truncated EMF header (claimed 59296, got 1444)
+    cause:
+      class: Emf::FormatError
+      message: truncated EMF header (claimed 59296, got 1444)
+  elapsed_seconds: 0.6443207190000066
+  rss_peak_kib: 30740
+  as_peak_kib: 490508
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf
+  repetition: 2
+  input_bytes: 1444
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: truncated EMF header (claimed 59296, got 1444)
+    cause:
+      class: Emf::FormatError
+      message: truncated EMF header (claimed 59296, got 1444)
+  elapsed_seconds: 0.6477665530000536
+  rss_peak_kib: 31092
+  as_peak_kib: 490504
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215338.emf
+  repetition: 3
+  input_bytes: 1444
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: truncated EMF header (claimed 59296, got 1444)
+    cause:
+      class: Emf::FormatError
+      message: truncated EMF header (claimed 59296, got 1444)
+  elapsed_seconds: 0.6461796080000113
+  rss_peak_kib: 31092
+  as_peak_kib: 490500
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  repetition: 1
+  input_bytes: 144416
+  output_bytes: 116191
+  warnings: []
+  exception:
+  elapsed_seconds: 0.954470477999962
+  rss_peak_kib: 42984
+  as_peak_kib: 633872
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  repetition: 2
+  input_bytes: 144416
+  output_bytes: 116191
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9750672149999673
+  rss_peak_kib: 42792
+  as_peak_kib: 633860
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215339.emf
+  repetition: 3
+  input_bytes: 144416
+  output_bytes: 116191
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9646646069999747
+  rss_peak_kib: 42832
+  as_peak_kib: 633904
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  repetition: 1
+  input_bytes: 53120
+  output_bytes: 198813
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7685567379999725
+  rss_peak_kib: 35148
+  as_peak_kib: 494656
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  repetition: 2
+  input_bytes: 53120
+  output_bytes: 198813
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7901964449999923
+  rss_peak_kib: 35588
+  as_peak_kib: 494976
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215358.emf
+  repetition: 3
+  input_bytes: 53120
+  output_bytes: 198813
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7799744469999723
+  rss_peak_kib: 35576
+  as_peak_kib: 494972
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  repetition: 1
+  input_bytes: 912
+  output_bytes: 2452
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7084694950000312
+  rss_peak_kib: 32716
+  as_peak_kib: 492184
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  repetition: 2
+  input_bytes: 912
+  output_bytes: 2452
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7006337340000073
+  rss_peak_kib: 32756
+  as_peak_kib: 492176
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215400.emf
+  repetition: 3
+  input_bytes: 912
+  output_bytes: 2452
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6955478500000254
+  rss_peak_kib: 32716
+  as_peak_kib: 492192
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  repetition: 1
+  input_bytes: 1880
+  output_bytes: 5535
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6970018929999924
+  rss_peak_kib: 32788
+  as_peak_kib: 492180
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  repetition: 2
+  input_bytes: 1880
+  output_bytes: 5535
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7096183129999645
+  rss_peak_kib: 32880
+  as_peak_kib: 492188
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215425.emf
+  repetition: 3
+  input_bytes: 1880
+  output_bytes: 5535
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7198605119999684
+  rss_peak_kib: 32824
+  as_peak_kib: 492184
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+  repetition: 1
+  input_bytes: 1460
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: unrecognised format (first uint32=0x00000073)
+    cause:
+      class: Emf::FormatError
+      message: unrecognised format (first uint32=0x00000073)
+  elapsed_seconds: 0.6560006419999809
+  rss_peak_kib: 30700
+  as_peak_kib: 490500
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+  repetition: 2
+  input_bytes: 1460
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: unrecognised format (first uint32=0x00000073)
+    cause:
+      class: Emf::FormatError
+      message: unrecognised format (first uint32=0x00000073)
+  elapsed_seconds: 0.648636053999951
+  rss_peak_kib: 30744
+  as_peak_kib: 490500
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-02-215428.emf
+  repetition: 3
+  input_bytes: 1460
+  output_bytes: 0
+  warnings: []
+  exception:
+    class: Emfsvg::ParseError
+    message: unrecognised format (first uint32=0x00000073)
+    cause:
+      class: Emf::FormatError
+      message: unrecognised format (first uint32=0x00000073)
+  elapsed_seconds: 0.6457438190000175
+  rss_peak_kib: 30720
+  as_peak_kib: 490504
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
+  repetition: 1
+  input_bytes: 11112
+  output_bytes: 22210
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7490769059999707
+  rss_peak_kib: 33124
+  as_peak_kib: 492428
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
+  repetition: 2
+  input_bytes: 11112
+  output_bytes: 22210
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7508756770000105
+  rss_peak_kib: 33128
+  as_peak_kib: 492428
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-140817.emf
+  repetition: 3
+  input_bytes: 11112
+  output_bytes: 22210
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7516924760000165
+  rss_peak_kib: 33160
+  as_peak_kib: 492448
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf
+  repetition: 1
+  input_bytes: 144416
+  output_bytes: 141447
+  warnings: []
+  exception:
+  elapsed_seconds: 1.0384464109999954
+  rss_peak_kib: 46740
+  as_peak_kib: 634756
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf
+  repetition: 2
+  input_bytes: 144416
+  output_bytes: 141447
+  warnings: []
+  exception:
+  elapsed_seconds: 1.0269161410000152
+  rss_peak_kib: 46748
+  as_peak_kib: 634756
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-160856.emf
+  repetition: 3
+  input_bytes: 144416
+  output_bytes: 141447
+  warnings: []
+  exception:
+  elapsed_seconds: 1.0286165410000194
+  rss_peak_kib: 46648
+  as_peak_kib: 634756
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
+  repetition: 1
+  input_bytes: 201616
+  output_bytes: 248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8299157790000322
+  rss_peak_kib: 35484
+  as_peak_kib: 494964
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
+  repetition: 2
+  input_bytes: 201616
+  output_bytes: 248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8665842970000313
+  rss_peak_kib: 35516
+  as_peak_kib: 494968
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-163010.emf
+  repetition: 3
+  input_bytes: 201616
+  output_bytes: 248
+  warnings: []
+  exception:
+  elapsed_seconds: 0.841343639999991
+  rss_peak_kib: 35504
+  as_peak_kib: 494976
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf
+  repetition: 1
+  input_bytes: 106632
+  output_bytes: 540711
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8409777140000188
+  rss_peak_kib: 38156
+  as_peak_kib: 498340
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf
+  repetition: 2
+  input_bytes: 106632
+  output_bytes: 540711
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8411814500000219
+  rss_peak_kib: 38024
+  as_peak_kib: 498340
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-07-235709.emf
+  repetition: 3
+  input_bytes: 106632
+  output_bytes: 540711
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8296678359999987
+  rss_peak_kib: 37484
+  as_peak_kib: 497892
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf
+  repetition: 1
+  input_bytes: 1512544
+  output_bytes: 3510057
+  warnings: []
+  exception:
+  elapsed_seconds: 2.134376424999971
+  rss_peak_kib: 88236
+  as_peak_kib: 659060
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf
+  repetition: 2
+  input_bytes: 1512544
+  output_bytes: 3510057
+  warnings: []
+  exception:
+  elapsed_seconds: 2.1357187219999787
+  rss_peak_kib: 88232
+  as_peak_kib: 659064
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-09-002112.emf
+  repetition: 3
+  input_bytes: 1512544
+  output_bytes: 3510057
+  warnings: []
+  exception:
+  elapsed_seconds: 2.1565583880000077
+  rss_peak_kib: 88276
+  as_peak_kib: 659260
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
+  repetition: 1
+  input_bytes: 144416
+  output_bytes: 141139
+  warnings: []
+  exception:
+  elapsed_seconds: 1.0147853519999899
+  rss_peak_kib: 50820
+  as_peak_kib: 634528
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
+  repetition: 2
+  input_bytes: 144416
+  output_bytes: 141139
+  warnings: []
+  exception:
+  elapsed_seconds: 1.0245386469999858
+  rss_peak_kib: 50424
+  as_peak_kib: 634556
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-105759.emf
+  repetition: 3
+  input_bytes: 144416
+  output_bytes: 141139
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9942931520000116
+  rss_peak_kib: 50628
+  as_peak_kib: 634556
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf
+  repetition: 1
+  input_bytes: 95060
+  output_bytes: 387
+  warnings:
+  - 'emfsvg: skipped EMF records: index=38,type=UNKNOWN(0x113CCD70),code=289197424,offset=4195
+
+    '
+  exception:
+  elapsed_seconds: 0.6874827870000217
+  rss_peak_kib: 33124
+  as_peak_kib: 492484
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf
+  repetition: 2
+  input_bytes: 95060
+  output_bytes: 387
+  warnings:
+  - 'emfsvg: skipped EMF records: index=38,type=UNKNOWN(0x113CCD70),code=289197424,offset=4195
+
+    '
+  exception:
+  elapsed_seconds: 0.6858816249999791
+  rss_peak_kib: 33172
+  as_peak_kib: 492444
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-132605.emf
+  repetition: 3
+  input_bytes: 95060
+  output_bytes: 387
+  warnings:
+  - 'emfsvg: skipped EMF records: index=38,type=UNKNOWN(0x113CCD70),code=289197424,offset=4195
+
+    '
+  exception:
+  elapsed_seconds: 0.692188299999998
+  rss_peak_kib: 33148
+  as_peak_kib: 492456
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf
+  repetition: 1
+  input_bytes: 154032
+  output_bytes: 638656
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9312214799999765
+  rss_peak_kib: 44040
+  as_peak_kib: 631512
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf
+  repetition: 2
+  input_bytes: 154032
+  output_bytes: 638656
+  warnings: []
+  exception:
+  elapsed_seconds: 0.9433850490000282
+  rss_peak_kib: 45468
+  as_peak_kib: 631508
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-13-133727.emf
+  repetition: 3
+  input_bytes: 154032
+  output_bytes: 638656
+  warnings: []
+  exception:
+  elapsed_seconds: 0.942480086000046
+  rss_peak_kib: 45548
+  as_peak_kib: 631588
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
+  repetition: 1
+  input_bytes: 2552
+  output_bytes: 7901
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6973350839999739
+  rss_peak_kib: 32696
+  as_peak_kib: 492188
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
+  repetition: 2
+  input_bytes: 2552
+  output_bytes: 7901
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6858658319999904
+  rss_peak_kib: 32764
+  as_peak_kib: 492188
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2014-12-14-080539.emf
+  repetition: 3
+  input_bytes: 2552
+  output_bytes: 7901
+  warnings: []
+  exception:
+  elapsed_seconds: 0.6855622180000296
+  rss_peak_kib: 32756
+  as_peak_kib: 492184
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf
+  repetition: 1
+  input_bytes: 75244
+  output_bytes: 391207
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8006703820000212
+  rss_peak_kib: 37004
+  as_peak_kib: 628984
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf
+  repetition: 2
+  input_bytes: 75244
+  output_bytes: 391207
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8420335229999978
+  rss_peak_kib: 37772
+  as_peak_kib: 628984
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-210039.emf
+  repetition: 3
+  input_bytes: 75244
+  output_bytes: 391207
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8006095529999584
+  rss_peak_kib: 37000
+  as_peak_kib: 628980
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
+  repetition: 1
+  input_bytes: 143870
+  output_bytes: 36087
+  warnings:
+  - 'emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120
+
+    '
+  exception:
+  elapsed_seconds: 0.7921192210000072
+  rss_peak_kib: 39416
+  as_peak_kib: 631184
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
+  repetition: 2
+  input_bytes: 143870
+  output_bytes: 36087
+  warnings:
+  - 'emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120
+
+    '
+  exception:
+  elapsed_seconds: 0.7886366959999691
+  rss_peak_kib: 39272
+  as_peak_kib: 631160
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-220639.emf
+  repetition: 3
+  input_bytes: 143870
+  output_bytes: 36087
+  warnings:
+  - 'emfsvg: skipped EMF records: index=531,type=UNKNOWN(0xFFFFFFFF),code=4294967295,offset=29120
+
+    '
+  exception:
+  elapsed_seconds: 0.7779074989999799
+  rss_peak_kib: 39308
+  as_peak_kib: 631196
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf
+  repetition: 1
+  input_bytes: 143847
+  output_bytes: 58003
+  warnings:
+  - 'emfsvg: skipped EMF records: index=604,type=UNKNOWN(0x55FF0000),code=1442775040,offset=63752
+
+    '
+  exception:
+  elapsed_seconds: 0.8399933379999993
+  rss_peak_kib: 41616
+  as_peak_kib: 630492
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf
+  repetition: 2
+  input_bytes: 143847
+  output_bytes: 58003
+  warnings:
+  - 'emfsvg: skipped EMF records: index=604,type=UNKNOWN(0x55FF0000),code=1442775040,offset=63752
+
+    '
+  exception:
+  elapsed_seconds: 0.8522489759999985
+  rss_peak_kib: 41768
+  as_peak_kib: 630408
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2016-02-02-225639.emf
+  repetition: 3
+  input_bytes: 143847
+  output_bytes: 58003
+  warnings:
+  - 'emfsvg: skipped EMF records: index=604,type=UNKNOWN(0x55FF0000),code=1442775040,offset=63752
+
+    '
+  exception:
+  elapsed_seconds: 0.8401470330000507
+  rss_peak_kib: 41756
+  as_peak_kib: 630492
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf
+  repetition: 1
+  input_bytes: 193464
+  output_bytes: 248
+  warnings:
+  - 'emfsvg: skipped EMF records: index=30,type=UNKNOWN(0x00200020),code=2097184,offset=2776
+
+    '
+  exception:
+  elapsed_seconds: 0.6964189170000168
+  rss_peak_kib: 33300
+  as_peak_kib: 492508
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf
+  repetition: 2
+  input_bytes: 193464
+  output_bytes: 248
+  warnings:
+  - 'emfsvg: skipped EMF records: index=30,type=UNKNOWN(0x00200020),code=2097184,offset=2776
+
+    '
+  exception:
+  elapsed_seconds: 0.6762538379999796
+  rss_peak_kib: 33132
+  as_peak_kib: 492540
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-11-230400.emf
+  repetition: 3
+  input_bytes: 193464
+  output_bytes: 248
+  warnings:
+  - 'emfsvg: skipped EMF records: index=30,type=UNKNOWN(0x00200020),code=2097184,offset=2776
+
+    '
+  exception:
+  elapsed_seconds: 0.6644633710000107
+  rss_peak_kib: 33180
+  as_peak_kib: 492508
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf
+  repetition: 1
+  input_bytes: 82452
+  output_bytes: 17093
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8526666359999808
+  rss_peak_kib: 40532
+  as_peak_kib: 628628
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf
+  repetition: 2
+  input_bytes: 82452
+  output_bytes: 17093
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8472206789999746
+  rss_peak_kib: 40504
+  as_peak_kib: 628592
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-02-12-010400.emf
+  repetition: 3
+  input_bytes: 82452
+  output_bytes: 17093
+  warnings: []
+  exception:
+  elapsed_seconds: 0.8456503610000254
+  rss_peak_kib: 40400
+  as_peak_kib: 628628
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf
+  repetition: 1
+  input_bytes: 13944
+  output_bytes: 5797
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7532983109999805
+  rss_peak_kib: 33608
+  as_peak_kib: 492944
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf
+  repetition: 2
+  input_bytes: 13944
+  output_bytes: 5797
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7372012570000379
+  rss_peak_kib: 33416
+  as_peak_kib: 492676
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+- case: spec/fixtures/emf-corrupted/bad_corrupted_2017-05-12-074000.emf
+  repetition: 3
+  input_bytes: 13944
+  output_bytes: 5797
+  warnings: []
+  exception:
+  elapsed_seconds: 0.7508523050000235
+  rss_peak_kib: 33616
+  as_peak_kib: 492932
+  exitstatus: 0
+  signal:
+  safe: true
+  mechanism:
+    rss: "/proc/status"
+    time: monotonic parent watchdog
+    address_space: child RLIMIT_AS
+derived_limits:
+  timeout_seconds: 9
+  rss_cap_mib: 237
+  as_cap_mib: 1416

@@ -13,8 +13,11 @@ module Emfsvg
       # Larger factors risk int32 overflow on big coords (max safe
       # SVG coord ~ 214_000 with FACTOR=10_000).
       class Fixed
+        class Overflow < RangeError; end
+
+        INT32_RANGE = (-(2**31)..((2**31) - 1))
         FACTOR = 10_000
-        MAX_SAFE_INPUT = 214_748 # (2**31 - 1) / FACTOR, with margin
+        MAX_SAFE_INPUT = 214_748 # ((2**31) - 1) / FACTOR, with margin
 
         attr_reader :factor
 
@@ -23,6 +26,8 @@ module Emfsvg
         end
 
         def to_int(decimal)
+          raise Overflow, "coordinate exceeds scaled int32 range: #{decimal}" if unsafe?(decimal)
+
           (decimal.to_f * factor).round
         end
 
@@ -33,7 +38,8 @@ module Emfsvg
         # True if `value` would overflow int32 when scaled. The
         # renderer falls back to Identity when ANY coord is unsafe.
         def unsafe?(value)
-          value.to_f.abs > MAX_SAFE_INPUT
+          scaled = value.to_f * factor
+          !scaled.finite? || !INT32_RANGE.cover?(scaled.round)
         end
       end
     end

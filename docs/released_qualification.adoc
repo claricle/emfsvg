@@ -1,0 +1,47 @@
+= Released runtime Linux qualification
+
+`.github/workflows/released-qualification.yml` checks the released Rubygems runtime
+on Linux. The current manifest is unqualified and deliberately fails its first
+step. A successful prerelease source workflow does not satisfy this gate.
+Before enabling release qualification, review the released version, package SHA,
+source revision containing the required contracts, native artifact SHA/source/ABI,
+manifest statuses, and Rubygems Gemfile/lock migration. The archive must itself
+record the exact `source_revision` metadata. Git-only dependency expectations in
+the existing suite must be migrated with that reviewed dependency change.
+No release publication or baseline approval is performed by this workflow.
+
+Configure repository variables `EMF_RELEASE_NATIVE_URL` and
+`EMF_RELEASE_NATIVE_PROVENANCE_URL` as HTTPS URLs to the released Linux native
+artifact and its independently supplied JSON attestation. The attestation must
+have exactly `artifact_sha256`, `source_revision`, and `abi`, matching the reviewed
+manifest; the workflow never manufactures it from expected metadata. Configure
+`EMF_RELEASE_TIMEOUT_SECONDS`, `EMF_RELEASE_RSS_CAP_MIB`, and
+`EMF_RELEASE_AS_CAP_MIB` as explicit positive outer caps suitable for this Linux
+runner. Checks require the same caps recorded in the reviewed baseline. No cap,
+version, artifact identity or observation is inferred as a new baseline.
+
+The release archive is fetched from the exact locked filename at Rubygems.org.
+The existing calibration qualification verifies installed package files against
+that archive, native bytes and loaded ABI, all 30 pinned inputs in Ruby/native/auto
+modes, and native selection in production auto mode before observations. The
+corpus revision comes from the manifest; portable font provisioning verifies its
+existing pinned installer/file/cmap contracts and qualifies isolated Ruby vectors.
+Font qualification here does not claim qualification of a Linux C reference.
+
+Pull requests and manual `check` dispatches require the committed reviewed
+`spec/fixtures/resource_limits/emfsvg-v1.yml`, check fresh observations against its
+ceilings without writing it, and run the full suite. The result gate requires at
+least the recorded whole-suite count, exact 208/209/426 group counts from the
+manifest, every reported example passed, zero pending/failures, unique example IDs,
+and execution of the real corrupted-corpus qualification example. Logs, complete
+RSpec JSON, released artifacts and font reports are uploaded even on failure.
+Extracted font files stay outside the uploaded evidence directory.
+Fixture and lockfile changes fail the preservation step.
+
+Only an explicit manual `generate` dispatch collects a candidate baseline under
+the runner temporary evidence directory. It uploads that candidate for separate
+review; it does not replace the committed baseline or claim full acceptance.
+The corrupted acceptance example requires the committed reviewed baseline, so the
+first generation can precede that review. After approving and committing a
+candidate, run `check` to obtain complete release acceptance evidence. Checks
+never generate a replacement when the baseline is absent or stale.

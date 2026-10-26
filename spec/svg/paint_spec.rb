@@ -47,6 +47,16 @@ RSpec.describe Emfsvg::Svg::Stroke do
       expect(stroke.line_join).to eq("round")
     end
 
+    it "parses the miter limit and defaults it to the EMF device-context value" do
+      explicit = described_class.parse(stroke: "black", width: nil, dash_array: nil,
+                                       line_cap: nil, line_join: nil, miter_limit: "5")
+      defaulted = described_class.parse(stroke: "black", width: nil, dash_array: nil,
+                                        line_cap: nil, line_join: nil)
+
+      expect(explicit.miter_limit).to eq(5.0)
+      expect(defaulted.miter_limit).to eq(10.0)
+    end
+
     it "treats null stroke as PS_NULL pen style" do
       stroke = described_class.parse(stroke: "none", width: nil, dash_array: nil,
                                      line_cap: nil, line_join: nil)

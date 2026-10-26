@@ -10,18 +10,15 @@ require "emfsvg/visitors"
 # state-setting handler stores a plain Integer, and that rendering with the
 # unwrapped state is identical to rendering with raw Integers.
 RSpec.describe Emfsvg::Visitors::EmrVisitor do
-  def u32(value) = BinData::Uint32le.new(value)
-  def s32(value) = BinData::Int32le.new(value)
-
-  def build_visitor(dc: Emfsvg::DeviceContext.new)
+  let(:dc) { Emfsvg::DeviceContext.new }
+  let(:builder) { Emfsvg::SvgBuilder.new }
+  let(:table) { Emfsvg::ObjectTable.new }
+  let(:visitor) do
     described_class.new(
-      Emfsvg::SvgBuilder.new, dc, Emfsvg::ObjectTable.new,
-      Emfsvg::TransformStack.new, nil, false, Emfsvg::Options.new
+      builder, dc, table, Emfsvg::TransformStack.new,
+      nil, false, Emfsvg::Options.new
     )
   end
-
-  let(:dc) { Emfsvg::DeviceContext.new }
-  let(:visitor) { build_visitor(dc: dc) }
   let(:point) { Struct.new(:x, :y) }
   let(:size) { Struct.new(:cx, :cy) }
 
@@ -34,7 +31,7 @@ RSpec.describe Emfsvg::Visitors::EmrVisitor do
       visit_set_stretch_blt_mode: [{ stretch_mode: 3 }, :stretch_mode, 3]
     }.each do |handler, (fields, reader, expected)|
       it "#{handler} stores a plain Integer" do
-        wire = Struct.new(*fields.keys).new(*fields.values.map { |v| u32(v) })
+        wire = Struct.new(*fields.keys).new(*fields.values.map { |v| BinData::Uint32le.new(v) })
         visitor.public_send(handler, wire)
 
         expect(dc.public_send(reader)).to eq(expected)
@@ -47,7 +44,7 @@ RSpec.describe Emfsvg::Visitors::EmrVisitor do
       visit_set_viewport_org_ex: %i[origin viewport_org]
     }.each do |handler, (field, reader)|
       it "#{handler} stores plain Integers" do
-        wire = Struct.new(field).new(point.new(s32(-5), s32(7)))
+        wire = Struct.new(field).new(point.new(BinData::Int32le.new(-5), BinData::Int32le.new(7)))
         visitor.public_send(handler, wire)
 
         expect(dc.public_send(reader)).to eq([-5, 7])
@@ -60,7 +57,7 @@ RSpec.describe Emfsvg::Visitors::EmrVisitor do
       visit_set_viewport_ext_ex: :viewport_ext
     }.each do |handler, reader|
       it "#{handler} stores plain Integers" do
-        wire = Struct.new(:extent).new(size.new(s32(300), s32(-200)))
+        wire = Struct.new(:extent).new(size.new(BinData::Int32le.new(300), BinData::Int32le.new(-200)))
         visitor.public_send(handler, wire)
 
         expect(dc.public_send(reader)).to eq([300, -200])
@@ -69,25 +66,39 @@ RSpec.describe Emfsvg::Visitors::EmrVisitor do
     end
 
     it "keeps the origin applied for isotropic and anisotropic modes only" do
-      visitor.visit_set_map_mode(Struct.new(:map_mode).new(u32(8)))
+      visitor.visit_set_map_mode(Struct.new(:map_mode).new(BinData::Uint32le.new(8)))
       expect(visitor.use_orgs?).to be(true)
-      visitor.visit_set_map_mode(Struct.new(:map_mode).new(u32(1)))
+      visitor.visit_set_map_mode(Struct.new(:map_mode).new(BinData::Uint32le.new(1)))
       expect(visitor.use_orgs?).to be(false)
     end
   end
 
   describe "object table" do
+    it "stores a corrupt high pen handle without allocating intervening slots" do
+      # bad_corrupted_2014-12-13-133727.emf, raw record 6152 (CREATEPEN).
+      wire = Struct.new(:ih_pen, :pen_style, :width, :color)
+                   .new(BinData::Uint32le.new(0x8900_0001), BinData::Uint32le.new(0),
+                        point.new(BinData::Int32le.new(17), BinData::Int32le.new(0)),
+                        Struct.new(:red, :green, :blue, :reserved).new(255, 0, 0, 0))
+
+      visitor.visit_create_pen(wire)
+
+      expect(table.size).to eq(1)
+      expect(table.lookup(0x8900_0001).object.width).to eq(17)
+      visitor.visit_delete_object(Struct.new(:ih_object).new(BinData::Uint32le.new(0x8900_0001)))
+      expect(table.size).to eq(0)
+    end
+
     it "stores pen and brush fields as plain Integers" do
       pen_wire = Struct.new(:ih_pen, :pen_style, :width, :color)
-                       .new(u32(2), u32(0), point.new(s32(3), s32(0)),
+                       .new(BinData::Uint32le.new(2), BinData::Uint32le.new(0), point.new(BinData::Int32le.new(3), BinData::Int32le.new(0)),
                             Struct.new(:red, :green, :blue, :reserved).new(1, 2, 3, 0))
       visitor.visit_create_pen(pen_wire)
       brush_wire = Struct.new(:ih_brush, :brush_style, :brush_hatch, :color)
-                         .new(u32(3), u32(0), u32(0),
+                         .new(BinData::Uint32le.new(3), BinData::Uint32le.new(0), BinData::Uint32le.new(0),
                               Struct.new(:red, :green, :blue, :reserved).new(1, 2, 3, 0))
       visitor.visit_create_brush_indirect(brush_wire)
 
-      table = visitor.instance_variable_get(:@object_table)
       pen = table.lookup(2).object
       brush = table.lookup(3).object
       expect([pen.style, pen.width, brush.style, brush.hatch]).to all(be_an(Integer))
@@ -95,19 +106,23 @@ RSpec.describe Emfsvg::Visitors::EmrVisitor do
   end
 
   describe "rendering" do
-    def render_polygon(coords)
-      visitor = build_visitor
-      pts = coords.map { |x, y| point.new(BinData::Int16le.new(x), BinData::Int16le.new(y)) }
-      visitor.visit_polygon16(Struct.new(:apts).new(pts))
-      visitor.instance_variable_get(:@builder).out.dup
+    let(:raw_builder) { Emfsvg::SvgBuilder.new }
+    let(:raw_visitor) do
+      described_class.new(
+        raw_builder, Emfsvg::DeviceContext.new, Emfsvg::ObjectTable.new,
+        Emfsvg::TransformStack.new, nil, false, Emfsvg::Options.new
+      )
     end
 
     it "emits the same bytes for BinData and Integer coordinates" do
       pts = [[10, 20], [-30, 40], [50, -60]]
-      raw = build_visitor
-      raw.visit_polygon16(Struct.new(:apts).new(pts.map { |x, y| point.new(x, y) }))
+      wrapped_points = pts.map do |x, y|
+        point.new(BinData::Int16le.new(x), BinData::Int16le.new(y))
+      end
+      visitor.visit_polygon16(Struct.new(:apts).new(wrapped_points))
+      raw_visitor.visit_polygon16(Struct.new(:apts).new(pts.map { |x, y| point.new(x, y) }))
 
-      expect(render_polygon(pts)).to eq(raw.instance_variable_get(:@builder).out)
+      expect(builder.out).to eq(raw_builder.out)
     end
   end
 end

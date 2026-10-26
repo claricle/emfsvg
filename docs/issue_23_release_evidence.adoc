@@ -1,0 +1,181 @@
+= Issue 23 release evidence handoff
+
+This is an incomplete evidence handoff, not a release or platform qualification.
+It records what the current manifest and bounded observations establish, and
+what remains to be demonstrated before a release claim is supportable.
+
+== Pinned inputs and current manifest state
+
+The parity manifest pins baseline revision
+`101356dcf673841fda0693076131bca7a0f34948` and corpus revision
+`a549346e4c4cacf9da6c86ab451a9f8401fa9672`. The corpus contract contains 208
+accepted inputs, 21 corrupted inputs, 209 round-trip examples, and 426
+compatibility examples. The current manifest records 208 accepted C golden
+outputs as byte-equal for the deliberate reference pin; its historical source
+builder identity remains unrecovered.
+
+The accepted published runtime is `emf` 0.2.0 at source revision
+`327c36b49743bcb9799c20123218f0bae965f1de`. The package and bundled native
+library identities for all eight published platforms were independently
+verified against their published bytes; manifest integration is underway.
+This establishes artifact identity, not runtime qualification. The previous
+temporary Git integration was `emf` 0.1.2 at
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`. The model contract issue #15 is
+pinned to `318b2d86c4025b5913c595c5055477124199daf9`; diagnostics (#65) and
+resources (#66) are pinned to the 0.2.0 source revision above. Linux release
+qualification, including the native resource baseline, remains outstanding.
+Production selection requires `auto` to select `native`.
+
+The verified published package/native checksums are:
+
+[cols="1,2,2",options="header"]
+|===
+|Platform |Package SHA-256 |Native library SHA-256
+|`aarch64-linux-gnu` |`c94e82c3ded5bc37817ec4cfbbd7237de5a92f47f8e265383b22943dd0f31a47` |`3470dc02cd9e25950d0957714c85a6720fc28d43cde963ae5000c4a49a843e90`
+|`aarch64-linux-musl` |`ec6b2eaedc2df61f2ff73764a0bcdb587c61902bc03d33f706d7b22d20f11cd9` |`52ea62825cf1ffb42144b1b5fa1bcb9559155faa948347aab50cb898207db13b`
+|`arm64-darwin` |`718f1cf60e3c2facf2fa11061ce8bae073081bca5e08b374a381b167e4ada2fb` |`0e243cd190836ab8809cab5fbee7e38d2454cbb869754f2de01de86f40b04e8d`
+|`x64-mingw-ucrt` |`6a2a1a85585c21ba30eac9d4c2bbef169d69f82690e1f69741f825cb117a54ae` |`e6aef3f0f869ae77278221ded2aa2fe081ea37802644c44264e6b51791e123a8`
+|`x86_64-darwin` |`1c447c202335b91d66ec422646326a27e2a3329bf8d15e4dd5aa9dbe14ca8ad1` |`1a3229464f00e4f0999987abaf7f57f7d5d73e24587087171b8cb3cb630f8d9d`
+|`x86_64-linux-gnu` |`393f7d558034e924379246ca3be9ac7e1293d4cb975ff6992f87256dd7cfb7a7` |`068d51ffed604b277b599b9916ee7c8cd15f61b8004719362efeaa28101cf01e`
+|`x86_64-linux-musl` |`a5bdc61de5f30cc64be14d6b020fdf2d2ace9b953c721b44e7ec999c5fd06d86` |`30c7456e35e6c67d3fee428ab3dccd544c0650b913640862f51b01713b78ecaa`
+|`ruby` |`6b3add05605260d646ec1d732da139eb972016c6fe4547aa60846a2ac2f542fa` |(no native library)
+|===
+
+The manifest's reference is a verified deliberate current pin, not recovered
+historical provenance: libemf2svg 1.8.1 source revision
+`ca88c51f2f86e4a885b6aa5280ce3e7419cb73e5`, binary SHA-256
+`c86fb0175d912468246d82bedaefb86e241f52120d51cfc3120a6d15949cf96d`.
+
+== Package check versus release qualification
+
+At checkout `330ff69`, a local version 0.1.3 gem was built successfully as
+`/private/tmp/emfsvg-issue23-330ff69.gem` and passed
+`bundle exec ruby scripts/check_runtime_package.rb`.
+`/private/tmp/emfsvg-issue23-package-check.json` records package SHA-256
+`449f000d9a8a84ef74104f2156028d5daa1c1553072062d4d35e75f03d999995` and the
+files and runtime dependencies found in that archive. This verifies packaging
+and the repository's package-content check for that checkout. It is not a
+released Rubygems artifact, does not fill the manifest's released package
+identity, and does not establish qualification against the released runtime.
+
+A separate installed-consumer check built candidate
+`410c795182e10d6770682ddc3c55e7c6f2fa0831` as `emfsvg-0.1.3.gem` (SHA-256
+`8c8814bc8ba2f146a0ff254d379969fded06313ae599758be729d14502bf7740`) and
+installed it outside the source checkout. Six public API checks passed,
+covering SVG/EMF conversion, malformed-input errors, missing files, and
+resource-limit behavior. Installed CLI version and conversions also passed.
+This bounded Darwin check used the cached Ruby `emf` 0.1.2 dependency; it did
+not execute the supplied Linux native artifact or
+qualify a released runtime. The archive's runtime payload was later confirmed
+byte-identical to source tree `125e4127484e88d244e17438725290bfa9c96b6c`.
+That payload identity does not move the consumer execution to that revision or
+to the current head.
+
+== Reviewed corrupt expectations and one bounded runtime observation
+
+The reviewed ledger is an expectation set, not an observation. It contains 21
+reviewed source identities and expected outcomes: 19 recoverable SVG outcomes
+and two unreadable outcomes. These expected outcomes must not be reported as
+runtime matches by themselves.
+
+A separate bounded Darwin observation at checkout `5ae58e8` did match all 21
+reviewed outcomes with native selected in `auto`. Its runtime source revision
+was `99a8c21256cbe902e243cc0bcac65b282ec52bf4`; native artifact SHA-256 was
+`130743aee8802e68a31edd745ad131f7cb1fd7d5bb9e00ec75a1fa63f4ffcf0e`. The
+machine-readable observation is
+`/private/tmp/emfsvg-reviewed21-5ae58e8-audit.json`, SHA-256
+`35f7607fb295e725791fd146881fa1ec8079d141ca04c0b115059c43b2cc6a09`. It
+records 21 matched cases, no unresolved cases or mismatches, and 646 protected
+files unchanged. This is bounded host evidence only: Darwin address-space
+enforcement was unsupported, and the observation is not a Linux resource
+baseline, released-package proof, or cross-platform qualification.
+
+== Prerelease source evidence and release workflow
+
+The prerelease source workflow succeeded for candidate
+`28a46e8e29013bdaad680045946d46e6fbb546d6` (run `40329403437`). Separate
+recorded checks at that candidate reported zero differences in the 208 C golden,
+209 round-trip, and 426 compatibility comparison groups; fixtures remained
+unchanged. Lint separately reported 256 clean files. This is source qualification
+evidence, not released-package qualification. The bounded Linux source
+observation covered 90 samples: the pinned 21 corrupt inputs and nine fixed
+valid controls, each repeated three times with native selected. It reported no
+unsafe samples. The machine-readable observation attests source revision
+`98a8e14990e78d5d5e178e7880667d05b325ac10`, so it must not be represented as
+evidence for candidate `28a46e8` or as a calibrated baseline.
+
+The repository now has a fail-closed released Linux qualification workflow
+(`.github/workflows/released-qualification.yml`) for pull requests and manual
+dispatch. It verifies the reviewed released manifest, Rubygems lock, package
+archive, native artifact/provenance, and installed runtime before qualification.
+Manual `generate` mode writes a candidate baseline as an artifact for separate
+review; `check` mode requires a committed reviewed baseline, runs the bounded
+calibration check and full RSpec suite, then enforces the whole-suite and exact
+golden/round-trip/compatibility counts with no failures, pending examples,
+skips, omissions, or duplicates. The workflow and gate implementation exist,
+but no successful released qualification result is recorded here. Published
+package and native identities are verified and their manifest integration is
+underway; the Linux resource baseline remains outstanding.
+
+== Current source evidence and remaining qualification
+
+Historical Ubuntu full-suite runs at checkout `fbeb794` reported 1,725 examples,
+8 failures, and 12 pending on Ruby 3.3 and Ruby 3.4. Seven failures were known
+round-trip mismatches for
+`test-039.svg`, `test-040.svg`, `test-156.svg`, `test-157.svg`,
+`test-158.svg`, `test-159.svg`, and `EA-test-file-004.svg`. The eighth was the
+stale expectation that missing corrupt-outcome digests must be rejected; that
+expectation was corrected at `509428102d1c8145c58f6e23257a471762961516`.
+These are historical failures, not the latest source status and not a full-suite
+result for candidate `34117b75e6748a5f6c8b10316753e531b2da7447`.
+
+A historical audit at `23fd052` recorded 201 exact results, seven mismatches,
+and no errors. It predates the current head and is not final-head proof. The
+exact regeneration at `28a46e8e29013bdaad680045946d46e6fbb546d6` reported the
+208 C-golden and 209 round-trip comparison groups; its 426 compatibility
+comparison is historical and is not the current 430-example source acceptance.
+The bounded source workflow run `40339551607` succeeded at exact revision
+`34117b75e6748a5f6c8b10316753e531b2da7447`: 90 conformance samples and 90
+bounded auto-selection samples passed. Its RSpec check reported 430 examples
+and zero failures.
+This establishes bounded source evidence for that revision, not released-runtime
+or full platform qualification.
+
+The platform matrix at `34117b75` (run `40339553534`) reported a macOS Ruby
+3.4 cleanup race. Ubuntu Ruby 3.3, 3.4, and 4.0, Windows Ruby 3.3 and 3.4,
+and macOS Ruby 3.3 passed; the remaining Ruby 4.0 jobs had no terminal result
+recorded at this checkpoint. The race was fixed at
+`125e4127484e88d244e17438725290bfa9c96b6c`, where four focused examples passed
+and changed-file lint was clean. Subsequent prerelease source workflow run
+`40357215314` succeeded with 430 examples and zero failures; its 90 bounded
+observations remain prerelease source evidence only. Final-head platform
+acceptance and the full released-runtime baseline remain outstanding.
+
+Released workflow runs `40339551534` and `40341853046` failed at manifest
+preflight and did not qualify the released runtime. The installed-consumer
+result and later payload identity evidence remain attached to their stated
+revisions and do not count as execution at `34117b75` or `125e4127`.
+
+The 12 pending examples in the macOS Ruby 3.4 run comprise ten native adapter
+checks lacking `EMF_NATIVE_LIBRARY`, one Linux-only address-space enforcement
+check, and one real corrupt-corpus check rejecting unqualified runtime/package/
+native prerequisites. Those pending examples are not acceptance passes;
+separate source qualification does not establish released-runtime behavior.
+
+The required whole-suite acceptance (at least the manifest's 1,048 baseline
+examples plus added contracts, all passing with no skips or pending), released
+production qualification, and its Linux resource baseline remain outstanding.
+The source workflow result does not qualify a released runtime or replace
+release check mode.
+
+Release readiness also requires an exact released `.gem` supplied as
+`EMF_RELEASE_PACKAGE`, the actual shared library as `EMF_NATIVE_LIBRARY`, and
+matching `EMF_NATIVE_PROVENANCE` JSON containing `artifact_sha256`,
+`source_revision`, and `abi`. The gate validates those artifacts and the
+installed locked runtime before bounded public conformance; arbitrary metadata
+alone cannot satisfy it. Published package and native identities are verified
+and the manifest pins their exact verified identities. Manifest metadata readiness
+does not establish runtime qualification; the full released Linux workflow and
+reviewed resource baseline remain outstanding. Do not describe the package
+identity check, reviewed expectations, prerelease source run, or Darwin
+observation as full parity, release proof, or portable qualification.

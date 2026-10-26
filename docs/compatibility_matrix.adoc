@@ -1,132 +1,333 @@
 = Compatibility with libemf2svg
 
-`emfsvg` is a clean-room rewrite that handles a subset of EMF records.
-This document tracks the gap against `libemf2svg` (the GPLv2 C library
-we replace).
+`emfsvg` converts EMF and SVG using the `emf` domain model. The parity
+acceptance contract is exact bytes against committed artifacts. Lossy SVG
+comparisons remain useful diagnostics, but cannot establish byte parity.
 
-== How to measure
+== Reproduce the checks
 
-Run the compat check after building `libemf2svg`:
+Follow link:../spec/fixtures/README.adoc[fixture setup] to materialize the
+external corpus and set `EMF_FIXTURE_ROOT`. The manifest pins corpus revision
+`a549346e4c4cacf9da6c86ab451a9f8401fa9672`, 208 accepted EMF inputs,
+21 corrupted inputs, and 416 SVG artifacts. The shared resolver validates the
+revision, exact inventories, and hashes before comparisons are collected.
+Missing roots, unexpected or missing files, and changed bytes fail setup.
+There are no developer-machine or sibling-checkout defaults.
 
-    cd ../libemf2svg
-    cmake -S . -B build -DLONLY=ON
-    make -C build
-    cc -I inc -L build -lemf2svg emf2svg_ref.c -o emf2svg_ref
+The runtime is independent of that corpus checkout. Development temporarily
+pins `emf` to Git revision `99a8c21256cbe902e243cc0bcac65b282ec52bf4`.
+A containing released package, native backend selection, and upstream resource
+and diagnostic contracts remain qualification requirements. A valid corpus
+inventory does not establish runtime qualification.
 
-    cd ../emfsvg
-    bundle exec ruby scripts/run_compat_check.rb
+[source,bash]
+----
+bundle exec rspec spec/parity_manifest_spec.rb spec/parity_corpus_spec.rb
+bundle exec rspec spec/golden_spec.rb spec/round_trip_golden_spec.rb spec/compat_with_libemf2svg_spec.rb --dry-run
+----
 
-This walks every EMF fixture, generates both SVG outputs, and prints
-a per-fixture + aggregate comparison.
+Collection verifies the contract's size, not its outcome. Once setup is valid,
+run a selected real comparison, for example:
 
-== What "compatibility" means here
+[source,bash]
+----
+bundle exec rspec spec/round_trip_golden_spec.rb --example image1
+bundle exec rspec spec/compat_with_libemf2svg_spec.rb --example image1
+----
 
-We do NOT assert byte-identical output. libemf2svg:
+== Strict comparison contracts
 
-* emits different whitespace and attribute ordering,
-* wraps primitives in `<g transform="translate(...)">` shells,
-* includes a SVG DTD doctype,
-* renders text via embedded `<text>` elements with iconv'd strings,
-* decodes DIB bitmaps to base64 PNG.
+[cols="1,1,4",options="header"]
+|===
+| Spec | Examples | Assertions
+| `spec/golden_spec.rb` | 208
+| Every accepted EMF renders byte-equal to its committed `golden/` C artifact.
+| `spec/round_trip_golden_spec.rb` | 209
+| Every `emfsvg_golden/` artifact survives SVG → EMF → SVG byte-equal (208), plus the exact sorted artifact inventory (1).
+| `spec/compat_with_libemf2svg_spec.rb` | 426
+| Ruby-to-C artifact byte equality (208), artifact digest and verified C provenance (208), fixed-sample byte equality and valid SVG elements (9), and the sorted source/reference/generated-output inventory digest (1).
+|===
 
-Reproducing all of that exactly is not the goal. The goal is
-**visual and structural equivalence** for the records `emfsvg`
-handles, plus a documented superset gap for the records it doesn't.
+These comparisons use committed artifacts without invoking live C. The strict
+209/426 groups have no known-divergence exemptions, semantic tolerance, or
+missing-reference skips. The historical divergence list does not waive their
+byte-equality assertions. Source and artifact inventories are checked even when
+only one example is selected.
 
-== Current state (as of 2026-07-24)
+== Current evidence and remaining qualification
 
-Aggregate across all 208 fixtures in `spec/fixtures/`:
+The strict 208/209/426 comparison groups collect without divergence exemptions.
+Text record alignment (`e271b64`) and omitted font weight preservation (`34398cd`)
+restore the `image1` round trip: all 195 text records remain typed, no parse errors
+are reported, and the output matches all 39,849 input bytes.
+
+The source workflow succeeded for candidate
+`28a46e8e29013bdaad680045946d46e6fbb546d6` (`40329403437`). Separate recorded
+checks at that candidate reported zero differences in the 208 C golden, 209
+round-trip, and 426 compatibility comparison groups; committed fixtures remained
+unchanged. Lint separately reported 256 clean files. These results qualify that
+prerelease source candidate only. They do not establish released package/native
+provenance, a reviewed resource baseline, or the separate whole-suite release
+acceptance gate.
+
+A deliberately pinned libemf2svg 1.8.1 build at
+`ca88c51f2f86e4a885b6aa5280ce3e7419cb73e5` reproduces all 208 committed C goldens
+byte for byte under bounded sequential execution. The manifest records its
+source, wrapper, binary, library and audit report checksums; the fixture guide
+records its build inputs. This qualifies the current reference pin while leaving
+the identity of the original historical builder unknown. No golden was changed.
+
+The manifest pins the model contract from
+https://github.com/claricle/emf/issues/15[emf #15] at
+`318b2d86c4025b5913c595c5055477124199daf9`, and diagnostics and resources from
+https://github.com/claricle/emf/issues/65[emf #65] and
+https://github.com/claricle/emf/issues/66[emf #66] at
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`. These contracts have landed; the
+remaining manifest blockers are release provenance and production evidence. The
+manifest runtime is still an unqualified temporary Git integration with no
+released package SHA, and the required native library identity is unavailable.
+
+The temporary runtime pin exposes the delivered diagnostic and typed-resource
+interfaces. The shared conversion boundary emits one physical-record-ordered
+warning for skipped diagnostics, remains silent for preserved `Raw` records,
+and maps only upstream resource refusals to `Emfsvg::ResourceLimitError` with
+unchanged metadata and cause. Focused consumer checks pass under Ruby, native,
+and native-selected auto with the exact-source native artifact. This development
+integration does not establish complete upstream resource parity or release
+qualification.
+
+Fixture 109 now individually preserves its source through production SVG → EMF
+→ Ruby SVG and pinned C conversion: all three SVGs contain 433141 identical
+bytes (SHA-256 `4e0c8eb9c8055887598af55854db636cdcf562d42ad82439642a84ec4f488f7b`).
+Scoped integer origins preserve independent overflowing lines, and canonical
+nested clip intervals end before successor draws. Fixture 150 also has an
+individual exact proof. An earlier full roundtrip audit recorded 199/208; the
+later final-candidate exact regeneration comparison reported zero differences
+across all 209 round-trip comparisons, alongside the 208 C golden and 426
+compatibility comparison groups.
+
+Fresh-process tests cover a real supported conversion, malformed-byte parse
+error, and an upstream input-byte resource refusal without loading the reference
+helper or executing the configured C sentinel. The refusal preserves the upstream
+resource metadata and cause and produces no SVG. All six isolation examples pass on the tested macOS host with loaded-library
+inspection permitted. The earlier restricted run could not inspect loaded libraries.
+This host evidence does not qualify released native packages or other platforms.
+
+The bounded subprocess helper (`c4960c6`) has benign-child macOS evidence for
+RSS/time enforcement and process-group cleanup. macOS address-space enforcement
+is unsupported and authoritative mode is refused. Linux source qualification
+observed the bounded inventory on a real Linux host with zero unsafe samples;
+that source-only observation is not the released-runtime calibration baseline.
+There is no reviewed calibrated corpus baseline or released corrupted-corpus
+resource acceptance result.
+
+== Conversion resource guards
+
+`Emfsvg.from_bytes` checks the input byte count against
+`Emf::Emr::Parser::MAX_INPUT_BYTES` before parsing. `Emfsvg.from_file` checks
+file size before reading and checks the resulting bytes again. Inputs exactly
+at the ceiling remain accepted. Missing files retain their filesystem error.
+
+The SVG builder checks each append against
+`Emfsvg::Renderer::MAX_OUTPUT_BYTES` (500 MiB), including newlines and tags. It
+checks the expanded size of escaped text and attributes before allocating the
+escaped copy. Exceeding either byte ceiling raises `Emfsvg::ResourceLimitError`,
+a subclass of `Emfsvg::Error`, with `resource` (`:input_bytes` or `:output_bytes`),
+`limit`, and `actual` readers. These local checks do not wrap an upstream failure,
+so they have no original exception cause. They do not set process RSS or virtual
+address-space ceilings.
+
+Before path analysis, the renderer limits accepted models to
+`Emfsvg::Renderer::MAX_RECORDS` (1,000,000) enumerated records. This is an
+`emfsvg` safety policy, independent of upstream parser limits. It also applies to
+caller-provided models and lazy enumerables: collection stops at the first
+excess record, without trusting the header's declared count, and raises
+`Emfsvg::ResourceLimitError` with `resource: :records`, the configured `limit`,
+and the observed `actual` count (limit plus one). Exactly the ceiling is accepted.
+
+The renderer rejects nonfinite header coordinates and nonpositive or nonfinite
+header/output dimensions with `Emfsvg::RenderError` before creating its builder.
+These checks and the output ceiling provide focused allocation protection;
+they do not bound every intermediate renderer allocation. Sparse GDI object
+handles no longer allocate an array through the numeric handle value. The frozen
+21-input corrupted-corpus observation at `c88ffe1` completed with 18 SVG outputs
+and three typed parse errors, no unexpected exceptions or resource breaches, and
+646 protected files unchanged. Peak RSS was 105440 KiB and maximum elapsed time
+was 1.396689 seconds under supplied 30-second/512-MiB ceilings. This observation
+used the earlier runtime pin; cross-backend qualification and a calibrated
+baseline remain pending.
+
+Unreadable input currently raises `Emfsvg::ParseError` with its original upstream
+format/parse exception as `cause`; unexpected backend failures propagate. The
+remaining corrupted-input acceptance contract must distinguish recoverable
+malformed records (SVG plus the exact structured skipped-record warnings) from
+unreadable containers (typed parse failure with its cause and no partial SVG).
+It must also establish typed upstream resource failures with their metadata and
+causes. The prerelease source qualification exercises these outcomes with the landed
+interfaces, including native-selected auto. Released qualification across Ruby,
+native, and auto actually selecting native still depends on the released package,
+native provenance, reviewed baseline, and public conformance result. Warning
+fields and native-selection reporting follow the pinned landed contracts.
+
+== Resource calibration command
+
+`scripts/calibrate_resource_limits.rb` prepares generation and verification of a
+versioned resource baseline. The manifest pins the required model, diagnostics,
+and resources contract revisions, but still marks its temporary runtime
+unqualified and its native library unavailable. There is no reviewed generated
+corpus baseline, and source-level adapter behavior does not qualify a released
+package or native artifact. Filling manifest fields alone cannot qualify the
+loaded implementation.
+
+The adapter must verify the exact manifest-selected corpus, independently loaded
+released runtime and package digest, native artifact/ABI, and public conversion
+outcomes. Ruby, native, and native-selected auto production conformance is a
+prerequisite; environment variables alone do not prove the selected backend.
+The existing command reuses `scripts/check_parity_provenance.rb` metadata checks
+and requires the two exact upstream issue identities. Its executable sampling,
+schema, derivation, drift, and atomic-write behavior has focused synthetic tests.
+A production adapter core exercises public conversion in a fresh process,
+checks exact SVG bytes and warnings, preserves typed exceptions and causes,
+and rejects input/runtime/artifact drift or backend fallback. It observes the
+selected backend through the public `Emf.backend` API, which reports `:ruby` or
+`:native`; the calibration child records that value before and after conversion
+and rejects Ruby fallback when native execution is required. Startup stderr
+remains visible and causes rejection. The public backend observation establishes
+source-level selection only; qualification of the supported released package,
+source SHA, and native ABI remains a separate prerequisite. This core does not
+bypass those checks, which are required before corpus calibration.
+
+`spec/corrupted_resilience_spec.rb` prepares the corpus caller behind that same
+prerequisite gate. It requires exact manifest source paths, hashes and reviewed
+outcomes for every corrupt input, checks the stored baseline ceilings, and
+verifies that the baseline and forbidden-reference sentinel remain unchanged.
+The source qualification observed the pinned inventory of all 21 corrupt inputs
+plus nine fixed valid controls (90 samples over three repetitions) with native
+selected on Linux, with zero unsafe samples. That evidence attests an earlier
+source SHA and is not the versioned baseline schema or released-runtime
+qualification; the real release corpus example still requires the reviewed
+baseline and released provenance.
+
+The following is the intended invocation once those gates are satisfied. Set all
+three outer caps explicitly for the host; there are no default caps. Values must
+be finite and positive, and remain below the host's own safety limits. The output
+directory must already exist.
+
+[source,bash]
+----
+bundle exec ruby scripts/calibrate_resource_limits.rb generate \
+  --manifest spec/fixtures/parity_manifest.yml \
+  --fixture-root "$EMF_FIXTURE_ROOT" \
+  --outer-rss-cap-mib "$EMFSVG_CALIBRATION_RSS_CAP_MIB" \
+  --outer-as-cap-mib "$EMFSVG_CALIBRATION_AS_CAP_MIB" \
+  --timeout-seconds "$EMFSVG_CALIBRATION_TIMEOUT_SECONDS" \
+  --output spec/fixtures/resource_limits/emfsvg-v1.yml
+
+bundle exec ruby scripts/calibrate_resource_limits.rb check \
+  --manifest spec/fixtures/parity_manifest.yml \
+  --fixture-root "$EMF_FIXTURE_ROOT" \
+  --outer-rss-cap-mib "$EMFSVG_CALIBRATION_RSS_CAP_MIB" \
+  --outer-as-cap-mib "$EMFSVG_CALIBRATION_AS_CAP_MIB" \
+  --timeout-seconds "$EMFSVG_CALIBRATION_TIMEOUT_SECONDS" \
+  --baseline spec/fixtures/resource_limits/emfsvg-v1.yml
+----
+
+Each selected input has three sequential fresh-child repetitions through
+`spec/support/bounded_conversion.rb`. Authoritative calibration requires Linux,
+`/proc` RSS/virtual-size measurements, child `RLIMIT_AS`, and parent monotonic-time
+and RSS watchdogs with process-group cleanup. The recorded TERM grace is 0.2
+seconds. RSS and address space are distinct measurements; `RLIMIT_AS` limits
+virtual address space. macOS has diagnostic RSS/time support but cannot produce
+an authoritative baseline because address-space enforcement is unavailable.
+Unsupported platforms and unavailable enforcement fail closed. Linux enforcement
+still needs real-host qualification; its implementation is not that evidence.
+
+Schema version 1 records `provenance`, `inputs`, `outer_caps`, `grace_seconds`,
+`repetitions`, `samples`, and `derived_limits`. Provenance pins the manifest digest,
+`emfsvg` revision, released runtime version/package/source, native artifact/source/
+ABI, actual native selection, OS/architecture/Ruby, and enforcement mechanisms.
+Each input records its name, SHA-256 and expected outcome. Each sample records
+case/repetition, input/output bytes, warnings, exception, elapsed seconds, peak RSS
+and address space in KiB, exit status, signal, safety verdict, and mechanism.
+Missing fields, changed coverage/order, unsafe outcomes, or input/provenance drift
+reject the run.
+
+`generate` derives global ceilings from the maxima of all stored samples: wall
+seconds are rounded up from four times elapsed time; RSS MiB from twice peak RSS
+plus 64 MiB; address-space MiB from twice peak address space plus 128 MiB. A
+derived ceiling reaching an explicit outer cap rejects generation. Valid output
+is written to a temporary file in the destination directory, flushed and synced,
+then renamed over the destination; validation or serialization failure preserves
+the prior baseline.
+
+`check` validates the stored schema, sample completeness and stored derivations
+before running children under the stored derived ceilings. Fresh inputs,
+provenance, repetition count, mechanisms and conversion outcomes must match.
+Fresh elapsed/RSS/address-space values may vary, must stay within those stored
+ceilings, and are reported as observed samples. Checking neither compares timings
+byte for byte nor changes the baseline, adds tolerance, or recalibrates it.
+
+To add a corrupted-input regression, pin its corpus revision and bytes, give it an
+explicit recoverable/unreadable/resource outcome and exact warning expectation,
+and exercise the public conversion through the bounded helper. Do not remove an
+input, weaken warning assertions, or widen a resource budget to make a failure
+pass. Cases requiring unavailable upstream diagnostics or native conformance
+remain explicit blockers. A replacement resource baseline requires a fresh,
+qualified generation run and review of its provenance and raw samples.
+
+== Explicit live C diagnostics
+
+`Emfsvg::Compat` in `spec/support/emfsvg_compat.rb` is the sole live C resolver.
+Set both variables explicitly; the wrapper and library directory must exist:
+
+[source,bash]
+----
+export EMF2SVG_REF_PATH=/absolute/path/to/emf2svg_ref
+export EMF2SVG_REF_LIB_DIR=/absolute/path/to/library-directory
+bundle exec ruby scripts/run_compat_check.rb
+bundle exec ruby scripts/run_emf_svg_compare.rb
+EMFSVG_LIVE_REFERENCE=1 bundle exec rspec spec/fidelity_regression_spec.rb
+----
+
+These tools require the verified corpus as well. Missing setup and failed C
+conversions fail with an error. The fidelity spec is excluded unless explicitly
+enabled with `EMFSVG_LIVE_REFERENCE=1`. Diagnostic byte ratios, element overlap,
+and lossy matcher results are separate from the strict acceptance contracts.
+
+== Guarded baseline regeneration
+
+[source,bash]
+----
+bundle exec ruby scripts/regenerate_golden.rb --check
+# Only after verifying reference provenance and intentionally accepting drift:
+bundle exec ruby scripts/regenerate_golden.rb --write
+----
+
+Both modes validate the corpus and explicit C tooling and stage both baseline
+sets. `--check` reports differences without changing committed artifacts.
+`--write` requires verified C status, an exact source revision, a build recipe,
+and an executable checksum matching the configured wrapper. It updates both
+artifact sets and manifest digests with a cooperative writer lock and rollback
+on ordinary failures. Concurrent-reader atomicity and crash recovery are not
+provided. Review the entire fixture diff before committing; see
+link:../spec/fixtures/README.adoc[the full procedure].
+
+== Historical measurements
+
+The following measurements were reported on 2026-07-24 for an earlier renderer.
+They have not been rerun against the current runtime pin or strict contracts and
+must not be used as current compatibility or performance acceptance evidence.
 
 [cols="1,4"]
 |===
-| Total fixtures       | 208
-| libemf2svg output    | ~59 MB
-| emfsvg output        | ~25 MB
-| Byte ratio           | 43.2%
-| Avg element overlap  | ~50%
+| Total fixtures | 208
+| libemf2svg output | ~59 MB
+| emfsvg output | ~25 MB
+| Byte ratio | 43.2%
+| Average element overlap | ~50%
 |===
 
-The ratio varies wildly per fixture:
-
-* **0-5%**: fixtures dominated by records `emfsvg` doesn't render yet
-  (text, bitmaps, EMF+ drawing records, region operations).
-* **20-50%**: typical mixed-content fixtures.
-* **60-80%**: fixtures whose records `emfsvg` does handle.
-
-== Records emfsvg handles (visit_* methods in EmrVisitor)
-
-* Primitives: Rectangle, Ellipse, RoundRect, LineTo, MoveToEx,
-  Polygon/Polyline + 16-bit variants
-* Paths: BeginPath/EndPath/CloseFigure/FillPath/StrokePath/
-  StrokeAndFillPath/AbortPath
-* State: SetTextColor, SetBkColor, SetBkMode, SetMapMode, SetRop2,
-  SetPolyFillMode, SetTextAlign, SetStretchBltMode
-* Transforms: SetWorldTransform, ModifyWorldTransform
-* Objects: CreatePen, CreateBrushIndirect, SelectObject, DeleteObject,
-  SaveDc, RestoreDc
-* Misc: SetMiterLimit, SetWindow/Viewport Org/Ext
-
-== Records emfsvg does NOT handle yet
-
-* Text: ExtTextOutA/W, PolyTextOutA/W (needs UTF-16 + glyph handling)
-* Bitmaps: BitBlt, StretchBlt, StretchDIBits, AlphaBlend, TransparentBlt,
-  MaskBlt, PlgBlt (needs DIB decoding)
-* Arc family: Arc, ArcTo, Chord, Pie (parametric path reconstruction)
-* Beziers: PolyBezier, PolyBezierTo + 16-bit variants
-* Clipping: IntersectClipRect, ExtSelectClipRgn, SelectClipPath
-* PolyPolygon / PolyPolyline (multi-subpath)
-* Region ops: FillRgn, FrameRgn, InvertRgn, PaintRgn
-* Gradients: GradientFill
-* EMF+ drawing records types (separate format; emf parses them but
-  emfsvg does not yet render them)
-
-== Spec coverage
-
-`spec/compat_with_libemf2svg_spec.rb` auto-skips if `libemf2svg`'s
-binary is not available. It:
-
-1. For every fixture: asserts both emfsvg and libemf2svg produce
-   well-formed XML.
-2. For a sample: asserts emfsvg emits only element types that also
-   appear in libemf2svg's output (no foreign tags).
-3. Regression floor: emfsvg's total byte output for the simple
-   fixtures is >= 30% of libemf2svg's. Tighten as handlers are added.
-
-== Path forward
-
-Each new record handler in `EmrVisitor` should:
-
-1. Be added to the `HANDLERS` hash.
-2. Add a per-record spec in `spec/per_record/`.
-3. Move the corresponding fixture from the "0-5%" bucket to a higher
-   bucket in the compat matrix.
-4. Optionally bump the regression floor in the compat spec.
-
-The compat matrix is regenerated by CI on every PR (when the libemf2svg
-binary is available) so regressions are caught immediately.
-
-== SVG → EMF direction
-
-The reverse direction (new in 0.2.0) is exercised by a round-trip
-test: `SVG → EMF → SVG` must reproduce the input SVG byte-for-byte
-for every fixture in `spec/fixtures/emfsvg_golden/`. Because the
-EMF→SVG side is locked to libemf2svg byte-exact parity, this
-transitively pins the SVG→EMF direction without needing a separate
-C reference.
-
-Run the round-trip matrix:
-
-    bundle exec ruby scripts/run_round_trip.rb
-
-Phase 8 status (2026-07-26):
-
-* Handlers in place for: rect, ellipse, circle, line, polyline,
-  polygon, path, group (with transform), text (basic), image (PNG).
-* Round-trip byte-equality on the full 208-fixture golden set is
-  partial — fixtures using glyph-index text, EMF+ records, pattern
-  brushes, and complex filters are divergent by design.
-* The `spec/round_trip_golden_spec.rb` regression floor catches
-  catastrophic regressions where round-trips that USED to pass stop
-  passing.
-* `spec/fixtures/svg_to_emf_known_divergent.txt` lists fixtures
-  explicitly excluded with a reason.
+These output-size and structural measurements do not measure rendering time,
+memory limits, visual equality, or byte equality. Earlier partial round-trip
+results and semantic-match percentages likewise do not establish the strict
+contracts above.

@@ -22,9 +22,16 @@ module Emfsvg
           # record, regardless of whether the matrix is identity. Skipping
           # it would drop the group wrapper from the round-tripped SVG.
           emit_world_transform(element.transform_matrix, context)
+          context.begin_selected_clip(element)
           element.children.each { |child| context.dispatch(child) }
           context.emit(Emf::Emr::Binary::Records::RestoreDc,
                        i_type: RESTOREDC, saved_dc: -1)
+          context.finish_selected_clip(element)
+          context.finish_carried_clip(element)
+          # RestoreDC changes native state; the next SetWorldTransform closes
+          # the SVG group. Emit here to retain the source definition's group
+          # while letting the following sibling inherit its native clip.
+          context.carry_clip_from(element)
         end
 
         private

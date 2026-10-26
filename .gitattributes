@@ -1,0 +1,3 @@
+# Preserve byte-pinned reference SVGs on every checkout platform.
+/spec/fixtures/golden/*.svg -text
+/spec/fixtures/emfsvg_golden/*.svg -text
