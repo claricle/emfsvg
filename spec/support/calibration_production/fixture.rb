@@ -43,7 +43,7 @@ module Emfsvg
 
       def production_exception(error)
         result = { "class" => error.class.name, "message" => error.message }
-        if error.respond_to?(:resource)
+        if error.is_a?(Emfsvg::ResourceLimitError) || error.is_a?(Emf::ResourceLimitError)
           result.merge!("resource" => error.resource.to_s, "limit" => error.limit, "actual" => error.actual)
         end
         result

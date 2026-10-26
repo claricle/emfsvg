@@ -9,7 +9,11 @@ RSpec.describe Emfsvg::ResourceCalibration::SourceCommand do
   before do
     source_qualification_fixture
     adapter = qualify_source
-    qualifier = instance_double(Emfsvg::ResourceCalibration::SourceQualification, verify!: adapter)
+    qualifier = Struct.new(:adapter) do
+      def verify!
+        adapter
+      end
+    end.new(adapter)
     allow(Emfsvg::ResourceCalibration::SourceQualification).to receive(:new).and_return(qualifier)
     allow(Emfsvg::SpecSupport::BoundedConversion).to receive(:run) { |**request| @runner.run(**request) }
     @calls.clear
