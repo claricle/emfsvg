@@ -7,10 +7,10 @@ module Emfsvg
   module Translation
     module Handlers
       # Translate <image href="data:image/png;base64,..."/> into
-      # EMR_STRETCHDIBITS with an embedded BI_RGB DIB.
+      # EMR_STRETCHDIBITS with an embedded DIB.
       #
       # v1 limitations:
-      #   * PNG data URIs only. JPEG and other formats fall through silently.
+      #   * PNG and JPEG data URIs only. Other formats fall through silently.
       #   * No aspect-ratio handling (uses width/height verbatim).
       class ImageHandler
         include SharedGdi
@@ -20,6 +20,8 @@ module Emfsvg
         # 6*4 (int32 src/dest dims) + 6*4 (off/cb/i_usage/dw_rop/cx/cy)
         # = 80 bytes.
         STRETCHDIBITS_FIXED_SIZE = 80
+        JPEG_TERMINAL_MARKERS = [0xDA, 0xD9].freeze
+        JPEG_NON_FRAME_MARKERS = [0xC4, 0xC8, 0xCC].freeze
 
         def self.call(element, context)
           new.translate(element, context)
@@ -27,7 +29,7 @@ module Emfsvg
 
         def translate(element, context)
           return unless element.data_uri?
-          return unless element.mime_type == "image/png"
+          return unless %w[image/png image/jpeg image/jpg].include?(element.mime_type)
 
           dib = build_dib(element)
           return unless dib
@@ -40,6 +42,8 @@ module Emfsvg
         private
 
         def build_dib(element)
+          return build_jpeg_dib(element.decoded_bytes) if %w[image/jpeg image/jpg].include?(element.mime_type)
+
           png = element.decoded_bytes
           return nil unless png
 
@@ -47,6 +51,43 @@ module Emfsvg
           return nil unless decoded
 
           DibEncoder.encode(decoded.width, decoded.height, decoded.pixels)
+        end
+
+        # JPEG frame dimensions describe the embedded bitmap, independently of
+        # the SVG destination size. Preserve its compressed bytes with BI_JPEG.
+        def build_jpeg_dib(bytes)
+          dimensions = jpeg_dimensions(bytes)
+          return unless dimensions
+
+          width, height = dimensions
+          [40, width, height, 1, 0, 4, bytes.bytesize, 0, 0, 0, 0].pack("Vl<l<vvVVVVVV") + bytes
+        end
+
+        def jpeg_dimensions(bytes)
+          return unless bytes&.start_with?("\xFF\xD8".b)
+
+          offset = 2
+          while offset + 4 <= bytes.bytesize
+            return unless bytes.getbyte(offset) == 0xFF
+
+            offset += 1 while bytes.getbyte(offset) == 0xFF
+            marker = bytes.getbyte(offset)
+            return if JPEG_TERMINAL_MARKERS.include?(marker)
+
+            length = bytes.byteslice(offset + 1, 2)&.unpack1("n")
+            return unless length && length >= 2 && offset + 1 + length <= bytes.bytesize
+
+            if (0xC0..0xCF).cover?(marker) && !JPEG_NON_FRAME_MARKERS.include?(marker)
+              return unless length >= 8
+
+              height, width = bytes.byteslice(offset + 4, 4).unpack("nn")
+              return [width, height] if width.positive? && height.positive?
+
+              return
+            end
+            offset += 1 + length
+          end
+          nil
         end
 
         def emit_stretch_dibits(element, dib, context)

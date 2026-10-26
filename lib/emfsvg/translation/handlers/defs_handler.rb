@@ -9,7 +9,8 @@ module Emfsvg
       # records can be preserved without applying a clip to later drawings.
       class DefsHandler
         def self.call(element, context)
-          emit_unused_pattern(element.unused_pattern, context) if element.unused_pattern
+          pattern = element.selected_pattern || element.unused_pattern
+          emit_pattern(pattern, context) if pattern
           registry = context.clip_path_registry
           return unless registry
 
@@ -24,19 +25,21 @@ module Emfsvg
           end
         end
 
-        def self.emit_unused_pattern(pattern, context)
+        def self.emit_pattern(pattern, context)
           image = pattern.image
           decoded = PngDecoder.decode(image.decoded_bytes)
           return unless decoded && decoded.width == image.width && decoded.height == image.height
 
           dib = DibEncoder.encode(decoded.width, decoded.height, decoded.pixels)
+          handle = context.allocate_handle
           context.emit(Emf::Emr::Binary::Records::CreateDibPatternBrushPt,
                        i_type: Emf::Emr::Binary::TypeCodes::CREATEDIBPATTERNBRUSHPT,
-                       ih_brush: context.allocate_handle, i_usage: 0,
+                       ih_brush: handle, i_usage: 0,
                        off_bmi: 32, cb_bmi: 40, off_bits: 72, cb_bits: dib.bytesize - 40,
                        body: dib)
+          context.pattern_handles[pattern.id] = handle
         end
-        private_class_method :emit_unused_pattern
+        private_class_method :emit_pattern
       end
     end
   end

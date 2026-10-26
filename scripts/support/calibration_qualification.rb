@@ -121,7 +121,7 @@ module Emfsvg
       end
 
       def run_json(command, name)
-        report = @runner.run(command: command, basename: name, **CAPS)
+        report = @runner.run(command: command, basename: name, **qualification_caps)
         unless report[:success] == true && report[:breach].nil? && report[:stderr] == "" && report[:signal].nil? &&
                report[:status] == :exited && report[:exitstatus].eql?(0)
           raise Rejected, "bounded qualification child failed: #{name}"
@@ -132,6 +132,10 @@ module Emfsvg
 
         @mechanism = mechanism
         JSON.parse(report.fetch(:stdout))
+      end
+
+      def qualification_caps
+        CAPS
       end
 
       def conformance!(adapter)

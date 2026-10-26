@@ -16,7 +16,7 @@ module Emfsvg
     # their children uniformly.
     class Context
       attr_reader :device_context, :object_table, :transform_stack, :emitter,
-                  :handler_registry, :clip_path_registry, :scaler
+                  :handler_registry, :clip_path_registry, :scaler, :pattern_handles
 
       def initialize(handler_registry: EmfRenderer::DEFAULT_REGISTRY,
                      clip_path_registry: nil,
@@ -29,6 +29,7 @@ module Emfsvg
         @clip_path_registry = clip_path_registry
         @scaler = scaler
         @next_handle = 1
+        @pattern_handles = {}
         @unused_clip_safe = true
         @local_origin = [0, 0]
       end

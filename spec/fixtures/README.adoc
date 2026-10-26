@@ -56,7 +56,8 @@ metadata. This currently exits nonzero; it does not verify actual backend
 selection, loaded package identity, or native behavior.
 
 Development currently uses the temporary Git runtime pin
-`5c2c019138bab6f3c67f7602e8b410ba5a67c429`, separate from the corpus revision.
+`e0491ed331dff6c5996dcbd9a269b79ffebbcc38`, which contains the landed model,
+diagnostics, and resources contracts, separate from the corpus revision.
 `spec/runtime_dependency_spec.rb` verifies the lockfile, loaded Git checkout,
 and entry point independently. This is integration evidence; a containing
 qualified released package is still required.

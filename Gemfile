@@ -4,9 +4,9 @@ source "https://rubygems.org"
 
 gemspec
 
-# Temporary development integration for the upstream #15 model contract.
-# Replace with a qualified release once a released tag contains this revision.
-gem "emf", git: "https://github.com/claricle/emf.git", ref: "99a8c21256cbe902e243cc0bcac65b282ec52bf4"
+# Temporary development integration for the upstream model, diagnostics, and
+# resources contracts. Replace with a qualified release once one contains them.
+gem "emf", git: "https://github.com/claricle/emf.git", ref: "e0491ed331dff6c5996dcbd9a269b79ffebbcc38"
 
 gem "rake", "~> 13.0"
 

@@ -10,23 +10,25 @@ module Emfsvg
         Element.register("defs", self)
 
         HREF_ATTRIBUTES = %w[href xlink:href].freeze
-        CanonicalPattern = Struct.new(:image, keyword_init: true)
+        CanonicalPattern = Struct.new(:image, :id, keyword_init: true)
 
-        attr_reader :children, :unused_pattern
+        attr_reader :children, :unused_pattern, :selected_pattern
 
-        def initialize(children:, unused_pattern: nil)
+        def initialize(children:, unused_pattern: nil, selected_pattern: nil)
           @children = children
           @unused_pattern = unused_pattern
+          @selected_pattern = selected_pattern
         end
 
         def self.from_node(node, &source_tag)
           new(children: node.element_children.map { |c| Element.from_node(c, &source_tag) },
-              unused_pattern: canonical_unused_pattern(node))
+              unused_pattern: canonical_unused_pattern(node),
+              selected_pattern: canonical_selected_pattern(node))
         end
 
         # The renderer emits this pair when a DIB brush is created, even if
         # never selected. Keep that provenance separate from ordinary resources.
-        def self.canonical_unused_pattern(node)
+        def self.canonical_unused_pattern(node, selected: false)
           image, pattern = node.element_children
           return unless node.element_children.size == 2 && node.attribute_nodes.empty?
           return unless image.name == "image" && pattern.name == "pattern"
@@ -44,11 +46,32 @@ module Emfsvg
           use = pattern.element_children.first
           return unless pattern.element_children.size == 1 && use.name == "use"
           return unless canonical_use?(use, id)
-          return if referenced_pattern?(node.document.root, [id, "#{id}-ref"], use)
 
-          CanonicalPattern.new(image: Image.from_node(image)).freeze
+          return unless canonical_pattern_reference?(node.document.root, id, use, selected)
+
+          CanonicalPattern.new(image: Image.from_node(image), id: "#{id}-ref").freeze
         end
         private_class_method :canonical_unused_pattern
+
+        def self.canonical_pattern_reference?(root, id, use, selected)
+          return selected_pattern_reference?(root, "#{id}-ref") if selected
+
+          !referenced_pattern?(root, [id, "#{id}-ref"], use)
+        end
+        private_class_method :canonical_pattern_reference?
+
+        def self.canonical_selected_pattern(node)
+          canonical_unused_pattern(node, selected: true)
+        end
+        private_class_method :canonical_selected_pattern
+
+        def self.selected_pattern_reference?(node, id)
+          supported = %w[rect ellipse circle polygon polyline path]
+          return true if supported.include?(node.name) && ["##{id}", "url(##{id})"].include?(node["fill"])
+
+          node.element_children.any? { |child| selected_pattern_reference?(child, id) }
+        end
+        private_class_method :selected_pattern_reference?
 
         def self.canonical_use?(use, id)
           use.attribute_pairs == [["id", "#{id}-ign"], ["xlink:href", "##{id}"]] && use.element_children.empty?
@@ -69,7 +92,7 @@ module Emfsvg
 
           referenced = node.attribute_pairs.any? do |name, value|
             ids.any? do |id|
-              (HREF_ATTRIBUTES.include?(name) && value == "##{id}") ||
+              ((HREF_ATTRIBUTES.include?(name) || name == "fill") && value == "##{id}") ||
                 value.match?(/url\(\s*["']?\##{Regexp.escape(id)}["']?\s*\)/)
             end
           end

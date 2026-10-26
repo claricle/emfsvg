@@ -1,0 +1,92 @@
+name: Prerelease source qualification
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linux-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+      - name: Prepare pinned runtime and corpus
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fontconfig p7zip-full
+          runtime_root="$(bundle show emf)"
+          runtime_revision="$(ruby -ryaml -e 'puts YAML.safe_load_file("spec/fixtures/parity_manifest.yml").dig("provenance", "runtime", "source_revision")')"
+          test "$(git -C "$runtime_root" rev-parse HEAD)" = "$runtime_revision"
+          git -C "$runtime_root" diff --exit-code HEAD
+          corpus_revision="$(ruby -ryaml -e 'puts YAML.safe_load_file("spec/fixtures/parity_manifest.yml").dig("provenance", "corpus", "revision")')"
+          corpus_root="$RUNNER_TEMP/emfsvg-parity-corpus"
+          git init "$corpus_root"
+          git -C "$corpus_root" remote add origin https://github.com/claricle/emf.git
+          git -C "$corpus_root" fetch --depth 1 origin "$corpus_revision"
+          git -C "$corpus_root" checkout --detach FETCH_HEAD
+          test "$(git -C "$corpus_root" rev-parse HEAD)" = "$corpus_revision"
+          printf 'RUNTIME_ROOT=%s\nRUNTIME_REVISION=%s\nEMF_FIXTURE_ROOT=%s\n' "$runtime_root" "$runtime_revision" "$corpus_root" >> "$GITHUB_ENV"
+      - name: Build exact source native library and prerelease package
+        shell: bash
+        run: |
+          cargo build --manifest-path "$RUNTIME_ROOT/emf-rs/Cargo.toml" --locked --release -p emf-ffi
+          native="$RUNTIME_ROOT/emf-rs/target/release/libemf_ffi.so"
+          evidence="$RUNNER_TEMP/emfsvg-source-evidence"
+          mkdir -p "$evidence"
+          ruby "$RUNTIME_ROOT/script/build_native_gem" --platform x86_64-linux-gnu --output "$evidence/package" \
+            --library "$native" --abi-version 1 --target x86_64-unknown-linux-gnu --revision "$RUNTIME_REVISION"
+          EMF_NATIVE_LIBRARY="$native" ruby -rjson -rdigest -e '
+            File.write(ARGV.fetch(0), JSON.generate("artifact_sha256" => Digest::SHA256.file(ENV.fetch("EMF_NATIVE_LIBRARY")).hexdigest,
+                                                  "source_revision" => ENV.fetch("RUNTIME_REVISION"), "abi" => "1"))
+          ' "$evidence/native.json"
+          printf 'EMF_NATIVE_LIBRARY=%s\nEMF_NATIVE_PROVENANCE=%s\nSOURCE_EVIDENCE=%s\n' "$native" "$evidence/native.json" "$evidence" >> "$GITHUB_ENV"
+      - name: Exercise installed prerelease native package contracts
+        shell: bash
+        run: |
+          installed="$RUNNER_TEMP/emfsvg-installed-source"
+          mkdir -p "$installed"
+          # Run outside Bundler and the runtime checkout; dependencies remain available.
+          env -u RUBYOPT -u RUBYLIB -u BUNDLE_GEMFILE GEM_HOME="$installed" \
+            gem install "$SOURCE_EVIDENCE"/package/emf-*.gem --no-document
+          probe="$GITHUB_WORKSPACE/scripts/support/installed_source_contract_probe.rb"
+          fixture="$GITHUB_WORKSPACE/spec/fixtures/image1.emf"
+          cd "$RUNNER_TEMP"
+          env -u RUBYOPT -u RUBYLIB -u BUNDLE_GEMFILE -u EMF_NATIVE_LIBRARY \
+            GEM_HOME="$installed" EMF_BACKEND=native ruby "$probe" "$installed" "$RUNTIME_REVISION" "$fixture" \
+            > "$SOURCE_EVIDENCE/installed-contracts.json"
+      - name: Provision and qualify portable font inputs
+        shell: bash
+        run: |
+          bundle exec ruby -rjson -rfileutils -rrbconfig -e '
+            directory = File.join(ENV.fetch("RUNNER_TEMP"), "emfsvg-font-qualification")
+            FileUtils.mkdir_p(directory)
+            options = { "staging_directory" => directory, "corpus_root" => ENV.fetch("EMF_FIXTURE_ROOT"),
+                        "output_directory" => File.join(directory, "qualified"), "contract_path" => File.join(directory, "contract.json") }
+            path = File.join(directory, "options.json")
+            File.write(path, JSON.generate(options))
+            abort "Font provisioning failed" unless system(RbConfig.ruby, "scripts/provision_qualification_fonts.rb", path)
+            abort "Font qualification failed" unless system(RbConfig.ruby, "scripts/qualify_fonts.rb", options.fetch("contract_path"), "--ruby-only")
+            File.open(ENV.fetch("GITHUB_ENV"), "a") do |file|
+              file.puts "FONTCONFIG_FILE=#{File.join(options.fetch("output_directory"), "fonts.conf")}"
+              file.puts "FONTCONFIG_PATH=#{options.fetch("output_directory")}"
+            end
+          '
+      - name: Qualify corrupt outcomes and bounded Linux samples
+        run: bundle exec ruby scripts/qualify_source_runtime.rb spec/fixtures/parity_manifest.yml "$EMF_FIXTURE_ROOT" "$SOURCE_EVIDENCE/qualification.json"
+      - name: Check native model parity and owned roundtrip compatibility
+        env:
+          EMF_BACKEND: native
+        run: bundle exec rspec spec/golden_spec.rb spec/round_trip_golden_spec.rb spec/public_consumer_contract_spec.rb
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: prerelease-linux-source-evidence
+          path: ${{ runner.temp }}/emfsvg-source-evidence/
+          if-no-files-found: warn

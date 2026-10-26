@@ -42,6 +42,25 @@ RSpec.describe "Unused canonical pattern definitions" do
     end
   end
 
+  %w[#img-1-ref url(#img-1-ref)].each do |paint|
+    context "with a selected #{paint} pattern" do
+      let(:body) do
+        %(#{definition}<rect x="2" y="3" width="10" height="11" fill="#{paint}"/>#{draw}) +
+          %(<rect x="20" y="3" width="10" height="11" fill="#{paint}"/>)
+      end
+
+      it "reuses the bitmap brush around a solid draw" do
+        expect(brushes.size).to eq(1)
+        handle = brushes.first.ih_brush.to_i
+        selections = wires.grep(Emf::Emr::Binary::Records::SelectObject).map { |wire| wire.ih_object.to_i }
+        expect(selections.count(handle)).to eq(2)
+        expect(output).to include(definition, 'fill="#img-1-ref"', 'fill="#FF0000"')
+        expect(output.lines.grep(/<rect /).size).to eq(3)
+        expect(Emfsvg.from_bytes(Emfsvg.from_svg(output))).to eq(output)
+      end
+    end
+  end
+
   context "with a second distinct unused definition" do
     let(:second_png) do
       "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGElEQVQYlWP4jwQYGhj+o/OZGAiA4aEAACaCGvUCf+JhAAAAAElFTkSuQmCC"

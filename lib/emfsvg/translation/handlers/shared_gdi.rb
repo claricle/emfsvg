@@ -127,6 +127,15 @@ module Emfsvg
         end
 
         def emit_create_brush(context, paint)
+          if paint.reference
+            handle = context.pattern_handles.fetch(paint.reference) do
+              raise FormatError, "undefined SVG pattern: #{paint.reference.inspect}"
+            end
+            context.emit(Emf::Emr::Binary::Records::SelectObject, i_type: SELECTOBJECT, ih_object: handle)
+            # Definition brushes remain available for subsequent draws.
+            return nil
+          end
+
           handle = context.allocate_handle
           context.emit(Emf::Emr::Binary::Records::CreateBrushIndirect,
                        i_type: CREATEBRUSHINDIRECT,

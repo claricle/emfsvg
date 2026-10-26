@@ -26,20 +26,20 @@ provenance:
     source: git
     repository: https://github.com/claricle/emf.git
     version: 0.1.2
-    source_revision: 99a8c21256cbe902e243cc0bcac65b282ec52bf4
+    source_revision: e0491ed331dff6c5996dcbd9a269b79ffebbcc38
     package_sha256:
-    blocker: Temporary full-SHA development integration; no released tag contains the
-      required model contract, and no released package has been qualified.
+    blocker: Temporary full-SHA development integration; released emf 0.1.2 predates
+      the required contracts, and no released package has been qualified.
   upstream_contracts:
     model:
       issue: https://github.com/claricle/emf/issues/15
       landed_revision: 318b2d86c4025b5913c595c5055477124199daf9
     diagnostics:
       issue: https://github.com/claricle/emf/issues/65
-      landed_revision:
+      landed_revision: e0491ed331dff6c5996dcbd9a269b79ffebbcc38
     resources:
       issue: https://github.com/claricle/emf/issues/66
-      landed_revision:
+      landed_revision: e0491ed331dff6c5996dcbd9a269b79ffebbcc38
   native_library:
     status: unavailable
     source_revision:
