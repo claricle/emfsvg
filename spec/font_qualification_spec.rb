@@ -71,7 +71,7 @@ RSpec.describe FontQualification do
     allow(Fontisan::Tables::Cmap).to receive(:read).and_return(cmap)
 
     expect { qualifier.attest_font("verdana_regular", "David", "David", font.fetch("path")) }
-      .to(raise_error { |error| expect(error.message).to include("15 => 44") })
+      .to(raise_error { |error| expect(error.message).to match(/\b15\s*=>\s*44\b/) })
   end
 
   it "rejects a matching file hash whose required cmap mapping is incompatible" do
