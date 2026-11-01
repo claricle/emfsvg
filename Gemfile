@@ -21,4 +21,4 @@ end
 
 # Always-available for development scripts and tests; gemspec declares
 # the runtime dep that ships to consumers.
-gem "leptris", ">= 1.9.365.1"
+gem "leptris", ">= 1.9.399.0"
