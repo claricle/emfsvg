@@ -6,7 +6,7 @@ PATH
       bigdecimal
       emf (~> 0.2, >= 0.2.0)
       fontisan
-      leptris (>= 1.9.365.1)
+      leptris (~> 1.9.399)
       libpng (~> 1.6)
 
 GEM
@@ -51,19 +51,19 @@ GEM
       thor (~> 1.3)
     json (3.1.0)
     language_server-protocol (3.17.0.6)
-    leptris (1.9.380.2-aarch64-linux)
+    leptris (1.9.400.0-aarch64-linux)
       ffi (~> 1.15)
-    leptris (1.9.380.2-aarch64-linux-musl)
+    leptris (1.9.400.0-aarch64-linux-musl)
       ffi (~> 1.15)
-    leptris (1.9.380.2-arm64-darwin)
+    leptris (1.9.400.0-arm64-darwin)
       ffi (~> 1.15)
-    leptris (1.9.380.2-x64-mingw-ucrt)
+    leptris (1.9.400.0-x64-mingw-ucrt)
       ffi (~> 1.15)
-    leptris (1.9.380.2-x86_64-darwin)
+    leptris (1.9.400.0-x86_64-darwin)
       ffi (~> 1.15)
-    leptris (1.9.380.2-x86_64-linux)
+    leptris (1.9.400.0-x86_64-linux)
       ffi (~> 1.15)
-    leptris (1.9.380.2-x86_64-linux-musl)
+    leptris (1.9.400.0-x86_64-linux-musl)
       ffi (~> 1.15)
     libpng (1.6.58.6-aarch64-linux)
       ffi (~> 1.0)
@@ -201,7 +201,7 @@ DEPENDENCIES
   emf (= 0.2.0)
   emfsvg!
   fiddle (~> 1.1)
-  leptris (>= 1.9.365.1)
+  leptris (~> 1.9.399)
   rake (~> 13.0)
   rexml (~> 3.3)
   rspec (~> 3.13)
@@ -232,13 +232,13 @@ CHECKSUMS
   fontisan (0.4.46) sha256=a505597dac9bbdea9a4f6f6afe6cb849dc1c85afb0f67f8771dae7c01e11e20f
   json (3.1.0) sha256=3ce7ccf8fde58960177a3a756c31f292a4c1e1dedee884547096a5b0604e3bd8
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
-  leptris (1.9.380.2-aarch64-linux) sha256=63065f9b6a54b1a52eea5040439f946b4f1712729d277ed62eddea96526e2188
-  leptris (1.9.380.2-aarch64-linux-musl) sha256=6fed41560b33cec5edfacc205c2211c4110b0c48bf7c772baa3acd49efcbd2cc
-  leptris (1.9.380.2-arm64-darwin) sha256=d94d55a2865744dec2d2b5ab3661de77400d3ca48fb36573c8dc58c3cd92c68f
-  leptris (1.9.380.2-x64-mingw-ucrt) sha256=7439cb09b2d0d9d88f3bb68ed832d0429a0e5019be4214d0342027c656538919
-  leptris (1.9.380.2-x86_64-darwin) sha256=e68a4c82bebcc5a5383eb76e0280be97c3b7edbf6f1eabf02e817ac057b49cfa
-  leptris (1.9.380.2-x86_64-linux) sha256=5b84a6ddc9bc297426bd36c15f4d0d878081954f3ab317a89cfb9fe36e8bd696
-  leptris (1.9.380.2-x86_64-linux-musl) sha256=abff7493153f8fd2516c056006866bb7fd680ab4fb1b83e89d92eca127a82cdb
+  leptris (1.9.400.0-aarch64-linux) sha256=4d8b1d50efa22622894d5fbf224ed29298300b7f31b74e00d5819ef0144eece7
+  leptris (1.9.400.0-aarch64-linux-musl) sha256=2bfedf541144493f9d7e7e01aaa62003018cb49d086c0f958d5f14bae5ffc144
+  leptris (1.9.400.0-arm64-darwin) sha256=cfd200182e9f5a7899ab4a3cf18c32a49603762c9a12b53932bff42101f2fa9b
+  leptris (1.9.400.0-x64-mingw-ucrt) sha256=50c9f66b4e61104311d0daa9518642cba6c42afad8d2ac68fdd8fa1af1700bc0
+  leptris (1.9.400.0-x86_64-darwin) sha256=e1330557b196f741c8c45ee565d14929a43a962f37989e3e96c1044c73be9a23
+  leptris (1.9.400.0-x86_64-linux) sha256=b208f25e500dbe932a0d3b391316df2d5e490fbb20298822962bea77a048fcd1
+  leptris (1.9.400.0-x86_64-linux-musl) sha256=d1770ee44b4b7ac63c183fd9abfe5d6dd765af429a3ef9a67808a9df1e0fceda
   libpng (1.6.58.6-aarch64-linux) sha256=57d4a32abae936cd3b0bafdf4a7ce701973a638e07ca9d80e044d4da9465b4da
   libpng (1.6.58.6-aarch64-linux-musl) sha256=d9153b68aaa0e47126aade3a617ba6663fbcfbcf584c4fc7d6e86707b13e5664
   libpng (1.6.58.6-arm64-darwin) sha256=7bb72fe9dae352bd755f423f34501c4c1824e074fc789ba21614c1ed55fc2d08
@@ -296,4 +296,4 @@ CHECKSUMS
   yeptris (0.6.36.0-x86_64-linux-musl) sha256=42cf7e2bcf74c5f141c42a253e94f76ffaf4d673ddd96c544ec12974d21953e4
 
 BUNDLED WITH
-  4.0.17
+   2.7.2
