@@ -20,6 +20,7 @@ module Emfsvg
       autoload :ClipPath, "emfsvg/svg/elements/clip_path"
       autoload :Text, "emfsvg/svg/elements/text"
       autoload :Image, "emfsvg/svg/elements/image"
+      autoload :Pattern, "emfsvg/svg/elements/pattern"
     end
   end
 end
@@ -40,3 +41,4 @@ require "emfsvg/svg/elements/defs"
 require "emfsvg/svg/elements/clip_path"
 require "emfsvg/svg/elements/text"
 require "emfsvg/svg/elements/image"
+require "emfsvg/svg/elements/pattern"

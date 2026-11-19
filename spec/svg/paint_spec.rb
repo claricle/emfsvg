@@ -15,6 +15,48 @@ RSpec.describe Emfsvg::Svg::Paint do
       expect(paint.null?).to be true
       expect(paint.style).to eq(Emfsvg::Svg::Paint::NULL)
     end
+
+    it "parses a url() pattern reference into a PATTERN paint" do
+      paint = described_class.from_fill("url(#pattern23)")
+      expect(paint.style).to eq(Emfsvg::Svg::Paint::PATTERN)
+      expect(paint.reference).to eq("pattern23")
+      expect(paint.null?).to be false
+    end
+
+    it "keeps canonical img-N-ref url() references working" do
+      paint = described_class.from_fill("url(#img-1-ref)")
+      expect(paint.style).to eq(Emfsvg::Svg::Paint::PATTERN)
+      expect(paint.reference).to eq("img-1-ref")
+    end
+
+    it "parses a bare fragment reference that is not a hex color" do
+      paint = described_class.from_fill("#img-1-ref")
+      expect(paint.style).to eq(Emfsvg::Svg::Paint::PATTERN)
+      expect(paint.reference).to eq("img-1-ref")
+    end
+
+    it "parses url() references with whitespace and quotes" do
+      paint = described_class.from_fill(%(url( "#pattern-1.x" )))
+      expect(paint.style).to eq(Emfsvg::Svg::Paint::PATTERN)
+      expect(paint.reference).to eq("pattern-1.x")
+    end
+
+    it "does not mistake hex colors for references" do
+      short = described_class.from_fill("#f00")
+      expect(short.style).to eq(Emfsvg::Svg::Paint::SOLID)
+      expect(short.reference).to be_nil
+
+      long = described_class.from_fill("#00ff00")
+      expect(long.style).to eq(Emfsvg::Svg::Paint::SOLID)
+      expect(long.reference).to be_nil
+    end
+
+    it "gives pattern references black as the fallback wire color" do
+      paint = described_class.from_fill("url(#pattern23)")
+      expect(paint.color.red).to eq(0)
+      expect(paint.color.green).to eq(0)
+      expect(paint.color.blue).to eq(0)
+    end
   end
 
   describe ".from_stroke" do

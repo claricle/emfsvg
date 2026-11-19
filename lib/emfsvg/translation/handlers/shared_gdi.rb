@@ -128,12 +128,20 @@ module Emfsvg
 
         def emit_create_brush(context, paint)
           if paint.reference
-            handle = context.pattern_handles.fetch(paint.reference) do
-              raise FormatError, "undefined SVG pattern: #{paint.reference.inspect}"
+            handle = context.pattern_handles[paint.reference]
+            if handle
+              context.emit(Emf::Emr::Binary::Records::SelectObject, i_type: SELECTOBJECT, ih_object: handle)
+              # Definition brushes remain available for subsequent draws.
+              return nil
             end
-            context.emit(Emf::Emr::Binary::Records::SelectObject, i_type: SELECTOBJECT, ih_object: handle)
-            # Definition brushes remain available for subsequent draws.
-            return nil
+
+            # No resolvable brush for the reference (gradient paint
+            # server, unsupported pattern content, definition after the
+            # draw). Degrade to the paint's solid fallback color rather
+            # than failing the whole translation.
+            Kernel.warn("emfsvg: unresolved SVG paint reference " \
+                        "#{paint.reference.inspect}; fill degraded to solid black")
+            paint = Svg::Paint.new(color: paint.color, style: Svg::Paint::SOLID)
           end
 
           handle = context.allocate_handle
