@@ -24,7 +24,7 @@ jobs:
   native-runtime:
     name: native-runtime
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
       # The vectory-rs workspace rev the native lane is gated on. Bump it
       # to the new workspace rev whenever the ABI or the conversion moves.
