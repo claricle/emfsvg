@@ -27,6 +27,9 @@ module Emfsvg
   autoload :Translation, "emfsvg/translation"
   autoload :DrawingHint, "emfsvg/drawing_hint"
   autoload :RecordAccess, "emfsvg/record_access"
+  autoload :Native, "emfsvg/native"
+  autoload :Runtime, "emfsvg/runtime"
+  autoload :RuntimeSteps, "emfsvg/runtime_steps"
 
   const_get(:Error)
 
