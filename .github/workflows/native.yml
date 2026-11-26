@@ -1,0 +1,78 @@
+# The native lane (claricle/emfsvg#36): the eikogram-ffi cdylib built from
+# the pinned vectory-rs workspace rev (VECTORY_RS_REF — the ETASSIA_RS_REF
+# pattern) drives Emfsvg::Runtime in `native` mode, where the corpus ledger
+# gates on byte parity with the Ruby lane over the pinned parity corpus
+# (EMF_FIXTURE_ROOT, materialized at the manifest's pinned revision). Every
+# other CI job (the cimas rake workflow) runs without the library and so
+# proves the pure-Ruby path untouched. Linux only: Ruby and Rust must share
+# a libm.
+name: native
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  native-runtime:
+    name: native-runtime
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # The vectory-rs workspace rev the native lane is gated on. Bump it
+      # to the new workspace rev whenever the ABI or the conversion moves.
+      VECTORY_RS_REF: b4eb5766f94351d2cb05a57776d99cba16b7c9d5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: claricle/vectory
+          ref: ${{ env.VECTORY_RS_REF }}
+          path: vectory-rs-pinned
+
+      - name: Install Rust
+        run: rustup toolchain install stable --profile minimal
+
+      - name: Build the pinned eikogram-ffi cdylib
+        run: cargo build --release --locked -p eikogram-ffi
+        working-directory: vectory-rs-pinned/vectory-rs
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+
+      - name: Install fontconfig (the renderer resolves glyphs through fc-match)
+        run: sudo apt-get update && sudo apt-get install -y fontconfig
+
+      - name: Materialize the pinned parity corpus
+        shell: bash
+        run: |
+          corpus_revision="$(ruby -ryaml -e '
+            revision = YAML.safe_load_file("spec/fixtures/parity_manifest.yml").fetch("provenance").fetch("corpus").fetch("revision")
+            abort "Expected a full lowercase corpus SHA" unless /\A[0-9a-f]{40}\z/.match?(revision)
+            puts revision
+          ')"
+          corpus_root="$RUNNER_TEMP/emfsvg-parity-corpus"
+          git init "$corpus_root"
+          git -C "$corpus_root" remote add origin https://github.com/claricle/emf.git
+          git -C "$corpus_root" fetch --depth 1 origin "$corpus_revision"
+          git -C "$corpus_root" checkout --detach FETCH_HEAD
+          test "$(git -C "$corpus_root" rev-parse HEAD)" = "$corpus_revision"
+          printf 'EMF_FIXTURE_ROOT=%s\n' "$corpus_root" >> "$GITHUB_ENV"
+
+      - name: Native ledger and runtime-switch specs under the demanded engine
+        env:
+          EMFSVG_NATIVE_LIB: ${{ github.workspace }}/vectory-rs-pinned/vectory-rs/target/release/libeikogram_ffi.so
+          EMFSVG_RUNTIME: native
+        run: >-
+          bundle exec rspec spec/emfsvg/runtime_spec.rb
+          spec/emfsvg/runtime_native_ledger_spec.rb

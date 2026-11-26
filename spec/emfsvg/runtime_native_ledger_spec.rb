@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# The native render ledger (claricle/emf#91): the Rust EMF -> VIM -> SVG
+# The native render ledger (claricle/emfsvg#36): the Rust EMF -> VIM -> SVG
 # conversion and the Ruby lane must answer the same corpus drawings with the
 # same output. Runs only where the eikogram-ffi cdylib is loadable (CI's
 # native-runtime job, or a local `cargo build -p eikogram-ffi --release`);
@@ -12,8 +12,21 @@
 # renderer's tag-grammar whitespace non-representable; the same
 # normalization is applied to both sides, quoted values never touched).
 #
-# The ledger line warns, e.g. `native emfsvg render: 14 same
-# (0 raw, 14 quirk-normalized), 0 unported`.
+# Cohorts:
+# * smoke — the parity corpus's smoke subset (deterministic across the
+#   corpus's source groups, required to include EMF+ drawings).
+# * corpus — every oracle-valid file of the pinned parity corpus
+#   (EMF_FIXTURE_ROOT): each manifest fixture carries golden and round-trip
+#   SVG oracles, and {Emfsvg::SpecSupport::ParityCorpus#verify!} proves the
+#   pinned revision and every digest before the lanes run. The corrupted
+#   cohort is the corpus's error bucket — no SVG oracle, both lanes raise —
+#   so it is excluded here like the etassia ledger's named error cases.
+#
+# The gate is the etassia lane shape: assert on :different only; a drawing
+# the native engine refuses lands in the :unported bucket, is reported on
+# the ledger line, and never gates (a missing engine is the designed
+# fallback, never a silent switch). The ledger line warns, e.g.
+# `native emfsvg: 208 same (14 raw, 194 quirk-normalized), 0 unported`.
 require "spec_helper"
 
 RSpec.describe Emfsvg::Runtime do
@@ -83,6 +96,54 @@ RSpec.describe Emfsvg::Runtime do
 
     expect(unported).to eq([])
     expect(same_normalized).to eq(subset.size)
+  end
+
+  it "renders every oracle-valid corpus file identically through Rust and Ruby" do
+    skip "eikogram-ffi cdylib not built in this checkout" if built_library.nil?
+    skip "corpus not configured (EMF_FIXTURE_ROOT unset)" if fixture_root.nil?
+
+    corpus = Emfsvg::SpecSupport::ParityCorpus.new
+    corpus.verify!
+    sources = corpus.source_paths
+
+    tally = { same: 0, raw: 0, different: [], unported: [] }
+
+    sources.each do |path|
+      bytes = File.binread(path)
+      with_runtime_mode("ruby")
+      ruby_bytes = described_class.from_bytes(bytes).to_s.b
+
+      with_runtime_mode("native")
+      begin
+        native_bytes = described_class.from_bytes(bytes).to_s.b
+      rescue Emfsvg::Error, Emfsvg::Native::NativeError => e
+        tally[:unported] << "#{File.basename(path)}: #{e.class}: #{e.message[0, 120]}"
+        next
+      end
+
+      if native_bytes == ruby_bytes
+        tally[:same] += 1
+        tally[:raw] += 1
+      elsif normalized(native_bytes) == normalized(ruby_bytes)
+        tally[:same] += 1
+      else
+        tally[:different] << "#{File.basename(path)}: first difference at byte " \
+                             "#{first_difference(ruby_bytes, native_bytes)}"
+      end
+    end
+
+    warn "native emfsvg: #{tally[:same]} same " \
+         "(#{tally[:raw]} raw, #{tally[:same] - tally[:raw]} quirk-normalized), " \
+         "#{tally[:unported].size} unported"
+    tally[:unported].each { |entry| warn "  unported #{entry}" }
+    tally[:different].each { |entry| warn "  different #{entry}" }
+
+    # The etassia ledger gate: fail on any :different. :unported is the
+    # error/unknown bucket — reported, never a gate — and the ledger stays
+    # collectively exhaustive: every oracle-valid file lands in exactly one
+    # bucket.
+    expect(tally[:different]).to eq([])
+    expect(tally[:same] + tally[:unported].size).to eq(sources.size)
   end
 
   private
